@@ -97,12 +97,12 @@ function bookCard(book) {
   return `<a class="book-card ${book.color}" href="${bookLink(book)}"><div class="book-cover"><img src="${book.cover}" alt="${esc(book.title)}" loading="lazy"><span class="book-status">${p?.finished ? '读过啦' : p ? `读到第${p.page + 1}页` : '打开看看'}</span></div><div class="book-info">${level ? `<span class="book-level" aria-label="${esc(book.sourceLevel.system)} 原站${esc(level)}">${esc(level)}</span>` : ''}<span class="book-category">${book.tag} <span>· ${book.pages.length}页</span></span><h3>${esc(book.title)}</h3><p>${esc(book.intro)}</p><span class="read-link">${p ? '继续读' : '开始读'}${icon('arrow')}</span></div></a>`;
 }
 
-function reader() {
+function reader(showHint = false) {
   const {book, page} = route, current = book.pages[page];
   const chars = Array.from(current.text).map((char, index) => /\p{Script=Han}/u.test(char) ? `<button class="character" data-char="${index}" aria-label="认识${esc(char)}">${esc(char)}</button>` : `<span>${esc(char)}</span>`).join('');
   return `<main class="reader" id="main"><header class="reader-header"><a href="#/shelf" class="back-link">${icon('back')}回到书架</a><h1>${esc(book.title)}</h1></header>
     <div class="reading-progress" aria-label="阅读进度"><span style="width:${(page + 1) / book.pages.length * 100}%"></span></div>
-    <section class="reading-spread" aria-label="第${page + 1}页"><div class="page-art"><img src="${current.image}" alt="故事插图：${esc(current.text)}"></div><div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span><p class="story-text" aria-label="${esc(current.text)}">${chars}</p><button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button><p class="reading-hint">遇到不认识的字，点一下就能求助。</p></div></section>
+    <section class="reading-spread" aria-label="第${page + 1}页"><div class="page-art"><img src="${current.image}" alt="故事插图：${esc(current.text)}"></div><div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span><p class="story-text" aria-label="${esc(current.text)}">${chars}</p><button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>${showHint ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
     <nav class="page-controls" aria-label="翻页"><button class="button secondary" data-prev ${page === 0 ? 'disabled' : ''}>${icon('back')}上一页</button><div class="page-dots">${book.pages.map((_, i) => `<button class="page-dot ${i === page ? 'current' : ''}" data-page="${i}" aria-label="第${i + 1}页" ${i === page ? 'aria-current="page"' : ''}><span></span></button>`).join('')}</div><button class="button ${page === book.pages.length - 1 ? 'primary' : 'secondary'}" data-next>${page === book.pages.length - 1 ? '读完啦' : '下一页'}${icon(page === book.pages.length - 1 ? 'check' : 'arrow')}</button></nav>
     <div class="reader-offline"><button class="text-button" data-download-book="${book.id}">${icon('download')}下载这本书</button><span id="book-download-status" class="small-note" role="status"></span></div><details class="reader-credit"><summary>这本书的作者与来源</summary>${bookCredit(book)}</details></main>`;
 }
@@ -115,7 +115,7 @@ function showWord(index, entry) {
   const position = entry ? text.indexOf(entry.char) : index;
   selectedWord = {char: text[position], bookId: book.id, page};
   const context = wordInContext(text, position), saved = state.words.some(w => w.char === context.char);
-  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(text)}</blockquote><div class="dialog-actions"><button class="button secondary" data-word-listen>${icon('sound')}听原句</button><button class="button primary" data-save-word ${saved ? 'disabled' : ''}>${icon('leaf')}${saved ? '已放进生字篮' : '放进生字篮'}</button></div><button class="text-button" data-speak-word>听“${esc(context.word)}”的读音</button>`;
+  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(text)}</blockquote><div class="dialog-actions word-actions"><button class="button primary" data-speak-word aria-label="听“${esc(context.char)}”的读音">${icon('sound')}听字音</button><button class="button secondary" data-save-word aria-pressed="${saved}">${icon('leaf')}${saved ? '移出生字篮' : '放进生字篮'}</button></div><button class="text-button word-sentence" data-word-listen>${icon('sound')}听原句</button>`;
   wordDialog.showModal();
 }
 
@@ -127,7 +127,7 @@ function completion() {
   app.querySelector('h1')?.focus();
 }
 
-function words() {
+function wordsView() {
   return shell('words', `<header class="page-header"><div><span class="eyebrow">我的生字</span><h1>把新朋友，装进小篮子。</h1></div><span class="header-note">${icon('leaf')}${state.words.length}个字</span></header><p class="page-description">读故事时点一下汉字，就可以把想再读的字收在这里。</p>${state.words.length ? `<div class="word-grid">${state.words.map((w, i) => { const b = books.find(b => b.id === w.bookId); return `<article class="saved-word"><button data-saved-word="${i}" aria-label="复习${esc(w.char)}"><span>${esc(w.char)}</span><small>${esc(b.title)}</small></button><a href="#/book/${w.bookId}/${w.page + 1}">回到故事${icon('arrow')}</a><button class="remove-word" data-remove-word="${i}" aria-label="移出生字${esc(w.char)}">${icon('close')}</button></article>`; }).join('')}</div>` : `<div class="empty-state"><div class="empty-leaf">${icon('leaf')}</div><h2>小篮子等着你的新发现</h2><p>先去读个故事吧，遇见想认识的字再收进来。</p><a class="button primary" href="#/shelf">去找故事${icon('arrow')}</a></div>`}`);
 }
 
@@ -285,8 +285,9 @@ function render() {
     route = routeFromHash(lastPublicHash, books);
   }
   if (route.section !== 'parent') { parentAccess = false; lastPublicHash = location.hash || '#/shelf'; }
-  if (route.section === 'book') persist(updateProgress(state, route.book, route.page));
-  app.innerHTML = route.section === 'book' ? reader() : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? words() : route.section === 'parent' ? parent() : shelf();
+  const showReadingHint = route.section === 'book' && !state.readingHelpSeen;
+  if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: true});
+  app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : shelf();
   document.title = `${route.section === 'book' ? route.book.title : route.section === 'pinyin' ? '学拼音' : route.section === 'words' ? '我的生字' : route.section === 'parent' ? '家长小角' : '故事书架'} · 阅读小花园`;
   paintMaintenance();
   if (route.section === 'parent') {
@@ -344,13 +345,16 @@ wordDialog.addEventListener('click', async event => {
   if (el.hasAttribute('data-close')) { audio.stop(); wordDialog.close(); }
   else if (el.hasAttribute('data-word-listen')) { const book = books.find(b => b.id === selectedWord.bookId); await play(book.pages[selectedWord.page].audio); }
   else if (el.hasAttribute('data-save-word')) {
-    const saved = state.words.some(w => w.char === selectedWord.char) || persist({...state, words: [...state.words, selectedWord].slice(-200)});
-    el.disabled = true; el.innerHTML = icon('check') + (saved ? '已放进生字篮' : '本次先收好');
-    if (saved) notify('这个字已经收好啦。');
+    const wasSaved = state.words.some(w => w.char === selectedWord.char);
+    const words = wasSaved ? state.words.filter(w => w.char !== selectedWord.char) : [...state.words, selectedWord].slice(-200);
+    const durable = persist({...state, words});
+    el.setAttribute('aria-pressed', String(!wasSaved));
+    el.innerHTML = icon('leaf') + (wasSaved ? '放进生字篮' : durable ? '移出生字篮' : '本次先收好（点此移出）');
+    // Refresh the list behind the modal without closing it or interrupting audio.
+    if (route.section === 'words') app.innerHTML = wordsView();
+    if (durable) notify(wasSaved ? '已移出生字篮，可以随时再放回来。' : '这个字已经收好啦。');
   } else if (el.hasAttribute('data-speak-word')) {
-    const text = books.find(b => b.id === selectedWord.bookId).pages[selectedWord.page].text;
-    const context = wordInContext(text, text.indexOf(selectedWord.char));
-    if (!audio.speak(context.word, state.voice)) { notify('暂时没有中文词语声音，先听故事原句吧。'); await play(books.find(b => b.id === selectedWord.bookId).pages[selectedWord.page].audio); }
+    if (!audio.speak(selectedWord.char, state.voice)) { notify('暂时没有中文字音，先听故事原句吧。'); await play(books.find(b => b.id === selectedWord.bookId).pages[selectedWord.page].audio); }
   }
 });
 wordDialog.addEventListener('close', () => audio.stop());

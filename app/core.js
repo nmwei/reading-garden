@@ -1,5 +1,5 @@
 export const STORAGE_KEY = 'reading-garden-v1';
-export const emptyState = () => ({progress: {}, words: [], voice: '', pinyinScopes: ['finals']});
+export const emptyState = () => ({progress: {}, words: [], voice: '', readingHelpSeen: false, pinyinScopes: ['finals']});
 
 export function normalizeState(input, books) {
   const clean = emptyState();
@@ -13,6 +13,7 @@ export function normalizeState(input, books) {
     return b && Number.isInteger(w.page) && w.page >= 0 && w.page < b.pages.length && typeof w.char === 'string' && /^\p{Script=Han}$/u.test(w.char) && b.pages[w.page].text.includes(w.char);
   }).slice(0, 200).map(w => ({char: w.char, bookId: w.bookId, page: w.page})) : [];
   clean.words = clean.words.filter((w, i, all) => all.findIndex(x => x.char === w.char) === i);
+  clean.readingHelpSeen = input.readingHelpSeen === true;
   clean.voice = typeof input.voice === 'string' ? input.voice : '';
   if (Array.isArray(input.pinyinScopes)) clean.pinyinScopes = ['initials', 'finals', 'whole'].filter(id => input.pinyinScopes.includes(id));
   return clean;

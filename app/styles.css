@@ -88,3 +88,7 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 .reader-offline .icon{width:18px;height:18px}
 #download-scope{margin-bottom:12px}
 @media(max-width:620px){.shelf-tools{gap:9px}.shelf-tools select{width:150px}.shelf-tools .small-note{font-size:11px}.reader-offline{gap:5px;margin-top:16px}}
+
+.word-sentence{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;margin-top:10px}
+.word-sentence .icon{width:18px;height:18px}
+.word-actions [data-save-word][aria-pressed=true]{background:var(--sage);border-color:#cbd9c3}

@@ -61,7 +61,7 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   await expect(page.getByRole('dialog')).toBeVisible();
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
   await page.getByRole('button', {name: '放进生字篮'}).click();
-  await expect(page.getByRole('button', {name: '已放进生字篮'})).toBeDisabled();
+  await expect(page.getByRole('button', {name: '移出生字篮', exact: true})).toBeEnabled();
   await page.getByRole('button', {name: '听原句', exact: true}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(2);
   await page.getByRole('button', {name: '关闭', exact: true}).click();
@@ -371,7 +371,7 @@ test('failed persistent storage stays usable and does not claim the word was sav
   await page.goto('/#/book/0087/1');
   await page.getByRole('button', {name: '认识书', exact: true}).click();
   await page.getByRole('button', {name: '放进生字篮'}).click();
-  await expect(page.getByRole('button', {name: '本次先收好'})).toBeDisabled();
+  await expect(page.getByRole('button', {name: '本次先收好（点此移出）'})).toBeEnabled();
   await expect(page.locator('#status')).toContainText('暂时无法保存');
   await page.getByRole('button', {name: '关闭', exact: true}).click();
   await page.getByRole('button', {name: '下一页', exact: true}).click();
@@ -782,4 +782,71 @@ test('a failed worker installation discards its partial copy and preserves the o
   await context.setOffline(true);await page.goto(`${base}#/book/0262/16`);
   await page.getByRole('button',{name:'读这一页',exact:true}).click();
   await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+});
+
+test('character audio leads both dialogs and collection can be removed and restored in place', async ({page},testInfo) => {
+  await page.addInitScript(() => {
+    window.__spoken=[];
+    window.SpeechSynthesisUtterance=class {constructor(text){this.text=text;}};
+    Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{getVoices:()=>[{name:'Test Mandarin',voiceURI:'test-mandarin',lang:'zh-CN'}],cancel(){},speak(utterance){window.__spoken.push(utterance.text);},addEventListener(){}}});
+  });
+  await page.goto('/#/book/0087/2');
+  await page.getByRole('button',{name:'认识念',exact:true}).click();
+  const dialog=page.locator('#word-dialog');
+  await expect(dialog.locator('.word-actions .primary')).toHaveText('听字音');
+  await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念']);
+  await dialog.getByRole('button',{name:'听原句',exact:true}).click();
+  await expect.poll(()=>page.evaluate(()=>window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
+  await expect(dialog.getByRole('button',{name:'移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
+  await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).words.length)).toBe(0);
+  await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
+  await dialog.getByRole('button',{name:'关闭',exact:true}).click();
+  await page.goto('/#/words');
+  await page.getByRole('button',{name:'复习念',exact:true}).click();
+  await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','念']);
+  await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
+  await expect(dialog).toBeVisible();
+  await expect(page.locator('.saved-word')).toHaveCount(0);
+  await expect(page.locator('.nav-item .count')).toHaveCount(0);
+  await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
+  await expect(page.locator('.saved-word')).toHaveCount(1);
+  await expect(page.locator('.nav-item .count')).toHaveText('1');
+  if(testInfo.project.name==='ipad-chromium'){
+    await page.screenshot({path:'test-results/word-dialog-ipad.png'});
+    await page.setViewportSize({width:390,height:844});
+    await expect(dialog.locator('[data-word-listen]')).toBeInViewport();
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+    await page.screenshot({path:'test-results/word-dialog-phone.png'});
+  }
+  await dialog.getByRole('button',{name:'关闭',exact:true}).click();
+  await page.reload();
+  await expect(page.locator('.saved-word')).toHaveCount(1);
+});
+
+test('reading help appears on the first read only across page changes, reloads and books',async({page})=>{
+  await page.goto('/#/book/0087/1');
+  await expect(page.locator('.reading-hint')).toBeVisible();
+  await page.getByRole('button',{name:'下一页',exact:true}).click();
+  await expect(page.locator('.reading-hint')).toHaveCount(0);
+  await page.getByRole('button',{name:'上一页',exact:true}).click();
+  await expect(page.locator('.reading-hint')).toHaveCount(0);
+  await page.reload();await expect(page.locator('.story-text')).toBeVisible();
+  await expect(page.locator('.reading-hint')).toHaveCount(0);
+  await page.goto('/#/book/0009/1');
+  await expect(page.locator('.reading-hint')).toHaveCount(0);
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).readingHelpSeen)).toBe(true);
+});
+
+test('character listening without a Chinese device voice falls back to the recorded sentence',async({page})=>{
+  await page.addInitScript(()=>Object.defineProperty(speechSynthesis,'getVoices',{value:()=>[]}));
+  await page.goto('/#/book/0087/2');
+  await page.getByRole('button',{name:'认识念',exact:true}).click();
+  await page.getByRole('button',{name:'听“念”的读音',exact:true}).click();
+  await expect(page.locator('#status')).toContainText('先听故事原句');
+  await expect.poll(()=>page.evaluate(()=>window.__plays.at(-1))).toContain('/assets/books/0087/03.mp3');
+  await expect.poll(()=>page.evaluate(()=>window.__lastAudio.currentTime)).toBeGreaterThan(0);
 });

@@ -18,7 +18,7 @@ test('invalid saved data cannot break reading or inject unknown content', () => 
   assert.deepEqual(normalizeState(null, books), emptyState());
 });
 test('removing the legacy font preference preserves learning records and other preferences', () => {
-  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', pinyinScopes: ['initials', 'whole']};
+  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
   assert.deepEqual(normalizeState({...saved, largeText: true}, books), saved);
   assert.deepEqual(normalizeState({...saved, largeText: false}, books), saved);
 });
