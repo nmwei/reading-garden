@@ -241,6 +241,53 @@ test('legacy font settings do not alter responsive reading or erase learning rec
   expect(saved).not.toHaveProperty('largeText');
 });
 
+test('long books keep paging labels on one line and every page reachable', async ({page}) => {
+  const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+  const book = books.reduce((longest, current) => current.pages.length > longest.pages.length ? current : longest);
+  for (const width of [320, 620, 621, 820, 1194, 1440]) {
+    await page.setViewportSize({width, height: 900});
+    await page.goto(`/#/book/${book.id}/1`);
+    await expect(page.locator('.page-dot')).toHaveCount(book.pages.length);
+    for (const selector of ['[data-prev]', '[data-next]']) {
+      const lines = await page.locator(selector).evaluate(button => {
+        const text = [...button.childNodes].find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+        const range = document.createRange();
+        range.selectNodeContents(text);
+        return range.getClientRects().length;
+      });
+      expect(lines, `${selector} at ${width}px`).toBe(1);
+    }
+    expect(await page.locator('.page-controls').evaluate(nav => {
+      const bounds = nav.getBoundingClientRect();
+      return [...nav.children].every(child => {
+        const rect = child.getBoundingClientRect();
+        return rect.left >= bounds.left - 1 && rect.right <= bounds.right + 1;
+      });
+    })).toBe(true);
+    const alignment = await page.locator('.page-controls').evaluate(nav => {
+      const centers = [...nav.querySelectorAll('.page-dot span')].map(dot => {
+        const rect = dot.getBoundingClientRect();
+        return rect.top + rect.height / 2;
+      });
+      const button = nav.querySelector('[data-prev]').getBoundingClientRect();
+      return {rows: Math.max(...centers) - Math.min(...centers), offset: Math.abs(centers[0] - button.top - button.height / 2)};
+    });
+    expect(alignment.rows, `single row at ${width}px`).toBeLessThan(1);
+    if (width > 620) expect(alignment.offset, `vertically centered at ${width}px`).toBeLessThan(1);
+    await expect(page.locator('[data-prev]')).toBeDisabled();
+    await page.getByRole('button', {name: `第${book.pages.length}页`, exact: true}).click();
+    await expect(page.locator('[data-next]')).toHaveText('读完啦');
+    await page.locator('[data-prev]').click();
+    await expect(page.locator('.page-dot.current')).toHaveAttribute('data-page', String(book.pages.length - 2));
+    await page.locator('[data-next]').click();
+    await expect(page.locator('.page-dot.current')).toHaveAttribute('data-page', String(book.pages.length - 1));
+    expect(await page.locator('.page-dot.current').evaluate(dot => {
+      const rect = dot.getBoundingClientRect(), bounds = dot.parentElement.getBoundingClientRect();
+      return rect.left >= bounds.left - 1 && rect.right <= bounds.right + 1;
+    })).toBe(true);
+  }
+});
+
 test('iPad rotation, mobile and desktop layouts keep content inside the viewport', async ({page}, testInfo) => {
   for (const size of [{width: 1194, height: 834}, {width: 820, height: 1180}, {width: 390, height: 844}, {width: 320, height: 740}, {width: 1440, height: 900}]) {
     await page.setViewportSize(size);

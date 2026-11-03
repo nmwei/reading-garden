@@ -288,6 +288,10 @@ function render() {
   const showReadingHint = route.section === 'book' && !state.readingHelpSeen;
   if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: true});
   app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : shelf();
+  if (route.section === 'book') {
+    const dots = app.querySelector('.page-dots'), current = dots.querySelector('.current');
+    dots.scrollLeft = current.offsetLeft - (dots.clientWidth - current.offsetWidth) / 2;
+  }
   document.title = `${route.section === 'book' ? route.book.title : route.section === 'pinyin' ? '学拼音' : route.section === 'words' ? '我的生字' : route.section === 'parent' ? '家长小角' : '故事书架'} · 阅读小花园`;
   paintMaintenance();
   if (route.section === 'parent') {
