@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0087",
+    "title": "我喜欢看书",
+    "tag": "家人与我",
+    "color": "peach",
+    "intro": "捧起一本书，可以念给谁听呢？",
+    "keywords": [
+      "书",
+      "看",
+      "我"
+    ],
+    "question": "你想把这个故事念给谁听？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0087/",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Letta Machoga",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0087/01.jpg",
+    "pages": [
+      {
+        "text": "我喜欢看书。",
+        "image": "assets/books/0087/02.jpg",
+        "audio": "assets/books/0087/02.mp3"
+      },
+      {
+        "text": "我可以念给谁听呢？",
+        "image": "assets/books/0087/03.jpg",
+        "audio": "assets/books/0087/03.mp3"
+      },
+      {
+        "text": "小妹妹正在熟睡。",
+        "image": "assets/books/0087/04.jpg",
+        "audio": "assets/books/0087/04.mp3"
+      },
+      {
+        "text": "我可以念给谁听呢？",
+        "image": "assets/books/0087/05.jpg",
+        "audio": "assets/books/0087/05.mp3"
+      },
+      {
+        "text": "妈妈和奶奶正在忙。",
+        "image": "assets/books/0087/06.jpg",
+        "audio": "assets/books/0087/06.mp3"
+      },
+      {
+        "text": "我可以念给谁听呢？",
+        "image": "assets/books/0087/07.jpg",
+        "audio": "assets/books/0087/07.mp3"
+      },
+      {
+        "text": "爸爸和爷爷正在忙。",
+        "image": "assets/books/0087/08.jpg",
+        "audio": "assets/books/0087/08.mp3"
+      },
+      {
+        "text": "我可以念给谁听呢？我可以念给自己听！",
+        "image": "assets/books/0087/09.jpg",
+        "audio": "assets/books/0087/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0156",
+    "title": "很饿的鳄鱼",
+    "tag": "动物朋友",
+    "color": "sage",
+    "intro": "悄悄游来的鳄鱼，肚子又饿啦。",
+    "keywords": [
+      "饿",
+      "吃",
+      "鱼"
+    ],
+    "question": "鳄鱼肚子饿的时候，会做什么呢？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0156/",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Christian G.",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0156/01.jpg",
+    "pages": [
+      {
+        "text": "从前有一条肚子很饿的鳄鱼。",
+        "image": "assets/books/0156/02.jpg",
+        "audio": "assets/books/0156/02.mp3"
+      },
+      {
+        "text": "他慢慢地、悄悄地去找东西吃。 然后……",
+        "image": "assets/books/0156/03.jpg",
+        "audio": "assets/books/0156/03.mp3"
+      },
+      {
+        "text": "扑通！鳄鱼来了！",
+        "image": "assets/books/0156/04.jpg",
+        "audio": "assets/books/0156/04.mp3"
+      },
+      {
+        "text": "然后他肚子就不再饿了，很高兴。",
+        "image": "assets/books/0156/05.jpg",
+        "audio": "assets/books/0156/05.mp3"
+      },
+      {
+        "text": "直到肚子又饿起来了！",
+        "image": "assets/books/0156/06.jpg",
+        "audio": "assets/books/0156/06.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0009",
+    "title": "我的小猫猫在哪儿？",
+    "tag": "找一找",
+    "color": "lavender",
+    "intro": "床底下、沙发后，小猫躲在哪里？",
+    "keywords": [
+      "猫",
+      "上",
+      "下"
+    ],
+    "question": "你能用“里面”或者“后面”说一句话吗？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0009/",
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Bronwen Heath, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0009/01.jpg",
+    "pages": [
+      {
+        "text": "我的小猫猫在哪儿？",
+        "image": "assets/books/0009/02.jpg",
+        "audio": "assets/books/0009/02.mp3"
+      },
+      {
+        "text": "是不是在床底下？",
+        "image": "assets/books/0009/03.jpg",
+        "audio": "assets/books/0009/03.mp3"
+      },
+      {
+        "text": "是不是在碗柜上面？",
+        "image": "assets/books/0009/04.jpg",
+        "audio": "assets/books/0009/04.mp3"
+      },
+      {
+        "text": "是不是在沙发后面？",
+        "image": "assets/books/0009/05.jpg",
+        "audio": "assets/books/0009/05.mp3"
+      },
+      {
+        "text": "是不是在垃圾桶旁边？",
+        "image": "assets/books/0009/06.jpg",
+        "audio": "assets/books/0009/06.mp3"
+      },
+      {
+        "text": "是不是在篮子里面？",
+        "image": "assets/books/0009/07.jpg",
+        "audio": "assets/books/0009/07.mp3"
+      },
+      {
+        "text": "是不是在房子外面？",
+        "image": "assets/books/0009/08.jpg",
+        "audio": "assets/books/0009/08.mp3"
+      },
+      {
+        "text": "原来在这里！",
+        "image": "assets/books/0009/09.jpg",
+        "audio": "assets/books/0009/09.mp3"
+      }
+    ]
+  }
+]
