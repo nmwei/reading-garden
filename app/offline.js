@@ -1,3 +1,5 @@
+import {selectLibrary, mapLimited, verifyAsset} from './library.js';
+
 let registration, registering, loadedVersion;
 export async function registerOffline() {
   if (!('serviceWorker' in navigator)) return;
@@ -27,7 +29,7 @@ function waitForWorker(worker, states) {
       if (states.includes(worker.state)) finish();
       else if (worker.state === 'redundant') finish(Error('新版暂时没有准备好，请稍后重试。'));
     };
-    const timer = setTimeout(() => finish(Error('检查更新超时，请稍后重试。')), 20000);
+    const timer = setTimeout(() => finish(Error('检查更新超时，请稍后重试。')), 60000);
     worker.addEventListener('statechange', changed); changed();
   });
 }
@@ -54,29 +56,32 @@ export async function prepareReload() {
   }
 }
 
-export async function offlineSize() { return ((await manifest()).bytes / 1024 / 1024).toFixed(1); }
-export async function downloadLibrary(progress) {
+export async function offlineSize(selection = 'all') { return (selectLibrary(await manifest(), selection).bytes / 1024 / 1024).toFixed(1); }
+export async function downloadLibrary(progress, selection = 'all') {
   if (!('caches' in window) || !('serviceWorker' in navigator)) throw Error('当前浏览器不支持离线下载，请使用 Safari 打开。');
   await (registration || registerOffline());
   await navigator.serviceWorker.ready;
   const info = await manifest();
+  const selected = selectLibrary(info, selection);
   const scope = new URL('.', document.baseURI).pathname;
   const cache = await caches.open(`reading-garden:${scope}:${info.version}`);
   let done = 0;
-  progress(done, info.files.length);
-  for (const file of info.files) {
+  progress(done, selected.files.length);
+  await mapLimited(selected.files, async file => {
     const url = new URL(file, document.baseURI);
     if (!await cache.match(url)) {
       const response = await fetch(url, {cache: 'reload'});
       if (!response.ok) throw Error('有些素材还没下载好，请检查网络后重试。');
+      await verifyAsset(response, info.assets?.[file]);
       try { await cache.put(url, response); }
       catch (error) {
         if (error.name === 'QuotaExceededError') throw Error('设备空间暂时不够，请释放一些空间后再下载。');
         throw Error('浏览器暂时无法保存离线素材，请检查存储设置后重试。');
       }
     }
-    progress(++done, info.files.length);
-  }
+    progress(++done, selected.files.length);
+  });
+  return selected.label;
 }
 
 export async function refreshLibrary(progress) {
@@ -93,20 +98,16 @@ export async function refreshLibrary(progress) {
     const assets = new Map(sources.flatMap(source => source.assets).map(asset => [asset.path, asset]));
     let done = 0;
     progress(done, info.files.length);
-    for (const file of info.files) {
+    await mapLimited(info.files, async file => {
       const url = new URL(file, base);
       if (url.origin !== base.origin || !url.pathname.startsWith(base.pathname)) throw Error('资源清单不正确，请稍后重试。');
       const response = file === 'assets/sources.json' ? sourceResponse.clone() : await fetch(url, {cache: 'no-store'});
       if (!response.ok || response.status !== 200) throw Error('有些资源未能重新获取，请检查网络后重试。');
       const asset = assets.get(file);
-      if (asset) {
-        const bytes = await response.clone().arrayBuffer();
-        const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
-        if (hash !== asset.sha256) throw Error('部分资源校验失败，请稍后重新获取。');
-      }
+      if (asset) await verifyAsset(response, asset.sha256);
       await temporary.put(url, response);
       progress(++done, info.files.length);
-    }
+    });
     if ((await manifest(true)).version !== info.version) throw Error('网站刚刚更新了，请重新获取一次。');
     // Keep the existing offline package until every fresh resource has passed validation.
     const cache = await caches.open(`${prefix}${info.version}`);

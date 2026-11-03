@@ -1,59 +1,73 @@
-import {mkdir, readFile, writeFile, access} from 'node:fs/promises';
+import {mkdir, readFile, writeFile, rename} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {importPinyin} from './import-pinyin.mjs';
+import {readStory, readCatalog, readRepositoryLicense} from './storybook-metadata.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
+const root = fileURLToPath(new URL('../', import.meta.url)), cache = `${root}.asset-cache/storybooks/`;
 const origin = 'https://www.storybookscanada.ca';
-const get = url => execFileSync('curl', ['-fsSL', '--retry', '3', '--max-time', '60', url], {maxBuffer: 15e6});
-const strip = text => text.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-const presets = [
-  {id: '0087', title: '我喜欢看书', tag: '家人与我', color: 'peach', intro: '捧起一本书，可以念给谁听呢？', keywords: ['书', '看', '我'], question: '你想把这个故事念给谁听？'},
-  {id: '0156', title: '很饿的鳄鱼', tag: '动物朋友', color: 'sage', intro: '悄悄游来的鳄鱼，肚子又饿啦。', keywords: ['饿', '吃', '鱼'], question: '鳄鱼肚子饿的时候，会做什么呢？'},
-  {id: '0009', title: '我的小猫猫在哪儿？', tag: '找一找', color: 'lavender', intro: '床底下、沙发后，小猫躲在哪里？', keywords: ['猫', '上', '下'], question: '你能用“里面”或者“后面”说一句话吗？'}
-];
-
-const sources = [];
-async function download(url, path, expectedSha1) {
-  const absolute = `${root}${path}`;
-  await mkdir(absolute.slice(0, absolute.lastIndexOf('/')), {recursive: true});
+const imageRef = '0df409752c86adc92685816e19e6085c4e4496f1';
+const archives = {
+  images: {url: `https://codeload.github.com/global-asp/gsn-imagebank/zip/${imageRef}`, sha256: '7e7d68a3d66a1c64ac26915275a82a26c29325aa8b9f2fe0d71270d293fd7ac6'},
+  audio: {url: 'https://github.com/global-asp/gsn-audio/releases/download/1.0/zh-audio-gsn.zip', sha256: 'c23579af0dd1c985888a007f930977b73972b937cc1d1cae164b29918bacf859'}
+};
+const digest = bytes => createHash('sha256').update(bytes).digest('hex');
+const fresh = process.argv.includes('--refresh');
+await mkdir(cache, {recursive: true});
+async function cached(name, url, expected, refresh = false) {
   let bytes;
-  if (await access(absolute).then(() => true, () => false)) bytes = await readFile(absolute);
-  else { bytes = get(url); await writeFile(absolute, bytes); }
-  if (expectedSha1 && createHash('sha1').update(bytes).digest('hex') !== expectedSha1) throw Error(`Source hash mismatch: ${path}`);
-  return {path, url, sha256: createHash('sha256').update(bytes).digest('hex'), bytes: bytes.length};
-}
-
-const books = [];
-for (const preset of presets) {
-  const source = `${origin}/stories/zh/${preset.id}/`;
-  const html = get(source).toString();
-  const texts = [...html.matchAll(/<div class="[^"]*level1-txt def"><h3>([\s\S]*?)<\/h3>/g)].map(m => strip(m[1]));
-  const imagePaths = [...html.matchAll(new RegExp(`src="(/images/${preset.id}/[^"]+)"`, 'g'))].map(m => m[1]);
-  const audioPaths = [...html.matchAll(new RegExp(`src="(/audio/zh/${preset.id}/mp3/[^\"]+)"`, 'g'))].map(m => m[1]);
-  if (!texts.length || imagePaths.length !== texts.length + 1 || audioPaths.length !== imagePaths.length) throw Error(`Unexpected page structure: ${preset.id}`);
-  const licenseUrl = html.match(/rel="license" href="([^"]+)"/)?.[1];
-  if (!licenseUrl?.match(/^https:\/\/creativecommons.org\/licenses\/by(?:-nc)?\/3\.0\/$/)) throw Error(`Unreviewed license: ${preset.id}`);
-  const credits = Object.fromEntries([...html.matchAll(/<h5><span class="colophon-heading">([^<]+):<\/span>\s*([^<]+)<\/h5>/g)].map(m => [m[1], strip(m[2])]));
-  const assets = [];
-  const pages = [];
-  for (let i = 0; i < imagePaths.length; i++) {
-    const name = String(i + 1).padStart(2, '0');
-    assets.push(await download(origin + imagePaths[i], `assets/books/${preset.id}/${name}.jpg`));
-    if (i > 0) {
-      assets.push(await download(origin + audioPaths[i], `assets/books/${preset.id}/${name}.mp3`));
-      pages.push({text: texts[i - 1], image: `assets/books/${preset.id}/${name}.jpg`, audio: `assets/books/${preset.id}/${name}.mp3`});
-    }
+  try { if (!refresh) bytes = await readFile(cache + name); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+  if (!bytes) {
+    execFileSync('curl', ['-fsSL', '--connect-timeout', '10', '--max-time', '180', '--retry', '2', '-o', cache + name + '.part', url], {stdio: 'inherit'});
+    bytes = await readFile(cache + name + '.part');
+    if (expected && digest(bytes) !== expected) throw Error(`Archive changed; review before importing: ${url}`);
+    await rename(cache + name + '.part', cache + name);
   }
-  const license = licenseUrl.includes('by-nc') ? 'CC BY-NC 3.0' : 'CC BY 3.0';
-  books.push({...preset, source, license, licenseUrl, credits, cover: `assets/books/${preset.id}/01.jpg`, pages});
-  sources.push({kind: 'book', id: preset.id, source, credits, license, licenseUrl, changes: '文字、图片与录音保持原样；另行编写中文简介、阅读提示和词语解释。', assets});
-  console.log(`Imported ${preset.title}: ${pages.length} pages`);
+  if (expected && digest(bytes) !== expected) throw Error(`Invalid cached archive: ${name}`);
+  return bytes;
 }
-
-// Pinyin provenance is independent from the story licenses.
-sources.push(...await importPinyin(root));
-await mkdir(`${root}data`, {recursive: true});
+const notes = JSON.parse(await readFile(`${root}data/book-notes.json`, 'utf8'));
+const catalog = readCatalog((await cached('catalog.html', `${origin}/stories/zh/`, null, fresh)).toString());
+const imageZip = cache + 'images.zip', audioZip = cache + 'audio.zip';
+await cached('images.zip', archives.images.url, archives.images.sha256);
+await cached('audio.zip', archives.audio.url, archives.audio.sha256);
+const imagePrefix = execFileSync('unzip', ['-Z1', imageZip], {encoding: 'utf8'}).split('\n').find(path => path.endsWith('/README.md')).replace('README.md', '');
+const imageReadme = execFileSync('unzip', ['-p', imageZip, imagePrefix + 'README.md'], {encoding: 'utf8'});
+const audioReadmeUrl = 'https://raw.githubusercontent.com/global-asp/gsn-audio/master/README.md';
+const audioReadme = (await cached('audio-README.md', audioReadmeUrl, null, fresh)).toString();
+const previous = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
+const books = [], sources = [];
+for (const entry of catalog) {
+  const {id} = entry, source = `${origin}/stories/zh/${id}/`;
+  if (!notes[id]) throw Error(`Add reviewed reading notes before importing new book: ${id}`);
+  const html = (await cached(`${id}.html`, source, null, fresh)).toString();
+  const story = readStory(html, id);
+  if (story.sourceLevel.value !== entry.level || story.title !== entry.title) throw Error(`Catalog changed: ${id}`);
+  const imageLicense = readRepositoryLicense(imageReadme, id), audioLicense = readRepositoryLicense(audioReadme, id);
+  // Check all three sources independently, retaining their individual records.
+  if (imageLicense !== story.licenseUrl || audioLicense !== story.licenseUrl) throw Error(`Component licenses differ; review ${id} before importing.`);
+  const assets = [], pages = [];
+  await mkdir(`${root}assets/books/${id}`, {recursive: true});
+  for (let i = 0; i < story.images.length; i++) {
+    const number = String(i + 1).padStart(2, '0');
+    for (const type of i ? ['image', 'audio'] : ['image']) {
+      const image = type === 'image', path = `assets/books/${id}/${number}.${image ? 'jpg' : 'mp3'}`;
+      const member = image ? `${imagePrefix}${id}/${number}.jpg` : `zh/${id}/mp3/${number}.mp3`;
+      const bytes = execFileSync('unzip', ['-p', image ? imageZip : audioZip, member], {maxBuffer: 10e6});
+      if (bytes.length < 100) throw Error(`Empty media: ${member}`);
+      await writeFile(root + path, bytes);
+      assets.push({path, url: origin + (image ? story.images[i] : story.audio[i]), bytes: bytes.length, sha256: digest(bytes)});
+    }
+    if (i) pages.push({text: story.texts[i - 1], image: `assets/books/${id}/${number}.jpg`, audio: `assets/books/${id}/${number}.mp3`});
+  }
+  const {title, sourceLevel, license, licenseUrl, credits} = story;
+  books.push({id, title, ...notes[id], source, sourceLevel, license, licenseUrl, credits, cover: `assets/books/${id}/01.jpg`, pages});
+  sources.push({kind: 'book', id, source, sourceLevel, credits, license, licenseUrl,
+    components: {text: {source, licenseUrl}, illustrations: {source: `https://github.com/global-asp/gsn-imagebank/tree/${imageRef}/${id}`, licenseUrl: imageLicense}, audio: {source: 'https://github.com/global-asp/gsn-audio/releases/tag/1.0', licenseUrl: audioLicense}},
+    metadataSha256: digest(Buffer.from(html)), archives,
+    changes: '文字、图片与录音保持原样；另行编写中文简介、阅读提示和词语解释。', assets});
+  console.log(`Imported ${title}: level ${sourceLevel.value}, ${pages.length} pages`);
+}
+// Pinyin has its own importer and permissions; a book import must not rewrite it.
 await writeFile(`${root}data/books.json`, JSON.stringify(books, null, 2) + '\n');
-await writeFile(`${root}assets/sources.json`, JSON.stringify({importedAt: new Date().toISOString(), sources}, null, 2) + '\n');
+await writeFile(`${root}assets/sources.json`, JSON.stringify({importedAt: new Date().toISOString(), sources: [...sources, ...previous.sources.filter(source => source.kind !== 'book')]}, null, 2) + '\n');

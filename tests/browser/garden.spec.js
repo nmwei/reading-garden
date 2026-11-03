@@ -8,11 +8,12 @@ import {TONE_BASES} from '../../app/pinyin.js';
 // Real server faults exercise worker-owned network requests in both browser engines.
 const test = base.extend({
   updateHost: async ({}, use) => {
-    const root = fileURLToPath(new URL('../../dist/', import.meta.url)), overrides = new Map();
+    const root = fileURLToPath(new URL('../../dist/', import.meta.url)), overrides = new Map(), requests = [];
     const types = {'.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.mp3': 'audio/mpeg', '.webmanifest': 'application/manifest+json'};
     const server = createServer(async (request, response) => {
       try {
         const pathname = new URL(request.url, 'http://localhost').pathname;
+        requests.push(pathname);
         const file = resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
         if (!file.startsWith(root)) { response.writeHead(404); response.end(); return; }
         const override = overrides.get(pathname);
@@ -22,7 +23,7 @@ const test = base.extend({
       } catch { response.writeHead(404); response.end(); }
     });
     await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-    try { await use({url: `http://127.0.0.1:${server.address().port}`, overrides, manifest: JSON.parse(await readFile(resolve(root, 'precache.json'), 'utf8'))}); }
+    try { await use({url: `http://127.0.0.1:${server.address().port}`, overrides, requests, manifest: JSON.parse(await readFile(resolve(root, 'precache.json'), 'utf8'))}); }
     finally { await new Promise(resolve => { server.close(resolve); server.closeAllConnections(); }); }
   }
 });
@@ -45,7 +46,9 @@ test.beforeEach(async ({page}) => {
 test('read, collect a character, restore progress and finish deliberately', async ({page}) => {
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
-  await expect(page.locator('.book-card')).toHaveCount(3);
+  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-level').first()).toHaveText('1级 · 短句');
+  await expect(page.locator('.book-level').first()).toHaveAttribute('aria-label', 'Storybooks Canada 原站1级 · 短句');
   await expect(page.locator('.hero')).toBeVisible();
   expect(await page.evaluate(() => window.__plays)).toEqual([]);
   await page.getByRole('link', {name: '打开故事', exact: true}).click();
@@ -208,8 +211,38 @@ test('four-tone sequence plays in order and stops when changing syllables or lea
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
 });
 
-test('iPad rotation and mobile layouts keep content inside the viewport', async ({page}, testInfo) => {
-  for (const size of [{width: 1194, height: 834}, {width: 820, height: 1180}, {width: 390, height: 844}]) {
+test('legacy font settings do not alter responsive reading or erase learning records', async ({page}, testInfo) => {
+  await page.addInitScript(() => {
+    if (!localStorage.getItem('reading-garden-v1')) localStorage.setItem('reading-garden-v1', JSON.stringify({largeText: true, progress: {'0009': {page: 6, finished: true, updated: 1}}, words: [{char: '我', bookId: '0087', page: 0}], voice: '', pinyinScopes: ['whole']}));
+  });
+  const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+  test.setTimeout(60000);
+  for (const width of [320, 820, 1194, 1440]) {
+    await page.setViewportSize({width, height: width === 820 ? 1180 : 900});
+    for (const book of books) {
+      const longest = book.pages.reduce((best, current, i) => current.text.length > book.pages[best].text.length ? i : best, 0);
+      await page.goto(`/#/book/${book.id}/${longest + 1}`);
+      await expect(page.locator('.story-text')).toHaveText(book.pages[longest].text);
+      const layout = await page.locator('.story-text').evaluate(el => {
+        const box = el.getBoundingClientRect(), parent = el.parentElement.getBoundingClientRect(), style = getComputedStyle(el);
+        return {font: parseFloat(style.fontSize), lineHeight: parseFloat(style.lineHeight), fits: [...el.children].every(child => { const rect = child.getBoundingClientRect(); return rect.left >= box.left - 1 && rect.right <= box.right + 1 && rect.bottom <= box.bottom + 1; }), inside: box.left >= parent.left && box.right <= parent.right};
+      });
+      expect(layout.font).toBeGreaterThanOrEqual(30);
+      expect(layout.font).toBeLessThanOrEqual(38);
+      expect(layout.lineHeight / layout.font).toBeGreaterThanOrEqual(1.7);
+      expect(layout.fits && layout.inside).toBe(true);
+      if (testInfo.project.name === 'ipad-chromium' && book.id === '0262') await page.screenshot({path: `test-results/reader-${width}.png`, fullPage: true});
+    }
+  }
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+  expect(saved.progress['0009'].finished).toBe(true);
+  expect(saved.words).toEqual([{char: '我', bookId: '0087', page: 0}]);
+  expect(saved.pinyinScopes).toEqual(['whole']);
+  expect(saved).not.toHaveProperty('largeText');
+});
+
+test('iPad rotation, mobile and desktop layouts keep content inside the viewport', async ({page}, testInfo) => {
+  for (const size of [{width: 1194, height: 834}, {width: 820, height: 1180}, {width: 390, height: 844}, {width: 320, height: 740}, {width: 1440, height: 900}]) {
     await page.setViewportSize(size);
     for (const path of ['/', '/#/book/0009/4', '/#/pinyin', '/#/parent']) {
       await page.goto(path);
@@ -218,6 +251,7 @@ test('iPad rotation and mobile layouts keep content inside the viewport', async 
       expect(overflow, `${path} at ${size.width}`).toBe(false);
       if (path.includes('parent')) {
         await enterParent(page);
+        await expect(page.getByRole('checkbox')).toHaveCount(0);
         const colors = await page.locator('.app-maintenance > summary > span, .sources > summary > span').evaluateAll(titles => titles.map(title => getComputedStyle(title).color));
         expect(colors).toHaveLength(2);
         expect(colors[0]).toBe(colors[1]);
@@ -231,7 +265,10 @@ test('iPad rotation and mobile layouts keep content inside the viewport', async 
       }
       if (path.includes('book')) {
         await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
-        await page.getByRole('button', {name: '切换大字阅读'}).click();
+        await expect(page.getByRole('button', {name: '切换大字阅读'})).toHaveCount(0);
+        const text = await page.locator('.story-text').evaluate(el => ({font: parseFloat(getComputedStyle(el).fontSize), fits: el.scrollWidth <= el.clientWidth + 1}));
+        expect(text.font).toBeGreaterThanOrEqual(30);
+        expect(text.fits).toBe(true);
         expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)).toBe(false);
       }
     }
@@ -263,8 +300,8 @@ test('downloaded library works offline including audio byte ranges at a project 
   await page.reload();
   await enterParent(page);
   await page.getByRole('link', {name: '故事书架', exact: true}).click();
-  await expect(page.locator('.book-card')).toHaveCount(3);
-  await page.locator('.book-card').nth(2).click();
+  await expect(page.locator('.book-card')).toHaveCount(40);
+  await page.locator('.book-card[href^="#/book/0009/"]').click();
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
   await page.getByRole('button', {name: '读这一页'}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/reading-garden/assets/books/0009/02.mp3');
@@ -317,7 +354,7 @@ test('storage corruption is recoverable and clearing data requires a deliberate 
   await page.goto('/');
   await page.evaluate(() => localStorage.setItem('reading-garden-v1', '{broken'));
   await page.reload();
-  await expect(page.locator('.book-card')).toHaveCount(3);
+  await expect(page.locator('.book-card')).toHaveCount(40);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
   await enterParent(page);
@@ -537,7 +574,7 @@ test('a failed or invalid refetch leaves existing offline content intact and re-
   test.setTimeout(60000);
   await page.goto(`${updateHost.url}/#/parent`); await enterParent(page);
   await page.getByRole('button', {name: '下载离线故事包', exact: true}).click();
-  await expect(page.locator('#download-status')).toContainText('已下载全部故事');
+  await expect(page.locator('#download-status')).toContainText('已下载全部故事', {timeout: 40000});
   const cachedAudio = () => page.evaluate(async () => {
     const info = await fetch('./precache.json').then(r => r.json());
     const cache = await caches.open(`reading-garden:/:${info.version}`);
@@ -558,7 +595,7 @@ test('a failed or invalid refetch leaves existing offline content intact and re-
 });
 
 
-test('production updates wait for explicit reload, preserve the old package, and then activate the new page', async ({page, updateHost}) => {
+test('production updates wait for explicit reload, reuse unchanged media, and then activate the new page', async ({page, context, updateHost}) => {
   test.setTimeout(60000);
   const base = `${updateHost.url}/?offline-test=1`, oldVersion = updateHost.manifest.version, nextVersion = 'fedcba9876543210';
   await page.goto(`${base}#/book/0087/2`);
@@ -566,12 +603,13 @@ test('production updates wait for explicit reload, preserve the old package, and
   await page.getByRole('link', {name: '回到书架', exact: true}).click();
   await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
   await page.getByRole('button', {name: '下载离线故事包', exact: true}).click();
-  await expect(page.locator('#download-status')).toContainText('已下载全部故事');
+  await expect(page.locator('#download-status')).toContainText('已下载全部故事', {timeout: 40000});
   const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
   const worker = await readFile(new URL('../../dist/sw.js', import.meta.url), 'utf8');
   const main = await readFile(new URL('../../dist/app/main.js', import.meta.url), 'utf8');
   expect(worker).toContain(oldVersion);
   expect(main).toContain('听听声音，动动小嘴巴。');
+  const networkStart = updateHost.requests.length;
   updateHost.overrides.set('/sw.js', {body: worker.replace(oldVersion, nextVersion)});
   updateHost.overrides.set('/precache.json', {body: JSON.stringify({...updateHost.manifest, version: nextVersion})});
   updateHost.overrides.set('/app/main.js', {body: main.replace('听听声音，动动小嘴巴。', '新版拼音小课堂')});
@@ -586,6 +624,8 @@ test('production updates wait for explicit reload, preserve the old package, and
   expect(pending.waiting).toBe(true);
   expect(pending.version).toBe(oldVersion);
   expect(pending.caches).toContain(`reading-garden:/:${oldVersion}`);
+  expect(updateHost.requests.slice(networkStart).filter(path => /^\/assets\/(?:books|pinyin)\//.test(path))).toEqual([]);
+  expect(await page.evaluate(async version => !!await (await caches.open(`reading-garden:/:${version}`)).match(new URL('./assets/books/0262/17.mp3', document.baseURI)), nextVersion)).toBe(true);
   await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
   await expect(page.locator('#resource-refresh-status')).toContainText('有新版待启用');
   expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
@@ -604,6 +644,11 @@ test('production updates wait for explicit reload, preserve the old package, and
   expect(activated.waiting).toBe(false);
   expect(activated.caches).not.toContain(`reading-garden:/:${oldVersion}`);
   expect(activated.caches).toContain(`reading-garden:/:${nextVersion}`);
+  await context.setOffline(true);
+  await page.goto(`${base}#/book/0262/16`);
+  await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+  await page.getByRole('button', {name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
 });
 
 test('a queued close event cannot cancel a newly opened parent hold', async ({page}) => {
@@ -618,4 +663,123 @@ test('a queued close event cannot cancel a newly opened parent hold', async ({pa
     button.dispatchEvent(new KeyboardEvent('keydown', {key: ' ', bubbles: true}));
   });
   await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
+});
+
+test('all forty books can be found by grade and theme, including empty intersections', async ({page}) => {
+  await page.goto('/');
+  await expect(page.locator('.book-card')).toHaveCount(40);
+  for (const [grade,count] of [[1,15],[2,11],[3,8],[4,4],[5,2]]) {
+    await page.locator(`[data-book-level="${grade}"]`).click();
+    await expect(page.locator('.book-card')).toHaveCount(count);
+    expect(await page.locator('.book-level').allTextContents()).toEqual(Array(count).fill(['1级 · 短句','2级 · 多句','3级 · 短段落','4级 · 段落','5级 · 长段落'][grade-1]));
+  }
+  await page.locator('#book-theme').selectOption('动物朋友');
+  await expect(page.locator('.book-card')).toHaveCount(0);
+  await expect(page.getByText('这个级别暂时没有这一主题的故事，换一个主题看看吧。')).toBeVisible();
+  await page.locator('#book-theme').selectOption('全部故事');
+  await page.locator('.book-card').first().click();
+  await expect(page.getByRole('heading',{name:'辛波薇亚',exact:true})).toBeVisible();
+  await page.getByRole('button',{name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await page.getByText('这本书的作者与来源',{exact:true}).click();
+  await expect(page.locator('.reader-credit')).toContainText('Vicky Liu');
+});
+
+test('individual book and grade downloads stay scoped and work offline at a project subpath', async ({page,context}) => {
+  test.setTimeout(60000);
+  const base = 'http://localhost:4179/reading-garden/';
+  await page.goto(`${base}#/parent`); await enterParent(page);
+  await page.locator('#download-scope').selectOption('book:0262');
+  await expect(page.locator('#download-status')).toContainText('所选资源约');
+  await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载《玛格威》',{timeout:30000});
+  const downloaded = () => page.evaluate(async () => {
+    const info = await fetch('./precache.json').then(r => r.json());
+    const cache = await caches.open(`reading-garden:/reading-garden/:${info.version}`);
+    const paths = (await cache.keys()).map(request => new URL(request.url).pathname);
+    return {covers:paths.filter(path => /\/books\/\d+\/01.jpg$/.test(path)).length, audio:paths.filter(path => /\/books\/\d+\/\d+.mp3$/.test(path)), pinyin:paths.filter(path => path.includes('/assets/pinyin/')).length};
+  });
+  const first = await downloaded(); expect(first.covers).toBe(40); expect(first.audio).toHaveLength(16); expect(first.pinyin).toBe(0);
+  expect(first.audio.every(path => path.includes('/0262/'))).toBe(true);
+  await page.locator('#download-scope').selectOption('level:2');
+  await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载2级故事',{timeout:30000});
+  const second = await downloaded(); expect(second.audio).toHaveLength(16+117); expect(second.pinyin).toBe(0);
+  await context.setOffline(true);
+  for (const [id,number] of [['0262',16],['0337',11]]) {
+    await page.goto(`${base}#/book/${id}/${number}`);
+    await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+    await page.getByRole('button',{name:'读这一页',exact:true}).click();
+    await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  }
+});
+
+test('reader downloads only that book and reports it without losing progress', async ({page,context}) => {
+  await page.goto('/#/book/0315/3');
+  await page.getByRole('button',{name:'下载这本书',exact:true}).click();
+  await expect(page.locator('#book-download-status')).toContainText('已下载《萨可满的歌声》',{timeout:20000});
+  await context.setOffline(true); await page.goto('/#/book/0315/18');
+  await expect(page.locator('.story-text')).toBeVisible();
+  await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+  await page.getByRole('button',{name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+});
+
+test('an update refuses corrupted old media and omits withdrawn assets while reusing a selected book', async ({page,context,updateHost}) => {
+  test.setTimeout(60000);
+  const base = `${updateHost.url}/?offline-test=1`, nextVersion = '0123456789abcdef';
+  await page.goto(`${base}#/parent`); await enterParent(page);
+  await page.locator('#download-scope').selectOption('book:0262');
+  await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载《玛格威》');
+  await page.evaluate(async () => {
+    const info = await fetch('./precache.json').then(r => r.json());
+    const cache = await caches.open(`reading-garden:/:${info.version}`);
+    await cache.put(new URL('./assets/books/0262/02.mp3',document.baseURI),new Response('damaged'));
+    await cache.put(new URL('./assets/books/withdrawn.mp3',document.baseURI),new Response('withdrawn'));
+  });
+  const worker = await readFile(new URL('../../dist/sw.js',import.meta.url),'utf8');
+  updateHost.overrides.set('/sw.js',{body:worker.replace(updateHost.manifest.version,nextVersion)});
+  updateHost.overrides.set('/precache.json',{body:JSON.stringify({...updateHost.manifest,version:nextVersion})});
+  await page.locator('.app-maintenance > summary').click();
+  await page.getByRole('button',{name:'检查更新',exact:true}).click();
+  await expect(page.locator('#app-update-status')).toContainText('新版已准备好',{timeout:30000});
+  const migrated = await page.evaluate(async version => {
+    const cache = await caches.open(`reading-garden:/:${version}`);
+    const has = async path => !!await cache.match(new URL(path,document.baseURI));
+    return {good:await has('./assets/books/0262/17.mp3'),bad:await has('./assets/books/0262/02.mp3'),withdrawn:await has('./assets/books/withdrawn.mp3'),unselected:await has('./assets/books/0052/02.mp3')};
+  },nextVersion);
+  expect(migrated).toEqual({good:true,bad:false,withdrawn:false,unselected:false});
+  await page.getByRole('button',{name:'重新加载页面',exact:true}).click();
+  await expect(page.locator('#parent-dialog')).toBeVisible();
+  await page.getByRole('button',{name:'取消',exact:true}).click();
+  await page.goto(`${base}#/book/0262/1`);
+  await page.getByRole('button',{name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await context.setOffline(true);await page.goto(`${base}#/book/0262/16`);
+  await page.getByRole('button',{name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+});
+
+test('a failed worker installation discards its partial copy and preserves the old offline book', async ({page,context,updateHost}) => {
+  test.setTimeout(60000);
+  const base = `${updateHost.url}/?offline-test=1`, nextVersion = 'aaaabbbbccccdddd';
+  await page.goto(`${base}#/parent`);await enterParent(page);
+  await page.locator('#download-scope').selectOption('book:0262');
+  await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载《玛格威》');
+  const worker = await readFile(new URL('../../dist/sw.js',import.meta.url),'utf8');
+  const broken = worker.replace(updateHost.manifest.version,nextVersion).replace("await cache.put(url('precache.json'), response);", "await cache.put(url('precache.json'), response); throw Error('simulated install failure');");
+  expect(broken).toContain('simulated install failure');
+  updateHost.overrides.set('/sw.js',{body:broken});
+  updateHost.overrides.set('/precache.json',{body:JSON.stringify({...updateHost.manifest,version:nextVersion})});
+  await page.locator('.app-maintenance > summary').click();
+  await page.getByRole('button',{name:'检查更新',exact:true}).click();
+  await expect(page.locator('#app-update-status')).toContainText('新版暂时没有准备好');
+  const keys = await page.evaluate(async () => caches.keys());
+  expect(keys).not.toContain(`reading-garden:/:${nextVersion}`);
+  expect(keys).toContain(`reading-garden:/:${updateHost.manifest.version}`);
+  await context.setOffline(true);await page.goto(`${base}#/book/0262/16`);
+  await page.getByRole('button',{name:'读这一页',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
 });

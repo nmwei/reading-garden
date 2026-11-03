@@ -14,7 +14,13 @@ test('invalid saved data cannot break reading or inject unknown content', () => 
   assert.equal(state.progress.unknown, undefined);
   assert.deepEqual(state.words, [{char: '我', bookId: '0087', page: 0}]);
   assert.equal(state.voice, '');
+  assert.equal('largeText' in state, false);
   assert.deepEqual(normalizeState(null, books), emptyState());
+});
+test('removing the legacy font preference preserves learning records and other preferences', () => {
+  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', pinyinScopes: ['initials', 'whole']};
+  assert.deepEqual(normalizeState({...saved, largeText: true}, books), saved);
+  assert.deepEqual(normalizeState({...saved, largeText: false}, books), saved);
 });
 test('route bounds and invalid links fall back safely', () => {
   assert.equal(routeFromHash('#/book/0087/999', books).page, 7);
@@ -51,7 +57,8 @@ test('listening choices stay within one group with distinct sounds and exactly o
   }
 });
 test('all story pages have intact, decodable local image/audio and per-book credits', async () => {
-  assert.deepEqual(books.map(b => b.pages.length), [8, 5, 8]);
+  assert.equal(books.length, 40);
+  assert.equal(books.reduce((sum, book) => sum + book.pages.length, 0), 420);
   for (const book of books) {
     assert.match(book.licenseUrl, /^https:\/\/creativecommons.org\/licenses\//);
     for (const role of ['Written by', 'Illustrated by', 'Translated by', 'Read by']) assert.ok(book.credits[role], role);

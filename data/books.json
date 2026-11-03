@@ -12,6 +12,10 @@
     ],
     "question": "你想把这个故事念给谁听？",
     "source": "https://www.storybookscanada.ca/stories/zh/0087/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
     "credits": {
@@ -65,6 +69,198 @@
     ]
   },
   {
+    "id": "0327",
+    "title": "数数动物",
+    "tag": "动物朋友",
+    "color": "sage",
+    "intro": "动物们来喝水，一起数一数。",
+    "keywords": [
+      "一",
+      "水",
+      "动物"
+    ],
+    "question": "你数到了哪些动物？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0327/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Zanele Buthelezi, Thembani Dladla, Clare Verbeek",
+      "Illustrated by": "Rob Owen",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0327/01.jpg",
+    "pages": [
+      {
+        "text": "一头大象去喝水。",
+        "image": "assets/books/0327/02.jpg",
+        "audio": "assets/books/0327/02.mp3"
+      },
+      {
+        "text": "两只长颈鹿去喝水。",
+        "image": "assets/books/0327/03.jpg",
+        "audio": "assets/books/0327/03.mp3"
+      },
+      {
+        "text": "这里有三头水牛和四只鸟，全部都要去喝水。",
+        "image": "assets/books/0327/04.jpg",
+        "audio": "assets/books/0327/04.mp3"
+      },
+      {
+        "text": "五只高角羚和六只疣猪走去喝水。",
+        "image": "assets/books/0327/05.jpg",
+        "audio": "assets/books/0327/05.mp3"
+      },
+      {
+        "text": "七匹斑馬跑去喝水。",
+        "image": "assets/books/0327/06.jpg",
+        "audio": "assets/books/0327/06.mp3"
+      },
+      {
+        "text": "水中有八只青蛙，也有九条鱼。",
+        "image": "assets/books/0327/07.jpg",
+        "audio": "assets/books/0327/07.mp3"
+      },
+      {
+        "text": "一头狮子吼叫着。 他也想喝水。 谁怕狮子了？",
+        "image": "assets/books/0327/08.jpg",
+        "audio": "assets/books/0327/08.mp3"
+      },
+      {
+        "text": "一头大象和狮子一起喝水。",
+        "image": "assets/books/0327/09.jpg",
+        "audio": "assets/books/0327/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0030",
+    "title": "感情",
+    "tag": "家人与我",
+    "color": "peach",
+    "intro": "开心、难过，听听心里的声音。",
+    "keywords": [
+      "心",
+      "开心",
+      "妈妈"
+    ],
+    "question": "今天，你的心里是什么感觉？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0030/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Kathy Arbuckle, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0030/01.jpg",
+    "pages": [
+      {
+        "text": "我的心能感受到很多事情。",
+        "image": "assets/books/0030/02.jpg",
+        "audio": "assets/books/0030/02.mp3"
+      },
+      {
+        "text": "当奶奶跟我们说故事的时候，我感到很高兴。",
+        "image": "assets/books/0030/03.jpg",
+        "audio": "assets/books/0030/03.mp3"
+      },
+      {
+        "text": "当我跟朋友一起玩的时候，我感到很有趣。",
+        "image": "assets/books/0030/04.jpg",
+        "audio": "assets/books/0030/04.mp3"
+      },
+      {
+        "text": "当爸爸说他没有钱的时候，我感到很难过。",
+        "image": "assets/books/0030/05.jpg",
+        "audio": "assets/books/0030/05.mp3"
+      },
+      {
+        "text": "当妈妈拥抱我的时候，我感到亲情。",
+        "image": "assets/books/0030/06.jpg",
+        "audio": "assets/books/0030/06.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0302",
+    "title": "火",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "看看火的颜色，也看看它的力量。",
+    "keywords": [
+      "火",
+      "光",
+      "力量"
+    ],
+    "question": "故事里的火是什么样子的？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0302/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Deborah Namugosa, Beatrice Nabune, Alison Tukei, Rose Sabano",
+      "Illustrated by": "Rob Owen",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0302/01.jpg",
+    "pages": [
+      {
+        "text": "你看，火！",
+        "image": "assets/books/0302/02.jpg",
+        "audio": "assets/books/0302/02.mp3"
+      },
+      {
+        "text": "火烧。",
+        "image": "assets/books/0302/03.jpg",
+        "audio": "assets/books/0302/03.mp3"
+      },
+      {
+        "text": "火煮。",
+        "image": "assets/books/0302/04.jpg",
+        "audio": "assets/books/0302/04.mp3"
+      },
+      {
+        "text": "火可以用来取暖。",
+        "image": "assets/books/0302/05.jpg",
+        "audio": "assets/books/0302/05.mp3"
+      },
+      {
+        "text": "火可以带来光亮。",
+        "image": "assets/books/0302/06.jpg",
+        "audio": "assets/books/0302/06.mp3"
+      },
+      {
+        "text": "你看，火！",
+        "image": "assets/books/0302/07.jpg",
+        "audio": "assets/books/0302/07.mp3"
+      },
+      {
+        "text": "火很神奇。",
+        "image": "assets/books/0302/08.jpg",
+        "audio": "assets/books/0302/08.mp3"
+      },
+      {
+        "text": "也很有力量。",
+        "image": "assets/books/0302/09.jpg",
+        "audio": "assets/books/0302/09.mp3"
+      }
+    ]
+  },
+  {
     "id": "0156",
     "title": "很饿的鳄鱼",
     "tag": "动物朋友",
@@ -77,6 +273,10 @@
     ],
     "question": "鳄鱼肚子饿的时候，会做什么呢？",
     "source": "https://www.storybookscanada.ca/stories/zh/0156/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
     "credits": {
@@ -115,6 +315,538 @@
     ]
   },
   {
+    "id": "0002",
+    "title": "看看农场里的动物",
+    "tag": "动物朋友",
+    "color": "sage",
+    "intro": "农场里，谁在叫，谁在忙？",
+    "keywords": [
+      "动物",
+      "农场",
+      "叫"
+    ],
+    "question": "你最想模仿哪种动物的声音？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0002/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Jenny Katz",
+      "Illustrated by": "Sandy Campbell",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0002/01.jpg",
+    "pages": [
+      {
+        "text": "看看农场里的动物。",
+        "image": "assets/books/0002/02.jpg",
+        "audio": "assets/books/0002/02.mp3"
+      },
+      {
+        "text": "母牛“哞哞”叫。",
+        "image": "assets/books/0002/03.jpg",
+        "audio": "assets/books/0002/03.mp3"
+      },
+      {
+        "text": "山羊“咩咩”叫。",
+        "image": "assets/books/0002/04.jpg",
+        "audio": "assets/books/0002/04.mp3"
+      },
+      {
+        "text": "老马“嘶嘶”叫。",
+        "image": "assets/books/0002/05.jpg",
+        "audio": "assets/books/0002/05.mp3"
+      },
+      {
+        "text": "小猪“哼哼”叫。",
+        "image": "assets/books/0002/06.jpg",
+        "audio": "assets/books/0002/06.mp3"
+      },
+      {
+        "text": "母鸡“咯咯”叫。",
+        "image": "assets/books/0002/07.jpg",
+        "audio": "assets/books/0002/07.mp3"
+      },
+      {
+        "text": "小狗“汪汪”叫。",
+        "image": "assets/books/0002/08.jpg",
+        "audio": "assets/books/0002/08.mp3"
+      },
+      {
+        "text": "农夫就说“嘘嘘”。",
+        "image": "assets/books/0002/09.jpg",
+        "audio": "assets/books/0002/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0003",
+    "title": "校服",
+    "tag": "生活发现",
+    "color": "lavender",
+    "intro": "长一点，短一点，哪件刚刚好？",
+    "keywords": [
+      "长",
+      "短",
+      "衣服"
+    ],
+    "question": "你能找一件刚刚合身的衣服吗？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0003/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Mlungisi Dlamini, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0003/01.jpg",
+    "pages": [
+      {
+        "text": "这条裙子太长了。",
+        "image": "assets/books/0003/02.jpg",
+        "audio": "assets/books/0003/02.mp3"
+      },
+      {
+        "text": "这件毛衣太大了。",
+        "image": "assets/books/0003/03.jpg",
+        "audio": "assets/books/0003/03.mp3"
+      },
+      {
+        "text": "这个书包太大了。",
+        "image": "assets/books/0003/04.jpg",
+        "audio": "assets/books/0003/04.mp3"
+      },
+      {
+        "text": "这条皮带太……",
+        "image": "assets/books/0003/05.jpg",
+        "audio": "assets/books/0003/05.mp3"
+      },
+      {
+        "text": "这顶帽子太小了。",
+        "image": "assets/books/0003/06.jpg",
+        "audio": "assets/books/0003/06.mp3"
+      },
+      {
+        "text": "这双袜子太短了。",
+        "image": "assets/books/0003/07.jpg",
+        "audio": "assets/books/0003/07.mp3"
+      },
+      {
+        "text": "可是这双鞋子是新的。",
+        "image": "assets/books/0003/08.jpg",
+        "audio": "assets/books/0003/08.mp3"
+      },
+      {
+        "text": "……刚刚合身。",
+        "image": "assets/books/0003/09.jpg",
+        "audio": "assets/books/0003/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0120",
+    "title": "头发",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "每个人的头发，都有自己的样子。",
+    "keywords": [
+      "头发",
+      "长",
+      "短"
+    ],
+    "question": "你的头发和故事里的谁有点像？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0120/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Bronwen Heath, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0120/01.jpg",
+    "pages": [
+      {
+        "text": "图丽有一头短发。",
+        "image": "assets/books/0120/02.jpg",
+        "audio": "assets/books/0120/02.mp3"
+      },
+      {
+        "text": "安娜有一头长发。",
+        "image": "assets/books/0120/03.jpg",
+        "audio": "assets/books/0120/03.mp3"
+      },
+      {
+        "text": "凯茜的头发最长。",
+        "image": "assets/books/0120/04.jpg",
+        "audio": "assets/books/0120/04.mp3"
+      },
+      {
+        "text": "萨玛把她的头发编成辫子。",
+        "image": "assets/books/0120/05.jpg",
+        "audio": "assets/books/0120/05.mp3"
+      },
+      {
+        "text": "巴巴留着胡子。",
+        "image": "assets/books/0120/06.jpg",
+        "audio": "assets/books/0120/06.mp3"
+      },
+      {
+        "text": "萨内蕾梳了头发。",
+        "image": "assets/books/0120/07.jpg",
+        "audio": "assets/books/0120/07.mp3"
+      },
+      {
+        "text": "塔波剪了头发。",
+        "image": "assets/books/0120/08.jpg",
+        "audio": "assets/books/0120/08.mp3"
+      },
+      {
+        "text": "腾巴剃光了头发。",
+        "image": "assets/books/0120/09.jpg",
+        "audio": "assets/books/0120/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0271",
+    "title": "两个",
+    "tag": "家人与我",
+    "color": "lavender",
+    "intro": "两只手、两只脚，身体真奇妙。",
+    "keywords": [
+      "两",
+      "手",
+      "抱"
+    ],
+    "question": "两只小手还能做什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0271/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Carole Bloch",
+      "Illustrated by": "Richard MacIntosh",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0271/01.jpg",
+    "pages": [
+      {
+        "text": "两只手用来拿东西。",
+        "image": "assets/books/0271/02.jpg",
+        "audio": "assets/books/0271/02.mp3"
+      },
+      {
+        "text": "两只脚用来踢踢球。",
+        "image": "assets/books/0271/03.jpg",
+        "audio": "assets/books/0271/03.mp3"
+      },
+      {
+        "text": "两只眼睛用来看看。",
+        "image": "assets/books/0271/04.jpg",
+        "audio": "assets/books/0271/04.mp3"
+      },
+      {
+        "text": "两只小耳朵用来听听。",
+        "image": "assets/books/0271/05.jpg",
+        "audio": "assets/books/0271/05.mp3"
+      },
+      {
+        "text": "还有两只小手用来抱抱！",
+        "image": "assets/books/0271/06.jpg",
+        "audio": "assets/books/0271/06.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0231",
+    "title": "气象书",
+    "tag": "生活发现",
+    "color": "sage",
+    "intro": "晴天、雨天，看看今天的天空。",
+    "keywords": [
+      "天",
+      "雨",
+      "风"
+    ],
+    "question": "今天是什么天气？你从哪里看出来的？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0231/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Sandra McDougall, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0231/01.jpg",
+    "pages": [
+      {
+        "text": "天气很干燥。",
+        "image": "assets/books/0231/02.jpg",
+        "audio": "assets/books/0231/02.mp3"
+      },
+      {
+        "text": "太阳很热。",
+        "image": "assets/books/0231/03.jpg",
+        "audio": "assets/books/0231/03.mp3"
+      },
+      {
+        "text": "吹大风。",
+        "image": "assets/books/0231/04.jpg",
+        "audio": "assets/books/0231/04.mp3"
+      },
+      {
+        "text": "天气多云。",
+        "image": "assets/books/0231/05.jpg",
+        "audio": "assets/books/0231/05.mp3"
+      },
+      {
+        "text": "天气冷。",
+        "image": "assets/books/0231/06.jpg",
+        "audio": "assets/books/0231/06.mp3"
+      },
+      {
+        "text": "下雨。",
+        "image": "assets/books/0231/07.jpg",
+        "audio": "assets/books/0231/07.mp3"
+      },
+      {
+        "text": "打雷。",
+        "image": "assets/books/0231/08.jpg",
+        "audio": "assets/books/0231/08.mp3"
+      },
+      {
+        "text": "我看到彩虹。",
+        "image": "assets/books/0231/09.jpg",
+        "audio": "assets/books/0231/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0129",
+    "title": "贪玩的弟弟",
+    "tag": "家人与我",
+    "color": "peach",
+    "intro": "我在做家务，弟弟又在做什么？",
+    "keywords": [
+      "弟弟",
+      "玩",
+      "我"
+    ],
+    "question": "家里的事情，你想和谁一起做？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0129/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Mlungisi Dlamini, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0129/01.jpg",
+    "pages": [
+      {
+        "text": "我起床生火。",
+        "image": "assets/books/0129/02.jpg",
+        "audio": "assets/books/0129/02.mp3"
+      },
+      {
+        "text": "我烧开水。",
+        "image": "assets/books/0129/03.jpg",
+        "audio": "assets/books/0129/03.mp3"
+      },
+      {
+        "text": "我劈柴。",
+        "image": "assets/books/0129/04.jpg",
+        "audio": "assets/books/0129/04.mp3"
+      },
+      {
+        "text": "我搅搅锅子。",
+        "image": "assets/books/0129/05.jpg",
+        "audio": "assets/books/0129/05.mp3"
+      },
+      {
+        "text": "我打扫地板。",
+        "image": "assets/books/0129/06.jpg",
+        "audio": "assets/books/0129/06.mp3"
+      },
+      {
+        "text": "我清洗碗盘。",
+        "image": "assets/books/0129/07.jpg",
+        "audio": "assets/books/0129/07.mp3"
+      },
+      {
+        "text": "我怎么这么辛苦……而弟弟就只知道贪玩呢？",
+        "image": "assets/books/0129/08.jpg",
+        "audio": "assets/books/0129/08.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0067",
+    "title": "做菜",
+    "tag": "生活发现",
+    "color": "sage",
+    "intro": "洗一洗，切一切，厨房里真忙。",
+    "keywords": [
+      "土豆",
+      "菜",
+      "洋葱"
+    ],
+    "question": "你看到了哪些做菜的步骤？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0067/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Kathy Arbuckle, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0067/01.jpg",
+    "pages": [
+      {
+        "text": "我把土豆削皮。",
+        "image": "assets/books/0067/02.jpg",
+        "audio": "assets/books/0067/02.mp3"
+      },
+      {
+        "text": "我把卷心菜切好。",
+        "image": "assets/books/0067/03.jpg",
+        "audio": "assets/books/0067/03.mp3"
+      },
+      {
+        "text": "我把胡萝卜磨碎。",
+        "image": "assets/books/0067/04.jpg",
+        "audio": "assets/books/0067/04.mp3"
+      },
+      {
+        "text": "我把豆子洗干净。",
+        "image": "assets/books/0067/05.jpg",
+        "audio": "assets/books/0067/05.mp3"
+      },
+      {
+        "text": "我把冬南瓜切开。",
+        "image": "assets/books/0067/06.jpg",
+        "audio": "assets/books/0067/06.mp3"
+      },
+      {
+        "text": "我把菠菜剁碎。",
+        "image": "assets/books/0067/07.jpg",
+        "audio": "assets/books/0067/07.mp3"
+      },
+      {
+        "text": "妈妈把洋葱切好。",
+        "image": "assets/books/0067/08.jpg",
+        "audio": "assets/books/0067/08.mp3"
+      },
+      {
+        "text": "切洋葱的时候我总会流眼泪。",
+        "image": "assets/books/0067/09.jpg",
+        "audio": "assets/books/0067/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0008",
+    "title": "你在做什么？",
+    "tag": "生活发现",
+    "color": "lavender",
+    "intro": "唱歌、跳舞，大家都在做什么？",
+    "keywords": [
+      "我",
+      "做",
+      "唱歌"
+    ],
+    "question": "现在的你在做什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0008/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Nina Orange",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0008/01.jpg",
+    "pages": [
+      {
+        "text": "我在唱歌。",
+        "image": "assets/books/0008/02.jpg",
+        "audio": "assets/books/0008/02.mp3"
+      },
+      {
+        "text": "她在挥手。",
+        "image": "assets/books/0008/03.jpg",
+        "audio": "assets/books/0008/03.mp3"
+      },
+      {
+        "text": "我在拍手。",
+        "image": "assets/books/0008/04.jpg",
+        "audio": "assets/books/0008/04.mp3"
+      },
+      {
+        "text": "她在伸手。",
+        "image": "assets/books/0008/05.jpg",
+        "audio": "assets/books/0008/05.mp3"
+      },
+      {
+        "text": "他在叫喊。",
+        "image": "assets/books/0008/06.jpg",
+        "audio": "assets/books/0008/06.mp3"
+      },
+      {
+        "text": "我在回答。",
+        "image": "assets/books/0008/07.jpg",
+        "audio": "assets/books/0008/07.mp3"
+      },
+      {
+        "text": "她在聆听。",
+        "image": "assets/books/0008/08.jpg",
+        "audio": "assets/books/0008/08.mp3"
+      },
+      {
+        "text": "你在做什么？",
+        "image": "assets/books/0008/09.jpg",
+        "audio": "assets/books/0008/09.mp3"
+      }
+    ]
+  },
+  {
     "id": "0009",
     "title": "我的小猫猫在哪儿？",
     "tag": "找一找",
@@ -127,6 +859,10 @@
     ],
     "question": "你能用“里面”或者“后面”说一句话吗？",
     "source": "https://www.storybookscanada.ca/stories/zh/0009/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
     "license": "CC BY-NC 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
     "credits": {
@@ -176,6 +912,2350 @@
         "text": "原来在这里！",
         "image": "assets/books/0009/09.jpg",
         "audio": "assets/books/0009/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0112",
+    "title": "我的身体",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "跑一跑，跳一跳，认识我的身体。",
+    "keywords": [
+      "我",
+      "身体",
+      "跑"
+    ],
+    "question": "你的身体还能做哪些动作？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0112/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 1
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+      "Illustrated by": "Mlungisi Dlamini, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0112/01.jpg",
+    "pages": [
+      {
+        "text": "让我能跑步。",
+        "image": "assets/books/0112/02.jpg",
+        "audio": "assets/books/0112/02.mp3"
+      },
+      {
+        "text": "让我能跳跃。",
+        "image": "assets/books/0112/03.jpg",
+        "audio": "assets/books/0112/03.mp3"
+      },
+      {
+        "text": "让我能跳舞。",
+        "image": "assets/books/0112/04.jpg",
+        "audio": "assets/books/0112/04.mp3"
+      },
+      {
+        "text": "让我能游泳。",
+        "image": "assets/books/0112/05.jpg",
+        "audio": "assets/books/0112/05.mp3"
+      },
+      {
+        "text": "让我能跳绳。",
+        "image": "assets/books/0112/06.jpg",
+        "audio": "assets/books/0112/06.mp3"
+      },
+      {
+        "text": "让我能踢球。",
+        "image": "assets/books/0112/07.jpg",
+        "audio": "assets/books/0112/07.mp3"
+      },
+      {
+        "text": "让我能逃走。",
+        "image": "assets/books/0112/08.jpg",
+        "audio": "assets/books/0112/08.mp3"
+      },
+      {
+        "text": "可是总不能让我飞！",
+        "image": "assets/books/0112/09.jpg",
+        "audio": "assets/books/0112/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0111",
+    "title": "为什么河马没有毛发",
+    "tag": "动物朋友",
+    "color": "sage",
+    "intro": "河边的兔子和河马，发生了什么？",
+    "keywords": [
+      "兔子",
+      "河马",
+      "河"
+    ],
+    "question": "兔子和河马之间发生了什么事？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0111/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Basilio Gimo, David Ker",
+      "Illustrated by": "Carol Liddiment",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0111/01.jpg",
+    "pages": [
+      {
+        "text": "有一天，兔子在河边散步。",
+        "image": "assets/books/0111/02.jpg",
+        "audio": "assets/books/0111/02.mp3"
+      },
+      {
+        "text": "河马也在那儿，一边闲逛，一边找些美味的野草来吃。",
+        "image": "assets/books/0111/03.jpg",
+        "audio": "assets/books/0111/03.mp3"
+      },
+      {
+        "text": "河马没有看见兔子，她不小心踩到了兔子的脚。兔子尖叫了一声，朝着河马大喊：“该死的河马！没看到你踩到我的脚了吗？”",
+        "image": "assets/books/0111/04.jpg",
+        "audio": "assets/books/0111/04.mp3"
+      },
+      {
+        "text": "河马赶紧给兔子道歉：“真不好意思，我的朋友！我没看见你！请原谅我！”兔子哪里会听河马的解释，他气极了，朝着河马大吼：“你肯定是故意的！总有一天你会受到惩罚！”",
+        "image": "assets/books/0111/05.jpg",
+        "audio": "assets/books/0111/05.mp3"
+      },
+      {
+        "text": "兔子找到了火，他对火说：“趁河马从水里出来吃草的时候，朝她放一把火。她竟敢踩我的脚。”火回答说：“没问题，我的朋友！我这就按你说的做。”",
+        "image": "assets/books/0111/06.jpg",
+        "audio": "assets/books/0111/06.mp3"
+      },
+      {
+        "text": "过了一会儿，河马正在离河岸很远的地方吃草。呼的一声，火突然烧起来了，烧到了河马的身上。",
+        "image": "assets/books/0111/07.jpg",
+        "audio": "assets/books/0111/07.mp3"
+      },
+      {
+        "text": "河马尖叫着，赶紧跑向河边，但是她的毛发已经全部烧毁了。河马伤心地说：“我的毛都被火烧掉了！你烧了我的毛！它们全都不见了！我美丽的毛！”",
+        "image": "assets/books/0111/08.jpg",
+        "audio": "assets/books/0111/08.mp3"
+      },
+      {
+        "text": "兔子终于报了仇，他高兴坏了；直到现在，河马也不敢离河岸太远，因为她害怕又要被火烧。",
+        "image": "assets/books/0111/09.jpg",
+        "audio": "assets/books/0111/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0337",
+    "title": "蜡做的孩子",
+    "tag": "成长故事",
+    "color": "lavender",
+    "intro": "蜡做的孩子，有一个特别的秘密。",
+    "keywords": [
+      "孩子",
+      "太阳",
+      "家人"
+    ],
+    "question": "蜡做的孩子为什么要躲开太阳？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0337/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Southern African Folktale",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0337/01.jpg",
+    "pages": [
+      {
+        "text": "很久很久以前，有一家人快乐地生活在一起。",
+        "image": "assets/books/0337/02.jpg",
+        "audio": "assets/books/0337/02.mp3"
+      },
+      {
+        "text": "孩子们从来不打架，还帮助爸爸妈妈做家务，干农活。",
+        "image": "assets/books/0337/03.jpg",
+        "audio": "assets/books/0337/03.mp3"
+      },
+      {
+        "text": "但是他们不能靠近火焰。",
+        "image": "assets/books/0337/04.jpg",
+        "audio": "assets/books/0337/04.mp3"
+      },
+      {
+        "text": "没办法，他们只能在晚上工作，因为他们都是用蜡做的！",
+        "image": "assets/books/0337/05.jpg",
+        "audio": "assets/books/0337/05.mp3"
+      },
+      {
+        "text": "但是其中一个男孩非常想出门，他想走到太阳底下看看。",
+        "image": "assets/books/0337/06.jpg",
+        "audio": "assets/books/0337/06.mp3"
+      },
+      {
+        "text": "有一天，这种渴望太强烈了。虽然他的兄弟们警告过他……",
+        "image": "assets/books/0337/07.jpg",
+        "audio": "assets/books/0337/07.mp3"
+      },
+      {
+        "text": "但是太晚了！他在太阳底下融化了。",
+        "image": "assets/books/0337/08.jpg",
+        "audio": "assets/books/0337/08.mp3"
+      },
+      {
+        "text": "其他蜡做的孩子看到他们的兄弟融化消失了，非常伤心。",
+        "image": "assets/books/0337/09.jpg",
+        "audio": "assets/books/0337/09.mp3"
+      },
+      {
+        "text": "但是他们想出了一个好主意：他们把熔化的蜡块捏成了一只鸟。",
+        "image": "assets/books/0337/10.jpg",
+        "audio": "assets/books/0337/10.mp3"
+      },
+      {
+        "text": "他们把变成鸟的兄弟带到了一座高山上。",
+        "image": "assets/books/0337/11.jpg",
+        "audio": "assets/books/0337/11.mp3"
+      },
+      {
+        "text": "太阳升起来了，他迎着晨光唱着歌，飞走了。",
+        "image": "assets/books/0337/12.jpg",
+        "audio": "assets/books/0337/12.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0210",
+    "title": "丁吉和奶牛",
+    "tag": "家人与我",
+    "color": "peach",
+    "intro": "跟着丁吉，读一段家人和牛群的故事。",
+    "keywords": [
+      "奶牛",
+      "奶奶",
+      "丁吉"
+    ],
+    "question": "你觉得家人怎样互相照顾？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0210/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Ingrid Schechter",
+      "Illustrated by": "Ingrid Schechter",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0210/01.jpg",
+    "pages": [
+      {
+        "text": "丁吉和奶奶住在一起。",
+        "image": "assets/books/0210/02.jpg",
+        "audio": "assets/books/0210/02.mp3"
+      },
+      {
+        "text": "丁吉以前常常和奶奶一起照看奶牛。",
+        "image": "assets/books/0210/03.jpg",
+        "audio": "assets/books/0210/03.mp3"
+      },
+      {
+        "text": "有一天，村里来了士兵。",
+        "image": "assets/books/0210/04.jpg",
+        "audio": "assets/books/0210/04.mp3"
+      },
+      {
+        "text": "他们把奶牛带走了。",
+        "image": "assets/books/0210/05.jpg",
+        "audio": "assets/books/0210/05.mp3"
+      },
+      {
+        "text": "丁吉和奶奶逃离了村庄，躲了起来。",
+        "image": "assets/books/0210/06.jpg",
+        "audio": "assets/books/0210/06.mp3"
+      },
+      {
+        "text": "他们白天躲在树丛里。",
+        "image": "assets/books/0210/07.jpg",
+        "audio": "assets/books/0210/07.mp3"
+      },
+      {
+        "text": "士兵们又回来了。",
+        "image": "assets/books/0210/08.jpg",
+        "audio": "assets/books/0210/08.mp3"
+      },
+      {
+        "text": "奶奶把丁吉藏在树叶底下。",
+        "image": "assets/books/0210/09.jpg",
+        "audio": "assets/books/0210/09.mp3"
+      },
+      {
+        "text": "有个士兵踩到了丁吉藏身的树叶，但是丁吉没有吱声。",
+        "image": "assets/books/0210/10.jpg",
+        "audio": "assets/books/0210/10.mp3"
+      },
+      {
+        "text": "丁吉和奶奶直到安全了才走出来。",
+        "image": "assets/books/0210/11.jpg",
+        "audio": "assets/books/0210/11.mp3"
+      },
+      {
+        "text": "他们悄悄地爬回家。",
+        "image": "assets/books/0210/12.jpg",
+        "audio": "assets/books/0210/12.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0296",
+    "title": "卖香蕉的汤姆",
+    "tag": "生活发现",
+    "color": "sage",
+    "intro": "汤姆带着一篮香蕉，来到市场。",
+    "keywords": [
+      "香蕉",
+      "篮子",
+      "卖"
+    ],
+    "question": "汤姆是怎样把香蕉卖出去的？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0296/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Humphreys Odunga",
+      "Illustrated by": "Zablon Alex Nguku",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0296/01.jpg",
+    "pages": [
+      {
+        "text": "汤姆顶着一篮熟透的香蕉。",
+        "image": "assets/books/0296/02.jpg",
+        "audio": "assets/books/0296/02.mp3"
+      },
+      {
+        "text": "汤姆去集市上卖香蕉。",
+        "image": "assets/books/0296/03.jpg",
+        "audio": "assets/books/0296/03.mp3"
+      },
+      {
+        "text": "很多人去集市上买水果。",
+        "image": "assets/books/0296/04.jpg",
+        "audio": "assets/books/0296/04.mp3"
+      },
+      {
+        "text": "但是没有人去汤姆那儿，因为他们更喜欢去女人们那儿买。",
+        "image": "assets/books/0296/05.jpg",
+        "audio": "assets/books/0296/05.mp3"
+      },
+      {
+        "text": "人们说：“在我们这儿，只有女人会去卖水果”。他们问：“什么男人会去卖水果啊？”",
+        "image": "assets/books/0296/06.jpg",
+        "audio": "assets/books/0296/06.mp3"
+      },
+      {
+        "text": "但是汤姆没有放弃。他在集市上叫卖：“快来买我的香蕉！又大又甜的香蕉！”",
+        "image": "assets/books/0296/07.jpg",
+        "audio": "assets/books/0296/07.mp3"
+      },
+      {
+        "text": "有一个妇女从篮子里抓了一把香蕉，仔细地查看。",
+        "image": "assets/books/0296/08.jpg",
+        "audio": "assets/books/0296/08.mp3"
+      },
+      {
+        "text": "然后她买了那把香蕉。",
+        "image": "assets/books/0296/09.jpg",
+        "audio": "assets/books/0296/09.mp3"
+      },
+      {
+        "text": "越来越多的人到汤姆的摊位前。他们买了汤姆的香蕉，吃得津津有味。",
+        "image": "assets/books/0296/10.jpg",
+        "audio": "assets/books/0296/10.mp3"
+      },
+      {
+        "text": "不一会儿，汤姆的篮子就空了，他数了数自己卖香蕉赚到的钱。",
+        "image": "assets/books/0296/11.jpg",
+        "audio": "assets/books/0296/11.mp3"
+      },
+      {
+        "text": "汤姆用这些钱买了肥皂、糖和面包。他把这些东西放在他的篮子里。",
+        "image": "assets/books/0296/12.jpg",
+        "audio": "assets/books/0296/12.mp3"
+      },
+      {
+        "text": "汤姆把篮子稳稳当当地顶在头上，回家了。",
+        "image": "assets/books/0296/13.jpg",
+        "audio": "assets/books/0296/13.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0027",
+    "title": "决定",
+    "tag": "成长故事",
+    "color": "lavender",
+    "intro": "村里的难题，大家一起想办法。",
+    "keywords": [
+      "村庄",
+      "水",
+      "一起"
+    ],
+    "question": "村里的人决定怎样一起解决问题？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0027/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Ursula Nafula",
+      "Illustrated by": "Vusi Malindi",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0027/01.jpg",
+    "pages": [
+      {
+        "text": "我的村庄面临很多问题。村里只有一个水龙头，我们每天都要排很长的队伍去接水。",
+        "image": "assets/books/0027/02.jpg",
+        "audio": "assets/books/0027/02.mp3"
+      },
+      {
+        "text": "我们等着别人接济食物给我们吃。",
+        "image": "assets/books/0027/03.jpg",
+        "audio": "assets/books/0027/03.mp3"
+      },
+      {
+        "text": "每天晚上，我们因为害怕有小偷，所以都早早地锁上了门。",
+        "image": "assets/books/0027/04.jpg",
+        "audio": "assets/books/0027/04.mp3"
+      },
+      {
+        "text": "中途辍学的孩子也不少。",
+        "image": "assets/books/0027/05.jpg",
+        "audio": "assets/books/0027/05.mp3"
+      },
+      {
+        "text": "年轻的女孩被迫到别的村庄去做女佣。",
+        "image": "assets/books/0027/06.jpg",
+        "audio": "assets/books/0027/06.mp3"
+      },
+      {
+        "text": "年轻的男孩不是成天在村子里游荡，就是到别人的农场里打工。",
+        "image": "assets/books/0027/07.jpg",
+        "audio": "assets/books/0027/07.mp3"
+      },
+      {
+        "text": "起风的时候，废纸到处乱飞，挂在树梢和篱笆上。",
+        "image": "assets/books/0027/08.jpg",
+        "audio": "assets/books/0027/08.mp3"
+      },
+      {
+        "text": "碎玻璃扔得到处都是，很多人都被碎玻璃划伤了。",
+        "image": "assets/books/0027/09.jpg",
+        "audio": "assets/books/0027/09.mp3"
+      },
+      {
+        "text": "终于有一天，水龙头干涸了，人们接不到水了。",
+        "image": "assets/books/0027/10.jpg",
+        "audio": "assets/books/0027/10.mp3"
+      },
+      {
+        "text": "我的爸爸一家一家地劝说，召集村里的居民们开会。",
+        "image": "assets/books/0027/11.jpg",
+        "audio": "assets/books/0027/11.mp3"
+      },
+      {
+        "text": "人们聚到一棵大树下，准备开会。",
+        "image": "assets/books/0027/12.jpg",
+        "audio": "assets/books/0027/12.mp3"
+      },
+      {
+        "text": "我爸爸站起来，说：“我们必须团结起来，一起解决我们的问题。”",
+        "image": "assets/books/0027/13.jpg",
+        "audio": "assets/books/0027/13.mp3"
+      },
+      {
+        "text": "八岁的珠玛坐在树干上，大声说：“我可以帮忙清理村庄。”",
+        "image": "assets/books/0027/14.jpg",
+        "audio": "assets/books/0027/14.mp3"
+      },
+      {
+        "text": "一个女人站起来说：“我可以找一些妇女，一起种庄稼。”",
+        "image": "assets/books/0027/15.jpg",
+        "audio": "assets/books/0027/15.mp3"
+      },
+      {
+        "text": "又有一个男人站起来说：“男人们可以帮着打井。”",
+        "image": "assets/books/0027/16.jpg",
+        "audio": "assets/books/0027/16.mp3"
+      },
+      {
+        "text": "我们异口同声地说：“我们必须改变我们的生活。”从那天开始，大伙儿都齐心协力，解决问题。",
+        "image": "assets/books/0027/17.jpg",
+        "audio": "assets/books/0027/17.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0342",
+    "title": "惩罚",
+    "tag": "家人与我",
+    "color": "peach",
+    "intro": "水果真好吃，拉希姆却吃得太多了。",
+    "keywords": [
+      "水果",
+      "妈妈",
+      "肚子"
+    ],
+    "question": "拉希姆后来明白了什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0342/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Adelheid Marie Bwire",
+      "Illustrated by": "Melany Pietersen",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0342/01.jpg",
+    "pages": [
+      {
+        "text": "有一天，妈妈买了很多水果。",
+        "image": "assets/books/0342/02.jpg",
+        "audio": "assets/books/0342/02.mp3"
+      },
+      {
+        "text": "我们都问她：“什么时候可以吃水果？”妈妈说：“等今天晚上再吃。”",
+        "image": "assets/books/0342/03.jpg",
+        "audio": "assets/books/0342/03.mp3"
+      },
+      {
+        "text": "我哥哥拉希姆很贪吃，所有的水果都想尝尝。结果他吃了很多。",
+        "image": "assets/books/0342/04.jpg",
+        "audio": "assets/books/0342/04.mp3"
+      },
+      {
+        "text": "弟弟叫着说：“看看拉希姆做了什么！”。我跟着说：“拉希姆很调皮很自私。”",
+        "image": "assets/books/0342/05.jpg",
+        "audio": "assets/books/0342/05.mp3"
+      },
+      {
+        "text": "妈妈对拉希姆很生气。",
+        "image": "assets/books/0342/06.jpg",
+        "audio": "assets/books/0342/06.mp3"
+      },
+      {
+        "text": "我们也对拉希姆很生气。可是拉希姆并不感到惭愧。",
+        "image": "assets/books/0342/07.jpg",
+        "audio": "assets/books/0342/07.mp3"
+      },
+      {
+        "text": "小弟弟问：“拉希姆不是该罚了吗？”",
+        "image": "assets/books/0342/08.jpg",
+        "audio": "assets/books/0342/08.mp3"
+      },
+      {
+        "text": "妈妈警告说：“拉希姆，你很快就会后悔的。”",
+        "image": "assets/books/0342/09.jpg",
+        "audio": "assets/books/0342/09.mp3"
+      },
+      {
+        "text": "不久，拉希姆果然开始感到恶心起来。",
+        "image": "assets/books/0342/10.jpg",
+        "audio": "assets/books/0342/10.mp3"
+      },
+      {
+        "text": "拉希姆小声说：“我肚子很疼。”",
+        "image": "assets/books/0342/11.jpg",
+        "audio": "assets/books/0342/11.mp3"
+      },
+      {
+        "text": "妈妈早料到会发生这样的事情。拉希姆受到了水果的惩罚！",
+        "image": "assets/books/0342/12.jpg",
+        "audio": "assets/books/0342/12.mp3"
+      },
+      {
+        "text": "后来，拉希姆跟我们道歉说：“以后我再也不会贪吃了。”而我们这次都相信他！",
+        "image": "assets/books/0342/13.jpg",
+        "audio": "assets/books/0342/13.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0089",
+    "title": "和植物聊天的卡莱",
+    "tag": "生活发现",
+    "color": "sage",
+    "intro": "卡莱和植物说说话，也等着橙子长大。",
+    "keywords": [
+      "植物",
+      "树",
+      "橙子"
+    ],
+    "question": "如果和一棵树聊天，你想说什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0089/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Ursula Nafula",
+      "Illustrated by": "Jesse Pietersen",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0089/01.jpg",
+    "pages": [
+      {
+        "text": "这是卡莱。她今年七岁。在肯尼亚当地方言里，这个名字是“美好事物”的意思。",
+        "image": "assets/books/0089/02.jpg",
+        "audio": "assets/books/0089/02.mp3"
+      },
+      {
+        "text": "卡莱早上醒来，跟橙子树说：“橙子树啊橙子树，快点长大吧，给我们结好多又大又甜的橙子！”",
+        "image": "assets/books/0089/03.jpg",
+        "audio": "assets/books/0089/03.mp3"
+      },
+      {
+        "text": "在卡莱走路去上学的路上，她对草地说：“草地啊草地，你一定要长得绿油油的，别干枯了。”",
+        "image": "assets/books/0089/04.jpg",
+        "audio": "assets/books/0089/04.mp3"
+      },
+      {
+        "text": "卡莱路过了野花，她对野花说：“野花啊野花，你们尽情地开放吧，这样我可以把你们夹在我的头发里。”",
+        "image": "assets/books/0089/05.jpg",
+        "audio": "assets/books/0089/05.mp3"
+      },
+      {
+        "text": "在学校，卡莱对操场中间的树说：“小树啊小树，快点长出枝叶吧，这样我们就可以在树荫里读书了。”",
+        "image": "assets/books/0089/06.jpg",
+        "audio": "assets/books/0089/06.mp3"
+      },
+      {
+        "text": "卡莱还对学校附近的灌木丛说：“灌木啊灌木，你们一定要长得壮壮的，这样坏人就进不了学校了。”",
+        "image": "assets/books/0089/07.jpg",
+        "audio": "assets/books/0089/07.mp3"
+      },
+      {
+        "text": "当卡莱从学校回到家里，她又去看了看橙子树，问它：“你结橙子了吗？”",
+        "image": "assets/books/0089/08.jpg",
+        "audio": "assets/books/0089/08.mp3"
+      },
+      {
+        "text": "卡莱叹了一口气：“橙子还是绿色的，我明天再来看看你吧！或许到了明天你就会给我一只又大又甜的橙子了。”",
+        "image": "assets/books/0089/09.jpg",
+        "audio": "assets/books/0089/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0234",
+    "title": "球星安迪斯瓦",
+    "tag": "成长故事",
+    "color": "lavender",
+    "intro": "安迪斯瓦喜欢足球，她想试一试。",
+    "keywords": [
+      "足球",
+      "学校",
+      "踢"
+    ],
+    "question": "你有什么喜欢的事情，也想勇敢试试？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0234/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY-NC 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "credits": {
+      "Written by": "Eden Daniels",
+      "Illustrated by": "Eden Daniels",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0234/01.jpg",
+    "pages": [
+      {
+        "text": "安迪斯瓦喜欢看男孩子们踢足球，她多么希望自己也能加入他们啊！她跑去问教练，自己能不能跟男孩们一起训练。",
+        "image": "assets/books/0234/02.jpg",
+        "audio": "assets/books/0234/02.mp3"
+      },
+      {
+        "text": "教练两手叉着腰，摇了摇头说：“在这个学校，只有男孩们能踢足球。”",
+        "image": "assets/books/0234/03.jpg",
+        "audio": "assets/books/0234/03.mp3"
+      },
+      {
+        "text": "男孩们让安迪斯瓦去玩投球。他们觉得，女孩们应该玩儿投球，足球是男孩们的运动。安迪斯瓦很沮丧。",
+        "image": "assets/books/0234/04.jpg",
+        "audio": "assets/books/0234/04.mp3"
+      },
+      {
+        "text": "第二天，学校里要举行一场盛大的足球比赛。教练有点儿担心，因为队里最棒的球员生病了，没法上场。",
+        "image": "assets/books/0234/05.jpg",
+        "audio": "assets/books/0234/05.mp3"
+      },
+      {
+        "text": "安迪斯瓦跑到教练那里，求他让自己替补上场。教练犹豫不决，最后他决定让安迪斯瓦试一试。",
+        "image": "assets/books/0234/06.jpg",
+        "audio": "assets/books/0234/06.mp3"
+      },
+      {
+        "text": "比赛很激烈，半场结束后，两队都没有进球。",
+        "image": "assets/books/0234/07.jpg",
+        "audio": "assets/books/0234/07.mp3"
+      },
+      {
+        "text": "比赛的下半场，一个男孩把球传给安迪斯瓦，安迪斯瓦飞快地朝球门跑去，用力一踢，球进了！",
+        "image": "assets/books/0234/08.jpg",
+        "audio": "assets/books/0234/08.mp3"
+      },
+      {
+        "text": "人群沸腾了！从那天开始，女孩们也可以在学校踢足球了。",
+        "image": "assets/books/0234/09.jpg",
+        "audio": "assets/books/0234/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0001",
+    "title": "一个很高的人",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "他长得很高，身边的东西却有点小。",
+    "keywords": [
+      "高",
+      "长",
+      "门"
+    ],
+    "question": "如果你变得很高，想做什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0001/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Cornelius Gulere",
+      "Illustrated by": "Catherine Groenewald",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0001/01.jpg",
+    "pages": [
+      {
+        "text": "他的锄头太短了。",
+        "image": "assets/books/0001/02.jpg",
+        "audio": "assets/books/0001/02.mp3"
+      },
+      {
+        "text": "他的门口太低了。",
+        "image": "assets/books/0001/03.jpg",
+        "audio": "assets/books/0001/03.mp3"
+      },
+      {
+        "text": "他的床太短了。",
+        "image": "assets/books/0001/04.jpg",
+        "audio": "assets/books/0001/04.mp3"
+      },
+      {
+        "text": "他的自行车太短了。",
+        "image": "assets/books/0001/05.jpg",
+        "audio": "assets/books/0001/05.mp3"
+      },
+      {
+        "text": "这个人太高了！",
+        "image": "assets/books/0001/06.jpg",
+        "audio": "assets/books/0001/06.mp3"
+      },
+      {
+        "text": "他做了一个很长的锄柄。",
+        "image": "assets/books/0001/07.jpg",
+        "audio": "assets/books/0001/07.mp3"
+      },
+      {
+        "text": "他做了一个很高的门框。",
+        "image": "assets/books/0001/08.jpg",
+        "audio": "assets/books/0001/08.mp3"
+      },
+      {
+        "text": "他做了一张很长的床。",
+        "image": "assets/books/0001/09.jpg",
+        "audio": "assets/books/0001/09.mp3"
+      },
+      {
+        "text": "他买了一辆很高的自行车。",
+        "image": "assets/books/0001/10.jpg",
+        "audio": "assets/books/0001/10.mp3"
+      },
+      {
+        "text": "他坐在一把很高的椅子上。他用一把很长的叉子吃饭。",
+        "image": "assets/books/0001/11.jpg",
+        "audio": "assets/books/0001/11.mp3"
+      },
+      {
+        "text": "他离开他的房子住进一个很大的森林里。他在那里住了很多年。",
+        "image": "assets/books/0001/12.jpg",
+        "audio": "assets/books/0001/12.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0095",
+    "title": "赞玛很棒！",
+    "tag": "成长故事",
+    "color": "sage",
+    "intro": "赞玛认真做好小事，也喜欢开心地玩。",
+    "keywords": [
+      "起床",
+      "学校",
+      "玩"
+    ],
+    "question": "今天，你做了哪件让自己开心的小事？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0095/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Michael Oguttu",
+      "Illustrated by": "Vusi Malindi",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0095/01.jpg",
+    "pages": [
+      {
+        "text": "我弟弟睡过头了。我很早起床，因为我很棒！",
+        "image": "assets/books/0095/02.jpg",
+        "audio": "assets/books/0095/02.mp3"
+      },
+      {
+        "text": "是我让阳光透进来。",
+        "image": "assets/books/0095/03.jpg",
+        "audio": "assets/books/0095/03.mp3"
+      },
+      {
+        "text": "妈妈说：“你是我的晨星”。",
+        "image": "assets/books/0095/04.jpg",
+        "audio": "assets/books/0095/04.mp3"
+      },
+      {
+        "text": "我自己洗澡。我不需要帮忙。",
+        "image": "assets/books/0095/05.jpg",
+        "audio": "assets/books/0095/05.mp3"
+      },
+      {
+        "text": "冷冷的水和臭臭的蓝色肥皂对我来说不算大事。",
+        "image": "assets/books/0095/06.jpg",
+        "audio": "assets/books/0095/06.mp3"
+      },
+      {
+        "text": "妈妈提醒我：“别忘了刷牙。”我回答：“怎么可能，我不会忘记的！”",
+        "image": "assets/books/0095/07.jpg",
+        "audio": "assets/books/0095/07.mp3"
+      },
+      {
+        "text": "洗好了以后，我跟爷爷和姑妈打个招呼，向他们问好。",
+        "image": "assets/books/0095/08.jpg",
+        "audio": "assets/books/0095/08.mp3"
+      },
+      {
+        "text": "然后我自己穿好衣服。“妈，我已经长大了！”",
+        "image": "assets/books/0095/09.jpg",
+        "audio": "assets/books/0095/09.mp3"
+      },
+      {
+        "text": "我会自己扣好衣扣和鞋子。",
+        "image": "assets/books/0095/10.jpg",
+        "audio": "assets/books/0095/10.mp3"
+      },
+      {
+        "text": "在上学的路上我跟弟弟说学校的所有消息。",
+        "image": "assets/books/0095/11.jpg",
+        "audio": "assets/books/0095/11.mp3"
+      },
+      {
+        "text": "上课的时候我认真学习。",
+        "image": "assets/books/0095/12.jpg",
+        "audio": "assets/books/0095/12.mp3"
+      },
+      {
+        "text": "我每天做这几件好事。可是我最喜欢做的是玩玩玩！",
+        "image": "assets/books/0095/13.jpg",
+        "audio": "assets/books/0095/13.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0004",
+    "title": "山羊、野狗、和水牛",
+    "tag": "动物朋友",
+    "color": "lavender",
+    "intro": "三个动物坐出租车，后来怎么不一样了？",
+    "keywords": [
+      "山羊",
+      "野狗",
+      "水牛"
+    ],
+    "question": "为什么三个朋友看到汽车时反应不一样？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0004/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 2
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Fabian Wakholi",
+      "Illustrated by": "Marleen Visser, Ingrid Schechter",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0004/01.jpg",
+    "pages": [
+      {
+        "text": "山羊、野狗、和水牛是很要好的朋友。有一天，他们一起坐出租车。",
+        "image": "assets/books/0004/02.jpg",
+        "audio": "assets/books/0004/02.mp3"
+      },
+      {
+        "text": "当他们到了目的地的时候，司机叫他们交车费。水牛把她自己的那份交了。",
+        "image": "assets/books/0004/03.jpg",
+        "audio": "assets/books/0004/03.mp3"
+      },
+      {
+        "text": "野狗没有带零钱，所以他就多给了一点儿。",
+        "image": "assets/books/0004/04.jpg",
+        "audio": "assets/books/0004/04.mp3"
+      },
+      {
+        "text": "司机正要找钱给野狗，没想到山羊没有给钱就跑掉了。",
+        "image": "assets/books/0004/05.jpg",
+        "audio": "assets/books/0004/05.mp3"
+      },
+      {
+        "text": "司机很生气，结果他没有给野狗找钱就开走了。",
+        "image": "assets/books/0004/06.jpg",
+        "audio": "assets/books/0004/06.mp3"
+      },
+      {
+        "text": "所以，现在你可以看到野狗看到车子就拼命追上去，因为他想叫司机给他找钱。",
+        "image": "assets/books/0004/07.jpg",
+        "audio": "assets/books/0004/07.mp3"
+      },
+      {
+        "text": "山羊呢，一听到有车来就吓得赶快逃走，因为她怕没交车费被人抓起来。",
+        "image": "assets/books/0004/08.jpg",
+        "audio": "assets/books/0004/08.mp3"
+      },
+      {
+        "text": "可是水牛听到车来一点儿都不急。她不慌不忙地过马路，因为她知道她已经把她自己那份交了。",
+        "image": "assets/books/0004/09.jpg",
+        "audio": "assets/books/0004/09.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0201",
+    "title": "驴孩子",
+    "tag": "成长故事",
+    "color": "peach",
+    "intro": "一头小驴开始寻找属于自己的生活。",
+    "keywords": [
+      "驴",
+      "妈妈",
+      "学校"
+    ],
+    "question": "你最想和故事里的小驴说什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0201/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Lindiwe Matshikiza",
+      "Illustrated by": "Meghan Judge",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0201/01.jpg",
+    "pages": [
+      {
+        "text": "有个女孩最先发现了远处有个奇怪的身影。",
+        "image": "assets/books/0201/02.jpg",
+        "audio": "assets/books/0201/02.mp3"
+      },
+      {
+        "text": "那个身影越靠越近，她看清楚了，那是一个快生孩子的妇女。",
+        "image": "assets/books/0201/03.jpg",
+        "audio": "assets/books/0201/03.mp3"
+      },
+      {
+        "text": "女孩有点儿害羞，但她还是勇敢地走上前去。和女孩随行的人们说：“我们必须和她呆在一起，我们必须保护她和她的孩子。”",
+        "image": "assets/books/0201/04.jpg",
+        "audio": "assets/books/0201/04.mp3"
+      },
+      {
+        "text": "孩子很快就要降生了。“用力啊！”“快拿毯子来！”“水！”“再用点力！”",
+        "image": "assets/books/0201/05.jpg",
+        "audio": "assets/books/0201/05.mp3"
+      },
+      {
+        "text": "当他们看到孩子时，所有人都吓了一跳，“一头驴？”",
+        "image": "assets/books/0201/06.jpg",
+        "audio": "assets/books/0201/06.mp3"
+      },
+      {
+        "text": "大家七嘴八舌吵起来。一些人说：“我们说过要保护母亲和孩子的，我们必须这样做。”但是还有一些人反驳说：“但是他们会给我们带来厄运。”",
+        "image": "assets/books/0201/07.jpg",
+        "audio": "assets/books/0201/07.mp3"
+      },
+      {
+        "text": "妇女发现自己又孤零零一人了。她不知道该拿这个奇怪的孩子怎么办，她也不知道自己该怎么办。",
+        "image": "assets/books/0201/08.jpg",
+        "audio": "assets/books/0201/08.mp3"
+      },
+      {
+        "text": "最后，她决定接受这个孩子，做他的妈妈。",
+        "image": "assets/books/0201/09.jpg",
+        "audio": "assets/books/0201/09.mp3"
+      },
+      {
+        "text": "如果这个孩子一直这般大小，不长大的话，一切都会变得不一样。但是这个驴孩子越长越大，现在他再也不能趴在妈妈的背上。无论他多么努力，他始终不能像人类一样。他的妈妈累了，放弃了。有时候，她让他做一些动物会做的工作。",
+        "image": "assets/books/0201/10.jpg",
+        "audio": "assets/books/0201/10.mp3"
+      },
+      {
+        "text": "驴孩子感到迷茫，也很生气。他这个也不能做，那个也不能做。他不能这样，也不能那样。有一天，他太生气了，一脚把他的妈妈踹到地上。",
+        "image": "assets/books/0201/11.jpg",
+        "audio": "assets/books/0201/11.mp3"
+      },
+      {
+        "text": "驴孩子羞愧极了，他逃跑了，跑得越远越好。",
+        "image": "assets/books/0201/12.jpg",
+        "audio": "assets/books/0201/12.mp3"
+      },
+      {
+        "text": "当他停下来的时候，天已经黑了，驴孩子迷路了。他在黑暗里哼哼，“咴咴”，黑暗中传来了回声，“咴咴”。他孤零零的一个人，卷成了一团，心中充满烦恼，沉沉地睡去。",
+        "image": "assets/books/0201/13.jpg",
+        "audio": "assets/books/0201/13.mp3"
+      },
+      {
+        "text": "驴孩子醒了，他发现有个老人低头盯着他。他看着老人的眼睛，感觉到了一丝希望。",
+        "image": "assets/books/0201/14.jpg",
+        "audio": "assets/books/0201/14.mp3"
+      },
+      {
+        "text": "驴孩子和老人住在一起，老人教会他很多生存的本领。驴孩子认真地听着，学得很快。老人也学了很多。他们互相帮助，遇到开心的事情就一起哈哈大笑。",
+        "image": "assets/books/0201/15.jpg",
+        "audio": "assets/books/0201/15.mp3"
+      },
+      {
+        "text": "一天早上，老人让驴孩子带他到山顶。",
+        "image": "assets/books/0201/16.jpg",
+        "audio": "assets/books/0201/16.mp3"
+      },
+      {
+        "text": "他们登上山顶，环绕在云雾中，睡着了。驴孩子梦到他的妈妈生病了，正在呼唤他，然后他就醒了……",
+        "image": "assets/books/0201/17.jpg",
+        "audio": "assets/books/0201/17.mp3"
+      },
+      {
+        "text": "……云雾消失了，他的朋友——那个老人——也消失了。",
+        "image": "assets/books/0201/18.jpg",
+        "audio": "assets/books/0201/18.mp3"
+      },
+      {
+        "text": "驴孩子终于知道要做什么了。",
+        "image": "assets/books/0201/19.jpg",
+        "audio": "assets/books/0201/19.mp3"
+      },
+      {
+        "text": "驴孩子找到了他的妈妈，她孤零零一个人，正在为走失的孩子伤心。他们互相打量了很久，然后紧紧地抱在了一起。",
+        "image": "assets/books/0201/20.jpg",
+        "audio": "assets/books/0201/20.mp3"
+      },
+      {
+        "text": "驴孩子和妈妈住在一起，慢慢长大，学会了如何共同生活。渐渐的，其他的家庭也搬到他们附近，住了下来。",
+        "image": "assets/books/0201/21.jpg",
+        "audio": "assets/books/0201/21.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0006",
+    "title": "阿南西和智慧",
+    "tag": "成长故事",
+    "color": "sage",
+    "intro": "阿南西得到一锅智慧，想把它藏起来。",
+    "keywords": [
+      "智慧",
+      "砂锅",
+      "树"
+    ],
+    "question": "阿南西最后把智慧藏好了吗？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0006/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Ghanaian folktale",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "dohliam",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0006/01.jpg",
+    "pages": [
+      {
+        "text": "很久很久以前，人们什么都不知道。 他们不知道怎么耕田织布，也不知道怎么制造铁器。 天上的尼亚美神把世界所有的智慧都藏在一个砂锅里面。",
+        "image": "assets/books/0006/02.jpg",
+        "audio": "assets/books/0006/02.mp3"
+      },
+      {
+        "text": "有一天，尼亚美决定把藏有智慧的砂锅交给蜘蛛神阿南西。 每当阿南西揭开砂锅往里看，他就会学到新的东西。他感到很兴奋！",
+        "image": "assets/books/0006/03.jpg",
+        "audio": "assets/books/0006/03.mp3"
+      },
+      {
+        "text": "贪心的阿南西跟自己说， “我把砂锅安放在树顶上，那样所有的智慧就都只属于我了！” 所以，他织出了一条长长的丝线，把砂锅牢牢地拴住，然后把丝线的另一端系在自己的肚子上。 他开始往那棵树上爬， 可是砂锅总是撞到他的腿，爬起来很辛苦。",
+        "image": "assets/books/0006/04.jpg",
+        "audio": "assets/books/0006/04.mp3"
+      },
+      {
+        "text": "阿南西的儿子在树底下看到了一切。 他跟阿南西说，“把砂锅扛在背上不就容易了吗？” 于是阿南西就试着把砂锅扛在背上，果然容易很多。",
+        "image": "assets/books/0006/05.jpg",
+        "audio": "assets/books/0006/05.mp3"
+      },
+      {
+        "text": "阿南西很快就爬到树顶上。 可是他突然想到一个问题： “拥有所有智慧的人应该是我，可是刚才我儿子居然比我还聪明！” 阿南西气得差点跳起来了，一气之下竟把砂锅扔到树下。",
+        "image": "assets/books/0006/06.jpg",
+        "audio": "assets/books/0006/06.mp3"
+      },
+      {
+        "text": "砂锅一落地就碎成小片。 砂锅碎了，所有的智慧也跑了出来，大家可以自由分享了。 就是这样，世上的人们才学会如何耕田、如何织布，如何打铁做铁器，还有所有现在人会做的一切。",
+        "image": "assets/books/0006/07.jpg",
+        "audio": "assets/books/0006/07.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0110",
+    "title": "一粒小种子：旺加里·马塔伊的故事",
+    "tag": "成长故事",
+    "color": "lavender",
+    "intro": "从一粒种子开始，认识种树的旺加里。",
+    "keywords": [
+      "种子",
+      "树",
+      "土地"
+    ],
+    "question": "一粒小种子长大后，能给大家带来什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0110/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Nicola Rijsdijk",
+      "Illustrated by": "Maya Marshak",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0110/01.jpg",
+    "pages": [
+      {
+        "text": "在东非肯尼亚山的山腰上，有一座小村庄，村庄里有一个小女孩和妈妈一起在田里劳作，这个女孩叫旺加里。",
+        "image": "assets/books/0110/02.jpg",
+        "audio": "assets/books/0110/02.mp3"
+      },
+      {
+        "text": "旺加里很喜欢呆在户外。在她家的农田里，旺加里用弯刀劈开土地，把小种子播撒到温暖的泥土里。",
+        "image": "assets/books/0110/03.jpg",
+        "audio": "assets/books/0110/03.mp3"
+      },
+      {
+        "text": "她一天中最喜欢的时候就是日落时分。当天黑了，看不到花花草草时，旺加里就知道她该回家了。她走在农田里的小路上，还要过几条河。",
+        "image": "assets/books/0110/04.jpg",
+        "audio": "assets/books/0110/04.mp3"
+      },
+      {
+        "text": "旺加里是个聪明的孩子，她迫不及待地想要去上学，但是她的父母希望她能在家，帮着干农活。当旺加里七岁的时候，她的哥哥说服了父母，让旺加里去上学。",
+        "image": "assets/books/0110/05.jpg",
+        "audio": "assets/books/0110/05.mp3"
+      },
+      {
+        "text": "旺加里太喜欢学习了。旺加里读了很多书，学到很多知识。她的成绩非常好，最后收到了美国大学的录取信，邀请她去美国读书。旺加里太兴奋了，她真想去世界各地走走看看。",
+        "image": "assets/books/0110/06.jpg",
+        "audio": "assets/books/0110/06.mp3"
+      },
+      {
+        "text": "在美国的大学里，旺加里学到了很多新鲜事物。她研究植物，以及它们的生长过程。她想起她自己是怎么长大的：她和兄弟们在美丽的肯尼亚森林里玩耍。",
+        "image": "assets/books/0110/07.jpg",
+        "audio": "assets/books/0110/07.mp3"
+      },
+      {
+        "text": "她学得越多，就越热爱肯尼亚人民。她想要帮助肯尼亚人民过上自由、快乐的生活。她学得越多，就越想念自己在非洲的家乡。",
+        "image": "assets/books/0110/08.jpg",
+        "audio": "assets/books/0110/08.mp3"
+      },
+      {
+        "text": "当旺加里完成学业时，她回到了肯尼亚，但是她的祖国已经今非昔比了。大地上建起了农场，妇女们找不到柴火做饭。人们过着穷苦的日子，孩子们饥肠辘辘。",
+        "image": "assets/books/0110/09.jpg",
+        "audio": "assets/books/0110/09.mp3"
+      },
+      {
+        "text": "旺加里知道自己要做什么。她教妇女们如何用种子种出大树。妇女们卖树赚钱，补贴家用。妇女们都很高兴。旺加里使她们觉得自己变得坚强勇敢了。",
+        "image": "assets/books/0110/10.jpg",
+        "audio": "assets/books/0110/10.mp3"
+      },
+      {
+        "text": "时光飞逝，小树长成了参天大树，又汇聚成了森林，河水穿流而过。旺加里的办法传遍了非洲。今天，因为旺加里当初的种子，已经长出了几百万棵大树。",
+        "image": "assets/books/0110/11.jpg",
+        "audio": "assets/books/0110/11.mp3"
+      },
+      {
+        "text": "旺加里努力工作，引起了全世界的注意，人们授予她诺贝尔和平奖，她是非洲第一位获得这份殊荣的女性。",
+        "image": "assets/books/0110/12.jpg",
+        "audio": "assets/books/0110/12.mp3"
+      },
+      {
+        "text": "旺加里在2011年去世，但是每次我们看到大树时，都会想起这位杰出的女性。",
+        "image": "assets/books/0110/13.jpg",
+        "audio": "assets/books/0110/13.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0158",
+    "title": "母鸡和老鹰",
+    "tag": "动物朋友",
+    "color": "peach",
+    "intro": "母鸡和老鹰之间，有一段特别的故事。",
+    "keywords": [
+      "母鸡",
+      "老鹰",
+      "朋友"
+    ],
+    "question": "故事里的母鸡和老鹰发生了什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0158/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Ann Nduku",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0158/01.jpg",
+    "pages": [
+      {
+        "text": "很久很久以前，母鸡和老鹰是好朋友。他们和其他的鸟儿住在一起，相安无事，但是他们都不会飞。",
+        "image": "assets/books/0158/02.jpg",
+        "audio": "assets/books/0158/02.mp3"
+      },
+      {
+        "text": "有一天，他们住的地方发生了饥荒。老鹰要走很远很远的路才能找到食物。她回来的时候看起来非常疲倦。老鹰说：“这样走太累了！肯定有一种更省力的方法。”",
+        "image": "assets/books/0158/03.jpg",
+        "audio": "assets/books/0158/03.mp3"
+      },
+      {
+        "text": "母鸡饱饱地睡了一觉，想到了一个好主意。她开始搜集其他鸟儿掉下来的羽毛，说：“让我们把这些羽毛都缝在我们身上吧，也许这样我们走路就不吃力了。”",
+        "image": "assets/books/0158/04.jpg",
+        "audio": "assets/books/0158/04.mp3"
+      },
+      {
+        "text": "老鹰是村庄里唯一一个有银针的，所以她第一个开始缝羽毛。她给自己做了一双非常漂亮的翅膀，做完之后，在母鸡头上飞来飞去。母鸡问老鹰借了针，但她很快就厌烦了缝纫。她把银针留在柜子上，跑到厨房里，给她的孩子做饭。",
+        "image": "assets/books/0158/05.jpg",
+        "audio": "assets/books/0158/05.mp3"
+      },
+      {
+        "text": "其他的鸟儿看到老鹰飞得又高又远，非常羡慕。他们问母鸡借了银针，这样他们也可以给自己做翅膀了。过了不久，其他的鸟儿也都能上天飞翔了。",
+        "image": "assets/books/0158/06.jpg",
+        "audio": "assets/books/0158/06.mp3"
+      },
+      {
+        "text": "当最后一只鸟儿归还银针的时候，母鸡不在家。她的孩子拿走了银针，玩来玩去。他们玩厌的时候，就把银针落在了沙地里。",
+        "image": "assets/books/0158/07.jpg",
+        "audio": "assets/books/0158/07.mp3"
+      },
+      {
+        "text": "那天下午，老鹰回来了，她问母鸡要回自己的银针，因为她要修补一些松散的羽毛。母鸡找遍了柜子、厨房和后院，都找不到银针。",
+        "image": "assets/books/0158/08.jpg",
+        "audio": "assets/books/0158/08.mp3"
+      },
+      {
+        "text": "母鸡求老鹰：“再给我一天吧！明天你就能修补翅膀，飞着去找食物了。”老鹰说：“好，就一天。如果你找不到银针的话，你就要把一个孩子给我作为补偿。”",
+        "image": "assets/books/0158/09.jpg",
+        "audio": "assets/books/0158/09.mp3"
+      },
+      {
+        "text": "第二天，老鹰来了，她看到母鸡正在沙地里翻来翻去，但是银针还是没有找到。老鹰从天上俯冲下来，抓了一只小鸡就飞走了。从那以后，无论老鹰什么时候出现，她都看到母鸡在沙地里找银针。",
+        "image": "assets/books/0158/10.jpg",
+        "audio": "assets/books/0158/10.mp3"
+      },
+      {
+        "text": "当母鸡在地上看到老鹰的影子时，她就警告自己的孩子：“快躲起来！别呆在这空旷干燥的地上。”孩子们回答她说：“我们不是傻瓜，我们会跑的。”",
+        "image": "assets/books/0158/11.jpg",
+        "audio": "assets/books/0158/11.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0324",
+    "title": "离家进城的那一天",
+    "tag": "生活发现",
+    "color": "sage",
+    "intro": "坐上大巴，跟着故事去城市看看。",
+    "keywords": [
+      "村庄",
+      "城市",
+      "大巴"
+    ],
+    "question": "村庄和城市，你发现了哪些不同？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0324/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Lesley Koyi, Ursula Nafula",
+      "Illustrated by": "Brian Wambi",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0324/01.jpg",
+    "pages": [
+      {
+        "text": "在我生活的村庄里，有一个小小的大巴车站。大巴车站虽然小，但是人来车往，非常热闹，地上常常堆满了装载的货物，售票员叫喊着大巴车开往的方向。",
+        "image": "assets/books/0324/02.jpg",
+        "audio": "assets/books/0324/02.mp3"
+      },
+      {
+        "text": "我听到售票员喊“进城啦！进城啦！往西去！”这就是我要乘坐的大巴车。",
+        "image": "assets/books/0324/03.jpg",
+        "audio": "assets/books/0324/03.mp3"
+      },
+      {
+        "text": "进城的大巴车几乎坐满了，但是人们还是不停地往里面挤。一些人把行李放在车顶，还有一些人把行李放在车厢里的架子上。",
+        "image": "assets/books/0324/04.jpg",
+        "audio": "assets/books/0324/04.mp3"
+      },
+      {
+        "text": "刚上车的乘客们紧紧地抓着他们的车票，在拥挤的车厢里寻找座位，带着小孩的妇女们都坐得舒舒服服的。",
+        "image": "assets/books/0324/05.jpg",
+        "audio": "assets/books/0324/05.mp3"
+      },
+      {
+        "text": "我挤到了窗边的一个座位里。旁边的乘客紧紧地抓着一个绿色的塑料包裹。他穿着破旧的凉鞋和外套，看起来很紧张。",
+        "image": "assets/books/0324/06.jpg",
+        "audio": "assets/books/0324/06.mp3"
+      },
+      {
+        "text": "我朝窗外看去，这才意识到，我正在离开我长大的村庄，我要进城了！",
+        "image": "assets/books/0324/07.jpg",
+        "audio": "assets/books/0324/07.mp3"
+      },
+      {
+        "text": "货物都装载完了，乘客们都坐好了。小商贩们还在努力地挤到车厢里，向乘客们大声叫卖着货物。他们的话听起来怪好笑的。",
+        "image": "assets/books/0324/08.jpg",
+        "audio": "assets/books/0324/08.mp3"
+      },
+      {
+        "text": "有一些乘客买了饮料，还有一些乘客买了零食，正准备拆开来吃。像我一样没有钱的人只能看着。",
+        "image": "assets/books/0324/09.jpg",
+        "audio": "assets/books/0324/09.mp3"
+      },
+      {
+        "text": "大巴车滴滴叫了两声，要开了，小商贩的活动戛然而止。售票员喊着，赶他们下车。",
+        "image": "assets/books/0324/10.jpg",
+        "audio": "assets/books/0324/10.mp3"
+      },
+      {
+        "text": "小商贩们推推搡搡下了车。一些人还在忙着找零钱，还有一些人赖着想最后再做点生意。",
+        "image": "assets/books/0324/11.jpg",
+        "audio": "assets/books/0324/11.mp3"
+      },
+      {
+        "text": "大巴车缓缓离开了车站，我看着窗外，不知道今后会不会有机会回来了。",
+        "image": "assets/books/0324/12.jpg",
+        "audio": "assets/books/0324/12.mp3"
+      },
+      {
+        "text": "旅程渐渐展开，车厢里慢慢热了起来，我闭上眼睛，想小睡一会儿。",
+        "image": "assets/books/0324/13.jpg",
+        "audio": "assets/books/0324/13.mp3"
+      },
+      {
+        "text": "但我的思绪却飞回了家。我的妈妈安全吗？我的兔子会卖了赚钱吗？我的弟弟会帮着给小树苗浇水吗？",
+        "image": "assets/books/0324/14.jpg",
+        "audio": "assets/books/0324/14.mp3"
+      },
+      {
+        "text": "在路上，我努力记住我叔叔在城市里的地址。我迷迷糊糊地说着地址，沉沉地睡去。",
+        "image": "assets/books/0324/15.jpg",
+        "audio": "assets/books/0324/15.mp3"
+      },
+      {
+        "text": "过了九个小时，我被售票员的叫喊声吵醒了，他在喊乘客坐车回村庄。我一把抓住我的包，跳下了车。",
+        "image": "assets/books/0324/16.jpg",
+        "audio": "assets/books/0324/16.mp3"
+      },
+      {
+        "text": "回程的大巴车很快就坐满了，不久就要开回东边的村庄去了。对我来说，现在最重要的事情就是找到我叔叔的家。",
+        "image": "assets/books/0324/17.jpg",
+        "audio": "assets/books/0324/17.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0141",
+    "title": "鸡和千足虫",
+    "tag": "动物朋友",
+    "color": "lavender",
+    "intro": "鸡和千足虫一起玩，也一起经历变化。",
+    "keywords": [
+      "鸡",
+      "朋友",
+      "千足虫"
+    ],
+    "question": "你觉得朋友之间应该怎样相处？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0141/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Winny Asara",
+      "Illustrated by": "Magriet Brink",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0141/01.jpg",
+    "pages": [
+      {
+        "text": "鸡和千足虫是好朋友，但是它们又互相竞争。有一天，它们决定进行一场足球比赛，看看谁是最棒的球员。",
+        "image": "assets/books/0141/02.jpg",
+        "audio": "assets/books/0141/02.mp3"
+      },
+      {
+        "text": "它们去了球场，开始比赛。鸡跑得飞快，但是千足虫跑得更快。鸡把球踢得很远，但是千足虫踢得更远。鸡开始有点闷闷不乐。",
+        "image": "assets/books/0141/03.jpg",
+        "audio": "assets/books/0141/03.mp3"
+      },
+      {
+        "text": "最后，它们决定来一场点球大战。第一轮中，千足虫当守门员，鸡只拿到了一分。然后，在第二轮中，鸡做守门员。",
+        "image": "assets/books/0141/04.jpg",
+        "audio": "assets/books/0141/04.mp3"
+      },
+      {
+        "text": "千足虫猛地一踢，球进了。千足虫运球飞快，又进了一球。千足虫跳起来，打了个头球，又得了一分。千足虫一共得了五分。",
+        "image": "assets/books/0141/05.jpg",
+        "audio": "assets/books/0141/05.mp3"
+      },
+      {
+        "text": "鸡输了，它很生气。千足虫哈哈大笑，因为它的朋友输了球，就无理取闹。",
+        "image": "assets/books/0141/06.jpg",
+        "audio": "assets/books/0141/06.mp3"
+      },
+      {
+        "text": "鸡生气极了，它张开嘴，一口把千足虫吞了下去。",
+        "image": "assets/books/0141/07.jpg",
+        "audio": "assets/books/0141/07.mp3"
+      },
+      {
+        "text": "鸡回家的路上，遇到了千足虫妈妈。千足虫妈妈问它：“你看见我的孩子了吗？”鸡什么都没说，千足虫妈妈很担心。",
+        "image": "assets/books/0141/08.jpg",
+        "audio": "assets/books/0141/08.mp3"
+      },
+      {
+        "text": "千足虫妈妈突然听到了一阵微弱的声音：“快帮我，妈妈！”千足虫妈妈看了看周围，仔细地听着，声音是从鸡身体里传出来的。",
+        "image": "assets/books/0141/09.jpg",
+        "audio": "assets/books/0141/09.mp3"
+      },
+      {
+        "text": "千足虫妈妈大喊道：“快用你神奇的能力！”千足虫会产生一种很难闻的味道，会让鸡觉得很恶心。",
+        "image": "assets/books/0141/10.jpg",
+        "audio": "assets/books/0141/10.mp3"
+      },
+      {
+        "text": "鸡打了一个嗝，咕噜咕噜要吐了，又是打喷嚏又是咳嗽。千足虫太恶心了！",
+        "image": "assets/books/0141/11.jpg",
+        "audio": "assets/books/0141/11.mp3"
+      },
+      {
+        "text": "鸡不停地咳嗽，直到把千足虫从胃里咳了出来。千足虫妈妈和孩子赶紧爬上树，藏了起来。",
+        "image": "assets/books/0141/12.jpg",
+        "audio": "assets/books/0141/12.mp3"
+      },
+      {
+        "text": "从此以后，鸡和千足虫就变成了敌人。",
+        "image": "assets/books/0141/13.jpg",
+        "audio": "assets/books/0141/13.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0066",
+    "title": "诺孜贝儿和三根头发",
+    "tag": "成长故事",
+    "color": "peach",
+    "intro": "诺孜贝儿遇到危险，想办法寻找帮助。",
+    "keywords": [
+      "女孩",
+      "头发",
+      "家"
+    ],
+    "question": "诺孜贝儿用了什么办法帮助自己？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0066/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Tessa Welch",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0066/01.jpg",
+    "pages": [
+      {
+        "text": "很久很久以前，有三个女孩，她们一起外出找柴火。",
+        "image": "assets/books/0066/02.jpg",
+        "audio": "assets/books/0066/02.mp3"
+      },
+      {
+        "text": "天很热，她们跳下河游了个泳。她们一边游泳，一边嬉戏，溅出很多水花。",
+        "image": "assets/books/0066/03.jpg",
+        "audio": "assets/books/0066/03.mp3"
+      },
+      {
+        "text": "突然，她们意识到天已经很晚了，匆匆忙忙赶回村子。",
+        "image": "assets/books/0066/04.jpg",
+        "audio": "assets/books/0066/04.mp3"
+      },
+      {
+        "text": "当她们快到家的时候，诺孜贝儿摸了摸她的脖子：她把项链落在了外面。于是她请求她的朋友们：“和我一起回去找找吧！”但她的朋友们都说太晚了。",
+        "image": "assets/books/0066/05.jpg",
+        "audio": "assets/books/0066/05.mp3"
+      },
+      {
+        "text": "诺孜贝儿一个人回到河边，一找到了项链，就赶忙回家，但天太黑了，她迷路了。",
+        "image": "assets/books/0066/06.jpg",
+        "audio": "assets/books/0066/06.mp3"
+      },
+      {
+        "text": "她远远地看见有个小木屋，木屋里有一丝光亮。她跑到木屋门口，敲了敲门。",
+        "image": "assets/books/0066/07.jpg",
+        "audio": "assets/books/0066/07.mp3"
+      },
+      {
+        "text": "诺孜贝儿吃了一惊，开门的是一只会说话的狗：“你来干嘛？”诺孜贝儿说：“我迷路了，我要找个地方睡觉。”狗回答说：“进来吧，不然我就咬你！”然后诺孜贝儿就进了屋。",
+        "image": "assets/books/0066/08.jpg",
+        "audio": "assets/books/0066/08.mp3"
+      },
+      {
+        "text": "狗说：“给我做饭！”诺孜贝儿回答说：“但我从来没有给狗做过饭。”狗说：“快做饭，不然我就咬你。”诺孜贝儿没办法，只能给狗做了一些吃的。",
+        "image": "assets/books/0066/09.jpg",
+        "audio": "assets/books/0066/09.mp3"
+      },
+      {
+        "text": "狗说：“给我铺床！”诺孜贝儿回答说：“但我从来没有给狗铺过床。”狗说：“快铺床，不然我就咬你。”诺孜贝儿没办法，只能给狗铺了床。",
+        "image": "assets/books/0066/10.jpg",
+        "audio": "assets/books/0066/10.mp3"
+      },
+      {
+        "text": "诺孜贝儿每天都要给狗做饭，打扫屋子，洗衣服。有一天，狗说：“诺孜贝儿，我今天要出门见朋友。在我回来之前，你要打扫好屋子，做好饭，洗好衣服。”",
+        "image": "assets/books/0066/11.jpg",
+        "audio": "assets/books/0066/11.mp3"
+      },
+      {
+        "text": "狗一走，诺孜贝儿就从头上拔了三根头发下来。她把一根头发放在床下，一根放在门背后，还有一根放在篱笆上。然后诺孜贝儿用尽全力跑回了家。",
+        "image": "assets/books/0066/12.jpg",
+        "audio": "assets/books/0066/12.mp3"
+      },
+      {
+        "text": "当狗回到家的时候，它开始找诺孜贝儿：“诺孜贝儿，你在哪里？”第一根头发说：“我在这儿，在床底下。”第二根头发说：“我在这儿，在门背后。”第三根头发说：“我在这儿，在篱笆上。”",
+        "image": "assets/books/0066/13.jpg",
+        "audio": "assets/books/0066/13.mp3"
+      },
+      {
+        "text": "狗明白了诺孜贝儿耍的花招。它一路跑到诺孜贝儿的村庄，但是诺孜贝儿的兄弟们正拿着棍子等着它呢！狗见状不妙，赶紧跑开了，从此再也没人见过它。",
+        "image": "assets/books/0066/14.jpg",
+        "audio": "assets/books/0066/14.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0315",
+    "title": "萨可满的歌声",
+    "tag": "成长故事",
+    "color": "sage",
+    "intro": "萨可满用歌声，把自己的心意送出去。",
+    "keywords": [
+      "歌声",
+      "妹妹",
+      "帮助"
+    ],
+    "question": "萨可满的歌声帮助了谁？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0315/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Ursula Nafula",
+      "Illustrated by": "Peris Wachuka",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0315/01.jpg",
+    "pages": [
+      {
+        "text": "萨可满和他的父母，还有四岁的妹妹住在一起，他们住在一个富人的土地上，他们的茅草屋在一排大树的后面。",
+        "image": "assets/books/0315/02.jpg",
+        "audio": "assets/books/0315/02.mp3"
+      },
+      {
+        "text": "萨可满三岁的时候，生了一场大病，从此，萨可满就看不见了，其实萨可满是一个非常有天赋的孩子。",
+        "image": "assets/books/0315/03.jpg",
+        "audio": "assets/books/0315/03.mp3"
+      },
+      {
+        "text": "萨可满今年六岁，他会做很多同龄的男孩不会做的事情，比如，萨可满能和村里的老人坐在一起讨论重要的事情。",
+        "image": "assets/books/0315/04.jpg",
+        "audio": "assets/books/0315/04.mp3"
+      },
+      {
+        "text": "萨可满的父母在富人的家里工作。他们每天早出晚归，萨可满就和妹妹呆在家里。",
+        "image": "assets/books/0315/05.jpg",
+        "audio": "assets/books/0315/05.mp3"
+      },
+      {
+        "text": "萨可满很喜欢唱歌。有一天，他的妈妈问他：“萨可满，你从哪儿学了这些歌？”",
+        "image": "assets/books/0315/06.jpg",
+        "audio": "assets/books/0315/06.mp3"
+      },
+      {
+        "text": "萨可满回答说：“它们就这样出现在我的脑海里，我想到了这些歌，就把它们唱了出来。”",
+        "image": "assets/books/0315/07.jpg",
+        "audio": "assets/books/0315/07.mp3"
+      },
+      {
+        "text": "萨可满很喜欢给他的妹妹唱歌，特别是她肚子饿的时候。妹妹听着萨可满唱他最喜欢的歌，跟着甜美的歌声摆动起来。",
+        "image": "assets/books/0315/08.jpg",
+        "audio": "assets/books/0315/08.mp3"
+      },
+      {
+        "text": "萨可满的妹妹经常求他：“再唱一次吧！”萨可满唱了一遍又一遍。",
+        "image": "assets/books/0315/09.jpg",
+        "audio": "assets/books/0315/09.mp3"
+      },
+      {
+        "text": "有一天晚上，萨可满的父母回到家以后一句话也不说。萨可满知道一定发生了什么不好的事情。",
+        "image": "assets/books/0315/10.jpg",
+        "audio": "assets/books/0315/10.mp3"
+      },
+      {
+        "text": "萨可满问爸爸妈妈发生了什么事，他这才知道，原来富人的儿子失踪了，富人孤单一人，很伤心。",
+        "image": "assets/books/0315/11.jpg",
+        "audio": "assets/books/0315/11.mp3"
+      },
+      {
+        "text": "萨可满对父母说：“我可以给他唱歌，这样他就会高兴起来了。”但是萨可满的父母不喜欢这个主意：“他很有钱，而你只是一个看不见的小男孩。你以为你的歌声会帮到他吗？”",
+        "image": "assets/books/0315/12.jpg",
+        "audio": "assets/books/0315/12.mp3"
+      },
+      {
+        "text": "但是萨可满没有放弃，他的妹妹也鼓励他。她说：“萨可满的歌声能赶走饥饿，他肯定也能安慰富人。”",
+        "image": "assets/books/0315/13.jpg",
+        "audio": "assets/books/0315/13.mp3"
+      },
+      {
+        "text": "第二天，萨可满让他的妹妹带他去富人的房子。",
+        "image": "assets/books/0315/14.jpg",
+        "audio": "assets/books/0315/14.mp3"
+      },
+      {
+        "text": "他站在一扇大窗户的下面，开始唱他最喜欢的歌。慢慢的，富人的脑袋从窗户里伸出来。",
+        "image": "assets/books/0315/15.jpg",
+        "audio": "assets/books/0315/15.mp3"
+      },
+      {
+        "text": "工人们停下了工作。他们仔细地听着萨可满唱歌。有一个人说：“从来没有人能安慰老板，这个看不见的男孩觉得他可以做到吗？”",
+        "image": "assets/books/0315/16.jpg",
+        "audio": "assets/books/0315/16.mp3"
+      },
+      {
+        "text": "萨可满唱完了，准备离开。富人跑出来，说：“请再唱一遍吧！”",
+        "image": "assets/books/0315/17.jpg",
+        "audio": "assets/books/0315/17.mp3"
+      },
+      {
+        "text": "就在那时，两个人抬着担架走来了，担架上是富人的儿子！他们发现这个人被打得面目全非，躺在路边。",
+        "image": "assets/books/0315/18.jpg",
+        "audio": "assets/books/0315/18.mp3"
+      },
+      {
+        "text": "富人很高兴儿子找回来了。为了感谢萨可满安慰他，他把萨可满和他的儿子一起送到了医院，萨可满很快就会恢复视力了。",
+        "image": "assets/books/0315/19.jpg",
+        "audio": "assets/books/0315/19.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0291",
+    "title": "福思的姐姐说了什么",
+    "tag": "家人与我",
+    "color": "lavender",
+    "intro": "去参加姐姐的婚礼，一路上发生了好多事。",
+    "keywords": [
+      "姐姐",
+      "礼物",
+      "鸡蛋"
+    ],
+    "question": "姐姐觉得婚礼上最重要的是什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0291/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 4
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Nina Orange",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0291/01.jpg",
+    "pages": [
+      {
+        "text": "一天早上，福思的奶奶唤他过来说：“福思，你带着这个鸡蛋去你爸妈那儿吧！他们要为你姐姐的婚礼做一个大蛋糕。”",
+        "image": "assets/books/0291/02.jpg",
+        "audio": "assets/books/0291/02.mp3"
+      },
+      {
+        "text": "福思带着鸡蛋上了路，他遇到了两个正在采水果的男孩。其中一个男孩抓过鸡蛋，朝着果树扔过去，鸡蛋破了。",
+        "image": "assets/books/0291/03.jpg",
+        "audio": "assets/books/0291/03.mp3"
+      },
+      {
+        "text": "福思哭了：“你做了什么？那个鸡蛋是用来做蛋糕的，这个蛋糕是送给我姐姐结婚的礼物。没了蛋糕，我姐姐会说什么？”",
+        "image": "assets/books/0291/04.jpg",
+        "audio": "assets/books/0291/04.mp3"
+      },
+      {
+        "text": "男孩们觉得很抱歉，他们不应该嘲弄福思。其中一个男孩说：“我们没办法帮你做蛋糕，但是我们这儿有一根拐杖，可以送给你姐姐。”福思带上了拐杖，继续上路。",
+        "image": "assets/books/0291/05.jpg",
+        "audio": "assets/books/0291/05.mp3"
+      },
+      {
+        "text": "福思在路上碰到了两个造房子的工人。其中一个工人问他：“我们可以借用一下那根木棍吗？”但是木棍不是很结实，它断了。",
+        "image": "assets/books/0291/06.jpg",
+        "audio": "assets/books/0291/06.mp3"
+      },
+      {
+        "text": "福思哭了：“你做了什么？那根木棍是摘水果的人给我的，因为他们打碎了用来做蛋糕的鸡蛋。那个蛋糕是送给我姐姐结婚的礼物。没了鸡蛋，没了蛋糕，没了礼物，我姐姐会说什么？”",
+        "image": "assets/books/0291/07.jpg",
+        "audio": "assets/books/0291/07.mp3"
+      },
+      {
+        "text": "造房子的工人觉得很抱歉，因为他们弄断了木棍。其中一个工人说：“我们没办法帮着做蛋糕，但我这儿有一些茅草，可以送给你姐姐。”福思带上茅草，继续上路。",
+        "image": "assets/books/0291/08.jpg",
+        "audio": "assets/books/0291/08.mp3"
+      },
+      {
+        "text": "在路上，福思遇到了一个农民和一头奶牛。奶牛说：“多么美味的茅草啊！我可以尝一尝吗？”但是茅草太美味了，奶牛把茅草全吃光了！",
+        "image": "assets/books/0291/09.jpg",
+        "audio": "assets/books/0291/09.mp3"
+      },
+      {
+        "text": "福思哭了：“你做了什么？那些茅草是给我姐姐的礼物。造房子的工人给了我那些茅草，因为他们弄断了摘水果的人给我的木棍。摘水果的人给了我木棍，因为他们把做蛋糕的鸡蛋打破了。那个蛋糕是给我姐姐结婚的礼物。现在鸡蛋、蛋糕、礼物都没了。我的姐姐会说什么？”",
+        "image": "assets/books/0291/10.jpg",
+        "audio": "assets/books/0291/10.mp3"
+      },
+      {
+        "text": "奶牛很抱歉，因为它太自私了。农民决定让奶牛跟着福思，作为礼物送给他姐姐。福思继续上路了。",
+        "image": "assets/books/0291/11.jpg",
+        "audio": "assets/books/0291/11.mp3"
+      },
+      {
+        "text": "但是，到了吃晚饭的时候，奶牛跑回农场了，福思也迷路了。他很晚才到姐姐的婚礼上，客人们已经在吃饭了。",
+        "image": "assets/books/0291/12.jpg",
+        "audio": "assets/books/0291/12.mp3"
+      },
+      {
+        "text": "福思哭了：“我该怎么办？奶牛本来是农民送给我的礼物，因为奶牛吃了建筑工人给我的茅草。建筑工人给我茅草，因为他们折断了摘水果的人给我的木棍。摘水果的人给了我木棍，因为他们打破了做蛋糕的鸡蛋。那个蛋糕是给我姐姐结婚的礼物。现在，鸡蛋没了，蛋糕没了，礼物也没了。”",
+        "image": "assets/books/0291/13.jpg",
+        "audio": "assets/books/0291/13.mp3"
+      },
+      {
+        "text": "福思的姐姐想了一会儿，她说：“我亲爱的兄弟，我不在乎有没有礼物。我们今天聚在这里，我就很高兴了。穿上你漂亮的衣服，我们一起庆祝吧！”福思就照着她的话做了。",
+        "image": "assets/books/0291/14.jpg",
+        "audio": "assets/books/0291/14.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0072",
+    "title": "指蜜鸟的复仇",
+    "tag": "动物朋友",
+    "color": "peach",
+    "intro": "指蜜鸟带人找蜂蜜，也希望得到分享。",
+    "keywords": [
+      "蜂蜜",
+      "小鸟",
+      "分享"
+    ],
+    "question": "找到蜂蜜以后，你会怎样和指蜜鸟分享？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0072/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 4
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Zulu folktale",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0072/01.jpg",
+    "pages": [
+      {
+        "text": "这是一个关于指蜜鸟奈吉和贪婪的年轻人青其儿的故事。有一天，青其儿外出打猎，忽然，他听到了奈吉的叫声。青其儿一想到跟着指蜜鸟就能找到美味的蜂蜜，口水就忍不住流了出来。他停下来，仔细地听着，四处找寻，直到他在头上的树枝里看到了指蜜鸟。小鸟啾啾啾地叫着，从一根树枝飞到另一个树枝。指蜜鸟一边飞一边叫，让青其儿能跟上它。",
+        "image": "assets/books/0072/02.jpg",
+        "audio": "assets/books/0072/02.mp3"
+      },
+      {
+        "text": "过了大概半个小时，他们到了一棵巨大的野无花果树下。奈吉在树枝间跳来跳去，然后在其中一根树枝上停了下来，它朝青其儿伸出脑袋，好像在说：“就是这儿！快来！别磨磨蹭蹭的。”青其儿站在树下，看不到一只蜜蜂，但是他相信奈吉不会骗他。",
+        "image": "assets/books/0072/03.jpg",
+        "audio": "assets/books/0072/03.mp3"
+      },
+      {
+        "text": "青其儿把他打猎的矛搁在树下，搜集了一些干枯的小树枝，点了一堆火。当火慢慢旺起来的时候，他拿了一根又长又干的树枝，伸向火堆中心。这种木头烧起来的时候，会释放出很多烟。青其儿一手拿着树枝的另一头，另一只手抓着树干，开始爬树。",
+        "image": "assets/books/0072/04.jpg",
+        "audio": "assets/books/0072/04.mp3"
+      },
+      {
+        "text": "不久青其儿就听到了蜜蜂飞来飞去的嗡嗡声。它们在树干里筑了一个巢，正忙着飞进去飞出来。当青其儿爬到蜂巢附近的时候，他把树枝燃烧的一端猛地戳到蜂巢里。蜜蜂们害怕灰烟，它们都吓坏了，赶紧全都飞出来，但它们没忘记给青其儿脸上、身上狠狠地叮上几口。",
+        "image": "assets/books/0072/05.jpg",
+        "audio": "assets/books/0072/05.mp3"
+      },
+      {
+        "text": "蜜蜂全都飞出来了，青其儿把手伸进蜂巢里，他挖到了好多蜜块，又甜又香的蜂蜜从蜜块上滴下来，看起来美味极了。他小心翼翼地把蜂蜜块放进肩膀上的袋子里，慢慢地从树上爬下来。",
+        "image": "assets/books/0072/06.jpg",
+        "audio": "assets/books/0072/06.mp3"
+      },
+      {
+        "text": "奈吉迫不及待地看着青其儿做这些事情，它等着青其儿能送它一小块蜂蜜，作为给他引路的谢礼。青其儿在树枝间轻快地跳来跳去，离地面越来越近。终于青其儿稳稳地落地，奈吉落在他附近的一块石头上，等着青其儿给他的礼物。",
+        "image": "assets/books/0072/07.jpg",
+        "audio": "assets/books/0072/07.mp3"
+      },
+      {
+        "text": "但是青其儿把火灭了，拎起他的矛，开始向家里走去，装作看不见奈吉的样子。奈吉生气地叫着：“给我蜂蜜！给我蜂蜜！”青其儿停下来，盯着小鸟，大笑说：“我的朋友，你也想要蜂蜜，是吗？哈哈，我做了这么多事，被叮了那么多包！我为什么要跟你分享这蜂蜜？”说完，青其儿就走远了。奈吉气极了，他可从来没有被这样对待过！等着吧，它会报仇的。",
+        "image": "assets/books/0072/08.jpg",
+        "audio": "assets/books/0072/08.mp3"
+      },
+      {
+        "text": "过了几个星期，青其儿又听到了奈吉的叫声。他想起来美味的蜂蜜，迫不及待地跟着指蜜鸟走了。奈吉领着青其儿走到森林边上，在一棵大树冠上停了下来。青其儿心想：“哈哈，树上肯定有蜂巢。”他迅速地生了一小堆火，拿着燃烧的树枝开始爬树。奈吉停在那儿看着这一切。",
+        "image": "assets/books/0072/09.jpg",
+        "audio": "assets/books/0072/09.mp3"
+      },
+      {
+        "text": "青其儿爬着爬着，心里觉得奇怪，怎么他没有听到嗡嗡声呢？他想，蜂巢一定在树冠很深的地方。他拉着树枝，跳上树：没有蜂巢，他看到了一只豹子！豹子非常生气，因为青其儿打扰了它的美梦。豹子眯着眼睛，张开血盆大口，露出了又白又尖的牙齿。",
+        "image": "assets/books/0072/10.jpg",
+        "audio": "assets/books/0072/10.mp3"
+      },
+      {
+        "text": "青其儿没等到豹子扑向他，就飞快地爬下树。可他爬得太匆忙了，一脚没踩稳，重重地摔在地上，扭到了脚踝。他一瘸一拐地跑走了。幸好豹子还没睡醒，没有追青其儿。指蜜鸟奈吉报了仇，青其儿也学到了教训。",
+        "image": "assets/books/0072/11.jpg",
+        "audio": "assets/books/0072/11.mp3"
+      },
+      {
+        "text": "从此以后，青其儿的孩子们都听说了奈吉的故事，都非常尊重这只小鸟。他们每次收获蜂蜜的时候，都会把最大的一块留给指蜜鸟。",
+        "image": "assets/books/0072/12.jpg",
+        "audio": "assets/books/0072/12.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0294",
+    "title": "奶奶的香蕉",
+    "tag": "家人与我",
+    "color": "sage",
+    "intro": "奶奶的花园里，藏着香蕉变熟的秘密。",
+    "keywords": [
+      "奶奶",
+      "香蕉",
+      "秘密"
+    ],
+    "question": "故事里的孩子学到了什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0294/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 4
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Ursula Nafula",
+      "Illustrated by": "Catherine Groenewald",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0294/01.jpg",
+    "pages": [
+      {
+        "text": "奶奶有一座美丽的大花园，里面种满了高粱，杂谷和木薯，但里面最棒的是香蕉。奶奶虽然有很多孙子孙女，但我心里知道她最喜欢我。她常常邀请我去她家，告诉我一些小秘密。但是有一个秘密，她从来没有告诉我，那就是她催熟香蕉的办法。",
+        "image": "assets/books/0294/02.jpg",
+        "audio": "assets/books/0294/02.mp3"
+      },
+      {
+        "text": "有一天，我看到奶奶在门外放了一个巨大的麦秆编成的篮子。我问奶奶这是做什么的，奶奶却只说：“这是我的神秘篮子。”篮子旁边放了几片香蕉叶子，奶奶把叶子来回翻动。我很好奇，问奶奶：“这些叶子是做什么的？”奶奶却只说：“这是我的神秘叶子。”",
+        "image": "assets/books/0294/03.jpg",
+        "audio": "assets/books/0294/03.mp3"
+      },
+      {
+        "text": "我好奇地看着奶奶，香蕉，香蕉叶子还有那个巨大的麦秆编成的篮子。但奶奶却把我打发到妈妈那儿跑腿。我求奶奶：“让我留下来看一看吧！”奶奶却坚持说：“别固执了，按我说的去做。”我只好跑开了。",
+        "image": "assets/books/0294/04.jpg",
+        "audio": "assets/books/0294/04.mp3"
+      },
+      {
+        "text": "当我回来的时候，奶奶正坐在外面休息，但是篮子和香蕉都不见了！我问奶奶：“篮子去哪儿了？香蕉去哪儿了？还有那些……”奶奶却说：“它们都在一个神秘的地方。”我太沮丧了！",
+        "image": "assets/books/0294/05.jpg",
+        "audio": "assets/books/0294/05.mp3"
+      },
+      {
+        "text": "过了两天，奶奶让我从她的卧室拿拐杖给她。我一打开门，就闻到了熟香蕉的味道。原来奶奶的神秘篮子就放在卧室里！它上面盖了一条旧毯子，我掀起毯子，使劲地闻着那香味。",
+        "image": "assets/books/0294/06.jpg",
+        "audio": "assets/books/0294/06.mp3"
+      },
+      {
+        "text": "奶奶喊我的时候，我吓了一跳：“你在做什么？快把我的拐杖拿来。”我赶紧把拐杖拿出去给奶奶。奶奶看着我，问：“你在笑什么？”我这才意识到，我还在因为发现了这个神奇的秘密窃笑着。",
+        "image": "assets/books/0294/07.jpg",
+        "audio": "assets/books/0294/07.mp3"
+      },
+      {
+        "text": "第二天，奶奶来看我妈妈，我又跑到奶奶家去偷看那些熟香蕉。有一把香蕉已经非常熟了。我采了一根香蕉，把它藏在我的裙子里。我小心地盖好篮子，跑到房子后面，偷偷地把香蕉吃了：这是我吃过的最美味的香蕉！",
+        "image": "assets/books/0294/08.jpg",
+        "audio": "assets/books/0294/08.mp3"
+      },
+      {
+        "text": "第二天，我趁奶奶在花园里摘蔬菜的时候，偷偷跑进房间，去看那些香蕉，香蕉差不多全都熟了。我禁不住诱惑，拿了四根香蕉。我踮起脚离开房间，听到奶奶在咳嗽。我把香蕉藏在裙子下面，若无其事地走开了。",
+        "image": "assets/books/0294/09.jpg",
+        "audio": "assets/books/0294/09.mp3"
+      },
+      {
+        "text": "第二天是奶奶赶集的日子。奶奶很早就醒来了，她把成熟的香蕉和木薯运到集市上去卖。我那天没有急着去看她，但我知道，我不可能永远躲着奶奶。",
+        "image": "assets/books/0294/10.jpg",
+        "audio": "assets/books/0294/10.mp3"
+      },
+      {
+        "text": "那天傍晚，我被爸爸、妈妈和奶奶叫过去。我知道他们为什么找我。那天晚上，当我上床睡觉的时候，我知道我再也不会偷东西了，不偷奶奶的，不偷爸妈的，不从任何人那里偷东西。",
+        "image": "assets/books/0294/11.jpg",
+        "audio": "assets/books/0294/11.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0243",
+    "title": "和奶奶一起过暑假",
+    "tag": "家人与我",
+    "color": "lavender",
+    "intro": "去奶奶的村庄过暑假，发现不一样的生活。",
+    "keywords": [
+      "奶奶",
+      "暑假",
+      "村庄"
+    ],
+    "question": "如果去奶奶家过暑假，你想一起做什么？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0243/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 4
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Violet Otieno",
+      "Illustrated by": "Catherine Groenewald",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0243/01.jpg",
+    "pages": [
+      {
+        "text": "欧东格、阿皮尤和他们的爸爸一起生活在城市里。他们非常期待过暑假，因为那个时候他们不用去学校，而且他们还可以去看奶奶。他们的奶奶住在一个渔村里，靠近一片很大的湖泊。",
+        "image": "assets/books/0243/02.jpg",
+        "audio": "assets/books/0243/02.mp3"
+      },
+      {
+        "text": "欧东格和阿皮尤又要去看奶奶了，他们非常高兴。前一天晚上，他们整理好了自己的行装，准备踏上前往渔村的旅程。他们晚上睡不着，整晚都在讨论这个暑假。",
+        "image": "assets/books/0243/03.jpg",
+        "audio": "assets/books/0243/03.mp3"
+      },
+      {
+        "text": "第二天凌晨，他们坐着爸爸的车前往那个渔村。他们开过了山丘，路上看到了很多野生动物，经过了几个茶园。他们唱着歌数着路上的车辆。",
+        "image": "assets/books/0243/04.jpg",
+        "audio": "assets/books/0243/04.mp3"
+      },
+      {
+        "text": "过了一会儿，孩子们累了，就在车里睡着了。",
+        "image": "assets/books/0243/05.jpg",
+        "audio": "assets/books/0243/05.mp3"
+      },
+      {
+        "text": "当他们到达那个渔村的时候，爸爸把欧东格和阿皮尤叫醒了。他们发现他们的奶奶——尼亚·坎亚达——在树荫里铺了一块垫子，正坐在上面休息。在当地的语言里，这个名字的意思是“坎亚达人民的女儿”。她是一个坚强美丽的女性。",
+        "image": "assets/books/0243/06.jpg",
+        "audio": "assets/books/0243/06.mp3"
+      },
+      {
+        "text": "尼亚·坎亚达欢迎他们来到自己的家里，和他们一起快乐地唱歌跳舞。他们的孙子也很高兴地把他们在城里买的礼物送给她。欧东格和阿皮尤吵着要奶奶先打开自己的礼物。",
+        "image": "assets/books/0243/07.jpg",
+        "audio": "assets/books/0243/07.mp3"
+      },
+      {
+        "text": "尼亚·坎亚达打开了礼物后，用传统的习俗祝福了她的孙儿们。",
+        "image": "assets/books/0243/08.jpg",
+        "audio": "assets/books/0243/08.mp3"
+      },
+      {
+        "text": "欧东格和阿皮尤跑出去玩儿了，他们追着蝴蝶和鸟儿，在它们后面跑。",
+        "image": "assets/books/0243/09.jpg",
+        "audio": "assets/books/0243/09.mp3"
+      },
+      {
+        "text": "他们还爬树，跳进湖里，溅起了很多水花。",
+        "image": "assets/books/0243/10.jpg",
+        "audio": "assets/books/0243/10.mp3"
+      },
+      {
+        "text": "天黑了，他们回到奶奶的家里吃晚饭，但他们太累了，还没吃完，就睡着了。",
+        "image": "assets/books/0243/11.jpg",
+        "audio": "assets/books/0243/11.mp3"
+      },
+      {
+        "text": "第二天，爸爸开车回城了，把孩子们留给奶奶。",
+        "image": "assets/books/0243/12.jpg",
+        "audio": "assets/books/0243/12.mp3"
+      },
+      {
+        "text": "欧东格和阿皮尤帮助奶奶做家务。他们帮奶奶拎水，运柴。他们还帮奶奶从鸡窝里拿鸡蛋，在花园里摘蔬菜。",
+        "image": "assets/books/0243/13.jpg",
+        "audio": "assets/books/0243/13.mp3"
+      },
+      {
+        "text": "尼亚·坎亚达教他们煮乌咖喱，还教他们怎么做和烤鱼一起吃的椰子饭。",
+        "image": "assets/books/0243/14.jpg",
+        "audio": "assets/books/0243/14.mp3"
+      },
+      {
+        "text": "一天早上，欧东格帮奶奶去牧场上放牛，但是牛跑到了邻居的农场上，邻居很生气，威胁欧东格说，要没收了这些牛作为踩坏粮食的赔偿。从那天以后，欧东格很小心，不想再让这些牛惹麻烦了。",
+        "image": "assets/books/0243/15.jpg",
+        "audio": "assets/books/0243/15.mp3"
+      },
+      {
+        "text": "有一天，孩子们和尼亚·坎亚达一起去集市上。奶奶有一个卖蔬菜、糖和肥皂的摊位。阿皮尤给顾客们报价钱，欧东格帮着顾客打包。",
+        "image": "assets/books/0243/16.jpg",
+        "audio": "assets/books/0243/16.mp3"
+      },
+      {
+        "text": "这天的工作结束后，他们坐在一起喝茶，帮奶奶数了数这天赚到的钱。",
+        "image": "assets/books/0243/17.jpg",
+        "audio": "assets/books/0243/17.mp3"
+      },
+      {
+        "text": "很快，假期就结束了，孩子们要回城了。尼亚·坎亚达送给欧东格一顶帽子，送给阿皮尤一件毛衣。她帮孩子们装了点食物在路上吃。",
+        "image": "assets/books/0243/18.jpg",
+        "audio": "assets/books/0243/18.mp3"
+      },
+      {
+        "text": "当爸爸来接他们的时候，他们一点儿都不想走。孩子们求尼亚·坎亚达和他们一起去城里。她笑着说：“我太老了，不适合住在大城市里。我就在这个村子里面等你们，等你们下次再来。”",
+        "image": "assets/books/0243/19.jpg",
+        "audio": "assets/books/0243/19.mp3"
+      },
+      {
+        "text": "欧东格和阿皮尤紧紧地抱着她，跟她告别。",
+        "image": "assets/books/0243/20.jpg",
+        "audio": "assets/books/0243/20.mp3"
+      },
+      {
+        "text": "当欧东格和阿皮尤回到学校时，他们把村子里的生活告诉了伙伴们。一些人觉得城市生活很不错，另一些人觉得乡村生活更好。最重要的是，每个人都相信欧东格和阿皮尤的奶奶太棒啦！",
+        "image": "assets/books/0243/21.jpg",
+        "audio": "assets/books/0243/21.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0052",
+    "title": "辛波薇亚",
+    "tag": "成长故事",
+    "color": "peach",
+    "intro": "辛波薇亚经历难过，也慢慢找回勇气。",
+    "keywords": [
+      "家人",
+      "勇敢",
+      "帮助"
+    ],
+    "question": "辛波薇亚难过的时候，谁帮助了她？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0052/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 5
+    },
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credits": {
+      "Written by": "Rukia Nantale",
+      "Illustrated by": "Benjamin Mitchley",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0052/01.jpg",
+    "pages": [
+      {
+        "text": "辛波薇亚的妈妈过世的时候，她非常伤心。辛波薇亚的爸爸尽全力照顾孩子。时间久了，他们渐渐开心起来，习惯了没有辛波薇亚妈妈的生活。每天早上，他们坐在一起，谈论着即将到来的一天。每天晚上，他们一起做饭，然后一起洗碗，辛波薇亚的爸爸还帮助她做功课。",
+        "image": "assets/books/0052/02.jpg",
+        "audio": "assets/books/0052/02.mp3"
+      },
+      {
+        "text": "有一天，辛波薇亚的爸爸回家晚了。他一进门就喊道：“亲爱的孩子，你在哪里？”辛波薇亚跑出来迎接爸爸。但她突然停住了，因为她看到爸爸牵着另外一个女人的手。爸爸笑着说：“我的孩子，来，我向你介绍一个很特别的人，她叫阿妮塔。”",
+        "image": "assets/books/0052/03.jpg",
+        "audio": "assets/books/0052/03.mp3"
+      },
+      {
+        "text": "阿妮塔跟辛波薇亚打招呼：“你好，辛波薇亚！你的爸爸跟我说了很多关于你的事。”她没有朝辛波薇亚微笑，也没有牵她的手。辛波薇亚的爸爸很高兴，他兴奋地说着，如果他们三个人住在一起，一定会很幸福的。爸爸朝辛波薇亚说：“我的孩子，我希望你能接受阿妮塔成为你的母亲。”",
+        "image": "assets/books/0052/04.jpg",
+        "audio": "assets/books/0052/04.mp3"
+      },
+      {
+        "text": "辛波薇亚的生活变了。她每天早上没有时间和爸爸坐在一起聊天。阿妮塔让辛波薇亚做很多家务，辛波薇亚每天晚上都累极了，根本没有时间做功课。她一吃完晚饭就睡觉了。她唯一的安慰就是妈妈留给她的彩色毯子。辛波薇亚的爸爸似乎没有意识到女儿一点儿也不开心。",
+        "image": "assets/books/0052/05.jpg",
+        "audio": "assets/books/0052/05.mp3"
+      },
+      {
+        "text": "过了几个月，辛波薇亚的爸爸告诉她们，他要离家一段时间。他说：“我得出差，我相信你们会互相照顾对方的。”辛波薇亚低下头，但她的爸爸没有注意。阿妮塔什么也没说，她也不太高兴。",
+        "image": "assets/books/0052/06.jpg",
+        "audio": "assets/books/0052/06.mp3"
+      },
+      {
+        "text": "辛波薇亚的生活变得更糟糕了。如果辛波薇亚没有做完家务，或者她稍微有点抱怨的话，阿妮塔就会打她。晚上，阿妮塔把大多数食物都吃了，只留给辛波薇亚一点剩饭剩菜。每天晚上，辛波薇亚都流着泪入睡，她只能紧紧地抱着妈妈留下的毯子。",
+        "image": "assets/books/0052/07.jpg",
+        "audio": "assets/books/0052/07.mp3"
+      },
+      {
+        "text": "一天早上，辛波薇亚起床晚了。阿妮塔气极了：“你这个懒虫！”她把辛波薇亚从床上拉起来。毯子勾到一颗钉子，撕成了两半。",
+        "image": "assets/books/0052/08.jpg",
+        "audio": "assets/books/0052/08.mp3"
+      },
+      {
+        "text": "辛波薇亚伤心透了，她决定离家出走。她带着毯子的碎片，包了一些食物，沿着爸爸出差的路离开了家里。",
+        "image": "assets/books/0052/09.jpg",
+        "audio": "assets/books/0052/09.mp3"
+      },
+      {
+        "text": "天黑了，辛波薇亚找到一棵长在小溪旁边的树。她爬上了树，在树枝上搭了一张小床。她唱着歌，渐渐睡着了：“妈妈，妈妈，妈妈，你离开了我，离开了我再也不回来了。爸爸再也不爱我了。妈妈，你什么时候回来，你离开了我……”",
+        "image": "assets/books/0052/10.jpg",
+        "audio": "assets/books/0052/10.mp3"
+      },
+      {
+        "text": "第二天早上，辛波薇亚又唱起了这首歌。附近的女人到溪水边来洗衣服，她们听到了树上传来的歌声。她们以为这是风穿过树叶的声音，于是就没有在意，继续洗衣服。但其中有个女人仔细地听着这首歌。",
+        "image": "assets/books/0052/11.jpg",
+        "audio": "assets/books/0052/11.mp3"
+      },
+      {
+        "text": "女人抬起头来看着那棵树。当她看到辛波薇亚和那条彩色的毯子时，她吓了一跳：“辛波薇亚，我哥哥的孩子！”其他的女人也停下了手里的活儿，帮助辛波薇亚从树上爬了下来。她的姑姑紧紧地抱着她，尽量安慰她。",
+        "image": "assets/books/0052/12.jpg",
+        "audio": "assets/books/0052/12.mp3"
+      },
+      {
+        "text": "辛波薇亚的姑姑带着她去了自己家。她给辛波薇亚煮了美味的食物，又给她铺了床，让她盖着妈妈的毯子睡觉。那天晚上，辛波薇亚又哭着睡着了。不过这次是欣慰的泪水。她知道她的姑姑会照顾她。",
+        "image": "assets/books/0052/13.jpg",
+        "audio": "assets/books/0052/13.mp3"
+      },
+      {
+        "text": "辛波薇亚的爸爸回到家里，发现辛波薇亚的房间里空荡荡的。他疲倦极了，问阿妮塔发生了什么事。阿妮塔说辛波薇亚离家出走了。她解释道：“我只是想让她尊敬我，但是我可能太严格了。”辛波薇亚的爸爸跑出家门，沿着小溪去找辛波薇亚。他走到了妹妹的村庄，想问问她有没有见过辛波薇亚。",
+        "image": "assets/books/0052/14.jpg",
+        "audio": "assets/books/0052/14.mp3"
+      },
+      {
+        "text": "辛波薇亚正在和她的表兄弟姐妹玩耍，但她突然看到了远处的爸爸。她害怕爸爸会生气，于是就跑到房子里躲了起来。但是爸爸找到她，对她说：“辛波薇亚，你自己找到了一个完美的妈妈，她爱你，理解你。我为你感到骄傲，我爱你。”他们商量后决定辛波薇亚可以和姑姑住在一起，想呆多久就可以呆多久。",
+        "image": "assets/books/0052/15.jpg",
+        "audio": "assets/books/0052/15.mp3"
+      },
+      {
+        "text": "辛波薇亚的爸爸每天都来看她。有一天，他和阿妮塔一起来了。阿妮塔朝辛波薇亚伸出手，她哭了：“我太抱歉了，小家伙，对不起，我错了，你可以再给我一次机会吗？”辛波薇亚看了看爸爸，看到他忧虑的脸庞。她朝前走了一步，抱住了阿妮塔。",
+        "image": "assets/books/0052/16.jpg",
+        "audio": "assets/books/0052/16.mp3"
+      },
+      {
+        "text": "过了几天，阿妮塔邀请辛波薇亚，姑姑和姑姑的孩子们一起到家里吃饭。好丰盛啊！而且那都是辛波薇亚喜欢吃的东西，每个人都吃得津津有味。吃完饭，大人们在家里聊天，孩子们在外面玩耍。辛波薇亚觉得很开心，自己变得更加勇敢了。她决定不久以后就要回到家里，和自己的爸爸，继母住在一起。",
+        "image": "assets/books/0052/17.jpg",
+        "audio": "assets/books/0052/17.mp3"
+      }
+    ]
+  },
+  {
+    "id": "0262",
+    "title": "玛格威",
+    "tag": "成长故事",
+    "color": "sage",
+    "intro": "玛格威走过困难，也开始寻找新的方向。",
+    "keywords": [
+      "男孩",
+      "学校",
+      "故事"
+    ],
+    "question": "玛格威后来有了什么愿望？",
+    "source": "https://www.storybookscanada.ca/stories/zh/0262/",
+    "sourceLevel": {
+      "system": "Storybooks Canada",
+      "value": 5
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Lesley Koyi",
+      "Illustrated by": "Wiehan de Jager",
+      "Translated by": "Vicky Liu",
+      "Read by": "Zhuo Sun"
+    },
+    "cover": "assets/books/0262/01.jpg",
+    "pages": [
+      {
+        "text": "在内罗毕这座繁忙的城市里，住着一群流浪的男孩，他们日复一日地活着，从来不知道什么是舒适安逸的生活。一天早上，男孩们从冰冷的人行道上醒来，把他们用来睡觉的毯子叠起来。天太冷了，为了驱赶寒气，他们用拾来的垃圾燃起了一堆火。在这群男孩中有一个人叫玛格威。",
+        "image": "assets/books/0262/02.jpg",
+        "audio": "assets/books/0262/02.mp3"
+      },
+      {
+        "text": "玛格威的父母过世时，他只有五岁，他搬去跟叔叔一起生活。叔叔从来不关心玛格威。玛格威在叔叔家挨饿受冻，还要干很多体力活。",
+        "image": "assets/books/0262/03.jpg",
+        "audio": "assets/books/0262/03.mp3"
+      },
+      {
+        "text": "一旦玛格威稍有抱怨，叔叔就会对他拳打脚踢。有一次，玛格威问叔叔他能不能去上学，叔叔狠狠地打了他几下，说：“你这傻瓜，用得着上学吗？”玛格威过了三年这样的日子，终于离家出走，无家可归。",
+        "image": "assets/books/0262/04.jpg",
+        "audio": "assets/books/0262/04.mp3"
+      },
+      {
+        "text": "流浪生活非常艰辛，大多数男孩每天只能混个温饱。他们有时候会被抓起来，有时候会挨打。当他们生病的时候，没有人照顾他们。这群男孩就靠乞讨得来的一点点钱过活，他们有时候也会卖塑料品和旧货赚点钱。有时候别的流浪汉会来找茬，争夺领地，那时候生活就更艰难。",
+        "image": "assets/books/0262/05.jpg",
+        "audio": "assets/books/0262/05.mp3"
+      },
+      {
+        "text": "有一天，玛格威正在翻垃圾箱，他找到了一本破旧不堪的故事书。他把书上的灰尘吹走，把书放进了袋子里。每天完工后，他会把书拿出来，翻着上面的图画，可惜他看不懂上面的文字。",
+        "image": "assets/books/0262/06.jpg",
+        "audio": "assets/books/0262/06.mp3"
+      },
+      {
+        "text": "图画书讲的是一个男孩长大成为飞行员的故事。玛格威有时候会梦想自己成为一个飞行员。有时候，他想象着自己就是故事中的男孩。",
+        "image": "assets/books/0262/07.jpg",
+        "audio": "assets/books/0262/07.mp3"
+      },
+      {
+        "text": "有一天，天气很冷，玛格威站在街头乞讨。一个男人走过来，跟他打招呼：“你好，我叫托马斯。我在这儿附近工作，你可以到那儿拿点吃的。”他指着一座蓝顶黄墙的房子，“我希望你别客气，到那儿去拿点吃的吧！”玛格威看了看男人，又看了看房子，说：“可能吧！”然后他就走开了。",
+        "image": "assets/books/0262/08.jpg",
+        "audio": "assets/books/0262/08.mp3"
+      },
+      {
+        "text": "接下来的几个月，流浪的男孩们渐渐认识了托马斯。他喜欢跟人聊天，特别是无家可归的人。托马斯听别人讲他们的故事。他不苟言笑，非常耐心、有礼貌，尊重他人。一些男孩开始在白天去蓝顶黄墙的房子里找吃的。",
+        "image": "assets/books/0262/09.jpg",
+        "audio": "assets/books/0262/09.mp3"
+      },
+      {
+        "text": "有一天，玛格威正坐在人行道上看故事书，托马斯来了坐在他旁边。托马斯问：“这本书讲了什么故事？”玛格威回答说：“这是关于一个男孩成为飞行员的故事。”托马斯问：“男孩叫什么名字？”玛格威声音低了下去：“我不知道，我不识字。”",
+        "image": "assets/books/0262/10.jpg",
+        "audio": "assets/books/0262/10.mp3"
+      },
+      {
+        "text": "当他们再次见面的时候，玛格威开始跟托马斯讲自己的故事，他的叔叔怎么对他，他怎么逃离了叔叔家。托马斯没说什么，也没有告诉玛格威该怎么做，但是他听得很仔细。有时候他们会一边在蓝顶黄墙的房子里吃东西，一边聊聊天。",
+        "image": "assets/books/0262/11.jpg",
+        "audio": "assets/books/0262/11.mp3"
+      },
+      {
+        "text": "玛格威十岁生日的时候，托马斯给了他一本新的故事书，这是关于一个乡下男孩成为足球运动员的故事。托马斯给玛格威讲过这个故事很多次。有一天，托马斯说：“我觉得你应该去上学，去识字。你觉得呢？”托马斯说他知道一个地方，孩子们可以住在那儿，上学。",
+        "image": "assets/books/0262/12.jpg",
+        "audio": "assets/books/0262/12.mp3"
+      },
+      {
+        "text": "玛格威想了想去新地方生活，上学。但是，如果他叔叔说得对，他太笨了上不了学怎么办？如果在新的地方，他又要挨打怎么办？他有点儿害怕，心想：“也许我注定就要睡在马路边。”",
+        "image": "assets/books/0262/13.jpg",
+        "audio": "assets/books/0262/13.mp3"
+      },
+      {
+        "text": "他把自己的想法告诉了托马斯。托马斯对他循循善诱，终于说服了玛格威，他在新地方一定会过上更好的生活。",
+        "image": "assets/books/0262/14.jpg",
+        "audio": "assets/books/0262/14.mp3"
+      },
+      {
+        "text": "玛格威搬到了新家，新家的屋顶是绿色的。他和两个男孩住一间房间。屋子里还住着其他十个孩子。和他们住在一起的是茜茜阿姨和她的丈夫，还有三只狗，一只猫，一头老山羊。",
+        "image": "assets/books/0262/15.jpg",
+        "audio": "assets/books/0262/15.mp3"
+      },
+      {
+        "text": "玛格威开始读书，他遇到了不少困难，很难赶上他的同学们，有时候他差点就要放弃了。但他每次想起故事书里的飞行员和足球运动员，他都坚持了下来，就像他们一样。",
+        "image": "assets/books/0262/16.jpg",
+        "audio": "assets/books/0262/16.mp3"
+      },
+      {
+        "text": "有一天，玛格威正在屋子后院里看书，托马斯来了，坐在他旁边：“这本书讲了什么故事？”玛格威回答说：“这是关于一个男孩变成老师的故事。”托马斯问：“那个男孩叫什么名字？”玛格威咧嘴一笑：“他叫玛格威。”",
+        "image": "assets/books/0262/17.jpg",
+        "audio": "assets/books/0262/17.mp3"
       }
     ]
   }

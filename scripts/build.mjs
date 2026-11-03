@@ -2,10 +2,17 @@ import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promise
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {PINYIN_RECORDINGS} from '../app/pinyin.js';
+import {readingLevelLabel} from '../app/reading-levels.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
+for (const book of books) {
+  const source = sources.sources.find(source => source.kind === 'book' && source.id === book.id);
+  if (!readingLevelLabel(book.sourceLevel) || source?.sourceLevel?.system !== book.sourceLevel.system || source?.sourceLevel?.value !== book.sourceLevel.value) {
+    throw Error(`Missing or inconsistent source reading level: ${book.id}`);
+  }
+}
 const allowedPinyin = Object.keys(PINYIN_RECORDINGS).map(id => `${id}.mp3`).sort();
 const actualPinyin = (await readdir(`${root}assets/pinyin`)).filter(name => name.endsWith('.mp3')).sort();
 if (JSON.stringify(allowedPinyin) !== JSON.stringify(actualPinyin)) throw Error('Pinyin audio files must match enabled recordings; remove rejected files or import approved replacements.');
@@ -38,11 +45,17 @@ async function walk(dir, prefix = '') {
   return files;
 }
 const files = (await walk(out)).sort(), hash = createHash('sha256');
+const assets = Object.fromEntries(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.sha256]));
+const assetBytes = new Map(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.bytes]));
+const group = paths => ({files: [...new Set(paths)], bytes: [...new Set(paths)].reduce((sum, path) => sum + assetBytes.get(path), 0)});
+const bookGroups = Object.fromEntries(books.map(book => [book.id, {title: book.title, level: book.sourceLevel.value, cover: book.cover, ...group([book.cover, ...book.pages.flatMap(page => [page.image, page.audio])])}]));
+const pinyin = group(allowedPinyin.map(file => `assets/pinyin/${file}`));
+hash.update(JSON.stringify({assets, bookGroups, pinyin}));
 let size = 0;
 for (const path of files) { const bytes = await readFile(out + path); size += bytes.length; hash.update(path).update(bytes); }
 const sw = await readFile(`${root}sw.js`, 'utf8');
 hash.update(sw);
 const version = hash.digest('hex').slice(0, 16);
 await writeFile(`${out}sw.js`, sw.replace('__VERSION__', version));
-await writeFile(`${out}precache.json`, JSON.stringify({version, bytes: size, files: [...files, 'precache.json']}, null, 2));
+await writeFile(`${out}precache.json`, JSON.stringify({version, bytes: size, files: [...files, 'precache.json'], assets, books: bookGroups, pinyin}, null, 2));
 console.log(`Built ${books.length} books, ${files.length} files, ${(size / 1024 / 1024).toFixed(1)} MB · ${version}`);
