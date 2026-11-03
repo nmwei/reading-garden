@@ -1,0 +1,151 @@
+{
+  "reviewedOn": "2026-11-03",
+  "reason": "用户试听反馈：a、e、i的同一男声不适合作为教学示范；该男声的所有拼音录音统一停用。未将文件可解码视为发音合格。",
+  "replacementStatus": "pending",
+  "disabled": [
+    {
+      "kind": "pinyin",
+      "id": "a",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-%C4%81.ogg",
+      "original": {
+        "path": ".asset-cache/a.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Zh-%C4%81.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "f4f1c2fa90e26591de5cc9fa0945384999c1962dd561e9c4ae7b17acdf25c473",
+        "bytes": 12783,
+        "sha1": "116d1160e7875135d0021e94d583a27aa3c848b4"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"ā\" (啊) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/a.mp3",
+          "bytes": 11444,
+          "sha256": "0a2563b901e8d64ced7d66ccd754820967503ecc62e506aff5ed124a8e3833db"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "e",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-%C3%A8.ogg",
+      "original": {
+        "path": ".asset-cache/e.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Zh-%C3%A8.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "f5636060765119ff818c032dedeb6feee2331acf939e6b52cf553aaf1656dcac",
+        "bytes": 11308,
+        "sha1": "1527e3e1c90bbc8b4c3d94b05db15b1125339cdd"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"è\" (饿) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/e.mp3",
+          "bytes": 9046,
+          "sha256": "71372f6bad9cbd3207735953b325f97ce6e6d0d237abf2277e00d9d9d998b089"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "i",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-y%C4%AB.ogg",
+      "original": {
+        "path": ".asset-cache/i.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Zh-y%C4%AB.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "6f1a953560af1c77d64847da8c35f793a745cf23a2bec0da3c99a5cd700665b3",
+        "bytes": 12644,
+        "sha1": "ec4665c98f270f266de5ab205d117c06f4271875"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"yī\" (一) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/i.mp3",
+          "bytes": 10245,
+          "sha256": "d3a9bec90fe2c49fc47854df5a1b87c46d7ec094d3acd5a23031de757ae94c74"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "v",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-y%C3%BA.ogg",
+      "original": {
+        "path": ".asset-cache/v.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Zh-y%C3%BA.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "8cfe6188fac606ba4e0faa56f9e0364a898463d3ecc110ee6077949d66c1ccdc",
+        "bytes": 11803,
+        "sha1": "89b8a737852225a32c5ccaced9743671932a4f4d"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"yú\" (鱼) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/v.mp3",
+          "bytes": 10246,
+          "sha256": "34cbf3172c3d1ebf33dc29c42de86a38e4eee47918bc8c043481792b5a9431a9"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone1",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C4%81.ogg",
+      "original": {
+        "path": ".asset-cache/tone1.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Zh-b%C4%81.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "d676d02bc70967c8a12026a5e54e8559a81d1687f86c334420962ddafc78c974",
+        "bytes": 12214,
+        "sha1": "08ae57897f68e8b4798ce0514e383ff87464fbb3"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"bā\" (八) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone1.mp3",
+          "bytes": 13138,
+          "sha256": "90ab9e6cb4743c8c09e561a195f60d61e547941b443b89ad9f8783ef1be8e8b8"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone3",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C7%8E.ogg",
+      "original": {
+        "path": ".asset-cache/tone3.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Zh-b%C7%8E.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "90c7f78a5178f24fd01026d400318dc29df00a7b3ddff4db4fc14b593e8d7fd0",
+        "bytes": 14504,
+        "sha1": "ca51825d331a2c87feca8e17fc73ccce99be274b"
+      },
+      "author": "Wei Gao, Vion Nicolas",
+      "description": "Pronunciation of \"bǎ\" (把) in Chinese. Male voice. Speaker from Pekin, China.",
+      "license": "CC BY 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone3.mp3",
+          "bytes": 14210,
+          "sha256": "c76ab0cfe64ba343678bd26cae6db8c7ec61054ce6120e94cb95ab91a9c3a926"
+        }
+      ]
+    }
+  ]
+}

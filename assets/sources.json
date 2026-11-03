@@ -1,0 +1,419 @@
+{
+  "importedAt": "2026-11-03T02:53:51.871Z",
+  "sources": [
+    {
+      "kind": "book",
+      "id": "0087",
+      "source": "https://www.storybookscanada.ca/stories/zh/0087/",
+      "credits": {
+        "Written by": "Letta Machoga",
+        "Illustrated by": "Wiehan de Jager",
+        "Translated by": "dohliam",
+        "Read by": "Zhuo Sun"
+      },
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "changes": "文字、图片与录音保持原样；另行编写中文简介、阅读提示和词语解释。",
+      "assets": [
+        {
+          "path": "assets/books/0087/01.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/01.jpg",
+          "sha256": "23ab797c3607409f1811387b430025f1ec339405ea1ac0aba8aaf7c649183a40",
+          "bytes": 30084
+        },
+        {
+          "path": "assets/books/0087/02.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/02.jpg",
+          "sha256": "23ab797c3607409f1811387b430025f1ec339405ea1ac0aba8aaf7c649183a40",
+          "bytes": 30084
+        },
+        {
+          "path": "assets/books/0087/02.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/02.mp3",
+          "sha256": "4b5fca9af1fe19fd111f68893c1aab2ea674f0a6427cc049c71f9d65c5fc9e31",
+          "bytes": 23424
+        },
+        {
+          "path": "assets/books/0087/03.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/03.jpg",
+          "sha256": "a421ed4c797b7e9276c4f17c556851ad948d027d98bfc96b9a42c8400f033a6a",
+          "bytes": 22068
+        },
+        {
+          "path": "assets/books/0087/03.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/03.mp3",
+          "sha256": "730cb6245e3a12ef747db2dbdddcd48372cb5e2f453fb3b58f1fd3427afe8acd",
+          "bytes": 34824
+        },
+        {
+          "path": "assets/books/0087/04.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/04.jpg",
+          "sha256": "d36c5e433208aa9a76ad8afa0a2594a93aeeb51497b72c25bc0da86d2158db38",
+          "bytes": 34500
+        },
+        {
+          "path": "assets/books/0087/04.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/04.mp3",
+          "sha256": "fd1ccce12445ec8d60f28cfa0c87fb2aaf78f50a2a9aa541517ec96d1053f499",
+          "bytes": 38904
+        },
+        {
+          "path": "assets/books/0087/05.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/05.jpg",
+          "sha256": "de99e3a203fe8ef25e6b78324d8739976a74f0960228d83a95267a7770a3409f",
+          "bytes": 25354
+        },
+        {
+          "path": "assets/books/0087/05.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/05.mp3",
+          "sha256": "c65e99f58da28ecebe007e7346b9083764c68782f166262526e05b60510f63e2",
+          "bytes": 35712
+        },
+        {
+          "path": "assets/books/0087/06.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/06.jpg",
+          "sha256": "b846136ead4e2b9020205b7cf06aac64986e4728d0a26571fd684055b8a1ae23",
+          "bytes": 37308
+        },
+        {
+          "path": "assets/books/0087/06.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/06.mp3",
+          "sha256": "e5ce5a43297228fcb86e665afa7df17928acc58aab8af0137ccbe09fd800290f",
+          "bytes": 43200
+        },
+        {
+          "path": "assets/books/0087/07.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/07.jpg",
+          "sha256": "34a1691432d43c8a3fe68f43a95635ec24b3a641f6a0bd90adebba947b5da2da",
+          "bytes": 31585
+        },
+        {
+          "path": "assets/books/0087/07.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/07.mp3",
+          "sha256": "7ef881bf71ebed7ac9d13b90a05784b9c8fb046d334b8f4c24d217f8883c43e7",
+          "bytes": 38136
+        },
+        {
+          "path": "assets/books/0087/08.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/08.jpg",
+          "sha256": "805d7f28b38068718e65e1cb34e78fc4b6097fe605306e53dccdd526402baf54",
+          "bytes": 36635
+        },
+        {
+          "path": "assets/books/0087/08.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/08.mp3",
+          "sha256": "727070bddfba5c37d8518970bef146a1839ea11d633af8a170a83597a949c2d7",
+          "bytes": 45336
+        },
+        {
+          "path": "assets/books/0087/09.jpg",
+          "url": "https://www.storybookscanada.ca/images/0087/09.jpg",
+          "sha256": "9c19e6d5f903b212c07530dc3c78d25a8091acf7e9430fb297689301a29472c9",
+          "bytes": 27396
+        },
+        {
+          "path": "assets/books/0087/09.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0087/mp3/09.mp3",
+          "sha256": "3cfb2be322d7b57a2e3b589b7bc54a0188f76a236fa63de806617e65f3e149df",
+          "bytes": 71760
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "id": "0156",
+      "source": "https://www.storybookscanada.ca/stories/zh/0156/",
+      "credits": {
+        "Written by": "Christian G.",
+        "Illustrated by": "Wiehan de Jager",
+        "Translated by": "dohliam",
+        "Read by": "Zhuo Sun"
+      },
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "changes": "文字、图片与录音保持原样；另行编写中文简介、阅读提示和词语解释。",
+      "assets": [
+        {
+          "path": "assets/books/0156/01.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/01.jpg",
+          "sha256": "8a40f4dbd6852a371a889bda7f64ae1a111afe1a3f5a36c1014e5f31b18ff05e",
+          "bytes": 28524
+        },
+        {
+          "path": "assets/books/0156/02.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/02.jpg",
+          "sha256": "8a40f4dbd6852a371a889bda7f64ae1a111afe1a3f5a36c1014e5f31b18ff05e",
+          "bytes": 28524
+        },
+        {
+          "path": "assets/books/0156/02.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0156/mp3/02.mp3",
+          "sha256": "221015a48c5e2d9730a84cd1577a645777fe3b546aef2e7c390ae2743d9f6524",
+          "bytes": 59880
+        },
+        {
+          "path": "assets/books/0156/03.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/03.jpg",
+          "sha256": "1fc57e8d4b593004ab6ada87bb9cce4c9318b74f8f3b761363a143cdd4bfa483",
+          "bytes": 21535
+        },
+        {
+          "path": "assets/books/0156/03.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0156/mp3/03.mp3",
+          "sha256": "b57b54611648945fa2a2c7ecc9b234a5b8b30114e178db5e7c99734691690bc1",
+          "bytes": 73848
+        },
+        {
+          "path": "assets/books/0156/04.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/04.jpg",
+          "sha256": "64a4c4058280c3e6e6623bdc0c2d74aa47c0d8ec4d618c9ddf18c0a13d4dd868",
+          "bytes": 40171
+        },
+        {
+          "path": "assets/books/0156/04.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0156/mp3/04.mp3",
+          "sha256": "9887850faa5d0c33dd7d7dac6cc7854f28ec2bab3afe84c897aa5d8aa5afeb17",
+          "bytes": 33072
+        },
+        {
+          "path": "assets/books/0156/05.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/05.jpg",
+          "sha256": "8e822dcb13f22a193881b43b428cf01deb725d0bebebcf49784d82369b841af7",
+          "bytes": 56225
+        },
+        {
+          "path": "assets/books/0156/05.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0156/mp3/05.mp3",
+          "sha256": "8e3b09d7525adf07eb0647caf71dc18c8f8b703b577210586ac5f7f52f5fc5d0",
+          "bytes": 63288
+        },
+        {
+          "path": "assets/books/0156/06.jpg",
+          "url": "https://www.storybookscanada.ca/images/0156/06.jpg",
+          "sha256": "929e1f763d9b0e2a9be79a8293090cc0bf534f4e39fd4674d55033536f288555",
+          "bytes": 18698
+        },
+        {
+          "path": "assets/books/0156/06.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0156/mp3/06.mp3",
+          "sha256": "c3858904b3154d5d565e5dd23b8246dc962ed8ddb5d3fca69ddeb53836191b0f",
+          "bytes": 45384
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "id": "0009",
+      "source": "https://www.storybookscanada.ca/stories/zh/0009/",
+      "credits": {
+        "Written by": "Clare Verbeek, Thembani Dladla, Zanele Buthelezi",
+        "Illustrated by": "Bronwen Heath, Ingrid Schechter",
+        "Translated by": "dohliam",
+        "Read by": "Zhuo Sun"
+      },
+      "license": "CC BY-NC 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "changes": "文字、图片与录音保持原样；另行编写中文简介、阅读提示和词语解释。",
+      "assets": [
+        {
+          "path": "assets/books/0009/01.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/01.jpg",
+          "sha256": "84bd17c3156cf099496f23fa7f3321c3a7338d8d5f06e5dfeb923c75c279ef4b",
+          "bytes": 89853
+        },
+        {
+          "path": "assets/books/0009/02.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/02.jpg",
+          "sha256": "84bd17c3156cf099496f23fa7f3321c3a7338d8d5f06e5dfeb923c75c279ef4b",
+          "bytes": 89853
+        },
+        {
+          "path": "assets/books/0009/02.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/02.mp3",
+          "sha256": "4c68a7442ed2ebcce2a9fa55d265110db1886a5d2fa929ab094c4dc0e57a089d",
+          "bytes": 39600
+        },
+        {
+          "path": "assets/books/0009/03.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/03.jpg",
+          "sha256": "94a99706821138431e84f3f6fd634366efe49d69bcf499ad5377c7163b441f13",
+          "bytes": 57893
+        },
+        {
+          "path": "assets/books/0009/03.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/03.mp3",
+          "sha256": "363b56142833af14ce23cfcfca1d44ac813aef877e894fe7f2388c658c2965f6",
+          "bytes": 36576
+        },
+        {
+          "path": "assets/books/0009/04.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/04.jpg",
+          "sha256": "4a0c508f394ae5011c8a8482d3f02f5b9a23b26f368a6fc1c18fb0e395ace30b",
+          "bytes": 67886
+        },
+        {
+          "path": "assets/books/0009/04.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/04.mp3",
+          "sha256": "f020e6f0c784ef0bc92e5a92cd076982a2d8c9e21defe676104e34a696c2c05e",
+          "bytes": 41808
+        },
+        {
+          "path": "assets/books/0009/05.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/05.jpg",
+          "sha256": "5c2450f55decbe14870e169ef8a2a93ab45003d0b5d99f468120a839c2bf47c3",
+          "bytes": 69988
+        },
+        {
+          "path": "assets/books/0009/05.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/05.mp3",
+          "sha256": "5dfa8acb88bf161aaf6a8214e9411f0c2df1791713a43db25b7d3d83200649e2",
+          "bytes": 42192
+        },
+        {
+          "path": "assets/books/0009/06.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/06.jpg",
+          "sha256": "9e7b7ae5dbf8a03d2955dd4446faf484340cf546697c87b620c56c090f8ab39b",
+          "bytes": 75228
+        },
+        {
+          "path": "assets/books/0009/06.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/06.mp3",
+          "sha256": "e5367818af54f4c3cc140ce2d8fa2365835fbd3c8ac4e384e71159152ce849a7",
+          "bytes": 43704
+        },
+        {
+          "path": "assets/books/0009/07.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/07.jpg",
+          "sha256": "8b5d97d58c4efa465978cabf4912dc98cf974cce85781431a8b51a402e16d4cd",
+          "bytes": 61316
+        },
+        {
+          "path": "assets/books/0009/07.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/07.mp3",
+          "sha256": "7e3211eaa46df54f51d2df1f4eafe6737232859c97c26ca3ac77d4ec0f90fe0f",
+          "bytes": 40944
+        },
+        {
+          "path": "assets/books/0009/08.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/08.jpg",
+          "sha256": "947e2ec7b5fc165296442d7ac59cf523488f03ece1bcfc0e04a7db51c5fa3fa6",
+          "bytes": 63334
+        },
+        {
+          "path": "assets/books/0009/08.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/08.mp3",
+          "sha256": "529c62d1b0a2868f7d33eff4e3972801295a523390fd30fd8d9e4cd8f4e4b55a",
+          "bytes": 41472
+        },
+        {
+          "path": "assets/books/0009/09.jpg",
+          "url": "https://www.storybookscanada.ca/images/0009/09.jpg",
+          "sha256": "0da5651d8bb88e27a39334f6c90696be3b27478e7bf20b4c3349b3b3250489c6",
+          "bytes": 66360
+        },
+        {
+          "path": "assets/books/0009/09.mp3",
+          "url": "https://www.storybookscanada.ca/audio/zh/0009/mp3/09.mp3",
+          "sha256": "1633961dd54db41ad969664546ad8123174542b89ea1f5d92f5c39edd124b965",
+          "bytes": 29136
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "o",
+      "source": "https://commons.wikimedia.org/wiki/File%3ALL-Q9192%20(cmn)-Luilui6666-%E5%96%94.wav",
+      "original": {
+        "path": ".asset-cache/o.wav",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/LL-Q9192_%28cmn%29-Luilui6666-%E5%96%94.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "ebb07674ae84563364ab0a01552409464c0325269646c05b068d3e30be32dac0",
+        "bytes": 76588,
+        "sha1": "4a0fcb6cc203b8e914aa4dd51ea1b6b70cbeba74"
+      },
+      "author": "Speaker: Luilui6666 Recorder: Luilui6666",
+      "description": "Audio pronunciation file from the Lingua Libre project.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/o.mp3",
+          "bytes": 6973,
+          "sha256": "f8bc0717790eabd1162e87712eb0eb1a3b1195aea9258d20f208d384aa0158c3"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "u",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-w%C5%AB.oga",
+      "original": {
+        "path": ".asset-cache/u.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zh-w%C5%AB.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "8ac63589aea1a02878275013c359cc11b502552fb258323a39b92a1809b23d03",
+        "bytes": 12508,
+        "sha1": "244c50bc5a3e21b391888996372b7b842b2d6bfd"
+      },
+      "author": "Yue Tan",
+      "description": "Pronunciation of \"wū\" (屋) in Chinese. Female voice. Speaker from Liaoning, China.",
+      "license": "CC BY-SA 3.0 us",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/u.mp3",
+          "bytes": 12124,
+          "sha256": "45c0c00afecc85a74e80101986c26bba4e420bf86d34d67c5beccb6f04cac481"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone2",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C3%A1.ogg",
+      "original": {
+        "path": ".asset-cache/tone2.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Zh-b%C3%A1.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "a6efb206dff1744aabfa3e336a2379a110eca4edfc7deaba28a2aad063e3d6f7",
+        "bytes": 12973,
+        "sha1": "c58ca8cc0a436ae5123c1558e369e6427f1ab7d9"
+      },
+      "author": "Yue Tan",
+      "description": "Pronunciation of \"bá\" (拔) in Chinese. Female voice. Speaker from Liaoning, China.",
+      "license": "CC BY-SA 3.0 us",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone2.mp3",
+          "bytes": 12176,
+          "sha256": "0812b6eb149c2998f9b65e8547c09ac7a9eb3584d677d4c45d22d63491ea320f"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone4",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C3%A0.ogg",
+      "original": {
+        "path": ".asset-cache/tone4.ogg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Zh-b%C3%A0.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "0f05448ba3cb524fd3320bfe25d99d0dd54184025b1543e512076fd534aac343",
+        "bytes": 12540,
+        "sha1": "af683cc5a2b8cc8a6a204f52dc1e77ac6c8b05a3"
+      },
+      "author": "Yue Tan",
+      "description": "Pronunciation of \"bà\" (罢) in Chinese. Female voice. Speaker from Liaoning, China.",
+      "license": "CC BY-SA 3.0 us",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
+      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone4.mp3",
+          "bytes": 11574,
+          "sha256": "ae8b88a7b582bc3fe57b14c8a7a9b14cc14e636538f47816f0839c5dcdd10ef2"
+        }
+      ]
+    }
+  ]
+}
