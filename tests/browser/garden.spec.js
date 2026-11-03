@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {TONE_BASES} from '../../app/pinyin.js';
+const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
 
 // Real server faults exercise worker-owned network requests in both browser engines.
 const test = base.extend({
@@ -47,7 +48,7 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await expect(page.locator('.book-level').first()).toHaveText('Storybooks Canada 1级');
   await expect(page.locator('.book-level').first()).toHaveAttribute('aria-label', 'Storybooks Canada · 1级（原站分级）');
   expect(await page.evaluate(() => window.__plays)).toEqual([]);
@@ -348,7 +349,7 @@ test('downloaded library works offline including audio byte ranges at a project 
   await enterParent(page);
   await page.getByRole('link', {name: '故事书架', exact: true}).click();
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await page.locator('.book-card[href^="#/book/0009/"]').click();
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
   await page.getByRole('button', {name: '读这一页'}).click();
@@ -403,7 +404,7 @@ test('storage corruption is recoverable and clearing data requires a deliberate 
   await page.evaluate(() => localStorage.setItem('reading-garden-v1', '{broken'));
   await page.reload();
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
   await enterParent(page);
@@ -717,7 +718,7 @@ test('a queued close event cannot cancel a newly opened parent hold', async ({pa
 test('all forty books can be found by grade and theme, including empty intersections', async ({page}) => {
   await page.goto('/');
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   for (const [grade,count] of [[1,15],[2,11],[3,8],[4,4],[5,2]]) {
     await page.locator(`[data-book-level="Storybooks Canada:${grade}"]`).click();
     await expect(page.locator('.book-card')).toHaveCount(count);

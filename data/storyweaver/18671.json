@@ -1,0 +1,222 @@
+{
+  "id": "sw-18671",
+  "title": "我不害怕！",
+  "source": "https://storyweaver.org.in/en/stories/18671-wo-bu-hai-pa",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Mini Shrinivasan",
+    "Illustrated by": "Rayika Sen",
+    "Translated by": "Yu Wu"
+  },
+  "copyright": "原作 © Pratham Books , 2013；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2013。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/18671-wo-bu-hai-pa",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Yu Wu , 2017",
+      "attributionText": "This story: 我不害怕！ is translated by Yu Wu . The © for this translation lies with Yu Wu , 2017. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' I Am Not Afraid! ' , by Mini Shrinivasan . © Pratham Books , 2013. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/18671-wo-bu-hai-pa",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2013"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 我不害怕！ is translated by Yu Wu . The © for this translation lies with Yu Wu , 2017. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' I Am Not Afraid! ' , by Mini Shrinivasan . © Pratham Books , 2013. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Scared girl out in the dark , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 2: A young girl out at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 3: Young girl walking through the forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 4: A cat in a forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 5: A girl peeping from behind the bushes , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 6: Girl near a well in the forest , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 7: A girl entering a thick forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 8: A girl drawing water from the well , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 9: A terrified girl in the dark woods , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 10: A girl running to meet her mother , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Images Attributions: Page 11: A happy girl in the forest , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Page 12: Smiling girl, cat and patterns , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "我不害怕！ (Chinese (Simplified)) 一个小女孩独自走在黑暗里，她发现了什么？这本书是我们的四本'成长'系列丛书之一。 This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11676/size7/ef55dbf113042f5b69d26951f25977de.jpg",
+    "sha256": "4e3a22e9c156db52ce4ddd13942411cbd69b545ac1fc51fa8abdc5ab51299ef8",
+    "illustrationId": 1568,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/1568-scared-girl-out-in-the-dark",
+    "copyright": "© Pratham Books, 2013",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Scared girl out in the dark , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "我是个大女孩。我独自走出家门。",
+      "text": "我是个大女孩。我独自走出家门。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11677/size7/374d792a22f02961334325d31e5b9e0a.jpg",
+        "sha256": "cfd8207fcdb55aad3060296f4bb30ba14bdb18d716a4734ce80980126ff204b8",
+        "illustrationId": 1569,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1569-a-young-girl-out-at-night",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: A young girl out at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "真黑！有人在吗？你是谁？",
+      "text": "真黑！有人在吗？你是谁？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11678/size7/c8206278f462bef78271753f2e9d630f.jpg",
+        "sha256": "197e21930ff58307cce45f33d78a1a5dae35c0b8a06d4e14ef0ad0cb1cd81c62",
+        "illustrationId": 1570,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1570-young-girl-walking-through-the-forest-at-night",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Young girl walking through the forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "哦，只是一只猫。我不害怕。",
+      "text": "哦，只是一只猫。我不害怕。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11679/size7/1e74e244a70f7fe3c14d083e05a6f57b.jpg",
+        "sha256": "ae947ee4a7b7c190f5757b719f670cb30691b3df5b06c3349bf1a5845c0f2614",
+        "illustrationId": 1571,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1571-a-cat-in-a-forest-at-night",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: A cat in a forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "我看到外面有个大大的黑色的东西！这是什么？",
+      "text": "我看到外面有个大大的黑色的东西！这是什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11680/size7/c727077af70efa2a5d5b9a8378671b16.jpg",
+        "sha256": "d4a8bcc41def30d65cb0ceb02f3861d83f0e55ac7d6cce40495e51248bc64c30",
+        "illustrationId": 1572,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1572-a-girl-peeping-from-behind-the-bushes",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: A girl peeping from behind the bushes , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "哦，只是一口井。我不害怕。",
+      "text": "哦，只是一口井。我不害怕。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11681/size7/d308d12c38b62680a573614bcf172480.jpg",
+        "sha256": "b990c42f7b427834eb0397c88cc5ee9236c5848ffad4c48797a5ea1bf3e3a748",
+        "illustrationId": 1573,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1573-girl-near-a-well-in-the-forest",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Girl near a well in the forest , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "还有这个声音？哗啦，哗啦，哗啦！这是什么？",
+      "text": "还有这个声音？哗啦，哗啦，哗啦！这是什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11682/size7/059ea834e1b1b9d11aecc9e24e5d32fc.jpg",
+        "sha256": "f8f0a3e711cba475577e7989e53fa8056554b2e366e1c8d131e6295598114ae9",
+        "illustrationId": 1574,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1574-a-girl-entering-a-thick-forest-at-night",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: A girl entering a thick forest at night , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "只是我的姐姐从井里打水。我不害怕。",
+      "text": "只是我的姐姐从井里打水。我不害怕。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11683/size7/9fe66565ad4ad6b0ade3f8477d236c2f.jpg",
+        "sha256": "cc79dda4e60a9c5d2718f5aa879ff6c023f3680ae8a18840b93f4c7c65ae0d21",
+        "illustrationId": 1575,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1575-a-girl-drawing-water-from-the-well",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: A girl drawing water from the well , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "我听到脚步声！是谁？是谁？",
+      "text": "我听到脚步声！是谁？是谁？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11684/size7/5f3d993066bb9fc2b2a5616eccaef355.jpg",
+        "sha256": "9c87a6c8f484d44ac6a4ba7b6473e5d34e702f23e9a3871d2a44b659b3cf68a8",
+        "illustrationId": 1576,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1576-a-terrified-girl-in-the-dark-woods",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 9: A terrified girl in the dark woods , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "是我的母亲。她从田里回到家。",
+      "text": "是我的母亲。她从田里回到家。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11685/size7/bb60b60314441faaee3f1d6692814302.jpg",
+        "sha256": "a7bb0dd4bef89d281ff8f044132806d71f86618c93f4eea7f53fa20375e3961f",
+        "illustrationId": 1577,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1577-a-girl-running-to-meet-her-mother",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 10: A girl running to meet her mother , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 11,
+      "originalText": "现在我是个大女孩了。",
+      "text": "现在我是个大女孩了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11686/size7/4cf48d4d82fde38991fcad1607af1c72.jpg",
+        "sha256": "c4966e95867891d08a42ae476c8d1e70c60ee63f03f87da5c31dc55f7bbe75c1",
+        "illustrationId": 1578,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1578-a-happy-girl-in-the-forest",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 11: A happy girl in the forest , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 12,
+      "originalText": "我什么也不怕！",
+      "text": "我什么也不怕！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/11687/size7/7834412c7b54d573f69e38c5c9ea5b8a.jpg",
+        "sha256": "e1bf36fc65d23ae35e86a3eedac62fbbdb7be2816f2422ad2a14136c5595d3b4",
+        "illustrationId": 1579,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1579-smiling-girl-cat-and-patterns",
+        "copyright": "© Pratham Books, 2013",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 12: Smiling girl, cat and patterns , by Rayika Sen © Pratham Books, 2013. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.928532+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "“这是什么/是谁/我不害怕”反复，猫/井/打水/姐姐/母亲等熟悉词支撑独立阅读；篇幅短但有情节。",
+      "story": "由未知影声到识别熟悉人和事，适合讨论害怕和观察，最后是自信宣言。",
+      "visualProxy": "Rayika Sen统一绘制，12页应呈现夜色但非恐怖，root验图。"
+    },
+    "warnings": [
+      "情境有夜间出门和井边打水，是当地故事生活，不建议孩子独自靠近水井。",
+      "末句“什么也不怕”是角色自信表达，不把现实中害怕视为错误。"
+    ]
+  }
+}

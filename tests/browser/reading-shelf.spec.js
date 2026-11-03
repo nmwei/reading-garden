@@ -17,7 +17,7 @@ test('shelf and catalog are separate; choosing several books stays in the catalo
   await expect(page.locator('.book-card, [data-book-level], [data-edit-reading-list]')).toHaveCount(0);
   await page.getByRole('link', {name: '去书库挑一挑', exact: true}).click();
   await expect(page).toHaveURL(/#\/library$/);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await expect(page.locator('.reading-shelf')).toHaveCount(0);
   for (const id of ['0156', '0087', '0009']) {
     await add(page, id).click();
@@ -121,7 +121,7 @@ test('desktop, iPad and phone keep shared cards and the spacious resume panel us
 test('catalog membership toggles and persists offline at a project subpath', async ({page,context}) => {
   const url='http://localhost:4179/reading-garden/';
   await page.goto(`${url}#/library`);
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await page.evaluate(async()=>{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true}));});
   await context.setOffline(true); await page.reload();
   await add(page,'0087').click(); await page.locator('.library-toolbar a').click();

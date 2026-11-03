@@ -112,6 +112,11 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 .text-unit{white-space:nowrap}
 .art-frame{position:relative;width:min(100%,var(--art-width));aspect-ratio:var(--art-ratio);overflow:hidden}
 .page-art .art-frame img{position:absolute;height:auto;max-height:none;max-width:none}
+.art-label{position:absolute;z-index:1;line-height:1;font-family:system-ui,sans-serif;font-size:clamp(14px,1.5vw,18px);font-weight:700;color:#203c33;text-shadow:0 0 2px #fff,1px 1px #fff,-1px -1px #fff;pointer-events:none}
+.reading-spread.text-only{grid-template-columns:minmax(0,1fr)}
+.reading-spread.text-only .page-words{width:100%;max-width:800px;margin-inline:auto;border:0}
+.reading-spread.wordless{grid-template-columns:minmax(0,1fr);min-height:0}
+.reading-spread.wordless .page-words{min-height:0;align-items:center;padding:12px 24px;border-left:0;border-top:1px solid #f0eee5}
 .shelf-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
 .shelf-tools label{font-size:13px;color:var(--muted)}
 .shelf-tools select{width:180px;min-height:44px;padding:9px 12px;font-size:13px;background:var(--white)}

@@ -3,13 +3,21 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {PINYIN_RECORDINGS} from '../app/pinyin.js';
 import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
+import {validateStoryWeaverFixture, validateImportedStoryWeaverBook} from './storyweaver-metadata.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
 for (const book of books) {
   const source = sources.sources.find(source => source.kind === 'book' && source.id === book.id);
-  if (source?.metadataFile && createHash('sha256').update(await readFile(root + source.metadataFile)).digest('hex') !== source.metadataSha256) throw Error(`Reviewed text changed; reimport ${book.id}`);
+  if (book.sourceLevel?.system === 'StoryWeaver' && !source?.metadataFile) throw Error(`Missing reviewed StoryWeaver fixture: ${book.id}`);
+  if (source?.metadataFile) {
+    const metadataBytes = await readFile(root + source.metadataFile);
+    if (createHash('sha256').update(metadataBytes).digest('hex') !== source.metadataSha256) throw Error(`Reviewed text changed; reimport ${book.id}`);
+    const fixture = JSON.parse(metadataBytes);
+    validateStoryWeaverFixture(fixture, source.metadataFile.split('/').at(-1), source);
+    validateImportedStoryWeaverBook(book, fixture);
+  }
   if (!readingLevelLabel(book.sourceLevel) || source?.sourceLevel?.system !== book.sourceLevel.system || source?.sourceLevel?.value !== book.sourceLevel.value) {
     throw Error(`Missing or inconsistent source reading level: ${book.id}`);
   }
@@ -33,7 +41,9 @@ for (const source of sources.sources) for (const asset of source.assets) {
 for (const book of books) for (const page of book.pages) {
   // An explicit capability distinguishes an intentionally silent book from a
   // damaged import that lost a required recording.
-  if (!page.text || !page.image || (book.narration === 'none' ? page.audio != null : !page.audio)) throw Error(`Incomplete story page: ${book.id}`);
+  const validText = page.wordless === true ? book.narration === 'none' && page.text === '' : typeof page.text === 'string' && page.text.trim().length > 0;
+  const validImage = page.textOnly === true ? book.narration === 'none' && page.image == null && !page.wordless && !page.imageFrame && !page.imageLabels : typeof page.image === 'string' && page.image.length > 0;
+  if (!validText || !validImage || (book.narration === 'none' ? page.audio != null : !page.audio)) throw Error(`Incomplete story page: ${book.id}`);
   await Promise.all([page.image, page.audio].filter(Boolean).map(path => stat(`${root}${path}`)));
 }
 await rm(out, {recursive: true, force: true});

@@ -1,31 +1,39 @@
 import {test, expect} from '@playwright/test';
+import {readFile} from 'node:fs/promises';
+import {readingLevelOptions} from '../../app/reading-levels.js';
+
+const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+const inLevel = (system, value, catalog = books) => catalog.filter(book => book.sourceLevel.system === system && book.sourceLevel.value === value);
+const weaverCounts = readingLevelOptions(books).filter(level => level.system === 'StoryWeaver').map(level => `${inLevel(level.system, level.value).length}本`);
 
 test('source groups have separate selections, useful counts and a clear reset', async ({page}) => {
   await page.goto('/#/library');
   const canada = page.getByRole('group', {name:'Storybooks Canada',exact:true});
   const weaver = page.getByRole('group', {name:'StoryWeaver',exact:true});
   await expect(canada.locator('.level-option small')).toHaveText(['15本','11本','8本','4本','2本']);
-  await expect(weaver.locator('.level-option small')).toHaveText(['1本']);
+  await expect(weaver.locator('.level-option small')).toHaveText(weaverCounts);
   await page.getByRole('button', {name:'Storybooks Canada · 2级',exact:true}).click();
   await expect(page.locator('.book-card')).toHaveCount(11);
   await expect(page.locator('[data-book-level][aria-pressed=true]')).toHaveCount(1);
   await page.getByRole('button', {name:'StoryWeaver · 2级',exact:true}).click();
-  await expect(page.locator('.book-card')).toHaveCount(1);
+  await expect(page.locator('.book-card')).toHaveCount(inLevel('StoryWeaver', 2).length);
+  expect(await page.locator('.library-book').evaluateAll(cards => cards.map(card => card.dataset.bookId))).toEqual(inLevel('StoryWeaver', 2).map(book => book.id));
   await expect(page.locator('[data-book-level="Storybooks Canada:2"]')).toHaveAttribute('aria-pressed','false');
-  await expect(page.locator('[data-book-level="StoryWeaver:2"]')).toHaveAccessibleDescription('1本');
+  await expect(page.locator('[data-book-level="StoryWeaver:2"]')).toHaveAccessibleDescription(`${inLevel('StoryWeaver', 2).length}本`);
   await page.getByRole('button', {name:'全部级别',exact:true}).click();
-  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-card')).toHaveCount(books.length);
   await expect(page.locator('[data-book-level][aria-pressed=true]')).toHaveCount(1);
 });
 
 test('counts follow theme and recent scope without being narrowed by the selected level', async ({page}) => {
   await page.goto('/#/library');
   await page.locator('#book-theme').selectOption('生活发现');
-  await expect(page.locator('.level-all small')).toHaveText('12本');
+  const themed = books.filter(book => book.tag === '生活发现');
+  await expect(page.locator('.level-all small')).toHaveText(`${themed.length}本`);
   await expect(page.locator('[data-book-level="Storybooks Canada:2"] small')).toHaveText('3本');
   await page.getByRole('button', {name:'Storybooks Canada · 2级',exact:true}).click();
   await expect(page.locator('.book-card')).toHaveCount(3);
-  await expect(page.locator('[data-book-level="StoryWeaver:2"] small')).toHaveText('1本');
+  await expect(page.locator('[data-book-level="StoryWeaver:2"] small')).toHaveText(`${inLevel('StoryWeaver', 2, themed).length}本`);
   await page.goto('/#/book/0087/1'); await expect(page.locator('.story-text')).toBeVisible();
   await page.goto('/#/book/sw-92448/1'); await expect(page.locator('.story-text')).toBeVisible();
   await page.goto('/#/library');

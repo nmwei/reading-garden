@@ -1,0 +1,210 @@
+{
+  "id": "sw-577904",
+  "title": "种星星",
+  "source": "https://storyweaver.org.in/en/stories/577904-zhong-xingxing",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Written by": "Moses Sia",
+    "Illustrated by": "Moses Sia",
+    "Translated by": "Jenny Lu"
+  },
+  "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/577904-zhong-xingxing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books , 2023",
+      "attributionText": "This story: 种星星 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Growing Stars ' , by Moses Sia . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/577904-zhong-xingxing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2023"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 种星星 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Growing Stars ' , by Moses Sia . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Other Credits: This book was created as a part of the Asian Festival for Children's Content Build Your Book Hackathon, a two-day picture book making workshop as a collaboration between Pratham Books and Singapore Book Council. Images Attributions: Cover page: A boy in butterfly costume holding a golden star , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 2: A boy in butterfly costume holding a golden star , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 3: A boy in planting a golden star in a pot , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 4: A boy watering a plant and measuring its height , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 5: A boy waiting for a plant to grow , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 6: A boy looking at buds through a magnifying glass , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 7: A boy surrounded by yellow stars , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 9: A boy watering a plant and measuring its height , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "种星星 (Chinese (Simplified)) 地球上能种星星吗？小乔迫不及待想要找出答案。 This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642379/size7/af0edc15eeb4ae3dec6b88b8f9fc524f.jpg",
+    "sha256": "1384d0268a1e19daacc02e0a612f74b16b2c7fb00963bd72f1185f4a429e0eb2",
+    "illustrationId": 96354,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/96354-a-boy-in-butterfly-costume-holding-a-golden-star",
+    "copyright": "© Pratham Books, 2023",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: A boy in butterfly costume holding a golden star , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642336/size7/1da63adc97b15086e75e98c49908855e.jpg",
+        "sha256": "1a5416cd4f5a913c2540f91a9b84864e7b573804049223dfae200dabdc644f5f",
+        "illustrationId": 96354,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96354-a-boy-in-butterfly-costume-holding-a-golden-star",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: A boy in butterfly costume holding a golden star , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 770,
+        "y": 100,
+        "width": 1885,
+        "height": 2200,
+        "originalWidth": 3351,
+        "originalHeight": 2406
+      },
+      "wordless": true,
+      "imageAlt": "《种星星》原书第2页的故事插图"
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "小乔种了一颗星星。",
+      "text": "小乔种了一颗星星。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642339/size7/805cc65b468644b0d3236ea82c762424.jpg",
+        "sha256": "9c3c40c93d0573d2763fbd9177402f7043f9238cdac4b411e7310007f4b16b80",
+        "illustrationId": 96355,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96355-a-boy-in-planting-a-golden-star-in-a-pot",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: A boy in planting a golden star in a pot , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 112,
+        "y": 33,
+        "width": 600,
+        "height": 585,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "他给它浇水。一些叶子冒了出来，但是星星呢？",
+      "text": "他给它浇水。一些叶子冒了出来，但是星星呢？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642340/size7/44ff9037a652594bff52760b3e832ae7.jpg",
+        "sha256": "0a13b12f29437dffc65e11217c12665d1306eea2332bbd4b508675a7327b035d",
+        "illustrationId": 96356,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96356-a-boy-watering-a-plant-and-measuring-its-height",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: A boy watering a plant and measuring its height , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 85,
+        "y": 76,
+        "width": 779,
+        "height": 562,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "很快，绿色卷叶长出来了。\n\n但还是没有星星。",
+      "text": "很快，绿色的叶子长出来了。\n但还是没有星星。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642341/size7/c137e753ccee432257e9f11aaafc5f40.jpg",
+        "sha256": "1fbd57afb0cb43c90edca3469aae3a2374c8168f986079d999c8663434bcc6b6",
+        "illustrationId": 96357,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96357-a-boy-waiting-for-a-plant-to-grow",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: A boy waiting for a plant to grow , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 18,
+        "y": 0,
+        "width": 932,
+        "height": 671,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "一天，小乔发现了一些小花蕾…",
+      "text": "一天，小乔发现了一些小花蕾……",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642342/size7/6f9a0ed7fb85efa6b238bd00e13e787d.jpg",
+        "sha256": "73841bbd1c663608c46d6b4af24af33b2a4f7b38d48ac06aa99d4e6db576d305",
+        "illustrationId": 96358,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96358-a-boy-looking-at-buds-through-a-magnifying-glass",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: A boy looking at buds through a magnifying glass , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 8,
+        "y": 164,
+        "width": 951,
+        "height": 525,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "哇，这么多星星！",
+      "text": "哇，这么多星星！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642343/size7/a199152dc31cb03661b75ad6bb6e961d.jpg",
+        "sha256": "21345ff025e6b8d81703706609461955d437b60e348ec79ea4308b1e571f52a6",
+        "illustrationId": 96359,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96359-a-boy-surrounded-by-yellow-stars",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: A boy surrounded by yellow stars , by Moses Sia © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 114,
+        "y": 40,
+        "width": 845,
+        "height": 649,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：自然中文；中文省略号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 5,
+      "before": "绿色卷叶",
+      "after": "绿色的叶子",
+      "reason": "自然中文"
+    },
+    {
+      "sourcePage": 6,
+      "before": "小花蕾…",
+      "after": "小花蕾……",
+      "reason": "中文省略号"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.950781+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "种、浇水、叶子、花蕾等常用自然词，短句重复“星星呢”，可借植物生长画面认读。",
+      "story": "种星星的想象与花朵形状的揭晓有完整小悬念，适合作为少量有审美和趣味的低阶补充。",
+      "visualProxy": "需root确认末页花朵星形与前面生长变化明确；保持原无字页，不能只抽句子成词卡。"
+    },
+    "warnings": []
+  }
+}

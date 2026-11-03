@@ -146,12 +146,14 @@ function storyText(text) {
     return char ? `<span class="text-unit">${esc(opening)}<button class="character" data-char="${match.index + opening.length}" aria-label="认识${esc(char)}">${esc(char)}</button>${esc(closing)}</span>` : `<span>${esc(match[0])}</span>`;
   }).join('');
 }
-function storyArt(page) {
-  const image = `<img src="${page.image}" alt="故事插图：${esc(page.text)}">`, frame = page.imageFrame;
+function storyArt(page, fallbackAlt) {
+  const alt = esc(page.imageAlt || (page.text ? `故事插图：${page.text}` : fallbackAlt));
+  const image = `<img src="${page.image}" alt="${alt}">`, frame = page.imageFrame;
   if (!frame) return image;
   const ratio = frame.width / frame.height;
   // Display a viewport onto the original JPG; no pixels or artwork are rewritten.
-  return `<div class="art-frame" style="--art-ratio:${ratio};--art-width:${530 * ratio}px"><img src="${page.image}" alt="故事插图：${esc(page.text)}" style="width:${frame.originalWidth / frame.width * 100}%;left:${-frame.x / frame.width * 100}%;top:${-frame.y / frame.height * 100}%"></div>`;
+  const labels = (page.imageLabels || []).map(label => `<span class="art-label" style="left:${label.x}%;top:${label.y}%">${esc(label.text)}</span>`).join('');
+  return `<div class="art-frame" style="--art-ratio:${ratio};--art-width:${530 * ratio}px"><img src="${page.image}" alt="${alt}" style="width:${frame.originalWidth / frame.width * 100}%;left:${-frame.x / frame.width * 100}%;top:${-frame.y / frame.height * 100}%">${labels}</div>`;
 }
 function reader(showHint = false) {
   const {book, page} = route, current = book.pages[page];
@@ -159,7 +161,7 @@ function reader(showHint = false) {
   return `<main class="reader" id="main"><header class="reader-header"><a href="#/shelf" class="back-link">${icon('back')}回到书架</a><h1>${esc(book.title)}</h1></header>
     ${book.narration === 'none' ? `<div class="reader-meta"><span class="book-level">${esc(readingLevelLabel(book.sourceLevel))}</span><span class="small-note">和家长一起读 · 暂无故事录音</span></div>` : ''}
     <div class="reading-progress" aria-label="阅读进度"><span style="width:${(page + 1) / book.pages.length * 100}%"></span></div>
-    <section class="reading-spread" aria-label="第${page + 1}页"><div class="page-art">${storyArt(current)}</div><div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span><p class="story-text" aria-label="${esc(current.text)}">${chars}</p>${current.audio ? `<button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>` : ''}${showHint ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
+    <section class="reading-spread${current.textOnly ? ' text-only' : current.wordless ? ' wordless' : ''}" aria-label="第${page + 1}页">${current.image ? `<div class="page-art">${storyArt(current, `《${book.title}》第${page + 1}页插图`)}</div>` : ''}<div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span>${current.text ? `<p class="story-text" aria-label="${esc(current.text)}">${chars}</p>` : ''}${current.audio ? `<button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>` : ''}${showHint && current.text ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
     <nav class="page-controls" aria-label="翻页"><button class="button secondary" data-prev ${page === 0 ? 'disabled' : ''}>${icon('back')}上一页</button><div class="page-dots">${book.pages.map((_, i) => `<button class="page-dot ${i === page ? 'current' : ''}" data-page="${i}" aria-label="第${i + 1}页" ${i === page ? 'aria-current="page"' : ''}><span></span></button>`).join('')}</div><button class="button ${page === book.pages.length - 1 ? 'primary' : 'secondary'}" data-next>${page === book.pages.length - 1 ? '读完啦' : '下一页'}${icon(page === book.pages.length - 1 ? 'check' : 'arrow')}</button></nav>
     <div class="reader-offline"><button class="text-button" data-download-book="${book.id}">${icon('download')}下载这本书</button><span id="book-download-status" class="small-note" role="status"></span></div><details class="reader-credit"><summary>这本书的作者与来源</summary>${bookCredit(book)}</details></main>`;
 }
@@ -343,8 +345,9 @@ function render() {
     route = routeFromHash(lastPublicHash, books);
   }
   if (route.section !== 'parent') { parentAccess = false; lastPublicHash = location.hash || '#/shelf'; }
-  const showReadingHint = route.section === 'book' && !state.readingHelpSeen;
-  if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: true});
+  const hasReadingText = route.section === 'book' && !!route.book.pages[route.page].text;
+  const showReadingHint = hasReadingText && !state.readingHelpSeen;
+  if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: state.readingHelpSeen || hasReadingText});
   app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : route.section === 'library' ? library() : shelf();
   if (route.section === 'book') {
     const dots = app.querySelector('.page-dots'), current = dots.querySelector('.current');
