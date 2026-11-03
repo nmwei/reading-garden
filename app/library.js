@@ -1,10 +1,11 @@
 export function selectLibrary(info, selection = 'all') {
   if (selection === 'all') return {label: '全部故事与拼音读音', files: info.files, bytes: info.bytes};
   if (selection === 'pinyin') return {label: '拼音读音', ...info.pinyin};
-  const [kind, value] = selection.split(':');
-  const selected = Object.entries(info.books || {}).filter(([id, book]) => kind === 'book' ? id === value : kind === 'level' && String(book.level) === value);
+  const separator = selection.indexOf(':'), kind = selection.slice(0, separator), value = selection.slice(separator + 1);
+  // Legacy manifests without a levelKey only contain Storybooks Canada books.
+  const selected = Object.entries(info.books || {}).filter(([id, book]) => kind === 'book' ? id === value : kind === 'level' && (book.levelKey || `Storybooks Canada:${book.level}`) === (value.includes(':') ? value : `Storybooks Canada:${value}`));
   if (!selected.length) throw Error('请选择有效的图书或级别。');
-  return {label: kind === 'book' ? `《${selected[0][1].title}》` : `${value}级故事`, files: [...new Set(selected.flatMap(([, book]) => book.files))], bytes: selected.reduce((sum, [, book]) => sum + book.bytes, 0)};
+  return {label: kind === 'book' ? `《${selected[0][1].title}》` : `${selected[0][1].levelLabel || `${value}级`}故事`, files: [...new Set(selected.flatMap(([, book]) => book.files))], bytes: selected.reduce((sum, [, book]) => sum + book.bytes, 0)};
 }
 
 // Wait for in-flight writes before returning a failure, so temporary caches can

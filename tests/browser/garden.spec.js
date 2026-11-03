@@ -47,9 +47,9 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(40);
-  await expect(page.locator('.book-level').first()).toHaveText('1级 · 短句');
-  await expect(page.locator('.book-level').first()).toHaveAttribute('aria-label', 'Storybooks Canada 原站1级 · 短句');
+  await expect(page.locator('.book-card')).toHaveCount(41);
+  await expect(page.locator('.book-level').first()).toHaveText('Storybooks Canada 1级');
+  await expect(page.locator('.book-level').first()).toHaveAttribute('aria-label', 'Storybooks Canada · 1级（原站分级）');
   expect(await page.evaluate(() => window.__plays)).toEqual([]);
   await page.locator('.book-card[href="#/book/0087/1"]').click();
   await expect(page.getByRole('heading', {name: '我喜欢看书', exact: true})).toBeVisible();
@@ -230,7 +230,7 @@ test('legacy font settings do not alter responsive reading or erase learning rec
       expect(layout.font).toBeGreaterThanOrEqual(30);
       expect(layout.font).toBeLessThanOrEqual(38);
       expect(layout.lineHeight / layout.font).toBeGreaterThanOrEqual(1.7);
-      expect(layout.fits && layout.inside).toBe(true);
+      expect(layout.fits && layout.inside, `${book.id} at ${width}px: ${JSON.stringify(layout)}`).toBe(true);
       if (testInfo.project.name === 'ipad-chromium' && book.id === '0262') await page.screenshot({path: `test-results/reader-${width}.png`, fullPage: true});
     }
   }
@@ -348,7 +348,7 @@ test('downloaded library works offline including audio byte ranges at a project 
   await enterParent(page);
   await page.getByRole('link', {name: '故事书架', exact: true}).click();
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-card')).toHaveCount(41);
   await page.locator('.book-card[href^="#/book/0009/"]').click();
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
   await page.getByRole('button', {name: '读这一页'}).click();
@@ -390,7 +390,7 @@ test('downloaded library works offline including audio byte ranges at a project 
   await expect(page.locator('.sources').getByRole('link', {name: 'CLI · The Chinese Language Institute', exact: true})).not.toBeVisible();
   await page.locator('.sources > summary').click();
   await expect(page.locator('.sources > summary')).toHaveCount(1);
-  await expect(page.locator('.source-platform')).toHaveCount(1);
+  await expect(page.locator('.source-platform')).toHaveCount(2);
   await expect(page.locator('.source-book')).toHaveCount(0);
   await expect(page.locator('.sources').getByRole('link', {name: 'CLI · The Chinese Language Institute', exact: true})).toHaveCount(1);
   await expect(page.locator('.sources').getByRole('link', {name: 'Silas · ChinaHelp', exact: true})).toHaveCount(1);
@@ -403,7 +403,7 @@ test('storage corruption is recoverable and clearing data requires a deliberate 
   await page.evaluate(() => localStorage.setItem('reading-garden-v1', '{broken'));
   await page.reload();
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-card')).toHaveCount(41);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
   await enterParent(page);
@@ -544,7 +544,7 @@ test('a hundred books keep parent sources compact while reader credits stay comp
   const sources = page.locator('.sources');
   await expect(sources).not.toHaveAttribute('open', '');
   await page.locator('.sources > summary').click();
-  await expect(page.locator('.source-platform')).toHaveCount(1);
+  await expect(page.locator('.source-platform')).toHaveCount(2);
   await expect(page.locator('.source-book')).toHaveCount(0);
   await expect(sources).toContainText('CC BY 3.0');
   await expect(sources).toContainText('CC BY-NC 3.0');
@@ -717,11 +717,11 @@ test('a queued close event cannot cancel a newly opened parent hold', async ({pa
 test('all forty books can be found by grade and theme, including empty intersections', async ({page}) => {
   await page.goto('/');
   await page.goto(new URL('#/library', page.url()).href);
-  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-card')).toHaveCount(41);
   for (const [grade,count] of [[1,15],[2,11],[3,8],[4,4],[5,2]]) {
-    await page.locator(`[data-book-level="${grade}"]`).click();
+    await page.locator(`[data-book-level="Storybooks Canada:${grade}"]`).click();
     await expect(page.locator('.book-card')).toHaveCount(count);
-    expect(await page.locator('.book-level').allTextContents()).toEqual(Array(count).fill(['1级 · 短句','2级 · 多句','3级 · 短段落','4级 · 段落','5级 · 长段落'][grade-1]));
+    expect(await page.locator('.book-level').allTextContents()).toEqual(Array(count).fill(`Storybooks Canada ${grade}级`));
   }
   await page.locator('#book-theme').selectOption('动物朋友');
   await expect(page.locator('.book-card')).toHaveCount(0);
@@ -751,9 +751,9 @@ test('individual book and grade downloads stay scoped and work offline at a proj
   });
   const first = await downloaded(); expect(first.covers).toBe(40); expect(first.audio).toHaveLength(16); expect(first.pinyin).toBe(0);
   expect(first.audio.every(path => path.includes('/0262/'))).toBe(true);
-  await page.locator('#download-scope').selectOption('level:2');
+  await page.locator('#download-scope').selectOption('level:Storybooks Canada:2');
   await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
-  await expect(page.locator('#download-status')).toContainText('已下载2级故事',{timeout:30000});
+  await expect(page.locator('#download-status')).toContainText('已下载Storybooks Canada · 2级故事',{timeout:30000});
   const second = await downloaded(); expect(second.audio).toHaveLength(16+117); expect(second.pinyin).toBe(0);
   await context.setOffline(true);
   for (const [id,number] of [['0262',16],['0337',11]]) {

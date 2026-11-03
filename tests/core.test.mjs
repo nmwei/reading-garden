@@ -72,14 +72,16 @@ test('listening choices stay within one group with distinct sounds and exactly o
   }
 });
 test('all story pages have intact, decodable local image/audio and per-book credits', async () => {
-  assert.equal(books.length, 40);
-  assert.equal(books.reduce((sum, book) => sum + book.pages.length, 0), 420);
+  assert.equal(books.length, 41);
+  assert.equal(books.filter(book => book.sourceLevel.system === 'Storybooks Canada').reduce((sum, book) => sum + book.pages.length, 0), 420);
   for (const book of books) {
     assert.match(book.licenseUrl, /^https:\/\/creativecommons.org\/licenses\//);
-    for (const role of ['Written by', 'Illustrated by', 'Translated by', 'Read by']) assert.ok(book.credits[role], role);
+    for (const role of ['Written by', 'Illustrated by', 'Translated by', ...(book.narration === 'none' ? [] : ['Read by'])]) assert.ok(book.credits[role], role);
     for (const page of book.pages) {
       assert.match(page.text, /\p{Script=Han}/u);
-      for (const file of [page.image, page.audio]) {
+      if (book.narration === 'none') assert.equal(page.audio, undefined);
+      else assert.ok(page.audio);
+      for (const file of [page.image, page.audio].filter(Boolean)) {
         const path = new URL(`../${file}`, import.meta.url);
         const bytes = await readFile(path);
         assert.ok(bytes.length > 500);

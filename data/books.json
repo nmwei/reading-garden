@@ -3258,5 +3258,194 @@
         "audio": "assets/books/0262/17.mp3"
       }
     ]
+  },
+  {
+    "id": "sw-92448",
+    "title": "绘画游戏",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "一个圆、一个三角形，能变出什么新朋友？",
+    "keywords": [
+      "圆形",
+      "三角形",
+      "正方形"
+    ],
+    "question": "拿起纸和笔，和家长一起用圆形、三角形和正方形画一幅画吧。",
+    "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Anitha Murthy",
+      "Illustrated by": "Ajanta Guhathakurta",
+      "Translated by": "Jala Community",
+      "Original publisher": "Pratham Books",
+      "Translation publisher": "Jala"
+    },
+    "copyright": "原作及插图 © Pratham Books, 2018；中文译文 © Jala, 2019。",
+    "changes": "沿用完整故事及书后活动；整理空白与标点，修正引号，并将“有四个边的形状”改为“一个有四条边的形状”；插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。未提供故事录音，单字声音来自设备。",
+    "narration": "none",
+    "cover": "assets/books/sw-92448/01.jpg",
+    "pages": [
+      {
+        "text": "吉努在她奶奶家过暑假。吉努说：“奶奶，陪我玩！”她在这里没有朋友，觉得好无聊。奶奶说：“去拿一块粉笔，我们来玩个游戏。”",
+        "image": "assets/books/sw-92448/02.jpg",
+        "imageFrame": {
+          "x": 103,
+          "y": 167,
+          "width": 530,
+          "height": 522,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "吉努很兴奋。奶奶会和她玩什么游戏呢？奶奶画了一个形状。她问：“猜猜这是什么？”吉努不高兴地回答：“这是个圆形。”她不喜欢这个无聊的游戏。",
+        "image": "assets/books/sw-92448/03.jpg",
+        "imageFrame": {
+          "x": 176,
+          "y": 0,
+          "width": 592,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "奶奶说：“是的，但是圆形也可以变出更多东西。”吉努想了一下，然后笑了。“这是一个笑脸！”她说道。奶奶拍拍手，说：“很好，你知道怎么玩这个游戏！”",
+        "image": "assets/books/sw-92448/04.jpg",
+        "imageFrame": {
+          "x": 558,
+          "y": 277,
+          "width": 401,
+          "height": 412,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "“奶奶，你看，我画了什么！”吉努说道。\n\n活动：你能用三个圆形画出什么呢？",
+        "image": "assets/books/sw-92448/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 2,
+          "width": 959,
+          "height": 514,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "奶奶画了另一个形状。“是三角形！”吉努喊道。然后她笑了。",
+        "image": "assets/books/sw-92448/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 420,
+          "height": 368,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "“奶奶，你看，我画了什么！”",
+        "image": "assets/books/sw-92448/07.jpg",
+        "imageFrame": {
+          "x": 339,
+          "y": 292,
+          "width": 603,
+          "height": 397,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "“吉努，做得好！”奶奶说道。“你看，谁来和我们一起玩了？”\n\n活动：你可以用三个圆形和四个三角形画出什么？",
+        "image": "assets/books/sw-92448/08.jpg",
+        "imageFrame": {
+          "x": 97,
+          "y": 0,
+          "width": 703,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "奶奶画了一个有四条边的形状。“这是一个长方形吗？”吉努问道。奶奶回答：“你仔细看，所有的边都一样长。”\n\n“这是一个正方形！嗯……奶奶，你看，我画了个窗口。”",
+        "image": "assets/books/sw-92448/09.jpg",
+        "imageFrame": {
+          "x": 179,
+          "y": 6,
+          "width": 573,
+          "height": 453,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "“你要在窗口旁边画一棵树吗？”奶奶问她。“是的，奶奶，谢谢你！”吉努说。她看着所有的粉笔画。她现在可以上色了吗？\n\n活动：你可以用一个三角形和一个长方形画出什么？",
+        "image": "assets/books/sw-92448/10.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 639,
+          "height": 627,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "不久，吉努举起了她的画。“哇，好多圆形、三角形和正方形！”奶奶说道。",
+        "image": "assets/books/sw-92448/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 674,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“嗯，奶奶，不止这样！这里有一只鸟，正在飞回树上的家。还有，你猜，谁来一起吃午饭？”",
+        "image": "assets/books/sw-92448/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "奶奶称赞她：“吉努，你好聪明啊！”吉努还想要画更多。她和奶奶接下来会画什么呢？\n\n活动：你可以用圆形、三角形和正方形画出什么？",
+        "image": "assets/books/sw-92448/13.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 2,
+          "width": 959,
+          "height": 457,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 13
+      }
+    ]
   }
 ]

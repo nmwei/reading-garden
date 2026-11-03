@@ -29,6 +29,15 @@ test('parallel downloads remain bounded and drain in-flight writes before a fail
   }, 2), /network/);
   assert.deepEqual(writes, [1]);
 });
+test('same-number source levels have independent offline groups, including silent books', () => {
+  const mixed = {...info, books:{
+    b:{...info.books.b,levelKey:'Storybooks Canada:2',levelLabel:'Storybooks Canada · 2级'},
+    c:{title:'绘画',level:2,levelKey:'StoryWeaver:2',levelLabel:'StoryWeaver · 2级',files:['c.jpg'],bytes:4}
+  }};
+  assert.deepEqual(selectLibrary(mixed,'level:StoryWeaver:2'), {label:'StoryWeaver · 2级故事',files:['c.jpg'],bytes:4});
+  assert.deepEqual(selectLibrary(mixed,'level:Storybooks Canada:2').files,['b.jpg','b.mp3']);
+  assert.deepEqual(selectLibrary(mixed,'level:2').files,['b.jpg','b.mp3']);
+});
 test('media validation rejects changed bytes while leaving the response readable', async () => {
   const bytes = 'intact audio', hash = createHash('sha256').update(bytes).digest('hex');
   const response = new Response(bytes);

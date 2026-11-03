@@ -11371,6 +11371,135 @@
           "sha256": "59405b11075caaf409bd72806d0fc284ed9a1e931052e967696700bbf266e3a5"
         }
       ]
+    },
+    {
+      "kind": "book",
+      "id": "sw-92448",
+      "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+      "sourceLevel": {
+        "system": "StoryWeaver",
+        "value": 2
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credits": {
+        "Written by": "Anitha Murthy",
+        "Illustrated by": "Ajanta Guhathakurta",
+        "Translated by": "Jala Community",
+        "Original publisher": "Pratham Books",
+        "Translation publisher": "Jala"
+      },
+      "copyright": "原作及插图 © Pratham Books, 2018；中文译文 © Jala, 2019。",
+      "changes": "沿用完整故事及书后活动；整理空白与标点，修正引号，并将“有四个边的形状”改为“一个有四条边的形状”；插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。未提供故事录音，单字声音来自设备。",
+      "components": {
+        "text": {
+          "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Jala, 2019"
+        },
+        "illustrations": {
+          "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Pratham Books, 2018"
+        }
+      },
+      "reviewedAt": "2026-11-03",
+      "attributionSource": "原站 More → View attributions（共3页），逐页核对译文和13幅插图均为CC BY 4.0；原站未列本书独立资助方。",
+      "metadataFile": "data/storyweaver/92448.json",
+      "metadataSha256": "5d91b983020d6eee914f6c8f549a9608af2459e2009ada8cd735e4dcfec39362",
+      "assets": [
+        {
+          "path": "assets/books/sw-92448/01.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/716431/size7/6bc9c1887a5230a7f0d6708d14a9982d.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12907",
+          "bytes": 272574,
+          "sha256": "3d3eb54cc1bc5572d8f9b523f567039e8759d39bb4d8026705013a2e98210ac2"
+        },
+        {
+          "path": "assets/books/sw-92448/02.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61941/size7/74c918967c4d2f91ab82e34fd97b5061.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12908",
+          "bytes": 78100,
+          "sha256": "8aacb77361834f4dceae09db2d9fd0259e10d28447a03fad10a47635cd87d0dc"
+        },
+        {
+          "path": "assets/books/sw-92448/03.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61942/size7/00b15cb504186654e4ce838a7bca6ae4.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12909",
+          "bytes": 70016,
+          "sha256": "c8faa3f277a1ad2837711c930231311e4239529596f0f3c24571ae96a20a53ab"
+        },
+        {
+          "path": "assets/books/sw-92448/04.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61943/size7/e8d52fcd277537b0ef932f37df27fd89.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12910",
+          "bytes": 43542,
+          "sha256": "73fab7e0f6d3e5f9ca03e71e40c6accd0da6e3fb1ae247ccfc9fe5254c0f4508"
+        },
+        {
+          "path": "assets/books/sw-92448/05.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61944/size7/9fe4ae4bf9e2eae1500e258f219762f7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12911",
+          "bytes": 55979,
+          "sha256": "794460d37449986bff7d4831b234f6b00889504df93893a566550df4b7c89800"
+        },
+        {
+          "path": "assets/books/sw-92448/06.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61945/size7/b64e6d86412658f0ed66c1dff9c329ec.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12912",
+          "bytes": 36966,
+          "sha256": "93bff0bfac3b5f653735b279b4771262bfe3dcfcf7ef54cfefb84d607859e255"
+        },
+        {
+          "path": "assets/books/sw-92448/07.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61947/size7/411e0775820a96a48094351e3150d01c.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12913",
+          "bytes": 74922,
+          "sha256": "a6d6f278d60051f699c41dda725b62341d7e0869ecb47fb558b840d15df8a826"
+        },
+        {
+          "path": "assets/books/sw-92448/08.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61948/size7/59dc555620afbcfcbb6ecbd54cdcbcc1.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12914",
+          "bytes": 85993,
+          "sha256": "401a760b0a4079fce2e9f128495d9536bc17b9bbfcf1bf00e38eefec52509c16"
+        },
+        {
+          "path": "assets/books/sw-92448/09.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61949/size7/087110cf512d05049e9131e3176742e9.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12915",
+          "bytes": 56396,
+          "sha256": "39bbc6571e3d2df5a8bf5933c74d08fe18141cf79c6f0d6b5ca0b675108731dc"
+        },
+        {
+          "path": "assets/books/sw-92448/10.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61950/size7/4a51c91d31a9974cf09599af038c274d.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12916",
+          "bytes": 83622,
+          "sha256": "04a8d4864ef2e5dbbbf75d4d9eb2cd9b9e76e3e5141f29c3ff1e7cf32fb5d7bd"
+        },
+        {
+          "path": "assets/books/sw-92448/11.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61951/size7/c70545dbe6c0695820e27657efa33705.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12917",
+          "bytes": 45217,
+          "sha256": "6e19ae1bca167d39f32e0852730636d4d092ac5ed6e06919dfb4f609987bbb8a"
+        },
+        {
+          "path": "assets/books/sw-92448/12.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61952/size7/1d12c5339f010a03d26cba082b5c29d1.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12918",
+          "bytes": 271704,
+          "sha256": "1d389f0477846c08117429d5c1c4de815ab3d844c8420421ba049710cfb1762c"
+        },
+        {
+          "path": "assets/books/sw-92448/13.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61953/size7/6d95c5d22a642c211633f36124b484b6.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/12919",
+          "bytes": 58880,
+          "sha256": "3e50b081d2436178f5f1f535aca3a7c85085f7168fa356d2cff2d599c8bd6985"
+        }
+      ]
     }
   ]
 }

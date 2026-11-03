@@ -2,13 +2,14 @@ import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promise
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {PINYIN_RECORDINGS} from '../app/pinyin.js';
-import {readingLevelLabel} from '../app/reading-levels.js';
+import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
 for (const book of books) {
   const source = sources.sources.find(source => source.kind === 'book' && source.id === book.id);
+  if (source?.metadataFile && createHash('sha256').update(await readFile(root + source.metadataFile)).digest('hex') !== source.metadataSha256) throw Error(`Reviewed text changed; reimport ${book.id}`);
   if (!readingLevelLabel(book.sourceLevel) || source?.sourceLevel?.system !== book.sourceLevel.system || source?.sourceLevel?.value !== book.sourceLevel.value) {
     throw Error(`Missing or inconsistent source reading level: ${book.id}`);
   }
@@ -30,8 +31,10 @@ for (const source of sources.sources) for (const asset of source.assets) {
   if (createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw Error(`Asset integrity mismatch: ${asset.path}`);
 }
 for (const book of books) for (const page of book.pages) {
-  if (!page.text || !page.image || !page.audio) throw Error(`Incomplete story page: ${book.id}`);
-  await Promise.all([stat(`${root}${page.image}`), stat(`${root}${page.audio}`)]);
+  // An explicit capability distinguishes an intentionally silent book from a
+  // damaged import that lost a required recording.
+  if (!page.text || !page.image || (book.narration === 'none' ? page.audio != null : !page.audio)) throw Error(`Incomplete story page: ${book.id}`);
+  await Promise.all([page.image, page.audio].filter(Boolean).map(path => stat(`${root}${path}`)));
 }
 await rm(out, {recursive: true, force: true});
 await mkdir(out, {recursive: true});
@@ -48,7 +51,7 @@ const files = (await walk(out)).sort(), hash = createHash('sha256');
 const assets = Object.fromEntries(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.sha256]));
 const assetBytes = new Map(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.bytes]));
 const group = paths => ({files: [...new Set(paths)], bytes: [...new Set(paths)].reduce((sum, path) => sum + assetBytes.get(path), 0)});
-const bookGroups = Object.fromEntries(books.map(book => [book.id, {title: book.title, level: book.sourceLevel.value, cover: book.cover, ...group([book.cover, ...book.pages.flatMap(page => [page.image, page.audio])])}]));
+const bookGroups = Object.fromEntries(books.map(book => [book.id, {title: book.title, level: book.sourceLevel.value, levelKey: readingLevelKey(book.sourceLevel), levelLabel: readingLevelLabel(book.sourceLevel), cover: book.cover, ...group([book.cover, ...book.pages.flatMap(page => [page.image, page.audio].filter(Boolean))])}]));
 const pinyin = group(allowedPinyin.map(file => `assets/pinyin/${file}`));
 hash.update(JSON.stringify({assets, bookGroups, pinyin}));
 let size = 0;

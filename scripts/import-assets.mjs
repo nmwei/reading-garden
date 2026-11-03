@@ -36,6 +36,7 @@ const imageReadme = execFileSync('unzip', ['-p', imageZip, imagePrefix + 'README
 const audioReadmeUrl = 'https://raw.githubusercontent.com/global-asp/gsn-audio/master/README.md';
 const audioReadme = (await cached('audio-README.md', audioReadmeUrl, null, fresh)).toString();
 const previous = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
+const previousBooks = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const books = [], sources = [];
 for (const entry of catalog) {
   const {id} = entry, source = `${origin}/stories/zh/${id}/`;
@@ -69,5 +70,6 @@ for (const entry of catalog) {
   console.log(`Imported ${title}: level ${sourceLevel.value}, ${pages.length} pages`);
 }
 // Pinyin has its own importer and permissions; a book import must not rewrite it.
-await writeFile(`${root}data/books.json`, JSON.stringify(books, null, 2) + '\n');
-await writeFile(`${root}assets/sources.json`, JSON.stringify({importedAt: new Date().toISOString(), sources: [...sources, ...previous.sources.filter(source => source.kind !== 'book')]}, null, 2) + '\n');
+const importedIds = new Set(books.map(book => book.id));
+await writeFile(`${root}data/books.json`, JSON.stringify([...books, ...previousBooks.filter(book => book.sourceLevel.system !== 'Storybooks Canada')], null, 2) + '\n');
+await writeFile(`${root}assets/sources.json`, JSON.stringify({importedAt: new Date().toISOString(), sources: [...sources, ...previous.sources.filter(source => source.kind !== 'book' || (!importedIds.has(source.id) && source.sourceLevel?.system !== 'Storybooks Canada'))]}, null, 2) + '\n');

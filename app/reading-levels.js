@@ -1,8 +1,17 @@
-// These describe the source's text structure, not a child's age or character count.
-const STORYBOOKS_LABELS = ['短句', '多句', '短段落', '段落', '长段落'];
+// Levels belong to their source system; equal numbers are not interchangeable.
+const SYSTEM_LEVELS = new Map([['Storybooks Canada', 5], ['StoryWeaver', 4]]);
 
 export function readingLevelLabel(sourceLevel) {
-  if (sourceLevel?.system !== 'Storybooks Canada' || !Number.isInteger(sourceLevel.value)) return null;
-  const description = STORYBOOKS_LABELS[sourceLevel.value - 1];
-  return description ? `${sourceLevel.value}级 · ${description}` : null;
+  if (!Number.isInteger(sourceLevel?.value) || sourceLevel.value < 1 || sourceLevel.value > (SYSTEM_LEVELS.get(sourceLevel.system) || 0)) return null;
+  return `${sourceLevel.system} · ${sourceLevel.value}级`;
+}
+
+export function readingLevelKey(sourceLevel) {
+  return readingLevelLabel(sourceLevel) ? `${sourceLevel.system}:${sourceLevel.value}` : null;
+}
+
+export function readingLevelOptions(books) {
+  return [...new Map(books.map(book => [readingLevelKey(book.sourceLevel), book.sourceLevel])).values()]
+    .filter(level => readingLevelLabel(level))
+    .sort((a, b) => a.system.localeCompare(b.system) || a.value - b.value);
 }

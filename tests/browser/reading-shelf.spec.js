@@ -17,7 +17,7 @@ test('shelf and catalog are separate; choosing several books stays in the catalo
   await expect(page.locator('.book-card, [data-book-level], [data-edit-reading-list]')).toHaveCount(0);
   await page.getByRole('link', {name: '去书库挑一挑', exact: true}).click();
   await expect(page).toHaveURL(/#\/library$/);
-  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-card')).toHaveCount(41);
   await expect(page.locator('.reading-shelf')).toHaveCount(0);
   for (const id of ['0156', '0087', '0009']) {
     await add(page, id).click();
@@ -78,7 +78,7 @@ test('catalog recent, grade and theme filters work independently from the shelf'
   for (const id of ['0087', '0156', '0009']) { await page.goto(`/#/book/${id}/2`); await expect(page.locator('.story-text')).toBeVisible(); }
   await page.goto('/#/library');
   await expect(page.locator('.book-card')).toHaveCount(3);
-  await page.locator('[data-book-level="5"]').click();
+  await page.locator('[data-book-level="Storybooks Canada:5"]').click();
   await expect(page.locator('.book-card')).toHaveCount(0);
   await page.getByRole('button', {name: '全部故事', exact: true}).click();
   await expect(page.locator('.book-card')).toHaveCount(2);
@@ -121,7 +121,7 @@ test('desktop, iPad and phone keep shared cards and the spacious resume panel us
 test('catalog membership toggles and persists offline at a project subpath', async ({page,context}) => {
   const url='http://localhost:4179/reading-garden/';
   await page.goto(`${url}#/library`);
-  await expect(page.locator('.book-card')).toHaveCount(40);
+  await expect(page.locator('.book-card')).toHaveCount(41);
   await page.evaluate(async()=>{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>navigator.serviceWorker.addEventListener('controllerchange',r,{once:true}));});
   await context.setOffline(true); await page.reload();
   await add(page,'0087').click(); await page.locator('.library-toolbar a').click();
@@ -160,4 +160,26 @@ test('phone footers keep reading and membership controls on one row and preserve
   await page.locator('[data-reading-remove="0087"]').click();
   expect((await readState(page)).readingList).toEqual(['0156', '0110']);
   expect((await readState(page)).progress['0087'].page).toBe(1);
+});
+
+test('source badges wrap naturally without separating a grade or clipping either shared card view', async ({page}, testInfo) => {
+  await seed(page, ['0087','sw-92448','0052']);
+  for (const width of [320,375,390,620,768,820,1024,1194,1440]) {
+    await page.setViewportSize({width,height:1000});
+    for (const section of ['shelf','library']) {
+      await page.goto(`/#/${section}`);
+      await expect(page.locator('.book-level-grade').first()).toHaveText('1级');
+      const labels = await page.locator('.reading-pick .book-level').evaluateAll(els => els.map(el => {
+        const box=el.getBoundingClientRect(), parent=el.parentElement.getBoundingClientRect(), grade=el.querySelector('.book-level-grade');
+        const rect=grade.getBoundingClientRect(), style=getComputedStyle(el);
+        return {text:grade.textContent,onePiece:grade.getClientRects().length===1,
+          inside:box.left>=parent.left && box.right<=parent.right+1 && rect.right<=box.right+1 && rect.bottom<=box.bottom+1,
+          readable:parseFloat(style.fontSize)>=11,
+          atMostTwoLines:box.height<=2*parseFloat(style.lineHeight)+parseFloat(style.paddingTop)+parseFloat(style.paddingBottom)+1};
+      }));
+      expect(labels.every(label=>/^\d级$/.test(label.text)&&label.onePiece&&label.inside&&label.readable&&label.atMostTwoLines), `${width}px ${section}: ${JSON.stringify(labels)}`).toBe(true);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+      if(width===390) await page.locator(section==='shelf'?'.reading-picks':'.book-grid').screenshot({path:testInfo.outputPath(`badges-${section}.png`)});
+    }
+  }
 });
