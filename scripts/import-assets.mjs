@@ -1,8 +1,8 @@
-import {mkdir, readFile, writeFile, access, readdir, rm} from 'node:fs/promises';
+import {mkdir, readFile, writeFile, access} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {PINYIN_RECORDINGS} from '../app/pinyin.js';
+import {importPinyin} from './import-pinyin.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const origin = 'https://www.storybookscanada.ca';
@@ -52,29 +52,8 @@ for (const preset of presets) {
   console.log(`Imported ${preset.title}: ${pages.length} pages`);
 }
 
-// These are Mandarin example-word recordings, not English letter names.
-const recordings = Object.entries(PINYIN_RECORDINGS);
-await mkdir(`${root}assets/pinyin`, {recursive: true});
-for (const file of await readdir(`${root}assets/pinyin`)) {
-  if (file.endsWith('.mp3') && !Object.hasOwn(PINYIN_RECORDINGS, file.slice(0, -4))) await rm(`${root}assets/pinyin/${file}`);
-}
-const query = new URLSearchParams({action: 'query', format: 'json', prop: 'imageinfo', iiprop: 'url|sha1|extmetadata', titles: recordings.map(r => r[1]).join('|')});
-const metadata = JSON.parse(get(`https://commons.wikimedia.org/w/api.php?${query}`).toString());
-for (const [id, title] of recordings) {
-  const page = Object.values(metadata.query.pages).find(p => p.title === title);
-  const info = page?.imageinfo?.[0];
-  if (!info) throw Error(`Missing Commons source: ${title}`);
-  const meta = info.extmetadata;
-  const license = meta.LicenseShortName?.value;
-  if (!['CC BY 2.0 fr', 'CC BY-SA 3.0 us', 'CC BY-SA 4.0'].includes(license)) throw Error(`Unreviewed audio license: ${title}`);
-  const original = await download(info.url, `.asset-cache/${id}.${title.endsWith('.wav') ? 'wav' : 'ogg'}`, info.sha1);
-  const output = `assets/pinyin/${id}.mp3`;
-  await mkdir(`${root}assets/pinyin`, {recursive: true});
-  execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-i', `${root}${original.path}`, '-ac', '1', '-ar', '44100', '-codec:a', 'libmp3lame', '-q:a', '3', `${root}${output}`]);
-  const bytes = await readFile(`${root}${output}`);
-  sources.push({kind: 'pinyin', id, source: `https://commons.wikimedia.org/wiki/${encodeURIComponent(title)}`, original: {...original, sha1: info.sha1}, author: strip(meta.Artist?.value || ''), description: strip(meta.ImageDescription?.value || ''), license, licenseUrl: meta.LicenseUrl?.value, changes: '仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。', assets: [{path: output, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex')}]});
-  console.log(`Imported pinyin example ${id}: ${license}`);
-}
+// Pinyin provenance is independent from the story licenses.
+sources.push(...await importPinyin(root));
 await mkdir(`${root}data`, {recursive: true});
 await writeFile(`${root}data/books.json`, JSON.stringify(books, null, 2) + '\n');
 await writeFile(`${root}assets/sources.json`, JSON.stringify({importedAt: new Date().toISOString(), sources}, null, 2) + '\n');

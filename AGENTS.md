@@ -7,3 +7,5 @@
 - 区分应修复、可优化和待确认的问题；优化方向经用户确认后再实施。
 - 绘本文字、插图和音频分别核对授权及署名，不假设同一平台的所有素材使用相同许可。
 - iPad 是主要使用设备；浏览器模拟验证不能替代真实 iPad 的触摸、音频、横竖屏和离线验证。
+
+- 主站已迁移到 GitHub Pages：`https://nmwei.github.io/reading-garden/`，源码仓库为 `nmwei/reading-garden`，Pages使用 `gh-pages` 分支根目录。`.openai/hosting.json` 仅保留旧Sites站点身份；除非用户明确要求，不再发布到Sites。

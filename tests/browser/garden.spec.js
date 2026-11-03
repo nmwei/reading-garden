@@ -1,10 +1,44 @@
-import {test, expect} from '@playwright/test';
+import {test as base, expect} from '@playwright/test';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {resolve, extname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {TONE_BASES} from '../../app/pinyin.js';
+
+// Real server faults exercise worker-owned network requests in both browser engines.
+const test = base.extend({
+  updateHost: async ({}, use) => {
+    const root = fileURLToPath(new URL('../../dist/', import.meta.url)), overrides = new Map();
+    const types = {'.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.mp3': 'audio/mpeg', '.webmanifest': 'application/manifest+json'};
+    const server = createServer(async (request, response) => {
+      try {
+        const pathname = new URL(request.url, 'http://localhost').pathname;
+        const file = resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
+        if (!file.startsWith(root)) { response.writeHead(404); response.end(); return; }
+        const override = overrides.get(pathname);
+        const bytes = override?.body ?? await readFile(file);
+        response.writeHead(override?.status || 200, {'Content-Type': types[extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store'});
+        response.end(bytes);
+      } catch { response.writeHead(404); response.end(); }
+    });
+    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+    try { await use({url: `http://127.0.0.1:${server.address().port}`, overrides, manifest: JSON.parse(await readFile(resolve(root, 'precache.json'), 'utf8'))}); }
+    finally { await new Promise(resolve => { server.close(resolve); server.closeAllConnections(); }); }
+  }
+});
+
+async function enterParent(page) {
+  await page.getByRole('button', {name: '长按 1 秒进入', exact: true}).click({delay: 1150});
+  await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
+}
 
 test.beforeEach(async ({page}) => {
   await page.addInitScript(() => {
-    window.__plays = [];
+    window.__plays = []; window.__playTimes = []; window.__ends = [];
+    const observed = new WeakSet();
     const play = HTMLMediaElement.prototype.play;
-    HTMLMediaElement.prototype.play = function (...args) { window.__plays.push(this.src); window.__lastAudio = this; return play.apply(this, args); };
+    HTMLMediaElement.prototype.play = function (...args) { window.__plays.push(this.src); window.__playTimes.push(performance.now()); window.__lastAudio = this;
+      if (!observed.has(this)) { observed.add(this); this.addEventListener('ended', () => window.__ends.push({src: this.src, time: performance.now()})); } return play.apply(this, args); };
   });
 });
 
@@ -47,42 +81,131 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   expect(errors).toEqual([]);
 });
 
-test('pinyin is a separate lesson with playable examples and retryable listening practice', async ({page}) => {
+test('deliberate letter taps play while multi-selected practice stays explicit, fixed at three and persistent', async ({page}) => {
   await page.goto('/#/pinyin');
-  await expect(page.getByRole('heading', {name: '听听声音，动动小嘴巴。'})).toBeVisible();
-  await expect(page.locator('.vowel-picker button')).toHaveCount(6);
-  for (const symbol of ['a', 'e', 'i', 'ü']) {
-    await page.getByRole('button', {name: `单韵母${symbol}`, exact: true}).click();
-    await expect(page.getByRole('button', {name: '示范音待补充', exact: true})).toBeDisabled();
-  }
+  await expect(page.locator('.final-row')).toHaveCount(5);
+  await expect(page.locator('[data-pinyin-item]')).toHaveCount(24);
   expect(await page.evaluate(() => window.__plays)).toEqual([]);
-  await page.getByRole('button', {name: '单韵母o', exact: true}).click();
-  await page.getByRole('button', {name: '听听例字', exact: true}).click();
-  await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/pinyin/o.mp3');
+  await page.getByRole('button', {name: '单韵母e', exact: true}).click();
   await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
-  await page.getByRole('button', {name: '听听四声', exact: true}).click();
-  await expect(page.getByRole('button', {name: '听第一声bā', exact: true})).toBeDisabled();
-  await expect(page.getByRole('button', {name: '听第三声bǎ', exact: true})).toBeDisabled();
-  for (const [n, label] of [[2, '第二声bá'], [4, '第四声bà']]) {
-    await page.getByRole('button', {name: `听${label}`, exact: true}).click();
-    await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain(`/tone${n}.mp3`);
-  }
+  await page.getByRole('button', {name: '声母与 y w', exact: true}).click();
+  expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
+  await page.getByRole('button', {name: '声母b', exact: true}).click();
+  const count = await page.evaluate(() => window.__plays.length);
+  await page.getByRole('button', {name: '声母b', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(count + 1);
   await page.getByRole('button', {name: '听音找朋友', exact: true}).click();
-  await page.getByRole('button', {name: '播放题目声音'}).click();
-  await expect(page.locator('[data-answer]')).toHaveCount(2);
-  expect(await page.locator('[data-answer]').evaluateAll(buttons => buttons.every(button => ['o', 'u'].includes(button.dataset.answer)))).toBe(true);
-  const src = await page.evaluate(() => window.__plays.at(-1));
-  const answer = src.split('/').at(-1).replace('.mp3', '');
-  const symbol = {a: 'a', o: 'o', e: 'e', i: 'i', u: 'u', v: 'ü'}[answer];
-  // Select by DOM attribute so the random order does not affect the assertion.
-  await page.locator(`[data-answer]:not([data-answer="${answer}"])`).first().click();
-  await expect(page.locator('.quiz-feedback')).toHaveText('再听一听，慢慢找。');
-  await page.getByRole('button', {name: `选择${symbol}`, exact: true}).click();
-  await expect(page.locator('.quiz-feedback')).toContainText('找到了');
+  await expect(page.locator('.practice-scopes button')).toHaveCount(3);
+  await expect(page.locator('select, .practice-settings, [data-quiz-scope="recent"]')).toHaveCount(0);
+  await expect(page.locator('[data-question-scope]')).toHaveText('这一题 · 韵母');
+  await expect(page.locator('[data-answer]')).toHaveCount(3);
+  await page.locator('[data-quiz-scope="whole"]').click();
+  await expect(page.locator('[data-practice-summary]')).toContainText('韵母、整体认读');
+  const answerCurrent = async () => {
+    await page.getByRole('button', {name: '播放题目声音'}).click();
+    const src = await page.evaluate(() => window.__plays.at(-1));
+    const answer = src.split('/').at(-1).replace('.mp3', '');
+    await page.locator(`[data-answer]:not([data-answer="${answer}"])`).first().click();
+    await expect(page.locator('.quiz-feedback')).toHaveText('再听一听，慢慢找。');
+    await page.locator(`[data-answer="${answer}"]`).click();
+    await expect(page.locator('.quiz-feedback')).toContainText('找到了');
+  };
+  await answerCurrent();
   await page.getByRole('button', {name: '再找一个'}).click();
-  await expect(page.locator('.quiz-feedback')).toContainText('不着急');
-  await page.goto('/#/book/0156/1');
-  await expect(page.locator('.story-text')).not.toContainText('ā');
+  await expect(page.locator('[data-question-scope]')).toHaveText('这一题 · 整体认读');
+  expect(await page.locator('[data-answer]').evaluateAll(buttons => buttons.every(b => b.dataset.answer.startsWith('whole-')))).toBe(true);
+  await answerCurrent();
+  await page.getByRole('button', {name: '再找一个'}).click();
+  await expect(page.locator('[data-question-scope]')).toHaveText('这一题 · 韵母');
+  await page.reload();
+  await page.getByRole('button', {name: '听音找朋友', exact: true}).click();
+  for (const id of ['finals', 'whole']) await expect(page.locator(`[data-quiz-scope="${id}"]`)).toHaveAttribute('aria-pressed', 'true');
+  await page.locator('[data-quiz-scope="finals"]').click();
+  await page.locator('[data-quiz-scope="whole"]').click();
+  await expect(page.locator('[data-answer], [data-quiz-listen]')).toHaveCount(0);
+  await expect(page.locator('[data-practice-summary]')).toContainText('请选择至少一类');
+  await page.reload();
+  await page.getByRole('button', {name: '听音找朋友', exact: true}).click();
+  await expect(page.locator('[data-answer]')).toHaveCount(0);
+  await page.locator('[data-quiz-scope="initials"]').click();
+  await expect(page.locator('[data-answer]')).toHaveCount(3);
+  expect(await page.locator('[data-answer]').evaluateAll(buttons => buttons.every(b => b.dataset.answer.startsWith('initial-')))).toBe(true);
+});
+
+test('every recognition item including independent ong plays on tap', async ({page}) => {
+  test.setTimeout(60000);
+  await page.goto('/#/pinyin');
+  const playEveryItem = async () => {
+    const ids = await page.locator('[data-pinyin-item]').evaluateAll(buttons => buttons.map(b => b.dataset.pinyinItem));
+    for (const id of ids) {
+      const before = await page.evaluate(() => window.__plays.length);
+      await page.locator(`[data-pinyin-item="${id}"]`).click();
+      await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(before + 1);
+      await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain(`/pinyin/${id}.mp3`);
+      await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+    }
+  };
+  await playEveryItem();
+  await page.getByRole('button', {name: '声母与 y w', exact: true}).click();
+  await expect(page.locator('[data-pinyin-item]')).toHaveCount(23);
+  await expect(page.getByRole('button', {name: '听呼读音', exact: true})).toBeEnabled();
+  await playEveryItem();
+  await page.getByRole('button', {name: '整体认读', exact: true}).click();
+  await expect(page.locator('[data-pinyin-item]')).toHaveCount(16);
+  await playEveryItem();
+});
+
+test('changing a tone syllable updates all four labels and real audio without autoplay', async ({page}) => {
+  test.setTimeout(120000);
+  const forms = Object.fromEntries(TONE_BASES.map(base => [base.id, base.forms]));
+  await page.goto('/#/pinyin');
+  await page.getByRole('button', {name: '听听四声', exact: true}).click();
+  await expect(page.locator('[data-tone-base]')).toHaveCount(20);
+  for (const [base, symbols] of Object.entries(forms)) {
+    const before = await page.evaluate(() => window.__plays.length);
+    await page.locator(`[data-tone-base="${base}"]`).click();
+    expect(await page.evaluate(() => window.__plays.length)).toBe(before);
+    await expect(page.locator('.tone-card strong')).toHaveText(symbols);
+    for (let i = 1; i <= 4; i++) {
+      const id = `tone-${base}-${i}`;
+      await page.locator(`.tone-card[data-pinyin-play="${id}"]`).click();
+      await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain(`/pinyin/${id}.mp3`);
+      await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+    }
+  }
+});
+
+test('sequential finals can pause, resume and yield to a manual letter tap', async ({page}) => {
+  await page.goto('/#/pinyin');
+  await page.getByRole('button', {name: '顺序听', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await page.getByRole('button', {name: '暂停', exact: true}).click();
+  expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
+  await expect(page.locator('[data-sequence-status]')).toContainText('已暂停');
+  await page.getByRole('button', {name: '继续', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.some(src => src.endsWith('/o.mp3')))).toBe(true);
+  await page.getByRole('button', {name: '单韵母e', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/pinyin/e.mp3');
+  await expect(page.getByRole('button', {name: '暂停', exact: true})).toBeDisabled();
+  const stoppedCount = await page.evaluate(() => window.__plays.length);
+  await page.waitForTimeout(2400);
+  expect(await page.evaluate(() => window.__plays.length)).toBe(stoppedCount);
+});
+
+test('four-tone sequence plays in order and stops when changing syllables or leaving', async ({page}) => {
+  await page.goto('/#/pinyin');
+  await page.getByRole('button', {name: '听听四声', exact: true}).click();
+  await page.locator('[data-tone-base="ma"]').click();
+  await page.getByRole('button', {name: '依次听四声', exact: true}).click();
+  await expect(page.locator('[data-sequence-status]')).toContainText('这一轮听完啦', {timeout: 15000});
+  expect(await page.evaluate(() => window.__plays.map(src => src.split('/').at(-1)))).toEqual(['tone-ma-1.mp3','tone-ma-2.mp3','tone-ma-3.mp3','tone-ma-4.mp3']);
+  await page.getByRole('button', {name: '依次听四声', exact: true}).click();
+  await page.locator('[data-tone-base="ai"]').click();
+  expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
+  await expect(page.getByRole('button', {name: '暂停', exact: true})).toBeDisabled();
+  await page.getByRole('button', {name: '依次听四声', exact: true}).click();
+  await page.getByRole('button', {name: '整体认读', exact: true}).click();
+  expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
 });
 
 test('iPad rotation and mobile layouts keep content inside the viewport', async ({page}, testInfo) => {
@@ -93,6 +216,19 @@ test('iPad rotation and mobile layouts keep content inside the viewport', async 
       await expect(page.locator('#main')).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1);
       expect(overflow, `${path} at ${size.width}`).toBe(false);
+      if (path.includes('parent')) {
+        await enterParent(page);
+        const colors = await page.locator('.app-maintenance > summary > span, .sources > summary > span').evaluateAll(titles => titles.map(title => getComputedStyle(title).color));
+        expect(colors).toHaveLength(2);
+        expect(colors[0]).toBe(colors[1]);
+      }
+      if (path.includes('pinyin')) {
+        for (const tab of ['声母与 y w', '整体认读', '听音找朋友']) {
+          await page.getByRole('button', {name: tab, exact: true}).click();
+          if (tab === '整体认读') await page.getByRole('button', {name: '整体认读音节yuan', exact: true}).click();
+          expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)).toBe(false);
+        }
+      }
       if (path.includes('book')) {
         await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
         await page.getByRole('button', {name: '切换大字阅读'}).click();
@@ -107,18 +243,25 @@ test('iPad rotation and mobile layouts keep content inside the viewport', async 
     await page.screenshot({path: 'test-results/reader-ipad.png', fullPage: true});
     await page.goto('/#/pinyin');
     await page.screenshot({path: 'test-results/pinyin-ipad.png', fullPage: true});
+    await page.getByRole('button', {name: '声母与 y w', exact: true}).click();
+    await page.screenshot({path: 'test-results/pinyin-initials-ipad.png', fullPage: true});
+    await page.getByRole('button', {name: '整体认读', exact: true}).click();
+    await page.getByRole('button', {name: '整体认读音节yuan', exact: true}).click();
+    await page.setViewportSize({width: 390, height: 844});
+    await page.screenshot({path: 'test-results/pinyin-whole-mobile.png', fullPage: true});
   }
 });
 
 test('downloaded library works offline including audio byte ranges at a project subpath', async ({page, context}) => {
   await page.goto('http://localhost:4179/reading-garden/#/parent');
+  await enterParent(page);
   await expect(page.getByRole('button', {name: '下载离线故事包'})).toBeVisible();
   await page.evaluate(async () => { await navigator.serviceWorker.ready; if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {once: true})); });
   await page.getByRole('button', {name: '下载离线故事包'}).click();
   await expect(page.locator('#download-status')).toContainText('已下载全部故事', {timeout: 20000});
   await context.setOffline(true);
   await page.reload();
-  await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
+  await enterParent(page);
   await page.getByRole('link', {name: '故事书架', exact: true}).click();
   await expect(page.locator('.book-card')).toHaveCount(3);
   await page.locator('.book-card').nth(2).click();
@@ -130,10 +273,44 @@ test('downloaded library works offline including audio byte ranges at a project 
   expect(range.status).toBe(206); expect(range.bytes).toBe(16); expect(range.contentRange).toMatch(/^bytes 0-15\//);
   await page.goto('http://localhost:4179/reading-garden/#/pinyin');
   await page.getByRole('button', {name: '单韵母o', exact: true}).click();
-  await page.getByRole('button', {name: '听听例字'}).click();
+  await page.getByRole('button', {name: '听读音'}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/reading-garden/assets/pinyin/o.mp3');
-  const removedIsPlayable = await page.evaluate(async () => fetch('./assets/pinyin/a.mp3').then(response => response.ok, () => false));
-  expect(removedIsPlayable).toBe(false);
+  // Cached bytes must be the selected CLI files, including at the old stable URLs.
+  const cached = await page.evaluate(async () => {
+    const {sources} = await fetch('./assets/sources.json').then(r => r.json());
+    const results = [];
+    for (const source of sources.filter(s => s.kind === 'pinyin')) {
+      const response = await fetch(`./${source.assets[0].path}`);
+      const bytes = await response.arrayBuffer();
+      const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), b => b.toString(16).padStart(2, '0')).join('');
+      results.push(response.ok && hash === source.original.sha256);
+    }
+    return results;
+  });
+  expect(cached).toEqual(Array(143).fill(true));
+  await page.getByRole('button', {name: '单韵母a', exact: true}).click();
+  await page.getByRole('button', {name: '听读音'}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await page.getByRole('button', {name: '听听四声', exact: true}).click();
+  await page.locator('[data-tone-base="ma"]').click();
+  await page.getByRole('button', {name: '听第四声mà', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await page.getByRole('button', {name: '认识韵母', exact: true}).click();
+  await page.getByRole('button', {name: '后鼻韵母ong', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/pinyin/ong.mp3');
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await page.goto('http://localhost:4179/reading-garden/#/parent');
+  await enterParent(page);
+  await expect(page.locator('.sources')).not.toHaveAttribute('open', '');
+  await expect(page.locator('.sources').getByRole('link', {name: 'CLI · The Chinese Language Institute', exact: true})).not.toBeVisible();
+  await page.locator('.sources > summary').click();
+  await expect(page.locator('.sources > summary')).toHaveCount(1);
+  await expect(page.locator('.source-platform')).toHaveCount(1);
+  await expect(page.locator('.source-book')).toHaveCount(0);
+  await expect(page.locator('.sources').getByRole('link', {name: 'CLI · The Chinese Language Institute', exact: true})).toHaveCount(1);
+  await expect(page.locator('.sources').getByRole('link', {name: 'Silas · ChinaHelp', exact: true})).toHaveCount(1);
+  await expect(page.locator('.sources a[href$="sources.json"]')).toHaveCount(0);
+  await expect(page.locator('a[href="undefined"]')).toHaveCount(0);
 });
 
 test('storage corruption is recoverable and clearing data requires a deliberate confirmation', async ({page}) => {
@@ -143,6 +320,7 @@ test('storage corruption is recoverable and clearing data requires a deliberate 
   await expect(page.locator('.book-card')).toHaveCount(3);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
+  await enterParent(page);
   await page.getByRole('button', {name: '清除本机阅读记录和生字篮'}).click();
   await page.getByRole('button', {name: '保留记录'}).click();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).progress['0156'].page)).toBe(1);
@@ -171,4 +349,273 @@ test('audio playback errors give a retry without blocking navigation', async ({p
   await expect(page.getByRole('button', {name: '读这一页'})).toBeVisible();
   await page.getByRole('button', {name: '下一页', exact: true}).click();
   await expect(page.locator('.story-text')).toContainText('慢慢');
+});
+
+test('independent ong is attributed separately, packaged and available to finals questions', async ({page}) => {
+  await page.goto('/#/pinyin');
+  await page.getByRole('button', {name: '后鼻韵母ong', exact: true}).click();
+  await expect(page.locator('.sample-sound')).toContainText('ōng');
+  await expect(page.locator('.sample-sound')).not.toContainText('hōng');
+  await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/pinyin/ong.mp3');
+  const state = await page.evaluate(async () => {
+    const pinyin = await import('./app/pinyin.js');
+    const manifest = await fetch('./precache.json').then(r => r.json());
+    const {sources} = await fetch('./assets/sources.json').then(r => r.json());
+    return {source: pinyin.pinyinAudio('ong'), candidate: pinyin.practicePool('finals').some(item => item.id === 'ong'), packaged: manifest.files.includes('assets/pinyin/ong.mp3'), original: sources.find(s => s.kind === 'pinyin' && s.id === 'ong').original.url};
+  });
+  expect(state).toEqual({source: 'assets/pinyin/ong.mp3', candidate: true, packaged: true, original: 'https://chinahelp4u.com/wp-content/uploads/2021/10/finial-ong-.mp3'});
+});
+
+test('r and ri show and play first-tone examples in both lessons', async ({page}) => {
+  await page.goto('/#/pinyin');
+  for (const [tab, label, id, button] of [['声母与 y w', '声母r', 'initial-r', '听呼读音'], ['整体认读', '整体认读音节ri', 'whole-ri', '听读音']]) {
+    await page.getByRole('button', {name: tab, exact: true}).click();
+    await page.getByRole('button', {name: label, exact: true}).click();
+    await expect(page.locator('.sample-sound')).toContainText('rī');
+    await expect(page.locator('.sample-sound')).toContainText('第一声');
+    await expect(page.locator('.lesson-copy')).not.toContainText('第四声');
+    await page.getByRole('button', {name: button, exact: true}).click();
+    await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain(`/pinyin/${id}.mp3`);
+    await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  }
+});
+
+test('all recognition pages share compact cards and sequential listening with short gaps', async ({page}) => {
+  await page.goto('/#/pinyin');
+  for (const [tab, first, second] of [
+    ['认识韵母', 'a', 'o'], ['声母与 y w', 'initial-b', 'initial-p'], ['整体认读', 'whole-zhi', 'whole-chi']
+  ]) {
+    await page.getByRole('button', {name: tab, exact: true}).click();
+    const sizes = await page.locator('[data-pinyin-item]').evaluateAll(buttons => buttons.map(b => ({font: getComputedStyle(b).fontSize, height: b.getBoundingClientRect().height})));
+    expect(sizes.every(size => size.font === '28px' && size.height >= 58 && size.height <= 64)).toBe(true);
+    await page.evaluate(() => { window.__plays = []; window.__playTimes = []; window.__ends = []; });
+    await page.getByRole('button', {name: '顺序听', exact: true}).click();
+    await expect.poll(() => page.evaluate(() => window.__plays.length)).toBeGreaterThanOrEqual(2);
+    expect(await page.evaluate(() => window.__plays.slice(0, 2).map(src => src.split('/').at(-1)))).toEqual([`${first}.mp3`, `${second}.mp3`]);
+    const gap = await page.evaluate(() => window.__playTimes[1] - window.__ends[0].time);
+    expect(gap).toBeGreaterThanOrEqual(250); expect(gap).toBeLessThan(900);
+    await expect(page.locator(`[data-pinyin-item="${second}"]`)).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', {name: '暂停', exact: true}).click();
+    await page.getByRole('button', {name: '继续', exact: true}).click();
+    await page.getByRole('button', {name: '停止', exact: true}).click();
+    expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
+  }
+  await page.getByRole('button', {name: '听听四声', exact: true}).click();
+  await page.evaluate(() => { window.__plays = []; window.__playTimes = []; window.__ends = []; });
+  await page.getByRole('button', {name: '依次听四声', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.length)).toBeGreaterThanOrEqual(2);
+  const gap = await page.evaluate(() => window.__playTimes[1] - window.__ends[0].time);
+  expect(gap).toBeGreaterThanOrEqual(150); expect(gap).toBeLessThan(800);
+});
+
+test('parent entry requires a full hold, cancels on release/movement and guards direct links and reloads', async ({page}) => {
+  await page.goto('/#/pinyin');
+  await page.getByRole('button', {name: '顺序听', exact: true}).click();
+  await page.getByRole('link', {name: '家长小角', exact: true}).click();
+  expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
+  const gate = page.locator('#parent-dialog');
+  const hold = page.getByRole('button', {name: '长按 1 秒进入', exact: true});
+  await expect(gate).toBeVisible();
+  await hold.click({delay: 150});
+  await page.waitForTimeout(1050);
+  await expect(gate).toBeVisible();
+  await expect(page.locator('[data-reset]')).toHaveCount(0);
+  const box = await hold.boundingBox();
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(box.x + box.width + 30, box.y + 10);
+  await page.waitForTimeout(1050);
+  await page.mouse.up();
+  await expect(gate).toBeVisible();
+  await page.getByRole('button', {name: '取消', exact: true}).click();
+  await expect(gate).not.toBeVisible();
+  await page.goto('/#/parent');
+  await expect(gate).toBeVisible();
+  expect(page.url()).not.toContain('#/parent');
+  await hold.focus();
+  await page.keyboard.down('Space');
+  await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
+  await page.keyboard.up('Space');
+  await expect(gate).not.toBeVisible();
+  await page.reload();
+  await expect(gate).toBeVisible();
+  await expect(page.locator('[data-reset]')).toHaveCount(0);
+  await enterParent(page);
+  await page.getByRole('link', {name: '学拼音', exact: true}).click();
+  await page.getByRole('link', {name: '家长小角', exact: true}).click();
+  await expect(gate).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(gate).not.toBeVisible();
+});
+
+
+test('a hundred books keep parent sources compact while reader credits stay complete', async ({page}) => {
+  await page.route('**/data/books.json', async route => {
+    const response = await route.fetch(), books = await response.json();
+    await route.fulfill({json: Array.from({length: 100}, (_, i) => ({...books[i % books.length], id: `sample-${i}`}))});
+  });
+  await page.goto('/#/parent'); await enterParent(page);
+  const sources = page.locator('.sources');
+  await expect(sources).not.toHaveAttribute('open', '');
+  await page.locator('.sources > summary').click();
+  await expect(page.locator('.source-platform')).toHaveCount(1);
+  await expect(page.locator('.source-book')).toHaveCount(0);
+  await expect(sources).toContainText('CC BY 3.0');
+  await expect(sources).toContainText('CC BY-NC 3.0');
+  await expect(sources).toContainText('署名见各书阅读页');
+  await page.locator('.sources > summary').click();
+  await expect(page.locator('.sources-body')).not.toBeVisible();
+  await page.goto('/#/book/sample-0/1');
+  await page.getByText('这本书的作者与来源', {exact: true}).click();
+  for (const credit of ['Letta Machoga', 'Wiehan de Jager', 'dohliam', 'Zhuo Sun']) await expect(page.locator('.reader-credit')).toContainText(credit);
+  await expect(page.locator('.reader-credit').getByRole('link', {name: 'CC BY 3.0', exact: true})).toBeVisible();
+});
+
+test('checking updates bypasses cached manifests and refreshing the page preserves saved learning', async ({page, context, updateHost}) => {
+  await page.goto(`${updateHost.url}/#/book/0087/2`);
+  await expect(page.locator('.story-text')).toBeVisible();
+  await page.goto(`${updateHost.url}/#/parent`); await enterParent(page);
+  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  await expect(page.locator('.app-maintenance')).not.toHaveAttribute('open', '');
+  await expect(page.getByRole('button', {name: '检查更新', exact: true})).not.toBeVisible();
+  await expect(page.locator('.app-maintenance [data-app-refetch]')).toHaveCount(0);
+  await expect(page.locator('.offline-panel [data-app-refetch]')).toBeVisible();
+  await page.locator('.app-maintenance > summary').click();
+  await page.getByRole('button', {name: '检查更新', exact: true}).click();
+  await expect(page.locator('#app-update-status')).toHaveText('当前已是最新版本。');
+  // A server manifest newer than the cached shell must be reported, not hidden by the worker cache.
+  updateHost.overrides.set('/precache.json', {body: JSON.stringify({...updateHost.manifest, version: '0123456789abcdef'})});
+  await page.getByRole('button', {name: '检查更新', exact: true}).click();
+  await expect(page.locator('#app-update-status')).toContainText('新版已准备好');
+  updateHost.overrides.delete('/precache.json');
+  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
+  await expect(page.locator('#parent-dialog')).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  await enterParent(page);
+  await page.locator('.app-maintenance > summary').click();
+  await context.setOffline(true);
+  await page.getByRole('button', {name: '检查更新', exact: true}).click();
+  await expect(page.locator('#app-update-status')).toContainText('当前未联网');
+  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
+  await expect(page.locator('#parent-dialog')).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+});
+
+test('resource repair replaces damaged cached audio, keeps records and other projects, and remains offline usable', async ({page, context}) => {
+  test.setTimeout(60000);
+  await page.goto('http://localhost:4179/reading-garden/#/book/0087/2');
+  await expect(page.locator('.story-text')).toBeVisible();
+  await page.goto('http://localhost:4179/reading-garden/#/parent'); await enterParent(page);
+  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+    if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {once: true}));
+    const info = await fetch('./precache.json').then(r => r.json());
+    const cache = await caches.open(`reading-garden:/reading-garden/:${info.version}`);
+    await cache.put(new URL('./assets/pinyin/ong.mp3', document.baseURI), new Response('damaged', {headers: {'Content-Type': 'audio/mpeg'}}));
+    await (await caches.open('abc-garden:sentinel')).put(new URL('/abc-garden/sentinel', location.origin), new Response('keep'));
+  });
+  await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
+  await expect(page.locator('#resource-refresh-status')).toContainText('资源已重新获取并校验', {timeout: 40000});
+  const repaired = await page.evaluate(async () => {
+    const {sources} = await fetch('./assets/sources.json').then(r => r.json());
+    const response = await fetch('./assets/pinyin/ong.mp3');
+    const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', await response.arrayBuffer())), b => b.toString(16).padStart(2, '0')).join('');
+    return {correct: hash === sources.find(s => s.kind === 'pinyin' && s.id === 'ong').original.sha256, temporary: (await caches.keys()).some(name => name.includes('refresh-')), other: await (await (await caches.open('abc-garden:sentinel')).match(new URL('/abc-garden/sentinel', location.origin))).text()};
+  });
+  expect(repaired).toEqual({correct: true, temporary: false, other: 'keep'});
+  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  await context.setOffline(true);
+  await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
+  await expect(page.locator('#resource-refresh-status')).toContainText('当前未联网');
+  await page.goto('http://localhost:4179/reading-garden/#/pinyin');
+  await page.getByRole('button', {name: '后鼻韵母ong', exact: true}).click();
+  await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
+});
+
+test('a failed or invalid refetch leaves existing offline content intact and re-enables actions', async ({page, updateHost}) => {
+  test.setTimeout(60000);
+  await page.goto(`${updateHost.url}/#/parent`); await enterParent(page);
+  await page.getByRole('button', {name: '下载离线故事包', exact: true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载全部故事');
+  const cachedAudio = () => page.evaluate(async () => {
+    const info = await fetch('./precache.json').then(r => r.json());
+    const cache = await caches.open(`reading-garden:/:${info.version}`);
+    return Array.from(new Uint8Array(await (await cache.match(new URL('./assets/pinyin/ong.mp3', document.baseURI))).arrayBuffer())).join(',');
+  });
+  const original = await cachedAudio();
+  updateHost.overrides.set('/assets/pinyin/ong.mp3', {status: 200, body: 'bad replacement'});
+  await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
+  await expect(page.locator('#resource-refresh-status')).toContainText('校验失败', {timeout: 40000});
+  expect(await cachedAudio()).toBe(original);
+  await expect(page.getByRole('button', {name: '重新获取资源', exact: true})).toBeEnabled();
+  updateHost.overrides.delete('/assets/pinyin/ong.mp3');
+  updateHost.overrides.set('/assets/pinyin/ong.mp3', {status: 503, body: 'unavailable'});
+  await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
+  await expect(page.locator('#resource-refresh-status')).toContainText('未能重新获取', {timeout: 40000});
+  expect(await cachedAudio()).toBe(original);
+  expect(await page.evaluate(async () => (await caches.keys()).some(name => name.includes('refresh-')))).toBe(false);
+});
+
+
+test('production updates wait for explicit reload, preserve the old package, and then activate the new page', async ({page, updateHost}) => {
+  test.setTimeout(60000);
+  const base = `${updateHost.url}/?offline-test=1`, oldVersion = updateHost.manifest.version, nextVersion = 'fedcba9876543210';
+  await page.goto(`${base}#/book/0087/2`);
+  await expect(page.locator('.story-text')).toBeVisible();
+  await page.getByRole('link', {name: '回到书架', exact: true}).click();
+  await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
+  await page.getByRole('button', {name: '下载离线故事包', exact: true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载全部故事');
+  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  const worker = await readFile(new URL('../../dist/sw.js', import.meta.url), 'utf8');
+  const main = await readFile(new URL('../../dist/app/main.js', import.meta.url), 'utf8');
+  expect(worker).toContain(oldVersion);
+  expect(main).toContain('听听声音，动动小嘴巴。');
+  updateHost.overrides.set('/sw.js', {body: worker.replace(oldVersion, nextVersion)});
+  updateHost.overrides.set('/precache.json', {body: JSON.stringify({...updateHost.manifest, version: nextVersion})});
+  updateHost.overrides.set('/app/main.js', {body: main.replace('听听声音，动动小嘴巴。', '新版拼音小课堂')});
+  await page.locator('.app-maintenance > summary').click();
+  await page.getByRole('button', {name: '检查更新', exact: true}).click();
+  await expect(page.locator('#app-update-status')).toContainText('新版已准备好');
+  const pending = await page.evaluate(async () => {
+    const registration = await navigator.serviceWorker.getRegistration();
+    const manifest = await fetch('./precache.json').then(r => r.json());
+    return {waiting: !!registration.waiting, version: manifest.version, caches: await caches.keys()};
+  });
+  expect(pending.waiting).toBe(true);
+  expect(pending.version).toBe(oldVersion);
+  expect(pending.caches).toContain(`reading-garden:/:${oldVersion}`);
+  await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
+  await expect(page.locator('#resource-refresh-status')).toContainText('有新版待启用');
+  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  await page.getByRole('link', {name: '学拼音', exact: true}).click();
+  await expect(page.getByRole('heading', {name: '听听声音，动动小嘴巴。', exact: true})).toBeVisible();
+  await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
+  await page.locator('.app-maintenance > summary').click();
+  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
+  await expect(page.locator('#parent-dialog')).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  await page.getByRole('button', {name: '取消', exact: true}).click();
+  await page.getByRole('link', {name: '学拼音', exact: true}).click();
+  await expect(page.getByRole('heading', {name: '新版拼音小课堂', exact: true})).toBeVisible();
+  const activated = await page.evaluate(async () => ({version: (await fetch('./precache.json').then(r => r.json())).version, caches: await caches.keys(), waiting: !!(await navigator.serviceWorker.getRegistration()).waiting}));
+  expect(activated.version).toBe(nextVersion);
+  expect(activated.waiting).toBe(false);
+  expect(activated.caches).not.toContain(`reading-garden:/:${oldVersion}`);
+  expect(activated.caches).toContain(`reading-garden:/:${nextVersion}`);
+});
+
+test('a queued close event cannot cancel a newly opened parent hold', async ({page}) => {
+  await page.goto('/#/pinyin');
+  await page.getByRole('link', {name: '家长小角', exact: true}).click();
+  await expect(page.locator('#parent-dialog')).toBeVisible();
+  await page.evaluate(() => {
+    document.querySelector('[data-cancel-parent]').click();
+    document.querySelector('.parent-link').click();
+    const button = document.querySelector('#parent-hold');
+    button.focus();
+    button.dispatchEvent(new KeyboardEvent('keydown', {key: ' ', bubbles: true}));
+  });
+  await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
 });

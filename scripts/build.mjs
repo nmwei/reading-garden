@@ -9,6 +9,14 @@ const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'))
 const allowedPinyin = Object.keys(PINYIN_RECORDINGS).map(id => `${id}.mp3`).sort();
 const actualPinyin = (await readdir(`${root}assets/pinyin`)).filter(name => name.endsWith('.mp3')).sort();
 if (JSON.stringify(allowedPinyin) !== JSON.stringify(actualPinyin)) throw Error('Pinyin audio files must match enabled recordings; remove rejected files or import approved replacements.');
+const pinyinSources = sources.sources.filter(source => source.kind === 'pinyin');
+if (pinyinSources.length !== allowedPinyin.length) throw Error('Pinyin attribution must match enabled recordings.');
+for (const [id, syllable] of Object.entries(PINYIN_RECORDINGS)) {
+  const matching = pinyinSources.filter(source => source.id === id);
+  if (matching.length !== 1 || matching[0].syllable !== syllable || matching[0].assets.length !== 1 || matching[0].assets[0].path !== `assets/pinyin/${id}.mp3`) {
+    throw Error(`Pinyin source changed; import the selected recording before building: ${id}`);
+  }
+}
 // Fail the build instead of releasing missing or silently changed licensed assets.
 for (const source of sources.sources) for (const asset of source.assets) {
   const bytes = await readFile(`${root}${asset.path}`);

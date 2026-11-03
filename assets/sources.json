@@ -1,5 +1,5 @@
 {
-  "importedAt": "2026-11-03T02:53:51.871Z",
+  "importedAt": "2026-11-03T07:31:39.936Z",
   "sources": [
     {
       "kind": "book",
@@ -321,97 +321,4292 @@
     },
     {
       "kind": "pinyin",
-      "id": "o",
-      "source": "https://commons.wikimedia.org/wiki/File%3ALL-Q9192%20(cmn)-Luilui6666-%E5%96%94.wav",
-      "original": {
-        "path": ".asset-cache/o.wav",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/LL-Q9192_%28cmn%29-Luilui6666-%E5%96%94.wav?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "sha256": "ebb07674ae84563364ab0a01552409464c0325269646c05b068d3e30be32dac0",
-        "bytes": 76588,
-        "sha1": "4a0fcb6cc203b8e914aa4dd51ea1b6b70cbeba74"
+      "id": "a",
+      "syllable": "a1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
       },
-      "author": "Speaker: Luilui6666 Recorder: Luilui6666",
-      "description": "Audio pronunciation file from the Lingua Libre project.",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/a1.mp3",
+        "bytes": 30453,
+        "sha256": "a87a5b318f8067def280a2be9c090d592b71a635d6b249c8b16bfda4f177c535"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/a.mp3",
+          "bytes": 30453,
+          "sha256": "a87a5b318f8067def280a2be9c090d592b71a635d6b249c8b16bfda4f177c535"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "o",
+      "syllable": "o1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/o1.mp3",
+        "bytes": 33909,
+        "sha256": "f6af0720201df38d7854d830e926b692889cf3d1f11cf29f510d69907d7ede6e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
       "assets": [
         {
           "path": "assets/pinyin/o.mp3",
-          "bytes": 6973,
-          "sha256": "f8bc0717790eabd1162e87712eb0eb1a3b1195aea9258d20f208d384aa0158c3"
+          "bytes": 33909,
+          "sha256": "f6af0720201df38d7854d830e926b692889cf3d1f11cf29f510d69907d7ede6e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "e",
+      "syllable": "e1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/e1.mp3",
+        "bytes": 32181,
+        "sha256": "8f0909fadede570e76709641b7b6c0ea347b4aad2067c300164cb178c5561015"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/e.mp3",
+          "bytes": 32181,
+          "sha256": "8f0909fadede570e76709641b7b6c0ea347b4aad2067c300164cb178c5561015"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "i",
+      "syllable": "yi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi1.mp3",
+        "bytes": 60408,
+        "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/i.mp3",
+          "bytes": 60408,
+          "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
         }
       ]
     },
     {
       "kind": "pinyin",
       "id": "u",
-      "source": "https://commons.wikimedia.org/wiki/File%3AZh-w%C5%AB.oga",
-      "original": {
-        "path": ".asset-cache/u.ogg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zh-w%C5%AB.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "sha256": "8ac63589aea1a02878275013c359cc11b502552fb258323a39b92a1809b23d03",
-        "bytes": 12508,
-        "sha1": "244c50bc5a3e21b391888996372b7b842b2d6bfd"
+      "syllable": "wu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
       },
-      "author": "Yue Tan",
-      "description": "Pronunciation of \"wū\" (屋) in Chinese. Female voice. Speaker from Liaoning, China.",
-      "license": "CC BY-SA 3.0 us",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
-      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu1.mp3",
+        "bytes": 57528,
+        "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
       "assets": [
         {
           "path": "assets/pinyin/u.mp3",
-          "bytes": 12124,
-          "sha256": "45c0c00afecc85a74e80101986c26bba4e420bf86d34d67c5beccb6f04cac481"
+          "bytes": 57528,
+          "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
         }
       ]
     },
     {
       "kind": "pinyin",
-      "id": "tone2",
-      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C3%A1.ogg",
-      "original": {
-        "path": ".asset-cache/tone2.ogg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Zh-b%C3%A1.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "sha256": "a6efb206dff1744aabfa3e336a2379a110eca4edfc7deaba28a2aad063e3d6f7",
-        "bytes": 12973,
-        "sha1": "c58ca8cc0a436ae5123c1558e369e6427f1ab7d9"
+      "id": "v",
+      "syllable": "yu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
       },
-      "author": "Yue Tan",
-      "description": "Pronunciation of \"bá\" (拔) in Chinese. Female voice. Speaker from Liaoning, China.",
-      "license": "CC BY-SA 3.0 us",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
-      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu1.mp3",
+        "bytes": 60984,
+        "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
       "assets": [
         {
-          "path": "assets/pinyin/tone2.mp3",
-          "bytes": 12176,
-          "sha256": "0812b6eb149c2998f9b65e8547c09ac7a9eb3584d677d4c45d22d63491ea320f"
+          "path": "assets/pinyin/v.mp3",
+          "bytes": 60984,
+          "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
         }
       ]
     },
     {
       "kind": "pinyin",
-      "id": "tone4",
-      "source": "https://commons.wikimedia.org/wiki/File%3AZh-b%C3%A0.ogg",
-      "original": {
-        "path": ".asset-cache/tone4.ogg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Zh-b%C3%A0.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "sha256": "0f05448ba3cb524fd3320bfe25d99d0dd54184025b1543e512076fd534aac343",
-        "bytes": 12540,
-        "sha1": "af683cc5a2b8cc8a6a204f52dc1e77ac6c8b05a3"
+      "id": "ai",
+      "syllable": "ai1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
       },
-      "author": "Yue Tan",
-      "description": "Pronunciation of \"bà\" (罢) in Chinese. Female voice. Speaker from Liaoning, China.",
-      "license": "CC BY-SA 3.0 us",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
-      "changes": "仅转换为单声道 MP3，未剪辑或改变语速、音高。转换版本沿用原许可。",
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ai1.mp3",
+        "bytes": 29877,
+        "sha256": "f49685714df67a9eb2269d9de4c9a4e06cc4a5645a3623f9e11e114f5be04c85"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
       "assets": [
         {
-          "path": "assets/pinyin/tone4.mp3",
-          "bytes": 11574,
-          "sha256": "ae8b88a7b582bc3fe57b14c8a7a9b14cc14e636538f47816f0839c5dcdd10ef2"
+          "path": "assets/pinyin/ai.mp3",
+          "bytes": 29877,
+          "sha256": "f49685714df67a9eb2269d9de4c9a4e06cc4a5645a3623f9e11e114f5be04c85"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ei",
+      "syllable": "ei1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ei1.mp3",
+        "bytes": 33333,
+        "sha256": "7afc841872d2adacf59c03851b4833d9dead24b46ece9b11005d5f657fbf3f34"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ei.mp3",
+          "bytes": 33333,
+          "sha256": "7afc841872d2adacf59c03851b4833d9dead24b46ece9b11005d5f657fbf3f34"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ui",
+      "syllable": "wei1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wei1.mp3",
+        "bytes": 61560,
+        "sha256": "f27c79071f4809180c58e6b61da6fac615ebf8e2d675ebbda7a8cdcb639608bf"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ui.mp3",
+          "bytes": 61560,
+          "sha256": "f27c79071f4809180c58e6b61da6fac615ebf8e2d675ebbda7a8cdcb639608bf"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ao",
+      "syllable": "ao1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ao1.mp3",
+        "bytes": 32181,
+        "sha256": "70494b9d898c4e12882ae82f7ed4e89e8fc210cb3b7b780e221a3505ef0f9cb5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ao.mp3",
+          "bytes": 32181,
+          "sha256": "70494b9d898c4e12882ae82f7ed4e89e8fc210cb3b7b780e221a3505ef0f9cb5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ou",
+      "syllable": "ou1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ou1.mp3",
+        "bytes": 34485,
+        "sha256": "7a802f870effbabc74ce07603c205cbcd101d5c0dbe8bc57d18492791bcde919"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ou.mp3",
+          "bytes": 34485,
+          "sha256": "7a802f870effbabc74ce07603c205cbcd101d5c0dbe8bc57d18492791bcde919"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "iu",
+      "syllable": "you1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/you1.mp3",
+        "bytes": 63864,
+        "sha256": "c45759f4f37029468b775960e9dab99278460a59e3c2e98aa1bd7c14166812d5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/iu.mp3",
+          "bytes": 63864,
+          "sha256": "c45759f4f37029468b775960e9dab99278460a59e3c2e98aa1bd7c14166812d5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ie",
+      "syllable": "ye1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ye1.mp3",
+        "bytes": 62136,
+        "sha256": "5a642f41f603f345ac7002eaa55365e0f5a2f2429f157ddaca74bcb176cc3520"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ie.mp3",
+          "bytes": 62136,
+          "sha256": "5a642f41f603f345ac7002eaa55365e0f5a2f2429f157ddaca74bcb176cc3520"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ve",
+      "syllable": "yue1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue1.mp3",
+        "bytes": 40417,
+        "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ve.mp3",
+          "bytes": 40417,
+          "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "er",
+      "syllable": "er1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/er1.mp3",
+        "bytes": 33909,
+        "sha256": "08e18f898b7d2968e1c28932ff42e69d311fc38b2f8635c4cb10855fff315022"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/er.mp3",
+          "bytes": 33909,
+          "sha256": "08e18f898b7d2968e1c28932ff42e69d311fc38b2f8635c4cb10855fff315022"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "an",
+      "syllable": "an1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/an1.mp3",
+        "bytes": 34485,
+        "sha256": "fdd550f59a78f6f344270065ebdfb877dcc177b4111bd50f10a26b5ed85d14f4"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/an.mp3",
+          "bytes": 34485,
+          "sha256": "fdd550f59a78f6f344270065ebdfb877dcc177b4111bd50f10a26b5ed85d14f4"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "en",
+      "syllable": "en1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/en1.mp3",
+        "bytes": 31605,
+        "sha256": "29f070f56576c705742b06bfbf0ebf8fe907f49772e4d3bd173cb36a1bac6a76"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/en.mp3",
+          "bytes": 31605,
+          "sha256": "29f070f56576c705742b06bfbf0ebf8fe907f49772e4d3bd173cb36a1bac6a76"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "in",
+      "syllable": "yin1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yin1.mp3",
+        "bytes": 60984,
+        "sha256": "26ff02059ac22c8f99afd79f1d5b738d97aaa372500bccc63d126424311dc1dc"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/in.mp3",
+          "bytes": 60984,
+          "sha256": "26ff02059ac22c8f99afd79f1d5b738d97aaa372500bccc63d126424311dc1dc"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "un",
+      "syllable": "wen1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wen1.mp3",
+        "bytes": 62118,
+        "sha256": "a5b7ca3d9c6860ca5710ae123e8eae8b1b0294f62756d6a2391efe3a9969697d"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/un.mp3",
+          "bytes": 62118,
+          "sha256": "a5b7ca3d9c6860ca5710ae123e8eae8b1b0294f62756d6a2391efe3a9969697d"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "vn",
+      "syllable": "yun1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun1.mp3",
+        "bytes": 64440,
+        "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/vn.mp3",
+          "bytes": 64440,
+          "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ang",
+      "syllable": "ang1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ang1.mp3",
+        "bytes": 35061,
+        "sha256": "a8ad661d3819f5522520d2eaa092d80ceba469223c203ad634165f5aa7d4e731"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ang.mp3",
+          "bytes": 35061,
+          "sha256": "a8ad661d3819f5522520d2eaa092d80ceba469223c203ad634165f5aa7d4e731"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "eng",
+      "syllable": "eng1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/eng1.mp3",
+        "bytes": 35061,
+        "sha256": "23777b98e7fdeb9dfbec7710cfee64c499bf5e3a3ee0b9534fccd7dd84b4f7e9"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/eng.mp3",
+          "bytes": 35061,
+          "sha256": "23777b98e7fdeb9dfbec7710cfee64c499bf5e3a3ee0b9534fccd7dd84b4f7e9"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ing",
+      "syllable": "ying1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying1.mp3",
+        "bytes": 59256,
+        "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ing.mp3",
+          "bytes": 59256,
+          "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "ong",
+      "syllable": "ong1",
+      "source": "https://chinahelp4u.com/chinese-lessons-pinyin/",
+      "author": "Silas · ChinaHelp",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://chinahelp4u.com/chinese-lessons-pinyin/",
+        "author": "Silas · ChinaHelp",
+        "audio": "https://chinahelp4u.com/wp-content/uploads/2021/10/finial-ong-.mp3",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中试听选择候选二，并明确回复：选择候选2，已经授权。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包，仅限本条 ong 录音",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://chinahelp4u.com/wp-content/uploads/2021/10/finial-ong-.mp3",
+        "bytes": 18186,
+        "sha256": "3e3ebab421e04d185f73236938d6de741fc575a79e5a6cf0fad637a00c3c4a26"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/ong.mp3",
+          "bytes": 18186,
+          "sha256": "3e3ebab421e04d185f73236938d6de741fc575a79e5a6cf0fad637a00c3c4a26"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-b",
+      "syllable": "bo1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/bo1.mp3",
+        "bytes": 37647,
+        "sha256": "deb1d48b3bc4bd2e876333862b9e3982868ace48fbf5c952fe9c311840aac390"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-b.mp3",
+          "bytes": 37647,
+          "sha256": "deb1d48b3bc4bd2e876333862b9e3982868ace48fbf5c952fe9c311840aac390"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-p",
+      "syllable": "po1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/po1.mp3",
+        "bytes": 42255,
+        "sha256": "fc0a46898b7527834061414be0399a7d756d23a2934a4065ee205f9037656490"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-p.mp3",
+          "bytes": 42255,
+          "sha256": "fc0a46898b7527834061414be0399a7d756d23a2934a4065ee205f9037656490"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-m",
+      "syllable": "mo1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/mo1.mp3",
+        "bytes": 43168,
+        "sha256": "625ede9e87c2c1ad176190dcb5b5e72ca1d94a795d2d1f4f76553f4cb233fa19"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-m.mp3",
+          "bytes": 43168,
+          "sha256": "625ede9e87c2c1ad176190dcb5b5e72ca1d94a795d2d1f4f76553f4cb233fa19"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-f",
+      "syllable": "fo1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/fo1.mp3",
+        "bytes": 44240,
+        "sha256": "12552db6bc48e8baee3eb2a75e0306615c71e632d5fba4c42d87ae855efbd73b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-f.mp3",
+          "bytes": 44240,
+          "sha256": "12552db6bc48e8baee3eb2a75e0306615c71e632d5fba4c42d87ae855efbd73b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-d",
+      "syllable": "de1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/de1.mp3",
+        "bytes": 39431,
+        "sha256": "fbe701407dbb5f53cc724999cc83e6fa24ff8b2e21648fcd3f5cc05902f9ef0e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-d.mp3",
+          "bytes": 39431,
+          "sha256": "fbe701407dbb5f53cc724999cc83e6fa24ff8b2e21648fcd3f5cc05902f9ef0e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-t",
+      "syllable": "te1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/te1.mp3",
+        "bytes": 45447,
+        "sha256": "16c3cf911f390c0e994f22a70e18766be2203385e1ac91be2af225dba58d3973"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-t.mp3",
+          "bytes": 45447,
+          "sha256": "16c3cf911f390c0e994f22a70e18766be2203385e1ac91be2af225dba58d3973"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-n",
+      "syllable": "ne1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ne1.mp3",
+        "bytes": 44791,
+        "sha256": "cb88467d1194886bc2a6ea1075eca18a3f8b1b14cbdfb313f922039ed9366a2d"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-n.mp3",
+          "bytes": 44791,
+          "sha256": "cb88467d1194886bc2a6ea1075eca18a3f8b1b14cbdfb313f922039ed9366a2d"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-l",
+      "syllable": "le1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/le1.mp3",
+        "bytes": 49079,
+        "sha256": "9b262a8d3de31d6cd403af1c32ef2f354e8ceef3f3bbe4d01cc3631372ef7400"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-l.mp3",
+          "bytes": 49079,
+          "sha256": "9b262a8d3de31d6cd403af1c32ef2f354e8ceef3f3bbe4d01cc3631372ef7400"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-g",
+      "syllable": "ge1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ge1.mp3",
+        "bytes": 55528,
+        "sha256": "e05c7bb50074c6538b3e9bfb8dda6c3a4a15b35d0431c55c32529ebcd3d8cc24"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-g.mp3",
+          "bytes": 55528,
+          "sha256": "e05c7bb50074c6538b3e9bfb8dda6c3a4a15b35d0431c55c32529ebcd3d8cc24"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-k",
+      "syllable": "ke1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ke1.mp3",
+        "bytes": 54872,
+        "sha256": "db60945f685f09703d96bca7beeb33709dbfb7970c67c369df7e1ded31577f37"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-k.mp3",
+          "bytes": 54872,
+          "sha256": "db60945f685f09703d96bca7beeb33709dbfb7970c67c369df7e1ded31577f37"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-h",
+      "syllable": "he1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/he1.mp3",
+        "bytes": 57096,
+        "sha256": "7cb775c1f099a66aa0f5b77588c8db326fe7decab506635dc35ec7e0f99f2318"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-h.mp3",
+          "bytes": 57096,
+          "sha256": "7cb775c1f099a66aa0f5b77588c8db326fe7decab506635dc35ec7e0f99f2318"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-j",
+      "syllable": "ji1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ji1.mp3",
+        "bytes": 53560,
+        "sha256": "90f9d541289ccc5525ad4d09dc6af035237835557978cfd2d5a2286b72da716e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-j.mp3",
+          "bytes": 53560,
+          "sha256": "90f9d541289ccc5525ad4d09dc6af035237835557978cfd2d5a2286b72da716e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-q",
+      "syllable": "qi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/qi1.mp3",
+        "bytes": 58088,
+        "sha256": "016d9344d1597c9d00a529be2c59f0253dd305a35afb07518f373c1619f1caca"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-q.mp3",
+          "bytes": 58088,
+          "sha256": "016d9344d1597c9d00a529be2c59f0253dd305a35afb07518f373c1619f1caca"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-x",
+      "syllable": "xi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/xi1.mp3",
+        "bytes": 60648,
+        "sha256": "44e3db1630e4e2917673431498b3a362ed6d8a36a83afcca3ed590876a417669"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-x.mp3",
+          "bytes": 60648,
+          "sha256": "44e3db1630e4e2917673431498b3a362ed6d8a36a83afcca3ed590876a417669"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-zh",
+      "syllable": "zhi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi1.mp3",
+        "bytes": 49671,
+        "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-zh.mp3",
+          "bytes": 49671,
+          "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-ch",
+      "syllable": "chi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/chi1.mp3",
+        "bytes": 51815,
+        "sha256": "b4fcdd8a1cab7833e7ca1d1948571d65f60a1608301a8b3a1d6234f7a2803711"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-ch.mp3",
+          "bytes": 51815,
+          "sha256": "b4fcdd8a1cab7833e7ca1d1948571d65f60a1608301a8b3a1d6234f7a2803711"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-sh",
+      "syllable": "shi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/shi1.mp3",
+        "bytes": 52231,
+        "sha256": "e95801bf7ee99549e7d1618abfdcdd4aaf1104ca1cab3e6966542cf62f838c00"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-sh.mp3",
+          "bytes": 52231,
+          "sha256": "e95801bf7ee99549e7d1618abfdcdd4aaf1104ca1cab3e6966542cf62f838c00"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-r",
+      "syllable": "ri1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ri1.mp3",
+        "bytes": 50423,
+        "sha256": "f244f141aacb98f5f99c8f7a14201b08d15c34eb5f5df50929d43ef2f4bdd066"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-r.mp3",
+          "bytes": 50423,
+          "sha256": "f244f141aacb98f5f99c8f7a14201b08d15c34eb5f5df50929d43ef2f4bdd066"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-z",
+      "syllable": "zi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi1.mp3",
+        "bytes": 46695,
+        "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-z.mp3",
+          "bytes": 46695,
+          "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-c",
+      "syllable": "ci1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ci1.mp3",
+        "bytes": 49991,
+        "sha256": "31cb4932dcee6401f508fdb5431d9328a1265070a39d175ae0bb5120ea0eba53"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-c.mp3",
+          "bytes": 49991,
+          "sha256": "31cb4932dcee6401f508fdb5431d9328a1265070a39d175ae0bb5120ea0eba53"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "initial-s",
+      "syllable": "si1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/si1.mp3",
+        "bytes": 51559,
+        "sha256": "423ed39ae87a6bd4f4f468f3e27aa48071b63108c0188803e38f76cfe6e86199"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/initial-s.mp3",
+          "bytes": 51559,
+          "sha256": "423ed39ae87a6bd4f4f468f3e27aa48071b63108c0188803e38f76cfe6e86199"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "letter-y",
+      "syllable": "yi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi1.mp3",
+        "bytes": 60408,
+        "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/letter-y.mp3",
+          "bytes": 60408,
+          "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "letter-w",
+      "syllable": "wu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu1.mp3",
+        "bytes": 57528,
+        "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/letter-w.mp3",
+          "bytes": 57528,
+          "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-zhi",
+      "syllable": "zhi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi1.mp3",
+        "bytes": 49671,
+        "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-zhi.mp3",
+          "bytes": 49671,
+          "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-chi",
+      "syllable": "chi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/chi1.mp3",
+        "bytes": 51815,
+        "sha256": "b4fcdd8a1cab7833e7ca1d1948571d65f60a1608301a8b3a1d6234f7a2803711"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-chi.mp3",
+          "bytes": 51815,
+          "sha256": "b4fcdd8a1cab7833e7ca1d1948571d65f60a1608301a8b3a1d6234f7a2803711"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-shi",
+      "syllable": "shi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/shi1.mp3",
+        "bytes": 52231,
+        "sha256": "e95801bf7ee99549e7d1618abfdcdd4aaf1104ca1cab3e6966542cf62f838c00"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-shi.mp3",
+          "bytes": 52231,
+          "sha256": "e95801bf7ee99549e7d1618abfdcdd4aaf1104ca1cab3e6966542cf62f838c00"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-ri",
+      "syllable": "ri1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ri1.mp3",
+        "bytes": 50423,
+        "sha256": "f244f141aacb98f5f99c8f7a14201b08d15c34eb5f5df50929d43ef2f4bdd066"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-ri.mp3",
+          "bytes": 50423,
+          "sha256": "f244f141aacb98f5f99c8f7a14201b08d15c34eb5f5df50929d43ef2f4bdd066"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-zi",
+      "syllable": "zi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi1.mp3",
+        "bytes": 46695,
+        "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-zi.mp3",
+          "bytes": 46695,
+          "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-ci",
+      "syllable": "ci1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ci1.mp3",
+        "bytes": 49991,
+        "sha256": "31cb4932dcee6401f508fdb5431d9328a1265070a39d175ae0bb5120ea0eba53"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-ci.mp3",
+          "bytes": 49991,
+          "sha256": "31cb4932dcee6401f508fdb5431d9328a1265070a39d175ae0bb5120ea0eba53"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-si",
+      "syllable": "si1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/si1.mp3",
+        "bytes": 51559,
+        "sha256": "423ed39ae87a6bd4f4f468f3e27aa48071b63108c0188803e38f76cfe6e86199"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-si.mp3",
+          "bytes": 51559,
+          "sha256": "423ed39ae87a6bd4f4f468f3e27aa48071b63108c0188803e38f76cfe6e86199"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yi",
+      "syllable": "yi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi1.mp3",
+        "bytes": 60408,
+        "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yi.mp3",
+          "bytes": 60408,
+          "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-wu",
+      "syllable": "wu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu1.mp3",
+        "bytes": 57528,
+        "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-wu.mp3",
+          "bytes": 57528,
+          "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yu",
+      "syllable": "yu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu1.mp3",
+        "bytes": 60984,
+        "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yu.mp3",
+          "bytes": 60984,
+          "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-ye",
+      "syllable": "ye1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ye1.mp3",
+        "bytes": 62136,
+        "sha256": "5a642f41f603f345ac7002eaa55365e0f5a2f2429f157ddaca74bcb176cc3520"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-ye.mp3",
+          "bytes": 62136,
+          "sha256": "5a642f41f603f345ac7002eaa55365e0f5a2f2429f157ddaca74bcb176cc3520"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yue",
+      "syllable": "yue1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue1.mp3",
+        "bytes": 40417,
+        "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yue.mp3",
+          "bytes": 40417,
+          "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yuan",
+      "syllable": "yuan1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yuan1.mp3",
+        "bytes": 39841,
+        "sha256": "100d10db042ef683a32f5f2e7920ef0f2a6c43ed4e6704ab5327ae4837665937"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yuan.mp3",
+          "bytes": 39841,
+          "sha256": "100d10db042ef683a32f5f2e7920ef0f2a6c43ed4e6704ab5327ae4837665937"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yin",
+      "syllable": "yin1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yin1.mp3",
+        "bytes": 60984,
+        "sha256": "26ff02059ac22c8f99afd79f1d5b738d97aaa372500bccc63d126424311dc1dc"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yin.mp3",
+          "bytes": 60984,
+          "sha256": "26ff02059ac22c8f99afd79f1d5b738d97aaa372500bccc63d126424311dc1dc"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-yun",
+      "syllable": "yun1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun1.mp3",
+        "bytes": 64440,
+        "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-yun.mp3",
+          "bytes": 64440,
+          "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "whole-ying",
+      "syllable": "ying1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying1.mp3",
+        "bytes": 59256,
+        "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/whole-ying.mp3",
+          "bytes": 59256,
+          "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-a-1",
+      "syllable": "a1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/a1.mp3",
+        "bytes": 30453,
+        "sha256": "a87a5b318f8067def280a2be9c090d592b71a635d6b249c8b16bfda4f177c535"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-a-1.mp3",
+          "bytes": 30453,
+          "sha256": "a87a5b318f8067def280a2be9c090d592b71a635d6b249c8b16bfda4f177c535"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-a-2",
+      "syllable": "a2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/a2.mp3",
+        "bytes": 29877,
+        "sha256": "4e6379064d982af38b4092ba8d48e49eb2f429651b5d41ed713d11277afdea15"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-a-2.mp3",
+          "bytes": 29877,
+          "sha256": "4e6379064d982af38b4092ba8d48e49eb2f429651b5d41ed713d11277afdea15"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-a-3",
+      "syllable": "a3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/a3.mp3",
+        "bytes": 32181,
+        "sha256": "34f5ce05c1e2c23425984af5e2f0603d7c42d1fb9c76bd99bba85089798ed009"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-a-3.mp3",
+          "bytes": 32181,
+          "sha256": "34f5ce05c1e2c23425984af5e2f0603d7c42d1fb9c76bd99bba85089798ed009"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-a-4",
+      "syllable": "a4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/a4.mp3",
+        "bytes": 24693,
+        "sha256": "c73ba871d9b98d51d8787e21e810bea36c31bcff95ae833fcf9ce28deadc44d2"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-a-4.mp3",
+          "bytes": 24693,
+          "sha256": "c73ba871d9b98d51d8787e21e810bea36c31bcff95ae833fcf9ce28deadc44d2"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-o-1",
+      "syllable": "o1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/o1.mp3",
+        "bytes": 33909,
+        "sha256": "f6af0720201df38d7854d830e926b692889cf3d1f11cf29f510d69907d7ede6e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-o-1.mp3",
+          "bytes": 33909,
+          "sha256": "f6af0720201df38d7854d830e926b692889cf3d1f11cf29f510d69907d7ede6e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-o-2",
+      "syllable": "o2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/o2.mp3",
+        "bytes": 29877,
+        "sha256": "18445c335de82b8f3a23d6f772bc0632ea4830f3f48cf9b89d443167f30334e5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-o-2.mp3",
+          "bytes": 29877,
+          "sha256": "18445c335de82b8f3a23d6f772bc0632ea4830f3f48cf9b89d443167f30334e5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-o-3",
+      "syllable": "o3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/o3.mp3",
+        "bytes": 31029,
+        "sha256": "688c05fd72885932d80d178b5a6404c106db481dfd8cafa7a237690d0765970c"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-o-3.mp3",
+          "bytes": 31029,
+          "sha256": "688c05fd72885932d80d178b5a6404c106db481dfd8cafa7a237690d0765970c"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-o-4",
+      "syllable": "o4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/o4.mp3",
+        "bytes": 25845,
+        "sha256": "a6cf8dc7ed06fbc898cfaaac7ddc7156fabc34f20b84981be26a99272c42dd49"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-o-4.mp3",
+          "bytes": 25845,
+          "sha256": "a6cf8dc7ed06fbc898cfaaac7ddc7156fabc34f20b84981be26a99272c42dd49"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-e-1",
+      "syllable": "e1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/e1.mp3",
+        "bytes": 32181,
+        "sha256": "8f0909fadede570e76709641b7b6c0ea347b4aad2067c300164cb178c5561015"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-e-1.mp3",
+          "bytes": 32181,
+          "sha256": "8f0909fadede570e76709641b7b6c0ea347b4aad2067c300164cb178c5561015"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-e-2",
+      "syllable": "e2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/e2.mp3",
+        "bytes": 31605,
+        "sha256": "0a25df11dd7c4224d186bee5813ecfdfe27a9686cf9766471372f8add1f5fa39"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-e-2.mp3",
+          "bytes": 31605,
+          "sha256": "0a25df11dd7c4224d186bee5813ecfdfe27a9686cf9766471372f8add1f5fa39"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-e-3",
+      "syllable": "e3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/e3.mp3",
+        "bytes": 32181,
+        "sha256": "bdc2d1bc475c3d11a58382b347e6c4ab2a6480aacd03a8f13618ffca621beb89"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-e-3.mp3",
+          "bytes": 32181,
+          "sha256": "bdc2d1bc475c3d11a58382b347e6c4ab2a6480aacd03a8f13618ffca621beb89"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-e-4",
+      "syllable": "e4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/e4.mp3",
+        "bytes": 25845,
+        "sha256": "7b83bd535f102e680c32da15dc8b35f40c0b07ddaa85eee5864e02cf9b581ee9"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-e-4.mp3",
+          "bytes": 25845,
+          "sha256": "7b83bd535f102e680c32da15dc8b35f40c0b07ddaa85eee5864e02cf9b581ee9"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yi-1",
+      "syllable": "yi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi1.mp3",
+        "bytes": 60408,
+        "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yi-1.mp3",
+          "bytes": 60408,
+          "sha256": "c4b5d81b781791adbd12f9844dd1ec8893389e416130826dd09ea6d9f34f7645"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yi-2",
+      "syllable": "yi2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi2.mp3",
+        "bytes": 55224,
+        "sha256": "ee7ba2e233299b13c3384270a7d64f22a82a370ba1df62c832b821477b36653a"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yi-2.mp3",
+          "bytes": 55224,
+          "sha256": "ee7ba2e233299b13c3384270a7d64f22a82a370ba1df62c832b821477b36653a"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yi-3",
+      "syllable": "yi3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi3.mp3",
+        "bytes": 59256,
+        "sha256": "e2ce77b6b0965fd8891320bfd40b6c092cdc5026ff7bd9ab7310920d9cc6cb9b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yi-3.mp3",
+          "bytes": 59256,
+          "sha256": "e2ce77b6b0965fd8891320bfd40b6c092cdc5026ff7bd9ab7310920d9cc6cb9b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yi-4",
+      "syllable": "yi4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yi4.mp3",
+        "bytes": 49464,
+        "sha256": "d4481e651f2e9e008959052a1615710c6b19de11e32d1c265cff5e6b1b152edf"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yi-4.mp3",
+          "bytes": 49464,
+          "sha256": "d4481e651f2e9e008959052a1615710c6b19de11e32d1c265cff5e6b1b152edf"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wu-1",
+      "syllable": "wu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu1.mp3",
+        "bytes": 57528,
+        "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wu-1.mp3",
+          "bytes": 57528,
+          "sha256": "107b54d94b54299678ebd5dff8aea280256c209e1c4dc83cbef4abdaf4c46bac"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wu-2",
+      "syllable": "wu2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu2.mp3",
+        "bytes": 56376,
+        "sha256": "8ca7f339dc740f4b2693c9effe1f681356727de133a0252db57b8acfc483de87"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wu-2.mp3",
+          "bytes": 56376,
+          "sha256": "8ca7f339dc740f4b2693c9effe1f681356727de133a0252db57b8acfc483de87"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wu-3",
+      "syllable": "wu3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu3.mp3",
+        "bytes": 58104,
+        "sha256": "13566df481406488841c4ab5aa612ae4607420f6e960b2c095b9183863e6ec35"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wu-3.mp3",
+          "bytes": 58104,
+          "sha256": "13566df481406488841c4ab5aa612ae4607420f6e960b2c095b9183863e6ec35"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wu-4",
+      "syllable": "wu4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wu4.mp3",
+        "bytes": 50616,
+        "sha256": "891f646585a235232e491f64ab1a8efaf02b83a47f2b374f60c6a14b23d49d1c"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wu-4.mp3",
+          "bytes": 50616,
+          "sha256": "891f646585a235232e491f64ab1a8efaf02b83a47f2b374f60c6a14b23d49d1c"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yu-1",
+      "syllable": "yu1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu1.mp3",
+        "bytes": 60984,
+        "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yu-1.mp3",
+          "bytes": 60984,
+          "sha256": "bbb32023805daebeca1365411fb300c2a6c66e30bf36a110d92eda3d9b0899d8"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yu-2",
+      "syllable": "yu2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu2.mp3",
+        "bytes": 58104,
+        "sha256": "9e5f856fd5e98eee645f09eb7e2b726cb1e852d07a7cb2d3ac23b6ebad8a35dd"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yu-2.mp3",
+          "bytes": 58104,
+          "sha256": "9e5f856fd5e98eee645f09eb7e2b726cb1e852d07a7cb2d3ac23b6ebad8a35dd"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yu-3",
+      "syllable": "yu3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu3.mp3",
+        "bytes": 56952,
+        "sha256": "55e450da4a25449343f5a0b2debcc785af0620f773156fb0329c6ec2d5ab7b15"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yu-3.mp3",
+          "bytes": 56952,
+          "sha256": "55e450da4a25449343f5a0b2debcc785af0620f773156fb0329c6ec2d5ab7b15"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yu-4",
+      "syllable": "yu4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yu4.mp3",
+        "bytes": 48312,
+        "sha256": "7a21f465852dfcc29aebdaac2fcffa6ca15c8480f65659f95520d0816e68333e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yu-4.mp3",
+          "bytes": 48312,
+          "sha256": "7a21f465852dfcc29aebdaac2fcffa6ca15c8480f65659f95520d0816e68333e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ai-1",
+      "syllable": "ai1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ai1.mp3",
+        "bytes": 29877,
+        "sha256": "f49685714df67a9eb2269d9de4c9a4e06cc4a5645a3623f9e11e114f5be04c85"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ai-1.mp3",
+          "bytes": 29877,
+          "sha256": "f49685714df67a9eb2269d9de4c9a4e06cc4a5645a3623f9e11e114f5be04c85"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ai-2",
+      "syllable": "ai2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ai2.mp3",
+        "bytes": 30453,
+        "sha256": "956758ea126f54a2da87ea440168d8dd24b492dea397bd44a1d5ec38e12edef6"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ai-2.mp3",
+          "bytes": 30453,
+          "sha256": "956758ea126f54a2da87ea440168d8dd24b492dea397bd44a1d5ec38e12edef6"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ai-3",
+      "syllable": "ai3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ai3.mp3",
+        "bytes": 31605,
+        "sha256": "689e9f9be9c8c7114f5b62a16b4e295310b4aa210548d29144c1d00955761bf8"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ai-3.mp3",
+          "bytes": 31605,
+          "sha256": "689e9f9be9c8c7114f5b62a16b4e295310b4aa210548d29144c1d00955761bf8"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ai-4",
+      "syllable": "ai4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ai4.mp3",
+        "bytes": 27573,
+        "sha256": "dc6a4f13147e1285dc3398e5c065b55e48c4b96a1db93553efdf18af366a20fa"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ai-4.mp3",
+          "bytes": 27573,
+          "sha256": "dc6a4f13147e1285dc3398e5c065b55e48c4b96a1db93553efdf18af366a20fa"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ao-1",
+      "syllable": "ao1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ao1.mp3",
+        "bytes": 32181,
+        "sha256": "70494b9d898c4e12882ae82f7ed4e89e8fc210cb3b7b780e221a3505ef0f9cb5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ao-1.mp3",
+          "bytes": 32181,
+          "sha256": "70494b9d898c4e12882ae82f7ed4e89e8fc210cb3b7b780e221a3505ef0f9cb5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ao-2",
+      "syllable": "ao2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ao2.mp3",
+        "bytes": 30453,
+        "sha256": "6816ce10f1c69e1b96ba883892478c12af199156e9e004595c68f765dbd2bbd8"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ao-2.mp3",
+          "bytes": 30453,
+          "sha256": "6816ce10f1c69e1b96ba883892478c12af199156e9e004595c68f765dbd2bbd8"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ao-3",
+      "syllable": "ao3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ao3.mp3",
+        "bytes": 34485,
+        "sha256": "ef48d94ff839f9fd27900f694071cb0181e59c9761048b1ae4c55f15e560f137"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ao-3.mp3",
+          "bytes": 34485,
+          "sha256": "ef48d94ff839f9fd27900f694071cb0181e59c9761048b1ae4c55f15e560f137"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ao-4",
+      "syllable": "ao4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ao4.mp3",
+        "bytes": 25845,
+        "sha256": "78566f0d4b69a30c6c15de73eaf77bb70b75a53960fa95fc2159bfd5a6969f8a"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ao-4.mp3",
+          "bytes": 25845,
+          "sha256": "78566f0d4b69a30c6c15de73eaf77bb70b75a53960fa95fc2159bfd5a6969f8a"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wei-1",
+      "syllable": "wei1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wei1.mp3",
+        "bytes": 61560,
+        "sha256": "f27c79071f4809180c58e6b61da6fac615ebf8e2d675ebbda7a8cdcb639608bf"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wei-1.mp3",
+          "bytes": 61560,
+          "sha256": "f27c79071f4809180c58e6b61da6fac615ebf8e2d675ebbda7a8cdcb639608bf"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wei-2",
+      "syllable": "wei2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wei2.mp3",
+        "bytes": 59256,
+        "sha256": "ba2485770293c37178df6ccddaf42363c1e8e75947af80166a34f186b46823a2"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wei-2.mp3",
+          "bytes": 59256,
+          "sha256": "ba2485770293c37178df6ccddaf42363c1e8e75947af80166a34f186b46823a2"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wei-3",
+      "syllable": "wei3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wei3.mp3",
+        "bytes": 63288,
+        "sha256": "3a31517f4dfabea5dca6a500d77d0996ff0330109dad96687f20e8aed2c0d4a3"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wei-3.mp3",
+          "bytes": 63288,
+          "sha256": "3a31517f4dfabea5dca6a500d77d0996ff0330109dad96687f20e8aed2c0d4a3"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-wei-4",
+      "syllable": "wei4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/wei4.mp3",
+        "bytes": 49464,
+        "sha256": "9ed7267721b145301a1716775f33dd5c9ef328f565bfb1a8b15381f4dbc42669"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-wei-4.mp3",
+          "bytes": 49464,
+          "sha256": "9ed7267721b145301a1716775f33dd5c9ef328f565bfb1a8b15381f4dbc42669"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-you-1",
+      "syllable": "you1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/you1.mp3",
+        "bytes": 63864,
+        "sha256": "c45759f4f37029468b775960e9dab99278460a59e3c2e98aa1bd7c14166812d5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-you-1.mp3",
+          "bytes": 63864,
+          "sha256": "c45759f4f37029468b775960e9dab99278460a59e3c2e98aa1bd7c14166812d5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-you-2",
+      "syllable": "you2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/you2.mp3",
+        "bytes": 64440,
+        "sha256": "119c8df26254c4310a8fb2bd31eaa3544b22aa933b080d4922f9ba03b12aa49d"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-you-2.mp3",
+          "bytes": 64440,
+          "sha256": "119c8df26254c4310a8fb2bd31eaa3544b22aa933b080d4922f9ba03b12aa49d"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-you-3",
+      "syllable": "you3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/you3.mp3",
+        "bytes": 63864,
+        "sha256": "81804b30df59ae44581677203ac7a25cb29f8f76e940bbce2d080719666cb2d4"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-you-3.mp3",
+          "bytes": 63864,
+          "sha256": "81804b30df59ae44581677203ac7a25cb29f8f76e940bbce2d080719666cb2d4"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-you-4",
+      "syllable": "you4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/you4.mp3",
+        "bytes": 51768,
+        "sha256": "522aa25f837abca7da52eca372624ce8ccd1caae70c91ac5f9d78f504356ead0"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-you-4.mp3",
+          "bytes": 51768,
+          "sha256": "522aa25f837abca7da52eca372624ce8ccd1caae70c91ac5f9d78f504356ead0"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yue-1",
+      "syllable": "yue1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue1.mp3",
+        "bytes": 40417,
+        "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yue-1.mp3",
+          "bytes": 40417,
+          "sha256": "4b0064c6bb322f75ee71b4d2ceb8331c2b0f7a1c08d71e1624021017ac24738b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yue-2",
+      "syllable": "yue2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue2.mp3",
+        "bytes": 37537,
+        "sha256": "be0cc7d8033a6f9c5983aed6e6296b313d24e3d9bfdb62f0eef30fa58de702c4"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yue-2.mp3",
+          "bytes": 37537,
+          "sha256": "be0cc7d8033a6f9c5983aed6e6296b313d24e3d9bfdb62f0eef30fa58de702c4"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yue-3",
+      "syllable": "yue3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue3.mp3",
+        "bytes": 39265,
+        "sha256": "2b0e4174bbde1b255f6e1210b9c0265e9f44ca7e63ae815bab3cf8a965627a10"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yue-3.mp3",
+          "bytes": 39265,
+          "sha256": "2b0e4174bbde1b255f6e1210b9c0265e9f44ca7e63ae815bab3cf8a965627a10"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yue-4",
+      "syllable": "yue4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yue4.mp3",
+        "bytes": 31201,
+        "sha256": "53b690af517cdc0e81d18d9c496c1605ce2891a43365416746c5d3e6e82c3edf"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yue-4.mp3",
+          "bytes": 31201,
+          "sha256": "53b690af517cdc0e81d18d9c496c1605ce2891a43365416746c5d3e6e82c3edf"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-an-1",
+      "syllable": "an1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/an1.mp3",
+        "bytes": 34485,
+        "sha256": "fdd550f59a78f6f344270065ebdfb877dcc177b4111bd50f10a26b5ed85d14f4"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-an-1.mp3",
+          "bytes": 34485,
+          "sha256": "fdd550f59a78f6f344270065ebdfb877dcc177b4111bd50f10a26b5ed85d14f4"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-an-2",
+      "syllable": "an2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/an2.mp3",
+        "bytes": 30453,
+        "sha256": "4b8e2e3e4dcb75e5e33faa80993a19447ccb5c2dbaa84b50669da134f19310cb"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-an-2.mp3",
+          "bytes": 30453,
+          "sha256": "4b8e2e3e4dcb75e5e33faa80993a19447ccb5c2dbaa84b50669da134f19310cb"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-an-3",
+      "syllable": "an3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/an3.mp3",
+        "bytes": 33909,
+        "sha256": "3702b8f05b8f4b36bad68e11c71c0ee2d16e7b8611a9dbf3d8a265ff77b83acd"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-an-3.mp3",
+          "bytes": 33909,
+          "sha256": "3702b8f05b8f4b36bad68e11c71c0ee2d16e7b8611a9dbf3d8a265ff77b83acd"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-an-4",
+      "syllable": "an4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/an4.mp3",
+        "bytes": 26421,
+        "sha256": "67bbbe1e9145635b06771b82d47840aed7b80ced8d4e67013085fb01b2efbbeb"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-an-4.mp3",
+          "bytes": 26421,
+          "sha256": "67bbbe1e9145635b06771b82d47840aed7b80ced8d4e67013085fb01b2efbbeb"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yun-1",
+      "syllable": "yun1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun1.mp3",
+        "bytes": 64440,
+        "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yun-1.mp3",
+          "bytes": 64440,
+          "sha256": "cb2461a8f96eb48fd091335ee3fbed31e8fcd50c44dc5dd308212dca166b2993"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yun-2",
+      "syllable": "yun2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun2.mp3",
+        "bytes": 58680,
+        "sha256": "30d61ce7bb453a484ef1503c59dc6a8e7bd1199df74a4b3b807ebea65286045f"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yun-2.mp3",
+          "bytes": 58680,
+          "sha256": "30d61ce7bb453a484ef1503c59dc6a8e7bd1199df74a4b3b807ebea65286045f"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yun-3",
+      "syllable": "yun3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun3.mp3",
+        "bytes": 60984,
+        "sha256": "67f483e874e47f8ce84764a8b480a79c3ac35853a812dbdc10dbbe66899c9cb1"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yun-3.mp3",
+          "bytes": 60984,
+          "sha256": "67f483e874e47f8ce84764a8b480a79c3ac35853a812dbdc10dbbe66899c9cb1"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-yun-4",
+      "syllable": "yun4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/yun4.mp3",
+        "bytes": 52344,
+        "sha256": "4fc5533a527e9c10b8f00bcd482b96933b6a3658ec4a2dea2e69b66d6f7d3e53"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-yun-4.mp3",
+          "bytes": 52344,
+          "sha256": "4fc5533a527e9c10b8f00bcd482b96933b6a3658ec4a2dea2e69b66d6f7d3e53"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ang-1",
+      "syllable": "ang1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ang1.mp3",
+        "bytes": 35061,
+        "sha256": "a8ad661d3819f5522520d2eaa092d80ceba469223c203ad634165f5aa7d4e731"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ang-1.mp3",
+          "bytes": 35061,
+          "sha256": "a8ad661d3819f5522520d2eaa092d80ceba469223c203ad634165f5aa7d4e731"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ang-2",
+      "syllable": "ang2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ang2.mp3",
+        "bytes": 35637,
+        "sha256": "967c8b1c6fff00391d5cba605b65418f1b4174e29522ce4c4dff1c2d69032d67"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ang-2.mp3",
+          "bytes": 35637,
+          "sha256": "967c8b1c6fff00391d5cba605b65418f1b4174e29522ce4c4dff1c2d69032d67"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ang-3",
+      "syllable": "ang3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ang3.mp3",
+        "bytes": 35061,
+        "sha256": "19406eee72167882c6af4732155c2395eb836c04ca526172304ad64166c6c2ae"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ang-3.mp3",
+          "bytes": 35061,
+          "sha256": "19406eee72167882c6af4732155c2395eb836c04ca526172304ad64166c6c2ae"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ang-4",
+      "syllable": "ang4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ang4.mp3",
+        "bytes": 26421,
+        "sha256": "0fbc6234ee832e3d7d38fe13cf4f5aac3c50fa9f56ccdc187479d5d2f208de4f"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ang-4.mp3",
+          "bytes": 26421,
+          "sha256": "0fbc6234ee832e3d7d38fe13cf4f5aac3c50fa9f56ccdc187479d5d2f208de4f"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ying-1",
+      "syllable": "ying1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying1.mp3",
+        "bytes": 59256,
+        "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ying-1.mp3",
+          "bytes": 59256,
+          "sha256": "ec7e858bcfed44b69dbd96e83b90241fdd8c7cf52b6a7b443c0ab08946018239"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ying-2",
+      "syllable": "ying2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying2.mp3",
+        "bytes": 56952,
+        "sha256": "917ff2a0aea35e7f250b516ad3066af7dfca21bc2effd6050012f0fd7ea050a5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ying-2.mp3",
+          "bytes": 56952,
+          "sha256": "917ff2a0aea35e7f250b516ad3066af7dfca21bc2effd6050012f0fd7ea050a5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ying-3",
+      "syllable": "ying3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying3.mp3",
+        "bytes": 58104,
+        "sha256": "cfcd4463caf54b4e94cf2f24bc2ebd3f672e6149799604a962283caf3b0fa6ff"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ying-3.mp3",
+          "bytes": 58104,
+          "sha256": "cfcd4463caf54b4e94cf2f24bc2ebd3f672e6149799604a962283caf3b0fa6ff"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ying-4",
+      "syllable": "ying4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ying4.mp3",
+        "bytes": 50616,
+        "sha256": "1db5542f7b6789fa53b049e1b4bf196df7a9546de858c5c770ef8844ff9b9c6e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ying-4.mp3",
+          "bytes": 50616,
+          "sha256": "1db5542f7b6789fa53b049e1b4bf196df7a9546de858c5c770ef8844ff9b9c6e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-dong-1",
+      "syllable": "dong1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/dong1.mp3",
+        "bytes": 44039,
+        "sha256": "88dc59e6c2121f11fde80d180a9fd64882c2988e61fbacc62726aeec6a51664e"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-dong-1.mp3",
+          "bytes": 44039,
+          "sha256": "88dc59e6c2121f11fde80d180a9fd64882c2988e61fbacc62726aeec6a51664e"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-dong-2",
+      "syllable": "dong2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/dong2.mp3",
+        "bytes": 39431,
+        "sha256": "4eaf6096a2c5092a4fc23e6344968eaafb319ea9a4bdc03d8b2d8bd1ebfac023"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-dong-2.mp3",
+          "bytes": 39431,
+          "sha256": "4eaf6096a2c5092a4fc23e6344968eaafb319ea9a4bdc03d8b2d8bd1ebfac023"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-dong-3",
+      "syllable": "dong3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/dong3.mp3",
+        "bytes": 40583,
+        "sha256": "29d58e213f1e6da2c2d747b8a9724f45bac0e0a9e8b9dc9aa348ea0a7902d887"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-dong-3.mp3",
+          "bytes": 40583,
+          "sha256": "29d58e213f1e6da2c2d747b8a9724f45bac0e0a9e8b9dc9aa348ea0a7902d887"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-dong-4",
+      "syllable": "dong4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/dong4.mp3",
+        "bytes": 33095,
+        "sha256": "c97e5d336a31dd855230c5e6905d1dc83f9ee1d744af0621033cab35241e1c96"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-dong-4.mp3",
+          "bytes": 33095,
+          "sha256": "c97e5d336a31dd855230c5e6905d1dc83f9ee1d744af0621033cab35241e1c96"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zi-1",
+      "syllable": "zi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi1.mp3",
+        "bytes": 46695,
+        "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zi-1.mp3",
+          "bytes": 46695,
+          "sha256": "b129adcfcb734e8fa68a18f5329b6dbd210b933700848547570541e6e6dc03eb"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zi-2",
+      "syllable": "zi2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi2.mp3",
+        "bytes": 44967,
+        "sha256": "a77061ddf30a7ceadf5a4c5090418585749e62507a2725676fa90da88e61c927"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zi-2.mp3",
+          "bytes": 44967,
+          "sha256": "a77061ddf30a7ceadf5a4c5090418585749e62507a2725676fa90da88e61c927"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zi-3",
+      "syllable": "zi3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi3.mp3",
+        "bytes": 49575,
+        "sha256": "cd86a456578853ad153585898907be628da7c715e3e5cf22f38ee8a9cc5fc444"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zi-3.mp3",
+          "bytes": 49575,
+          "sha256": "cd86a456578853ad153585898907be628da7c715e3e5cf22f38ee8a9cc5fc444"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zi-4",
+      "syllable": "zi4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zi4.mp3",
+        "bytes": 34023,
+        "sha256": "55f795756497e1c0aae4d8527bf78f4d735b2bc799acd52959e448fb40b77e6b"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zi-4.mp3",
+          "bytes": 34023,
+          "sha256": "55f795756497e1c0aae4d8527bf78f4d735b2bc799acd52959e448fb40b77e6b"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zhi-1",
+      "syllable": "zhi1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi1.mp3",
+        "bytes": 49671,
+        "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zhi-1.mp3",
+          "bytes": 49671,
+          "sha256": "a2806f122a3b0e4504840a40b79f0958b84241003d6db8fe0c3cecf82d753da2"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zhi-2",
+      "syllable": "zhi2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi2.mp3",
+        "bytes": 48519,
+        "sha256": "69d041cbf91f9742dc0f44e72bba621905e0c8ec9a60ac13793ec91f44dc8606"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zhi-2.mp3",
+          "bytes": 48519,
+          "sha256": "69d041cbf91f9742dc0f44e72bba621905e0c8ec9a60ac13793ec91f44dc8606"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zhi-3",
+      "syllable": "zhi3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi3.mp3",
+        "bytes": 53127,
+        "sha256": "2d41c50f3dbaa826184d2a19071f65e6fde076999925448446dc6c1daf63e6d9"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zhi-3.mp3",
+          "bytes": 53127,
+          "sha256": "2d41c50f3dbaa826184d2a19071f65e6fde076999925448446dc6c1daf63e6d9"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-zhi-4",
+      "syllable": "zhi4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/zhi4.mp3",
+        "bytes": 36999,
+        "sha256": "69230e8bacb80132db6dc71198573789308ea60ef54fe1806d73fc3d5675119f"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-zhi-4.mp3",
+          "bytes": 36999,
+          "sha256": "69230e8bacb80132db6dc71198573789308ea60ef54fe1806d73fc3d5675119f"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-er-1",
+      "syllable": "er1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/er1.mp3",
+        "bytes": 33909,
+        "sha256": "08e18f898b7d2968e1c28932ff42e69d311fc38b2f8635c4cb10855fff315022"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-er-1.mp3",
+          "bytes": 33909,
+          "sha256": "08e18f898b7d2968e1c28932ff42e69d311fc38b2f8635c4cb10855fff315022"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-er-2",
+      "syllable": "er2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/er2.mp3",
+        "bytes": 33333,
+        "sha256": "c8381383ecc1e4979f9182c856791453149f8b722fa23669349f0a90495afd88"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-er-2.mp3",
+          "bytes": 33333,
+          "sha256": "c8381383ecc1e4979f9182c856791453149f8b722fa23669349f0a90495afd88"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-er-3",
+      "syllable": "er3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/er3.mp3",
+        "bytes": 32181,
+        "sha256": "3719e70820afb2e9ea9fa6a932c752a6e5eeecedcc30b9ce1087b7bf1e4ec13f"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-er-3.mp3",
+          "bytes": 32181,
+          "sha256": "3719e70820afb2e9ea9fa6a932c752a6e5eeecedcc30b9ce1087b7bf1e4ec13f"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-er-4",
+      "syllable": "er4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/er4.mp3",
+        "bytes": 26421,
+        "sha256": "a8b81a0559b43e0f95738c560bc654134a63259cef2c6df35ea670b59c6b93c1"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-er-4.mp3",
+          "bytes": 26421,
+          "sha256": "a8b81a0559b43e0f95738c560bc654134a63259cef2c6df35ea670b59c6b93c1"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ma-1",
+      "syllable": "ma1",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ma1.mp3",
+        "bytes": 39136,
+        "sha256": "cc06a8764133c2350199260fe87d2b2f8020480aa461cf556d82c814a6f51609"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ma-1.mp3",
+          "bytes": 39136,
+          "sha256": "cc06a8764133c2350199260fe87d2b2f8020480aa461cf556d82c814a6f51609"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ma-2",
+      "syllable": "ma2",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ma2.mp3",
+        "bytes": 40288,
+        "sha256": "776cc4b2e6443eb43c78145239bd94efbbd144a8d4a093df303fc391506c27f7"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ma-2.mp3",
+          "bytes": 40288,
+          "sha256": "776cc4b2e6443eb43c78145239bd94efbbd144a8d4a093df303fc391506c27f7"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ma-3",
+      "syllable": "ma3",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ma3.mp3",
+        "bytes": 40288,
+        "sha256": "e946ca160cbd2b08f9e49fec13ae5896678d3b97161ff097fabfd42f8cba49a5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ma-3.mp3",
+          "bytes": 40288,
+          "sha256": "e946ca160cbd2b08f9e49fec13ae5896678d3b97161ff097fabfd42f8cba49a5"
+        }
+      ]
+    },
+    {
+      "kind": "pinyin",
+      "id": "tone-ma-4",
+      "syllable": "ma4",
+      "source": "https://studycli.org/pinyin-chart/",
+      "author": "CLI · The Chinese Language Institute",
+      "license": "经授权用于本项目（用户确认）",
+      "permission": {
+        "source": "https://studycli.org/pinyin-chart/",
+        "author": "CLI · The Chinese Language Institute",
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-03",
+        "basis": "用户在本项目对话中确认已获得授权，随后按该确认接入。授权原文未附在仓库中。",
+        "projectUse": "Reading Garden 网站托管与离线学习包",
+        "notice": "此记录不构成开放许可，不向第三方授予转载权。"
+      },
+      "original": {
+        "url": "https://studycli.org/wp-content/uploads/mp3/ma4.mp3",
+        "bytes": 36256,
+        "sha256": "59405b11075caaf409bd72806d0fc284ed9a1e931052e967696700bbf266e3a5"
+      },
+      "changes": "原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。",
+      "assets": [
+        {
+          "path": "assets/pinyin/tone-ma-4.mp3",
+          "bytes": 36256,
+          "sha256": "59405b11075caaf409bd72806d0fc284ed9a1e931052e967696700bbf266e3a5"
         }
       ]
     }
