@@ -1,4 +1,4 @@
-import {STORAGE_KEY, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, quizChoices} from './core.js';
+import {STORAGE_KEY, READING_LIST_LIMIT, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, quizChoices} from './core.js';
 import {FINAL_GROUPS, FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PRACTICE_CATEGORIES, TONE_GROUPS, TONE_BASES, toneExamples, nextPracticeCategory, practicePool, pinyinAudio, toneName} from './pinyin.js';
 import {readingLevelLabel} from './reading-levels.js';
 import {AudioPlayer, chineseVoices} from './audio.js';
@@ -32,7 +32,8 @@ let sequencePaused = false;
 let parentAccess = false, lastPublicHash = '#/shelf', disposeParentHold;
 let libraryBusy = false, maintenanceMessage = '', resourceMessage = '';
 const selectedPinyin = {finals: 'a', initials: 'initial-b', whole: 'whole-zhi'};
-let bookLevel = 'all', bookFilter = '全部故事', offlineScope = 'all', toastTimer, storageWarning = false;
+let bookLevel = 'all', bookFilter = '全部故事', bookView = 'all';
+let offlineScope = 'all', toastTimer, storageWarning = false;
 const audio = new AudioPlayer(playing => {
   document.querySelectorAll('[data-page-play]').forEach(el => { el.innerHTML = icon(playing ? 'pause' : 'sound') + (playing ? '暂停朗读' : '读这一页'); el.setAttribute('aria-pressed', String(playing)); });
 });
@@ -71,12 +72,34 @@ function requestParent() {
     parentAccess = true; closeParent(); go('#/parent');
   });
 }
-function bookLink(book) { return `#/book/${book.id}/${(state.progress[book.id]?.page || 0) + 1}`; }
+function readyToReread(book) {
+  const progress = state.progress[book.id];
+  return progress?.finished && progress.page === book.pages.length - 1;
+}
+function bookLink(book) { return `#/book/${book.id}/${readyToReread(book) ? 1 : (state.progress[book.id]?.page || 0) + 1}`; }
+function readingLabel(book) { return readyToReread(book) ? '再读一遍' : state.progress[book.id] ? '继续读' : '开始读'; }
+function readingStatus(book) {
+  const p = state.progress[book.id];
+  const full = readyToReread(book) ? '读过啦，还可以再读' : p ? `读到第 ${p.page + 1} / ${book.pages.length} 页` : '还没读 · 从第一页开始';
+  const compact = readyToReread(book) ? '读过啦' : p ? `第 ${p.page + 1} / ${book.pages.length} 页` : '还没读';
+  return `<span class="desktop-label">${full}</span><span class="mobile-label">${compact}</span>`;
+}
+
+// Keep the activated control in place when a shelf update changes content above it.
+function refreshShelfControl(selector, fallback = '.reading-shelf-actions a') {
+  const previousTop = app.querySelector(selector)?.getBoundingClientRect().top;
+  render();
+  const replacement = app.querySelector(selector);
+  const next = replacement || app.querySelector(fallback);
+  next?.focus({preventScroll: true});
+  if (previousTop !== undefined && replacement) window.scrollBy(0, replacement.getBoundingClientRect().top - previousTop);
+}
 
 function shell(section, content) {
+  const activeSection = section === 'library' ? 'shelf' : section;
   const nav = [['shelf', 'book', '故事书架'], ['pinyin', 'sun', '学拼音'], ['words', 'leaf', '我的生字']];
   return `<aside class="sidebar"><a class="brand" href="#/shelf"><img src="./assets/icon.svg" alt="" width="48" height="48"><span>阅读小花园<small>每一页，都有新发现</small></span></a>
-    <nav aria-label="主要导航">${nav.map(([id, ico, label]) => `<a href="#/${id}" class="nav-item ${section === id ? 'active' : ''}" ${section === id ? 'aria-current="page"' : ''}>${icon(ico)}<span>${label}</span>${id === 'words' && state.words.length ? `<span class="count">${state.words.length}</span>` : ''}</a>`).join('')}</nav>
+    <nav aria-label="主要导航">${nav.map(([id, ico, label]) => `<a href="#/${id}" class="nav-item ${activeSection === id ? 'active' : ''}" ${section === id ? 'aria-current="page"' : ''}>${icon(ico)}<span>${label}</span>${id === 'words' && state.words.length ? `<span class="count">${state.words.length}</span>` : ''}</a>`).join('')}</nav>
     <div class="sidebar-bottom"><div class="little-plant" aria-hidden="true"><span></span><i></i><b></b></div><p>慢慢读，慢慢长大。</p><a class="parent-link" href="#/parent" ${section === 'parent' ? 'aria-current="page"' : ''}>${icon('parent')}家长小角</a></div></aside>
     <main id="main" class="main-content" tabindex="-1">${content}</main>`;
 }
@@ -84,17 +107,32 @@ function shell(section, content) {
 function shelf() {
   const last = [...books].sort((a, b) => (state.progress[b.id]?.updated || 0) - (state.progress[a.id]?.updated || 0))[0];
   const hasProgress = !!state.progress[last.id];
-  const visibleBooks = books.filter(book => (bookLevel === 'all' || String(book.sourceLevel.value) === bookLevel) && (bookFilter === '全部故事' || book.tag === bookFilter));
-  const tags = ['全部故事', ...new Set(books.map(book => book.tag))];
   return shell('shelf', `<header class="page-header"><div><span class="eyebrow">故事书架</span><h1>今天，也读一个好故事。</h1></div><span class="header-note">${icon('leaf')}从一页开始</span></header>
     <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><span class="pill">${hasProgress ? '接着上次的故事' : '从这本开始吧'}</span><h2 id="hero-title">小小的书，<br>大大的世界<span class="sun-dot" aria-hidden="true">✳</span></h2><p>${esc(last.intro)}</p><a class="button primary" href="${bookLink(last)}">${hasProgress ? '继续阅读' : '打开故事'}${icon('arrow')}</a><span class="hero-caption">${esc(last.title)} · ${last.pages.length}页图画故事</span></div><a class="hero-art" href="${bookLink(last)}" aria-label="阅读${esc(last.title)}"><span class="art-orbit" aria-hidden="true"></span><img src="${last.cover}" alt="${esc(last.title)}的绘本封面"><span class="floating-label">翻开一页，遇见惊喜</span></a></section>
-    <section class="bookshelf" aria-labelledby="shelf-heading"><div class="section-heading"><div><h2 id="shelf-heading">选一本，慢慢读</h2><p>看图、读故事，遇到生字就点一下。</p></div><span class="small-note">${visibleBooks.length} / ${books.length}本绘本</span></div><div class="filters level-filters" aria-label="故事级别">${['all', '1', '2', '3', '4', '5'].map(level => `<button data-book-level="${level}" class="filter ${bookLevel === level ? 'selected' : ''}" aria-pressed="${bookLevel === level}">${level === 'all' ? '全部级别' : `${level}级`}</button>`).join('')}</div><div class="shelf-tools"><label for="book-theme">主题</label><select id="book-theme">${tags.map(tag => `<option value="${esc(tag)}" ${tag === bookFilter ? 'selected' : ''}>${esc(tag)}</option>`).join('')}</select><span class="small-note" role="status">找到 ${visibleBooks.length} 本故事</span></div><div class="book-grid">${visibleBooks.map(bookCard).join('')}</div>${visibleBooks.length ? '' : '<p class="page-description">这个级别暂时没有这一主题的故事，换一个主题看看吧。</p>'}</section>
+    ${readingShelf()}
+
     <footer class="site-footer">每个孩子都有自己的阅读节奏。<a href="#/parent">故事与声音来源</a></footer>`);
 }
-function bookCard(book) {
-  const p = state.progress[book.id];
+function library() {
+  const recent = books.filter(book => state.progress[book.id]).sort((a, b) => state.progress[b.id].updated - state.progress[a.id].updated);
+  const visibleBooks = (bookView === 'recent' ? recent : books).filter(book => (bookLevel === 'all' || String(book.sourceLevel.value) === bookLevel) && (bookFilter === '全部故事' || book.tag === bookFilter));
+  const tags = ['全部故事', ...new Set(books.map(book => book.tag))];
+  return shell('library', `<div class="library-toolbar"><a class="button secondary" href="#/shelf">${icon('back')}回到小书架<span>${state.readingList.length} / ${READING_LIST_LIMIT} 本</span></a><span class="small-note">可以连续挑几本，选好再回去读。</span></div><header class="page-header"><div><span class="eyebrow">故事书库</span><h1>去书库，找找新故事</h1><p class="small-note">找到喜欢的书，放到自己的小书架。</p></div></header>
+    <section class="bookshelf" aria-labelledby="shelf-heading"><h2 id="shelf-heading" class="library-count">共 ${books.length} 本绘本</h2><div class="library-views" aria-label="书库范围"><button data-book-view="all" aria-pressed="${bookView === 'all'}">全部故事</button><button data-book-view="recent" aria-pressed="${bookView === 'recent'}">最近读过</button></div><div class="filters level-filters" aria-label="故事级别">${['all', '1', '2', '3', '4', '5'].map(level => `<button data-book-level="${level}" class="filter ${bookLevel === level ? 'selected' : ''}" aria-pressed="${bookLevel === level}">${level === 'all' ? '全部级别' : `${level}级`}</button>`).join('')}</div><div class="shelf-tools"><label for="book-theme">主题</label><select id="book-theme">${tags.map(tag => `<option value="${esc(tag)}" ${tag === bookFilter ? 'selected' : ''}>${esc(tag)}</option>`).join('')}</select><span class="small-note" role="status">找到 ${visibleBooks.length} 本故事</span></div><div class="book-grid">${visibleBooks.map(book => bookCard(book, true)).join('')}</div>${visibleBooks.length ? '' : `<p class="page-description">${bookView === 'recent' && !recent.length ? '还没有打开过故事，去全部故事里选一本吧。' : '这个范围暂时没有故事，换一个级别或主题看看吧。'}</p>`}</section>
+    <footer class="site-footer">慢慢挑，慢慢读。<a href="#/shelf">回到小书架</a></footer>`);
+}
+function readingShelf() {
+  const selected = state.readingList.map(id => books.find(book => book.id === id));
+  return `<section class="reading-shelf" aria-labelledby="reading-shelf-heading"><div class="reading-shelf-heading"><div><span class="eyebrow">我的小书架</span><h2 id="reading-shelf-heading">最近想读</h2><p>${selected.length ? '挑好了几本，今天想读哪一本？' : '一起挑几本，把想读的故事放在手边。'}</p></div><div class="reading-shelf-actions"><span class="shelf-count">${selected.length} / ${READING_LIST_LIMIT} 本</span><a class="button secondary" href="#/library">去书库选书${icon('arrow')}</a></div></div>
+    ${selected.length ? `<div class="reading-picks">${selected.map(book => bookCard(book)).join('')}</div>` : `<div class="reading-shelf-empty"><span class="empty-book" aria-hidden="true">${icon('book')}</span><h3>下一本好故事，等你来挑</h3><p>去书库找到喜欢的书，点“放到小书架”。<br>先挑 3 本就好，读完了也可以留下来再读。</p><a class="button primary" href="#/library">去书库挑一挑${icon('arrow')}</a></div>`}</section>`;
+}
+function readingListButton(book) {
+  const selected = state.readingList.includes(book.id);
+  return `<button class="reading-list-button ${selected ? 'remove-reading-pick' : ''}" ${selected ? 'data-reading-remove' : 'data-reading-add'}="${book.id}" aria-label="把《${esc(book.title)}》${selected ? '移出小书架' : '放到小书架'}">${icon(selected ? 'close' : 'book')}<span class="desktop-label">${selected ? '移出书架' : '放到小书架'}</span><span class="mobile-label">${selected ? '移出' : '加入'}</span></button>`;
+}
+function bookCard(book, inLibrary = false) {
   const level = readingLevelLabel(book.sourceLevel);
-  return `<a class="book-card ${book.color}" href="${bookLink(book)}"><div class="book-cover"><img src="${book.cover}" alt="${esc(book.title)}" loading="lazy"><span class="book-status">${p?.finished ? '读过啦' : p ? `读到第${p.page + 1}页` : '打开看看'}</span></div><div class="book-info">${level ? `<span class="book-level" aria-label="${esc(book.sourceLevel.system)} 原站${esc(level)}">${esc(level)}</span>` : ''}<span class="book-category">${book.tag} <span>· ${book.pages.length}页</span></span><h3>${esc(book.title)}</h3><p>${esc(book.intro)}</p><span class="read-link">${p ? '继续读' : '开始读'}${icon('arrow')}</span></div></a>`;
+  return `<article class="reading-pick ${inLibrary ? 'library-book' : ''}" data-book-id="${book.id}"><a ${inLibrary ? 'class="book-card"' : ''} href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><div class="pick-cover book-cover ${book.color}"><img src="${book.cover}" alt="" loading="lazy"></div><div class="pick-info">${level ? `<span class="book-level" aria-label="${esc(book.sourceLevel.system)} 原站${esc(level)}">${esc(level)}</span>` : ''}<h3>${esc(book.title)}</h3><p>${readingStatus(book)}</p></div></a><div class="card-actions"><a class="pick-action" href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><span class="desktop-label">${readingLabel(book)}</span><span class="mobile-label">${readyToReread(book) ? '再读' : readingLabel(book)}</span>${icon('arrow')}</a>${readingListButton(book)}</div></article>`;
 }
 
 function reader(showHint = false) {
@@ -287,12 +325,12 @@ function render() {
   if (route.section !== 'parent') { parentAccess = false; lastPublicHash = location.hash || '#/shelf'; }
   const showReadingHint = route.section === 'book' && !state.readingHelpSeen;
   if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: true});
-  app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : shelf();
+  app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : route.section === 'library' ? library() : shelf();
   if (route.section === 'book') {
     const dots = app.querySelector('.page-dots'), current = dots.querySelector('.current');
     dots.scrollLeft = current.offsetLeft - (dots.clientWidth - current.offsetWidth) / 2;
   }
-  document.title = `${route.section === 'book' ? route.book.title : route.section === 'pinyin' ? '学拼音' : route.section === 'words' ? '我的生字' : route.section === 'parent' ? '家长小角' : '故事书架'} · 阅读小花园`;
+  document.title = `${route.section === 'book' ? route.book.title : route.section === 'pinyin' ? '学拼音' : route.section === 'words' ? '我的生字' : route.section === 'parent' ? '家长小角' : route.section === 'library' ? '故事书库' : '故事书架'} · 阅读小花园`;
   paintMaintenance();
   if (route.section === 'parent') {
     paintDownloadSize();
@@ -305,6 +343,29 @@ app.addEventListener('click', async event => {
   const el = event.target.closest('button');
   if (!el || el.disabled) return;
   if (el.hasAttribute('data-book-level')) { bookLevel = el.dataset.bookLevel; render(); }
+  else if (el.hasAttribute('data-book-view')) { bookView = el.dataset.bookView; refreshShelfControl(`[data-book-view="${bookView}"]`); }
+  else if (el.hasAttribute('data-reading-add')) {
+    const id = el.dataset.readingAdd;
+    if (!books.some(book => book.id === id)) return;
+    if (state.readingList.includes(id)) { notify('已经放在小书架啦。点“回到小书架”就能找到。'); return; }
+    if (state.readingList.length >= READING_LIST_LIMIT) { notify('小书架已经有 6 本啦。先回到小书架移出一本，再放新故事。'); return; }
+    const saved = persist({...state, readingList: [...state.readingList, id]});
+    refreshShelfControl(`[data-book-id="${id}"] button`);
+    if (saved) notify('已放到小书架，可以继续挑书。');
+  }
+  else if (el.hasAttribute('data-reading-remove')) {
+    const id = el.dataset.readingRemove, index = state.readingList.indexOf(id);
+    if (index < 0) return;
+    const saved = persist({...state, readingList: state.readingList.filter(bookId => bookId !== id)});
+    if (route.section === 'library') refreshShelfControl(`[data-book-id="${id}"] button`, '.library-toolbar a');
+    else {
+      render();
+      const nextId = state.readingList[Math.min(index, state.readingList.length - 1)];
+      (app.querySelector(`[data-reading-remove="${nextId}"]`) || app.querySelector('.reading-shelf-actions a'))?.focus({preventScroll: true});
+    }
+    if (saved) notify('已移出书架，阅读记录保留。需要时可从书库重新加入。');
+  }
+
   else if (el.hasAttribute('data-prev')) go(`#/book/${route.book.id}/${route.page}`);
   else if (el.hasAttribute('data-next')) { audio.stop(); if (route.page === route.book.pages.length - 1) completion(); else go(`#/book/${route.book.id}/${route.page + 2}`); }
   else if (el.hasAttribute('data-page')) go(`#/book/${route.book.id}/${Number(el.dataset.page) + 1}`);
@@ -335,7 +396,7 @@ app.addEventListener('click', async event => {
   else if (el.hasAttribute('data-download-book')) await downloadSelection(`book:${el.dataset.downloadBook}`, 'book-download-status');
   else if (el.hasAttribute('data-download')) await downloadSelection(offlineScope);
   else if (el.hasAttribute('data-reset')) {
-    confirmDialog.innerHTML = `<h2 id="confirm-title">清除本机学习记录？</h2><p>阅读位置、读完标记、生字篮和偏好都会删除。离线故事包仍保留。</p><div class="dialog-actions"><button class="button secondary" data-cancel-reset>保留记录</button><button class="button primary" data-confirm-reset>确认清除</button></div>`; confirmDialog.showModal();
+    confirmDialog.innerHTML = `<h2 id="confirm-title">清除本机学习记录？</h2><p>小书架、阅读位置、读完标记、生字篮和偏好都会删除。离线故事包仍保留。</p><div class="dialog-actions"><button class="button secondary" data-cancel-reset>保留记录</button><button class="button primary" data-confirm-reset>确认清除</button></div>`; confirmDialog.showModal();
   }
 });
 

@@ -1,5 +1,6 @@
 export const STORAGE_KEY = 'reading-garden-v1';
-export const emptyState = () => ({progress: {}, words: [], voice: '', readingHelpSeen: false, pinyinScopes: ['finals']});
+export const READING_LIST_LIMIT = 6;
+export const emptyState = () => ({progress: {}, readingList: [], words: [], voice: '', readingHelpSeen: false, pinyinScopes: ['finals']});
 
 export function normalizeState(input, books) {
   const clean = emptyState();
@@ -7,6 +8,10 @@ export function normalizeState(input, books) {
   for (const book of books) {
     const p = input.progress?.[book.id];
     if (p && Number.isInteger(p.page)) clean.progress[book.id] = {page: Math.max(0, Math.min(book.pages.length - 1, p.page)), finished: p.finished === true, updated: Number.isFinite(p.updated) ? p.updated : 0};
+  }
+  if (Array.isArray(input.readingList)) {
+    const knownIds = new Set(books.map(book => book.id));
+    clean.readingList = [...new Set(input.readingList.filter(id => knownIds.has(id)))].slice(0, READING_LIST_LIMIT);
   }
   clean.words = Array.isArray(input.words) ? input.words.filter(w => {
     const b = books.find(b => b.id === w?.bookId);
@@ -25,7 +30,7 @@ export function routeFromHash(hash, books) {
     const book = books.find(b => b.id === id);
     if (book) return {section: 'book', book, page: Math.max(0, Math.min(book.pages.length - 1, (parseInt(page, 10) || 1) - 1))};
   }
-  return {section: ['pinyin', 'words', 'parent'].includes(section) ? section : 'shelf'};
+  return {section: ['library', 'pinyin', 'words', 'parent'].includes(section) ? section : 'shelf'};
 }
 
 export function updateProgress(state, book, page, finished = false, now = Date.now()) {
