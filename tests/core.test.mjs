@@ -18,15 +18,30 @@ test('invalid saved data cannot break reading or inject unknown content', () => 
   assert.deepEqual(normalizeState(null, books), emptyState());
 });
 test('removing the legacy font preference preserves learning records and other preferences', () => {
-  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
+  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, readingList: [], words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
   assert.deepEqual(normalizeState({...saved, largeText: true}, books), saved);
   assert.deepEqual(normalizeState({...saved, largeText: false}, books), saved);
+});
+test('reading list migrates old records and keeps only six known, distinct books in the chosen order', () => {
+  const original = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], pinyinScopes: ['whole']};
+  const migrated = normalizeState(original, books);
+  assert.deepEqual(migrated.readingList, []);
+  assert.deepEqual(migrated.progress, original.progress);
+  assert.deepEqual(migrated.words, original.words);
+  const ids = books.slice(0, 8).map(book => book.id).reverse();
+  const normalized = normalizeState({...original, readingList: [null, ids[0], 'missing', ids[0], {}, ...ids.slice(1)]}, books);
+  assert.deepEqual(normalized.readingList, ids.slice(0, 6));
+  assert.deepEqual(normalizeState({...original, readingList: '0087'}, books).readingList, []);
+  const readAgain = updateProgress(normalized, books.find(book => book.id === ids[3]), 0);
+  assert.deepEqual(readAgain.readingList, normalized.readingList);
+  assert.deepEqual(normalizeState(readAgain, books).readingList, normalized.readingList);
 });
 test('route bounds and invalid links fall back safely', () => {
   assert.equal(routeFromHash('#/book/0087/999', books).page, 7);
   assert.equal(routeFromHash('#/book/0087/-2', books).page, 0);
   assert.equal(routeFromHash('#/book/missing/1', books).section, 'shelf');
   assert.equal(routeFromHash('#/pinyin', books).section, 'pinyin');
+  assert.equal(routeFromHash('#/library', books).section, 'library');
 });
 test('visiting the final page is distinct from marking a book finished', () => {
   const book = books[0];

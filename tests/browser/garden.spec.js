@@ -46,12 +46,12 @@ test.beforeEach(async ({page}) => {
 test('read, collect a character, restore progress and finish deliberately', async ({page}) => {
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
+  await page.goto(new URL('#/library', page.url()).href);
   await expect(page.locator('.book-card')).toHaveCount(40);
   await expect(page.locator('.book-level').first()).toHaveText('1级 · 短句');
   await expect(page.locator('.book-level').first()).toHaveAttribute('aria-label', 'Storybooks Canada 原站1级 · 短句');
-  await expect(page.locator('.hero')).toBeVisible();
   expect(await page.evaluate(() => window.__plays)).toEqual([]);
-  await page.getByRole('link', {name: '打开故事', exact: true}).click();
+  await page.locator('.book-card[href="#/book/0087/1"]').click();
   await expect(page.getByRole('heading', {name: '我喜欢看书', exact: true})).toBeVisible();
   await expect(page.locator('.story-text')).toHaveText('我喜欢看书。');
   await page.getByRole('button', {name: '读这一页'}).click();
@@ -347,6 +347,7 @@ test('downloaded library works offline including audio byte ranges at a project 
   await page.reload();
   await enterParent(page);
   await page.getByRole('link', {name: '故事书架', exact: true}).click();
+  await page.goto(new URL('#/library', page.url()).href);
   await expect(page.locator('.book-card')).toHaveCount(40);
   await page.locator('.book-card[href^="#/book/0009/"]').click();
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
@@ -401,6 +402,7 @@ test('storage corruption is recoverable and clearing data requires a deliberate 
   await page.goto('/');
   await page.evaluate(() => localStorage.setItem('reading-garden-v1', '{broken'));
   await page.reload();
+  await page.goto(new URL('#/library', page.url()).href);
   await expect(page.locator('.book-card')).toHaveCount(40);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
@@ -714,6 +716,7 @@ test('a queued close event cannot cancel a newly opened parent hold', async ({pa
 
 test('all forty books can be found by grade and theme, including empty intersections', async ({page}) => {
   await page.goto('/');
+  await page.goto(new URL('#/library', page.url()).href);
   await expect(page.locator('.book-card')).toHaveCount(40);
   for (const [grade,count] of [[1,15],[2,11],[3,8],[4,4],[5,2]]) {
     await page.locator(`[data-book-level="${grade}"]`).click();
@@ -722,7 +725,7 @@ test('all forty books can be found by grade and theme, including empty intersect
   }
   await page.locator('#book-theme').selectOption('动物朋友');
   await expect(page.locator('.book-card')).toHaveCount(0);
-  await expect(page.getByText('这个级别暂时没有这一主题的故事，换一个主题看看吧。')).toBeVisible();
+  await expect(page.getByText('这个范围暂时没有故事，换一个级别或主题看看吧。')).toBeVisible();
   await page.locator('#book-theme').selectOption('全部故事');
   await page.locator('.book-card').first().click();
   await expect(page.getByRole('heading',{name:'辛波薇亚',exact:true})).toBeVisible();
