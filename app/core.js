@@ -1,5 +1,5 @@
 export const STORAGE_KEY = 'reading-garden-v1';
-export const emptyState = () => ({progress: {}, words: [], voice: '', largeText: false});
+export const emptyState = () => ({progress: {}, words: [], voice: '', readingHelpSeen: false, pinyinScopes: ['finals']});
 
 export function normalizeState(input, books) {
   const clean = emptyState();
@@ -13,8 +13,9 @@ export function normalizeState(input, books) {
     return b && Number.isInteger(w.page) && w.page >= 0 && w.page < b.pages.length && typeof w.char === 'string' && /^\p{Script=Han}$/u.test(w.char) && b.pages[w.page].text.includes(w.char);
   }).slice(0, 200).map(w => ({char: w.char, bookId: w.bookId, page: w.page})) : [];
   clean.words = clean.words.filter((w, i, all) => all.findIndex(x => x.char === w.char) === i);
+  clean.readingHelpSeen = input.readingHelpSeen === true;
   clean.voice = typeof input.voice === 'string' ? input.voice : '';
-  clean.largeText = input.largeText === true;
+  if (Array.isArray(input.pinyinScopes)) clean.pinyinScopes = ['initials', 'finals', 'whole'].filter(id => input.pinyinScopes.includes(id));
   return clean;
 }
 
@@ -50,10 +51,10 @@ export function wordInContext(text, index) {
   return {char: text[index], word: matches[0]?.[0] || text[index], meaning: matches[0]?.[1] || '把这个字放回故事里，再听一听、读一读。'};
 }
 
-export function quizChoices(items, answerIndex, random = Math.random) {
+export function quizChoices(items, answerIndex, random = Math.random, count = 3) {
   const others = items.filter((_, i) => i !== answerIndex);
   for (let i = others.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [others[i], others[j]] = [others[j], others[i]]; }
-  const choices = [...others.slice(0, 2), items[answerIndex]];
+  const choices = [...others.slice(0, Math.max(1, Math.min(3, count) - 1)), items[answerIndex]];
   for (let i = choices.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [choices[i], choices[j]] = [choices[j], choices[i]]; }
   return choices;
 }
