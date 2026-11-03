@@ -1,0 +1,227 @@
+{
+  "id": "sw-20012",
+  "title": "去买书",
+  "source": "https://storyweaver.org.in/en/stories/20012-qu-mai-shu",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 2
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Rukmini Banerji",
+    "Illustrated by": "Santosh Pujari",
+    "Translated by": "Yushan Zhang"
+  },
+  "copyright": "原作 © Pratham Books , 2004；中文译文 © Yushan Zhang , 2017；插图 © Pratham Books, 2004。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/20012-qu-mai-shu",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Yushan Zhang , 2017",
+      "attributionText": "This story: 去买书 is translated by Yushan Zhang . The © for this translation lies with Yushan Zhang , 2017. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Going to Buy a Book ' , by Rukmini Banerji . © Pratham Books , 2004. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/20012-qu-mai-shu",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2004"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 去买书 is translated by Yushan Zhang . The © for this translation lies with Yushan Zhang , 2017. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Going to Buy a Book ' , by Rukmini Banerji . © Pratham Books , 2004. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Children holding books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 2: Old man talking to children , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 3: Boy and girl leaving house , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 4: Children entering a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 5: Man talking to children in a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 6: Boy and girl reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 7: Man and children reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 8: Children reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 9: Girl and boy reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Page 10: Man watching children at a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "去买书 (Chinese (Simplified)) 孩子们总是喜欢和别人分享自己的经历。'去买书'讲述了一些非常愉快的历程。和这些小伙伴们一起感受他们在书店买书的欢乐吧。 This is a Level 2 book for children who recognize familiar words and can read new words with help. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9473/size7/36855053059d4c5e97ec51f5af98e700.jpg",
+    "sha256": "ee9a89312957709c933465289058b5cfc391c6ad79216427ee04bfd8638bca50",
+    "illustrationId": 1321,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/1321-children-holding-books",
+    "copyright": "© Pratham Books, 2004",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Children holding books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "有一天，爷爷给了弟弟和我一些钱。\n\n“去买几本书吧。”他说。\n\n弟弟和我都非常开心。我们俩都很喜欢读书。",
+      "text": "有一天，爷爷给了弟弟和我一些钱。\n“去买几本书吧。”他说。\n弟弟和我都非常开心。我们俩都很喜欢读书。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9474/size7/47017a74e76e4028e2b7e02c478bf195.jpg",
+        "sha256": "cc1b09c28f05a28975d3087f27792b0436a82b271a60403f49e8ae99efe13f63",
+        "illustrationId": 1322,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1322-old-man-talking-to-children",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Old man talking to children , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "我们应该现在去吗？还是待会再去？\n\n我们应该今天去吗？还是明天去呢？\n\n我们决定现在就去。",
+      "text": "我们应该现在去吗？还是待会再去？\n我们应该今天去吗？还是明天去呢？\n我们决定现在就去。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9475/size7/7199ea2d9dc2fa78a23d19fa8249608c.jpg",
+        "sha256": "07ca2c377cc0f5cb426c58cea48a700cc80c79be6a817f24d9a529798e80fa72",
+        "illustrationId": 1323,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1323-boy-and-girl-leaving-house",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Boy and girl leaving house , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "我们应该去大书城吗？还是去小书店呢？\n\n我们应该叫上谁一起去吗？还是我们自己去呢？\n\n我们决定去小书店，就我们两个人。",
+      "text": "我们应该去大书城吗？还是去小书店呢？\n我们应该叫上别人一起去吗？还是我们自己去呢？\n我们决定去小书店，就我们两个人。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9476/size7/5d184eb066ad122f19f615214b354187.jpg",
+        "sha256": "5137c618bc39065c873de642ea42d2c031fd4d4085746d0f1a1bcf3b6cdd1ede",
+        "illustrationId": 1324,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1324-children-entering-a-bookshop",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Children entering a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "我们喜欢这家小书店。书店很小，但有很多书。\n\n管理书店的人喜欢我们。他总是提供给我们帮助。",
+      "text": "我们喜欢这家小书店。书店很小，但有很多书。\n店员喜欢我们。他总是乐意帮助我们。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9477/size7/1e7d0188fc96a7638456c50adced2db5.jpg",
+        "sha256": "75373271da66d6f83f11c81bb1daed8ba3d56b0ca3ff75bcf6a6128d19ea4db2",
+        "illustrationId": 1325,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1325-man-talking-to-children-in-a-bookshop",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Man talking to children in a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "我应该买一本有很多图画的书吗？\n\n我应该买一本有很多故事的书吗？\n\n我应该买一本薄薄的书吗？\n\n我决定不了。",
+      "text": "我应该买一本有很多图画的书吗？\n我应该买一本有很多故事的书吗？\n我应该买一本薄薄的书吗？\n我决定不了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9478/size7/03229f9ec6d60ccb41552bec9a33608f.jpg",
+        "sha256": "4ec9477305fadfb82209945aeff7c865a33a26ec1ce9138c680780b873c5d2ec",
+        "illustrationId": 1326,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1326-boy-and-girl-reading-books",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Boy and girl reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "我们不知道买哪本书。管书店的人对我们笑了笑。“放轻松，跟我来吧。”他说。“这些书是讲动物的。那些是讲机器的。那边那些是讲战争的。挑你们喜欢的吧。”",
+      "text": "我们不知道买哪本书。店员对我们笑了笑。“放轻松，跟我来吧。”他说。“这些书是讲动物的。那些是讲机器的。那边那些是讲战争的。挑你们喜欢的吧。”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9479/size7/6552ebb302aee4f334642cbda81e8174.jpg",
+        "sha256": "92b0c4448837eed30f96fed13b45674ee74a2f12c20c37701d48cef8ab53e5bc",
+        "illustrationId": 1327,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1327-man-and-children-reading-books",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Man and children reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "我选了一些书。我弟弟也选了一些书。\n\n我坐在地上。他坐在椅子上。\n\n然后我们读呀读呀读呀。",
+      "text": "我选了一些书。我弟弟也选了一些书。\n我坐在地上。他坐在椅子上。\n然后我们读呀读呀读呀。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9480/size7/463ea3260dfed95a9fdb4d3c19dcb000.jpg",
+        "sha256": "21edc1a79bb4f5f15788737c2882116ec1018c096a33a4f76905759d12497221",
+        "illustrationId": 1328,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1328-children-reading-books",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Children reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "身边非常安静。一点声音也没有。\n\n一小时过去了。两小时过去了。\n\n终于，我们知道买哪些书了。",
+      "text": "身边非常安静。一点声音也没有。\n一小时过去了。两小时过去了。\n终于，我们知道买哪些书了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9481/size7/b6e25e16b180c704482ee52904575f0c.jpg",
+        "sha256": "83c918454a2d4ea8c22a84b11c452bbec7aaf52ada585114035355321b9099e5",
+        "illustrationId": 1329,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1329-girl-and-boy-reading-books",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 9: Girl and boy reading books , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "管书店的人对我们笑。我拿了一本厚厚的故事书。我的弟弟拿了一本厚厚的图画书。\n\n我们回家找爷爷了。我们爬上他的床。\n\n他伸手揽过我们俩，然后我们读呀、读呀、读呀。",
+      "text": "店员对我们笑。我拿了一本厚厚的故事书。我的弟弟拿了一本厚厚的图画书。\n我们回家找爷爷了。我们爬上他的床。\n他伸手揽过我们俩，然后我们读呀、读呀、读呀。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/9482/size7/39799b98bd4042aa4ae563fa26ccd187.jpg",
+        "sha256": "7f7e81fc13f8a0744bf8e23fe275c4419c51d1fa794eec8c7201af88bce90cd5",
+        "illustrationId": 1330,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/1330-man-watching-children-at-a-bookshop",
+        "copyright": "© Pratham Books, 2004",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 10: Man watching children at a bookshop , by Santosh Pujari © Pratham Books, 2004. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：多余空格；修正疑问语序；自然表达；统一自然称呼。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 2,
+      "before": "弟弟和我 都非常开心。",
+      "after": "弟弟和我都非常开心。",
+      "reason": "多余空格"
+    },
+    {
+      "sourcePage": 4,
+      "before": "我们应该叫上谁一起去吗？",
+      "after": "我们应该叫上别人一起去吗？",
+      "reason": "修正疑问语序"
+    },
+    {
+      "sourcePage": 5,
+      "before": "他总是提供给我们帮助。",
+      "after": "他总是乐意帮助我们。",
+      "reason": "自然表达"
+    },
+    {
+      "sourcePage": 5,
+      "before": "管理书店的人",
+      "after": "店员",
+      "reason": "统一自然称呼"
+    },
+    {
+      "sourcePage": 7,
+      "before": "管书店的人",
+      "after": "店员",
+      "reason": "统一自然称呼"
+    },
+    {
+      "sourcePage": 10,
+      "before": "管书店的人",
+      "after": "店员",
+      "reason": "统一自然称呼"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.931812+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "现在/待会、今天/明天、大/小、薄/厚等对比结构重复，孩子选择过程可预测；动作与物品词清楚。",
+      "story": "从反复犹豫到耐心浏览、自己选书，再与爷爷共读，尊重孩子阅读兴趣，情感温暖完整。",
+      "visualProxy": "Santosh Pujari统一绘制，10页书店和家庭情景，root另验图。"
+    },
+    "warnings": []
+  }
+}

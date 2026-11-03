@@ -1,0 +1,176 @@
+{
+  "id": "sw-577905",
+  "title": "塔拉和魔法放大镜",
+  "source": "https://storyweaver.org.in/en/stories/577905-ta-la-he-mofa-fangdajing",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Written by": "Mehak Hooda",
+    "Illustrated by": "Mehak Hooda",
+    "Translated by": "Jenny Lu"
+  },
+  "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/577905-ta-la-he-mofa-fangdajing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books , 2023",
+      "attributionText": "This story: 塔拉和魔法放大镜 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Tara and the Magic Glass ' , by Mehak Hooda . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/577905-ta-la-he-mofa-fangdajing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2023"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 塔拉和魔法放大镜 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Tara and the Magic Glass ' , by Mehak Hooda . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Other Credits: This book was created as a part of the Asian Festival for Children's Content Build Your Book Hackathon, a two-day picture book making workshop as a collaboration between Pratham Books and Singapore Book Council. Images Attributions: Cover page: A girl and her magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 2: A girl holding up her magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 3: Seeing ants through a magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 4: A girl sitting on a leaf , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 5: A girl sitting on a big cat , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 6: A girl looking at a butterfly through a magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 7: A magical glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "塔拉和魔法放大镜 (Chinese (Simplified)) 塔拉的好朋友太神奇了！它能让塔拉用一种全新的方式看世界。快和他们一起踏上超乎想象的奇妙之旅吧。 This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642524/size7/2ff6355e9e854ee7e5bb6f8f0c99b208.jpg",
+    "sha256": "4bc09d9d6c9a75b26545cceb08ab599d1c4cfe6c676af417a7b7aef84ebb4fbf",
+    "illustrationId": 96369,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/96369-a-girl-and-her-magnifying-glass",
+    "copyright": "© Pratham Books, 2023",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: A girl and her magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "塔拉最好的朋友就是她的魔法放大镜。",
+      "text": "塔拉最好的朋友就是她的魔法放大镜。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642320/size7/17b6c4ae98c19bf21de06dd0458497a3.jpg",
+        "sha256": "522059920adeeb8504a37dab0ec068f26149f043a7169cd8d181f72e4069708a",
+        "illustrationId": 96347,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96347-a-girl-holding-up-her-magnifying-glass",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: A girl holding up her magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "它让一切都变得巨大无比。\n\n（哦！太大了。）",
+      "text": "它让一切都变得巨大无比。\n（哦！太大了。）",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642314/size7/c04efa460be981bac8a85362272c9733.jpg",
+        "sha256": "24787de993d75b1268f70384f2dbf3749ae83e3f54af96b8cc0d3c813ed5ca5c",
+        "illustrationId": 96348,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96348-seeing-ants-through-a-magnifying-glass",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Seeing ants through a magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 399,
+        "width": 3351,
+        "height": 2007,
+        "originalWidth": 3351,
+        "originalHeight": 2406
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "草不再只是草。",
+      "text": "草不再只是草。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642315/size7/2afcd254a195cf39eef2f72f2f75589a.jpg",
+        "sha256": "4449d626e34f5e16a6c409793729d9b007b6e1f9a496f06bca3f861cdb6fe8e4",
+        "illustrationId": 96349,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96349-a-girl-sitting-on-a-leaf",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: A girl sitting on a leaf , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "虫子变成了巨兽，\n\n猫儿变成了狮子。",
+      "text": "虫子变成了巨兽，\n猫儿变成了狮子。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642316/size7/588c60a4aa6dba8d02ccdee66679e5c8.jpg",
+        "sha256": "96f6ed56a9e36227044e8f04189826c887bc2a468ea21e8618d02348d3cbaddb",
+        "illustrationId": 96350,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96350-a-girl-sitting-on-a-big-cat",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: A girl sitting on a big cat , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "“快看那个”\n\n她笑着说。",
+      "text": "“快看那个！”\n她笑着说。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642317/size7/75ef9278b70ff0530df72f09fcb50e28.jpg",
+        "sha256": "77ec4738711583d71ed4328ce40784bd1ef4bef0a993adcf8eb63ac3586207d1",
+        "illustrationId": 96351,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96351-a-girl-looking-at-a-butterfly-through-a-magnifying-glass",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: A girl looking at a butterfly through a magnifying glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "“明天我们要看什么呢，\n\n我的魔法放大镜?”",
+      "text": "“明天我们要看什么呢，\n我的魔法放大镜？”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642344/size7/ee59f9e3abcbc02d80a62604b9159c34.jpg",
+        "sha256": "c7d2cad94b57446fa10012a8f9ebb89cce7dd36a05e5fba4722581597522a751",
+        "illustrationId": 96352,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96352-a-magical-glass",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: A magical glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 959,
+        "height": 562,
+        "originalWidth": 959,
+        "originalHeight": 687
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：补对白标点；中文问号与多余空格。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 6,
+      "before": "“快看那个”",
+      "after": "“快看那个！”",
+      "reason": "补对白标点"
+    },
+    {
+      "sourcePage": 7,
+      "before": "我的魔法放大镜? ”",
+      "after": "我的魔法放大镜？”",
+      "reason": "中文问号与多余空格"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.951247+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "六页短诗性句子，由草、虫子、猫过渡到巨大/狮子，有图像支点；适合孩子轻松独立尝试。",
+      "story": "孩子与放大镜如朋友般对话，观察日常也保留想象，虽短但有鲜明趣味。",
+      "visualProxy": "微观放大与幻想的插画需要实际验图，若图像细节清楚，是值得例外补充的低阶特色书。"
+    },
+    "warnings": []
+  }
+}

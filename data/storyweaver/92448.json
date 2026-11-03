@@ -1,0 +1,245 @@
+{
+  "id": "sw-92448",
+  "title": "绘画游戏",
+  "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 2
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Written by": "Anitha Murthy",
+    "Illustrated by": "Ajanta Guhathakurta",
+    "Translated by": "Jala Community",
+    "Original publisher": "Pratham Books",
+    "Translation publisher": "Jala"
+  },
+  "copyright": "原作及插图 © Pratham Books, 2018；中文译文 © Jala, 2019。",
+  "changes": "沿用完整故事及书后活动；整理空白与标点，修正引号，并将“有四个边的形状”改为“一个有四条边的形状”；插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。未提供故事录音，单字声音来自设备。",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions（共3页），逐页核对译文和13幅插图均为CC BY 4.0；原站未列本书独立资助方。",
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/716431/size7/6bc9c1887a5230a7f0d6708d14a9982d.jpg",
+    "sha256": "3d3eb54cc1bc5572d8f9b523f567039e8759d39bb4d8026705013a2e98210ac2",
+    "illustrationId": 12907
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "吉努在她奶奶家过暑假。吉努说：“奶奶，陪我玩！”她在这里没有朋友，觉得好无聊。奶奶说：“去拿一块粉笔，我们来玩个游戏。”",
+      "text": "吉努在她奶奶家过暑假。吉努说：“奶奶，陪我玩！”她在这里没有朋友，觉得好无聊。奶奶说：“去拿一块粉笔，我们来玩个游戏。”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61941/size7/74c918967c4d2f91ab82e34fd97b5061.jpg",
+        "sha256": "8aacb77361834f4dceae09db2d9fd0259e10d28447a03fad10a47635cd87d0dc",
+        "illustrationId": 12908
+      },
+      "imageFrame": {
+        "x": 103,
+        "y": 167,
+        "width": 530,
+        "height": 522,
+        "originalWidth": 639,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "吉努很兴奋。奶奶会和她玩什么游戏呢？奶奶画了一个形状。她问：“猜猜这是什么？”吉努不高兴地回答：“这是个圆形。”她不喜欢这个无聊的游戏。",
+      "text": "吉努很兴奋。奶奶会和她玩什么游戏呢？奶奶画了一个形状。她问：“猜猜这是什么？”吉努不高兴地回答：“这是个圆形。”她不喜欢这个无聊的游戏。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61942/size7/00b15cb504186654e4ce838a7bca6ae4.jpg",
+        "sha256": "c8faa3f277a1ad2837711c930231311e4239529596f0f3c24571ae96a20a53ab",
+        "illustrationId": 12909
+      },
+      "imageFrame": {
+        "x": 176,
+        "y": 0,
+        "width": 592,
+        "height": 459,
+        "originalWidth": 959,
+        "originalHeight": 459
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "奶奶说：“是的，但是圆形也可以变出更多东西。”吉努想了一下，然后笑了。“这是一个笑脸！”她说道。奶奶拍拍手，说：“很好，你知道怎么玩这个游戏！”",
+      "text": "奶奶说：“是的，但是圆形也可以变出更多东西。”吉努想了一下，然后笑了。“这是一个笑脸！”她说道。奶奶拍拍手，说：“很好，你知道怎么玩这个游戏！”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61943/size7/e8d52fcd277537b0ef932f37df27fd89.jpg",
+        "sha256": "73fab7e0f6d3e5f9ca03e71e40c6accd0da6e3fb1ae247ccfc9fe5254c0f4508",
+        "illustrationId": 12910
+      },
+      "imageFrame": {
+        "x": 558,
+        "y": 277,
+        "width": 401,
+        "height": 412,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "“奶奶你看，我画了什么！”吉努说道。\n\n活动：你能用三个圆形画出什么呢？",
+      "text": "“奶奶，你看，我画了什么！”吉努说道。\n\n活动：你能用三个圆形画出什么呢？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61944/size7/9fe4ae4bf9e2eae1500e258f219762f7.jpg",
+        "sha256": "794460d37449986bff7d4831b234f6b00889504df93893a566550df4b7c89800",
+        "illustrationId": 12911
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 2,
+        "width": 959,
+        "height": 514,
+        "originalWidth": 959,
+        "originalHeight": 516
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "奶奶画了另一个形状。“是三角形！”吉努喊道。然后她笑了。",
+      "text": "奶奶画了另一个形状。“是三角形！”吉努喊道。然后她笑了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61945/size7/b64e6d86412658f0ed66c1dff9c329ec.jpg",
+        "sha256": "93bff0bfac3b5f653735b279b4771262bfe3dcfcf7ef54cfefb84d607859e255",
+        "illustrationId": 12912
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 420,
+        "height": 368,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "“奶奶你看，我画了什么！”",
+      "text": "“奶奶，你看，我画了什么！”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61947/size7/411e0775820a96a48094351e3150d01c.jpg",
+        "sha256": "a6d6f278d60051f699c41dda725b62341d7e0869ecb47fb558b840d15df8a826",
+        "illustrationId": 12913
+      },
+      "imageFrame": {
+        "x": 339,
+        "y": 292,
+        "width": 603,
+        "height": 397,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "“吉努，做得好！”奶奶说道。“你看，谁来和我们一起玩了？”\n\n活动：你可以用三个圆形和四个三角形画出什么？",
+      "text": "“吉努，做得好！”奶奶说道。“你看，谁来和我们一起玩了？”\n\n活动：你可以用三个圆形和四个三角形画出什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61948/size7/59dc555620afbcfcbb6ecbd54cdcbcc1.jpg",
+        "sha256": "401a760b0a4079fce2e9f128495d9536bc17b9bbfcf1bf00e38eefec52509c16",
+        "illustrationId": 12914
+      },
+      "imageFrame": {
+        "x": 97,
+        "y": 0,
+        "width": 703,
+        "height": 516,
+        "originalWidth": 959,
+        "originalHeight": 516
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "奶奶画了有四个边的形状。“这是一个长方形吗？”吉努问道。奶奶回答：“你仔细看，所有的边都一样长。”\n\n“这是一个正方形！嗯......奶奶你看，我画了个窗口。”",
+      "text": "奶奶画了一个有四条边的形状。“这是一个长方形吗？”吉努问道。奶奶回答：“你仔细看，所有的边都一样长。”\n\n“这是一个正方形！嗯……奶奶，你看，我画了个窗口。”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61949/size7/087110cf512d05049e9131e3176742e9.jpg",
+        "sha256": "39bbc6571e3d2df5a8bf5933c74d08fe18141cf79c6f0d6b5ca0b675108731dc",
+        "illustrationId": 12915
+      },
+      "imageFrame": {
+        "x": 179,
+        "y": 6,
+        "width": 573,
+        "height": 453,
+        "originalWidth": 959,
+        "originalHeight": 459
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "“你要在窗口旁边画一棵树吗？”奶奶问她。“是的奶奶，谢谢你！”吉努说。她看着所有的粉笔画。她现在可以上色了吗？\n\n活动：你可以用一个三角形和一个长方形画出什么？",
+      "text": "“你要在窗口旁边画一棵树吗？”奶奶问她。“是的，奶奶，谢谢你！”吉努说。她看着所有的粉笔画。她现在可以上色了吗？\n\n活动：你可以用一个三角形和一个长方形画出什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61950/size7/4a51c91d31a9974cf09599af038c274d.jpg",
+        "sha256": "04a8d4864ef2e5dbbbf75d4d9eb2cd9b9e76e3e5141f29c3ff1e7cf32fb5d7bd",
+        "illustrationId": 12916
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 639,
+        "height": 627,
+        "originalWidth": 639,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 11,
+      "originalText": "不久，吉努举起了她的画。“哇，好多圆形、三角形和正方形！“奶奶说道。",
+      "text": "不久，吉努举起了她的画。“哇，好多圆形、三角形和正方形！”奶奶说道。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61951/size7/c70545dbe6c0695820e27657efa33705.jpg",
+        "sha256": "6e19ae1bca167d39f32e0852730636d4d092ac5ed6e06919dfb4f609987bbb8a",
+        "illustrationId": 12917
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 959,
+        "height": 674,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 12,
+      "originalText": "“嗯，奶奶，不止这样！这里有一只鸟，正在飞回树上的家。还有你猜，谁来一起吃午饭？",
+      "text": "“嗯，奶奶，不止这样！这里有一只鸟，正在飞回树上的家。还有，你猜，谁来一起吃午饭？”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61952/size7/1d12c5339f010a03d26cba082b5c29d1.jpg",
+        "sha256": "1d389f0477846c08117429d5c1c4de815ab3d844c8420421ba049710cfb1762c",
+        "illustrationId": 12918
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 959,
+        "height": 516,
+        "originalWidth": 959,
+        "originalHeight": 516
+      }
+    },
+    {
+      "sourcePage": 13,
+      "originalText": "奶奶称赞她：“吉努，你好聪明啊！”吉努还想要画更多。她和奶奶接下来会画什么呢？\n\n活动：你可以用圆形、三角形和正方形画出什么？",
+      "text": "奶奶称赞她：“吉努，你好聪明啊！”吉努还想要画更多。她和奶奶接下来会画什么呢？\n\n活动：你可以用圆形、三角形和正方形画出什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/61953/size7/6d95c5d22a642c211633f36124b484b6.jpg",
+        "sha256": "3e50b081d2436178f5f1f535aca3a7c85085f7168fa356d2cff2d599c8bd6985",
+        "illustrationId": 12919
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 2,
+        "width": 959,
+        "height": 457,
+        "originalWidth": 959,
+        "originalHeight": 459
+      }
+    }
+  ]
+}

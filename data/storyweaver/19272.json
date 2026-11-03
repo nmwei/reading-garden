@@ -1,0 +1,283 @@
+{
+  "id": "sw-19272",
+  "title": "现在不行，现在不行！",
+  "source": "https://storyweaver.org.in/en/stories/19272-xian-zai-bu-xing",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Rohini Nilekani",
+    "Illustrated by": "Ruchi Shah",
+    "Translated by": "Yu Wu"
+  },
+  "copyright": "原作 © Pratham Books , 2011；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2011。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/19272-xian-zai-bu-xing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Yu Wu , 2017",
+      "attributionText": "This story: 现在不行，现在不行！ is translated by Yu Wu . The © for this translation lies with Yu Wu , 2017. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Not Now, Not Now! ' , by Rohini Nilekani . © Pratham Books , 2011. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/19272-xian-zai-bu-xing",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2011"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 现在不行，现在不行！ is translated by Yu Wu . The © for this translation lies with Yu Wu , 2017. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Not Now, Not Now! ' , by Rohini Nilekani . © Pratham Books , 2011. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Boy's face looking out of a circular frame , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 2: Boy, grandmother and laddoos , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 3: Children holding hands and playing , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 4: Boy standing next to shirt and cap , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 5: Boy with father and a gift box , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 6: Boy lying in bed at night , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 7: Boy and grandmother with laddoos , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Page 8: Family surrounding a birthday cake , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "现在不行，现在不行！ (Chinese (Simplified)) 这个故事里的小男孩想现在就做点什么，可是大人们都说，现在不行！如果有人怎么对你说，你会生气吗？ This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/338/size7/6ecb9306d5842ef006f8c9903aa10076.jpg",
+    "sha256": "7180fbb9272df245b41ec5adf3a9a2995bb5f8e23332a2318a05249f48e57d6b",
+    "illustrationId": 75,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/75-boy-s-face-looking-out-of-a-circular-frame",
+    "copyright": "© Pratham Books, 2011",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Boy's face looking out of a circular frame , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "我问奶奶，“我可以吃糖果吗？”\n\n奶奶说：“现在不行，贝塔，也许明天。”\n\n可是我不想等到明天。",
+      "text": "我问奶奶：“我可以吃糖果吗？”\n奶奶说：“现在不行，宝贝，也许明天。”\n可是我不想等到明天。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/339/size7/af14cc9424214ff4a7b8413e00473442.jpg",
+        "sha256": "2ac349f91c2eb9979938b91d48ab19b9217de5494c5603d00bdd11e015146885",
+        "illustrationId": 76,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/76-boy-grandmother-and-laddoos",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Boy, grandmother and laddoos , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 756,
+        "height": 944,
+        "originalWidth": 959,
+        "originalHeight": 944
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "我问爷爷，“我可以和朋友出去玩吗？”\n\n爷爷说，“现在不行，贝塔，也许午觉以后？”\n\n可是我不想等到午觉以后。",
+      "text": "我问爷爷：“我可以和朋友出去玩吗？”\n爷爷说：“现在不行，宝贝，也许午觉以后？”\n可是我不想等到午觉以后。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/340/size7/c78c742bf091bd43b71e1d92124942b2.jpg",
+        "sha256": "980c36252db057f01076e69f7a71e0b987982aad94d0b12c35afdc1dfbe4fc5c",
+        "illustrationId": 77,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/77-children-holding-hands-and-playing",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Children holding hands and playing , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 127,
+        "y": 0,
+        "width": 832,
+        "height": 944,
+        "originalWidth": 959,
+        "originalHeight": 944
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "我问妈妈，“我可以穿新衣裳吗？”\n\n妈妈说，“现在不行，贝塔，我们出门的时候你就可以穿它们了。”\n\n可是我不想等到我们出门。",
+      "text": "我问妈妈：“我可以穿新衣裳吗？”\n妈妈说：“现在不行，宝贝，我们出门的时候你就可以穿它们了。”\n可是我不想等到我们出门。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/341/size7/58629a2e675e7ba4456fecf11db63b5d.jpg",
+        "sha256": "451f33c344973289bcb71397f11dbd7dffdd07dc1e9735f3b0aa9af89efa2180",
+        "illustrationId": 78,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/78-boy-standing-next-to-shirt-and-cap",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Boy standing next to shirt and cap , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 765,
+        "height": 910,
+        "originalWidth": 959,
+        "originalHeight": 944
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "我问爸爸：“我可以打开这个漂亮的盒子吗？”\n\n爸爸说，“现在不行，你得等等。”\n\n可是我不想再等了。",
+      "text": "我问爸爸：“我可以打开这个漂亮的盒子吗？”\n爸爸说：“现在不行，你得等等。”\n可是我不想再等了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/342/size7/75a30fb7aa74ea6e0528e8adfb18f912.jpg",
+        "sha256": "8900891f49d4e58da8f2f2ed67b3529977a02c581f64cc63b51f97bdc226612b",
+        "illustrationId": 79,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/79-boy-with-father-and-a-gift-box",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Boy with father and a gift box , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 190,
+        "y": 0,
+        "width": 769,
+        "height": 944,
+        "originalWidth": 959,
+        "originalHeight": 944
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "为什么大人们总是说，“现在不行，现在不行。”\n\n那天晚上，我睡觉的时候很生气。",
+      "text": "为什么大人们总是说：“现在不行，现在不行。”\n那天晚上，我睡觉的时候很生气。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/343/size7/9ae6eb29278eb1ae5e79d0000682ebe8.jpg",
+        "sha256": "2a41d0ce2b848560e6f2c2118b83e4d58804cbeb0e49a96eb199a7bc89934c87",
+        "illustrationId": 80,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/80-boy-lying-in-bed-at-night",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Boy lying in bed at night , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 0,
+        "width": 959,
+        "height": 992,
+        "originalWidth": 959,
+        "originalHeight": 1062
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "第二天，我早早地醒来走进厨房。\n\n奶奶说，“你可以吃这些糖果了”。",
+      "text": "第二天，我早早地醒来走进厨房。\n奶奶说：“你可以吃这些糖果了。”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/344/size7/13eda5c389aca934c03c80eb552331aa.jpg",
+        "sha256": "36593206f27bf07408cb2f4d6937c9166a83eab0447bd9c08c63046e36282d64",
+        "illustrationId": 81,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/81-boy-and-grandmother-with-laddoos",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Boy and grandmother with laddoos , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 96,
+        "width": 959,
+        "height": 848,
+        "originalWidth": 959,
+        "originalHeight": 944
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "爷爷说：“你可以出去玩了。”\n\n妈妈说：“你可以穿新衣服了。”\n\n爸爸说：“你可以打开这个盒子了。”\n\n\n\n然后他们一起对我说：“生日快乐！”",
+      "text": "爷爷说：“你可以出去玩了。”\n妈妈说：“你可以穿新衣服了。”\n爸爸说：“你可以打开这个盒子了。”\n然后他们一起对我说：“生日快乐！”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/3452/size7/c30d145272741b7e60a3530a053d3dc9.jpg",
+        "sha256": "58a4592e7219d151c59f92242c20e37e4ccf8a538cd0ab29f95a64491e88cc81",
+        "illustrationId": 82,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/82-family-surrounding-a-birthday-cake",
+        "copyright": "© Pratham Books, 2011",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Family surrounding a birthday cake , by Ruchi Shah © Pratham Books, 2011. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对白标点；把印度语亲昵称呼自然译为中文；亲昵称呼；引号句号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 2,
+      "before": "我问奶奶，",
+      "after": "我问奶奶：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 2,
+      "before": "贝塔",
+      "after": "宝贝",
+      "reason": "把印度语亲昵称呼自然译为中文"
+    },
+    {
+      "sourcePage": 3,
+      "before": "我问爷爷，",
+      "after": "我问爷爷：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 3,
+      "before": "爷爷说，",
+      "after": "爷爷说：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 3,
+      "before": "贝塔",
+      "after": "宝贝",
+      "reason": "亲昵称呼"
+    },
+    {
+      "sourcePage": 4,
+      "before": "我问妈妈，",
+      "after": "我问妈妈：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 4,
+      "before": "妈妈说，",
+      "after": "妈妈说：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 4,
+      "before": "贝塔",
+      "after": "宝贝",
+      "reason": "亲昵称呼"
+    },
+    {
+      "sourcePage": 5,
+      "before": "爸爸说，",
+      "after": "爸爸说：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 6,
+      "before": "总是说，",
+      "after": "总是说：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 7,
+      "before": "奶奶说，",
+      "after": "奶奶说：",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 7,
+      "before": "吃这些糖果了”。",
+      "after": "吃这些糖果了。”",
+      "reason": "引号句号"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.930612+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "“我问……”“现在不行”“可是我不想等”重复可预测，最后四个动作回收，低阶有完整阅读支架。",
+      "story": "从被拒绝的失望到生日惊喜，情绪和悬念清楚，适合5岁生活经验，是值得挑选的入门故事。",
+      "visualProxy": "需root确认表情、礼物等原插画细节生动，尤其末页揭晓应有效。"
+    },
+    "warnings": []
+  }
+}

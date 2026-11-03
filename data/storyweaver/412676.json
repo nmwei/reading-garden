@@ -1,0 +1,592 @@
+{
+  "id": "sw-412676",
+  "title": "安娜的非凡天气实验",
+  "source": "https://storyweaver.org.in/en/stories/412676-anna-de-qimiao-tianqi-shiyan",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 3
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Nandita Jayaraj",
+    "Illustrated by": "Priya Kuriyan",
+    "Translated by": "Edith Tan Shi Yun"
+  },
+  "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2022；插图 © Pratham Books, 2018。 书末备注：备注：这个故事是根据安娜·玛妮（Anna Mani）的生平创作的非虚构作品。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/412676-anna-de-qimiao-tianqi-shiyan",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Jala , 2022",
+      "attributionText": "This story: 安娜的非凡天气实验 is translated by Edith Tan Shi Yun . The © for this translation lies with Jala , 2022. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Anna's Extraordinary Experiments with Weather ' , by Nandita Jayaraj . © Pratham Books , 2018. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/412676-anna-de-qimiao-tianqi-shiyan",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2018"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 安娜的非凡天气实验 is translated by Edith Tan Shi Yun . The © for this translation lies with Jala , 2022. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Anna's Extraordinary Experiments with Weather ' , by Nandita Jayaraj . © Pratham Books , 2018. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Woman working seriously , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 2: Girl blowing candles on her birthday cake , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 3: Girl opening a box full of diamonds , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 4: Girl is angry , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 5: Girl is excited to carry so many books , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 6: Woman looking at man with confusion , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 7: Woman looking at diamonds in the box , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 8: Woman reading with multiple books around , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 9: Woman writing something seriously , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 10: An instrument for a science experiment , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Images Attributions: Page 11: Ozonesonde in the blue sky , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 12: Ozonesonde , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 13: Instrument for science experiment , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 14: Experiment lab with multiple instruments , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 15: Woman reading a book , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 16: Woman, a baby in a basket, buildings , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 17: Ozonesonde, a house, an instrument , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 18: Ozonesonde, a woman writing on paper , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "安娜的非凡天气实验 (Chinese (Simplified)) 安娜·玛妮（Anna Mani）是一位印度科学家，她喜欢阅读有关她周围的世界的事情。 让我们随着她的第八个生日聚会，跟随她经历她非同寻常的科学冒险。 This is a Level 3 book for children who are ready to read on their own. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57233/size7/33e83c942431496c961816686e82f4fc.jpg",
+    "sha256": "1d7717a67e65fb3e3c4c3aed7caf67d8431e1dc43f5c49da0ed008a828c30349",
+    "illustrationId": 11715,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/11715-woman-working-seriously",
+    "copyright": "© Pratham Books, 2018",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Woman working seriously , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "“呼～～～～～！ 呼～～～～～！”安娜·玛妮（Anna Mani）吹灭了她生日蛋糕上的所有八支蜡烛。 “生日快乐，安娜！”\n\n\n\n她的兄弟姐妹喊道。安娜出生于一个大家庭，住在一个山上的大房子。 但是在她的生日，她只有一个小愿望。",
+      "text": "“呼～～～～～！ 呼～～～～～！”安娜·玛妮（Anna Mani）吹灭了她生日蛋糕上的所有八支蜡烛。 “生日快乐，安娜！”\n她的兄弟姐妹喊道。安娜出生在一个大家庭，住在山上的一座大房子里。可在生日这天，她只有一个小愿望。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57234/size7/bd07bf6723e531ef90078783df01db9a.jpg",
+        "sha256": "66a61dd19891293d80abb8f52ff761978c10e7feeb038319ac22b3b7e22a30f5",
+        "illustrationId": 11716,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11716-girl-blowing-candles-on-her-birthday-cake",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Girl blowing candles on her birthday cake , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "安娜撕开了她的生日礼物，窥视着。\n\n里面有东西在闪闪发光。\n\n“钻石耳环？ 哎呀！”她不想要钻石耳环。\n\n它们既昂贵又无用！\n\n你知道安娜真的想要什么吗？书籍，书籍和更多的书籍！",
+      "text": "安娜拆开生日礼物，往里面看。\n里面有东西在闪闪发光。\n“钻石耳环？ 哎呀！”她不想要钻石耳环。\n它们既昂贵又无用！\n你知道安娜真正想要什么吗？书籍，书籍和更多的书籍！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57235/size7/a59a09965cdfd45ba693a0acae93e495.jpg",
+        "sha256": "c83f388112fae341e2faa2c9ce7ab215760519ca473db168079eeebe2b74c2e4",
+        "illustrationId": 11717,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11717-girl-opening-a-box-full-of-diamonds",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Girl opening a box full of diamonds , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "“我们家里有书！”她哥哥说。 但是安娜已经读过了。\n\n\n\n她的祖父指出：“图书馆里还有更多书籍。” 但是安娜也读过那些书了！\n\n\n\n她气呼呼地迈步进了房间。 “哼！”",
+      "text": "“我们家里有书！”她哥哥说。 但是安娜已经读过了。\n她的祖父说：“图书馆里还有更多书籍。” 但是安娜也读过那些书了！\n她气呼呼地走进房间。 “哼！”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57236/size7/1d8782847c253268bfb2cadec8d156a3.jpg",
+        "sha256": "abb6574787f43178b47b0b983a57cf406cf1860120702aa145e454a5e340163c",
+        "illustrationId": 11718,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11718-girl-is-angry",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Girl is angry , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 65,
+        "width": 639,
+        "height": 624,
+        "originalWidth": 639,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "那天晚些时候，安娜的房间门被敲了一下。\n\n\n\n但是外面没有人！取而代之的是，在她房间门口放了一个大盒子。\n\n\n\n“最好不要是首饰！”她大声说。 不是。 这是一套全新的百科全书集！\n\n\n\n“这么多书。 万岁！”安娜在房子里跑来跑去，拥抱所有人。",
+      "text": "那天晚些时候，有人敲响了安娜的房门。\n但是外面没有人！门口只放着一个大盒子。\n“最好不要是首饰！”她大声说。 不是。 这是一套全新的百科全书！\n“这么多书。 万岁！”安娜在房子里跑来跑去，拥抱所有人。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57237/size7/56bb84f5d322d3e6bbed74afdeb403e0.jpg",
+        "sha256": "91ef69b432cda64c6630f4df8015f3b393460ff89fc2ae32d15f8ca79ebe6d08",
+        "illustrationId": 11719,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11719-girl-is-excited-to-carry-so-many-books",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Girl is excited to carry so many books , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 56,
+        "width": 639,
+        "height": 633,
+        "originalWidth": 639,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "多年之后，读过许多书之后，安娜在一位著名科学家的实验室找到了一份工作。\n\n\n\n“我应该在这里做什么？”安娜问。科学家指着一个盒子。\n\n\n\n你认为她在里面发现了什么？",
+      "text": "多年后，读过许多书的安娜在一位著名科学家的实验室找到了一份工作。\n“我应该在这里做什么？”安娜问。 科学家指着一个盒子。\n你认为她在里面发现了什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57238/size7/225c1110cea5c736419a7fa8383372aa.jpg",
+        "sha256": "f5bf4c69a3a0238c7260b39008de18357c82e7ab8f334d66d5f911b1bd892d65",
+        "illustrationId": 11720,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11720-woman-looking-at-man-with-confusion",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Woman looking at man with confusion , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 134,
+        "y": 0,
+        "width": 680,
+        "height": 459,
+        "originalWidth": 959,
+        "originalHeight": 459
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "“钻石？ 哎呀！\n\n\n\n”安娜说。但是这一次，钻石不是拿来戴的。 它们是为了实验。这位科学家希望安娜找出钻石导致发光的原因。\n\n\n\n于是她读了有关钻石的书。\n\n\n\n书籍，书籍和更多的书籍！",
+      "text": "“钻石？哎呀！”安娜说。但是这一次，钻石不是拿来戴的。 它们是用来做实验的。这位科学家希望安娜找出钻石发光的原因。\n于是她读了有关钻石的书。\n书籍，书籍和更多的书籍！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57239/size7/8d2a9a50662a6b5ea091094a024b744a.jpg",
+        "sha256": "e66dec6ed09ff617045d9cdaa423551273d6b7d43c6f368f11dc5f8170de6d1b",
+        "illustrationId": 11721,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11721-woman-looking-at-diamonds-in-the-box",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Woman looking at diamonds in the box , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 59,
+        "width": 639,
+        "height": 630,
+        "originalWidth": 639,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "果然成为科学家是最棒的！ 安娜可以学任何她想要的东西。\n\n她确实喜欢闪闪发光的东西。 还有什么比钻石更耀眼的呢？ 太阳！于是安娜读了有关太阳，阳光和天气的书。\n\n\n\n书籍，书籍和更多的书籍！",
+      "text": "成为科学家真是太棒了！ 安娜可以学任何她想要的东西。\n她确实喜欢闪闪发光的东西。 还有什么比钻石更耀眼的呢？\n太阳！于是安娜读了有关太阳，阳光和天气的书。\n书籍，书籍和更多的书籍！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57240/size7/1fa905520737fb203c05d9e71828ca9a.jpg",
+        "sha256": "2c5ba9e6015ca2e9a00123610fecb0dd565b92e4d29834c9be327629deb09458",
+        "illustrationId": 11722,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11722-woman-reading-with-multiple-books-around",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Woman reading with multiple books around , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "安娜做了数百次实验。\n\n她制造了许多装置来测量一个地方的天气。",
+      "text": "安娜做了数百次实验。\n她制造了许多装置来测量一个地方的天气。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57241/size7/9041f9f513d2afb59257edf4aa515baa.jpg",
+        "sha256": "459d0f0a5bb31d361f8451dcc216f8c0f02ee38a387fad3927d68833a750f6f7",
+        "illustrationId": 11723,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11723-woman-writing-something-seriously",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 9: Woman writing something seriously , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 96,
+        "y": 0,
+        "width": 761,
+        "height": 516,
+        "originalWidth": 959,
+        "originalHeight": 516
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "孟买有多晴朗？ 安娜制造了一个装置来测量这一点。\n\n\n\n马德拉斯（Madras）的风有多大？ 安娜为此也制造了一个装置。",
+      "text": "孟买有多晴朗？ 安娜制造了一个装置来测量这一点。\n马德拉斯（Madras）的风有多大？ 安娜为此也制造了一个装置。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57294/size7/2d10f5499e880f897ee342aa7a34a1fc.jpg",
+        "sha256": "59ac690005e3f4292c4e1281f910817a0b059ad04170e5b89cb8c4927e34257e",
+        "illustrationId": 11733,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11733-an-instrument-for-a-science-experiment",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 10: An instrument for a science experiment , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 128,
+        "y": 0,
+        "width": 718,
+        "height": 459,
+        "originalWidth": 959,
+        "originalHeight": 459
+      }
+    },
+    {
+      "sourcePage": 11,
+      "originalText": "她最喜欢的装置花了好几个月才建成。\n\n\n\n这是一个叫做臭氧探空仪的特殊气球。 它的尾端有一台固定的小机器。机器测量了在空气中发现的一种叫做臭氧的气体。\n\n\n\n臭氧探空仪飞得很高。\n\n\n\n看，那就是安娜的臭氧探空仪！",
+      "text": "她最喜欢的装置花了好几个月才建成。\n这个特殊装置叫臭氧探空仪。气球带着一台小机器飞上天空，测量空气中一种叫臭氧的气体。\n臭氧探空仪飞得很高。\n看，那就是安娜的臭氧探空仪！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57298/size7/f573c4635b39a08a2968551dcc91b9f0.jpg",
+        "sha256": "f897d2264d9a58395a783508ec71ca534dc8b7ab19704f332eebc0a5730d2af5",
+        "illustrationId": 11735,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11735-ozonesonde-in-the-blue-sky",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 11: Ozonesonde in the blue sky , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 667,
+        "y": 398,
+        "width": 241,
+        "height": 250,
+        "originalWidth": 959,
+        "originalHeight": 687
+      }
+    },
+    {
+      "sourcePage": 12,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57244/size7/29c39da2747bee07da888b413288f0b7.jpg",
+        "sha256": "c530399af01e5ad01b131407aa1fdd99395bf9ed6a03be0b4ee59981e37e7f17",
+        "illustrationId": 11726,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11726-ozonesonde",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 12: Ozonesonde , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《安娜的非凡天气实验》原书第12页的故事插图"
+    },
+    {
+      "sourcePage": 13,
+      "originalText": "猜猜安娜·玛尼一生中总共建造了多少个装置？\n\n将近一百个天气装置！\n\n\n\n她甚至拥有自己的工厂来制造这些装置。\n\n她似乎可以建造任何东西！",
+      "text": "猜猜安娜·玛妮一生中总共建造了多少个装置？\n将近一百个天气装置！\n她甚至拥有自己的工厂来制造这些装置。\n她似乎可以建造任何东西！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57292/size7/1705577f885a84c964724f247809a083.jpg",
+        "sha256": "dda1cf798fcc747c4216ca16ae9193945d592d03b721655bdf09ee71c919c2eb",
+        "illustrationId": 11727,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11727-instrument-for-science-experiment",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 13: Instrument for science experiment , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 641,
+        "y": 281,
+        "width": 222,
+        "height": 334,
+        "originalWidth": 959,
+        "originalHeight": 693
+      }
+    },
+    {
+      "sourcePage": 14,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57246/size7/294641b7a301d393dec39f8b2c6fa8b7.jpg",
+        "sha256": "daaef7742f752827c67d6c4e60164f7cef2d5faef95cfac2a0293a3807dd6403",
+        "illustrationId": 11728,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11728-experiment-lab-with-multiple-instruments",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 14: Experiment lab with multiple instruments , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《安娜的非凡天气实验》原书第14页的故事插图"
+    },
+    {
+      "sourcePage": 15,
+      "originalText": "安娜·玛妮（Anna Mani）成为印度最聪明的天气科学家之一。\n\n\n\n即使她长大了并且越来越知名，她最好的朋友仍然保持不变。\n\n\n\n书籍，书籍和更多的书籍！",
+      "text": "安娜·玛妮（Anna Mani）成为印度最聪明的天气科学家之一。\n即使长大后越来越有名，她最好的朋友仍然没有变。\n书籍，书籍和更多的书籍！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57296/size7/2ada2ec0e470558b2dab9577e6154ded.jpg",
+        "sha256": "bba3be7245357501aa251c0527b1b5b3a36965d9999b232b4f062db3dfbfb20a",
+        "illustrationId": 11734,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11734-woman-reading-a-book",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 15: Woman reading a book , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 29,
+        "width": 639,
+        "height": 658,
+        "originalWidth": 639,
+        "originalHeight": 687
+      }
+    },
+    {
+      "sourcePage": 16,
+      "originalText": "安娜的生活和时代：\n\n\n\n\n\n\n\n时间表1918年8月23日-安娜·玛妮（Anna Mani）出生在喀拉拉邦的佩尔梅杜（Peermedu）。\n\n\n\n\n\n1940年-她获得了在班加罗尔CV拉曼实验室工作的奖学金。\n\n\n\n\n\n1945年-她前往英国学习气象学。\n\n\n\n\n\n1948年-她回到印度并加入了浦那的印度气象局。",
+      "text": "安娜的生活和时代：\n1918年8月23日——安娜·玛妮（Anna Mani）出生在喀拉拉邦的佩尔梅杜（Peermedu）。\n1940年——她获得了在班加罗尔C. V. 拉曼实验室工作的奖学金。\n1945年——她前往英国学习气象学。\n1948年——她回到印度并加入了浦那的印度气象局。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57248/size7/403c460fff501a943d04661b7705fd17.jpg",
+        "sha256": "217624b5101fabb1bdd3cfc243e7983e05ecf535f56a63a6f99e7df4ddb2ea36",
+        "illustrationId": 11730,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11730-woman-a-baby-in-a-basket-buildings",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 16: Woman, a baby in a basket, buildings , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 16,
+        "y": 0,
+        "width": 457,
+        "height": 687,
+        "originalWidth": 479,
+        "originalHeight": 688
+      }
+    },
+    {
+      "sourcePage": 17,
+      "originalText": "1962年-她开始进行臭氧探空仪项目。\n\n\n\n\n\n\n\n\n\n1976年-她退休后担任印度气象局副局长。在\n\n\n\n\n\n\n\n\n\n980年代（确切年份未知）-她创办了自己的公司来生产自己的装置。\n\n\n\n\n\n\n\n\n\n2001年8月16日-安娜·玛妮（Anna Mani）在喀拉拉邦去世。",
+      "text": "1962年——她开始进行臭氧探空仪项目。\n1976年——她从印度气象局副局长的职位上退休。\n1980年代（确切年份未知）——她创办了自己的公司来生产自己的装置。\n2001年8月16日——安娜·玛妮（Anna Mani）在喀拉拉邦去世。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57249/size7/b03bc6a47add0331f666119b104711e8.jpg",
+        "sha256": "69af669e09fd6a0eccc8663ec1682322aa0bb8c6373585a75079dd9c71efa3e7",
+        "illustrationId": 11731,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11731-ozonesonde-a-house-an-instrument",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 17: Ozonesonde, a house, an instrument , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 36,
+        "y": 13,
+        "width": 405,
+        "height": 667,
+        "originalWidth": 479,
+        "originalHeight": 688
+      }
+    },
+    {
+      "sourcePage": 18,
+      "originalText": "关于天气的精彩用语\n\n\n\n\n\n气象学家（发音：'meet-your-all-o-jist'）：气象学家是研究某个地区的天气和气候的科学家。 安娜·玛尼（Anna Mani）是有史以来最厉害的气象学家之一。\n\n\n\n臭氧探空仪（发音：'oh-zone-sond'）：臭氧探空仪是高高地飞向天空的气球。 气球上有固定装置用来测量空气中的臭氧含量。 臭氧很重要，因为它可以阻挡来自阳光的有害光线。 空中的臭氧太少意味着我们有麻烦了！\n\n\n\n如果你可以成为一名科学家，你想学习什么？",
+      "text": "关于天气的精彩用语\n气象学家：气象学家是研究某个地区的天气和气候的科学家。 安娜·玛妮（Anna Mani）是有史以来最厉害的气象学家之一。\n臭氧探空仪：气球带着它飞上高空，测量空气中的臭氧含量。 臭氧很重要，因为它可以阻挡来自阳光的有害光线。 空中的臭氧太少意味着我们有麻烦了！\n如果你可以成为一名科学家，你想学习什么？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/57250/size7/04b5ef9a0e55fc66b869effa0876c18d.jpg",
+        "sha256": "caaf0948860c646583569579f53b8af712f0f0b8c3d86db7dd658588d2592f0b",
+        "illustrationId": 11732,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/11732-ozonesonde-a-woman-writing-on-paper",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 18: Ozonesonde, a woman writing on paper , by Priya Kuriyan © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 86,
+        "y": 53,
+        "width": 287,
+        "height": 594,
+        "originalWidth": 479,
+        "originalHeight": 688
+      }
+    }
+  ],
+  "sourceNotes": [
+    {
+      "sourcePage": 19,
+      "originalText": "备注这个故事是根据安娜·玛妮\n\n\n\n（Anna Mani）的生平创作的非小说类作品。",
+      "text": "备注：这个故事是根据安娜·玛妮（Anna Mani）的生平创作的非虚构作品。",
+      "kind": "author-note"
+    }
+  ],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：调整中文语序；去掉不合语境词；自然中文；人物对白自然表达；去翻译腔；自然主动语序；去赘词；量词冗余；去重复语序；断行引号修复；表达自然；纠正错误搭配；语气自然；区分仪器与运载气球，修正时态；统一姓名译写；中文语序；日期排版；姓名缩写排版；依据WMO纠正退休时间关系，恢复缺失年份首位；删除误导中文认字的英文谐音发音；统一姓名；修正装置与气球的关系，删除英文谐音；排版和出版术语。书末纯文字作者备注移入阅读页版权说明，原文与原页码保存在sourceNotes。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 2,
+      "before": "她的兄弟姐妹喊道。安娜出生于一个大家庭，住在一个山上的大房子。 但是在她的生日，她只有一个小愿望。",
+      "after": "她的兄弟姐妹喊道。安娜出生在一个大家庭，住在山上的一座大房子里。可在生日这天，她只有一个小愿望。",
+      "reason": "调整中文语序"
+    },
+    {
+      "sourcePage": 3,
+      "before": "安娜撕开了她的生日礼物，窥视着。",
+      "after": "安娜拆开生日礼物，往里面看。",
+      "reason": "去掉不合语境词"
+    },
+    {
+      "sourcePage": 3,
+      "before": "你知道安娜真的想要什么吗？",
+      "after": "你知道安娜真正想要什么吗？",
+      "reason": "自然中文"
+    },
+    {
+      "sourcePage": 4,
+      "before": "她的祖父指出：",
+      "after": "她的祖父说：",
+      "reason": "人物对白自然表达"
+    },
+    {
+      "sourcePage": 4,
+      "before": "她气呼呼地迈步进了房间。",
+      "after": "她气呼呼地走进房间。",
+      "reason": "去翻译腔"
+    },
+    {
+      "sourcePage": 5,
+      "before": "那天晚些时候，安娜的房间门被敲了一下。",
+      "after": "那天晚些时候，有人敲响了安娜的房门。",
+      "reason": "自然主动语序"
+    },
+    {
+      "sourcePage": 5,
+      "before": "取而代之的是，在她房间门口放了一个大盒子。",
+      "after": "门口只放着一个大盒子。",
+      "reason": "去赘词"
+    },
+    {
+      "sourcePage": 5,
+      "before": "这是一套全新的百科全书集！",
+      "after": "这是一套全新的百科全书！",
+      "reason": "量词冗余"
+    },
+    {
+      "sourcePage": 6,
+      "before": "多年之后，读过许多书之后，",
+      "after": "多年后，读过许多书的",
+      "reason": "去重复语序"
+    },
+    {
+      "sourcePage": 7,
+      "before": "“钻石？ 哎呀！\n”安娜说。",
+      "after": "“钻石？哎呀！”安娜说。",
+      "reason": "断行引号修复"
+    },
+    {
+      "sourcePage": 7,
+      "before": "它们是为了实验。",
+      "after": "它们是用来做实验的。",
+      "reason": "表达自然"
+    },
+    {
+      "sourcePage": 7,
+      "before": "钻石导致发光的原因",
+      "after": "钻石发光的原因",
+      "reason": "纠正错误搭配"
+    },
+    {
+      "sourcePage": 8,
+      "before": "果然成为科学家是最棒的！",
+      "after": "成为科学家真是太棒了！",
+      "reason": "语气自然"
+    },
+    {
+      "sourcePage": 11,
+      "before": "这是一个叫做臭氧探空仪的特殊气球。 它的尾端有一台固定的小机器。机器测量了在空气中发现的一种叫做臭氧的气体。",
+      "after": "这个特殊装置叫臭氧探空仪。气球带着一台小机器飞上天空，测量空气中一种叫臭氧的气体。",
+      "reason": "区分仪器与运载气球，修正时态"
+    },
+    {
+      "sourcePage": 13,
+      "before": "安娜·玛尼",
+      "after": "安娜·玛妮",
+      "reason": "统一姓名译写"
+    },
+    {
+      "sourcePage": 15,
+      "before": "即使她长大了并且越来越知名，她最好的朋友仍然保持不变。",
+      "after": "即使长大后越来越有名，她最好的朋友仍然没有变。",
+      "reason": "中文语序"
+    },
+    {
+      "sourcePage": 16,
+      "before": "时间表1918年8月23日-",
+      "after": "1918年8月23日——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 16,
+      "before": "1940年-",
+      "after": "1940年——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 16,
+      "before": "1945年-",
+      "after": "1945年——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 16,
+      "before": "1948年-",
+      "after": "1948年——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 16,
+      "before": "CV拉曼",
+      "after": "C. V. 拉曼",
+      "reason": "姓名缩写排版"
+    },
+    {
+      "sourcePage": 17,
+      "before": "1962年-",
+      "after": "1962年——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 17,
+      "before": "1976年-她退休后担任印度气象局副局长。在\n980年代（确切年份未知）-",
+      "after": "1976年——她从印度气象局副局长的职位上退休。\n1980年代（确切年份未知）——",
+      "reason": "依据WMO纠正退休时间关系，恢复缺失年份首位"
+    },
+    {
+      "sourcePage": 17,
+      "before": "2001年8月16日-",
+      "after": "2001年8月16日——",
+      "reason": "日期排版"
+    },
+    {
+      "sourcePage": 18,
+      "before": "气象学家（发音： 'meet-your-all-o-jist'）：",
+      "after": "气象学家：",
+      "reason": "删除误导中文认字的英文谐音发音"
+    },
+    {
+      "sourcePage": 18,
+      "before": "安娜·玛尼",
+      "after": "安娜·玛妮",
+      "reason": "统一姓名"
+    },
+    {
+      "sourcePage": 18,
+      "before": "臭氧探空仪（发音： 'oh-zone-sond'）：臭氧探空仪是高高地飞向天空的气球。 气球上有固定装置用来测量空气中的臭氧含量。",
+      "after": "臭氧探空仪：气球带着它飞上高空，测量空气中的臭氧含量。",
+      "reason": "修正装置与气球的关系，删除英文谐音"
+    },
+    {
+      "sourcePage": 19,
+      "before": "备注这个故事是根据安娜·玛妮\n（Anna Mani）的生平创作的非小说类作品。",
+      "after": "备注：这个故事是根据安娜·玛妮（Anna Mani）的生平创作的非虚构作品。",
+      "reason": "排版和出版术语"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.949858+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "“书籍，书籍和更多的书籍”反复出现，是长篇中的认读支点；从礼物、钻石、太阳扩展到气象仪器，适合亲子共读而非400字独立初读。",
+      "story": "生日不要首饰要书→钻石研究→制造天气仪器，人物愿望前后呼应，女性真实科学家题材补足现有书库。",
+      "visualProxy": "人物传记与实物气球交替，含无字跨页；待root核对全部原插画，不能据封面判定。"
+    },
+    "warnings": [
+      "保留真实人物生平，长姓名及百科附页需要家长陪读。",
+      "仅校订中文表述与可核实事实；“将近一百”沿用绘本概括，不作为精确历史统计。"
+    ],
+    "factChecks": [
+      {
+        "url": "https://wmo.int/media/news/celebrating-pioneer-indian-meteorologist-anna-mani",
+        "verified": "WMO确认Anna Mani在1940年师从拉曼研究钻石和红宝石光谱，1948年加入IMD，担任副局长并于1976年退休，设计制造多类气象仪器。"
+      },
+      {
+        "url": "https://mausam.imd.gov.in/imd_latest/contents/pdf/SOUVENIR.pdf",
+        "verified": "IMD官方150周年资料说明其指导气球搭载电化学臭氧探空仪，气球与检测仪器有别；1964年研制成功，与绘本1962年开始项目并不直接冲突。"
+      }
+    ]
+  }
+}

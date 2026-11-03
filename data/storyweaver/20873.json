@@ -1,0 +1,180 @@
+{
+  "id": "sw-20873",
+  "title": "我第一天上学",
+  "source": "https://storyweaver.org.in/en/stories/20873-rani-first-day-at-school",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Cheryl Rao",
+    "Illustrated by": "Mayur Mistry",
+    "Translated by": "Herobrine Ren"
+  },
+  "copyright": "原作 © Pratham Books , 2015；中文译文 © Herobrine Ren , 2017；插图 © Pratham Books, 2015。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/20873-rani-first-day-at-school",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Herobrine Ren , 2017",
+      "attributionText": "This story: 我第一天上学 is translated by Herobrine Ren . The © for this translation lies with Herobrine Ren , 2017. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Rani's First Day at School ' , by Cheryl Rao . © Pratham Books , 2015. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/20873-rani-first-day-at-school",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2015"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "Created by Zitang ren (11 years old) , with the help of Herobrine Ren.",
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 我第一天上学 is translated by Herobrine Ren . The © for this translation lies with Herobrine Ren , 2017. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Rani's First Day at School ' , by Cheryl Rao . © Pratham Books , 2015. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Girl going to school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 2: Girl holding mother's hand at school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 3: Children and vehicles outside building , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 4: Girl looking scared , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 5: Girl hugging mother , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 6: Girl and two women , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Page 7: Happy girl going to school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "我第一天上学 (Chinese (Simplified)) 罗尼第一天上学看到了什么？她感觉到什么？ This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1245/size7/341f6cc907866bb64a8c789f3f27d96e.jpg",
+    "sha256": "79bcec7e2f70c3335f61f350beb3820f2f02b425ceb31929f113f2ae9c4f3e50",
+    "illustrationId": 279,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/279-girl-going-to-school",
+    "copyright": "© Pratham Books, 2015",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Girl going to school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "今天是我第一天上学。\n\n妈妈握着我的手走着。\n\n“我现在长大了”我说。“快走吧！”\n\n妈妈把我的手握得紧紧地。",
+      "text": "今天是我第一天上学。\n妈妈握着我的手走着。\n“我现在长大了。”我说。“快走吧！”\n妈妈把我的手握得紧紧地。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1246/size7/f4d176ee155ecc04b5b41e7659a27149.jpg",
+        "sha256": "5d534287abeed1ba69fdbc8b9eb99d0037df3537fc0c218a342d8f5ae6e69357",
+        "illustrationId": 280,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/280-girl-holding-mother-s-hand-at-school",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Girl holding mother's hand at school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "学校附近有很多小孩。\n\n有的坐巴士来。有的父母开车来。\n\n有的坐三轮车。有的骑自行车来。\n\n有的像我一样走过来。",
+      "text": "学校附近有很多小孩。\n有的坐巴士来。有的父母开车来。\n有的坐三轮车。有的骑自行车来。\n有的像我一样走过来。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1247/size7/cd0778186f6e9e4a901f4513cefca304.jpg",
+        "sha256": "2f88ee09d2bf4b96be555fd07c56aa778131ffffeabcf0ee983621236ab30796",
+        "illustrationId": 281,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/281-children-and-vehicles-outside-building",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Children and vehicles outside building , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "我们到达校门时，妈妈松开我的手。\n\n她待在校门外面。我必须一个人进去。\n\n我周围有很多新面孔。",
+      "text": "我们到达校门时，妈妈松开我的手。\n她待在校门外面。我必须一个人进去。\n我周围有很多新面孔。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1248/size7/2d47b6ee6c91bc239e6d30262332ffd2.jpg",
+        "sha256": "3fd409b9785306a78ec8450f3007a6f812806fb9e9afc9a2119528ff79056598",
+        "illustrationId": 282,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/282-girl-looking-scared",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Girl looking scared , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "我往前走一步。我又往前走一步。\n\n我回头看着妈妈。她变的越来越小了。她会消失吗？\n\n我往回跑。我现在感觉不那么成熟了。\n\n我握住她的手。\n\n“别走”我说。",
+      "text": "我往前走一步。我又往前走一步。\n我回头看着妈妈。她变得越来越小了。她会消失吗？\n我往回跑。我这会儿觉得自己又变小了。\n我握住她的手。\n“别走。”我说。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1249/size7/e29771bf74c00222399d944390f410f7.jpg",
+        "sha256": "6e239641142ce058ed7e2c99679705648209654f7d471051aab368245bedc911",
+        "illustrationId": 283,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/283-girl-hugging-mother",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Girl hugging mother , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "所有的人都进去了。外面只剩下我一个人了。\n\n老师从里面走出来。她对我笑一笑。我对她笑一笑。\n\n妈妈说，“罗尼，你出来的时候我会在这儿等你的。”\n\n我松开她的手。她对我摆摆手。",
+      "text": "所有的人都进去了。外面只剩下我一个人了。\n老师从里面走出来。她对我笑一笑。我对她笑一笑。\n妈妈说：“罗尼，你出来的时候我会在这儿等你的。”\n我松开她的手。她对我摆摆手。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1250/size7/aabc27989e15ba7b1604488f52d86b31.jpg",
+        "sha256": "c783f273b2071dd90855d1e524992634d3bc75b2984c3f38f79792d2ee5978a4",
+        "illustrationId": 284,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/284-girl-and-two-women",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Girl and two women , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "我往里面跑去。我放学的时候，妈妈一定会在外面等我呢！",
+      "text": "我往里面跑去。我放学的时候，妈妈一定会在外面等我呢！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/1251/size7/0400eb4ceb025592a48339ad6d4de85c.jpg",
+        "sha256": "101df18c2e34ccac99759bfadb3e061a6f4dc6ea7acb3cab881b86546e1841f3",
+        "illustrationId": 285,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/285-happy-girl-going-to-school",
+        "copyright": "© Pratham Books, 2015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Happy girl going to school , by Mayur Mistry © Pratham Books, 2015. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对白标点；的得纠正；贴近幼儿感受的表达。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 2,
+      "before": "“我现在长大了”我说。",
+      "after": "“我现在长大了。”我说。",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 5,
+      "before": "变的",
+      "after": "变得",
+      "reason": "的得纠正"
+    },
+    {
+      "sourcePage": 5,
+      "before": "我现在感觉不那么成熟了。",
+      "after": "我这会儿觉得自己又变小了。",
+      "reason": "贴近幼儿感受的表达"
+    },
+    {
+      "sourcePage": 5,
+      "before": "“别走”我说。",
+      "after": "“别走。”我说。",
+      "reason": "对白标点"
+    },
+    {
+      "sourcePage": 6,
+      "before": "妈妈说，",
+      "after": "妈妈说：",
+      "reason": "对白标点"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.933861+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "妈妈、手、学校、走、跑等常用词在动作链里重复，句式自然，能用生活情境理解。",
+      "story": "自信出门→不舍害怕→老师微笑与妈妈承诺→自己跑进学校，细腻完整地回应入园分离情绪。",
+      "visualProxy": "重点是牵手与松手、妈妈远近及孩子表情，root需确认原图有这些细节，是情感图文的强候选。"
+    },
+    "warnings": []
+  }
+}

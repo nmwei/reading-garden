@@ -1,0 +1,512 @@
+{
+  "id": "sw-266466",
+  "title": "星光之旅",
+  "source": "https://storyweaver.org.in/en/stories/266466-the-starlight-adventure",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 3
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Parinita Shetty",
+    "Illustrated by": "Isha Mangalmurti, Upamanyu Bhattacharyya",
+    "Translated by": "Ivy Low"
+  },
+  "copyright": "原作 © Pratham Books , 2019；中文译文 © Jala , 2021；插图 © Pratham Books, 2019。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/266466-the-starlight-adventure",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Jala , 2021",
+      "attributionText": "This story: 星光之旅 is translated by Ivy Low . The © for this translation lies with Jala , 2021. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' The Starlight Adventure ' , by Parinita Shetty . © Pratham Books , 2019. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/266466-the-starlight-adventure",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2019"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 星光之旅 is translated by Ivy Low . The © for this translation lies with Jala , 2021. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' The Starlight Adventure ' , by Parinita Shetty . © Pratham Books , 2019. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Children looking at the stars , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 2: Girl holding a spaceship in her hand , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 3: Boy is holding a book in his hands , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 4: The spaceship is taking off , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 5: The constellation of monoceros , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 6: A unicorn is pointing , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 7: A flying spaceship in the sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 8: Constellations draco and cassiopeia , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 9: Constellation berenices hair , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 10: Constellation cygnus , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Images Attributions: Page 11: Constellation horologium , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 12: A girl is floating in space , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 13: A boy is floating in space , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 14: The constellations of draco, pegasus, hercules , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 15: Constellation sagittarius , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 16: Two children are sitting on an arrow , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 17: Children are lying in bed , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 18: Multiple constellations , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 19: Spaceship in sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Page 20: Girl and chappals floating in the sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "星光之旅 (Chinese (Simplified)) 奈娜和马达夫决定解决他们在外太空的分歧。他们最终遇到了许多奇怪的人物-从无法停止进食的独角兽到无法停止哭泣的龙。但是这些发光的生物是谁？一场太空冒险，将读者带入夜空中的星座。 This is a Level 3 book for children who are ready to read on their own. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120331/size7/1ae5a35a3cd899c8d215298e83758757.jpg",
+    "sha256": "4d685fb46b5fc167a9b5d54ddfe2c6506e1e4482b19f42b690f24c4ea7b6726b",
+    "illustrationId": 25932,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/25932-children-looking-at-the-stars",
+    "copyright": "© Pratham Books, 2019",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Children looking at the stars , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "月亮是由什么制成的呢？奈娜和马达夫有不同的看法。\n\n“它是外星人产下的一颗蛋。”奈娜说。",
+      "text": "月亮是由什么制成的呢？奈娜和马达夫有不同的看法。\n“它是外星人产下的一颗蛋。”奈娜说。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125090/size7/4ba77c14d8934354f644f12f7629cd97.jpg",
+        "sha256": "94f269bf2d88af3b016fdf8867b6db829d9f242423df0e7180f5cbc977e1284d",
+        "illustrationId": 26158,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26158-girl-holding-a-spaceship-in-her-hand",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Girl holding a spaceship in her hand , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 28,
+        "y": 180,
+        "width": 562,
+        "height": 509,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "“它是一个由奶酪做成的一粒球。”马达夫说。\n\n因此，他们决定一起探索真相。",
+      "text": "“它是一颗由奶酪做成的球。”马达夫说。\n因此，他们决定一起探索真相。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125091/size7/f7b5fe3cae19701518cd4f95a39def54.jpg",
+        "sha256": "24e31dcaf96df89d3553ba45810c088b1068fdb1eb51228cd4dad784faa58681",
+        "illustrationId": 26159,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26159-boy-is-holding-a-book-in-his-hands",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Boy is holding a book in his hands , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 337,
+        "y": 190,
+        "width": 609,
+        "height": 499,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "“我们最好赶在晚饭前回去。”马达夫说。“我们不想惹妈妈生气。”\n\n过了整整十一分钟后，他们迷路了。",
+      "text": "“我们最好赶在晚饭前回去。”马达夫说。“我们不想惹妈妈生气。”\n过了整整十一分钟后，他们迷路了。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125578/size7/f9aca2c42178efe5beb75669a387556d.jpg",
+        "sha256": "16278032b1916741447fdea4a8ed655261a30190be640bce02d2af4d50d1338e",
+        "illustrationId": 26163,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26163-the-spaceship-is-taking-off",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: The spaceship is taking off , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "“请问月亮在哪里呢？”他们向一只闪闪发亮的独角兽请示方向。\n\n“你为什么会闪闪发亮呢？”\n\n“你知道月亮是由什么制成的吗？”\n\n“而你又是由什么制成的呢？”",
+      "text": "“请问月亮在哪里呢？”他们向一只闪闪发亮的独角兽问路。\n“你为什么会闪闪发亮呢？”\n“你知道月亮是由什么制成的吗？”\n“而你又是由什么制成的呢？”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125579/size7/0e723f79e7cefb4e816c16e3b57e3bb0.jpg",
+        "sha256": "c73fecad1995ce774b65a030e67a56572c6311cc69615654dd8e798476f92eec",
+        "illustrationId": 26164,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26164-the-constellation-of-monoceros",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: The constellation of monoceros , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "那只独角兽没有时间回答他们的问题。\n\n吧唧吧唧！滋滋！啧啧！\n\n“如果我不继续吃东西的话，那么我就永远都无法变成一头漂亮的犀牛。”它说。\n\n奈娜和马达夫还没来得及反应，就听到远处传来响亮的啜泣声。\n\n哇！嗷嗷！",
+      "text": "那只独角兽没有时间回答他们的问题。\n吧唧吧唧！滋滋！啧啧！\n“如果我不继续吃东西的话，那么我就永远都无法变成一头漂亮的犀牛。”它说。\n奈娜和马达夫还没来得及反应，就听到远处传来响亮的啜泣声。\n哇！嗷嗷！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125580/size7/25f32615f309d059d5a1a32797518bef.jpg",
+        "sha256": "0d740d606882f171ae018e12facb9e8dedea11d722ae18b84cd94a045845fbed",
+        "illustrationId": 26165,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26165-a-unicorn-is-pointing",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: A unicorn is pointing , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "“我好苦哇！”那个声音哀嚎着。“我会不会永远被困在这里呢？”\n\n\n\n“别再呻吟了！”另外一个声音怒吼。\n\n\n\n“看来有人需要我们的帮助。”奈娜说。\n\n\n\n“我们可以成为天空中的英雄。”马达夫说。\n\n\n\n“小心前方的天鹅。”独角兽提醒他们，然后再继续吃东西。",
+      "text": "“我好苦哇！”那个声音哀嚎着。“我会不会永远被困在这里呢？”\n“别再呻吟了！”另外一个声音怒吼。\n“看来有人需要我们的帮助。”奈娜说。\n“我们可以成为天空中的英雄。”马达夫说。\n“小心前方的天鹅。”独角兽提醒他们，然后再继续吃东西。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125581/size7/d51865929c69de8e86da36efaf41ad64.jpg",
+        "sha256": "f9a1b541b419fb275f154d27a12a012829d68535d6b3eed6d34de838475e9223",
+        "illustrationId": 26166,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26166-a-flying-spaceship-in-the-sky",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: A flying spaceship in the sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "奈娜和马达夫看见令人吃惊的一幕。一位愤怒的女王正守着一座已经上了锁的高塔。一条正在哭泣的龙把头探出窗外。\n\n“你为什么要绑架那条龙呢？”\n\n“因为它是个可恶的贼！”女王大声地谩骂。“它趁我睡着的时候偷了我的头发，一直不肯还给我。”",
+      "text": "奈娜和马达夫看见令人吃惊的一幕。一位愤怒的女王正守着一座已经上了锁的高塔。\n一条正在哭泣的龙把头探出窗外。\n“你为什么要绑架那条龙呢？”\n“因为它是个可恶的贼！”女王大声地谩骂。“它趁我睡着的时候偷了我的头发，\n一直不肯还给我。”",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120339/size7/1a88dd60abc4ce4847922bd7b6ab0630.jpg",
+        "sha256": "ca9d157f4442f1a9a1827a51aab020c37dfa5df616f00d47e9c70bb3ca8a8d99",
+        "illustrationId": 25939,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/25939-constellations-draco-and-cassiopeia",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Constellations draco and cassiopeia , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "“我根本无法还给你！”那条龙哭着说。“实在是太危险了。”\n\n奈娜眼睛为之一亮。“每一个危险的地方，都是一个可以探险的地方。”\n\n“而每一次的探险，都需要一位勇敢的英雄！”马达夫说。\n\n“不只是一位。”奈娜说。“我们俩会帮你拿回你的头发！”\n\n那条龙答应告诉他们那一束头发的所在地。但是，它不愿意靠近。",
+      "text": "“我根本无法还给你！”那条龙哭着说。“实在是太危险了。”\n奈娜眼睛为之一亮。“每一个危险的地方，都是一个可以探险的地方。”\n“而每一次的探险，都需要一位勇敢的英雄！”马达夫说。\n“不只是一位。”奈娜说。“我们俩会帮你拿回你的头发！”\n那条龙答应告诉他们那一束头发的所在地。但是，它不愿意靠近。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120340/size7/cd3924b086ad5599736b757c47471ed0.jpg",
+        "sha256": "ff018b9e2eccb9e77762b94d81b8dd6df813b837f5a434fff030af1436e46320",
+        "illustrationId": 25940,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/25940-constellation-berenices-hair",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 9: Constellation berenices hair , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "“一条会喷火的龙竟然害怕一只天鹅。”奈娜一边说，一边摇头。\n\n“那只天鹅或许根本不知道头发已经被偷走了。”马达夫说。\n\n“我们直接叫它归还吧！”奈娜说。\n\n他们的计划并不顺利。\n\n扑棱！忒儿！砉！",
+      "text": "“一条会喷火的龙竟然害怕一只天鹅。”奈娜一边说，一边摇头。\n“那只天鹅或许根本不知道头发已经被偷走了。”马达夫说。\n“我们直接叫它归还吧！”奈娜说。\n他们的计划并不顺利。\n扑棱！忒儿！砉！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120341/size7/31acd403bffd4f413792fc59e03fc721.jpg",
+        "sha256": "dc5a14b49fdc72a914d368bf2550bfa659e249591097be8e727afdbe1fb019e3",
+        "illustrationId": 25941,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/25941-constellation-cygnus",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 10: Constellation cygnus , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 11,
+      "originalText": "那只天鹅张开翅膀后便袭击了飞船，然后追着飞船在空中绕。\n\n当他们成功摆脱了天鹅的时候，马达夫和奈娜的肚子已经饿得咕咕叫了。\n\n他们看了看天空中的时钟，然后倒抽了一口气。\n\n“我们已经迟到了，我们已经迟到了！”马达夫说。",
+      "text": "那只天鹅张开翅膀后便袭击了飞船，然后追着飞船在空中绕。\n当他们成功摆脱了天鹅的时候，马达夫和奈娜的肚子已经饿得咕咕叫了。\n他们看了看天空中的时钟，然后倒抽了一口气。\n“我们已经迟到了，我们已经迟到了！”马达夫说。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120342/size7/a598e63a8b1b5ee60d89cf31788b6742.jpg",
+        "sha256": "9f7e63f53c4da63bd78ba98ecf22b7c3293395bac9940da5c54c5b9583c212bf",
+        "illustrationId": 25942,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/25942-constellation-horologium",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 11: Constellation horologium , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 12,
+      "originalText": "他们让飞船加速航行。\n\n轰轰！轰轰！\n\n飞船的引擎发出了一声巨响，然后熄火了。\n\n嗒嗒！嘟嘟！",
+      "text": "他们让飞船加速航行。\n轰轰！轰轰！\n飞船的引擎发出了一声巨响，然后熄火了。\n嗒嗒！嘟嘟！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125582/size7/2ea033b4c7a6cfc270893b50f5dff30f.jpg",
+        "sha256": "35f64cfc12e8b127e59a25d76c0c39540f64cc1fb52b512e4557447161303432",
+        "illustrationId": 26167,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26167-a-girl-is-floating-in-space",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 12: A girl is floating in space , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 13,
+      "originalText": "那两姐弟惊慌失措。\n\n“我们被困在这里了！”\n\n“我们该怎么回家呢？”\n\n“妈妈一定会很生气的！”\n\n“我好饿啊！”\n\n他们向星星求助。",
+      "text": "那两姐弟惊慌失措。\n“我们被困在这里了！”\n“我们该怎么回家呢？”\n“妈妈一定会很生气的！”\n“我好饿啊！”\n他们向星星求助。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125583/size7/ef538fbf4d3bb8547f5ff87a2be96752.jpg",
+        "sha256": "965e1f97ae5875a37c922ac344e1e7578a1560fe495b286142574578b5c1465a",
+        "illustrationId": 26168,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26168-a-boy-is-floating-in-space",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 13: A boy is floating in space , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 14,
+      "originalText": "那条龙已经哭到鼻塞了。因此，他们不能乘着它的火焰回家。\n\n一只飞马已经把它的翅膀送到干洗店了。因此，它无法载他们回家。\n\n太空中最强壮的人发生了意外，他手臂的骨骼已经断裂了。因此，他不能把他们抛回家。\n\n“我们完蛋了！”\n\n不过，那条龙想到了一个办法。",
+      "text": "那条龙已经哭到鼻塞了。因此，他们不能乘着它的火焰回家。\n一只飞马已经把它的翅膀送到干洗店了。因此，它无法载他们回家。\n太空中最强壮的人发生了意外，他手臂的骨骼已经断裂了。因此，他不能把他们抛回家。\n“我们完蛋了！”\n不过，那条龙想到了一个办法。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125586/size7/08f0cef7e8281d20cad603808bdb3a72.jpg",
+        "sha256": "96207ac9938a9717fb87b46ec648ee5d4996fa9639c8b27aa59bf63da9160528",
+        "illustrationId": 26169,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26169-the-constellations-of-draco-pegasus-hercules",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 14: The constellations of draco, pegasus, hercules , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 15,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/120351/size7/d2fc7db5ae04cf1e4153124a3bc78d56.jpg",
+        "sha256": "d2c2f234731bf070f32a51d62b9db0247840c69b431e8f8a7318449550c13c01",
+        "illustrationId": 25948,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/25948-constellation-sagittarius",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 15: Constellation sagittarius , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《星光之旅》原书第15页的故事插图"
+    },
+    {
+      "sourcePage": 16,
+      "originalText": "他们俩爬上了一个像箭一样的东西。那一艘人马火箭瞄准了方向，把他们带到家门前 。",
+      "text": "他们俩爬上了一个像箭一样的东西。那一艘人马火箭瞄准了方向，把他们带到家门前。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125587/size7/fef460ac391d8ec5bc8f876940585932.jpg",
+        "sha256": "9c110f7b6f789f724336fa2f5449439d7ef07747464dae08b7ca8c477c366503",
+        "illustrationId": 26170,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26170-two-children-are-sitting-on-an-arrow",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 16: Two children are sitting on an arrow , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 17,
+      "originalText": "“我们并没有找出月球是由什么制成的。”马达夫说。\n\n“谁在乎这件事呢？我想知道星星是由什么制成的！”奈娜说。她的眼里只有另一场探险。",
+      "text": "“我们并没有找出月球是由什么制成的。”马达夫说。\n“谁在乎这件事呢？我想知道星星是由什么制成的！”奈娜说。她的眼里只有另一场探险。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/125740/size7/4567491bb52d5c0d5a13632eadb1c32c.jpg",
+        "sha256": "9e1e952b84ddafdbd408f3eaad021c231ac0f2e077e97b46b79e3c66a213f9f1",
+        "illustrationId": 26215,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26215-children-are-lying-in-bed",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 17: Children are lying in bed , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 176,
+        "width": 945,
+        "height": 513,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 18,
+      "originalText": "来认识那些星座与它们的象征\n\n1. 麒麟座 - 独角兽\n\n2. 天龙座 - 龙\n\n3. 仙后座 - 女王\n\n4. 天鹅座 - 天鹅\n\n5. 后发座 - 女王的头发\n\n6. 时钟座 - 时钟\n\n7. 飞马座 - 飞马\n\n8. 武仙座 - 强壮的人\n\n9. 射手座 - 箭",
+      "text": "来认识那些星座与它们的象征\n1. 麒麟座 - 独角兽\n2. 天龙座 - 龙\n3. 仙后座 - 女王\n4. 天鹅座 - 天鹅\n5. 后发座 - 女王的头发\n6. 时钟座 - 时钟\n7. 飞马座 - 飞马\n8. 武仙座 - 强壮的人\n9. 射手座 - 箭",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/127994/size7/871b19d3a163ab864052cc7bddfdeccd.jpg",
+        "sha256": "6118ad3c750986c1012ed1dfd8cf9d2a3bb3b810b692714bb558e37fa96de0b4",
+        "illustrationId": 26410,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26410-multiple-constellations",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 18: Multiple constellations , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 0,
+        "y": 91,
+        "width": 613,
+        "height": 498,
+        "originalWidth": 959,
+        "originalHeight": 689
+      },
+      "imageLabels": [
+        {
+          "text": "1",
+          "sourcePosition": {
+            "left": 7.76,
+            "top": 21.32,
+            "unit": "percent of original page"
+          },
+          "x": 12.14003,
+          "y": 11.22386
+        },
+        {
+          "text": "2",
+          "sourcePosition": {
+            "left": 5.08,
+            "top": 50.0,
+            "unit": "percent of original page"
+          },
+          "x": 7.94734,
+          "y": 50.90361
+        },
+        {
+          "text": "3",
+          "sourcePosition": {
+            "left": 9.45,
+            "top": 69.65,
+            "unit": "percent of original page"
+          },
+          "x": 14.78393,
+          "y": 78.09006
+        },
+        {
+          "text": "4",
+          "sourcePosition": {
+            "left": 29.09,
+            "top": 29.17,
+            "unit": "percent of original page"
+          },
+          "x": 45.50948,
+          "y": 22.0846
+        },
+        {
+          "text": "5",
+          "sourcePosition": {
+            "left": 23.87,
+            "top": 52.55,
+            "unit": "percent of original page"
+          },
+          "x": 37.34312,
+          "y": 54.43163
+        },
+        {
+          "text": "6",
+          "sourcePosition": {
+            "left": 37.71,
+            "top": 19.64,
+            "unit": "percent of original page"
+          },
+          "x": 58.99493,
+          "y": 8.89952
+        },
+        {
+          "text": "7",
+          "sourcePosition": {
+            "left": 50.84,
+            "top": 31.53,
+            "unit": "percent of original page"
+          },
+          "x": 79.53599,
+          "y": 25.34974
+        },
+        {
+          "text": "8",
+          "sourcePosition": {
+            "left": 48.16,
+            "top": 50.2,
+            "unit": "percent of original page"
+          },
+          "x": 75.3433,
+          "y": 51.18032
+        },
+        {
+          "text": "9",
+          "sourcePosition": {
+            "left": 38.98,
+            "top": 65.6,
+            "unit": "percent of original page"
+          },
+          "x": 60.98176,
+          "y": 72.48675
+        }
+      ]
+    },
+    {
+      "sourcePage": 19,
+      "originalText": "天空中的形状\n\n\n\n当你望向天空时，一系列的星星所形成的形状就是星座。\n\n\n\n那些形状是由最闪亮的那几颗星星所组成。那些形状大不相同，有些是动物，有些是物品，有些是神话人物，有些是神，有些则是古代神话里的场景。",
+      "text": "天空中的形状\n当你望向天空时，一系列的星星所形成的形状就是星座。\n那些形状是由最闪亮的那几颗星星所组成。那些形状大不相同，有些是动物，有些是物品，有些是神话人物，有些是神，有些则是古代神话里的场景。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/126540/size7/cd43a2b9e8da08d55e1f56361caa8679.jpg",
+        "sha256": "9edef43418174e6274bcc7385bf633f72274ccb0fe4b9ba7832d2d6110b54263",
+        "illustrationId": 26217,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26217-spaceship-in-sky",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 19: Spaceship in sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 728,
+        "y": 18,
+        "width": 226,
+        "height": 164,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 20,
+      "originalText": "在1922年，天文学家把天空划分为88个星座。\n\n\n\n星座的用途是为了帮助人们识别天空中的星星。在远古时代，星座就像是日历，让人们知道什么时候应该播种和收割农作物。水手和旅行的人都靠星座来辨别方向。\n\n\n\n如果你在夜空中找不到这本书所叙述的星座，别担心，那是因为星座的真实样貌不一定是你想象中的那个形状。或许一张星图可以帮助你找到那些在夜空中的星座。",
+      "text": "1922年，国际天文学联合会确定了88个星座的名单。\n星座的用途是为了帮助人们识别天空中的星星。在远古时代，星座就像是日历，让人们知道什么时候应该播种和收割农作物。水手和旅行的人都靠星座来辨别方向。\n如果你在夜空中找不到这本书所叙述的星座，别担心，那是因为星座的真实样貌不一定是你想象中的那个形状。或许一张星图可以帮助你找到那些在夜空中的星座。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/126549/size7/d2c753eefa11bcbe0a5aadfad9dd9f5b.jpg",
+        "sha256": "fee5385e0bc7550cf5f607fc37f0629d673c7a197f481a341d549de79805ccb3",
+        "illustrationId": 26295,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/26295-girl-and-chappals-floating-in-the-sky",
+        "copyright": "© Pratham Books, 2019",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 20: Girl and chappals floating in the sky , by Upamanyu Bhattacharyya , Isha Mangalmurti © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 47,
+        "y": 422,
+        "width": 320,
+        "height": 267,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：量词和句法；去掉不合儿童语境的用词；中文标点空白；区分1922年确定名单和后来正式划分边界，依据IAU官方说明；独立数字1～9为图片定位标注，已作为imageLabels保留在图上，不重复放入正文；星座对照表文字完整保留。。原稿分离的图示数字按原位置显示，图片原文件不变。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 3,
+      "before": "一个由奶酪做成的一粒球",
+      "after": "一颗由奶酪做成的球",
+      "reason": "量词和句法"
+    },
+    {
+      "sourcePage": 5,
+      "before": "请示方向",
+      "after": "问路",
+      "reason": "去掉不合儿童语境的用词"
+    },
+    {
+      "sourcePage": 16,
+      "before": "家门前 。",
+      "after": "家门前。",
+      "reason": "中文标点空白"
+    },
+    {
+      "sourcePage": 20,
+      "before": "在1922年，天文学家把天空划分为88个星座。",
+      "after": "1922年，国际天文学联合会确定了88个星座的名单。",
+      "reason": "区分1922年确定名单和后来正式划分边界，依据IAU官方说明"
+    },
+    {
+      "sourcePage": 18,
+      "reason": "独立数字1～9为图片定位标注，已作为imageLabels保留在图上，不重复放入正文；星座对照表文字完整保留。"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.947491+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "问答、方向、情绪、飞船动作词丰富；拟声词适合亲子分角色读，星座名可在后续认识。",
+      "story": "找月亮→助人→天鹅追逐→引擎故障→回家的完整冒险，角色古怪幽默，结尾保留好奇心。",
+      "visualProxy": "两位绘者Isha Mangalmurti/Upamanyu Bhattacharyya，星座与角色对照页；root另验图风格统一性。"
+    },
+    "warnings": [
+      "幻想里有困龙、天鹅追逐与骨折一句，非恐怖，家长可先看是否适合孩子。",
+      "星座图案是人类想象，不是太空中真有独角兽和高塔；原书附录有解释。"
+    ],
+    "factChecks": [
+      {
+        "claim": "1922年确定88星座名单",
+        "source": "https://iauarchive.eso.org/public/themes/constellations/",
+        "finding": "IAU第一届大会1922年同意88星座名单，修正原文“划分”年份过于笼统。"
+      }
+    ]
+  }
+}

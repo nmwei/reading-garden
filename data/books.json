@@ -3258,5 +3258,5563 @@
         "audio": "assets/books/0262/17.mp3"
       }
     ]
+  },
+  {
+    "id": "sw-92448",
+    "title": "绘画游戏",
+    "tag": "生活发现",
+    "color": "peach",
+    "intro": "一个圆、一个三角形，能变出什么新朋友？",
+    "keywords": [
+      "圆形",
+      "三角形",
+      "正方形"
+    ],
+    "question": "拿起纸和笔，和家长一起用圆形、三角形和正方形画一幅画吧。",
+    "source": "https://storyweaver.org.in/en/stories/92448-huihua-youxi",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Anitha Murthy",
+      "Illustrated by": "Ajanta Guhathakurta",
+      "Translated by": "Jala Community",
+      "Original publisher": "Pratham Books",
+      "Translation publisher": "Jala"
+    },
+    "copyright": "原作及插图 © Pratham Books, 2018；中文译文 © Jala, 2019。",
+    "changes": "沿用完整故事及书后活动；整理空白与标点，修正引号，并将“有四个边的形状”改为“一个有四条边的形状”；插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。未提供故事录音，单字声音来自设备。",
+    "narration": "none",
+    "cover": "assets/books/sw-92448/01.jpg",
+    "pages": [
+      {
+        "text": "吉努在她奶奶家过暑假。吉努说：“奶奶，陪我玩！”她在这里没有朋友，觉得好无聊。奶奶说：“去拿一块粉笔，我们来玩个游戏。”",
+        "image": "assets/books/sw-92448/02.jpg",
+        "imageFrame": {
+          "x": 103,
+          "y": 167,
+          "width": 530,
+          "height": 522,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "吉努很兴奋。奶奶会和她玩什么游戏呢？奶奶画了一个形状。她问：“猜猜这是什么？”吉努不高兴地回答：“这是个圆形。”她不喜欢这个无聊的游戏。",
+        "image": "assets/books/sw-92448/03.jpg",
+        "imageFrame": {
+          "x": 176,
+          "y": 0,
+          "width": 592,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "奶奶说：“是的，但是圆形也可以变出更多东西。”吉努想了一下，然后笑了。“这是一个笑脸！”她说道。奶奶拍拍手，说：“很好，你知道怎么玩这个游戏！”",
+        "image": "assets/books/sw-92448/04.jpg",
+        "imageFrame": {
+          "x": 558,
+          "y": 277,
+          "width": 401,
+          "height": 412,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "“奶奶，你看，我画了什么！”吉努说道。\n\n活动：你能用三个圆形画出什么呢？",
+        "image": "assets/books/sw-92448/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 2,
+          "width": 959,
+          "height": 514,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "奶奶画了另一个形状。“是三角形！”吉努喊道。然后她笑了。",
+        "image": "assets/books/sw-92448/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 420,
+          "height": 368,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "“奶奶，你看，我画了什么！”",
+        "image": "assets/books/sw-92448/07.jpg",
+        "imageFrame": {
+          "x": 339,
+          "y": 292,
+          "width": 603,
+          "height": 397,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "“吉努，做得好！”奶奶说道。“你看，谁来和我们一起玩了？”\n\n活动：你可以用三个圆形和四个三角形画出什么？",
+        "image": "assets/books/sw-92448/08.jpg",
+        "imageFrame": {
+          "x": 97,
+          "y": 0,
+          "width": 703,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "奶奶画了一个有四条边的形状。“这是一个长方形吗？”吉努问道。奶奶回答：“你仔细看，所有的边都一样长。”\n\n“这是一个正方形！嗯……奶奶，你看，我画了个窗口。”",
+        "image": "assets/books/sw-92448/09.jpg",
+        "imageFrame": {
+          "x": 179,
+          "y": 6,
+          "width": 573,
+          "height": 453,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "“你要在窗口旁边画一棵树吗？”奶奶问她。“是的，奶奶，谢谢你！”吉努说。她看着所有的粉笔画。她现在可以上色了吗？\n\n活动：你可以用一个三角形和一个长方形画出什么？",
+        "image": "assets/books/sw-92448/10.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 639,
+          "height": 627,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "不久，吉努举起了她的画。“哇，好多圆形、三角形和正方形！”奶奶说道。",
+        "image": "assets/books/sw-92448/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 674,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“嗯，奶奶，不止这样！这里有一只鸟，正在飞回树上的家。还有，你猜，谁来一起吃午饭？”",
+        "image": "assets/books/sw-92448/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "奶奶称赞她：“吉努，你好聪明啊！”吉努还想要画更多。她和奶奶接下来会画什么呢？\n\n活动：你可以用圆形、三角形和正方形画出什么？",
+        "image": "assets/books/sw-92448/13.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 2,
+          "width": 959,
+          "height": 457,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 13
+      }
+    ]
+  },
+  {
+    "id": "sw-18453",
+    "title": "猴子遇干旱",
+    "intro": "小猴子找到果子丰盛的树林，大家却为了谁能住下来吵了起来。",
+    "keywords": [
+      "森林",
+      "家人",
+      "分享"
+    ],
+    "question": "新来的猴子和原来的猴子，怎样才能一起生活？",
+    "tag": "想象天地",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/18453-hou-zi-yu-gan-han",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "African Storybook Initiative",
+      "Written by": "Alice Edui",
+      "Illustrated by": "Salim Kasamba",
+      "Translated by": "voodoojelly ~"
+    },
+    "copyright": "原作 © African Storybook Initiative , 2016；中文译文 © voodoojelly ~ , 2017；插图 © African Storybook Initiative, 2016。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：多余空格；树林量词；漏字和空格；的得纠正；空格；量词重复；的地纠正。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-18453/01.jpg",
+    "pages": [
+      {
+        "text": "我们这儿出现干旱，已经很久没下雨了。",
+        "image": "assets/books/sw-18453/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "小猴子决定出外寻找水源和果实。",
+        "image": "assets/books/sw-18453/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "她翻越了高山与山谷。",
+        "image": "assets/books/sw-18453/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "最后终于找到了一片叫做“迪尔科”的树林。",
+        "image": "assets/books/sw-18453/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "小猴子找到了树林，高兴极了！",
+        "image": "assets/books/sw-18453/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "她将树林里的水果都尝了一遍，吃得肚子都变得圆嘟嘟的。\n虽然日子过得很开心，但是她开始想念起自己的朋友和家人。",
+        "image": "assets/books/sw-18453/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "所以小猴子决定回家，把这好消息告诉其他人。",
+        "image": "assets/books/sw-18453/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "猴子们见到小猴子回来，都兴奋不已。",
+        "image": "assets/books/sw-18453/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "他们问道：“这充满新鲜水果的树林究竟在哪儿？”",
+        "image": "assets/books/sw-18453/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "小猴子便说：“走吧！我带路，让你们也瞧瞧那地方！”",
+        "image": "assets/books/sw-18453/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "猴子们一到达迪尔科森林，就爱上那儿，决定住下来。",
+        "image": "assets/books/sw-18453/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "但是，原本就住在迪尔科里的猴子们开始担心了起来。",
+        "image": "assets/books/sw-18453/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "他们纷纷说道：“这一群新来的猴子们，会把这儿的水果都吃光！”",
+        "image": "assets/books/sw-18453/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "说完，迪尔科的猴子们便主动开始攻击新来的猴子！",
+        "image": "assets/books/sw-18453/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "这时，树上传来了一个年迈的猴子的声音，他说：“为什么要起争执？ 这儿的水果多的是，我们一起分享也不会造成什么问题呀。”",
+        "image": "assets/books/sw-18453/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "猴子们听了听，觉得老猴子说的也有道理。\n最后，他们都决定分享森林里的水果，和和气气地生活在一起。",
+        "image": "assets/books/sw-18453/17.jpg",
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-18612",
+    "title": "忙碌的蚂蚁",
+    "intro": "跟着一只小蚂蚁排队、找食物，发现小个子的大本领。",
+    "keywords": [
+      "蚂蚁",
+      "气味",
+      "队伍"
+    ],
+    "question": "蚂蚁用什么办法告诉同伴哪里有食物？",
+    "tag": "自然探索",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/18612-mang-lu-de-ma-yi",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Kanchan Bannerjee",
+      "Illustrated by": "Deepa Balsavar",
+      "Translated by": "Yu Wu"
+    },
+    "copyright": "原作 © Pratham Books , 2015；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2015。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：保留化学交流重点，去掉蚂蚁完全无声/与所有其他动物不同的绝对化；自然儿童中文；量词自然。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-18612/01.jpg",
+    "pages": [
+      {
+        "text": "你好，我是这条队伍里的第四个。你能看到我吗？",
+        "image": "assets/books/sw-18612/02.jpg",
+        "imageFrame": {
+          "x": 91,
+          "y": 0,
+          "width": 794,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "左，右，左，右。我们安安静静地排成一条线走。",
+        "image": "assets/books/sw-18612/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "啊，我有个好主意！我去找一对轮子，就可以走得更快了！",
+        "image": "assets/books/sw-18612/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 39,
+          "width": 479,
+          "height": 629,
+          "originalWidth": 479,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "我们常常用气味传递消息。那就是我们的“语言”。",
+        "image": "assets/books/sw-18612/05.jpg",
+        "imageFrame": {
+          "x": 82,
+          "y": 0,
+          "width": 783,
+          "height": 457,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "一种气味在说：“跟我这边走，有大餐！”",
+        "image": "assets/books/sw-18612/06.jpg",
+        "imageFrame": {
+          "x": 15,
+          "y": 15,
+          "width": 464,
+          "height": 665,
+          "originalWidth": 479,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "另一种气味代表：“危险！别去那里！”",
+        "image": "assets/books/sw-18612/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "我喜欢蛋糕和各种甜点，就跟你一样。",
+        "image": "assets/books/sw-18612/08.jpg",
+        "imageFrame": {
+          "x": 57,
+          "y": 8,
+          "width": 814,
+          "height": 449,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "你想看看我的力气吗？我看起来很小，可是很强壮！",
+        "image": "assets/books/sw-18612/09.jpg",
+        "imageFrame": {
+          "x": 38,
+          "y": 20,
+          "width": 441,
+          "height": 651,
+          "originalWidth": 479,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "就算门是关着的也没关系，我可以从最小的缝隙里钻过。",
+        "image": "assets/books/sw-18612/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "不管你信不信，我们是群居动物，成百上千只蚂蚁快乐地生活在一起。",
+        "image": "assets/books/sw-18612/11.jpg",
+        "imageFrame": {
+          "x": 46,
+          "y": 0,
+          "width": 397,
+          "height": 229,
+          "originalWidth": 479,
+          "originalHeight": 229
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "让我们学一些新词：\n小 - 大\n慢 - 快\n矮 - 高\n瘦 - 胖\n硬 - 软\n吵 - 静\n这里是一些反义词对子，你可以用每一对反义词造个句子吗？\n比如说，蚂蚁很小，大象很大。\n“像蚂蚁一样忙碌”，常常用来形容一个辛勤工作的人。",
+        "image": "assets/books/sw-18612/12.jpg",
+        "imageFrame": {
+          "x": 16,
+          "y": 174,
+          "width": 442,
+          "height": 346,
+          "originalWidth": 479,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      }
+    ]
+  },
+  {
+    "id": "sw-18671",
+    "title": "我不害怕！",
+    "intro": "夜里，小女孩听见声音、看见影子，慢慢认出了熟悉的人和物。",
+    "keywords": [
+      "黑夜",
+      "声音",
+      "姐姐"
+    ],
+    "question": "女孩最初以为什么在外面？后来又认出了谁？",
+    "tag": "成长故事",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/18671-wo-bu-hai-pa",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Mini Shrinivasan",
+      "Illustrated by": "Rayika Sen",
+      "Translated by": "Yu Wu"
+    },
+    "copyright": "原作 © Pratham Books , 2013；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2013。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-18671/01.jpg",
+    "pages": [
+      {
+        "text": "我是个大女孩。我独自走出家门。",
+        "image": "assets/books/sw-18671/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "真黑！有人在吗？你是谁？",
+        "image": "assets/books/sw-18671/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "哦，只是一只猫。我不害怕。",
+        "image": "assets/books/sw-18671/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "我看到外面有个大大的黑色的东西！这是什么？",
+        "image": "assets/books/sw-18671/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "哦，只是一口井。我不害怕。",
+        "image": "assets/books/sw-18671/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "还有这个声音？哗啦，哗啦，哗啦！这是什么？",
+        "image": "assets/books/sw-18671/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "只是我的姐姐从井里打水。我不害怕。",
+        "image": "assets/books/sw-18671/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "我听到脚步声！是谁？是谁？",
+        "image": "assets/books/sw-18671/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "是我的母亲。她从田里回到家。",
+        "image": "assets/books/sw-18671/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "现在我是个大女孩了。",
+        "image": "assets/books/sw-18671/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "我什么也不怕！",
+        "image": "assets/books/sw-18671/12.jpg",
+        "sourcePage": 12
+      }
+    ]
+  },
+  {
+    "id": "sw-19019",
+    "title": "伦蒂：做梦的女孩",
+    "intro": "伦蒂去打水，脚丫往前走，脑袋里却总冒出奇妙的想象。",
+    "keywords": [
+      "天空",
+      "想象",
+      "回家"
+    ],
+    "question": "伦蒂在云里看见了什么？你望着天空时会想到什么？",
+    "tag": "想象冒险",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/19019-lun-di-zuo-meng-de-nv-hai",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Book Dash",
+      "Written by": "Nathalie Koenig",
+      "Illustrated by": "Lauren Holliday",
+      "Translated by": "Yichen Huang"
+    },
+    "copyright": "原作 © Book Dash , 2015；中文译文 © Yichen Huang , 2017；插图 © Lauren Holliday, 2015。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：root核对原图为小女孩抱桶躬身通过门槛，非爬过房顶；修正动作误译。。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-19019/01.jpg",
+    "pages": [
+      {
+        "text": "伦蒂是一个爱做梦的女孩。望着天空，她看到的不是云朵。",
+        "image": "assets/books/sw-19019/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "伦蒂看到的是飞翔的大鹅，跳跃的小鱼，还有毛茸茸的绵羊们奔跑着回家。",
+        "image": "assets/books/sw-19019/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "有一天下午，戈高走了出来，她看上去很疲惫。\n“伦蒂，别再做梦了！”她说道，“你现在该去打水了。”",
+        "image": "assets/books/sw-19019/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "伦蒂站起身来，笑着盯着她的脚丫。\n“我们走吧，脚丫！你知道怎么去那儿！”",
+        "image": "assets/books/sw-19019/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "伦蒂向水龙头走去。她蹦蹦跳跳跃过路上的石头。",
+        "image": "assets/books/sw-19019/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 98,
+          "width": 639,
+          "height": 592,
+          "originalWidth": 639,
+          "originalHeight": 690
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "她悄悄穿过奈莉妈妈的屋子。",
+        "image": "assets/books/sw-19019/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "她沿着小路飞奔。\n水龙头前排着很长的队。“噢不！”伦蒂对着她的脚丫说道。",
+        "image": "assets/books/sw-19019/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 101,
+          "width": 639,
+          "height": 589,
+          "originalWidth": 639,
+          "originalHeight": 690
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "“我们必须得等着啦。让我们好好排队吧。不能再胡思乱想了！”",
+        "image": "assets/books/sw-19019/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "噢！伦蒂想。\n但是那边那个闪闪发亮的东西是什么呢？会不会是有人丢了一只鞋？",
+        "image": "assets/books/sw-19019/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "它的主人会是一个像我一样的女孩吗？\n或者别的什么…",
+        "image": "assets/books/sw-19019/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "在那里的又是什么呢？\n叽！叽！",
+        "image": "assets/books/sw-19019/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "还有那个大大的影子又是什么？啊噢！那是戈高！\n“伦蒂，你的水桶几乎已经要滚走了！”\n“对不起，戈高。我又沉迷在梦里了。”",
+        "image": "assets/books/sw-19019/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "于是她们一起灌满了水桶。伦蒂看着巨大的太阳沉入了山丘里。\n“我们走吧，我的爱做梦的女孩。”戈高说道。",
+        "image": "assets/books/sw-19019/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-19019/15.jpg",
+        "wordless": true,
+        "imageAlt": "《伦蒂：做梦的女孩》原书第15页的故事插图",
+        "sourcePage": 15
+      },
+      {
+        "text": "“看，戈高！天上有一只粉红色的猪！”\n“噢伦蒂……那只是一朵云。”戈高叹了一声气。\n伦蒂牵起了戈高的手，然后她们高兴地走回了家。",
+        "image": "assets/books/sw-19019/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-19019/17.jpg",
+        "imageFrame": {
+          "x": 339,
+          "y": 204,
+          "width": 283,
+          "height": 283,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "wordless": true,
+        "imageAlt": "《伦蒂：做梦的女孩》原书第17页的故事插图",
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-19271",
+    "title": "我的鱼！不，我的鱼！",
+    "intro": "拉加和兰姆抢着钓大鱼，却被鱼儿们开了个玩笑。",
+    "keywords": [
+      "池塘",
+      "钓鱼",
+      "朋友"
+    ],
+    "question": "你猜到鱼竿为什么断了吗？鱼儿想出了什么办法？",
+    "tag": "想象天地",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/19271-wo-de-yu-bu-wo-de-yu",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Suraj J Menon",
+      "Illustrated by": "Soumya Menon",
+      "Translated by": "Yu Wu"
+    },
+    "copyright": "原作 © Pratham Books , 2014；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2014。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对白引号；修复引号方向和句号；动作词准确。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-19271/01.jpg",
+    "pages": [
+      {
+        "text": "一个温暖的早晨，拉加打着哈欠醒来，他对自己说：“钓鱼去！”",
+        "image": "assets/books/sw-19271/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "在去池塘的路上，他遇到了好朋友兰姆，他邀请兰姆一起去池塘。",
+        "image": "assets/books/sw-19271/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "西塔看到他们去钓鱼。男孩们问她想不想和他们一起去。",
+        "image": "assets/books/sw-19271/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "西塔想了想，她说：“别去，鱼儿离开水会死的。”",
+        "image": "assets/books/sw-19271/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 41,
+          "width": 959,
+          "height": 903,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "他们没有理会她，继续走向池塘。",
+        "image": "assets/books/sw-19271/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 39,
+          "width": 959,
+          "height": 905,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "拉加和兰姆坐在池塘边，他们看见鱼儿在水里跳跃，一只很瘦，一只胖胖的。",
+        "image": "assets/books/sw-19271/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 88,
+          "width": 959,
+          "height": 856,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "又游来第三条鱼。他们从没见过这么大的鱼。西塔说：“这条鱼比我父亲的脚还大！”",
+        "image": "assets/books/sw-19271/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 21,
+          "width": 959,
+          "height": 923,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "拉加和兰姆拿出他们的钓鱼竿，使劲想钓起这条鱼。\n兰姆说：“它是我的！”\n拉加说：“不，它是我的！”",
+        "image": "assets/books/sw-19271/09.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 167,
+          "width": 959,
+          "height": 777,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "拉加拉着鱼竿，兰姆拉得更用力。",
+        "image": "assets/books/sw-19271/10.jpg",
+        "imageFrame": {
+          "x": 27,
+          "y": 21,
+          "width": 906,
+          "height": 766,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "嘭！他们摔倒在地上，原来他们的钓鱼竿断了。",
+        "image": "assets/books/sw-19271/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 68,
+          "width": 959,
+          "height": 819,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "你知道为什么吗？\n猜猜看？\n鱼儿们把他们的钓鱼竿系在了一起！",
+        "image": "assets/books/sw-19271/12.jpg",
+        "imageFrame": {
+          "x": 3,
+          "y": 78,
+          "width": 956,
+          "height": 793,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 12
+      }
+    ]
+  },
+  {
+    "id": "sw-19272",
+    "title": "现在不行，现在不行！",
+    "intro": "每个人都说“现在不行”，为什么第二天就都可以了呢？",
+    "keywords": [
+      "明天",
+      "等待",
+      "生日"
+    ],
+    "question": "你有没有很想等不及的事？故事里的惊喜是什么？",
+    "tag": "家人与我",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/19272-xian-zai-bu-xing",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Rohini Nilekani",
+      "Illustrated by": "Ruchi Shah",
+      "Translated by": "Yu Wu"
+    },
+    "copyright": "原作 © Pratham Books , 2011；中文译文 © Yu Wu , 2017；插图 © Pratham Books, 2011。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对白标点；把印度语亲昵称呼自然译为中文；亲昵称呼；引号句号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-19272/01.jpg",
+    "pages": [
+      {
+        "text": "我问奶奶：“我可以吃糖果吗？”\n奶奶说：“现在不行，宝贝，也许明天。”\n可是我不想等到明天。",
+        "image": "assets/books/sw-19272/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 756,
+          "height": 944,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "我问爷爷：“我可以和朋友出去玩吗？”\n爷爷说：“现在不行，宝贝，也许午觉以后？”\n可是我不想等到午觉以后。",
+        "image": "assets/books/sw-19272/03.jpg",
+        "imageFrame": {
+          "x": 127,
+          "y": 0,
+          "width": 832,
+          "height": 944,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "我问妈妈：“我可以穿新衣裳吗？”\n妈妈说：“现在不行，宝贝，我们出门的时候你就可以穿它们了。”\n可是我不想等到我们出门。",
+        "image": "assets/books/sw-19272/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 765,
+          "height": 910,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "我问爸爸：“我可以打开这个漂亮的盒子吗？”\n爸爸说：“现在不行，你得等等。”\n可是我不想再等了。",
+        "image": "assets/books/sw-19272/05.jpg",
+        "imageFrame": {
+          "x": 190,
+          "y": 0,
+          "width": 769,
+          "height": 944,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "为什么大人们总是说：“现在不行，现在不行。”\n那天晚上，我睡觉的时候很生气。",
+        "image": "assets/books/sw-19272/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 992,
+          "originalWidth": 959,
+          "originalHeight": 1062
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "第二天，我早早地醒来走进厨房。\n奶奶说：“你可以吃这些糖果了。”",
+        "image": "assets/books/sw-19272/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 96,
+          "width": 959,
+          "height": 848,
+          "originalWidth": 959,
+          "originalHeight": 944
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "爷爷说：“你可以出去玩了。”\n妈妈说：“你可以穿新衣服了。”\n爸爸说：“你可以打开这个盒子了。”\n然后他们一起对我说：“生日快乐！”",
+        "image": "assets/books/sw-19272/08.jpg",
+        "sourcePage": 8
+      }
+    ]
+  },
+  {
+    "id": "sw-19855",
+    "title": "妮塔为什么倒挂着？",
+    "intro": "妮塔担心自己和别人不一样，新朋友带她发现每个人都有自己的样子。",
+    "keywords": [
+      "朋友",
+      "不同",
+      "一起"
+    ],
+    "question": "故事里的每个孩子有什么不同？你喜欢自己哪些地方？",
+    "tag": "成长故事",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/19855-ni-ta-wei-shen-me-dao-gua-zhe",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Book Dash",
+      "Written by": "Emma Hearne, Roxana Bouwer, Sarah Bouwer",
+      "Illustrated by": "Sarah Bouwer",
+      "Translated by": "Hailey Chen"
+    },
+    "copyright": "原作 © Book Dash , 2015；中文译文 © Hailey Chen , 2017；插图 © Sarah Bouwer, 2015。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-19855/01.jpg",
+    "pages": [
+      {
+        "text": "妮塔倒挂着，长长的头发飘到了地上。那些树呀，草呀什么的，在她眼里全都反过来了。",
+        "image": "assets/books/sw-19855/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "她的脚伸到了天上。\n小纳威路过，问妮塔：“我在这里见过你，你怎么又倒挂着啦？”",
+        "image": "assets/books/sw-19855/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "妮塔看着纳威的脚在风中轻轻晃动。\n她想躲进头发后面。 “我不-不-不会说-说-说话，我和大家都不一样。”",
+        "image": "assets/books/sw-19855/04.jpg",
+        "imageFrame": {
+          "x": 448,
+          "y": 0,
+          "width": 482,
+          "height": 525,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "纳威拉着她的手，带她一起去找答案。\n他们爬上了一棵大树，从高高的树上可以看得很远很远。",
+        "image": "assets/books/sw-19855/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-19855/06.jpg",
+        "wordless": true,
+        "imageAlt": "《妮塔为什么倒挂着？》原书第6页的故事插图",
+        "sourcePage": 6
+      },
+      {
+        "text": "他们看到很多其他小朋友，大家都各有不同。\n阿比是胖胖的。",
+        "image": "assets/books/sw-19855/07.jpg",
+        "imageFrame": {
+          "x": 549,
+          "y": 9,
+          "width": 396,
+          "height": 672,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "琪琪脸上有小雀斑。",
+        "image": "assets/books/sw-19855/08.jpg",
+        "imageFrame": {
+          "x": 288,
+          "y": 4,
+          "width": 343,
+          "height": 512,
+          "originalWidth": 959,
+          "originalHeight": 517
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "拉拉长得很高很高。",
+        "image": "assets/books/sw-19855/09.jpg",
+        "imageFrame": {
+          "x": 400,
+          "y": 1,
+          "width": 258,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 517
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "那个活泼又好动的是班班。",
+        "image": "assets/books/sw-19855/10.jpg",
+        "imageFrame": {
+          "x": 385,
+          "y": 35,
+          "width": 574,
+          "height": 617,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "而露露呢，则在角落里安静地读书。",
+        "image": "assets/books/sw-19855/11.jpg",
+        "imageFrame": {
+          "x": 323,
+          "y": 0,
+          "width": 396,
+          "height": 517,
+          "originalWidth": 959,
+          "originalHeight": 517
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "弗莱娅有一头蓬松的头发。",
+        "image": "assets/books/sw-19855/12.jpg",
+        "imageFrame": {
+          "x": 431,
+          "y": 0,
+          "width": 528,
+          "height": 667,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "提姆走到哪儿都戴着一副眼镜。",
+        "image": "assets/books/sw-19855/13.jpg",
+        "imageFrame": {
+          "x": 505,
+          "y": 2,
+          "width": 379,
+          "height": 682,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "而小纳威呢，则是精瘦精瘦的。\n“所以你看，我们每个人都不一样呀。你并不孤单。”小纳威对妮塔说。\n就是因为每个人都是不一样的烟火，这个世界才多姿多彩。",
+        "image": "assets/books/sw-19855/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "妮塔终于不再难过困惑啦。她也不再一个人倒挂着了，和小朋友们一起开心地玩耍起来。",
+        "image": "assets/books/sw-19855/15.jpg",
+        "imageFrame": {
+          "x": 496,
+          "y": 200,
+          "width": 443,
+          "height": 488,
+          "originalWidth": 959,
+          "originalHeight": 688
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-19855/16.jpg",
+        "wordless": true,
+        "imageAlt": "《妮塔为什么倒挂着？》原书第16页的故事插图",
+        "sourcePage": 16
+      }
+    ]
+  },
+  {
+    "id": "sw-20012",
+    "title": "去买书",
+    "intro": "爷爷给姐弟俩买书的钱，他们在小书店慢慢挑选，最后带着新书回家一起读。",
+    "keywords": [
+      "书店",
+      "选择",
+      "爷爷"
+    ],
+    "question": "如果你能挑一本书，会选故事书、图画书，还是其他书？为什么？",
+    "tag": "生活发现",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/20012-qu-mai-shu",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Rukmini Banerji",
+      "Illustrated by": "Santosh Pujari",
+      "Translated by": "Yushan Zhang"
+    },
+    "copyright": "原作 © Pratham Books , 2004；中文译文 © Yushan Zhang , 2017；插图 © Pratham Books, 2004。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：多余空格；修正疑问语序；自然表达；统一自然称呼。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-20012/01.jpg",
+    "pages": [
+      {
+        "text": "有一天，爷爷给了弟弟和我一些钱。\n“去买几本书吧。”他说。\n弟弟和我都非常开心。我们俩都很喜欢读书。",
+        "image": "assets/books/sw-20012/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "我们应该现在去吗？还是待会再去？\n我们应该今天去吗？还是明天去呢？\n我们决定现在就去。",
+        "image": "assets/books/sw-20012/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "我们应该去大书城吗？还是去小书店呢？\n我们应该叫上别人一起去吗？还是我们自己去呢？\n我们决定去小书店，就我们两个人。",
+        "image": "assets/books/sw-20012/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "我们喜欢这家小书店。书店很小，但有很多书。\n店员喜欢我们。他总是乐意帮助我们。",
+        "image": "assets/books/sw-20012/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "我应该买一本有很多图画的书吗？\n我应该买一本有很多故事的书吗？\n我应该买一本薄薄的书吗？\n我决定不了。",
+        "image": "assets/books/sw-20012/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "我们不知道买哪本书。店员对我们笑了笑。“放轻松，跟我来吧。”他说。“这些书是讲动物的。那些是讲机器的。那边那些是讲战争的。挑你们喜欢的吧。”",
+        "image": "assets/books/sw-20012/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "我选了一些书。我弟弟也选了一些书。\n我坐在地上。他坐在椅子上。\n然后我们读呀读呀读呀。",
+        "image": "assets/books/sw-20012/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "身边非常安静。一点声音也没有。\n一小时过去了。两小时过去了。\n终于，我们知道买哪些书了。",
+        "image": "assets/books/sw-20012/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "店员对我们笑。我拿了一本厚厚的故事书。我的弟弟拿了一本厚厚的图画书。\n我们回家找爷爷了。我们爬上他的床。\n他伸手揽过我们俩，然后我们读呀、读呀、读呀。",
+        "image": "assets/books/sw-20012/10.jpg",
+        "sourcePage": 10
+      }
+    ]
+  },
+  {
+    "id": "sw-20032",
+    "title": "刷牙不好玩",
+    "intro": "小罗嫌刷牙无聊，姐姐和家人让清洁和收拾变成好玩的日常。",
+    "keywords": [
+      "刷牙",
+      "洗手",
+      "收拾"
+    ],
+    "question": "你可以用什么歌帮自己认真洗手？玩完玩具后怎样更容易找到它们？",
+    "tag": "生活发现",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/20032-shua-ya-bu-hao-wan",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Srividhya Venkat",
+      "Illustrated by": "Anupama Ajinkya Apte",
+      "Translated by": "Wei Wang"
+    },
+    "copyright": "原作 © Pratham Books , 2016；中文译文 © Wei Wang , 2017；插图 © Pratham Books, 2016。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：标点空白；中文标点；避免泛指动物无需刷牙及刷牙消灭全部细菌的不准确表述；用准确可理解的清洗描述替代消灭泛称；空白。保留原书纯文字页，不新增或借用插图。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-20032/01.jpg",
+    "pages": [
+      {
+        "text": "早上起来，小罗开始和狗狗吉米玩。\n姐姐利亚对他说：“有一件事要先做！ 刷牙！”\n汪汪！",
+        "image": "assets/books/sw-20032/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "“我不想刷牙！吉米就不刷牙！”\n“吉米和我们的习惯不一样！我们要认真刷牙，把牙齿刷干净！”\n“细菌？”",
+        "image": "assets/books/sw-20032/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 1,
+          "width": 955,
+          "height": 679,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "妈妈叫他们：“吃早饭啦！”\n利亚说：“有一件事要先做！ 洗手！”\n汪汪！",
+        "image": "assets/books/sw-20032/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 389,
+          "width": 959,
+          "height": 300,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "“吉米就从来不洗手！”\n利亚笑了。“吉米和我们不同，吃饭不用爪子！我们必须用肥皂洗手，把手上的脏东西和病菌洗掉。”\n“手上也有细菌？”",
+        "textOnly": true,
+        "sourcePage": 5
+      },
+      {
+        "text": "“细菌来了！”利亚一边大叫，一边挥着小脏手去抓小罗。\n“啊啊啊！”\n汪汪！",
+        "image": "assets/books/sw-20032/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 22,
+          "width": 959,
+          "height": 438,
+          "originalWidth": 959,
+          "originalHeight": 460
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "后来，利亚教小罗洗手。\n“把手打湿，关上水龙头。手心、手背和手指中间都抹上肥皂。两只手互相搓二十秒！好了，洗掉肥皂，把手擦干！”",
+        "image": "assets/books/sw-20032/07.jpg",
+        "imageFrame": {
+          "x": 1,
+          "y": 189,
+          "width": 638,
+          "height": 500,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "他们出去玩。回家以后，利亚提醒小罗：“有一件事要先做！”\n妈妈逗他们：“是继续玩吗？”\n“是洗澡！”",
+        "image": "assets/books/sw-20032/08.jpg",
+        "imageFrame": {
+          "x": 25,
+          "y": 17,
+          "width": 443,
+          "height": 665,
+          "originalWidth": 479,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "妈妈说：“把身上打湿。然后全部抹上肥皂！”\n妈妈给利亚和小罗抹肥皂。痒痒！利亚和小罗咯咯直笑。\n“现在把肥皂洗掉 ！”",
+        "image": "assets/books/sw-20032/09.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 238,
+          "width": 639,
+          "height": 442,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "“你们要不要听故事？”爸爸问。",
+        "image": "assets/books/sw-20032/10.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 9,
+          "width": 959,
+          "height": 495,
+          "originalWidth": 959,
+          "originalHeight": 517
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "利亚提醒他：“有一件事要先做！ 收拾！”\n小罗打个大哈欠。“一定要收拾吗？”\n“还记得那天你找不到你的球了吗？玩具要收拾好，以后才容易找！”",
+        "image": "assets/books/sw-20032/11.jpg",
+        "imageFrame": {
+          "x": 793,
+          "y": 0,
+          "width": 166,
+          "height": 158,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-20032/12.jpg",
+        "wordless": true,
+        "imageAlt": "《刷牙不好玩》原书第12页的故事插图",
+        "sourcePage": 12
+      },
+      {
+        "text": "几分钟以后，妈妈和爸爸听见熟悉的哼歌声。\n“原来这就是你的秘诀！”爸爸说，“刷牙的时候哼歌，就不会无聊！”\n“洗手的时候也一样！”",
+        "image": "assets/books/sw-20032/13.jpg",
+        "imageFrame": {
+          "x": 771,
+          "y": 513,
+          "width": 188,
+          "height": 177,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "细菌说，脏脏臭臭黑黑的，最好玩！\n我却说，要刷牙和洗手，才健康！\n细菌说，千万别洗澡，多浪费时间！\n我却说，洗得香香的，才舒服。\n淘气的细菌劝你别收拾，家里乱七八糟最好看。\n我却说，把玩具收拾整齐，才是完美的一天！",
+        "image": "assets/books/sw-20032/14.jpg",
+        "sourcePage": 14
+      }
+    ]
+  },
+  {
+    "id": "sw-20570",
+    "title": "寻找另一个自己",
+    "intro": "小驴想找到另一个和自己一模一样的伙伴，最后发现每个人都独一无二。",
+    "keywords": [
+      "自己",
+      "一样",
+      "特别"
+    ],
+    "question": "哪些地方让你成为独一无二的你？你和朋友又有哪些相同之处？",
+    "tag": "成长故事",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/20570-xun-zhao-ling-yi-ge-zi-ji",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "African Storybook Initiative",
+      "Written by": "Fred Strydom",
+      "Illustrated by": "Jess Jardim-Wedepohl",
+      "Translated by": "Wei Sun"
+    },
+    "copyright": "原作 © African Storybook Initiative , 2015；中文译文 © Wei Sun , 2017；插图 © African Storybook Initiative, 2015。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：主角为动物，用伙伴避免物种指代别扭；修正不自然的比较级和句法。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-20570/01.jpg",
+    "pages": [
+      {
+        "text": "我在想这个世界上是不是有另外一个和我很像的伙伴。",
+        "image": "assets/books/sw-20570/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "和我的长相一样。",
+        "image": "assets/books/sw-20570/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 56,
+          "width": 959,
+          "height": 978,
+          "originalWidth": 959,
+          "originalHeight": 1034
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "和我说一样的话。",
+        "image": "assets/books/sw-20570/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 131,
+          "width": 959,
+          "height": 903,
+          "originalWidth": 959,
+          "originalHeight": 1034
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "甚至和我一样有卷卷的尾巴。",
+        "image": "assets/books/sw-20570/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "和我有一样的眼睛和耳朵。",
+        "image": "assets/books/sw-20570/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 24,
+          "width": 959,
+          "height": 1010,
+          "originalWidth": 959,
+          "originalHeight": 1034
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "甚至和我的笑声也一样。",
+        "image": "assets/books/sw-20570/07.jpg",
+        "imageFrame": {
+          "x": 476,
+          "y": 266,
+          "width": 483,
+          "height": 421,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "能够做我做的事情。",
+        "image": "assets/books/sw-20570/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 971,
+          "originalWidth": 959,
+          "originalHeight": 1034
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "不能做我不能做的事情。",
+        "image": "assets/books/sw-20570/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "我找啊找啊，试图找到另一个我。\n我去公园里的大树后面寻找。",
+        "image": "assets/books/sw-20570/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "向上看，向下看，努力地寻找。",
+        "image": "assets/books/sw-20570/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "仔细看公园里每个动物的脸庞。",
+        "image": "assets/books/sw-20570/12.jpg",
+        "imageFrame": {
+          "x": 265,
+          "y": 353,
+          "width": 694,
+          "height": 334,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "可是我在哪里都找不到另一个我。",
+        "image": "assets/books/sw-20570/13.jpg",
+        "imageFrame": {
+          "x": 209,
+          "y": 258,
+          "width": 750,
+          "height": 429,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "这个世界上只有一个我！\n我是非常特别的，真的！",
+        "image": "assets/books/sw-20570/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "但不只有我很特别，你也一样特别。你发现了吗？\n这个世界上也只有一个你！",
+        "image": "assets/books/sw-20570/15.jpg",
+        "sourcePage": 15
+      }
+    ]
+  },
+  {
+    "id": "sw-20873",
+    "title": "我第一天上学",
+    "intro": "第一天上学，罗尼松开妈妈的手，又忍不住跑了回来。",
+    "keywords": [
+      "学校",
+      "妈妈",
+      "老师"
+    ],
+    "question": "第一次去陌生的地方，你希望大人怎样陪你？",
+    "tag": "成长故事",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/20873-rani-first-day-at-school",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Cheryl Rao",
+      "Illustrated by": "Mayur Mistry",
+      "Translated by": "Herobrine Ren"
+    },
+    "copyright": "原作 © Pratham Books , 2015；中文译文 © Herobrine Ren , 2017；插图 © Pratham Books, 2015。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对白标点；的得纠正；贴近幼儿感受的表达。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-20873/01.jpg",
+    "pages": [
+      {
+        "text": "今天是我第一天上学。\n妈妈握着我的手走着。\n“我现在长大了。”我说。“快走吧！”\n妈妈把我的手握得紧紧地。",
+        "image": "assets/books/sw-20873/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "学校附近有很多小孩。\n有的坐巴士来。有的父母开车来。\n有的坐三轮车。有的骑自行车来。\n有的像我一样走过来。",
+        "image": "assets/books/sw-20873/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "我们到达校门时，妈妈松开我的手。\n她待在校门外面。我必须一个人进去。\n我周围有很多新面孔。",
+        "image": "assets/books/sw-20873/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "我往前走一步。我又往前走一步。\n我回头看着妈妈。她变得越来越小了。她会消失吗？\n我往回跑。我这会儿觉得自己又变小了。\n我握住她的手。\n“别走。”我说。",
+        "image": "assets/books/sw-20873/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "所有的人都进去了。外面只剩下我一个人了。\n老师从里面走出来。她对我笑一笑。我对她笑一笑。\n妈妈说：“罗尼，你出来的时候我会在这儿等你的。”\n我松开她的手。她对我摆摆手。",
+        "image": "assets/books/sw-20873/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "我往里面跑去。我放学的时候，妈妈一定会在外面等我呢！",
+        "image": "assets/books/sw-20873/07.jpg",
+        "sourcePage": 7
+      }
+    ]
+  },
+  {
+    "id": "sw-21482",
+    "title": "太大了，太小了",
+    "intro": "沙努总被说太大或太小，家人告诉她：你现在的样子刚刚好。",
+    "keywords": [
+      "长大",
+      "太小",
+      "刚好"
+    ],
+    "question": "有哪些事你已经能自己做了？还有哪些事可以请家人帮忙？",
+    "tag": "家人与我",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/21482-tai-da-le-tai-xiao-le",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Lavanya Karthik",
+      "Illustrated by": "Lavanya Karthik",
+      "Translated by": "Linda Zhu"
+    },
+    "copyright": "原作 © Pratham Books , 2017；中文译文 © Linda Zhu , 2017；插图 © Pratham Books, 2017。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：引出内心疑问的标点；多余空白。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-21482/01.jpg",
+    "pages": [
+      {
+        "text": "妈妈说：“沙努，你太大了，我抱不动你了！”",
+        "image": "assets/books/sw-21482/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "爸爸说：“沙努，你太小了，不能自己走路去学校！”",
+        "image": "assets/books/sw-21482/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 639,
+          "height": 672,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "爷爷说：“沙努，你太大了，不能睡在弟弟的婴儿床里了！”",
+        "image": "assets/books/sw-21482/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 156,
+          "width": 639,
+          "height": 533,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "奶奶说：“沙努，你不能自己抱着弟弟去公园，你太小了！”",
+        "image": "assets/books/sw-21482/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 134,
+          "width": 639,
+          "height": 555,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "沙努觉得好奇怪：\n太大了？\n太小了？\n我怎么会又太大又太小呢？",
+        "image": "assets/books/sw-21482/06.jpg",
+        "imageFrame": {
+          "x": 458,
+          "y": 31,
+          "width": 501,
+          "height": 632,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "我太大了\n穿不上这条粉色公主裙了\n我太小了 不能像妈妈一样做烙饼",
+        "image": "assets/books/sw-21482/07.jpg",
+        "imageFrame": {
+          "x": 55,
+          "y": 37,
+          "width": 584,
+          "height": 652,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "我太大了\n不能让爷爷背着我\n我太小了\n不能背着弟弟",
+        "image": "assets/books/sw-21482/08.jpg",
+        "imageFrame": {
+          "x": 10,
+          "y": 117,
+          "width": 626,
+          "height": 504,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "我到底是太大呢，还是太小呢？",
+        "image": "assets/books/sw-21482/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "妈妈笑着说：“你长大了，可以去上学啦。”",
+        "image": "assets/books/sw-21482/10.jpg",
+        "imageFrame": {
+          "x": 10,
+          "y": 98,
+          "width": 629,
+          "height": 533,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "爸爸说：“可是你还是小小的，我能背得动你。”",
+        "image": "assets/books/sw-21482/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 58,
+          "width": 639,
+          "height": 602,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "爷爷说：“你长大啦，可以陪我一起晨练去。”",
+        "image": "assets/books/sw-21482/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "奶奶说：“你还小，坐好，我来给你讲故事吧。”",
+        "image": "assets/books/sw-21482/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "大伙儿抱着沙努说：“你不大不小刚刚好，我们都爱你！”",
+        "image": "assets/books/sw-21482/14.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 66,
+          "width": 639,
+          "height": 569,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 14
+      }
+    ]
+  },
+  {
+    "id": "sw-65113",
+    "title": "小猪的尾巴逃跑了",
+    "intro": "小猪的尾巴出去旅行了，她试过好多奇怪的新尾巴，最后会选哪一条？",
+    "keywords": [
+      "尾巴",
+      "寻找",
+      "自己"
+    ],
+    "question": "你最喜欢胖果果试过的哪条尾巴？为什么她后来不再找原来的尾巴了？",
+    "tag": "想象冒险",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/65113-xiaozhu-de-weiba-taopao-le",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Parinita Shetty",
+      "Illustrated by": "Parvati Pillai",
+      "Translated by": "Zixian LIU"
+    },
+    "copyright": "原作 © Pratham Books , 2019；中文译文 © Zixian LIU , 2019；插图 © Pratham Books, 2018 / © Pratham Books, 2019。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：修正不自然语序与标点；补齐主语；去除正文中的BOM隐藏字符；标点修正；去掉错误顿号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-65113/01.jpg",
+    "pages": [
+      {
+        "text": "小猪胖果果爱睡觉。有时候，她没日没夜地睡着。\n怪不得她的尾巴常常感觉很无聊。\n有一天，胖果果睡完了一个午觉，发现怎么也找不到自己的尾巴。她的尾巴离开了她，已经走远了。",
+        "image": "assets/books/sw-65113/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "没了尾巴，她觉得自己显得傻里傻气的。于是，她决定出门找回她的尾巴。",
+        "image": "assets/books/sw-65113/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "哧溜！ “这片森林乱糟糟！” 胖果果说道。\n哎！ 她滑了一跤。\n哐！ 她摔进了灌木丛。",
+        "image": "assets/books/sw-65113/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "“有谁见过我的尾巴吗？”胖果果问道。\n“为什么不试一试换一条蘑菇尾巴呢？”叶猴答道。\n“ 哼！ ”胖果果说，“我还是要我自己的那条尾巴。”\n她去其他地方找一找。",
+        "image": "assets/books/sw-65113/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "哎呦我的妈呀！ “这座城市乱哄哄！” 胖果果说道。\n哔哔-哔哔！ 她躲过横冲直撞的三轮摩托车。\n叮铃-叮铃！ 她试着缩成一团钻过自行车的轱辘。",
+        "image": "assets/books/sw-65113/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "“有谁见过我的尾巴吗？”胖果果问道。\n“为什么不试一试换一条气球尾巴呢？” 乌鸦答道。\n“ 怕怕！ ”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。",
+        "image": "assets/books/sw-65113/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "咯噔！ “这个山洞黑布隆冬！”胖果果说道。\n沙沙-沙沙！ 她小心地挪着脚向前走。\n咻！ 她绊到一堆碎石子。\n“有谁见过我的尾巴吗？”胖果果问道。",
+        "image": "assets/books/sw-65113/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "“为什么不试一试换一条石笋尾巴呢？”蝙蝠答道。\n“ 硌得慌！ ”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。",
+        "image": "assets/books/sw-65113/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "咕咚咚-咕噜噜！ “海底到处湿漉漉！”胖果果说道。\n噗啪-噗啪！ 几条彩色的小鱼请胖果果一起跳支舞。",
+        "image": "assets/books/sw-65113/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "“有谁见过我的尾巴吗？”胖果果问道。\n“为什么不试一试换一条海带尾巴呢？”海龟答道。\n“ 呃—— ”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。",
+        "image": "assets/books/sw-65113/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "扑通！ “沙漠到处热辣辣！”胖果果说道。\n呼哧！ 她还不知道自己正趴在一座沙丘上。\n哎呦！ 她一股脑地滚到沙坑中。\n“有谁见过我的尾巴吗？”胖果果问道。",
+        "image": "assets/books/sw-65113/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": " “为什么不试一试换一条仙人掌尾巴呢？” 骆驼答道。\n“ 嗷呜！ ”胖果果尖叫道，“我还是要我自己的那条尾巴。”她去其他地方找一找。",
+        "image": "assets/books/sw-65113/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "呼咧咧！ “山顶到处冷飕飕！”胖果果说道。\n呵！ 地上的风景尽收眼底。\n嘘嘘-嘘嘘！ 她打了个趔趄，一阵晕眩。",
+        "image": "assets/books/sw-65113/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "“有谁见过我的尾巴吗？”胖果果问道。\n“为什么不试一试换一条毛袜子尾巴呢？” 牦牛答道。\n胖果果盯着她的新尾巴看了看。",
+        "image": "assets/books/sw-65113/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "“这条尾巴棒极了，”胖果果说道。她回想着曾经试过的所有尾巴。\n啊哈！ “我可绝不想要再试一试仙人掌尾巴了！”\n能够有各种各样的尾巴是一件多么有趣的事情呀！她突然想起来，其他人通常只有一种尾巴呀。\n胖果果决定了。随她原来的尾巴到处逛吧。小猪要和她的新尾巴一起回家。",
+        "image": "assets/books/sw-65113/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-65113/17.jpg",
+        "wordless": true,
+        "imageAlt": "《小猪的尾巴逃跑了》原书第17页的故事插图",
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-99706",
+    "title": "基乌的魔力",
+    "intro": "基乌看见了奇怪的“魔法”，奶奶带她去找眼科医生。",
+    "keywords": [
+      "眼镜",
+      "形状",
+      "医生"
+    ],
+    "question": "戴上眼镜以后，基乌看见的东西有什么变化？",
+    "tag": "生活发现",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/99706-ji-wu-de-moli",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Shrujana Shridhar",
+      "Illustrated by": "Shrujana Shridhar",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2019；插图 © Pratham Books, 2017。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：明确物品并衔接寻找情境；修正句式标点；量词标点；引号与用词；中文标点；修复断行；中文语序；对白与词语自然；中文句号；对白自然；修复无意义直译标题；句式；修正几何术语。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99706/01.jpg",
+    "pages": [
+      {
+        "text": "基乌上学快迟到了。\n可是她找不到自己的红色水瓶。",
+        "image": "assets/books/sw-99706/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "那是她的瓶子吗？\n还是一个火箭？",
+        "image": "assets/books/sw-99706/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "基乌看着黑板，心想：\n“那些是在海里游的鱼吗？”",
+        "image": "assets/books/sw-99706/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "基乌盯着鞋上的一个绿色斑点，心想：\n“黏黏的，看起来像果冻。难道是一只青蛙吗？”",
+        "image": "assets/books/sw-99706/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "基乌跑回家，对奶奶说：\n“我有神奇的魔力！ 我能看到别人看不到的东西。”",
+        "image": "assets/books/sw-99706/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "奶奶点点头，问：“那么，我们是不是该去眼科医生那里，告诉她你的魔力？”",
+        "image": "assets/books/sw-99706/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-99706/08.jpg",
+        "wordless": true,
+        "imageAlt": "《基乌的魔力》原书第8页的故事插图",
+        "sourcePage": 8
+      },
+      {
+        "text": "尼基塔医生拿了一张图表给基乌看。\n“那些蚂蚁正在图上走吗？”基乌问道。",
+        "image": "assets/books/sw-99706/09.jpg",
+        "imageFrame": {
+          "x": 4,
+          "y": 19,
+          "width": 884,
+          "height": 649,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "尼基塔医生帮基乌试戴眼镜。\n最大的蚂蚁变成了E。",
+        "image": "assets/books/sw-99706/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "“难道我失去魔法了吗，医生？”基乌问道。\n“闭上眼睛做梦吧，你的魔法会回来的。”\n尼基塔医生说。",
+        "image": "assets/books/sw-99706/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "“基乌，你想要什么颜色的眼镜？”奶奶问道。\n“给我绿色的吧！”基乌笑着说。",
+        "image": "assets/books/sw-99706/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "戴上眼镜看看吧\n基乌没有戴眼镜，看不太清楚。\n你能帮她吗？",
+        "image": "assets/books/sw-99706/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "以下的形状叫什么呢？",
+        "image": "assets/books/sw-99706/14.jpg",
+        "imageFrame": {
+          "x": 154,
+          "y": 432,
+          "width": 629,
+          "height": 182,
+          "originalWidth": 959,
+          "originalHeight": 686
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "花里面藏了多少圆形？",
+        "image": "assets/books/sw-99706/15.jpg",
+        "imageFrame": {
+          "x": 693,
+          "y": 355,
+          "width": 255,
+          "height": 332,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "你在这颗星星上看到了几个三角形？",
+        "image": "assets/books/sw-99706/16.jpg",
+        "imageFrame": {
+          "x": 6,
+          "y": 163,
+          "width": 300,
+          "height": 361,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 16
+      },
+      {
+        "text": "窗户里有几个方块？",
+        "image": "assets/books/sw-99706/17.jpg",
+        "imageFrame": {
+          "x": 640,
+          "y": 10,
+          "width": 319,
+          "height": 390,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-99710",
+    "title": "法蒂和汤锅",
+    "intro": "跑得飞快的法蒂肚子饿了，帮妈妈搅汤时，她悄悄吃掉了几块肉。",
+    "keywords": [
+      "法蒂",
+      "妈妈",
+      "汤锅"
+    ],
+    "question": "法蒂搅汤时发生了什么？为什么最后她的碗里没有肉？",
+    "tag": "生活发现",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/99710-fa-di-he-tangguo",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Sub-Saharan Publishers",
+      "Written by": "Osu Library Fund",
+      "Illustrated by": "Eric Nii Addy",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Akoss Ofori-Mensah , 2013；中文译文 © Jala , 2019；插图 © Sub-Saharan Publishers, 2013。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：语序与的地纠正；修正翻译腔；自然表达；okra使用通行中文名称，避免未知音译增加识字负担；量词与自然用词；自然对话；自然动作表达；标点；明显错字；修正漏词；错字及性别指代；自然口语。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99710/01.jpg",
+    "pages": [
+      {
+        "text": "法蒂是一个像风一样奔跑的小女孩，她喜欢笑，并且总是认真完成交给她的事。",
+        "image": "assets/books/sw-99710/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 64,
+          "width": 634,
+          "height": 625,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "今天是学校的运动日。\n法蒂踢足球，参加了三场比赛。",
+        "image": "assets/books/sw-99710/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 59,
+          "width": 639,
+          "height": 630,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "放学后，她和她的好朋友哈瓦一起走回家。\n哈瓦说：“法蒂，你跑得好快！”",
+        "image": "assets/books/sw-99710/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 85,
+          "width": 639,
+          "height": 604,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "法蒂回到家，发现她的母亲在厨房里。\n她说：“妈妈，晚上好。”\n法蒂的母亲回答：“晚上好。 你好吗？”",
+        "image": "assets/books/sw-99710/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "法蒂说：“今天学校举办运动会，而且我跑得很快。\n我很热，很累，很饿。”",
+        "image": "assets/books/sw-99710/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 91,
+          "width": 639,
+          "height": 598,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "妈妈笑着说：“亲爱的小法蒂，你从小就跑得快！\n我会煮秋葵汤，晚餐很快就可以吃了。”",
+        "image": "assets/books/sw-99710/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 82,
+          "width": 639,
+          "height": 607,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "妈妈把一些棕榈油放在一口大锅里，放在火上。\n当油热起来时，她加入洋葱和大蒜，搅拌它们直到它们变软。\n然后她放入胡椒，西红柿，加入一些水和六块蒸牛肉。",
+        "image": "assets/books/sw-99710/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 109,
+          "width": 639,
+          "height": 580,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "妈妈说，“法蒂，请帮我搅一搅汤。”\n法蒂说：“是的，妈妈。”",
+        "image": "assets/books/sw-99710/09.jpg",
+        "imageFrame": {
+          "x": 1,
+          "y": 72,
+          "width": 638,
+          "height": 608,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "法蒂搅了一下汤。\n她说，“这汤味道好香。”",
+        "image": "assets/books/sw-99710/10.jpg",
+        "imageFrame": {
+          "x": 20,
+          "y": 86,
+          "width": 619,
+          "height": 603,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "法蒂搅了两下汤。\n她说，“这汤味道非常香。”",
+        "image": "assets/books/sw-99710/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 114,
+          "width": 639,
+          "height": 575,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "法蒂搅了三下汤。\n她说，“这汤闻起来非常、非常香。”",
+        "image": "assets/books/sw-99710/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 135,
+          "width": 639,
+          "height": 554,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "然后，法蒂看着她的母亲。\n母亲没有在看法蒂。\n她正在切绿叶，准备把它放入汤。",
+        "image": "assets/books/sw-99710/13.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 106,
+          "width": 639,
+          "height": 583,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "法蒂从锅里拿了一块肉，把它吃了。\n法蒂说，“嗯......”",
+        "image": "assets/books/sw-99710/14.jpg",
+        "imageFrame": {
+          "x": 8,
+          "y": 55,
+          "width": 624,
+          "height": 634,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "法蒂再次看着她的母亲。\n母亲没有在看法蒂。\n她正在切鸡蛋，准备把它放入汤里。",
+        "image": "assets/books/sw-99710/15.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 107,
+          "width": 639,
+          "height": 582,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "法蒂很快从锅里取出第二块肉，把它吃了。\n法蒂说：“嗯...... 嗯......”",
+        "image": "assets/books/sw-99710/16.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 128,
+          "width": 639,
+          "height": 561,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 16
+      },
+      {
+        "text": "法蒂再一次看着她的母亲。\n母亲没有在看法蒂。\n她正在切秋葵，准备把它放入汤里。",
+        "image": "assets/books/sw-99710/17.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 95,
+          "width": 639,
+          "height": 594,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "法蒂很快从锅里取出了第三块肉，也把它吃了！\n法蒂说：“嗯...... 嗯... 嗯......”",
+        "image": "assets/books/sw-99710/18.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 6,
+          "width": 639,
+          "height": 624,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 18
+      },
+      {
+        "text": "不久，母亲拿着绿叶，鸡蛋和秋葵来到了火堆。\n法蒂仍然拿着大木勺。",
+        "image": "assets/books/sw-99710/19.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 109,
+          "width": 635,
+          "height": 580,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 19
+      },
+      {
+        "text": "母亲微笑着说：“谢谢你帮忙搅汤，法蒂。”\n法蒂不知道该说些什么。",
+        "image": "assets/books/sw-99710/20.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 75,
+          "width": 620,
+          "height": 614,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 20
+      },
+      {
+        "text": "母亲把绿叶，鸡蛋和秋葵放入汤中，从法蒂手里接过勺子。\n她开始搅汤。",
+        "image": "assets/books/sw-99710/21.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 158,
+          "width": 609,
+          "height": 531,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 21
+      },
+      {
+        "text": "母亲往锅里一看。 她可以看到汤在烈火中冒泡。 母亲在锅里寻找那六块肉。\n“一......二......三......”母亲说。 母亲只看到了三块肉。\n母亲什么也没说。 法蒂什么也没说。",
+        "image": "assets/books/sw-99710/22.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 133,
+          "width": 639,
+          "height": 556,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 22
+      },
+      {
+        "text": "当母亲端上汤时，法蒂没有得到任何肉。\n法蒂说：“妈妈，对不起。 我不会再那样做了。”\n她以后再也没有这样做。\n故事就这样结束了。",
+        "image": "assets/books/sw-99710/23.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 32,
+          "width": 639,
+          "height": 657,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 23
+      }
+    ]
+  },
+  {
+    "id": "sw-99711",
+    "title": "贾尼丝的唐人街之行",
+    "intro": "跟贾尼丝和奶奶逛唐人街，挑选送给家人的小礼物。",
+    "keywords": [
+      "奶奶",
+      "礼物",
+      "街道"
+    ],
+    "question": "你会为家人挑选什么小礼物？最想带回家的回忆是什么？",
+    "tag": "世界文化",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/99711-jia-ni-si-de-tangrenjie-zhi-xing",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Anuradha Sengupta",
+      "Illustrated by": "Kalyani Ganapathy",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2017；中文译文 © Jala , 2019；插图 © Pratham Books, 2017。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：统一人物译名与标题；中式标点；解释地区词汇；修正搭配；去掉重复句；标点；删除没有依据的治感冒功效，不改变购物情节；语气与标点；按品尝食物语境校订感叹词；重复与介词；中文列举标点；使用常用表达；避免沿用会变化的唯一性断言；合并连续对白标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99711/01.jpg",
+    "pages": [
+      {
+        "text": "奶奶叫醒贾尼丝：“起来，贾尼丝！”\n贾尼丝起床。\n今天是她待在刘奶奶家的最后一天。",
+        "image": "assets/books/sw-99711/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 253,
+          "width": 573,
+          "height": 437,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "贾尼丝答应了居住在孟买的家人会带些手信（送给家人的小礼物）回去。\n但她什么也没买！\n贾尼丝问道：“刘奶奶，您能带我去购物吗？”\n刘奶奶居住在加尔各答的Tiretti市集。\n这里也被称为唐人街。",
+        "image": "assets/books/sw-99711/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "贾尼丝和刘奶奶一起去探索唐人街。\n人力车在街上穿梭。 人力车的木轮发出咔哒声。 人力车的铃铛叮当作响。\n空气中弥漫着香气。",
+        "image": "assets/books/sw-99711/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "第一站是李先生的店。 “李先生，明天我就要回孟买。 我能买些什么当手信？”\n“这些紫色梅子糖果怎么样？”\n贾尼丝赞道：“嗯！这糖果又甜又香！” “我的兄弟一定会喜欢。”",
+        "image": "assets/books/sw-99711/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-99711/06.jpg",
+        "wordless": true,
+        "imageAlt": "《贾尼丝的唐人街之行》原书第6页的故事插图",
+        "sourcePage": 6
+      },
+      {
+        "text": "下一站是陈太太的店。“陈太太，明天我要回孟买。我能买些什么当手信？”\n“这种黑木耳怎么样？ 这些黑木耳可以放进汤里。”\n贾尼丝惊叹道：“哇！这看起来真像一个巨大的黑耳朵！” “我母亲一定会喜欢。”",
+        "image": "assets/books/sw-99711/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "接着她们去黄太太的店。“黄太太，明天我就要回孟买。我能买些什么当手信？”\n“这盏美丽的灯笼怎么样？”\n贾尼丝赞叹：“这盏灯笼的颜色是凤凰花的颜色。我父亲一定会喜欢。”",
+        "image": "assets/books/sw-99711/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "手信买齐了，贾尼丝也饿坏了！刘奶奶买了饺子汤和包子。\n真香！贾尼丝赞道：“这个好吃。”",
+        "image": "assets/books/sw-99711/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "贾尼丝和奶奶停留在一座寺庙里。 寺庙里弥漫着焚香的气味。\n刘奶奶说：“当人们去世时，他们变成灵魂。我们启程之前，会祈求他们的祝福。”",
+        "image": "assets/books/sw-99711/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "人们正在大厅里的桌边打麻将。 麻将牌咔嗒作响！\n奶奶说：“麻将牌上刻着龙、风和花的图案。”\n贾尼丝说：“那比跳房子更加刺激！”",
+        "image": "assets/books/sw-99711/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "在回家途中，贾尼丝看见一位女士正在读报纸。\n贾尼丝问道：“那是中文报纸吗？”\n刘奶奶回答：“是的！”",
+        "image": "assets/books/sw-99711/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "“这是一份在加尔各答出版的中文报纸。”\n贾尼丝到了家，便开始包装手信。刘奶奶问道：“贾尼丝，你已经为其他人买了手信，但你会带回什么？” 贾尼丝回答道：“我们的记忆呀，奶奶！那是最好的手信！”",
+        "image": "assets/books/sw-99711/13.jpg",
+        "sourcePage": 13
+      }
+    ]
+  },
+  {
+    "id": "sw-99713",
+    "title": "小心！ 老虎来了！",
+    "intro": "老虎悄悄走进森林，猴子和小鹿们却早早拉响了警报。",
+    "keywords": [
+      "老虎",
+      "森林",
+      "声音"
+    ],
+    "question": "森林里的动物是怎样提醒朋友老虎来了的？",
+    "tag": "自然探索",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/99713-xiaoxin-laohu-laile",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Sejal Mehta",
+      "Illustrated by": "Rohan Chakravarty",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2017；中文译文 © Jala , 2019；插图 © Pratham Books, 2017。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：中文语序和动物代词；去掉脱离条件的固定成功率；中文标点；规范常用称呼。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99713/01.jpg",
+    "pages": [
+      {
+        "text": "做老虎不容易。\n是的，老虎很美，也很凶。",
+        "image": "assets/books/sw-99713/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "不过，老虎的身体又大又重。\n想悄悄靠近猎物，可不容易。",
+        "image": "assets/books/sw-99713/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "老虎有时要捕猎很多次，\n才会成功一次。",
+        "image": "assets/books/sw-99713/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "老虎穿过森林时，\n轰！ 啪！ 砰！\n猴子的叫声，就像一个老人在咳嗽！\n轰！ 啪！ 砰！",
+        "image": "assets/books/sw-99713/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "嚎！嚎！\n吠鹿的叫声，像一只害怕的狗！\n嚎！嚎！",
+        "image": "assets/books/sw-99713/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "喔！ 喔！ 喔！\n斑点鹿的叫声，像一只小鸟！\n喔！ 喔！ 喔！",
+        "image": "assets/books/sw-99713/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "整片森林都知道老虎已经来了！\n吼？吼？\n老虎想知道，大家都去了哪里？",
+        "image": "assets/books/sw-99713/08.jpg",
+        "sourcePage": 8
+      }
+    ]
+  },
+  {
+    "id": "sw-99715",
+    "title": "举重公主",
+    "intro": "尼拉公主想成为举重冠军，她为自己的梦想努力训练。",
+    "keywords": [
+      "公主",
+      "比赛",
+      "冠军"
+    ],
+    "question": "尼拉想实现什么愿望？你想为自己的哪个目标努力？",
+    "tag": "成长故事",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/99715-juzhong-gongzhu",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Sowmya Rajendran",
+      "Illustrated by": "Debasmita Dasgupta",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2019；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：错别字与语序；规范量词；修正previous误译；修正不完整语句；flex的自然表达；删除重复句；介词与搭配纠正；补足谓语；自然表达；修正不成立的搭配。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99715/01.jpg",
+    "pages": [
+      {
+        "text": "尼拉公主很担心。\n苏里亚锦标赛，她所在王国著名的举重比赛，\n离现在只有一个月了。\n但根据规则，她的体重一定要是55公斤。\n而不是53公斤。 她的体重还得增加两公斤！",
+        "image": "assets/books/sw-99715/02.jpg",
+        "imageFrame": {
+          "x": 162,
+          "y": 0,
+          "width": 797,
+          "height": 687,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "苏里亚锦标赛以东部七个王国中最伟大的运动员命名。\n尼拉非常期待参加。",
+        "image": "assets/books/sw-99715/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "尼拉热爱举重。\n小时候，她会举起\n椅子\n橱柜...\n桌子\n小狗",
+        "image": "assets/books/sw-99715/04.jpg",
+        "imageFrame": {
+          "x": 51,
+          "y": 32,
+          "width": 894,
+          "height": 632,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "......甚至国王！",
+        "image": "assets/books/sw-99715/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "“练习怎么样？”王后问道。\n“很好，”尼拉说。 “但我的体重还需要增加两公斤！”\n王后给了她一个水煮蛋。\n“好好吃，”她说。 “你会达到目标的。”",
+        "image": "assets/books/sw-99715/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "尼拉边吃鸡蛋，边回忆起上届锦标赛。 那是四年前，当她还只有十二岁的时候。\n奈笛里的维克拉姆王子是当时的冠军。 他远远领先于其他人。",
+        "image": "assets/books/sw-99715/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "尼拉知道，当她长大后，国王计划让她与维克拉姆王子结婚。\n但她有其他的打算。 尼拉想去雪地泰巴。 它拥有整个王国最好的体育学校。",
+        "image": "assets/books/sw-99715/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "“我可以再要一个蛋吗？”她问王后。\n王后笑了。 很多年前，王后就像尼拉一样 - 想要跑步，游泳，骑马和 赢得锦标赛。 但那已经是很久，很久以前的事了。",
+        "image": "assets/books/sw-99715/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "随着时间的推移，尼拉公主努力训练。\n她在山上来回跑动。 她在河里游泳。 她吃肉，蔬菜和水果。\n她的皮肤晒成了金黄色，像日落的颜色。",
+        "image": "assets/books/sw-99715/10.jpg",
+        "imageFrame": {
+          "x": 16,
+          "y": 32,
+          "width": 933,
+          "height": 656,
+          "originalWidth": 959,
+          "originalHeight": 688
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "锦标赛的前一周，她站在体重秤上。\n终于，55公斤！ 尼拉很兴奋。\n她绷紧了身上的肌肉。她不停地微笑。“我做到了！”",
+        "image": "assets/books/sw-99715/11.jpg",
+        "imageFrame": {
+          "x": 367,
+          "y": 0,
+          "width": 592,
+          "height": 688,
+          "originalWidth": 959,
+          "originalHeight": 688
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "锦标赛当天，尼拉准备好了。\n今年，竞争更加激烈。\n尼拉注视着其他强壮的举重运动员。 有个戴黄色头巾的男孩。 有个扎着辫子的女孩。 当然还有维克拉姆王子。",
+        "image": "assets/books/sw-99715/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "他们举起橱柜。他们举起岩石。 他们举起原木。 他们举起宝箱。\n评委观看着。 手臂在抖吗？ 腿稳定吗？ 姿势是否正确？\n尼拉咬紧牙关。 她能感受到身体的每一块肌肉。 每一滴汗水。",
+        "image": "assets/books/sw-99715/13.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 53,
+          "width": 928,
+          "height": 635,
+          "originalWidth": 959,
+          "originalHeight": 688
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "维克拉姆领先。 但是尼拉紧追在后。\n最后一轮开始了。 他们必须举起古老的铁宝座。",
+        "image": "assets/books/sw-99715/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "其他人都不错。 但尼拉更厉害。\n她用尽全身的力气。 她哼了一声，忍住疼痛。 当她几乎要放弃时，她想起了苏里亚和泰巴。\n铁宝座在空中升起。",
+        "image": "assets/books/sw-99715/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "最后成绩显示出来了。 尼拉公主赢了！\n“现在你配得上成为冠军的妻子，”国王自豪地说。\n尼拉公主笑了笑。 “不，”她说。 “现在，我是冠军。”",
+        "image": "assets/books/sw-99715/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-99715/17.jpg",
+        "imageFrame": {
+          "x": 286,
+          "y": 214,
+          "width": 363,
+          "height": 360,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "wordless": true,
+        "imageAlt": "《举重公主》原书第17页的故事插图",
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-99717",
+    "title": "我们来玩吧",
+    "intro": "跑步、游泳、骑车、放风筝，看看玩耍时身体和物体怎样动起来。",
+    "keywords": [
+      "跑",
+      "游泳",
+      "风筝"
+    ],
+    "question": "你最喜欢哪种运动？它是怎样开始或停下来的？",
+    "tag": "生活发现",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/99717-women-lai-wan-ba",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Meethil Momaya",
+      "Illustrated by": "Shirish Ghatge",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2019；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：中文省略号；纠正force被译成力量及不通顺定义；纠正表面穿过表面的错误定义；纠正energy术语。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99717/01.jpg",
+    "pages": [
+      {
+        "text": "准备……\n好……\n开始！",
+        "image": "assets/books/sw-99717/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "我跑",
+        "image": "assets/books/sw-99717/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "我游泳",
+        "image": "assets/books/sw-99717/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "我骑自行车",
+        "image": "assets/books/sw-99717/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "我溜冰",
+        "image": "assets/books/sw-99717/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "我放风筝",
+        "image": "assets/books/sw-99717/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "我们玩耍的时候，会用到力。\n力：推或拉物体，可以使物体加速、减速、停止或改变形状。",
+        "image": "assets/books/sw-99717/08.jpg",
+        "imageFrame": {
+          "x": 277,
+          "y": 289,
+          "width": 430,
+          "height": 360,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "摩擦力：当两个接触的表面相对运动时，摩擦力通常会阻碍这种运动。",
+        "image": "assets/books/sw-99717/09.jpg",
+        "imageFrame": {
+          "x": 303,
+          "y": 304,
+          "width": 407,
+          "height": 371,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "能量：让物体发生变化或做功的能力。",
+        "image": "assets/books/sw-99717/10.jpg",
+        "imageFrame": {
+          "x": 329,
+          "y": 252,
+          "width": 343,
+          "height": 403,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-99717/11.jpg",
+        "imageFrame": {
+          "x": 191,
+          "y": 30,
+          "width": 668,
+          "height": 614,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《我们来玩吧》原书第11页的故事插图",
+        "sourcePage": 11
+      }
+    ]
+  },
+  {
+    "id": "sw-99720",
+    "title": "一起制作青柠汁吧！",
+    "intro": "八个孩子分一壶饮料，再一起用十分之一、十分之二和十分之七调出新的一壶。",
+    "keywords": [
+      "平均",
+      "一半",
+      "青柠"
+    ],
+    "question": "一根绳子对折三次，会被分成几等份？",
+    "tag": "数学游戏",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/99720-yiqi-zhizuo-qing-ning-zhi-ba",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Nandini Bajpai",
+      "Illustrated by": "Niloufer Wadia",
+      "Translated by": "Jala Community"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2019；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：重复字；动作词与标点；区分调制饮料与配方原汁；自然语序；纠正八条线与八等份混淆；区分原汁与调好饮料；儿童自然表达；结合直筒壶与配比图明确增加等长刻度，避免把八等份随意多分两刀；区分原汁；正确动作搭配；统一残留英文称呼；口语直译；去重复；将重复或不完整的分量词整理为常用表达；根据八等分插画纠正全体碎块拼成半个的数学错误，并明确成人用刀；量词统一；活动问切片数更清楚；果实名称统一；保留原书真实分数，不误作页码删除。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-99720/01.jpg",
+    "pages": [
+      {
+        "text": "放学后，我们在菩提树下玩耍。\n捉迷藏、踢毽子、跳皮筋、“三个字”、老鹰捉小鸡……",
+        "image": "assets/books/sw-99720/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "拉竹叔叔的茶店就在树的附近。\n天气很热的时候，他会给我们留下一壶青柠饮料和几个杯子。",
+        "image": "assets/books/sw-99720/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "怎样把青柠饮料平均分给我们八个人呢？\n阿曼的口袋里有一根绳子。我们将它剪成与壶里饮料高度相同的长度。",
+        "image": "assets/books/sw-99720/04.jpg",
+        "imageFrame": {
+          "x": 52,
+          "y": 1,
+          "width": 567,
+          "height": 688,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "我们把绳子对折，再对折两次。展开后，绳子就被分成八等份了。\n我们将折叠的绳子放在茶壶的旁边，并在茶壶上标记相等的部分。",
+        "image": "assets/books/sw-99720/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 2,
+          "width": 579,
+          "height": 686,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "曼努和莎拉一同提起了水壶，小心翼翼地将青柠汁倒入玻璃杯中。",
+        "image": "assets/books/sw-99720/06.jpg",
+        "imageFrame": {
+          "x": 203,
+          "y": 0,
+          "width": 756,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "真美味，我们都想要更多。拉竹叔叔说：“你们可以再做一些。”\n“制作方法贴在板上。”",
+        "image": "assets/books/sw-99720/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 556,
+          "height": 684,
+          "originalWidth": 639,
+          "originalHeight": 687
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "青柠汁的做法\n十分之一的鲜青柠汁\n十分之二的糖浆\n十分之七的冷水\n搅拌均匀，就可以喝啦！",
+        "image": "assets/books/sw-99720/08.jpg",
+        "imageFrame": {
+          "x": 278,
+          "y": 3,
+          "width": 401,
+          "height": 686,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "我们有水，糖浆和青柠汁，但我们不知道如何测量十分之一。",
+        "image": "assets/books/sw-99720/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "古里亚说：“我们已经标出八个相等的部分，再按同样的间隔往上标两格，就有十个相等的部分了。”\n阿鲁把鲜青柠汁倒到第一个标记。我倒了两份糖浆，使混合物上升到第三个标记。曼努加入冷水，直到第十个标记。",
+        "image": "assets/books/sw-99720/10.jpg",
+        "imageFrame": {
+          "x": 6,
+          "y": 73,
+          "width": 473,
+          "height": 534,
+          "originalWidth": 479,
+          "originalHeight": 688
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-99720/11.jpg",
+        "imageFrame": {
+          "x": 13,
+          "y": 1,
+          "width": 931,
+          "height": 688,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《一起制作青柠汁吧！》原书第11页的故事插图",
+        "sourcePage": 11
+      },
+      {
+        "text": "我们倒了八杯青柠汁，还剩下一些青柠汁。我们把剩下的饮料倒进拉竹叔叔的大杯子里。",
+        "image": "assets/books/sw-99720/12.jpg",
+        "imageFrame": {
+          "x": 95,
+          "y": 0,
+          "width": 765,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "拉竹叔叔说：“真棒！这是我喝过最好喝的青柠汁了！不过，如果配上一些热腾腾的炸蔬菜就更美味了。”\n“万岁！ 谢谢你，拉竹叔叔！”",
+        "image": "assets/books/sw-99720/13.jpg",
+        "imageFrame": {
+          "x": 303,
+          "y": 0,
+          "width": 656,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "四分之一。\n一半。\n半满。\n满满的。\n足够。\n你有时会用这些词吗？",
+        "image": "assets/books/sw-99720/14.jpg",
+        "imageFrame": {
+          "x": 4,
+          "y": 0,
+          "width": 932,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "取出一个青柠，请大人把它切成八等份。刀子要由大人小心使用。\n每一小块都是整个青柠的八分之一。\n现在试试看：要拼出半个青柠，需要几小块呢？",
+        "image": "assets/books/sw-99720/15.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 427,
+          "width": 933,
+          "height": 262,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "把一个青柠的四分之三给你的朋友。\n她得到了几小块？\n假如你的兄弟想要半个青柠。\n一半是几小块？\n八分之一 = 1/8",
+        "image": "assets/books/sw-99720/16.jpg",
+        "imageFrame": {
+          "x": 11,
+          "y": 411,
+          "width": 322,
+          "height": 277,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 16
+      }
+    ]
+  },
+  {
+    "id": "sw-266338",
+    "title": "一名舞蹈家的故事",
+    "intro": "菲丽丝从爱跳舞的小女孩，成为舞者，又把舞蹈带给更多孩子。",
+    "keywords": [
+      "舞蹈",
+      "梦想",
+      "练习"
+    ],
+    "question": "你喜欢做什么？想和谁一起分享这份喜欢？",
+    "tag": "成长故事",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/266338-the-story-of-a-dancer",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Book Dash",
+      "Written by": "Samantha Cutler",
+      "Illustrated by": "Thea Nicole de Klerk",
+      "Translated by": "Crystal Won"
+    },
+    "copyright": "原作 © Book Dash , 2014；中文译文 © Jala , 2021；插图 © Book Dash, 2014。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：避免天生注定论的僵硬译句；自然句式，避免与官方16岁入学记载出入；地名规范；错字；不把永不疲倦当作坚持的标准；纠正南美洲错译并调整传记时态；修正关系不明的译句。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266338/01.jpg",
+    "pages": [
+      {
+        "text": "在很久很久以前，在一个不太遥远的地方，一个名叫菲丽丝的小女孩，后来爱上了芭蕾舞。\n她的爸爸和妈妈，一对相爱的夫妻，还不知道他们即将迎接一名舞蹈家。",
+        "image": "assets/books/sw-266338/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 31,
+          "width": 639,
+          "height": 624,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "四岁的菲丽丝表现得非常出色。她小踢腿的动作在老师们的心中留下了深刻的印象 。\n每天上学前和放学后，她都在跳舞。没有什么比跳芭蕾舞更让菲丽丝感到满足。",
+        "image": "assets/books/sw-266338/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 62,
+          "width": 639,
+          "height": 565,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "不久后，年轻的她远赴伦敦，追逐自己的梦想。\n远离自己的家乡和朋友，她开启了新的人生。皇家芭蕾舞学院很快就会肯定她的表现！",
+        "image": "assets/books/sw-266338/04.jpg",
+        "imageFrame": {
+          "x": 6,
+          "y": 4,
+          "width": 626,
+          "height": 685,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "女王非常喜欢她表演的天鹅湖！练习了多年的足尖旋转后，她的努力终于被看见！\n她在台上跳跃和旋转，台下的每个人都微笑着欣赏！他们一边鼓掌，一边欢呼！",
+        "image": "assets/books/sw-266338/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 30,
+          "width": 639,
+          "height": 633,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "从墨西哥到加拿大，还有美国和法国，各个国家的人都邀请她去表演舞蹈。\n她与她的朋友带着皇家芭蕾舞的精神，将这份对跳舞的热爱散播于世界各地，让这份热爱得以延续。",
+        "image": "assets/books/sw-266338/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 8,
+          "width": 639,
+          "height": 671,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "可是，菲丽丝想家了。她已经离开家很长一段时间了。她期待回家后可以开始新的生活。\n因此，她一路跳跃地回到那美丽的国土，再次走在南非的沙地上。",
+        "image": "assets/books/sw-266338/07.jpg",
+        "imageFrame": {
+          "x": 24,
+          "y": 8,
+          "width": 591,
+          "height": 668,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "舞蹈带来的不仅仅是欢乐。菲丽丝深知，她日日夜夜辛苦地排练，才使她在汗水中得以成长。\n不论是在愉快的时刻，或是在艰难的时刻，她虽然也会疲惫，却一直努力练习。她的目标是要做到最好。“好”对她而言并不足够。",
+        "image": "assets/books/sw-266338/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 29,
+          "width": 639,
+          "height": 633,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "无论是罗密欧与朱丽叶、天鹅湖还是吉赛尔，她如魔法般的演出捕捉了每个观众的目光。\n无论是与盖瑞·伯恩共舞，或是与爱德华·格雷林共舞，她的表演总会获得好评。",
+        "image": "assets/books/sw-266338/09.jpg",
+        "imageFrame": {
+          "x": 20,
+          "y": 3,
+          "width": 600,
+          "height": 686,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "经历各种考验后，你终究会得到回报。后来，她成了南非最优秀的舞蹈家之一。\n“首席芭蕾舞者”和“最杰出的舞蹈家”，都会是她永远的头衔。菲丽丝已经别无所求。",
+        "image": "assets/books/sw-266338/10.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 33,
+          "width": 639,
+          "height": 614,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "不久后，菲丽丝遇见一名舞蹈员，菲利普·博伊德。她爱上了他！他们俩都十分高兴！\n相爱的他们很快就结婚了。他们总会一起跳舞。没有哪一对舞者比他们俩更匹配了！",
+        "image": "assets/books/sw-266338/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 26,
+          "width": 639,
+          "height": 633,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "他们没有自己的小孩，但他们并不感到悲伤，因为他们把关爱送给了更多孩子。\n他们创办的学校，名为大家舞蹈学校，让不同背景的孩子都有机会学习舞蹈并爱上舞蹈。",
+        "image": "assets/books/sw-266338/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 52,
+          "width": 639,
+          "height": 581,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "她成功的故事鼓励着其他人去成就最好的自己。\n她启发了那些正在为我们跳舞的舞蹈家，也启发了怀抱梦想的我们。",
+        "image": "assets/books/sw-266338/13.jpg",
+        "imageFrame": {
+          "x": 2,
+          "y": 32,
+          "width": 637,
+          "height": 628,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266338/14.jpg",
+        "imageFrame": {
+          "x": 17,
+          "y": 65,
+          "width": 942,
+          "height": 559,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《一名舞蹈家的故事》原书第14页的故事插图",
+        "sourcePage": 14
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266338/15.jpg",
+        "imageFrame": {
+          "x": 400,
+          "y": 272,
+          "width": 198,
+          "height": 183,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《一名舞蹈家的故事》原书第15页的故事插图",
+        "sourcePage": 15
+      }
+    ]
+  },
+  {
+    "id": "sw-266344",
+    "title": "南亚鸨，一路顺风",
+    "intro": "兰尼娅守护田里的南亚鸨一家，也发现了鸟儿飞行时会遇到的新危险。",
+    "keywords": [
+      "鸟蛋",
+      "草原",
+      "保护"
+    ],
+    "question": "除了照顾鸟蛋，还有什么办法能让鸟儿生活得更安全？",
+    "tag": "自然探索",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/266344-fly-safe-godavan",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Cara Tejpal",
+      "Illustrated by": "Sanjana Desai",
+      "Translated by": "Edith Tan"
+    },
+    "copyright": "原作 © Pratham Books , 2020；中文译文 © Jala , 2021；插图 © Pratham Books, 2020。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：自然常用词；动物驱离对白用词；不把会飞当作不再有危险；繁转简并使用常用词；动物代词；明确电线工程由专业人员处理；不把鸟类反应写作确定保证；去掉无法解释的残留音译；不将局部分布写作唯一；避免未加年份的变化种群数字；不将繁育放归写作单一条件保证。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266344/01.jpg",
+    "pages": [
+      {
+        "text": "“兰尼娅，兰尼娅！”萨利姆·马穆叫道。\n“过来看看那只南亚鸨。”\n原本正在和山羊玩耍的兰尼娅立刻奔向萨利姆·马穆。在绿豆田里，有一只戴着黑色头冠的大鸟。它长得比兰尼娅还要高，但是却没有像萨利姆·马穆那么高。",
+        "image": "assets/books/sw-266344/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "砉！\n南亚鸨的羽毛竖了起来。\n扑哧！\n南亚鸨的脖子像气球一样膨胀了起来。\n萨利姆·马穆笑了。“我们不再使用农药了，所以南亚鸨才会到这田里来寻找伴侣。它正在向它的伴侣展示它的魅力。”",
+        "image": "assets/books/sw-266344/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "一个星期后，萨利姆·马穆带兰尼娅去散步。\n他指着远处说：“南亚鸨的伴侣在地面上产了一颗蛋。我们必须好好保护这颗蛋，以免牛、山羊和骆驼把它踩破。”",
+        "image": "assets/books/sw-266344/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "萨利姆·马穆吩咐兰尼娅要保护着那颗蛋，但也提醒她不要靠得太近。\n“嘘！”兰尼娅对着牛和山羊说。\n“哼！”兰尼娅朝骆驼大声叫。\n“你很安全。”兰尼娅对着南亚鸨和它的蛋轻声地说。",
+        "image": "assets/books/sw-266344/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "在某一个夜晚，天空下起了一场可怕的暴风雨。雷声像锣鼓一般轰轰响着。闪电照亮了整座沙丘。兰尼娅担心着南亚鸨和那颗蛋的安危。\n到了早上，兰尼娅去查看鸟巢的状况。\n“不好了！”兰尼娅哭道。“鸟蛋被暴风雨摧毁了。”\n萨利姆·马穆笑了。他指着地面上的蛋壳碎片说：“蛋已经孵化了！”",
+        "image": "assets/books/sw-266344/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "兰尼娅再也不需要保护鸟巢了。不过，她还是要把南亚鸨妈妈和宝宝照顾好。\n“南亚鸨宝宝还不能飞翔。”萨利姆·马穆说。 “因此，我们必须帮助南亚鸨妈妈，确保宝宝不被掠食者伤害。”",
+        "image": "assets/books/sw-266344/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "小小南亚鸨一直跟着它的妈妈。兰尼娅经常在绿豆田里和草原上看见它们。\n叽-叽-叽\n它们吃昆虫和植物的种子。",
+        "image": "assets/books/sw-266344/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "有一次，兰尼娅看见一群野狗闯入绿豆田里。她大声呼叫萨利姆·马穆，然后两人一起把野狗赶走。\n“呼！”兰尼娅喘一口气。“保护我们的南亚鸨是一项艰巨的任务。我期待着南亚鸨宝宝学会飞翔的那一天。到了那一天，它就更能躲避危险了！”",
+        "image": "assets/books/sw-266344/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "南亚鸨宝宝渐渐地长大。现在的它已经学会飞翔。它的体型几乎和它的妈妈一样高大。",
+        "image": "assets/books/sw-266344/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "有时候，萨利姆·马穆无法辨认出它们母子俩。不过，兰尼娅总是可以辨认出来。",
+        "image": "assets/books/sw-266344/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "有一天，萨利姆·马穆把兰尼娅带到田的边缘。她看见高耸的风车和悬挂在电线杆上的电线。\n“那两只鸟很快就会飞去寻找新的觅食地点。”他说。“由于它们飞得太低，所以它们可能会撞到电线。”\n“南亚鸨肯定比电线更重要，对吧？”兰尼娅思考着。\n可是她并不知道如何才能保护好那些南亚鸨，不让它们撞到电线。\n不过，萨利姆·马穆想到了一个解决方案！",
+        "image": "assets/books/sw-266344/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "一个星期后，他找来了几位专业人员。\n他们花了好几天，将一部分的电线藏在地底下。另外，悬挂在空中的电线也被绑上了几面镜子。\n“阳光遇到镜子就会反射。那两只南亚鸨看见反射的光芒后就更容易发现电线并绕开它们。”萨利姆·马穆解释道。",
+        "image": "assets/books/sw-266344/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "当兰尼娅在田里帮忙的时候，她看见了那两只南亚鸨。\n那两只鸟助跑了一小段路后，便开始拍打它们沉重的翅膀。\n慢慢地，它们飞离了地面，也安全地越过电线。",
+        "image": "assets/books/sw-266344/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "“一路顺风，我的南亚鸨。”兰尼娅喊道。\n“要快点回来哦。”",
+        "image": "assets/books/sw-266344/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "南亚鸨差一点就成为印度的国鸟！这个美丽的物种生活在草原上。雌南亚鸨每年只会在空旷的地上产下一颗蛋。南亚鸨是一只又高又重的鸟。南亚鸨飞得很低，非常靠近地面。它们的正面视力比较弱，这意味着它们有时来不及发现并闪避眼前的电线。\n南亚鸨曾经遍布印度的各个区域。然而，如今它们主要生活在拉贾斯坦邦和古吉拉特邦。兰尼娅的南亚鸨正面临着巨大的挑战！野外生存的南亚鸨已经非常稀少。它们属于“极度濒危”的动物。幸好，印度的生态保护工作者正在透过圈养繁育，防止它们绝种。保护它们的草原家园，才能给它们更多回到野外生活的机会。\n认识南亚鸨",
+        "image": "assets/books/sw-266344/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266344/17.jpg",
+        "wordless": true,
+        "imageAlt": "《南亚鸨，一路顺风》原书第17页的故事插图",
+        "sourcePage": 17
+      }
+    ]
+  },
+  {
+    "id": "sw-266363",
+    "title": "你的酒窝呢？",
+    "intro": "兰格恩看着小猫，开始好奇自己为什么像爸爸又像妈妈。",
+    "keywords": [
+      "特征",
+      "卷发",
+      "独一无二"
+    ],
+    "question": "你和家人有哪些相像的地方，又有哪些不一样？",
+    "tag": "科学探索",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/266363-where-did-your-dimples-go",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Radha HS",
+      "Illustrated by": "Kruttika Susarla",
+      "Translated by": "Ivy Low"
+    },
+    "copyright": "原作 © Pratham Books , 2016；中文译文 © Jala , 2021；插图 © StoryWeaver Team, 2016。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：纠正把小猫叫声译成人类哭泣；保持对未知猫父亲毛色的推测语气；去绝对化，避免把所有特征都当作直接遗传；错字；漏字；避免暗示简单固定的隔代遗传规则；自然中文；术语统一；纠正生理绝对化表述，并把幽默写作相似而非简单遗传；科学表述更准确；中文标点；避免靠外貌猜地域身份；人物代词；中文问号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266363/01.jpg",
+    "pages": [
+      {
+        "text": "“妈妈…… 爸爸……快过来！”兰格恩哭喊着。\n兰格恩的父母发现她蹲在橱柜旁，看着三只小猫正在玩耍。小猫轻声地叫着。\n“妈妈……”兰格恩说。\n“嘘，小点声。”妈妈说。“小猫很容易受到惊吓。”",
+        "image": "assets/books/sw-266363/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "突然，一只大橘猫从窗口跳进来。它轻快地走过他们面前，无视他们的存在，随后便躺了下来。那三只小猫立刻冲过去，然后开始喝奶。\n兰格恩和她的父母踮着脚离开了。",
+        "image": "assets/books/sw-266363/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "兰格恩问道： “那只小灰猫难道不是那只大猫的孩子吗？”\n“它是啊！”爸爸回答。\n“那么，它为什么不是橘色的？为什么它和它的妈妈不一样呢？”\n“或许它的爸爸是灰色的。”\n兰格恩还在思考着，爸爸便接着说：“那只小灰猫的毛色可能像它的爸爸，就像你的头发和爸爸的头发一样都是卷卷的！”",
+        "image": "assets/books/sw-266363/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "“可是，大家都说我长得像妈妈。你看看，我们的下巴都有一条美人沟，它使我们的下巴看起来像分裂了一样。”\n“因为你是我们的甜心兰格恩，所以你身上有我们两个的特征。”妈妈紧抱着她说。\n“那么，那只小灰猫身上也有它的爸爸和妈妈的特征吗？”",
+        "image": "assets/books/sw-266363/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "“是的。孩子的许多特征会受到父母遗传的影响。”爸爸解释。\n“特征？等等，让我猜猜。我的卷发也是一个特征吗？”\n“是的，兰格恩，那是一个特征。你的任何特点和特质都是一个特征。你还可以想到其他的特征吗？”妈妈问。\n“嗯，我的身高呢？”\n“是的，那也是一个特征。你眼睛的颜色，你耳朵的形状，你手指和脚趾的长度，和你鼻子的形状都是你的特征。”妈妈解释。\n“我的卷发是遗传自爸爸，我的美人沟是遗传自妈妈。那么，你们的特征也是遗传自你们的父母吗？”\n“是的！你理解得很快。他们的特征也遗传自他们的父母。”妈妈说。",
+        "image": "assets/books/sw-266363/06.jpg",
+        "imageFrame": {
+          "x": 796,
+          "y": 0,
+          "width": 163,
+          "height": 224,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266363/07.jpg",
+        "wordless": true,
+        "imageAlt": "《你的酒窝呢？》原书第7页的故事插图",
+        "sourcePage": 7
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266363/08.jpg",
+        "wordless": true,
+        "imageAlt": "《你的酒窝呢？》原书第8页的故事插图",
+        "sourcePage": 8
+      },
+      {
+        "text": "“可是…… 外公和外婆都没有美人沟。你怎么会遗传这个特征？”\n兰格恩困惑地问道。\n“有些相似的特征会隔几代才表现出来。我的外公有美人沟。他所有的孩子，\n包括我的妈妈，都没有遗传这个特征。反而是我遗传了他的美人沟，\n然后再把它遗传给你。”\n“那么，我只不过是遗传了你们所有人的特征。”兰格恩有些难过地说。\n妈妈赶紧抱着她。“不是的，兰格恩。父母把特征遗传给孩子。\n我们的某些特征或许是一样的，但是我们终究是不一样的人。\n你有各种各样的特征，使得你独一无二！”",
+        "image": "assets/books/sw-266363/09.jpg",
+        "imageFrame": {
+          "x": 600,
+          "y": 468,
+          "width": 359,
+          "height": 221,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "“看看我，兰格恩。”爸爸说。“我是独一无二的。我长得很高。我的头上有又长又卷的头发。我的脸上有又长又卷的毛发。我的耳朵有又长又卷的耳毛。我是世界上脚掌最宽的男人。如果你也有又长又卷的耳毛，你会怎么做呢？”",
+        "image": "assets/books/sw-266363/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "“嗯…… 爸爸，我会把它编成辫子，并绑上五颜六色的橡皮筋！”\n妈妈对着他们俩微笑。“每个人的毛发都不一样，兰格恩。不过，你的幽默感倒很像爸爸！”",
+        "image": "assets/books/sw-266363/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "爸爸离开了房间。兰格恩依偎在妈妈的大腿上。\n“我还有一个疑问 。外婆说你以前和她一样都有酒窝。它们到哪里去了？”\n妈妈笑着说：“我确实是遗传了我妈妈的酒窝。但是，许多特征都会受到不同因素的影响。有些影响因素使它可以显现出来，有些影响因素却使它消失。”",
+        "image": "assets/books/sw-266363/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "爸爸端着一个盘子回来了。那个盘子被一块布盖着。\n“我就是那个可以使美食神奇地出现在盘子上的影响因素。”说着，他把布掀起。盘子里装着热腾腾的炸豆饼。\n“而我们就是那个可以使它们消失的影响因素，对吗？”兰格恩说。她的父母还没有回答，她就已经迫不及待地把食物塞进嘴里。",
+        "image": "assets/books/sw-266363/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "了解生字：\n美人沟： 下巴的中间有一条浅浅的沟\n特征： 一个人身上的特点，如：卷发、美人沟、酒窝\n遗传： 父母将自己的特征传给孩子\n代： 差不多同一时间一起生活的人\n独一无二： 特别\n影响因素： 使事物发生变化的原因",
+        "image": "assets/books/sw-266363/14.jpg",
+        "imageFrame": {
+          "x": 648,
+          "y": 366,
+          "width": 311,
+          "height": 324,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "画出你的家族树\n故事里， 兰格恩的妈妈来自印度曼尼普尔邦，而她的爸爸来自印度泰米尔纳德邦。\n兰格恩画出了她的家族树（第七页和第八页），你想不想也画出你的家族树呢？拿出一张纸和一支笔，马上画吧！如果你不太确定，可以请爸爸妈妈帮忙噢！",
+        "image": "assets/books/sw-266363/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "你想象中的宠物长什么样子呢？\n它的毛发是直的还是卷的？它的鼻子是圆形还是三角形的？\n一条腿，两条腿还是很多条腿？像狗的尾巴还是像狮子的尾巴？\n画出你想象中的宠物的特征。\n把那些特征拼凑在一起，尽情地发挥你的想象力吧！",
+        "image": "assets/books/sw-266363/16.jpg",
+        "sourcePage": 16
+      }
+    ]
+  },
+  {
+    "id": "sw-266369",
+    "title": "了解恐龙",
+    "intro": "从小到大、从牙齿到爪子，一起认识形态各异的恐龙。",
+    "keywords": [
+      "恐龙",
+      "化石",
+      "科学家"
+    ],
+    "question": "哪一种恐龙的身体特点最让你好奇？",
+    "tag": "科学探索",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/266369-discovering-dinosaurs",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Anjali Alappat",
+      "Illustrated by": "Gina James",
+      "Translated by": "Wei Qi Ong"
+    },
+    "copyright": "原作 © Pratham Books , 2020；中文译文 © Jala , 2021；插图 © Pratham Books, 2020。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：自然中文语序；对照英文reptiles并依据博物馆明确分类，避免承接成所有恐龙都会飞会游；不沿用绝对最快纪录；避免将类群和纪录绝对化；明确类群中的形态例子；避免绝对化纪录；避免以拼写纪录替代科普；明确与鸟类延续的区别；依据AMNH与Smithsonian校正时间、撞击天体和灭绝范围；避免把单次科学记录当作人类首次发现；物理断词；纠正英文拼写与词源表述；不把变化中的发现种数写成无年份固定数；明确现代分类而非全部恐龙灭绝后的矛盾。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266369/01.jpg",
+    "pages": [
+      {
+        "text": "在很久很久以前，\n人类还没有出现的年代，\n有一种名为恐龙的爬行动物随处可见。",
+        "image": "assets/books/sw-266369/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 1721,
+          "width": 3351,
+          "height": 685,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "那时，爬行动物有不同的生活方式：\n有些在陆地上生活，有些在海里游泳，\n有些在地下挖洞，还有些在天空飞翔。\n不过，海洋爬行动物和翼龙并不是恐龙。",
+        "image": "assets/books/sw-266369/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "有些恐龙比建筑物高，\n有些恐龙比凳子矮，\n有些恐龙比起重机大，\n有些恐龙比鸭子小。\n它们的外貌各不相同，这点和人类一样！",
+        "image": "assets/books/sw-266369/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 153,
+          "width": 3351,
+          "height": 2253,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "似鸟龙是一种跑得很快的恐龙。它的速度和摩托车一样快！",
+        "image": "assets/books/sw-266369/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 99,
+          "width": 3351,
+          "height": 2307,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "有些鸭嘴龙有非常多的牙齿。牙齿可以多达上千颗！",
+        "image": "assets/books/sw-266369/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 161,
+          "width": 3351,
+          "height": 2245,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "五角龙的头部非常大。它的颅骨比冰箱还大！",
+        "image": "assets/books/sw-266369/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "在众多会飞的爬行动物里，\n风神翼龙是体型最大的种类之一。\n它的双翼比一根电线杆还长！",
+        "image": "assets/books/sw-266369/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 69,
+          "width": 3351,
+          "height": 2337,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "微肿头龙的学名非常长，但它的体积却和一位四岁的小孩一样小！",
+        "image": "assets/books/sw-266369/09.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 432,
+          "width": 3351,
+          "height": 1974,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "镰刀龙的爪子非常长。\n它的爪子有半张床这么长！",
+        "image": "assets/books/sw-266369/10.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 142,
+          "width": 3351,
+          "height": 2264,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "阿根廷龙是体型最大的恐龙之一。\n它的体积比板球的球道还要大！",
+        "image": "assets/books/sw-266369/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 824,
+          "width": 3351,
+          "height": 1582,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "鸟面龙是体型最小的恐龙之一。\n它只有一只鸡的大小！",
+        "image": "assets/books/sw-266369/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 640,
+          "width": 3351,
+          "height": 1766,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "那么，恐龙现在在哪儿呢？",
+        "image": "assets/books/sw-266369/13.jpg",
+        "imageFrame": {
+          "x": 1393,
+          "y": 613,
+          "width": 623,
+          "height": 1202,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "非鸟类恐龙在数千万年前已经灭绝，人类没有见过活着的它们。\n它们只留下深埋在地底下的恐龙化石。\n科学家仍在寻找更多的恐龙化石，\n试图更深入地探讨这种神奇的生物。",
+        "image": "assets/books/sw-266369/14.jpg",
+        "imageFrame": {
+          "x": 298,
+          "y": 671,
+          "width": 2766,
+          "height": 1639,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "恐龙在地球上生活了上亿年。约六千六百万年前，一颗小行星撞击了地球，环境发生剧烈变化，非鸟类恐龙和许多其他生物灭绝了。\n早在1677年，就有人记录过恐龙的骨骼化石。\n当时，科学家认为那是一个巨人的骨骼！直到19世纪，科学家才开始意识到那些化石其实是属于别的物种，而那个物种已经不存在了。科学家把\n它们命名为“dinosaur”，词根来自希腊语，意思是“可怕的蜥蜴”。\n主要研究动植物化石的古生物学，随后变得很受欢迎。古生物学家已经发现了数百种恐龙，但他们仍在继续探索。恐龙化石最常出现于中国、南美洲和北美洲。\n你想看看恐龙吗？那么，多留意你的四周吧！现代科学表明，鸟类就是恐龙的一支。那些可怕的蜥蜴至今还在我们的周围呢！",
+        "image": "assets/books/sw-266369/15.jpg",
+        "imageFrame": {
+          "x": 1725,
+          "y": 114,
+          "width": 1483,
+          "height": 2141,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266369/16.jpg",
+        "imageFrame": {
+          "x": 981,
+          "y": 1392,
+          "width": 1539,
+          "height": 919,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "wordless": true,
+        "imageAlt": "《了解恐龙》原书第16页的故事插图",
+        "sourcePage": 16
+      }
+    ]
+  },
+  {
+    "id": "sw-266388",
+    "title": "地球呼叫阿鲁",
+    "intro": "阿鲁想像超级英雄一样飞起来，地球决定让她见识引力的本领。",
+    "keywords": [
+      "地球",
+      "引力",
+      "飞翔"
+    ],
+    "question": "如果没有引力，身边的东西会怎样？这个故事里哪些是想象？",
+    "tag": "自然科普",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/266388-earth-calling-aru",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Labanya Ghosh",
+      "Illustrated by": "Gitanjali Iyer",
+      "Translated by": "Annie Nguyen"
+    },
+    "copyright": "原作 © Pratham Books , 2019；中文译文 © Jala , 2021；插图 © Pratham Books, 2019。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：自然用词；纠正质量与粒子数混淆；依据NASA儿童术语表；去掉日期/月份/季节都由公转直接造成的错误概括；保留原故事年月生活联系。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266388/01.jpg",
+    "pages": [
+      {
+        "text": "“啊！”\n今天，地球很生气。\n非常非常地生气。",
+        "image": "assets/books/sw-266388/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "阿鲁又来了。\n这次已经是第二十次了。她又准备像漫画中的超级英雄一样飞翔。",
+        "image": "assets/books/sw-266388/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "这是她第二十次尖叫：“啊！”\n“地心引力，我讨厌你！”",
+        "image": "assets/books/sw-266388/04.jpg",
+        "imageFrame": {
+          "x": 1508,
+          "y": 48,
+          "width": 1843,
+          "height": 2358,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "“哼！这太不公平了。”地球喃喃自语。\n“地心引力是一种很神奇的力量。若是没有地心引力，空气、植物、动物、山脉、海洋、星星、房屋、汽车、学校、阿鲁和我都不会处在我们目前所在的位置。\n不过，我如何才能让阿鲁明白这个原理呢？”",
+        "image": "assets/books/sw-266388/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "地球想出一个办法。",
+        "image": "assets/books/sw-266388/06.jpg",
+        "imageFrame": {
+          "x": 34,
+          "y": 196,
+          "width": 3090,
+          "height": 2210,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "“你好，阿鲁。 我是地球。\n既然你那么讨厌地心引力，那么我决定把它拿走。你尽情地飞翔吧！”\n“当然，你必须先抓住你的披风！”",
+        "image": "assets/books/sw-266388/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 815,
+          "width": 2120,
+          "height": 1591,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "“哇 ……”\n“啊！”\n“不！”\n“呃！”\n“喔！”",
+        "image": "assets/books/sw-266388/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "“求求你，求求你，停下来！我之前觉得地心引力很愚蠢是因为我想要飞翔。可是，现在所有的东西都飞起来了。”阿鲁说。\n“哼！\n你以为地心引力的用处仅仅是为了阻止你飞翔吗？”\n“啊，它除了让我待在地面上，还有什么用途呢？”阿鲁问。",
+        "image": "assets/books/sw-266388/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "地球叹了口气，然后解释说：\n“地心引力是一种无形的力量。它使我们周围所有的东西都拉扯着彼此。它使所有的东西井然有序地排列着。",
+        "image": "assets/books/sw-266388/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "如果没有了它，所有的东西，包括你和我，都会漂浮起来，然后消失在太空中。咻！”",
+        "image": "assets/books/sw-266388/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "阿鲁马上问：\n“不过，那些拉扯在哪里呢？我完全看不见。”\n“你观察得很好，阿鲁！\n每时每刻，所有的东西都在相互拉扯着。\n你之所以会看不见，也感觉不到，是因为我是你周围最重的物体。我的引力最强。因此，我把所有的东西都拉向自己，使每个东西都着地。\n相较于你身边其他的物体，我的引力是最强的，\n因为我的质量最大。记住，质量越大，引力越强。”地球说。\n质量表示物体含有多少物质。",
+        "image": "assets/books/sw-266388/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "“嗯……月亮呢？它也很大。还有木星呢？”阿鲁问。\n“啊，阿鲁，你真的开始理解了。月亮比我轻得多，所以它的引力没有像我的引力这么强。不过，它的引力足以拉着海水，形成潮汐。”",
+        "image": "assets/books/sw-266388/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "“是这样的，物体越远，引力就越弱。\n现在来说说木星，它是我们太阳系中最大的行星。它的质量确实比我的质量更大，可是由于它的距离太远，所以它的引力比月亮的引力更弱。”",
+        "image": "assets/books/sw-266388/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "宇宙里有很多比地球还要重的东西。太阳就是其中的一个。太阳拉着地球和其他的行星，使它们绕着太阳移动。地球绕太阳运行一周，大约是一年。我们在一年里经历不同季节，也会过暑假、迎来生日。许多行星和恒星都比地球还要重，但由于它们和我们之间的距离太遥远，所以它们的引力对我们没有太大的影响。",
+        "image": "assets/books/sw-266388/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "阿鲁安静了一会儿。\n她突然挥动自己的手臂，然后说：\n“可是我确实很想飞！\n飞，\n飞，\n飞\n起来！”",
+        "image": "assets/books/sw-266388/16.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 3351,
+          "height": 1958,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 16
+      },
+      {
+        "text": "“你可以的。当你长大后，你可以学习驾驶飞机，或是乘坐火箭去到月球。”\n阿鲁听了，十分兴奋。 “是的，总有一天，我一定会飞翔！那么，你现在可以重新开启地心引力吗？”",
+        "image": "assets/books/sw-266388/17.jpg",
+        "imageFrame": {
+          "x": 107,
+          "y": 296,
+          "width": 2934,
+          "height": 1992,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "“阿鲁，你打破什么东西了呢？”\n“不是我啊，妈。那是地心引力！”",
+        "image": "assets/books/sw-266388/18.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 664,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 18
+      },
+      {
+        "text": "“啊！”",
+        "image": "assets/books/sw-266388/19.jpg",
+        "imageFrame": {
+          "x": 1674,
+          "y": 966,
+          "width": 1677,
+          "height": 1440,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 19
+      },
+      {
+        "text": "如果月亮变成木星，你觉得地球上会有什么变化呢？\n为什么地球不会掉进太阳里呢？\n如果月亮移动到更远的位置，比现在的位置还要远10倍，你觉得地球上会有什么变化呢？\n如果没有了空气，鸟儿还能飞吗？",
+        "image": "assets/books/sw-266388/20.jpg",
+        "sourcePage": 20
+      }
+    ]
+  },
+  {
+    "id": "sw-266409",
+    "title": "去看蜘蛛咯！",
+    "intro": "和三个朋友一起散步，找找叶子、花朵和树干上的蜘蛛。",
+    "keywords": [
+      "蜘蛛",
+      "观察",
+      "蛛网"
+    ],
+    "question": "你能从哪里发现蜘蛛？和家长一起远远观察，不用手碰。",
+    "tag": "自然科普",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/266409-off-to-see-spiders",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Vena Kapoor",
+      "Illustrated by": "Pia Meenakshi",
+      "Translated by": "Lee Yee Ng"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2021；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：避免将常见特征泛化为所有蜘蛛；澳大利亚博物馆说明有六只及更少眼睛的种类；中文标点；错词与中文标点；补句末标点；spinnerets为纺器（吐丝器官），不是丝囊；修正吐丝器官名称与自然表达；编织与编制区分。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266409/01.jpg",
+    "pages": [
+      {
+        "text": "我们出发去看蜘蛛咯！\n有些像盘子一样大，有些像别针一样小。\n我们会看见好多蜘蛛，\n看得我们都眼花缭乱！",
+        "image": "assets/books/sw-266409/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "“那是蚂蚁还是蜘蛛啊？”高韦里问道。它看起来像一只蚂蚁，但是它却有八只脚。\n“噢，蚂蚁是昆虫。所有的昆虫都有六只脚，而不是八只脚。但是你说得对，它看起来确实像一只蚂蚁！”希维说。\n“回答满分。”莎玛说。“这是一只蚁蛛。”\n高韦里和希维都喜欢和莎玛在一起。她正在学习成为一名野生动物生物学家，所以她知道许多关于动植物的趣味知识和故事。",
+        "image": "assets/books/sw-266409/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 569,
+          "width": 959,
+          "height": 118,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266409/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 139,
+          "width": 959,
+          "height": 550,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《去看蜘蛛咯！》原书第4页的故事插图",
+        "sourcePage": 4
+      },
+      {
+        "text": "就在这时，高韦里发现了一只黄囊蜘蛛。它整齐地卷在一片叶子里。\n“你是怎样找到它的呢？”希维问。\n“啊！当你了解蜘蛛的各种生活迹象时，你就会开始在各处发现它们。”莎玛眨眨眼说。",
+        "image": "assets/books/sw-266409/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "我们出发去看蜘蛛咯！\n它们有的肥大，有的瘦小，有的还毛茸茸的。\n它们有八只脚，多数还有八只眼睛。\n但是不用担心，它们并不可怕！",
+        "image": "assets/books/sw-266409/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 448,
+          "width": 959,
+          "height": 239,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266409/07.jpg",
+        "wordless": true,
+        "imageAlt": "《去看蜘蛛咯！》原书第7页的故事插图",
+        "sourcePage": 7
+      },
+      {
+        "text": "“嗯，那只蜘蛛看起来像一只螃蟹。”希维说，一边眯起眼睛打量着一朵黄色的花。\n“哈！”莎玛说。“那是蟹蛛。瞧，可怜的蜜蜂在采花蜜的时候被它抓个正着。”\n“啊，它的颜色和花的颜色几乎一模一样。难怪那只蜜蜂没有发现那只蜘蛛。”高韦里说。",
+        "image": "assets/books/sw-266409/08.jpg",
+        "imageFrame": {
+          "x": 11,
+          "y": 136,
+          "width": 628,
+          "height": 553,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "希维指着地上潮湿的树叶，大喊：“快看，快看！”有一只雌狼蛛携带着它的卵袋。\n“那里还有一只！它的背上有数百只小蜘蛛噢！”莎玛非常轻声地说。",
+        "image": "assets/books/sw-266409/09.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 120,
+          "width": 959,
+          "height": 339,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "我们出发去看蜘蛛咯！\n哦，在哪里呢？哦，在哪里呢？哦，在哪里呢？\n在草地上，在树叶上，在花朵上。\n在这里，在那里，到处都有！",
+        "image": "assets/books/sw-266409/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "原本靠着树干的希维突然惊恐地跳起。有个东西如闪电般快速地移动。\n“在这里！”莎玛走向前说。“你看，这只萨氏长纺蛛的颜色和树皮的颜色非常相近，对吧？”",
+        "image": "assets/books/sw-266409/11.jpg",
+        "imageFrame": {
+          "x": 256,
+          "y": 0,
+          "width": 703,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“这只蜘蛛看起来好像只有四只脚呢！”高韦里指着一簇灌木丛，兴奋地说。 那只蜘蛛在两株植物之间织了一个轮状的网。\n“这锯齿形的图案多么漂亮呀！这一定是金蛛！”莎玛喊道。",
+        "image": "assets/books/sw-266409/12.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 619,
+          "height": 689,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "我们出发去看蜘蛛咯！\n我们目前已经有相当多的收获！\n嘿！有只蜘蛛在编织漂亮的蜘蛛网，\n就在这个草地上。",
+        "image": "assets/books/sw-266409/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "高韦里、希维和莎玛偶然发现了一只漏斗蛛。\n“好多的蜘蛛网啊！”高韦里惊讶地说。\n“它看起来像一张柔软的床单。”\n“这只粘在蜘蛛网上的蚱蜢很快就会变成蜘蛛的食物了。\n咕噜！”希维说。",
+        "image": "assets/books/sw-266409/14.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 354,
+          "width": 409,
+          "height": 333,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "莎玛看了她的手表后，便说：“好了，是时候回家了。我还得自习，为明天的课做准备。”\n高韦里和希维闷闷不乐。\n“哦，别担心，家里也有很多蜘蛛。”莎玛说。",
+        "image": "assets/books/sw-266409/15.jpg",
+        "imageFrame": {
+          "x": 258,
+          "y": 0,
+          "width": 701,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "回到家后，莎玛一直留意一般的家蛛。“哦，那是家幽灵蛛！”\n“它们很有趣耶！”高韦里说。“它们一直倒挂着，\n而且它们的脚很长。”",
+        "image": "assets/books/sw-266409/16.jpg",
+        "imageFrame": {
+          "x": 263,
+          "y": 0,
+          "width": 362,
+          "height": 142,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 16
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266409/17.jpg",
+        "wordless": true,
+        "imageAlt": "《去看蜘蛛咯！》原书第17页的故事插图",
+        "sourcePage": 17
+      },
+      {
+        "text": "我们看见好多很奇妙的蜘蛛。\n有的在草地上，有的在树上，有的在花朵上。",
+        "image": "assets/books/sw-266409/18.jpg",
+        "sourcePage": 18
+      },
+      {
+        "text": "我们要寻找更多的蜘蛛！\n蜘蛛会在我们的床底下吗？",
+        "image": "assets/books/sw-266409/19.jpg",
+        "sourcePage": 19
+      },
+      {
+        "text": "蜘蛛指南\n来认识高韦里、希维和莎玛散步时看到的蜘蛛吧！\n萨氏长纺蛛\n这种蜘蛛的纺器很长，看起来像尾巴一样。它们的身体扁扁的，所以很容易和树干或是墙壁融为一体。\n蚁蛛\n它们的活动方式跟蚂蚁的活动方式很相像，\n就连长相也跟蚂蚁的长相差不多呢！\n这样的伪装可以瞒过那些喜欢吃蜘蛛的动物和鸟类。",
+        "image": "assets/books/sw-266409/20.jpg",
+        "sourcePage": 20
+      },
+      {
+        "text": "蟹蛛\n这种蜘蛛的前脚很长，也很结实。它们在觅食的时候会伸出它们的脚去抓着食物。这个姿势使它们看起来非常像螃蟹！\n狼蛛\n狼蛛通常会在地面上（尤其是在有树叶和灌木的地方）快速地移动。一只雌狼蛛的纺器上会挂着一个卵袋。当卵袋张开的时候，数百只蜘蛛宝宝会爬到它的背上，逗留好几天。",
+        "image": "assets/books/sw-266409/21.jpg",
+        "sourcePage": 21
+      },
+      {
+        "text": "黄囊蜘蛛\n这种蜘蛛会在卷曲的叶子和草里编织丝绸状的囊。它们在囊里栖息，直到需要觅食才会离开。\n漏斗蛛\n这种蜘蛛会编织出非常漂亮的网，漂亮得像柔软的床单一样。网的末端有一个隧道，那是它们的藏身之地。当有昆虫粘在网上的时候，它们就会从隧道里爬出来。",
+        "image": "assets/books/sw-266409/22.jpg",
+        "sourcePage": 22
+      },
+      {
+        "text": "家蛛\n这种蜘蛛经常出现在天花板、家里的角落和棚内。它们的蜘蛛网看起来不太整齐，但却能够捕获许多飞虫。\n金蛛\n当一只金蛛待在它轮状的网时，它看起来像一个大型的X字母！这种蜘蛛编织的网有锯齿状的图案。",
+        "image": "assets/books/sw-266409/23.jpg",
+        "sourcePage": 23
+      }
+    ]
+  },
+  {
+    "id": "sw-266453",
+    "title": "在外太空的古尔",
+    "intro": "古尔带着猫去空间站过生日，体验太空里的吃饭、洗头和睡觉。",
+    "keywords": [
+      "太空",
+      "生日",
+      "空间站"
+    ],
+    "question": "在空间站里，吃饭和睡觉为什么要用特别的方法？",
+    "tag": "自然科普",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/266453-gul-in-space",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Richa Jha",
+      "Illustrated by": "Lavanya Karthik",
+      "Translated by": "Ivy Low"
+    },
+    "copyright": "原作 © Pratham Books , 2017；中文译文 © Jala , 2021；插图 © Pratham Books, 2017。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：中文标点；标点空白；错别字；统一大陆常用词；修正直译搭配；修正不自然语序；限制失重表述为本段讨论的空间站，避免泛指所有外太空；纠正“必须吞牙膏”的错误概括，NASA说明两种方式。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266453/01.jpg",
+    "pages": [
+      {
+        "text": "明天是我的生日，\n是一个特别的日子。\n我要收到来自星星的祝福，\n还有那月亮和太阳的祝福。",
+        "image": "assets/books/sw-266453/02.jpg",
+        "imageFrame": {
+          "x": 454,
+          "y": 52,
+          "width": 505,
+          "height": 627,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "我早上从睡梦中醒来。\n快看看我眼前有什么东西！\n有个火箭在外面等着我。\n我努力压抑着内心的兴奋感。\n火箭的引擎已经点燃了。\n我的包已经装满了。\n“轰！”它发射时，发出了巨大的轰鸣声。\n我是宇航员古尔女士！\n我的猫一直抖动着。\n我的头一直转啊转。\n在短短的几分钟之内，\n我们已经远离地面了。",
+        "image": "assets/books/sw-266453/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266453/04.jpg",
+        "wordless": true,
+        "imageAlt": "《在外太空的古尔》原书第4页的故事插图",
+        "sourcePage": 4
+      },
+      {
+        "text": "六个小时后，\n我们抵达了我在外太空的新家。\n人们把它称之为空间站，\n这美丽的地方，你好！",
+        "image": "assets/books/sw-266453/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "嘣！我们一步一步地走着。\n我的腿像是失去了知觉。\n不知不觉中，\n我们倒立了！\n然后我们开始飘浮在空中，\n一会儿往左边，一会儿往右边。\n我们在空中飘浮不定，\n然后歪向一边。",
+        "image": "assets/books/sw-266453/06.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 640,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266453/07.jpg",
+        "wordless": true,
+        "imageAlt": "《在外太空的古尔》原书第7页的故事插图",
+        "sourcePage": 7
+      },
+      {
+        "text": "哎呀！我的包翻了！\n两个甜甜圈掉了出来。\n我小心放置的咖喱角，\n它们全都失控了！\n它们在空中碰撞。\n那些食物碎片和粘液在空中飘浮着。\n我还是选择吃那些包装完整，\n而且很特别的外太空食物吧！",
+        "image": "assets/books/sw-266453/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "我的头发非常黏，\n衣服非常乱。\n我的猫试图把我舔干净，\n但是最有效的方法还是洗澡。\n我要说一个小秘密，\n外太空没有水龙头。\n我把毛巾稍微弄湿，\n然后擦在我的脸上。\n接着，我把一些洗发液挤到我的头发上，\n然后不停地搓揉，\n最后再擦拭干净。\n我的头发看起来焕然一新。",
+        "image": "assets/books/sw-266453/09.jpg",
+        "imageFrame": {
+          "x": 11,
+          "y": 24,
+          "width": 933,
+          "height": 637,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266453/10.jpg",
+        "imageFrame": {
+          "x": 30,
+          "y": 3,
+          "width": 901,
+          "height": 687,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "wordless": true,
+        "imageAlt": "《在外太空的古尔》原书第10页的故事插图",
+        "sourcePage": 10
+      },
+      {
+        "text": "为了庆祝一个很特别的日子，\n我穿上了我的太空服。\n来和我一起玩吧！\n一起体验太空漫步吧！\n我一步一步地踏出去，\n缓慢又紧张地前进。\n四周又暗又冷，而且还很安静。\n我感到很孤单。\n星星明亮地闪烁着。\n它们离我很近，看起来好大。\n月亮微笑着，似乎在说：\n“生日快乐，亲爱的古尔。”",
+        "image": "assets/books/sw-266453/11.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 362,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266453/12.jpg",
+        "wordless": true,
+        "imageAlt": "《在外太空的古尔》原书第12页的故事插图",
+        "sourcePage": 12
+      },
+      {
+        "text": "我该回到空间站\n好好地休息。\n太空漫步令人感到疲惫。\n它很可怕，但却很有趣。",
+        "image": "assets/books/sw-266453/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "这是我未来几天的床，\n它是我睡觉的地方。\n先钻进去，再把自己捆绑着。\n多么有趣啊！\n没过多久，我睡醒了。\n我们一刻都不能浪费。\n但是，我先去刷牙。\n而且，我还把牙膏吞下！",
+        "image": "assets/books/sw-266453/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "我想和妈妈说说话。\n我把笔记本电脑捆绑着。\n“你好，请问你是谁呢？”她在那一端大声说。\n“我是在外太空的古尔！”\n我把我所做的事情都告诉她。\n告诉她，外太空多么神奇。\n告诉她，地球看起来离我很遥远。\n告诉她，空间站多么有趣。",
+        "image": "assets/books/sw-266453/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "我在外太空生活了足足两个月，\n是时候该回去了。\n我们从远处听到\n有些小孩希望可以登上月球。\n如果你就是其中一位，请你举手。\n也请你准备好你的行李。\n我和我的猫今晚就会回去，\n很快就会轮到你了。",
+        "image": "assets/books/sw-266453/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "你知道吗？\n- 你需要乘坐火箭才能抵达外太空。世界上有许多种火箭。古尔和她的猫乘坐的是最常见的那一种。那枚火箭把她们带到国际空间站，也就是古尔在外太空的家。她在那里居住了两个月，然后再乘坐联盟号宇宙飞船从国际空间站回到地球。\n- 有些太空飞船从地球飞往国际空间站，把宇航员所需的食物、水以及其他生活用品载送过去。那些生活用品都有特殊的包装方式。古尔在空间站必须谨慎用水。每一滴水都十分可贵。",
+        "image": "assets/books/sw-266453/17.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 362,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "- 在国际空间站里，古尔和其他人以及物件都像气球一样飘浮在空中。由于空间站里的人和物件都处于失重状态，因此没有被捆绑着的人和物件都会飘浮起来。这是因为空间站和空间站里所有的人和物件时时刻刻都在快速地坠落。正是这份快速坠落的感觉让古尔呈现出失重现象。可是，如果他们正在坠落，那为什么他们不会撞向地球呢？这是因为地球是圆形的。空间站和空间站里所有的人和物件都沿着地球的弧度坠落，因此他们不会触碰到地球的表面。\n- 国际空间站里没有水龙头。这是因为在失重的环境中，水无法往下流。因此，古尔必须使用一种特别的洗发液。那是一种不必冲洗的洗发液。刷牙后，宇航员可以把牙膏吐进毛巾里，不一定要吞下。如果古尔忘了把装有水的袋子关上，许许多多的水滴就会飘浮在空间站，然后它们会相互连接，组成一颗大水球。",
+        "image": "assets/books/sw-266453/18.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 356,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "sourcePage": 18
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266453/19.jpg",
+        "imageFrame": {
+          "x": 32,
+          "y": 7,
+          "width": 896,
+          "height": 681,
+          "originalWidth": 959,
+          "originalHeight": 690
+        },
+        "wordless": true,
+        "imageAlt": "《在外太空的古尔》原书第19页的故事插图",
+        "sourcePage": 19
+      }
+    ]
+  },
+  {
+    "id": "sw-266456",
+    "title": "魔幻眼镜",
+    "intro": "一副“魔幻眼镜”带几个朋友认识世界各地的特别动物。",
+    "keywords": [
+      "动物",
+      "家园",
+      "眼镜"
+    ],
+    "question": "如果有一副魔幻眼镜，你想观察哪一种动物的家？",
+    "tag": "自然探索",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/266456-the-magical-glasses",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Padmaparna Ghosh",
+      "Illustrated by": "Sayan Mukherjee",
+      "Translated by": "Annie Nguyen"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2021；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：弱化嘲讽称呼；动物代词和适应概念；修正栖息地绝对化说法；采用更常见中文名称；动物代词；错字；依据DOC与Smithsonian纠正所有鸟类鼻孔的错误，并区分嗅觉寻找与鼻子挖掘；物种名纠正；避免混同细懒猴与蜂猴；常见中文名称；避免绝对化。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266456/01.jpg",
+    "pages": [
+      {
+        "text": "“特贾斯！快看看我做了什么东西！”玛丽乌姆告诉她的哥哥。“哦，这是什么呢？”特贾斯问。“小家伙，老虎并不是生活在雪地里的！” “啊，啊，啊，它是啊！”玛丽乌姆说。 “在俄罗斯，有一种老虎确实是在雪地里觅食和生活。” “是真的吗？”特贾斯说。“我们来找出真相吧！玛丽乌姆，把魔幻眼镜递给我！”",
+        "image": "assets/books/sw-266456/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "“哦，你说得对，玛丽乌姆。”他说。“我看见那种老虎了！它的毛比较厚。大概是因为那里非常冷吧！”\n“这种西伯利亚虎与印度的孟加拉虎看起来很相似，但它们适应的环境并不相同。”玛丽乌姆说。\n“西伯利亚虎生活在适合它们的寒冷森林里。每种动物都有适合自己生活的家园。”特贾斯说。",
+        "image": "assets/books/sw-266456/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "“我想看一看！我想看一看！”玛丽乌姆大声喊道。\n“等一下。”特贾斯笑着说。“这魔幻眼镜对你来说太高了。我有一个办法。”特贾斯搬来了一张桌子，\n让玛丽乌姆踩在上面。\n“我们可以透过这个眼镜，看见许许多多生活在世界各地的动物。”特贾斯说。\n“杜吉什！玛希玛！一起玩吧！”玛丽乌姆对着路过的朋友大声地说。",
+        "image": "assets/books/sw-266456/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "“哦，那是什么呢？它看起来像是水中的一把剑。”杜吉什爬到一个桶子上说。 玛丽乌姆说：“那是海洋里的独角兽。它只生活在北极的水域里，那里是地球的最北端。那个地方又冷又暗，但它就是独角鲸的家园。”\n“你怎么会知道那么多呢？”特贾斯微笑着问。\n玛丽乌姆耸耸肩说：“从书本里学的。”",
+        "image": "assets/books/sw-266456/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "玛希玛跳起来说：“哦！哦！我读了一个关于猩猩的故事！不过，我不知道这种动物长什么样子。”\n“那是印度尼西亚和马来西亚的大猿猴。”玛丽乌姆说。她把眼镜转向东方。“给你！”\n玛希玛大声地说：“那只猩猩正在吃着水果，而且它还有一个差不多和我一样大的宝宝！”",
+        "image": "assets/books/sw-266456/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "“好了，好了，我要问一个问题。”特贾斯说。“谁可以告诉我这是什么动物呢？”\n杜吉什说：“斑马！”\n玛丽乌姆说：“鹿！”\n玛希玛说：“水牛！”",
+        "image": "assets/books/sw-266456/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "特贾斯傻笑。“都不是！这是霍加狓，它生活在非洲一部分的森林里。”",
+        "image": "assets/books/sw-266456/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "杜吉什抬起头说：“我可以再看一次吗？”\n“当然可以！”特贾斯说。\n“那是……那是什么？它有蓝色的脚，好奇怪！”\n“让我看看。”玛丽乌姆扯着眼镜说。“啊，是的，那是蓝脚鲣鸟。这一种奇妙的鸟生活在南美洲。它会跳很逗趣的舞蹈。”",
+        "image": "assets/books/sw-266456/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "“天开始黑了。我饿了！”玛丽乌姆说。\n“不行！多一只！多一只！”大家一起说。\n“好吧，最后一只。”特贾斯说。\n杜吉什微笑着说：“我的脑海里还有一种很特别的动物。那么，就多两只吧！”\n特贾斯说：“看看这个。这是鹬鸵，它来自南半球的新西兰。它的鼻孔很特别，长在靠近喙尖的地方。它用灵敏的嗅觉寻找土里的小动物和掉落的水果。”",
+        "image": "assets/books/sw-266456/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "“谢谢！”杜吉什说。“另外，我的妈妈曾经告诉我一个故事。那个故事好像是关于一只……一只……细懒猴。”\n“啊，是的，斯里兰卡的细懒猴。它的肚子上有漂亮的银色毛发，而它的眼睛和我们的眼睛一样都位于前方。”玛丽乌姆说。“可是，我们现在看不见它。它只在夜里活动。”\n“那么，我们明天再回来吧！”玛希玛说。\n“好的！”特贾斯一边拍手，一边说。“我们和那些动物都应该回家了。”\n“你认为那些动物也会回家吗？”\n“是的，玛丽乌姆。每一只动物都会回到自己独特的家园，而它们的家园遍布在世界各地。”",
+        "image": "assets/books/sw-266456/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "你刚才见到的那七种动物都生活在不同的地方。这张地图显示了它们生活的地方。虽然你没有特贾斯的魔幻眼镜，但是你依然可以在这里看见那些动物。\n地图未按比例绘制",
+        "image": "assets/books/sw-266456/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "独角鲸： 这些海洋动物生活在北极冰冷的水域中。居住于加拿大、格陵兰、挪威和俄罗斯。\n鹬鸵： 这些鸟类有许多栖息地，包括林地、灌木丛林、沙丘和红树林。居住于新西兰。\n斯里兰卡细懒猴：这种害羞的生物生活在潮湿的热带森林。居住于斯里兰卡。\n西伯利亚虎： 这种大猫生活在寒冷的混交林里。居住于俄罗斯和中国。",
+        "image": "assets/books/sw-266456/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "霍加狓： 这个生物很喜欢茂密的森林。居住于刚果民主共和国。\n猩猩： 这些灵长类动物大多在雨林的树木上生活。居住于马来西亚和印度尼西亚。\n蓝脚鲣鸟： 这些鸟类大多数都生活在科隆群岛。有些则居住于加利福尼亚和秘鲁。",
+        "image": "assets/books/sw-266456/14.jpg",
+        "sourcePage": 14
+      }
+    ]
+  },
+  {
+    "id": "sw-266466",
+    "title": "星光之旅",
+    "intro": "姐弟俩去寻找月亮，却遇见了星空里的独角兽、龙和飞马。",
+    "keywords": [
+      "星星",
+      "月亮",
+      "冒险"
+    ],
+    "question": "故事里的角色分别对应哪些星座？你能用星星想象出自己的图案吗？",
+    "tag": "想象冒险",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/266466-the-starlight-adventure",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Parinita Shetty",
+      "Illustrated by": "Isha Mangalmurti, Upamanyu Bhattacharyya",
+      "Translated by": "Ivy Low"
+    },
+    "copyright": "原作 © Pratham Books , 2019；中文译文 © Jala , 2021；插图 © Pratham Books, 2019。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：量词和句法；去掉不合儿童语境的用词；中文标点空白；区分1922年确定名单和后来正式划分边界，依据IAU官方说明；独立数字1～9为图片定位标注，已作为imageLabels保留在图上，不重复放入正文；星座对照表文字完整保留。。原稿分离的图示数字按原位置显示，图片原文件不变。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-266466/01.jpg",
+    "pages": [
+      {
+        "text": "月亮是由什么制成的呢？奈娜和马达夫有不同的看法。\n“它是外星人产下的一颗蛋。”奈娜说。",
+        "image": "assets/books/sw-266466/02.jpg",
+        "imageFrame": {
+          "x": 28,
+          "y": 180,
+          "width": 562,
+          "height": 509,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "“它是一颗由奶酪做成的球。”马达夫说。\n因此，他们决定一起探索真相。",
+        "image": "assets/books/sw-266466/03.jpg",
+        "imageFrame": {
+          "x": 337,
+          "y": 190,
+          "width": 609,
+          "height": 499,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "“我们最好赶在晚饭前回去。”马达夫说。“我们不想惹妈妈生气。”\n过了整整十一分钟后，他们迷路了。",
+        "image": "assets/books/sw-266466/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "“请问月亮在哪里呢？”他们向一只闪闪发亮的独角兽问路。\n“你为什么会闪闪发亮呢？”\n“你知道月亮是由什么制成的吗？”\n“而你又是由什么制成的呢？”",
+        "image": "assets/books/sw-266466/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "那只独角兽没有时间回答他们的问题。\n吧唧吧唧！滋滋！啧啧！\n“如果我不继续吃东西的话，那么我就永远都无法变成一头漂亮的犀牛。”它说。\n奈娜和马达夫还没来得及反应，就听到远处传来响亮的啜泣声。\n哇！嗷嗷！",
+        "image": "assets/books/sw-266466/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "“我好苦哇！”那个声音哀嚎着。“我会不会永远被困在这里呢？”\n“别再呻吟了！”另外一个声音怒吼。\n“看来有人需要我们的帮助。”奈娜说。\n“我们可以成为天空中的英雄。”马达夫说。\n“小心前方的天鹅。”独角兽提醒他们，然后再继续吃东西。",
+        "image": "assets/books/sw-266466/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "奈娜和马达夫看见令人吃惊的一幕。一位愤怒的女王正守着一座已经上了锁的高塔。\n一条正在哭泣的龙把头探出窗外。\n“你为什么要绑架那条龙呢？”\n“因为它是个可恶的贼！”女王大声地谩骂。“它趁我睡着的时候偷了我的头发，\n一直不肯还给我。”",
+        "image": "assets/books/sw-266466/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "“我根本无法还给你！”那条龙哭着说。“实在是太危险了。”\n奈娜眼睛为之一亮。“每一个危险的地方，都是一个可以探险的地方。”\n“而每一次的探险，都需要一位勇敢的英雄！”马达夫说。\n“不只是一位。”奈娜说。“我们俩会帮你拿回你的头发！”\n那条龙答应告诉他们那一束头发的所在地。但是，它不愿意靠近。",
+        "image": "assets/books/sw-266466/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "“一条会喷火的龙竟然害怕一只天鹅。”奈娜一边说，一边摇头。\n“那只天鹅或许根本不知道头发已经被偷走了。”马达夫说。\n“我们直接叫它归还吧！”奈娜说。\n他们的计划并不顺利。\n扑棱！忒儿！砉！",
+        "image": "assets/books/sw-266466/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "那只天鹅张开翅膀后便袭击了飞船，然后追着飞船在空中绕。\n当他们成功摆脱了天鹅的时候，马达夫和奈娜的肚子已经饿得咕咕叫了。\n他们看了看天空中的时钟，然后倒抽了一口气。\n“我们已经迟到了，我们已经迟到了！”马达夫说。",
+        "image": "assets/books/sw-266466/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "他们让飞船加速航行。\n轰轰！轰轰！\n飞船的引擎发出了一声巨响，然后熄火了。\n嗒嗒！嘟嘟！",
+        "image": "assets/books/sw-266466/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "那两姐弟惊慌失措。\n“我们被困在这里了！”\n“我们该怎么回家呢？”\n“妈妈一定会很生气的！”\n“我好饿啊！”\n他们向星星求助。",
+        "image": "assets/books/sw-266466/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "那条龙已经哭到鼻塞了。因此，他们不能乘着它的火焰回家。\n一只飞马已经把它的翅膀送到干洗店了。因此，它无法载他们回家。\n太空中最强壮的人发生了意外，他手臂的骨骼已经断裂了。因此，他不能把他们抛回家。\n“我们完蛋了！”\n不过，那条龙想到了一个办法。",
+        "image": "assets/books/sw-266466/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-266466/15.jpg",
+        "wordless": true,
+        "imageAlt": "《星光之旅》原书第15页的故事插图",
+        "sourcePage": 15
+      },
+      {
+        "text": "他们俩爬上了一个像箭一样的东西。那一艘人马火箭瞄准了方向，把他们带到家门前。",
+        "image": "assets/books/sw-266466/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "“我们并没有找出月球是由什么制成的。”马达夫说。\n“谁在乎这件事呢？我想知道星星是由什么制成的！”奈娜说。她的眼里只有另一场探险。",
+        "image": "assets/books/sw-266466/17.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 176,
+          "width": 945,
+          "height": 513,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "来认识那些星座与它们的象征\n1. 麒麟座 - 独角兽\n2. 天龙座 - 龙\n3. 仙后座 - 女王\n4. 天鹅座 - 天鹅\n5. 后发座 - 女王的头发\n6. 时钟座 - 时钟\n7. 飞马座 - 飞马\n8. 武仙座 - 强壮的人\n9. 射手座 - 箭",
+        "image": "assets/books/sw-266466/18.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 91,
+          "width": 613,
+          "height": 498,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "imageLabels": [
+          {
+            "text": "1",
+            "sourcePosition": {
+              "left": 7.76,
+              "top": 21.32,
+              "unit": "percent of original page"
+            },
+            "x": 12.14003,
+            "y": 11.22386
+          },
+          {
+            "text": "2",
+            "sourcePosition": {
+              "left": 5.08,
+              "top": 50,
+              "unit": "percent of original page"
+            },
+            "x": 7.94734,
+            "y": 50.90361
+          },
+          {
+            "text": "3",
+            "sourcePosition": {
+              "left": 9.45,
+              "top": 69.65,
+              "unit": "percent of original page"
+            },
+            "x": 14.78393,
+            "y": 78.09006
+          },
+          {
+            "text": "4",
+            "sourcePosition": {
+              "left": 29.09,
+              "top": 29.17,
+              "unit": "percent of original page"
+            },
+            "x": 45.50948,
+            "y": 22.0846
+          },
+          {
+            "text": "5",
+            "sourcePosition": {
+              "left": 23.87,
+              "top": 52.55,
+              "unit": "percent of original page"
+            },
+            "x": 37.34312,
+            "y": 54.43163
+          },
+          {
+            "text": "6",
+            "sourcePosition": {
+              "left": 37.71,
+              "top": 19.64,
+              "unit": "percent of original page"
+            },
+            "x": 58.99493,
+            "y": 8.89952
+          },
+          {
+            "text": "7",
+            "sourcePosition": {
+              "left": 50.84,
+              "top": 31.53,
+              "unit": "percent of original page"
+            },
+            "x": 79.53599,
+            "y": 25.34974
+          },
+          {
+            "text": "8",
+            "sourcePosition": {
+              "left": 48.16,
+              "top": 50.2,
+              "unit": "percent of original page"
+            },
+            "x": 75.3433,
+            "y": 51.18032
+          },
+          {
+            "text": "9",
+            "sourcePosition": {
+              "left": 38.98,
+              "top": 65.6,
+              "unit": "percent of original page"
+            },
+            "x": 60.98176,
+            "y": 72.48675
+          }
+        ],
+        "sourcePage": 18
+      },
+      {
+        "text": "天空中的形状\n当你望向天空时，一系列的星星所形成的形状就是星座。\n那些形状是由最闪亮的那几颗星星所组成。那些形状大不相同，有些是动物，有些是物品，有些是神话人物，有些是神，有些则是古代神话里的场景。",
+        "image": "assets/books/sw-266466/19.jpg",
+        "imageFrame": {
+          "x": 728,
+          "y": 18,
+          "width": 226,
+          "height": 164,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 19
+      },
+      {
+        "text": "1922年，国际天文学联合会确定了88个星座的名单。\n星座的用途是为了帮助人们识别天空中的星星。在远古时代，星座就像是日历，让人们知道什么时候应该播种和收割农作物。水手和旅行的人都靠星座来辨别方向。\n如果你在夜空中找不到这本书所叙述的星座，别担心，那是因为星座的真实样貌不一定是你想象中的那个形状。或许一张星图可以帮助你找到那些在夜空中的星座。",
+        "image": "assets/books/sw-266466/20.jpg",
+        "imageFrame": {
+          "x": 47,
+          "y": 422,
+          "width": 320,
+          "height": 267,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 20
+      }
+    ]
+  },
+  {
+    "id": "sw-267081",
+    "title": "奶奶去公园的路",
+    "intro": "跟奶奶慢慢走过一条条小巷，发现城市里的朋友和宝藏。",
+    "keywords": [
+      "奶奶",
+      "小巷",
+      "朋友"
+    ],
+    "question": "如果给你家附近的小路起名字，你会叫什么？",
+    "tag": "家人与我",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/267081-nani-s-walk-to-the-park",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Deepa Balsavar",
+      "Illustrated by": "Deepa Balsavar",
+      "Translated by": "Kar Er Hen"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2021；插图 © Pratham Books, 2018。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：调整语序更自然；去掉区域表达中的赘词；自然口语；的地纠正；量词冗余；叙述视角自然；自然语序；修正翻译腔；儿童常用词；自然用词与断词修复。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-267081/01.jpg",
+    "pages": [
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/02.jpg",
+        "imageFrame": {
+          "x": 313,
+          "y": 135,
+          "width": 332,
+          "height": 402,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第2页的故事插图",
+        "sourcePage": 2
+      },
+      {
+        "text": "奶奶每个星期都会去一次公园。\n今天，文基想跟她一起去。\n“我走得很慢。”奶奶说。“我会慢慢地走过去。”\n“我不介意。”文基说。\n奶奶拿起她的购物袋后便开始过马路。\n“可是，奶奶…… 公园是那个方向！”文基说。",
+        "image": "assets/books/sw-267081/03.jpg",
+        "imageFrame": {
+          "x": 660,
+          "y": 0,
+          "width": 299,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/04.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第4页的故事插图",
+        "sourcePage": 4
+      },
+      {
+        "text": "“我们会从这里走去。”奶奶说。\n“我们会走过宝藏巷。”",
+        "image": "assets/books/sw-267081/05.jpg",
+        "imageFrame": {
+          "x": 36,
+          "y": 343,
+          "width": 335,
+          "height": 306,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "宝藏巷？这个市集的名字好优美。这里的商店卖着各种各样的东西！\n等奶奶买完东西后，文基指着一扇小门问道：“奶奶，不如我们走捷径吧？这样我们很快就会抵达公园了。”",
+        "image": "assets/books/sw-267081/06.jpg",
+        "imageFrame": {
+          "x": 625,
+          "y": 0,
+          "width": 334,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/07.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第7页的故事插图",
+        "sourcePage": 7
+      },
+      {
+        "text": "“不要。”奶奶说。\n“我们要经过美人巷。 ”",
+        "image": "assets/books/sw-267081/08.jpg",
+        "imageFrame": {
+          "x": 592,
+          "y": 296,
+          "width": 344,
+          "height": 341,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "美人巷里的人会缝制漂亮的百家被*。\n一位妇女递了一件百家被给奶奶。文基看见百家被里有一小部分的布是来自奶奶最喜欢的纱丽，也有一部分的布是来自妈妈的长袖衬衫。\n“我们现在可以去公园了吗？”文基问道。\n*百家被是一种将许多碎布缝制在一起而组成的传统棉被。",
+        "image": "assets/books/sw-267081/09.jpg",
+        "imageFrame": {
+          "x": 707,
+          "y": 0,
+          "width": 252,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/10.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第10页的故事插图",
+        "sourcePage": 10
+      },
+      {
+        "text": "“可以了。”奶奶说。\n“我们会经由幸福巷走过去。”",
+        "image": "assets/books/sw-267081/11.jpg",
+        "imageFrame": {
+          "x": 33,
+          "y": 296,
+          "width": 426,
+          "height": 331,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“过来吧，过来吧！”奶奶温柔地呼唤。许多狗和猫从四面八方朝他们跑过来，逗得文基哈哈大笑！",
+        "image": "assets/books/sw-267081/12.jpg",
+        "imageFrame": {
+          "x": 441,
+          "y": 290,
+          "width": 470,
+          "height": 341,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "奶奶把她在市集里买的牛奶倒出来。他们俩看着那些动物把碗舔得干干净净。\n文基还不想离开幸福巷，但是奶奶提醒他说他们还要到公园去。\n接着，奶奶和文基经过一所小型学校的后巷。",
+        "image": "assets/books/sw-267081/13.jpg",
+        "imageFrame": {
+          "x": 750,
+          "y": 368,
+          "width": 209,
+          "height": 321,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/14.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第14页的故事插图",
+        "sourcePage": 14
+      },
+      {
+        "text": "小朋友正玩着印度传统民间游戏。\n“这是吵闹巷吗？”文基问道。\n“不是，这是顽皮巷。它让我想起你和你的朋友。”奶奶笑着说。\n“你已经为这座城市的每一条巷子取名了吗？”文基问道。\n“并不是每一条。”奶奶微笑着说。“我只是为那些对我而言重要的巷子取了名！”",
+        "image": "assets/books/sw-267081/15.jpg",
+        "imageFrame": {
+          "x": 655,
+          "y": 456,
+          "width": 304,
+          "height": 233,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/16.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第16页的故事插图",
+        "sourcePage": 16
+      },
+      {
+        "text": "“公园就在不远处。不过，你还需要多一点耐心。\n我要去友谊巷一趟。”",
+        "image": "assets/books/sw-267081/17.jpg",
+        "imageFrame": {
+          "x": 49,
+          "y": 266,
+          "width": 704,
+          "height": 401,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/18.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第18页的故事插图",
+        "sourcePage": 18
+      },
+      {
+        "text": "奶奶到友谊巷去探望她亲爱的朋友。\n她们从小一起长大，然后一起变老。\n她们轻声说话，然后一起嬉笑。",
+        "image": "assets/books/sw-267081/19.jpg",
+        "imageFrame": {
+          "x": 670,
+          "y": 0,
+          "width": 289,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 19
+      },
+      {
+        "text": "接着，奶奶给她的朋友一个拥抱，然后说：“我该走了。\n我们现在要去梦想巷。”",
+        "image": "assets/books/sw-267081/20.jpg",
+        "imageFrame": {
+          "x": 392,
+          "y": 283,
+          "width": 534,
+          "height": 372,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 20
+      },
+      {
+        "text": "梦想巷里的书比文基的学校图书馆里的书还要多！\n书商购买别人读过的书，再以很低的价钱卖出那些旧书。",
+        "image": "assets/books/sw-267081/21.jpg",
+        "imageFrame": {
+          "x": 695,
+          "y": 18,
+          "width": 264,
+          "height": 671,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 21
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/22.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第22页的故事插图",
+        "sourcePage": 22
+      },
+      {
+        "text": "奶奶选了一本书，然后说：“走吧，我们现在已经在公园附近了。”\n他们走进了魔法巷。",
+        "image": "assets/books/sw-267081/23.jpg",
+        "imageFrame": {
+          "x": 457,
+          "y": 305,
+          "width": 424,
+          "height": 329,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 23
+      },
+      {
+        "text": "文基抬头望向那些为他遮挡了阳光的大树。\n他感受着迎面而来的微风。\n奶奶沿路向他介绍一些树木：凤凰木、阿勒勃和大花紫薇。",
+        "image": "assets/books/sw-267081/24.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 49,
+          "width": 305,
+          "height": 640,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 24
+      },
+      {
+        "text": "地上的花朵就像是一条魔毯一样！",
+        "image": "assets/books/sw-267081/25.jpg",
+        "imageFrame": {
+          "x": 304,
+          "y": 225,
+          "width": 655,
+          "height": 464,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 25
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/26.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第26页的故事插图",
+        "sourcePage": 26
+      },
+      {
+        "text": "终于，他们抵达了公园。\n他们离开家已经很长一段时间了。\n文基看看他的四周。他回想起早上遇见的每一个人和去过的每一个地方。",
+        "image": "assets/books/sw-267081/27.jpg",
+        "imageFrame": {
+          "x": 520,
+          "y": 0,
+          "width": 439,
+          "height": 689,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 27
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/28.jpg",
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第28页的故事插图",
+        "sourcePage": 28
+      },
+      {
+        "text": "“我喜欢你的那些巷子，奶奶。”他说。\n“我下个星期还可以跟你一起来吗？”",
+        "image": "assets/books/sw-267081/29.jpg",
+        "imageFrame": {
+          "x": 51,
+          "y": 312,
+          "width": 300,
+          "height": 348,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 29
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-267081/30.jpg",
+        "imageFrame": {
+          "x": 272,
+          "y": 127,
+          "width": 483,
+          "height": 411,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "wordless": true,
+        "imageAlt": "《奶奶去公园的路》原书第30页的故事插图",
+        "sourcePage": 30
+      }
+    ]
+  },
+  {
+    "id": "sw-412394",
+    "title": "我喜欢这样的雨",
+    "intro": "听雨、看雨，看看雨怎样改变草木和小动物的世界。",
+    "keywords": [
+      "雨",
+      "青蛙",
+      "种子"
+    ],
+    "question": "下雨时，你能听见哪些声音？能发现哪些小生命？",
+    "tag": "自然探索",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/412394-wo-ruhe-xihuan-wo-de-yu",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Salil Chaturvedi",
+      "Illustrated by": "Garima Gupta",
+      "Translated by": "Edith Tan Shi Yun"
+    },
+    "copyright": "原作 © Pratham Books , 2019；中文译文 © Jala , 2022；插图 © Pratham Books, 2019。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：整理直译长句为自然中文诗行；保留触觉意象并修饰语序；诗行和自然表达；保留观察意象与拟人，整理连写句；拟人诗句自然化并分行；前后呼应。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-412394/01.jpg",
+    "pages": [
+      {
+        "text": "我喜欢这样的雨——\n世界停下脚步，\n雨水不停地讲述自己的故事，\n让你难以插话。",
+        "image": "assets/books/sw-412394/02.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 527,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "银线般的雨丝飘下来，\n轻轻碰着我的皮肤。",
+        "image": "assets/books/sw-412394/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "青蛙呱呱叫了一整天，\n连夜晚来了也不停歇。",
+        "image": "assets/books/sw-412394/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "芋头长得到处都是，\n百合花处处可见。\n水流轻吻着种子，\n千足虫在土地上游逛。",
+        "image": "assets/books/sw-412394/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "真菌热闹地冒出来，\n霉菌也大胆露面。\n稻谷长高，\n谷穗变得沉甸甸。",
+        "image": "assets/books/sw-412394/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "这就是我喜欢的雨。",
+        "image": "assets/books/sw-412394/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-412394/08.jpg",
+        "wordless": true,
+        "imageAlt": "《我喜欢这样的雨》原书第8页的故事插图",
+        "sourcePage": 8
+      }
+    ]
+  },
+  {
+    "id": "sw-412676",
+    "title": "安娜的非凡天气实验",
+    "intro": "爱读书的小女孩安娜长大后，用自己的双手制造观测天气的仪器。",
+    "keywords": [
+      "天气",
+      "科学家",
+      "实验"
+    ],
+    "question": "如果你有一本什么都能查的书，你最想查什么？",
+    "tag": "科学探索",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/412676-anna-de-qimiao-tianqi-shiyan",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 3
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Nandita Jayaraj",
+      "Illustrated by": "Priya Kuriyan",
+      "Translated by": "Edith Tan Shi Yun"
+    },
+    "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2022；插图 © Pratham Books, 2018。 书末备注：备注：这个故事是根据安娜·玛妮（Anna Mani）的生平创作的非虚构作品。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：调整中文语序；去掉不合语境词；自然中文；人物对白自然表达；去翻译腔；自然主动语序；去赘词；量词冗余；去重复语序；断行引号修复；表达自然；纠正错误搭配；语气自然；区分仪器与运载气球，修正时态；统一姓名译写；中文语序；日期排版；姓名缩写排版；依据WMO纠正退休时间关系，恢复缺失年份首位；删除误导中文认字的英文谐音发音；统一姓名；修正装置与气球的关系，删除英文谐音；排版和出版术语。书末纯文字作者备注移入阅读页版权说明，原文与原页码保存在sourceNotes。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-412676/01.jpg",
+    "pages": [
+      {
+        "text": "“呼～～～～～！ 呼～～～～～！”安娜·玛妮（Anna Mani）吹灭了她生日蛋糕上的所有八支蜡烛。 “生日快乐，安娜！”\n她的兄弟姐妹喊道。安娜出生在一个大家庭，住在山上的一座大房子里。可在生日这天，她只有一个小愿望。",
+        "image": "assets/books/sw-412676/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "安娜拆开生日礼物，往里面看。\n里面有东西在闪闪发光。\n“钻石耳环？ 哎呀！”她不想要钻石耳环。\n它们既昂贵又无用！\n你知道安娜真正想要什么吗？书籍，书籍和更多的书籍！",
+        "image": "assets/books/sw-412676/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "“我们家里有书！”她哥哥说。 但是安娜已经读过了。\n她的祖父说：“图书馆里还有更多书籍。” 但是安娜也读过那些书了！\n她气呼呼地走进房间。 “哼！”",
+        "image": "assets/books/sw-412676/04.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 65,
+          "width": 639,
+          "height": 624,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "那天晚些时候，有人敲响了安娜的房门。\n但是外面没有人！门口只放着一个大盒子。\n“最好不要是首饰！”她大声说。 不是。 这是一套全新的百科全书！\n“这么多书。 万岁！”安娜在房子里跑来跑去，拥抱所有人。",
+        "image": "assets/books/sw-412676/05.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 56,
+          "width": 639,
+          "height": 633,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "多年后，读过许多书的安娜在一位著名科学家的实验室找到了一份工作。\n“我应该在这里做什么？”安娜问。 科学家指着一个盒子。\n你认为她在里面发现了什么？",
+        "image": "assets/books/sw-412676/06.jpg",
+        "imageFrame": {
+          "x": 134,
+          "y": 0,
+          "width": 680,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "“钻石？哎呀！”安娜说。但是这一次，钻石不是拿来戴的。 它们是用来做实验的。这位科学家希望安娜找出钻石发光的原因。\n于是她读了有关钻石的书。\n书籍，书籍和更多的书籍！",
+        "image": "assets/books/sw-412676/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 59,
+          "width": 639,
+          "height": 630,
+          "originalWidth": 639,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "成为科学家真是太棒了！ 安娜可以学任何她想要的东西。\n她确实喜欢闪闪发光的东西。 还有什么比钻石更耀眼的呢？\n太阳！于是安娜读了有关太阳，阳光和天气的书。\n书籍，书籍和更多的书籍！",
+        "image": "assets/books/sw-412676/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "安娜做了数百次实验。\n她制造了许多装置来测量一个地方的天气。",
+        "image": "assets/books/sw-412676/09.jpg",
+        "imageFrame": {
+          "x": 96,
+          "y": 0,
+          "width": 761,
+          "height": 516,
+          "originalWidth": 959,
+          "originalHeight": 516
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "孟买有多晴朗？ 安娜制造了一个装置来测量这一点。\n马德拉斯（Madras）的风有多大？ 安娜为此也制造了一个装置。",
+        "image": "assets/books/sw-412676/10.jpg",
+        "imageFrame": {
+          "x": 128,
+          "y": 0,
+          "width": 718,
+          "height": 459,
+          "originalWidth": 959,
+          "originalHeight": 459
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "她最喜欢的装置花了好几个月才建成。\n这个特殊装置叫臭氧探空仪。气球带着一台小机器飞上天空，测量空气中一种叫臭氧的气体。\n臭氧探空仪飞得很高。\n看，那就是安娜的臭氧探空仪！",
+        "image": "assets/books/sw-412676/11.jpg",
+        "imageFrame": {
+          "x": 667,
+          "y": 398,
+          "width": 241,
+          "height": 250,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-412676/12.jpg",
+        "wordless": true,
+        "imageAlt": "《安娜的非凡天气实验》原书第12页的故事插图",
+        "sourcePage": 12
+      },
+      {
+        "text": "猜猜安娜·玛妮一生中总共建造了多少个装置？\n将近一百个天气装置！\n她甚至拥有自己的工厂来制造这些装置。\n她似乎可以建造任何东西！",
+        "image": "assets/books/sw-412676/13.jpg",
+        "imageFrame": {
+          "x": 641,
+          "y": 281,
+          "width": 222,
+          "height": 334,
+          "originalWidth": 959,
+          "originalHeight": 693
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-412676/14.jpg",
+        "wordless": true,
+        "imageAlt": "《安娜的非凡天气实验》原书第14页的故事插图",
+        "sourcePage": 14
+      },
+      {
+        "text": "安娜·玛妮（Anna Mani）成为印度最聪明的天气科学家之一。\n即使长大后越来越有名，她最好的朋友仍然没有变。\n书籍，书籍和更多的书籍！",
+        "image": "assets/books/sw-412676/15.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 29,
+          "width": 639,
+          "height": 658,
+          "originalWidth": 639,
+          "originalHeight": 687
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "安娜的生活和时代：\n1918年8月23日——安娜·玛妮（Anna Mani）出生在喀拉拉邦的佩尔梅杜（Peermedu）。\n1940年——她获得了在班加罗尔C. V. 拉曼实验室工作的奖学金。\n1945年——她前往英国学习气象学。\n1948年——她回到印度并加入了浦那的印度气象局。",
+        "image": "assets/books/sw-412676/16.jpg",
+        "imageFrame": {
+          "x": 16,
+          "y": 0,
+          "width": 457,
+          "height": 687,
+          "originalWidth": 479,
+          "originalHeight": 688
+        },
+        "sourcePage": 16
+      },
+      {
+        "text": "1962年——她开始进行臭氧探空仪项目。\n1976年——她从印度气象局副局长的职位上退休。\n1980年代（确切年份未知）——她创办了自己的公司来生产自己的装置。\n2001年8月16日——安娜·玛妮（Anna Mani）在喀拉拉邦去世。",
+        "image": "assets/books/sw-412676/17.jpg",
+        "imageFrame": {
+          "x": 36,
+          "y": 13,
+          "width": 405,
+          "height": 667,
+          "originalWidth": 479,
+          "originalHeight": 688
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "关于天气的精彩用语\n气象学家：气象学家是研究某个地区的天气和气候的科学家。 安娜·玛妮（Anna Mani）是有史以来最厉害的气象学家之一。\n臭氧探空仪：气球带着它飞上高空，测量空气中的臭氧含量。 臭氧很重要，因为它可以阻挡来自阳光的有害光线。 空中的臭氧太少意味着我们有麻烦了！\n如果你可以成为一名科学家，你想学习什么？",
+        "image": "assets/books/sw-412676/18.jpg",
+        "imageFrame": {
+          "x": 86,
+          "y": 53,
+          "width": 287,
+          "height": 594,
+          "originalWidth": 479,
+          "originalHeight": 688
+        },
+        "sourcePage": 18
+      }
+    ]
+  },
+  {
+    "id": "sw-577893",
+    "title": "聪明的欧文",
+    "intro": "欧文用书赶走“无知怪”，也发现还有更多故事等着他去读。",
+    "keywords": [
+      "书",
+      "聪明",
+      "发现"
+    ],
+    "question": "你觉得欧文读书后发现了什么？",
+    "tag": "成长故事",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/577893-congming-de-owen",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 2
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Bonné Saengsuwon",
+      "Illustrated by": "Bonné Saengsuwon",
+      "Translated by": "Jenny Lu"
+    },
+    "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-577893/01.jpg",
+    "pages": [
+      {
+        "text": "欧文知道书能赶走无知怪。",
+        "image": "assets/books/sw-577893/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-577893/03.jpg",
+        "wordless": true,
+        "imageAlt": "《聪明的欧文》原书第3页的故事插图",
+        "sourcePage": 3
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-577893/04.jpg",
+        "wordless": true,
+        "imageAlt": "《聪明的欧文》原书第4页的故事插图",
+        "sourcePage": 4
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-577893/05.jpg",
+        "wordless": true,
+        "imageAlt": "《聪明的欧文》原书第5页的故事插图",
+        "sourcePage": 5
+      },
+      {
+        "text": "哦！但是无知怪还在四处游荡。",
+        "image": "assets/books/sw-577893/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-577893/07.jpg",
+        "wordless": true,
+        "imageAlt": "《聪明的欧文》原书第7页的故事插图",
+        "sourcePage": 7
+      }
+    ]
+  },
+  {
+    "id": "sw-577904",
+    "title": "种星星",
+    "intro": "小乔种下一颗“星星”，每天等着它长大，会等来什么呢？",
+    "keywords": [
+      "种子",
+      "叶子",
+      "花蕾"
+    ],
+    "question": "小乔种下的星星，后来变成什么样了？",
+    "tag": "自然探索",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/577904-zhong-xingxing",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Moses Sia",
+      "Illustrated by": "Moses Sia",
+      "Translated by": "Jenny Lu"
+    },
+    "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：自然中文；中文省略号。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-577904/01.jpg",
+    "pages": [
+      {
+        "text": "",
+        "image": "assets/books/sw-577904/02.jpg",
+        "imageFrame": {
+          "x": 770,
+          "y": 100,
+          "width": 1885,
+          "height": 2200,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "wordless": true,
+        "imageAlt": "《种星星》原书第2页的故事插图",
+        "sourcePage": 2
+      },
+      {
+        "text": "小乔种了一颗星星。",
+        "image": "assets/books/sw-577904/03.jpg",
+        "imageFrame": {
+          "x": 112,
+          "y": 33,
+          "width": 600,
+          "height": 585,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "他给它浇水。一些叶子冒了出来，但是星星呢？",
+        "image": "assets/books/sw-577904/04.jpg",
+        "imageFrame": {
+          "x": 85,
+          "y": 76,
+          "width": 779,
+          "height": 562,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "很快，绿色的叶子长出来了。\n但还是没有星星。",
+        "image": "assets/books/sw-577904/05.jpg",
+        "imageFrame": {
+          "x": 18,
+          "y": 0,
+          "width": 932,
+          "height": 671,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "一天，小乔发现了一些小花蕾……",
+        "image": "assets/books/sw-577904/06.jpg",
+        "imageFrame": {
+          "x": 8,
+          "y": 164,
+          "width": 951,
+          "height": 525,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "哇，这么多星星！",
+        "image": "assets/books/sw-577904/07.jpg",
+        "imageFrame": {
+          "x": 114,
+          "y": 40,
+          "width": 845,
+          "height": 649,
+          "originalWidth": 959,
+          "originalHeight": 689
+        },
+        "sourcePage": 7
+      }
+    ]
+  },
+  {
+    "id": "sw-577905",
+    "title": "塔拉和魔法放大镜",
+    "intro": "塔拉带着放大镜，把身边的小小世界看得大大的。",
+    "keywords": [
+      "放大镜",
+      "草",
+      "虫子"
+    ],
+    "question": "拿着放大镜，你最想观察什么？",
+    "tag": "自然探索",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/577905-ta-la-he-mofa-fangdajing",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 1
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Written by": "Mehak Hooda",
+      "Illustrated by": "Mehak Hooda",
+      "Translated by": "Jenny Lu"
+    },
+    "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+    "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：补对白标点；中文问号与多余空格。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-577905/01.jpg",
+    "pages": [
+      {
+        "text": "塔拉最好的朋友就是她的魔法放大镜。",
+        "image": "assets/books/sw-577905/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "它让一切都变得巨大无比。\n（哦！太大了。）",
+        "image": "assets/books/sw-577905/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 399,
+          "width": 3351,
+          "height": 2007,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "草不再只是草。",
+        "image": "assets/books/sw-577905/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "虫子变成了巨兽，\n猫儿变成了狮子。",
+        "image": "assets/books/sw-577905/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "“快看那个！”\n她笑着说。",
+        "image": "assets/books/sw-577905/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "“明天我们要看什么呢，\n我的魔法放大镜？”",
+        "image": "assets/books/sw-577905/07.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 959,
+          "height": 562,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 7
+      }
+    ]
   }
 ]

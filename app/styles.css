@@ -78,7 +78,45 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 }
 
 /* A grade-first shelf stays compact as the catalog grows. */
-.level-filters{margin-bottom:12px}
+/* A source is a labeled group, not a sibling choice of its reading levels. */
+.level-filters{margin-bottom:18px;padding:14px 18px 16px;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+.level-filter-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.level-filter-header>span{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:1px}
+.level-all{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:8px 14px;border:1px solid #d8dfd1;border-radius:10px;background:#f6f7f0;color:var(--green-dark);font-size:13px;font-weight:600;white-space:nowrap}
+.level-all small{font-size:11px;font-weight:400;color:#626e5c}
+.level-source-list{display:grid;gap:12px}
+.source-level-group{display:grid;grid-template-columns:180px minmax(0,1fr);align-items:center;gap:18px;min-width:0}
+.source-level-group+.source-level-group{border-top:1px solid #eceee5;padding-top:12px}
+.level-source-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;min-width:0}
+.level-source-heading>span{font-size:13px;font-weight:600;color:var(--ink);overflow-wrap:anywhere}
+.level-source-heading small{font-size:11px;color:#626e5c;white-space:nowrap}
+.source-level-options{display:grid;grid-template-columns:repeat(5,minmax(44px,1fr));gap:8px;width:100%;max-width:360px}
+.level-option{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;min-height:54px;min-width:44px;padding:6px 4px;border:1px solid #d8dfd1;border-radius:10px;background:#f6f7f0;color:var(--green-dark);line-height:1.35}
+.level-option>span{font-size:15px;font-weight:600;white-space:nowrap}
+.level-option small{font-size:11px;color:#626e5c;white-space:nowrap}
+.level-filters button.selected{background:var(--green);border:2px solid var(--green-dark);color:#fff;font-weight:700}
+.level-filters button.selected small{color:#fff}
+.level-filters button:focus-visible{outline-offset:3px}
+@media(hover:hover){.level-filters button:not(.selected):hover{background:#e8efdf;border-color:#aebfa2}}
+@media(max-width:720px){
+  .level-filters{padding:12px 14px 14px}
+  .source-level-group{grid-template-columns:minmax(0,1fr);gap:9px}
+  .source-level-options{max-width:none}
+}
+@media(max-width:360px){.level-filters{padding:10px 10px 12px}.source-level-options{gap:5px}.level-all{padding-inline:10px}}
+.reader-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.reader-meta .book-level{margin-bottom:0}
+.narration-note{font-size:11px;color:var(--muted);display:block;margin-bottom:4px}
+.word-audio-note{margin-top:16px}
+.story-text{white-space:pre-line;width:100%}
+.text-unit{white-space:nowrap}
+.art-frame{position:relative;width:min(100%,var(--art-width));aspect-ratio:var(--art-ratio);overflow:hidden}
+.page-art .art-frame img{position:absolute;height:auto;max-height:none;max-width:none}
+.art-label{position:absolute;z-index:1;line-height:1;font-family:system-ui,sans-serif;font-size:clamp(14px,1.5vw,18px);font-weight:700;color:#203c33;text-shadow:0 0 2px #fff,1px 1px #fff,-1px -1px #fff;pointer-events:none}
+.reading-spread.text-only{grid-template-columns:minmax(0,1fr)}
+.reading-spread.text-only .page-words{width:100%;max-width:800px;margin-inline:auto;border:0}
+.reading-spread.wordless{grid-template-columns:minmax(0,1fr);min-height:0}
+.reading-spread.wordless .page-words{min-height:0;align-items:center;padding:12px 24px;border-left:0;border-top:1px solid #f0eee5}
 .shelf-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
 .shelf-tools label{font-size:13px;color:var(--muted)}
 .shelf-tools select{width:180px;min-height:44px;padding:9px 12px;font-size:13px;background:var(--white)}
@@ -133,7 +171,8 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 /* Both pages render the same book card and membership action. */
 .reading-pick .book-cover{min-height:0;height:150px;padding:16px 22px;position:static}
 .reading-pick .book-cover img{width:100%;height:100%;max-height:none;object-fit:contain;transform:none;border:0;border-radius:0;box-shadow:none}
-.reading-pick .book-level{margin-bottom:6px;font-size:11px;padding:2px 7px}
+.reading-pick .book-level{max-width:100%;margin-bottom:6px;font-size:11px;padding:2px 7px;overflow-wrap:normal}
+.book-level-grade{display:inline-block;white-space:nowrap}
 .reading-pick .book-card{display:flex;flex-direction:column;background:none;min-height:0}
 .reading-pick .reading-list-button{margin-top:auto}
 @media(max-width:620px){

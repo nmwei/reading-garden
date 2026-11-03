@@ -1,0 +1,195 @@
+{
+  "id": "sw-99713",
+  "title": "小心！ 老虎来了！",
+  "source": "https://storyweaver.org.in/en/stories/99713-xiaoxin-laohu-laile",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Sejal Mehta",
+    "Illustrated by": "Rohan Chakravarty",
+    "Translated by": "Jala Community"
+  },
+  "copyright": "原作 © Pratham Books , 2017；中文译文 © Jala , 2019；插图 © Pratham Books, 2017。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/99713-xiaoxin-laohu-laile",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Jala , 2019",
+      "attributionText": "This story: 小心！ 老虎来了！ is translated by Jala Community . The © for this translation lies with Jala , 2019. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Watch Out! The Tiger is Here! ' , by Sejal Mehta . © Pratham Books , 2017. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/99713-xiaoxin-laohu-laile",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2017"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 小心！ 老虎来了！ is translated by Jala Community . The © for this translation lies with Jala , 2019. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Watch Out! The Tiger is Here! ' , by Sejal Mehta . © Pratham Books , 2017. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Wild animals looking at tiger , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 2: Tiger looking at its reflection , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 3: Tiger Looking at Hare , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 4: Tiger with Dead Deer , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 5: Langur Sounding Its Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 6: Barking Deer Sounding An Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 7: Spotted Deer Sounding an Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Page 8: Tiger Alone in the Forest , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "小心！ 老虎来了！ (Chinese (Simplified)) 当老虎穿过森林时，每只动物都会知道！ 听取警告大家老虎已经到了个样的警报声。 This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48377/size7/6f374e9cdd62de7de7149825825ef9cf.jpg",
+    "sha256": "81a738661edb130b6fe75073b25f61518e393a6d23918b185e5dcb7c60d7835b",
+    "illustrationId": 8982,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/8982-wild-animals-looking-at-tiger",
+    "copyright": "© Pratham Books, 2017",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Wild animals looking at tiger , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "做老虎不容易。\n\n是的，老虎很美，也很凶。",
+      "text": "做老虎不容易。\n是的，老虎很美，也很凶。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48378/size7/d6762057368d196d85e6659c017ed4a3.jpg",
+        "sha256": "d0495a84f9737565d68bbcbe706955dea3f19167d6902bad3390830bf8a0f636",
+        "illustrationId": 8983,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/8983-tiger-looking-at-its-reflection",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Tiger looking at its reflection , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "但是老虎也又大又重。\n\n因为这样，他们寻找食物很困难。",
+      "text": "不过，老虎的身体又大又重。\n想悄悄靠近猎物，可不容易。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48379/size7/e7d4148f8437a720ddb0e115ddd21b64.jpg",
+        "sha256": "7d7a3f01d9f554fc15c956ed1c6d021a14da086e946b3493ead3f5bce7ac1257",
+        "illustrationId": 8984,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/8984-tiger-looking-at-hare",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Tiger Looking at Hare , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "老虎每20次捕猎，只能吃一次。",
+      "text": "老虎有时要捕猎很多次，\n才会成功一次。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48380/size7/dd66a1cfaccef0a7b72696b9d42a65a3.jpg",
+        "sha256": "6f0152770e4ea33a56ac945657759ee5cd5824a8afde964a0106d2f967f4b2d9",
+        "illustrationId": 8985,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/8985-tiger-with-dead-deer",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Tiger with Dead Deer , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "老虎穿过森林时，\n\n轰！ 啪！ 砰！\n\n猴子的叫声，就像一个老人在咳嗽！\n\n轰！ 啪！ 砰！",
+      "text": "老虎穿过森林时，\n轰！ 啪！ 砰！\n猴子的叫声，就像一个老人在咳嗽！\n轰！ 啪！ 砰！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48381/size7/dc1adfd806cace6969c6a3c2b446ca7b.jpg",
+        "sha256": "94a8c4815f448cf74a160e3c267fb76af89cce168e5876661c10c37b3c854e61",
+        "illustrationId": 8986,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/8986-langur-sounding-its-alarm-call",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Langur Sounding Its Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "嚎! 嚎!\n\n吠叫鹿的叫声，像一只害怕的狗！\n\n嚎! 嚎!",
+      "text": "嚎！嚎！\n吠鹿的叫声，像一只害怕的狗！\n嚎！嚎！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48901/size7/48e24ba81e63bc56a70a994095150e2d.jpg",
+        "sha256": "a858414dab6632778c3083c186950125d969da81e57a7a77c62ec43697ad6cf1",
+        "illustrationId": 9205,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/9205-barking-deer-sounding-an-alarm-call",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Barking Deer Sounding An Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "喔！ 喔！ 喔！\n\n斑点鹿的叫声，像一只小鸟！\n\n喔！ 喔！ 喔！",
+      "text": "喔！ 喔！ 喔！\n斑点鹿的叫声，像一只小鸟！\n喔！ 喔！ 喔！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48902/size7/400d34cd99255ab56c87c33b189fde25.jpg",
+        "sha256": "dc8fba060f73e359ee6a0371566e5d87b8bde0857ecb38594fac144e8e6f2f42",
+        "illustrationId": 9207,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/9207-spotted-deer-sounding-an-alarm-call",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Spotted Deer Sounding an Alarm Call , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "整片森林都知道老虎已经来了！\n\n吼? 吼?\n\n老虎想知道，大家都去了哪里？",
+      "text": "整片森林都知道老虎已经来了！\n吼？吼？\n老虎想知道，大家都去了哪里？",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/48905/size7/49c768d7866a991b3291cb47ecd2d1aa.jpg",
+        "sha256": "eb467c8498ee6368227bf99d1bb4ead94fd82102b12cc49c5e1663d52e64224c",
+        "illustrationId": 9210,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/9210-tiger-alone-in-the-forest",
+        "copyright": "© Pratham Books, 2017",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Tiger Alone in the Forest , by Rohan Chakravarty © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：中文语序和动物代词；去掉脱离条件的固定成功率；中文标点；规范常用称呼。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 3,
+      "before": "但是老虎也又大又重。\n因为这样，他们寻找食物很困难。",
+      "after": "不过，老虎的身体又大又重。\n想悄悄靠近猎物，可不容易。",
+      "reason": "中文语序和动物代词"
+    },
+    {
+      "sourcePage": 4,
+      "before": "老虎每20次捕猎，\n只能吃一次。",
+      "after": "老虎有时要捕猎很多次，\n才会成功一次。",
+      "reason": "去掉脱离条件的固定成功率"
+    },
+    {
+      "sourcePage": 6,
+      "before": "嚎! 嚎!",
+      "after": "嚎！嚎！",
+      "reason": "中文标点"
+    },
+    {
+      "sourcePage": 6,
+      "before": "吠叫鹿",
+      "after": "吠鹿",
+      "reason": "规范常用称呼"
+    },
+    {
+      "sourcePage": 8,
+      "before": "吼? 吼?",
+      "after": "吼？吼？",
+      "reason": "中文标点"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.938189+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "短句、重复拟声词，老虎/猴子/小鹿/森林形成具体认读场景；可边看图边模仿警报声。",
+      "story": "从“做老虎不容易”反转出发，到整片森林都知道它来了，结尾找不到猎物有幽默，低阶也有鲜明观察角度。",
+      "visualProxy": "Rohan Chakravarty动物漫画风格需root逐图确认；图中动物的表情和隐蔽位置应构成阅读趣味。"
+    },
+    "warnings": [
+      "将无年份、无条件的“每20次才成功一次”改为一般描述，不教孩子背固定捕猎成功率。"
+    ]
+  }
+}

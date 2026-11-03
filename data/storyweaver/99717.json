@@ -1,0 +1,272 @@
+{
+  "id": "sw-99717",
+  "title": "我们来玩吧",
+  "source": "https://storyweaver.org.in/en/stories/99717-women-lai-wan-ba",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 1
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Original publisher": "Pratham Books",
+    "Written by": "Meethil Momaya",
+    "Illustrated by": "Shirish Ghatge",
+    "Translated by": "Jala Community"
+  },
+  "copyright": "原作 © Pratham Books , 2018；中文译文 © Jala , 2019；插图 © Pratham Books, 2018。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/99717-women-lai-wan-ba",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Jala , 2019",
+      "attributionText": "This story: 我们来玩吧 is translated by Jala Community . The © for this translation lies with Jala , 2019. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Let's Play ' , by Meethil Momaya . © Pratham Books , 2018. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/99717-women-lai-wan-ba",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2018"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 我们来玩吧 is translated by Jala Community . The © for this translation lies with Jala , 2019. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Let's Play ' , by Meethil Momaya . © Pratham Books , 2018. Some rights reserved. Released under CC BY 4.0 license. Images Attributions: Cover page: Five children play together , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 2: Someone holding a stopwatch , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 3: A boy running , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 4: A child swimming , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 5: A girl cycling , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 6: A girl skating , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 7: Boy flying a kite , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 8: Two children play on a tyre swing , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 9: A child slips , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Page 10: Someone holding up one heavy object , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Images Attributions: Page 11: A kite spool , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "我们来玩吧 (Chinese (Simplified)) 准备，好，开始 ...学习游戏背后的科学。 This is a Level 1 book for children who are eager to begin reading. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87901/size7/d774638346a522efa87d5d7cf7cda4da.jpg",
+    "sha256": "0e35bd33a4591e13ea70a8daf656a01e2f343d0f3fc7c40fe1a79d311675675e",
+    "illustrationId": 21434,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/21434-five-children-play-together",
+    "copyright": "© Pratham Books, 2018",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Five children play together , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "准备...\n\n好...\n\n开始！",
+      "text": "准备……\n好……\n开始！",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87637/size7/68e4b9a89a412652664ccbbfd4c176cd.jpg",
+        "sha256": "1a6c9adc6c21512950f8c2269dd199c130ea97d2fa140be3213265ad40e7e60a",
+        "illustrationId": 21406,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21406-someone-holding-a-stopwatch",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Someone holding a stopwatch , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "我跑",
+      "text": "我跑",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87638/size7/e81e1af5eb0a7915c185d4cd23add95c.jpg",
+        "sha256": "be88d152975997131c10b4edf99ee224ab8e63eb6734c1736d29d9ef355ccf39",
+        "illustrationId": 21407,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21407-a-boy-running",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: A boy running , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "我游泳",
+      "text": "我游泳",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87639/size7/cc59ed9b1c58aa1df3be50e2d2084fc6.jpg",
+        "sha256": "b0854f39e8d67d960a92458a1817324aa76dcbd4ae1d38542ada16794c61885c",
+        "illustrationId": 21408,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21408-a-child-swimming",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: A child swimming , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "我骑自行车",
+      "text": "我骑自行车",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87640/size7/fff6923faa18a8c19ec1342a9c8df83f.jpg",
+        "sha256": "4927968738094692a5a64699faf0d7d784a27bb450e386de6fdfdda0cbc9d45a",
+        "illustrationId": 21409,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21409-a-girl-cycling",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: A girl cycling , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "我溜冰",
+      "text": "我溜冰",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87641/size7/4335541adcf6c02d7b1e6bb222db3155.jpg",
+        "sha256": "d1a050718f49bf8ac6c6956bd819de0f2f2009bd7fc7174aeabe9f157faf5cb2",
+        "illustrationId": 21410,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21410-a-girl-skating",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: A girl skating , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "我放风筝",
+      "text": "我放风筝",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87642/size7/5143ed83620dbf3eb1525594262d6719.jpg",
+        "sha256": "a7a506f1a6d3c922ae9d9f18323df5d5a4c730c1a75422d233bed88e218725b2",
+        "illustrationId": 21411,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21411-boy-flying-a-kite",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Boy flying a kite , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 8,
+      "originalText": "当我们玩的时候，我们会使用力量。力量：一个推或拉而能帮助我们加快，加慢，停止甚至改变形状。",
+      "text": "我们玩耍的时候，会用到力。\n力：推或拉物体，可以使物体加速、减速、停止或改变形状。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87899/size7/9e54ca44b7687ca15586d121b06ebfee.jpg",
+        "sha256": "e856658a60133719d4a9e28d952bd1dcb383816470b3540fb319ba6d7128817a",
+        "illustrationId": 21435,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21435-two-children-play-on-a-tyre-swing",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 8: Two children play on a tyre swing , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 277,
+        "y": 289,
+        "width": 430,
+        "height": 360,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 9,
+      "originalText": "摩擦力：当其中一个表面试着穿过另一个，并减慢速度。",
+      "text": "摩擦力：当两个接触的表面相对运动时，摩擦力通常会阻碍这种运动。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87644/size7/9d64c8edca2eba90105425974a0cb73e.jpg",
+        "sha256": "fed11c22977248ad9a3e62db23f8e603679b6bac3350ba243ce4dcc56eb72c9e",
+        "illustrationId": 21413,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21413-a-child-slips",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 9: A child slips , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 303,
+        "y": 304,
+        "width": 407,
+        "height": 371,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 10,
+      "originalText": "精力：给予我们工作与行动的能力。",
+      "text": "能量：让物体发生变化或做功的能力。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87900/size7/34da1fe19c14d3ae6ceab6c2694864a3.jpg",
+        "sha256": "801036a91021a3ed9ac14c412f7211ca5bc5e00195abdfce6e6c102a40407de0",
+        "illustrationId": 21436,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21436-someone-holding-up-one-heavy-object",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 10: Someone holding up one heavy object , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 329,
+        "y": 252,
+        "width": 343,
+        "height": 403,
+        "originalWidth": 959,
+        "originalHeight": 689
+      }
+    },
+    {
+      "sourcePage": 11,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/87646/size7/e1817bdd0cdb9d54daa92f7f23c51604.jpg",
+        "sha256": "bffa6bd909d92e4e6e0c5b7d140c948b0e42ed59d88950e81688f1a20f9dc944",
+        "illustrationId": 21415,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/21415-a-kite-spool",
+        "copyright": "© Pratham Books, 2018",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 11: A kite spool , by Shirish Ghatge © Pratham Books, 2018. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "imageFrame": {
+        "x": 191,
+        "y": 30,
+        "width": 668,
+        "height": 614,
+        "originalWidth": 959,
+        "originalHeight": 689
+      },
+      "wordless": true,
+      "imageAlt": "《我们来玩吧》原书第11页的故事插图"
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：中文省略号；纠正force被译成力量及不通顺定义；纠正表面穿过表面的错误定义；纠正energy术语。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [
+    {
+      "sourcePage": 2,
+      "before": "准备...",
+      "after": "准备……",
+      "reason": "中文省略号"
+    },
+    {
+      "sourcePage": 2,
+      "before": "好...",
+      "after": "好……",
+      "reason": "中文省略号"
+    },
+    {
+      "sourcePage": 8,
+      "before": "当我们玩的时候，我们会使用力量。\n力量： 一个推或拉而能帮助我们加快，加慢，停止甚至改变形状。",
+      "after": "我们玩耍的时候，会用到力。\n力：推或拉物体，可以使物体加速、减速、停止或改变形状。",
+      "reason": "纠正force被译成力量及不通顺定义"
+    },
+    {
+      "sourcePage": 9,
+      "before": "摩擦力： 当其中一个表面试着穿过另一个，并减慢速度。",
+      "after": "摩擦力：当两个接触的表面相对运动时，摩擦力通常会阻碍这种运动。",
+      "reason": "纠正表面穿过表面的错误定义"
+    },
+    {
+      "sourcePage": 10,
+      "before": "精力： 给予我们工作与行动的能力。",
+      "after": "能量：让物体发生变化或做功的能力。",
+      "reason": "纠正energy术语"
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.939496+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "我跑/我游泳/我骑自行车等短句规律清楚，可读完马上用动作表达；附页科学词由家长陪读。",
+      "story": "属于动作与概念观察读物，不是有转折的故事；运动场景能为现有书库增加不同活动。",
+      "visualProxy": "root需确认运动原图生动多样；若只做通用词卡则不够精选，应靠画面动作表现决定。"
+    },
+    "warnings": [
+      "附页原“力量、精力、摩擦”译错已改为准确的力、摩擦力、能量；低龄孩子不要求背定义。"
+    ]
+  }
+}

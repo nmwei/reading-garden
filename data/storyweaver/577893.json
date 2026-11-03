@@ -1,0 +1,157 @@
+{
+  "id": "sw-577893",
+  "title": "聪明的欧文",
+  "source": "https://storyweaver.org.in/en/stories/577893-congming-de-owen",
+  "sourceLevel": {
+    "system": "StoryWeaver",
+    "value": 2
+  },
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "credits": {
+    "Written by": "Bonné Saengsuwon",
+    "Illustrated by": "Bonné Saengsuwon",
+    "Translated by": "Jenny Lu"
+  },
+  "copyright": "原作 © Pratham Books , 2023；中文译文 © Pratham Books , 2023；插图 © Pratham Books, 2023。",
+  "components": {
+    "text": {
+      "source": "https://storyweaver.org.in/en/stories/577893-congming-de-owen",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books , 2023",
+      "attributionText": "This story: 聪明的欧文 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license.",
+      "originalStoryAttribution": "Based on Original story: ' Owen, the Wise ' , by Bonné Saengsuwon . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license."
+    },
+    "illustrations": {
+      "source": "https://storyweaver.org.in/en/stories/577893-congming-de-owen",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "copyright": "© Pratham Books, 2023"
+    }
+  },
+  "narration": "none",
+  "reviewedAt": "2026-11-03",
+  "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+  "sourceAttribution": [
+    "This book was made possible by Pratham Books' StoryWeaver platform. Content under Creative Commons licenses can be downloaded, translated and can even be used to create new stories provided you give appropriate credit, and indicate if changes were made. To know more about this, and the full terms of use and attribution, please visit the following link . Story Attribution: This story: 聪明的欧文 is translated by Jenny Lu . The © for this translation lies with Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Based on Original story: ' Owen, the Wise ' , by Bonné Saengsuwon . © Pratham Books , 2023. Some rights reserved. Released under CC BY 4.0 license. Other Credits: This book was created as a part of the Asian Festival for Children's Content Build Your Book Hackathon, a two-day picture book making workshop as a collaboration between Pratham Books and Singapore Book Council. Images Attributions: Cover page: Owen fighting the ignorts , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 2: Owen taking books from the bookshelf , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 3: Owen using a book as a helmet to fight ignorts , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 4: Owen fighting the ignorts from a book fort and sword , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 5: Owen fighting the ignorts with books , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 6: Ignorts moving closer to Owen , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Page 7: Ignorts drifting away because of the book , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license. Disclaimer: https://www.storyweaver.org.in/terms_and_conditions Some rights reserved. This book is CC-BY-4.0 licensed. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. For full terms of use and attribution, http://creativecommons.org/licenses/by/4.0/",
+    "聪明的欧文 (Chinese (Simplified)) 我们都知道书能把无知怪赶跑。现在就跟随欧文一起，踏上消灭无知的文学之旅吧！ This is a Level 2 book for children who recognize familiar words and can read new words with help. Pratham Books goes digital to weave a whole new chapter in the realm of multilingual children's stories. Knitting together children, authors, illustrators and publishers. Folding in teachers, and translators. To create a rich fabric of openly licensed multilingual stories for the children of India and the world. Our unique online platform, StoryWeaver, is a playground where children, parents, teachers and librarians can get creative. Come, start weaving today, and help us get a book in every child's hand!"
+  ],
+  "cover": {
+    "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642289/size7/e3008dd5ae05a2c327c082e23af2d416.jpg",
+    "sha256": "899fb06175880ba2b568017c79fd8231f23db67ecf9184b07bc1217e24661c43",
+    "illustrationId": 96325,
+    "illustrationSource": "https://storyweaver.org.in/en/illustrations/96325-owen-fighting-the-ignorts",
+    "copyright": "© Pratham Books, 2023",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attributionText": "Cover page: Owen fighting the ignorts , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+  },
+  "pages": [
+    {
+      "sourcePage": 2,
+      "originalText": "欧文知道书能赶走无知怪。",
+      "text": "欧文知道书能赶走无知怪。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642290/size7/ae5d71c7bddc0cecd4e5c264479e476e.jpg",
+        "sha256": "5e698b74014f8b883e7c68f441c2db6b0ca4e52c7a23112f0e541c97ad41948c",
+        "illustrationId": 96326,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96326-owen-taking-books-from-the-bookshelf",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 2: Owen taking books from the bookshelf , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 3,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642291/size7/d54a65e87d004c1f7592c2e38eac4c58.jpg",
+        "sha256": "5980084e48bbbe25dc723906aa75d1b90cf511abef00b3f0094711e3891287da",
+        "illustrationId": 96327,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96327-owen-using-a-book-as-a-helmet-to-fight-ignorts",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 3: Owen using a book as a helmet to fight ignorts , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《聪明的欧文》原书第3页的故事插图"
+    },
+    {
+      "sourcePage": 4,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642292/size7/d22173df23513f31d9d475b27b9679d6.jpg",
+        "sha256": "3ad218dc419fdb8119490a716b7cf91de5eefd5ad078f0e4f7d27f65f5fb584b",
+        "illustrationId": 96328,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96328-owen-fighting-the-ignorts-from-a-book-fort-and-sword",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 4: Owen fighting the ignorts from a book fort and sword , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《聪明的欧文》原书第4页的故事插图"
+    },
+    {
+      "sourcePage": 5,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642293/size7/33d383d943ebd3d5445209074ad075fd.jpg",
+        "sha256": "7c116ba58e5f9f96d32db73b7e00f4c6e695eadc920e40a37f0e6b02927d35ce",
+        "illustrationId": 96329,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96329-owen-fighting-the-ignorts-with-books",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 5: Owen fighting the ignorts with books , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《聪明的欧文》原书第5页的故事插图"
+    },
+    {
+      "sourcePage": 6,
+      "originalText": "哦！但是无知怪还在四处游荡。",
+      "text": "哦！但是无知怪还在四处游荡。",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642294/size7/b43bc99e809587bb8be2fa5a329aea8c.jpg",
+        "sha256": "83eb5977b4405c8d1d11463dc3fac06a9e616782aff16991a52b187c379c5fe8",
+        "illustrationId": 96330,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96330-ignorts-moving-closer-to-owen",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 6: Ignorts moving closer to Owen , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      }
+    },
+    {
+      "sourcePage": 7,
+      "originalText": "",
+      "text": "",
+      "image": {
+        "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/642295/size7/1c8b4f5e6d2b2b2a17202bbe0f575d48.jpg",
+        "sha256": "72556fc63a0a9850a5e67c02f1e9fa321696fd52374e47f1232ee7161cbe29cb",
+        "illustrationId": 96331,
+        "illustrationSource": "https://storyweaver.org.in/en/illustrations/96331-ignorts-drifting-away-because-of-the-book",
+        "copyright": "© Pratham Books, 2023",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attributionText": "Page 7: Ignorts drifting away because of the book , by Bonné Saengsuwon © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license."
+      },
+      "wordless": true,
+      "imageAlt": "《聪明的欧文》原书第7页的故事插图"
+    }
+  ],
+  "sourceNotes": [],
+  "changes": "保留完整正文、活动及无字画页；文字按简体中文阅读习惯整理空白、段落与标点。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+  "textEdits": [],
+  "editorialReview": {
+    "reviewedAt": "2026-11-03T14:09:26.950281+00:00",
+    "scope": "全文文字与页面结构；插画实际质量由root另行看图，不以封面或绘者名字代替验图；originalText按.content段落保留源结构，editedText整理空段和断词，不删除正文分数",
+    "visualReview": "已逐本检查原版全页插画联系图：画风连贯、图文对应、无不适合5岁目标的强惊吓近景；原JPG保持不变，仅显示裁掉外围空白。",
+    "dimensions": {
+      "literacy": "正文只有少量短句，大部分是无字画面；不以它增加大量新字，而作为观察叙事和阅读兴趣的特色样本。",
+      "story": "用“无知怪”比喻不知道的事，书与想象的视觉推进需要家长和孩子一起讲述。",
+      "visualProxy": "必须root实际确认无字画面有连续情节且没有图片内未提取英文；若图不成立应撤下，文字量少不能单凭等级算优质。"
+    },
+    "warnings": [
+      "识字增量很少，属于少量精选无字叙事例外，不作为扩充低级数量的主要来源。"
+    ]
+  }
+}
