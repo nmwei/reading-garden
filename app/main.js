@@ -73,7 +73,7 @@ function closeParent() {
 function requestParent() {
   if (route?.section === 'parent' || parentDialog.open) return;
   audio.stop();
-  parentDialog.innerHTML = `<h2 id="parent-title">家长小角</h2><p>请家长长按下面的按钮 1 秒进入。</p><div class="dialog-actions"><button type="button" class="button primary parent-hold" id="parent-hold">长按 1 秒进入</button><button class="button secondary" data-cancel-parent>取消</button></div>`;
+  parentDialog.innerHTML = `<h2 id="parent-title">家长小角</h2><p>朗读声音、绘本离线下载等设置，请交给家长来操作。</p><div class="dialog-actions"><button type="button" class="button secondary" data-cancel-parent>返回</button><button type="button" class="button primary parent-hold" id="parent-hold" aria-describedby="parent-hold-hint">长按进入</button><span id="parent-hold-hint" hidden>按住 1 秒</span></div>`;
   parentDialog.showModal();
   disposeParentHold = mountParentHold(parentDialog.querySelector('#parent-hold'), () => {
     parentAccess = true; closeParent(); go('#/parent');
