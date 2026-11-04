@@ -81,15 +81,24 @@ function requestParent() {
 }
 function readyToReread(book) {
   const progress = state.progress[book.id];
-  return progress?.finished && progress.page === book.pages.length - 1;
+  return progress?.finished && !progress.rereading;
 }
-function bookLink(book) { return `#/book/${book.id}/${readyToReread(book) ? 1 : (state.progress[book.id]?.page || 0) + 1}`; }
-function readingLabel(book) { return readyToReread(book) ? '再读一遍' : state.progress[book.id] ? '继续读' : '开始读'; }
+function rereadLink(book) { return `#/book/${book.id}/1/reread`; }
+function bookLink(book) {
+  return readyToReread(book) ? rereadLink(book) : `#/book/${book.id}/${(state.progress[book.id]?.page || 0) + 1}`;
+}
+function readingLabel(book) {
+  const progress = state.progress[book.id];
+  if (!progress) return '开始读';
+  if (progress.rereading) return '继续重读';
+  return progress.finished ? '再读一遍' : '继续读';
+}
 function readingStatus(book) {
+  if (readyToReread(book)) return '';
   const p = state.progress[book.id];
-  const full = readyToReread(book) ? '读过啦，还可以再读' : p ? `读到第 ${p.page + 1} / ${book.pages.length} 页` : '还没读 · 从第一页开始';
-  const compact = readyToReread(book) ? '读过啦' : p ? `第 ${p.page + 1} / ${book.pages.length} 页` : '还没读';
-  return `<span class="desktop-label">${full}</span><span class="mobile-label">${compact}</span>`;
+  const full = p ? `读到第 ${p.page + 1} / ${book.pages.length} 页` : '还没读 · 从第一页开始';
+  const compact = p ? `第 ${p.page + 1} / ${book.pages.length} 页` : '还没读';
+  return `<p><span class="desktop-label">${full}</span><span class="mobile-label">${compact}</span></p>`;
 }
 
 // Keep the activated control in place when a shelf update changes content above it.
@@ -113,9 +122,10 @@ function shell(section, content) {
 
 function shelf() {
   const last = [...books].sort((a, b) => (state.progress[b.id]?.updated || 0) - (state.progress[a.id]?.updated || 0))[0];
-  const hasProgress = !!state.progress[last.id];
+  const progress = state.progress[last.id];
+  const heroLabel = progress?.finished ? readingLabel(last) : progress ? '继续阅读' : '打开故事';
   return shell('shelf', `<header class="page-header"><div><span class="eyebrow">故事书架</span><h1>今天，也读一个好故事。</h1></div><span class="header-note">${icon('leaf')}从一页开始</span></header>
-    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><span class="pill">${hasProgress ? '接着上次的故事' : '从这本开始吧'}</span><h2 id="hero-title">小小的书，<br>大大的世界<span class="sun-dot" aria-hidden="true">✳</span></h2><p>${esc(last.intro)}</p><a class="button primary" href="${bookLink(last)}">${hasProgress ? '继续阅读' : '打开故事'}${icon('arrow')}</a><span class="hero-caption">${esc(last.title)} · ${last.pages.length}页图画故事</span></div><a class="hero-art" href="${bookLink(last)}" aria-label="阅读${esc(last.title)}"><span class="art-orbit" aria-hidden="true"></span><img src="${last.cover}" alt="${esc(last.title)}的绘本封面"><span class="floating-label">每一页，都有新发现</span></a></section>
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><span class="pill">${readyToReread(last) ? '上次读的故事' : progress ? '接着上次的故事' : '从这本开始吧'}</span><h2 id="hero-title">小小的书，<br>大大的世界<span class="sun-dot" aria-hidden="true">✳</span></h2><p>${esc(last.intro)}</p><a class="button primary" href="${bookLink(last)}">${heroLabel}${icon('arrow')}</a><span class="hero-caption">${esc(last.title)} · ${last.pages.length}页图画故事</span></div><a class="hero-art" href="${bookLink(last)}" aria-label="阅读${esc(last.title)}"><span class="art-orbit" aria-hidden="true"></span><img src="${last.cover}" alt="${esc(last.title)}的绘本封面"><span class="floating-label">每一页，都有新发现</span></a></section>
     ${readingShelf()}
 
     <footer class="site-footer">每个孩子都有自己的阅读节奏。<a href="#/parent">故事与声音来源</a></footer>`);
@@ -142,7 +152,7 @@ function readingListButton(book) {
 }
 function bookCard(book, inLibrary = false) {
   const level = readingLevelLabel(book.sourceLevel);
-  return `<article class="reading-pick ${inLibrary ? 'library-book' : ''}" data-book-id="${book.id}"><a ${inLibrary ? 'class="book-card"' : ''} href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><div class="pick-cover book-cover ${book.color}"><img src="${book.cover}" alt="" loading="lazy"></div><div class="pick-info">${level ? `<span class="book-level" aria-label="${esc(level)}（原站分级）">${esc(book.sourceLevel.system)} <span class="book-level-grade">${book.sourceLevel.value}级</span></span>` : ''}<h3>${esc(book.title)}</h3><span class="narration-note">${book.narration === 'none' ? '系统朗读' : '原版录音'}</span><p>${readingStatus(book)}</p></div></a><div class="card-actions"><a class="pick-action" href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><span class="desktop-label">${readingLabel(book)}</span><span class="mobile-label">${readyToReread(book) ? '再读' : readingLabel(book)}</span>${icon('arrow')}</a>${readingListButton(book)}</div></article>`;
+  return `<article class="reading-pick ${inLibrary ? 'library-book' : ''}" data-book-id="${book.id}"><a ${inLibrary ? 'class="book-card"' : ''} href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><div class="pick-cover book-cover ${book.color}"><img src="${book.cover}" alt="" loading="lazy"></div><div class="pick-info">${level ? `<span class="book-level" aria-label="${esc(level)}（原站分级）">${esc(book.sourceLevel.system)} <span class="book-level-grade">${book.sourceLevel.value}级</span></span>` : ''}<h3>${esc(book.title)}</h3><span class="narration-note">${book.narration === 'none' ? '系统朗读' : '原版录音'}</span>${readingStatus(book)}</div></a><div class="card-actions"><a class="pick-action" href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><span>${readingLabel(book)}</span>${icon('arrow')}</a>${readingListButton(book)}</div></article>`;
 }
 
 function storyText(text) {
@@ -188,8 +198,8 @@ function showWord(index, entry) {
 
 function completion() {
   const {book} = route;
-  persist(updateProgress(state, book, book.pages.length - 1, true));
-  app.innerHTML = shell('shelf', `<section class="completion"><span class="completion-flower" aria-hidden="true">${icon('leaf')}</span><span class="eyebrow">故事读完啦</span><h1>又认识了一个小世界。</h1><p>${esc(book.question)}</p><div class="completion-cover"><img src="${book.cover}" alt="${esc(book.title)}"></div><div class="dialog-actions"><a class="button secondary" href="#/book/${book.id}/1">再读一遍</a><a class="button primary" href="#/shelf">选下一个故事${icon('arrow')}</a></div><a class="text-button" href="#/words">去看看我的生字篮</a></section>`);
+  persist(updateProgress(state, book, book.pages.length - 1, {finished: true}));
+  app.innerHTML = shell('shelf', `<section class="completion"><span class="completion-flower" aria-hidden="true">${icon('leaf')}</span><span class="eyebrow">故事读完啦</span><h1>又认识了一个小世界。</h1><p>${esc(book.question)}</p><div class="completion-cover"><img src="${book.cover}" alt="${esc(book.title)}"></div><div class="dialog-actions"><a class="button secondary" href="${rereadLink(book)}">再读一遍</a><a class="button primary" href="#/shelf">选下一个故事${icon('arrow')}</a></div><a class="text-button" href="#/words">去看看我的生字篮</a></section>`);
   window.scrollTo(0, 0);
   app.querySelector('h1')?.focus();
 }
@@ -352,10 +362,17 @@ function render() {
     history.replaceState(null, '', lastPublicHash);
     route = routeFromHash(lastPublicHash, books);
   }
+  if (route.startReread) {
+    // Consume the start action so refresh and browser history use an ordinary page link.
+    history.replaceState(null, '', `#/book/${route.book.id}/1`);
+  }
   if (route.section !== 'parent') { parentAccess = false; lastPublicHash = location.hash || '#/shelf'; }
   const hasReadingText = route.section === 'book' && !!route.book.pages[route.page].text;
   const showReadingHint = hasReadingText && !state.readingHelpSeen;
-  if (route.section === 'book') persist({...updateProgress(state, route.book, route.page), readingHelpSeen: state.readingHelpSeen || hasReadingText});
+  if (route.section === 'book') {
+    const progress = updateProgress(state, route.book, route.page, {startReread: route.startReread});
+    persist({...progress, readingHelpSeen: state.readingHelpSeen || hasReadingText});
+  }
   app.innerHTML = route.section === 'book' ? reader(showReadingHint) : route.section === 'pinyin' ? pinyin() : route.section === 'words' ? wordsView() : route.section === 'parent' ? parent() : route.section === 'library' ? library() : shelf();
   if (route.section === 'book') {
     const dots = app.querySelector('.page-dots'), current = dots.querySelector('.current');
@@ -481,8 +498,13 @@ parentDialog.addEventListener('close', () => {
   if (!parentDialog.open) { disposeParentHold?.(); disposeParentHold = null; }
 });
 parentDialog.addEventListener('cancel', () => { disposeParentHold?.(); disposeParentHold = null; });
-document.addEventListener('visibilitychange', () => { if (document.hidden) audio.stop(); });
-window.addEventListener('pagehide', () => audio.stop());
+function onPageHidden() {
+  const focused = document.activeElement;
+  if (route?.section === 'parent' && focused?.matches('#voice-select, #download-scope')) focused.blur();
+  audio.stop();
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden) onPageHidden(); });
+window.addEventListener('pagehide', onPageHidden);
 window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); document.querySelector('#main')?.focus({preventScroll: true}); });
 document.addEventListener('keydown', event => {
   if (route?.section !== 'book' || wordDialog.open || confirmDialog.open || event.target.matches('input,select,textarea,button,a')) return;
