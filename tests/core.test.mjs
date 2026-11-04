@@ -18,7 +18,7 @@ test('invalid saved data cannot break reading or inject unknown content', () => 
   assert.deepEqual(normalizeState(null, books), emptyState());
 });
 test('removing the legacy font preference preserves learning records and other preferences', () => {
-  const saved = {progress: {'0087': {page: 3, finished: true, updated: 12}}, readingList: [], words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
+  const saved = {progress: {'0087': {page: 7, finished: true, updated: 12}}, readingList: [], words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
   assert.deepEqual(normalizeState({...saved, largeText: true}, books), saved);
   assert.deepEqual(normalizeState({...saved, largeText: false}, books), saved);
 });
@@ -26,7 +26,7 @@ test('reading list migrates old records and keeps only six known, distinct books
   const original = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], pinyinScopes: ['whole']};
   const migrated = normalizeState(original, books);
   assert.deepEqual(migrated.readingList, []);
-  assert.deepEqual(migrated.progress, original.progress);
+  assert.deepEqual(migrated.progress['0087'], {...original.progress['0087'], rereading: true});
   assert.deepEqual(migrated.words, original.words);
   const ids = books.slice(0, 8).map(book => book.id).reverse();
   const normalized = normalizeState({...original, readingList: [null, ids[0], 'missing', ids[0], {}, ...ids.slice(1)]}, books);
@@ -45,13 +45,21 @@ test('route bounds and invalid links fall back safely', () => {
 });
 test('visiting the final page is distinct from marking a book finished', () => {
   const book = books[0];
-  let state = updateProgress(emptyState(), book, 7, false, 1);
+  let state = updateProgress(emptyState(), book, 7, {now: 1});
   assert.equal(state.progress[book.id].finished, false);
-  state = updateProgress(state, book, 7, true, 2);
-  state = updateProgress(state, book, 0, false, 3);
+  state = updateProgress(state, book, 7, {finished: true, now: 2});
+  state = updateProgress(state, book, 0, {now: 3});
   assert.equal(state.progress[book.id].finished, true);
   assert.equal(state.progress[book.id].page, 0);
   assert.equal(state.progress[book.id].updated, 3);
+});
+test('a one-page book starts another round only via its reread entry', () => {
+  const book = {...books[0], pages: books[0].pages.slice(0, 1)};
+  const done = updateProgress(emptyState(), book, 0, {finished: true});
+  assert.equal(updateProgress(done, book, 0).progress[book.id].rereading, undefined);
+  const route = routeFromHash(`#/book/${book.id}/1/reread`, [book]);
+  const reopened = updateProgress(done, book, route.page, {startReread: route.startReread});
+  assert.equal(normalizeState(reopened, [book]).progress[book.id].rereading, true);
 });
 test('character help uses the selected occurrence and its contextual word', () => {
   assert.equal(wordInContext('是不是在床底下？', 5).word, '床底下');

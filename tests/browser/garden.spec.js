@@ -86,6 +86,37 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   expect(errors).toEqual([]);
 });
 
+test('rereading keeps the resume entry through reload and until explicit completion', async ({page}) => {
+  await page.addInitScript(() => {
+    const key = 'reading-garden-v1';
+    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({
+      progress: {'0087': {page: 7, finished: true, updated: 1}}, readingList: ['0087']
+    }));
+  });
+  await page.goto('/#/shelf');
+  await expect(page.locator('.hero .button')).toHaveText('再读一遍');
+  const card = page.locator('.reading-pick[data-book-id="0087"]');
+  const action = card.locator('.pick-action');
+  await expect(card.locator('.pick-info p')).toHaveCount(0);
+  await action.click();
+  await expect(page).toHaveURL(/#\/book\/0087\/1$/);
+  await page.getByRole('link', {name: '回到书架'}).click();
+  await expect(action).toHaveText('继续重读');
+  await action.click();
+  await page.getByRole('button', {name: '第8页', exact: true}).click();
+  await expect(page.getByRole('button', {name: '读完啦'})).toBeVisible();
+  await page.reload();
+  await page.getByRole('link', {name: '回到书架'}).click();
+  await expect(page.locator('.hero .button')).toHaveText('继续重读');
+  await page.goto('/#/library');
+  await expect(action).toHaveText('继续重读');
+  await expect(action).toHaveAttribute('href', '#/book/0087/8');
+  await action.click();
+  await page.getByRole('button', {name: '读完啦'}).click();
+  await page.getByRole('link', {name: '选下一个故事'}).click();
+  await expect(action).toHaveText('再读一遍');
+});
+
 test('deliberate letter taps play while multi-selected practice stays explicit, fixed at three and persistent', async ({page}) => {
   await page.goto('/#/pinyin');
   await expect(page.locator('.final-row')).toHaveCount(5);
@@ -537,6 +568,23 @@ test('parent entry requires a full hold, cancels on release/movement and guards 
   await expect(gate).not.toBeVisible();
 });
 
+
+test('backgrounding releases the parent selector focus and retains its selection', async ({page}) => {
+  await page.goto('/#/parent');
+  await enterParent(page);
+  const scope = page.locator('#download-scope');
+  await scope.selectOption('pinyin');
+  await scope.focus();
+  await expect(scope).toBeFocused();
+  await page.evaluate(() => {
+    Object.defineProperty(document, 'hidden', {configurable: true, value: true});
+    document.dispatchEvent(new Event('visibilitychange'));
+    delete document.hidden;
+  });
+  await expect(scope).not.toBeFocused();
+  await expect(scope).toHaveValue('pinyin');
+  await expect(scope).toBeVisible();
+});
 
 test('a hundred books keep parent sources compact while reader credits stay complete', async ({page}) => {
   await page.route('**/data/books.json', async route => {

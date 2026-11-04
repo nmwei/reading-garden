@@ -7,7 +7,12 @@ export function normalizeState(input, books) {
   if (!input || typeof input !== 'object') return clean;
   for (const book of books) {
     const p = input.progress?.[book.id];
-    if (p && Number.isInteger(p.page)) clean.progress[book.id] = {page: Math.max(0, Math.min(book.pages.length - 1, p.page)), finished: p.finished === true, updated: Number.isFinite(p.updated) ? p.updated : 0};
+    if (p && Number.isInteger(p.page)) {
+      const page = Math.max(0, Math.min(book.pages.length - 1, p.page));
+      const finished = p.finished === true;
+      const rereading = finished && (p.rereading === true || page < book.pages.length - 1);
+      clean.progress[book.id] = {page, finished, updated: Number.isFinite(p.updated) ? p.updated : 0, ...(rereading ? {rereading} : {})};
+    }
   }
   if (Array.isArray(input.readingList)) {
     const knownIds = new Set(books.map(book => book.id));
@@ -25,16 +30,20 @@ export function normalizeState(input, books) {
 }
 
 export function routeFromHash(hash, books) {
-  const [section, id, page] = hash.replace(/^#\/?/, '').split('/');
+  const [section, id, page, action] = hash.replace(/^#\/?/, '').split('/');
   if (section === 'book') {
     const book = books.find(b => b.id === id);
-    if (book) return {section: 'book', book, page: Math.max(0, Math.min(book.pages.length - 1, (parseInt(page, 10) || 1) - 1))};
+    if (book) return {section: 'book', book, page: Math.max(0, Math.min(book.pages.length - 1, (parseInt(page, 10) || 1) - 1)), startReread: page === '1' && action === 'reread'};
   }
   return {section: ['library', 'pinyin', 'words', 'parent'].includes(section) ? section : 'shelf'};
 }
 
-export function updateProgress(state, book, page, finished = false, now = Date.now()) {
-  return {...state, progress: {...state.progress, [book.id]: {page, finished: finished || state.progress[book.id]?.finished === true, updated: now}}};
+export function updateProgress(state, book, page, {finished = false, now = Date.now(), startReread = false} = {}) {
+  const previous = state.progress[book.id];
+  const rereading = !finished && previous?.finished === true &&
+    (startReread || previous.rereading === true || page < book.pages.length - 1);
+  const progress = {page, finished: finished || previous?.finished === true, updated: now, ...(rereading ? {rereading} : {})};
+  return {...state, progress: {...state.progress, [book.id]: progress}};
 }
 
 export const WORDS = [
