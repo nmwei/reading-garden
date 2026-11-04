@@ -104,6 +104,12 @@ export class AudioPlayer {
     return true;
   }
 }
+// Exclude the Eloquence voices rejected in listening tests. Keep unfamiliar
+// voices available: installed names differ between Apple, Android and Windows.
+const excludedVoiceName = /^(Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley)(?=$|[\s(（])/i;
 export function chineseVoices() {
-  return globalThis.speechSynthesis?.getVoices().filter(v => /^(zh|cmn)(-|_|$)/i.test(v.lang) && !/yue|HK/i.test(v.lang)) || [];
+  return globalThis.speechSynthesis?.getVoices().filter(v =>
+    /^(zh|cmn)(-|_|$)/i.test(v.lang) && !/yue|HK/i.test(v.lang) &&
+    !excludedVoiceName.test(v.name) && !/^com\.apple\.eloquence\./i.test(v.voiceURI)
+  ) || [];
 }

@@ -8816,5 +8816,764 @@
         "sourcePage": 7
       }
     ]
+  },
+  {
+    "id": "sw-268121",
+    "title": "拾金不昧",
+    "intro": "路边捡到的钱包，该留下还是归还？佐克在两位同学的不同意见中作出选择。",
+    "keywords": [
+      "钱包",
+      "归还",
+      "诚实",
+      "选择"
+    ],
+    "question": "如果你捡到钱包，会请谁一起帮助寻找失主？",
+    "tag": "生活发现",
+    "color": "sage",
+    "source": "https://storyweaver.org.in/en/stories/268121-pick-it-up",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 4
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "African Storybook Initiative",
+      "Written by": "Fanie Viljoen",
+      "Illustrated by": "Stephen Wallace",
+      "Translated by": "Carmen Hen"
+    },
+    "copyright": "原作 © African Storybook Initiative , 2016；中文译文 © Carmen Hen , 2021；插图 © African Storybook Initiative, 2016。",
+    "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：依据英文school bell与回家情境统一为放学；依据英文This afternoon修正时间；整理地字用法；对照英文逐次点数50/100/150/200，纠正金额误译；修正量词；整理引号外多余标点；点数钞票的自然表达；整理结巴语气和句末标点；补齐问句标点；区分权利与权力，用儿童可理解的说法表达；将ugly的道德评价明确落在行为上，避免被理解为外貌评价；修正Now误译；对照原作，整理不自然的转折；将道德评价明确为行为并依据英文末句恢复漏译的自我感受。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-268121/01.jpg",
+    "pages": [
+      {
+        "text": "当学校的放学铃响起时，佐克大喊：“耶！”\n\n他终于可以回家了。下午，他还想和其他男孩一起踢足球。\n\n“嘿， 小心！” 有人突然在他眼前喊道。他没有注意到贝卡，而贝卡对着他吼道。",
+        "image": "assets/books/sw-268121/02.jpg",
+        "imageFrame": {
+          "x": 268,
+          "y": 464,
+          "width": 1445,
+          "height": 1484,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 2
+      },
+      {
+        "text": "佐克赶紧说：“对不起。”\n\n他想绕过贝卡离开。但是，贝卡突然推了他一下。他被绊倒，而贝卡却笑了起来。“你的脚那么大，所以才会经常摔倒吧？”贝卡嘲讽道。生气的佐克挺直了身体。\n\n一个女孩坦迪走过来帮他。佐克也向她道谢，坦迪说：“不客气，我看到了整个事情的经过。贝卡就是在欺负人。”",
+        "image": "assets/books/sw-268121/03.jpg",
+        "imageFrame": {
+          "x": 323,
+          "y": 608,
+          "width": 1434,
+          "height": 1217,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "天气很热，佐克跑回家。\n\n幸好，他的家离这里不是很远。\n\n突然，他在路边发现了一个东西。他停下来看，这到底是什么呢？\n\n这个东西跟他手掌一样大，外表褐色，还是皮制的。",
+        "image": "assets/books/sw-268121/04.jpg",
+        "imageFrame": {
+          "x": 264,
+          "y": 499,
+          "width": 1415,
+          "height": 1396,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "原来是一个钱包！\n\n佐克简直不敢相信自己的好运气。\n\n他快速地看了一眼钱包里面。哇， 里面还有钱呢！",
+        "image": "assets/books/sw-268121/05.jpg",
+        "imageFrame": {
+          "x": 434,
+          "y": 495,
+          "width": 969,
+          "height": 1481,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "佐克的心跳加快。然后，他把钱包放进自己的口袋。他迅速环顾四周，看是否有人发现他。\n\n确实有呢！有人正一步步地靠近，是贝卡！他就在佐克几步之遥的后方。",
+        "image": "assets/books/sw-268121/06.jpg",
+        "imageFrame": {
+          "x": 198,
+          "y": 558,
+          "width": 1761,
+          "height": 1314,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 6
+      },
+      {
+        "text": "佐克赶紧跑走。他希望贝卡没有看见他。他不想再提心吊胆了。钱包还安全地躺在他的口袋中。回家之后，他要拿出来看看到底钱包里面有多少钱。",
+        "image": "assets/books/sw-268121/07.jpg",
+        "imageFrame": {
+          "x": 328,
+          "y": 382,
+          "width": 1240,
+          "height": 1546,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 7
+      },
+      {
+        "text": "回到家，佐克把书包放下。然后，走到房子旁边的阴凉的树下。他小心翼翼地从口袋里拿出钱包。心跳逐渐加速。慢慢地数着里面的钞票。五十、一百、一百五十、两百兰特！他现在超级有钱。但是，他听见了一个熟悉的声音。\n\n“你藏着些什么呢？”原来是贝卡！",
+        "image": "assets/books/sw-268121/08.jpg",
+        "imageFrame": {
+          "x": 215,
+          "y": 507,
+          "width": 1463,
+          "height": 1397,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "佐克把钱包藏在身后。\n\n“太迟了，我看见你捡起了一些东西，”贝卡说，“所以我才来这里查看证实。”\n\n贝卡拉开佐克的手，看见钱包的时候，双眼睁大。\n\n他抢走了钱包，问道：“哇！这太棒了。你这是要自己收着吗？”",
+        "image": "assets/books/sw-268121/09.jpg",
+        "imageFrame": {
+          "x": 107,
+          "y": 624,
+          "width": 1963,
+          "height": 1313,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "“我……我还不知道。”佐克结结巴巴地说道。贝卡也数了数那笔钱。“你知道有句话说‘谁捡到就是谁的’吧？”贝卡吹着口哨。“你一定要收着它。如果是我捡到，我就会收着它。”“但是有人遗失了它，”佐克说。\n\n贝卡笑着说：“那又怎么样？他们自己不小心。所以，现在这些是你的钱了。”",
+        "image": "assets/books/sw-268121/10.jpg",
+        "imageFrame": {
+          "x": 250,
+          "y": 555,
+          "width": 1410,
+          "height": 1374,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 10
+      },
+      {
+        "text": "“我还是要想想，”佐克说。\n\n贝卡说：“你不需要想。我会告诉你要怎么做。收起这些钱。给你自己买一双新鞋子。或是一颗足球。”\n\n“不！”一个女孩的声音响起。正是学校的那个女孩坦迪。“佐克，那些钱不属于你。你不能把它占为己有。”",
+        "image": "assets/books/sw-268121/11.jpg",
+        "imageFrame": {
+          "x": 145,
+          "y": 480,
+          "width": 1697,
+          "height": 1476,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“你知道些什么，坦迪？”贝卡问道。他做了个鬼脸。“你就是自作聪明的小姐。佐克根本不需要还那些钱。”佐克听着他们两个人的话，根本不知道应该做什么。他想留着那笔钱，但是坦迪可能是对的。即使你把它捡了起来，你不能拿不属于你的东西。贝卡突然站在他面前，交叉手臂问道：“所以佐克，现在你打算怎么做？你要留着这笔钱？还是你要尝试找失主？”\n\n佐克想了又想。",
+        "image": "assets/books/sw-268121/12.jpg",
+        "imageFrame": {
+          "x": 162,
+          "y": 459,
+          "width": 1598,
+          "height": 1494,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 12
+      },
+      {
+        "text": "佐克突然大声地说道：“我想还回去。”坦迪微笑说：“你将会看到自己这样做是正确的。”贝卡则摇了摇头。他把钱包还给佐克，“你就是个胆小鬼，”说完就离开。坦迪对佐克温柔地说道：“你不是。如果你留下这个钱包，就是在做不诚实的事。”佐克微笑。他很高兴坦迪帮助他做出了正确的选择。“我们要怎么找到这些钱的主人呢？”他问。",
+        "image": "assets/books/sw-268121/13.jpg",
+        "imageFrame": {
+          "x": 176,
+          "y": 615,
+          "width": 1559,
+          "height": 1267,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "坦迪看了钱包里面。她拿出里面的银行卡。在卡上面写着：Gugu Dube。这个名字对佐克来说非常熟悉。坦迪又从钱包里面拿出了一些东西。是Gugu Dube和她孩子们的一张小合照。这下，佐克认出她来了。“她就住在这附近。跟我来。我们一起去把钱包还给她。”",
+        "image": "assets/books/sw-268121/14.jpg",
+        "imageFrame": {
+          "x": 192,
+          "y": 487,
+          "width": 1584,
+          "height": 1459,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "佐克和坦迪一起沿着石路跑。Gugu阿姨家的门是开着的。他们敲了敲门。一会儿，就有人来到门口，正是Gugu阿姨。她看起来像是在哭。",
+        "image": "assets/books/sw-268121/15.jpg",
+        "imageFrame": {
+          "x": 222,
+          "y": 353,
+          "width": 1436,
+          "height": 1705,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "佐克看到Gugu阿姨在哭泣，感到非常愧疚。然后，他将钱包从口袋里拿出来。 Gugu阿姨伤心的脸立刻转变为开心。她大笑并喊道：“我的钱包！太让人难以置信了。”她查看钱包里的钱。“里面的钱全部还在。我太高兴了。我原本想去买一些食物，但是我遗失了钱包。我还以为这个星期我们要挨饿了。”她在佐克和坦迪的额头亲了一下，然后高兴得手舞足蹈。\n\n过了不久，佐克和坦迪便走回家。佐克非常高兴，他做了一件值得骄傲的事。坦迪是对的。如果他留下这个钱包，就是在做不诚实的事。但今天，他觉得自己像个小英雄！",
+        "image": "assets/books/sw-268121/16.jpg",
+        "imageFrame": {
+          "x": 182,
+          "y": 461,
+          "width": 1633,
+          "height": 1520,
+          "originalWidth": 3351,
+          "originalHeight": 2406
+        },
+        "sourcePage": 16
+      }
+    ]
+  },
+  {
+    "id": "sw-467095",
+    "title": "Mangalyaan：火星之旅",
+    "intro": "一艘不载人的探测器，怎样飞到遥远的火星？跟着图解认识引力、轨道和太空探索。",
+    "keywords": [
+      "火星",
+      "探测器",
+      "引力",
+      "轨道"
+    ],
+    "question": "为什么探测器要瞄准火星将来会到的位置，而不是直接追着它飞？",
+    "tag": "科学探索",
+    "color": "lavender",
+    "source": "https://storyweaver.org.in/en/stories/467095-mangalyaan-a-journey-to-mars",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 4
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Nikhil Gulati",
+      "Illustrated by": "Nikhil Gulati",
+      "Translated by": "Tomy Teh"
+    },
+    "copyright": "原作 © Pratham Books , 2020；中文译文 © Tomy Teh , 2022；插图 © Pratham Books, 2020。",
+    "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对照英文some clear nights，避免暗示每晚都能看到火星；纠正断行造成的语序错误；保留原作者比较数值并明确是假想估算，避免当作固定旅行时长；依据ISRO五种科学载荷清单校正原作也存在的数量错误；整理断行及无人探测器的名称；为专名提供中文释义，不额外发明情节；保留投石索比喻，但明确发动机提供能量，不把地球引力说成免费推动力；纠正Only in this case语意并明确是比喻；依据官方任务过程用多次概括，避免名义次数与补充机动混计；纠正push的航天语境；依据NASA纠正逃逸后没有地球引力的常见误解；整理相对速度的表达；统一sling比喻，不是扔掉弹弓；统一专名指代；对照英文caught的追及含义整理图例；修正图例语序；将印度数字分组换算为中文单位，不改变原作数值；对照英文dish及原图纠正直译；统一航天术语和图例格式；避免船舶语境；明确there的指代；修正断行语序；补齐主语、衔接任务时间线；依据ISRO 2022年任务总结替换已过时的“今天仍在工作”；修正生硬语序；依据ISRO区分载人近地轨道计划与载人火星愿望；移除原作相对年份预测，避免过时；依据NASA引力与力学说明区分质量、引力和运动变化，避免原作把双方引力说成大小不同；整理速度与距离的语境；明确投石为解释用的想象，不是完整发射方法；删除重复括注并限定描述范围。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-467095/01.jpg",
+    "pages": [
+      {
+        "text": "如果你在某些晴朗的夜晚仰望天空，你会看到一颗像红色星星一样闪亮的行星。那就是火星。\n\n自从人类发明了望远镜，他们就一直看着火星，想知道：火星上是什么样的？上面有生命吗？\n\n我们可以从这里看火星并尝试猜测。但如果我们真的可以去那里旅行呢？",
+        "image": "assets/books/sw-467095/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "在太阳系里，火星是离地球较近的行星之一。\n\n然而，它依然非常遥远。想象用汽车或飞机去火星：按原作者的假想估算，开车要1200年，坐飞机也要30年！这些数字只是帮助我们感受距离，汽车和飞机实际上都不能这样飞往火星。",
+        "image": "assets/books/sw-467095/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "看看这个。\n\n如果地球这么大……",
+        "image": "assets/books/sw-467095/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "月亮会在这附近。",
+        "image": "assets/books/sw-467095/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "火星会在那边的某个地方，半公里外。",
+        "image": "assets/books/sw-467095/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "汽车和飞机不能带我们去那里。\n\n去火星，我们需要宇宙飞船。",
+        "image": "assets/books/sw-467095/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "2013 年 11 月 5 日， 印度空间研究组织（ISRO）发射了一艘前往火星的探测器。\n\n它被称为Mangalyaan。\n\nMangalyaan没有载人。它搭载了五种科学仪器，包括一台可以近距离观察火星的强大相机。",
+        "image": "assets/books/sw-467095/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "Mangalyaan（火星探测器）",
+        "image": "assets/books/sw-467095/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "Mangalyaan 面临的第一个挑战是要行驶的距离很远。\n\n直飞火星需要大量燃料。 而且燃料很贵。\n\n所以 ISRO 的科学家们想了一个巧妙的办法：先让探测器绕地球飞行，再利用发动机点火加速，进入前往火星的轨道。原作者把这个过程比作把东西从投石索上“甩”出去。",
+        "image": "assets/books/sw-467095/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "在这个比喻里，地球的引力像投石索，牵住绕行的探测器。\n\nMangalyaan首先开始“环绕”地球。",
+        "image": "assets/books/sw-467095/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "然后，通过多次发动机点火，它被送入越来越大的轨道。\n\n每一次，它都加快了速度。",
+        "image": "assets/books/sw-467095/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "当 Mangalyaan 达到最快速度时，它得到了最后一次加速。\n\n这样，它不再绕地球兜圈，而是进入前往火星的轨道。地球的引力仍然存在，只是随着距离增加而减弱。",
+        "image": "assets/books/sw-467095/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "由于地球也在绕太阳运行，因此探测器也带着地球绕太阳运动的速度出发。\n\n换句话说，地球就像甩动投石索的手。",
+        "image": "assets/books/sw-467095/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "但 Mangalyaan 并没有直接飞往火星。这是因为火星本身围绕太阳运行。\n\n科学家们必须瞄准很远的地方，这样探测器和火星才能同时到达太空中的同一点。\n\n1. Mangalyaan 发射时火星在此\n\n2. Mangalyaan 的火星之路\n\n3. 十个月后，探测器在这里追上火星\n\n4. 地球绕太阳运行的轨道\n\n5. 火星绕太阳运行的轨道",
+        "image": "assets/books/sw-467095/15.jpg",
+        "sourcePage": 15
+      },
+      {
+        "text": "通往火星的路很长很长。",
+        "image": "assets/books/sw-467095/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "Mangalyaan 历时 300 天，行程 6.2亿公里。",
+        "image": "assets/books/sw-467095/17.jpg",
+        "sourcePage": 17
+      },
+      {
+        "text": "在如此漫长的旅程中，飞船保持在正确的轨道上非常重要。否则，它很容易错过火星。 Mangalyaan 可以通过它周围星星的位置来判断它在哪里。它将这些信息发送回地球上的任务控制中心。 在这里，数学家们检查了宇宙飞船是否仍在正确的路径上。需要时，他们会向宇宙飞船发送信号，告诉它启动引擎并纠正其路径。\n\n1. 与地球通信的碟形天线\n\n2. 燃料箱\n\n3. 太阳能电池板为探测器上的电子设备供电",
+        "image": "assets/books/sw-467095/18.jpg",
+        "sourcePage": 18
+      },
+      {
+        "text": "在太空飞行了几个月后，探测器就快到火星了。\n\n再过几天，火星的引力开始将宇宙飞船拉进来。",
+        "image": "assets/books/sw-467095/19.jpg",
+        "sourcePage": 19
+      },
+      {
+        "text": "当宇宙飞船接近这颗红色星球时，它不得不减速进入轨道。\n\n这必须非常小心，否则它可能会撞上火星或永远飞走。",
+        "image": "assets/books/sw-467095/20.jpg",
+        "sourcePage": 20
+      },
+      {
+        "text": "对所有人来说，这都是紧张的时刻。",
+        "image": "assets/books/sw-467095/21.jpg",
+        "sourcePage": 21
+      },
+      {
+        "text": "终于，在2014年9月24日，探测器成功进入火星轨道。",
+        "image": "assets/books/sw-467095/22.jpg",
+        "sourcePage": 22
+      },
+      {
+        "text": "探测器进入火星轨道后，持续向地球发送照片和科学数据，工作了约八年。2022年，它与地面失去联系，任务结束。",
+        "image": "assets/books/sw-467095/23.jpg",
+        "sourcePage": 23
+      },
+      {
+        "text": "这是Mangalyaan拍摄的真实照片。\n\n我们仍然不确定火星上现在有没有生命，或者过去是否存在过生命。 但是，我们能到达这么远的目的地，这不是很神奇吗？\n\n我们也可以梦想着有一天把人送到火星。印度还开展了名为Gaganyaan的载人航天计划，目标是让宇航员进入近地轨道，再安全返回地球。近地轨道任务并不是前往火星。\n\n你想参加吗？",
+        "image": "assets/books/sw-467095/24.jpg",
+        "sourcePage": 24
+      },
+      {
+        "text": "什么是引力？\n\n引力是物体之间相互吸引的力。月球和地球相互吸引，太阳和地球也是如此。距离相同时，质量越大的物体，对另一个物体的引力就越大。\n\n地球的引力把石头拉向地面，石头也在吸引地球。它们对彼此的引力大小相同，但地球的质量远比石头大，所以地球的运动变化小得几乎看不出来。",
+        "image": "assets/books/sw-467095/25.jpg",
+        "sourcePage": 25
+      },
+      {
+        "text": "什么是轨道？\n\n当我扔石头时，地球的重力仍然拉着它，但石头在落到地上之前移动了一点。\n\n当我把它扔得更快时，它在落地之前就会飞得更远。\n\n但是，如果我能把它扔得非常非常用力呢？",
+        "image": "assets/books/sw-467095/26.jpg",
+        "sourcePage": 26
+      },
+      {
+        "text": "以恰到好处的速度， 石头会绕地球一圈并继续前进。它将进入轨道。\n\n这个想象帮助我们理解什么是轨道。真实的探测器还需要火箭发射、发动机点火和精确导航，才能先绕地球、再绕火星飞行。\n\n在太空中，较轻的物体由于重力而围绕较重的物体运行，例如月球围绕地球，地球围绕太阳运行。这类绕行轨道通常呈椭圆形。",
+        "image": "assets/books/sw-467095/27.jpg",
+        "sourcePage": 27
+      }
+    ]
+  },
+  {
+    "id": "sw-639353",
+    "title": "谁偷走了巴伊亚的笑容",
+    "intro": "哥哥不再爱玩了，基鲁想帮他找回笑容。一个关于抑郁情绪、耐心陪伴和寻求帮助的故事，建议亲子共读。",
+    "keywords": [
+      "哥哥",
+      "心情",
+      "陪伴",
+      "帮助"
+    ],
+    "question": "别人暂时不想玩的时候，我们怎样陪伴，又可以请谁帮忙？",
+    "tag": "家人与我",
+    "color": "butter",
+    "source": "https://storyweaver.org.in/en/stories/639353-who-stole-bhaiya-s-smile",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 4
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Sanjana Kapur",
+      "Illustrated by": "Sunaina Coelho",
+      "Translated by": "Judy Hu"
+    },
+    "copyright": "原作 © Pratham Books , 2019；中文译文 © Judy Hu , 2024；插图 © Pratham Books, 2019。",
+    "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：删除中文人名周围多余空白；整理人名空白；补齐句末标点；统一怪物名字；删除多余空白；对照英文You are just too distracted修正人物台词，保留原作中家人误解的情节；对照英文I feel like being happy纠正愿望被误译为已经开心；明确them指困难的日子，不是等人离开；依据WHO与CDC资料局部校订书末说明，区分短暂伤心和持续困扰，避免将抑郁症简单解释为脑受伤或建议儿童自行用药；不改故事情节。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-639353/01.jpg",
+    "pages": [
+      {
+        "text": "基鲁和巴伊亚以前经常一起玩耍。他们会探索楼梯下的洞穴，在后院的芒果树上与外星人战斗。",
+        "image": "assets/books/sw-639353/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "巴伊亚总是逗得基鲁哈哈大笑。“芒果大怪来自火星，她来这里是为了摧毁你的房子！哈哈！” 巴伊亚咆哮道。\n\n“啊啊！我会诱捕并吞噬芒果大怪。哈哈哈哈！”基鲁说。",
+        "image": "assets/books/sw-639353/03.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 2110,
+          "height": 2403,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 3
+      },
+      {
+        "text": "但是基鲁和巴伊亚 已经很久没有一起玩了。巴伊亚最近不喜欢和任何人一起玩！\n\n“你为什么不想玩？” 基鲁对巴伊亚大喊。\n\n“我不想玩，” 巴伊亚说。“我被一个大怪物困住了。”",
+        "image": "assets/books/sw-639353/04.jpg",
+        "imageFrame": {
+          "x": 1309,
+          "y": 0,
+          "width": 2042,
+          "height": 2403,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 4
+      },
+      {
+        "text": "基鲁给怪物取名为杜克杜克。\n\n“杜克杜克肯定很坏，脾气很暴躁，” 基鲁想。“感觉他吞噬了巴伊亚的笑容。”\n\n杜克杜克似乎总是和巴伊亚在一起。“让你的怪物走开！我不喜欢他，”基鲁说。",
+        "image": "assets/books/sw-639353/05.jpg",
+        "imageFrame": {
+          "x": 266,
+          "y": 93,
+          "width": 1417,
+          "height": 2261,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 5
+      },
+      {
+        "text": "有时，杜克杜克会长得比卡车还大。那些日子里，巴伊亚会对每件事都感到愤怒。他甚至会生气地咀嚼食物！",
+        "image": "assets/books/sw-639353/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "妈妈认为她知道如何让巴伊亚感觉好些。\n\n“你应该出去走走。 新鲜空气对你有好处，”妈妈说。",
+        "image": "assets/books/sw-639353/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "在有的时候，杜克杜克似乎总是缠着巴伊亚不放。他甚至不让巴伊亚下床。",
+        "image": "assets/books/sw-639353/08.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 134,
+          "width": 2012,
+          "height": 2269,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 8
+      },
+      {
+        "text": "爸爸一直关心巴伊亚的情绪如何，并告诉他如何解决。\n\n“怎么了，你为什么不吃饭？”爸爸说。“好好吃饭，你的问题就会消失。”",
+        "image": "assets/books/sw-639353/09.jpg",
+        "imageFrame": {
+          "x": 1176,
+          "y": 0,
+          "width": 2175,
+          "height": 2403,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 9
+      },
+      {
+        "text": "有时候，杜克杜克变小了，像风筝一样飘来飘去。\n\n然后巴伊亚会起床和基鲁一起玩。 但他很快就感觉累了。",
+        "image": "assets/books/sw-639353/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "爷爷和奶奶告诉巴伊亚他的问题出在哪里。 “这是你们这一代孩子的问题。在我那个年代， 我们更坚强！”爷爷说。\n\n“你只是太容易分心了，”奶奶说。",
+        "image": "assets/books/sw-639353/11.jpg",
+        "imageFrame": {
+          "x": 767,
+          "y": 0,
+          "width": 1906,
+          "height": 1764,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 11
+      },
+      {
+        "text": "“一切都在你的脑海中。你只需要专心致志，你就会摆脱困境，”每个人都说。\n\n“我会努力的，” 巴伊亚说。“这没那么容易。”",
+        "image": "assets/books/sw-639353/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "基鲁试图分散巴伊亚的注意力。\n\n“看看这本新书，巴伊亚！这些图片难道不是很漂亮吗？” 基鲁说。\n\n“它们还不错，基鲁。” 巴伊亚说。",
+        "image": "assets/books/sw-639353/13.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 0,
+          "width": 2152,
+          "height": 2403,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 13
+      },
+      {
+        "text": "“巴伊亚，你看到新的火车玩具了吗？”基鲁尖叫起来。\n\n“嗯，还行，” 巴伊亚说。\n\n“芒果大怪来了！快跑，巴伊亚，” 基鲁大喊。\n\n“现在不行，基鲁。我不想玩，” 巴伊亚说。",
+        "image": "assets/books/sw-639353/14.jpg",
+        "imageFrame": {
+          "x": 182,
+          "y": 86,
+          "width": 2988,
+          "height": 2091,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 14
+      },
+      {
+        "text": "“杜克杜克让他又伤心又生气，”基鲁想。\n\n她朝杜克杜克扔了一个枕头。 “接着，你这个可怕的家伙！ 离巴伊亚远点，把微笑还给他。”",
+        "image": "assets/books/sw-639353/15.jpg",
+        "imageFrame": {
+          "x": 153,
+          "y": 350,
+          "width": 2099,
+          "height": 1993,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 15
+      },
+      {
+        "text": "今天是巴伊亚的生日。基鲁烤了一个蛋糕。\n\n“谢谢你，基鲁，”巴伊亚笑着说。\n\n基鲁皱起眉头，最近巴伊亚的笑容很不一样。",
+        "image": "assets/books/sw-639353/16.jpg",
+        "sourcePage": 16
+      },
+      {
+        "text": "基鲁坐在巴伊亚旁边。 “你的新朋友让你不开心了吗？”\n\n巴伊亚点点头。",
+        "image": "assets/books/sw-639353/17.jpg",
+        "imageFrame": {
+          "x": 273,
+          "y": 25,
+          "width": 1705,
+          "height": 2367,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 17
+      },
+      {
+        "text": "“我也想开心起来，但大多数日子里，这都很难，” 巴伊亚解释道。\n\n“你认为你的朋友会呆多久？” 基鲁问道。\n\n“我不知道，” 巴伊亚说。",
+        "image": "assets/books/sw-639353/18.jpg",
+        "imageFrame": {
+          "x": 0,
+          "y": 520,
+          "width": 2140,
+          "height": 1883,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 18
+      },
+      {
+        "text": "“没关系，”基鲁说，“你想玩的时候我们随时都可以玩。”\n\n巴伊亚露出了他往日的笑容。杜克杜克变小了。",
+        "image": "assets/books/sw-639353/19.jpg",
+        "imageFrame": {
+          "x": 1617,
+          "y": 18,
+          "width": 1623,
+          "height": 2373,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 19
+      },
+      {
+        "text": "现在巴伊亚甚至得到了医生阿姨的帮助。",
+        "image": "assets/books/sw-639353/20.jpg",
+        "imageFrame": {
+          "x": 1220,
+          "y": 272,
+          "width": 2131,
+          "height": 2131,
+          "originalWidth": 3351,
+          "originalHeight": 2403
+        },
+        "sourcePage": 20
+      },
+      {
+        "text": "杜克杜克还在那儿。偶尔，他会变大一些，基鲁会耐心等这些日子过去。\n\n大多数时候，杜克杜克都很小，而巴伊亚则喜欢在那些日子里玩耍。",
+        "image": "assets/books/sw-639353/21.jpg",
+        "sourcePage": 21
+      },
+      {
+        "text": "杜克杜克＝抑郁症\n\n有时我们会伤心、哭泣、生闷气或者发火。这些感受会慢慢过去，偶尔伤心是正常的。可是，有些人的低落会持续很长时间，对原来喜欢的事情也失去兴趣，就像被一个沉重的大怪物压着。这可能与抑郁症有关，需要专业人士帮助判断，不能只凭一次伤心就下结论。\n\n如果身边有人一直很难过，可以耐心听他说话。你可以告诉他：“我不一定完全明白你的感受，但我知道这很难，我愿意陪着你。”如果你也有这样的感受，请告诉爸爸妈妈或其他可信任的大人，并请他们帮助联系医生、心理咨询师等专业人士。陪伴很重要，也要得到合适的专业帮助。",
+        "image": "assets/books/sw-639353/22.jpg",
+        "imageFrame": {
+          "x": 42,
+          "y": 31,
+          "width": 866,
+          "height": 644,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "sourcePage": 22
+      },
+      {
+        "text": "",
+        "image": "assets/books/sw-639353/23.jpg",
+        "imageFrame": {
+          "x": 346,
+          "y": 425,
+          "width": 287,
+          "height": 158,
+          "originalWidth": 959,
+          "originalHeight": 687
+        },
+        "wordless": true,
+        "imageAlt": "《谁偷走了巴伊亚的笑容》原书第23页：勺子和吃剩的芒果。",
+        "sourcePage": 23
+      }
+    ]
+  },
+  {
+    "id": "sw-639414",
+    "title": "阿利雅的飞行梦",
+    "intro": "从空中飞人到宇航员，阿利雅向往过许多种飞行。最后，她用学习和练习实现自己的飞行梦。",
+    "keywords": [
+      "飞行",
+      "梦想",
+      "学习",
+      "机长"
+    ],
+    "question": "阿利雅的梦想变过几次？为了实现梦想，她做了哪些事？",
+    "tag": "成长故事",
+    "color": "peach",
+    "source": "https://storyweaver.org.in/en/stories/639414-arya-s-fly-dream",
+    "sourceLevel": {
+      "system": "StoryWeaver",
+      "value": 4
+    },
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credits": {
+      "Original publisher": "Pratham Books",
+      "Written by": "Nandita Jayaraj",
+      "Illustrated by": "Upamanyu Bhattacharyya",
+      "Translated by": "Charles Huo"
+    },
+    "copyright": "原作 © Pratham Books , 2017；中文译文 © Charles Huo , 2024；插图 © Pratham Books, 2017。",
+    "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：统一主人公在标题与正文的译名；补齐句末标点；依据NASA区分首次任务的252圈与她全部航天经历；对照英文broke apart及NASA事故记录，纠正事故形式；区分战斗机岗位与空军整体救灾工作，避免把救灾表述成三位人物的已核实个人履历；补齐开引号；将脱离原网站后失效的点击指令改为原作版本提示，不删除原有说明。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+    "narration": "none",
+    "cover": "assets/books/sw-639414/01.jpg",
+    "pages": [
+      {
+        "text": "阿利雅总想要飞。",
+        "image": "assets/books/sw-639414/02.jpg",
+        "sourcePage": 2
+      },
+      {
+        "text": "她四岁的时候，曾经想成为罗莎玛。\n\n阿利雅在马戏团看到了她。罗莎玛是一个空中飞人。\n\n阿利雅也想像罗莎玛一样，从秋千飞跃到秋千。她的衣服会像罗莎玛的那样闪闪发光。成百上千的人会为她鼓掌。\n\n她每天都会吃棉花糖。她最好的朋友会是一个小丑。",
+        "image": "assets/books/sw-639414/03.jpg",
+        "sourcePage": 3
+      },
+      {
+        "text": "空中飞人爬上一架高高的梯子，站在一块狭窄的木板上，抓住飞杆，然后摆动起来！另一位空中飞人通常会在另一端等待接住他们。",
+        "image": "assets/books/sw-639414/04.jpg",
+        "sourcePage": 4
+      },
+      {
+        "text": "阿利雅八岁的时候，她想成为卡尔帕娜·查乌拉。\n\n她给自己做了一套橙色的宇航服，白天黑夜都穿着。\n\n“阿利雅，穿着那套衣服不觉得热吗？”\n\n“宇航员必须习惯穿那种衣服，妈妈。太空不像地球那样安全。我的宇航服会保护我。”",
+        "image": "assets/books/sw-639414/05.jpg",
+        "sourcePage": 5
+      },
+      {
+        "text": "卡尔帕娜·查乌拉在印度哈里亚纳邦长大。\n\n在第一次航天任务中，卡尔帕娜乘坐的航天飞机环绕地球飞行了252圈！\n\n卡尔帕娜在执行任务时去世，当时她所乘坐的航天器在返回地球时解体了。",
+        "image": "assets/books/sw-639414/06.jpg",
+        "sourcePage": 6
+      },
+      {
+        "text": "阿利雅十二岁时，她想成为阿梅利亚·埃尔哈特。\n\n她为学校的项目做了一个模型飞机。虽然它不能飞，但她还是得到了第二名。\n\n阿利雅甚至剪了一个和阿梅利亚一样的发型！",
+        "image": "assets/books/sw-639414/07.jpg",
+        "sourcePage": 7
+      },
+      {
+        "text": "阿梅利亚是第一位独自飞越大西洋的女性。\n\n阿梅利亚的梦想是沿着赤道环游世界。\n\n她开始了她的梦想飞行，但在太平洋上空的某个地方失踪了。",
+        "image": "assets/books/sw-639414/08.jpg",
+        "sourcePage": 8
+      },
+      {
+        "text": "不久后，阿利雅听说了安古利亚·拜、库姆达马尔和萨尔拉·塔克拉尔——这三位是印度第一批驾驶飞机的女性。\n\n安古利亚·拜只有十六岁！\n\n“我等不及要成为青少年了！”\n\n“那你可以开车了吗？”\n\n“不能。”\n\n“那你可以投票了吗？”\n\n“不能。”\n\n“那你为什么想快点长大？”\n\n“为了可以飞！”",
+        "image": "assets/books/sw-639414/09.jpg",
+        "sourcePage": 9
+      },
+      {
+        "text": "1935年5月30日，十九岁的库姆达马尔和十六岁的安古利亚·拜成为印度第一批获得‘A’级飞行员执照的女性。她们在马德拉斯飞行俱乐部接受训练。",
+        "image": "assets/books/sw-639414/10.jpg",
+        "sourcePage": 10
+      },
+      {
+        "text": "当阿利雅十八岁时，她想成为一名战斗机飞行员。\n\n“她们是谁，姐姐？”她的小弟弟拉朱看到她墙上的海报问道。\n\n“她们是巴瓦纳、阿瓦尼和莫哈纳，印度第一批飞行战斗机的女性。”\n\n“她们是你的朋友吗？”\n\n阿利雅笑了笑：“也许有一天，拉朱……”",
+        "image": "assets/books/sw-639414/11.jpg",
+        "sourcePage": 11
+      },
+      {
+        "text": "莫哈纳、巴瓦纳和阿瓦尼是战斗机飞行员。在她们之前，印度只有男性被允许成为战斗机飞行员。\n\n她们从高空保卫国家的边界。\n在洪水和地震等灾难发生时，空军也会参与救援任务。",
+        "image": "assets/books/sw-639414/12.jpg",
+        "sourcePage": 12
+      },
+      {
+        "text": "阿利雅存钱去上飞行学校。\n\n她花了好几年时间学习。她和飞行员们一起坐着，向他们请教。她努力工作，吃了很多胡萝卜！妈妈总是说胡萝卜对眼睛很好。",
+        "image": "assets/books/sw-639414/13.jpg",
+        "sourcePage": 13
+      },
+      {
+        "text": "终于，她准备好亲自坐进驾驶舱了。\n\n今天对阿利雅来说是一个特别的日子。她正坐在驾驶舱里。她非常兴奋，因为今天早晨，她的飞机上有两位特别的乘客。",
+        "image": "assets/books/sw-639414/14.jpg",
+        "sourcePage": 14
+      },
+      {
+        "text": "“女士们、先生们，我是你们的机长，阿利雅。欢迎登机！”\n\n“姐姐！”\n\n“那是我的女儿！”\n\n还可以读一读以拉朱为主角的另一个版本。",
+        "image": "assets/books/sw-639414/15.jpg",
+        "sourcePage": 15
+      }
+    ]
   }
 ]
