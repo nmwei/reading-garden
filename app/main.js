@@ -98,7 +98,7 @@ function refreshShelfControl(selector, fallback = '.reading-shelf-actions a') {
 function shell(section, content) {
   const activeSection = section === 'library' ? 'shelf' : section;
   const nav = [['shelf', 'book', '故事书架'], ['pinyin', 'sun', '学拼音'], ['words', 'leaf', '我的生字']];
-  return `<aside class="sidebar"><a class="brand" href="#/shelf"><img src="./assets/icon.svg" alt="" width="48" height="48"><span>阅读小花园<small>每一页，都有新发现</small></span></a>
+  return `<aside class="sidebar"><a class="brand" href="#/shelf"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>阅读小花园</strong><small>READING GARDEN</small></span></a>
     <nav aria-label="主要导航">${nav.map(([id, ico, label]) => `<a href="#/${id}" class="nav-item ${activeSection === id ? 'active' : ''}" ${section === id ? 'aria-current="page"' : ''}>${icon(ico)}<span>${label}</span>${id === 'words' && state.words.length ? `<span class="count">${state.words.length}</span>` : ''}</a>`).join('')}</nav>
     <div class="sidebar-bottom"><div class="little-plant" aria-hidden="true"><span></span><i></i><b></b></div><p>慢慢读，慢慢长大。</p><a class="parent-link" href="#/parent" ${section === 'parent' ? 'aria-current="page"' : ''}>${icon('parent')}家长小角</a></div></aside>
     <main id="main" class="main-content" tabindex="-1">${content}</main>`;
@@ -108,7 +108,7 @@ function shelf() {
   const last = [...books].sort((a, b) => (state.progress[b.id]?.updated || 0) - (state.progress[a.id]?.updated || 0))[0];
   const hasProgress = !!state.progress[last.id];
   return shell('shelf', `<header class="page-header"><div><span class="eyebrow">故事书架</span><h1>今天，也读一个好故事。</h1></div><span class="header-note">${icon('leaf')}从一页开始</span></header>
-    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><span class="pill">${hasProgress ? '接着上次的故事' : '从这本开始吧'}</span><h2 id="hero-title">小小的书，<br>大大的世界<span class="sun-dot" aria-hidden="true">✳</span></h2><p>${esc(last.intro)}</p><a class="button primary" href="${bookLink(last)}">${hasProgress ? '继续阅读' : '打开故事'}${icon('arrow')}</a><span class="hero-caption">${esc(last.title)} · ${last.pages.length}页图画故事</span></div><a class="hero-art" href="${bookLink(last)}" aria-label="阅读${esc(last.title)}"><span class="art-orbit" aria-hidden="true"></span><img src="${last.cover}" alt="${esc(last.title)}的绘本封面"><span class="floating-label">翻开一页，遇见惊喜</span></a></section>
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><span class="pill">${hasProgress ? '接着上次的故事' : '从这本开始吧'}</span><h2 id="hero-title">小小的书，<br>大大的世界<span class="sun-dot" aria-hidden="true">✳</span></h2><p>${esc(last.intro)}</p><a class="button primary" href="${bookLink(last)}">${hasProgress ? '继续阅读' : '打开故事'}${icon('arrow')}</a><span class="hero-caption">${esc(last.title)} · ${last.pages.length}页图画故事</span></div><a class="hero-art" href="${bookLink(last)}" aria-label="阅读${esc(last.title)}"><span class="art-orbit" aria-hidden="true"></span><img src="${last.cover}" alt="${esc(last.title)}的绘本封面"><span class="floating-label">每一页，都有新发现</span></a></section>
     ${readingShelf()}
 
     <footer class="site-footer">每个孩子都有自己的阅读节奏。<a href="#/parent">故事与声音来源</a></footer>`);

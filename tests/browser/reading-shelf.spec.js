@@ -105,7 +105,7 @@ test('desktop, iPad and phone keep shared cards and the spacious resume panel us
       if(route==='shelf') {
         await expect(page.locator('.hero')).toBeVisible();
         await expect(page.locator('#hero-title')).toHaveText('小小的书，大大的世界✳');
-        await expect(page.locator('.floating-label')).toHaveText('翻开一页，遇见惊喜');
+        await expect(page.locator('.floating-label')).toHaveText('每一页，都有新发现');
         await expect(page.locator('.hero-art img')).toBeVisible();
         await expect(page.locator('.hero-caption')).toContainText('我喜欢看书');
       }
