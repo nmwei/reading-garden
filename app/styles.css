@@ -47,6 +47,9 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 .parent-hold{position:relative;overflow:hidden;isolation:isolate;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .parent-hold::before{content:"";position:absolute;inset:0;background:#ffffff35;transform:scaleX(0);transform-origin:left;z-index:-1}
 .parent-hold.holding::before{transform:scaleX(1);transition:transform 1s linear}
+.parent-hold-actions{align-items:flex-start}
+.parent-hold-action{display:grid;justify-items:center;gap:4px}
+.parent-hold-action small{color:var(--muted);font-size:13px}
 @media(max-width:900px){.vowel-picker.compact-picker{grid-template-columns:repeat(6,minmax(0,1fr))}}
 @media(max-width:620px){.vowel-picker.compact-picker{grid-template-columns:repeat(4,minmax(0,1fr))}.tone-group{grid-template-columns:1fr;gap:6px}.tone-group h3{font-size:12px}.tone-group .tone-picker{gap:6px}.tone-group .tone-picker button{min-width:50px;padding:8px 12px}.practice-controls{padding:18px 14px}.practice-scopes{gap:8px}.practice-scopes button{font-size:14px;gap:4px}.practice-scopes .icon{width:14px;height:14px}}
 

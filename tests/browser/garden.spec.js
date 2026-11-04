@@ -30,7 +30,7 @@ const test = base.extend({
 });
 
 async function enterParent(page) {
-  await page.getByRole('button', {name: '长按 1 秒进入', exact: true}).click({delay: 1150});
+  await page.getByRole('button', {name: '长按进入', exact: true}).click({delay: 1150});
   await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
 }
 
@@ -502,8 +502,9 @@ test('parent entry requires a full hold, cancels on release/movement and guards 
   await page.getByRole('link', {name: '家长小角', exact: true}).click();
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
   const gate = page.locator('#parent-dialog');
-  const hold = page.getByRole('button', {name: '长按 1 秒进入', exact: true});
+  const hold = page.getByRole('button', {name: '长按进入', exact: true});
   await expect(gate).toBeVisible();
+  await expect(hold).toHaveAccessibleDescription('按住 1 秒');
   await hold.click({delay: 150});
   await page.waitForTimeout(1050);
   await expect(gate).toBeVisible();
@@ -515,7 +516,7 @@ test('parent entry requires a full hold, cancels on release/movement and guards 
   await page.waitForTimeout(1050);
   await page.mouse.up();
   await expect(gate).toBeVisible();
-  await page.getByRole('button', {name: '取消', exact: true}).click();
+  await gate.getByRole('button', {name: '返回', exact: true}).click();
   await expect(gate).not.toBeVisible();
   await page.goto('/#/parent');
   await expect(gate).toBeVisible();
@@ -687,7 +688,7 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
   await expect(page.locator('#parent-dialog')).toBeVisible();
   expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
-  await page.getByRole('button', {name: '取消', exact: true}).click();
+  await page.locator('#parent-dialog').getByRole('button', {name: '返回', exact: true}).click();
   await page.getByRole('link', {name: '学拼音', exact: true}).click();
   await expect(page.getByRole('heading', {name: '新版拼音小课堂', exact: true})).toBeVisible();
   const activated = await page.evaluate(async () => ({version: (await fetch('./precache.json').then(r => r.json())).version, caches: await caches.keys(), waiting: !!(await navigator.serviceWorker.getRegistration()).waiting}));
@@ -804,7 +805,7 @@ test('an update refuses corrupted old media and omits withdrawn assets while reu
   expect(migrated).toEqual({good:true,bad:false,withdrawn:false,unselected:false});
   await page.getByRole('button',{name:'重新加载页面',exact:true}).click();
   await expect(page.locator('#parent-dialog')).toBeVisible();
-  await page.getByRole('button',{name:'取消',exact:true}).click();
+  await page.locator('#parent-dialog').getByRole('button',{name:'返回',exact:true}).click();
   await page.goto(`${base}#/book/0262/1`);
   await page.getByRole('button',{name:'读这一页',exact:true}).click();
   await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
