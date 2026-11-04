@@ -86,21 +86,31 @@ export class AudioPlayer {
       return false;
     }
   }
-  speak(text, voiceURI) {
+  speak(text, voiceURI, onError = () => {}) {
     this.stop();
     const voices = chineseVoices();
     const voice = voices.find(v => v.voiceURI === voiceURI) || voices.find(v => /zh[-_]CN|cmn[-_]CN/i.test(v.lang)) || voices[0];
-    if (!voice) return false;
+    if (!voice || typeof globalThis.SpeechSynthesisUtterance !== 'function') return false;
     const utterance = new SpeechSynthesisUtterance(text);
     const token = this.token;
     utterance.lang = voice.lang;
     utterance.voice = voice;
     utterance.rate = 0.8;
     utterance.onend = () => { if (token === this.token) { this.playing = false; this.onChange(false); } };
-    utterance.onerror = () => { if (token === this.token) { this.playing = false; this.onChange(false); } };
+    utterance.onerror = () => {
+      if (token !== this.token) return;
+      this.playing = false;
+      this.onChange(false);
+      onError();
+    };
     this.playing = true;
     this.onChange(true);
-    speechSynthesis.speak(utterance);
+    try {
+      speechSynthesis.speak(utterance);
+    } catch {
+      this.stop();
+      return false;
+    }
     return true;
   }
 }

@@ -1,4 +1,4 @@
-import {STORAGE_KEY, READING_LIST_LIMIT, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, quizChoices} from './core.js';
+import {STORAGE_KEY, READING_LIST_LIMIT, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, sentenceAt, quizChoices} from './core.js';
 import {FINAL_GROUPS, FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PRACTICE_CATEGORIES, TONE_GROUPS, TONE_BASES, toneExamples, nextPracticeCategory, practicePool, pinyinAudio, toneName} from './pinyin.js';
 import {readingLevelLabel, readingLevelKey, readingLevelOptions} from './reading-levels.js';
 import {AudioPlayer, chineseVoices} from './audio.js';
@@ -28,14 +28,15 @@ const paths = {
 const icon = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.leaf}</svg>`;
 let books = [], sources = [], state = emptyState(), route;
 let pinyinTab = 'finals', lastQuizScope = '', toneBase = 'a', quiz = null, selectedWord = null;
-let sequencePaused = false;
+let sequencePaused = false, selectedSentence = '';
 let parentAccess = false, lastPublicHash = '#/shelf', disposeParentHold;
 let libraryBusy = false, maintenanceMessage = '', resourceMessage = '';
 const selectedPinyin = {finals: 'a', initials: 'initial-b', whole: 'whole-zhi'};
 let bookLevel = 'all', bookFilter = '全部故事', bookView = 'all';
 let offlineScope = 'all', toastTimer, storageWarning = false;
 const audio = new AudioPlayer(playing => {
-  document.querySelectorAll('[data-page-play]').forEach(el => { el.innerHTML = icon(playing ? 'pause' : 'sound') + (playing ? '暂停朗读' : '读这一页'); el.setAttribute('aria-pressed', String(playing)); });
+  playing = playing && !wordDialog.open;
+  document.querySelectorAll('[data-page-play]').forEach(el => { el.innerHTML = icon(playing ? 'pause' : 'sound') + (playing ? '停止朗读' : '读这一页'); el.setAttribute('aria-pressed', String(playing)); });
 });
 
 function notify(message) {
@@ -51,6 +52,12 @@ function persist(next) {
 async function play(src) {
   try { return await audio.play(src); }
   catch { notify('声音暂时没有播放成功，请再点一次。离线时可先下载故事包。'); return false; }
+}
+function speakStory(text) {
+  return audio.speak(text, state.voice, () => notify('系统朗读暂时失败，请检查设备声音或网络。'));
+}
+function noStoryVoice() {
+  notify('设备暂时没有可用的中文声音，请在家长小角检查中文声音。');
 }
 async function playPinyin(id) {
   const source = pinyinAudio(id);
@@ -135,7 +142,7 @@ function readingListButton(book) {
 }
 function bookCard(book, inLibrary = false) {
   const level = readingLevelLabel(book.sourceLevel);
-  return `<article class="reading-pick ${inLibrary ? 'library-book' : ''}" data-book-id="${book.id}"><a ${inLibrary ? 'class="book-card"' : ''} href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><div class="pick-cover book-cover ${book.color}"><img src="${book.cover}" alt="" loading="lazy"></div><div class="pick-info">${level ? `<span class="book-level" aria-label="${esc(level)}（原站分级）">${esc(book.sourceLevel.system)} <span class="book-level-grade">${book.sourceLevel.value}级</span></span>` : ''}<h3>${esc(book.title)}</h3>${book.narration === 'none' ? '<span class="narration-note">亲子共读</span>' : ''}<p>${readingStatus(book)}</p></div></a><div class="card-actions"><a class="pick-action" href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><span class="desktop-label">${readingLabel(book)}</span><span class="mobile-label">${readyToReread(book) ? '再读' : readingLabel(book)}</span>${icon('arrow')}</a>${readingListButton(book)}</div></article>`;
+  return `<article class="reading-pick ${inLibrary ? 'library-book' : ''}" data-book-id="${book.id}"><a ${inLibrary ? 'class="book-card"' : ''} href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><div class="pick-cover book-cover ${book.color}"><img src="${book.cover}" alt="" loading="lazy"></div><div class="pick-info">${level ? `<span class="book-level" aria-label="${esc(level)}（原站分级）">${esc(book.sourceLevel.system)} <span class="book-level-grade">${book.sourceLevel.value}级</span></span>` : ''}<h3>${esc(book.title)}</h3><span class="narration-note">${book.narration === 'none' ? '系统朗读' : '原版录音'}</span><p>${readingStatus(book)}</p></div></a><div class="card-actions"><a class="pick-action" href="${bookLink(book)}" aria-label="${readingLabel(book)}《${esc(book.title)}》"><span class="desktop-label">${readingLabel(book)}</span><span class="mobile-label">${readyToReread(book) ? '再读' : readingLabel(book)}</span>${icon('arrow')}</a>${readingListButton(book)}</div></article>`;
 }
 
 function storyText(text) {
@@ -159,9 +166,9 @@ function reader(showHint = false) {
   const {book, page} = route, current = book.pages[page];
   const chars = storyText(current.text);
   return `<main class="reader" id="main"><header class="reader-header"><a href="#/shelf" class="back-link">${icon('back')}回到书架</a><h1>${esc(book.title)}</h1></header>
-    ${book.narration === 'none' ? `<div class="reader-meta"><span class="book-level">${esc(readingLevelLabel(book.sourceLevel))}</span><span class="small-note">和家长一起读 · 暂无故事录音</span></div>` : ''}
+    <div class="reader-meta"><span class="book-level">${esc(readingLevelLabel(book.sourceLevel))}</span>${current.text ? `<span class="small-note">${current.audio ? '原版录音' : '系统朗读'}</span>` : ''}</div>
     <div class="reading-progress" aria-label="阅读进度"><span style="width:${(page + 1) / book.pages.length * 100}%"></span></div>
-    <section class="reading-spread${current.textOnly ? ' text-only' : current.wordless ? ' wordless' : ''}" aria-label="第${page + 1}页">${current.image ? `<div class="page-art">${storyArt(current, `《${book.title}》第${page + 1}页插图`)}</div>` : ''}<div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span>${current.text ? `<p class="story-text" aria-label="${esc(current.text)}">${chars}</p>` : ''}${current.audio ? `<button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>` : ''}${showHint && current.text ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
+    <section class="reading-spread${current.textOnly ? ' text-only' : current.wordless ? ' wordless' : ''}" aria-label="第${page + 1}页">${current.image ? `<div class="page-art">${storyArt(current, `《${book.title}》第${page + 1}页插图`)}</div>` : ''}<div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span>${current.text ? `<p class="story-text" aria-label="${esc(current.text)}">${chars}</p>` : ''}${current.text ? `<button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>` : ''}${showHint && current.text ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
     <nav class="page-controls" aria-label="翻页"><button class="button secondary" data-prev ${page === 0 ? 'disabled' : ''}>${icon('back')}上一页</button><div class="page-dots">${book.pages.map((_, i) => `<button class="page-dot ${i === page ? 'current' : ''}" data-page="${i}" aria-label="第${i + 1}页" ${i === page ? 'aria-current="page"' : ''}><span></span></button>`).join('')}</div><button class="button ${page === book.pages.length - 1 ? 'primary' : 'secondary'}" data-next>${page === book.pages.length - 1 ? '读完啦' : '下一页'}${icon(page === book.pages.length - 1 ? 'check' : 'arrow')}</button></nav>
     <div class="reader-offline"><button class="text-button" data-download-book="${book.id}">${icon('download')}下载这本书</button><span id="book-download-status" class="small-note" role="status"></span></div><details class="reader-credit"><summary>这本书的作者与来源</summary>${bookCredit(book)}</details></main>`;
 }
@@ -173,8 +180,9 @@ function showWord(index, entry) {
   const text = book.pages[page].text;
   const position = entry ? text.indexOf(entry.char) : index;
   selectedWord = {char: text[position], bookId: book.id, page};
+  selectedSentence = sentenceAt(text, position);
   const context = wordInContext(text, position), saved = state.words.some(w => w.char === context.char);
-  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(text)}</blockquote><div class="dialog-actions word-actions"><button class="button primary" data-speak-word aria-label="听“${esc(context.char)}”的读音">${icon('sound')}听字音</button><button class="button secondary" data-save-word aria-pressed="${saved}">${icon('leaf')}${saved ? '移出生字篮' : '放进生字篮'}</button></div>${book.pages[page].audio ? `<button class="text-button word-sentence" data-word-listen>${icon('sound')}听原句</button>` : '<p class="small-note word-audio-note">字音由设备朗读，故事可以和家长一起读。</p>'}`;
+  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(selectedSentence)}</blockquote><div class="dialog-actions word-actions"><button class="button primary" data-speak-word aria-label="听“${esc(context.char)}”的读音">${icon('sound')}听字音</button><button class="button secondary" data-save-word aria-pressed="${saved}">${icon('leaf')}${saved ? '移出生字篮' : '放进生字篮'}</button></div><button class="text-button word-sentence" data-word-listen>${icon('sound')}听这一句</button>`;
   wordDialog.showModal();
 }
 
@@ -328,7 +336,7 @@ async function maintainApp(action) {
   } finally { libraryBusy = false; paintMaintenance(); }
 }
 function parent() {
-  return shell('parent', `<header class="page-header"><div><span class="eyebrow">家长小角</span><h1>陪她读，也给她一点空间。</h1></div></header><section class="parent-panel"><h2>阅读和声音</h2><p>正文不加拼音，先看图、自己读，遇到困难再求助。拼音在独立的小课堂学习。</p><label for="voice-select" class="voice-label">点字词时使用的设备中文声音</label><select id="voice-select"><option value="">自动选择普通话声音</option>${chineseVoices().map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === state.voice ? 'selected' : ''}>${esc(v.name)} · ${esc(v.lang)}</option>`).join('')}</select><button class="button secondary" data-voice-test>${icon('sound')}试听中文声音</button><p class="small-note">故事和拼音读音使用随站录音；单独词语使用设备语音。没有可用中文声音时，仍可听故事原句。设备语音可能需要联网。</p></section>
+  return shell('parent', `<header class="page-header"><div><span class="eyebrow">家长小角</span><h1>陪她读，也给她一点空间。</h1></div></header><section class="parent-panel"><h2>阅读和声音</h2><p>正文不加拼音，先看图、自己读，遇到困难再求助。拼音在独立的小课堂学习。</p><label for="voice-select" class="voice-label">点字和系统朗读使用的中文声音</label><select id="voice-select"><option value="">自动选择普通话声音</option>${chineseVoices().map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === state.voice ? 'selected' : ''}>${esc(v.name)} · ${esc(v.lang)}</option>`).join('')}</select><button class="button secondary" data-voice-test>${icon('sound')}试听中文声音</button><p class="small-note">有原版录音的故事优先播放录音。其他故事、听句和点字使用设备中文声音。设备语音可能需要联网。</p></section>
     <section class="parent-panel offline-panel"><h2>带上故事，离线也能读</h2><p>第一次联网打开后，可按书、按级别下载，也可带上全部${books.length}本绘本和拼音读音。下载完成后，请在这台 iPad 上试一次断网阅读。</p><label class="voice-label" for="download-scope">离线下载范围</label><select id="download-scope"><option value="all" ${offlineScope === 'all' ? 'selected' : ''}>全部故事与拼音</option><option value="pinyin" ${offlineScope === 'pinyin' ? 'selected' : ''}>拼音读音</option><optgroup label="按级别">${readingLevelOptions(books).map(level => `<option value="level:${esc(readingLevelKey(level))}" ${offlineScope === `level:${readingLevelKey(level)}` ? 'selected' : ''}>${esc(readingLevelLabel(level))} · ${books.filter(book => readingLevelKey(book.sourceLevel) === readingLevelKey(level)).length}本</option>`).join('')}</optgroup><optgroup label="按图书">${books.map(book => `<option value="book:${book.id}" ${offlineScope === `book:${book.id}` ? 'selected' : ''}>${esc(book.title)}</option>`).join('')}</optgroup></select><button class="button primary" data-download>${icon('download')}下载离线故事包</button><p id="download-status" role="status" class="small-note">正在计算素材大小…</p><p class="small-note">Safari 中点“分享 → 添加到主屏幕”，即可像小应用一样打开。浏览器清理缓存后需要重新下载。</p><div class="resource-repair"><p class="small-note">图片或声音异常？联网重新获取完整资源包，学习记录会保留。</p><button class="text-button" data-app-refetch>重新获取资源</button><p id="resource-refresh-status" class="small-note" role="status">${esc(resourceMessage)}</p></div></section>
     <section class="parent-panel"><h2>这份小书架的边界</h2><p>当前包含${books.length}本绘本、24个韵母、21个声母、拼写字母y/w、16个整体认读音节和${TONE_BASES.length}组音节的四声；主要示范音来自CLI拼音表，ong独立录音来自ChinaHelp，均可随离线包播放。声母采用呼读音，页面明确标注；这不是单独本音录音。ong使用家长试听选定的独立示范，不再借用hong或dong。分类参考新版教材，尚不包含系统拼读课程，内容未经教师逐项审听。</p><p>阅读位置、“读完”标记、生字篮和偏好只保存在本机；没有账号、分析追踪或跨设备同步。不把“读完”当作认字掌握证明。</p>${storageWarning ? '<p class="warning">当前浏览器保存失败，本次记录可能无法保留。</p>' : ''}<button class="text-button danger" data-reset>清除本机阅读记录和生字篮</button></section>
     ${sourceSummary()}${maintenancePanel()}`);
@@ -392,7 +400,12 @@ app.addEventListener('click', async event => {
   else if (el.hasAttribute('data-prev')) go(`#/book/${route.book.id}/${route.page}`);
   else if (el.hasAttribute('data-next')) { audio.stop(); if (route.page === route.book.pages.length - 1) completion(); else go(`#/book/${route.book.id}/${route.page + 2}`); }
   else if (el.hasAttribute('data-page')) go(`#/book/${route.book.id}/${Number(el.dataset.page) + 1}`);
-  else if (el.hasAttribute('data-page-play')) { if (audio.playing) audio.stop(); else await play(route.book.pages[route.page].audio); }
+  else if (el.hasAttribute('data-page-play')) {
+    const page = route.book.pages[route.page];
+    if (audio.playing) audio.stop();
+    else if (page.audio) await play(page.audio);
+    else if (!speakStory(page.text)) noStoryVoice();
+  }
   else if (el.hasAttribute('data-char')) showWord(Number(el.dataset.char));
   else if (el.hasAttribute('data-saved-word')) showWord(0, state.words[Number(el.dataset.savedWord)]);
   else if (el.hasAttribute('data-remove-word')) { persist({...state, words: state.words.filter((_, i) => i !== Number(el.dataset.removeWord))}); render(); }
@@ -431,7 +444,15 @@ app.addEventListener('change', event => {
 wordDialog.addEventListener('click', async event => {
   const el = event.target.closest('button'); if (!el) return;
   if (el.hasAttribute('data-close')) { audio.stop(); wordDialog.close(); }
-  else if (el.hasAttribute('data-word-listen')) { const book = books.find(b => b.id === selectedWord.bookId); await play(book.pages[selectedWord.page].audio); }
+  else if (el.hasAttribute('data-word-listen')) {
+    if (speakStory(selectedSentence)) return;
+    const book = books.find(b => b.id === selectedWord.bookId);
+    const recording = book.pages[selectedWord.page].audio;
+    if (recording) {
+      notify('设备没有可用的中文声音，改播这一页的原版录音。');
+      await play(recording);
+    } else noStoryVoice();
+  }
   else if (el.hasAttribute('data-save-word')) {
     const wasSaved = state.words.some(w => w.char === selectedWord.char);
     const words = wasSaved ? state.words.filter(w => w.char !== selectedWord.char) : [...state.words, selectedWord].slice(-200);
