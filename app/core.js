@@ -44,6 +44,13 @@ export const WORDS = [
   ['床底下', '床的下面。'], ['碗柜', '放碗、盘子等餐具的柜子。'], ['沙发', '家里可以坐着休息的软椅子。'], ['垃圾桶', '放垃圾的容器。'], ['篮子', '可以装东西、提着走的容器。'], ['房子', '人们居住的建筑。'], ['里面', '一个地方的内部。'], ['外面', '一个地方的外部。'], ['后面', '一个东西的背后。'], ['上面', '一个东西的上方。'], ['旁边', '靠近一个东西的地方。'], ['小猫猫', '故事里可爱的小猫。']
 ];
 
+export function sentenceAt(text, index) {
+  for (const match of text.matchAll(/[^\n。！？!?；;]+[。！？!?；;]*[”’」』）】]*/g)) {
+    if (index >= match.index && index < match.index + match[0].length) return match[0].trim();
+  }
+  return text.trim();
+}
+
 export function wordInContext(text, index) {
   const matches = WORDS.filter(([word]) => {
     let start = text.indexOf(word);

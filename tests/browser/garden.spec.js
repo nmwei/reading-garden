@@ -45,6 +45,7 @@ test.beforeEach(async ({page}) => {
 });
 
 test('read, collect a character, restore progress and finish deliberately', async ({page}) => {
+  await page.addInitScript(() => Object.defineProperty(speechSynthesis, 'getVoices', {value: () => []}));
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
   await page.goto(new URL('#/library', page.url()).href);
@@ -63,7 +64,7 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
   await page.getByRole('button', {name: '放进生字篮'}).click();
   await expect(page.getByRole('button', {name: '移出生字篮', exact: true})).toBeEnabled();
-  await page.getByRole('button', {name: '听原句', exact: true}).click();
+  await page.getByRole('button', {name: '听这一句', exact: true}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(2);
   await page.getByRole('button', {name: '关闭', exact: true}).click();
   await page.getByRole('button', {name: '下一页', exact: true}).click();
@@ -847,8 +848,8 @@ test('character audio leads both dialogs and collection can be removed and resto
   await expect(dialog.locator('.word-actions .primary')).toHaveText('听字音');
   await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
   expect(await page.evaluate(()=>window.__spoken)).toEqual(['念']);
-  await dialog.getByRole('button',{name:'听原句',exact:true}).click();
-  await expect.poll(()=>page.evaluate(()=>window.__lastAudio.currentTime)).toBeGreaterThan(0);
+  await dialog.getByRole('button',{name:'听这一句',exact:true}).click();
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','我可以念给谁听呢？']);
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
   await expect(dialog.getByRole('button',{name:'移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
   await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
@@ -858,7 +859,7 @@ test('character audio leads both dialogs and collection can be removed and resto
   await page.goto('/#/words');
   await page.getByRole('button',{name:'复习念',exact:true}).click();
   await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
-  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','念']);
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','我可以念给谁听呢？','念']);
   await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
   await expect(dialog).toBeVisible();
   await expect(page.locator('.saved-word')).toHaveCount(0);

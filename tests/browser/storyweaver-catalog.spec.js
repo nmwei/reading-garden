@@ -29,7 +29,7 @@ for (const book of catalog) {
         await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth>0)).toBe(true);
       }
       await expect(page.locator('.art-label')).toHaveText((source.imageLabels || []).map(label => label.text));
-      if (book.narration === 'none') await expect(page.locator('[data-page-play]')).toHaveCount(0);
+      await expect(page.locator('[data-page-play]')).toHaveCount(source.wordless ? 0 : 1);
       await expect(page.locator('.completion')).toHaveCount(0);
       if (index === book.pages.length-1) {
         const progress = await page.evaluate(id => JSON.parse(localStorage.getItem('reading-garden-v1')).progress[id],book.id);

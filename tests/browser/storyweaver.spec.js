@@ -4,16 +4,60 @@ import {readFile} from 'node:fs/promises';
 const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
 const book = books.find(book => book.id === 'sw-92448');
 
+test('system narration uses the saved voice for both the page and the selected sentence', async ({page}) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('reading-garden-v1', JSON.stringify({voice:'chosen'}));
+    window.spoken = [];
+    window.SpeechSynthesisUtterance = class {
+      constructor(text) { this.text = text; }
+    };
+    Object.defineProperty(window, 'speechSynthesis', {configurable:true,value:{
+      getVoices: () => [
+        {name:'First voice',voiceURI:'first',lang:'zh-CN'},
+        {name:'Chosen voice',voiceURI:'chosen',lang:'zh-CN'}
+      ],
+      cancel() { window.currentSpeech = null; },
+      speak(utterance) {
+        window.currentSpeech = utterance;
+        window.spoken.push({text:utterance.text,voice:utterance.voice.voiceURI});
+      },
+      addEventListener() {}
+    }});
+  });
+  await page.goto('/#/book/sw-92448/1');
+  await expect(page.locator('.reader-meta')).toContainText('系统朗读');
+  const listen = page.locator('[data-page-play]');
+  await listen.click();
+  await expect(listen).toHaveText('停止朗读');
+  expect(await page.evaluate(() => window.spoken)).toEqual([{text:book.pages[0].text,voice:'chosen'}]);
+  await page.getByRole('button',{name:'认识粉',exact:true}).click();
+  expect(await page.evaluate(() => window.currentSpeech)).toBeNull();
+  await page.getByRole('button',{name:'听这一句',exact:true}).click();
+  expect(await page.evaluate(() => window.spoken.at(-1))).toEqual({text:'奶奶说：“去拿一块粉笔，我们来玩个游戏。”',voice:'chosen'});
+  await expect(listen).toHaveText('读这一页');
+  await page.getByRole('button',{name:'关闭',exact:true}).click();
+  await listen.click();
+  await page.locator('[data-next]').click();
+  await expect(page.locator('.story-text')).toHaveText(book.pages[1].text);
+  expect(await page.evaluate(() => window.currentSpeech)).toBeNull();
+  await expect(listen).toHaveText('读这一页');
+});
+
 test('silent story retains all twelve illustrated pages, character help and completion', async ({page}) => {
   const errors = [], missing = [];
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400) missing.push(response.url()); });
-  await page.addInitScript(() => Object.defineProperty(speechSynthesis, 'getVoices', {value: () => []}));
+  await page.addInitScript(() => Object.defineProperty(window, 'speechSynthesis', {
+    configurable: true,
+    value: {getVoices: () => [], cancel() {}, addEventListener() {}}
+  }));
   await page.goto('/#/book/sw-92448/1');
   await expect(page.locator('.reader-meta')).toContainText('StoryWeaver · 2级');
-  await expect(page.locator('[data-page-play]')).toHaveCount(0);
+  await expect(page.locator('[data-page-play]')).toBeVisible();
+  await page.getByRole('button', {name:'读这一页',exact:true}).click();
+  await expect(page.locator('#status')).toContainText('没有可用的中文声音');
   await page.getByRole('button', {name:'认识奶',exact:true}).first().click();
-  await expect(page.locator('[data-word-listen]')).toHaveCount(0);
+  await expect(page.locator('[data-word-listen]')).toBeVisible();
   await page.getByRole('button', {name:'听“奶”的读音',exact:true}).click();
   await expect(page.locator('#status')).toContainText('请家长帮忙读一读');
   await page.getByRole('button', {name:'放进生字篮',exact:true}).click();
@@ -21,7 +65,7 @@ test('silent story retains all twelve illustrated pages, character help and comp
   for (let index = 0; index < book.pages.length; index++) {
     await expect(page.locator('.story-text')).toHaveText(book.pages[index].text);
     await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
-    await expect(page.locator('[data-page-play]')).toHaveCount(0);
+    await expect(page.locator('[data-page-play]')).toBeVisible();
     await page.locator('[data-next]').click();
   }
   await expect(page.locator('.completion')).toBeVisible();
@@ -30,7 +74,7 @@ test('silent story retains all twelve illustrated pages, character help and comp
   expect(saved.words).toContainEqual({char:'奶',bookId:'sw-92448',page:0});
   await page.goto('/#/words');
   await page.getByRole('button', {name:'复习奶',exact:true}).click();
-  await expect(page.locator('[data-word-listen]')).toHaveCount(0);
+  await expect(page.locator('[data-word-listen]')).toBeVisible();
   expect(errors).toEqual([]); expect(missing).toEqual([]);
 });
 
@@ -84,7 +128,8 @@ test('explicit text-only pages preserve character help and page order without br
   await page.route('**/data/books.json', route => route.fulfill({json:books.map(item => item.id===sample.id ? sample : item)}));
   await page.goto('/#/book/sw-92448/2');
   await expect(page.locator('.reading-spread')).toHaveClass(/text-only/);
-  await expect(page.locator('.page-art, [data-page-play]')).toHaveCount(0);
+  await expect(page.locator('.page-art')).toHaveCount(0);
+  await expect(page.locator('[data-page-play]')).toBeVisible();
   await expect(page.locator('.story-text')).toHaveText(firstText.text);
   await expect(page.locator('.reading-hint')).toBeVisible();
   await expect(page.locator('[data-download-book]')).toBeVisible();
@@ -143,7 +188,7 @@ test('source levels and downloads never mix StoryWeaver 2 with Storybooks Canada
   expect(await page.locator('.library-book').evaluateAll(cards => cards.map(card => card.dataset.bookId))).toEqual(weaverTwo.map(book => book.id));
   const drawing = page.locator('[data-book-id="sw-92448"]');
   await expect(drawing.locator('.book-level')).toHaveText('StoryWeaver 2级');
-  await expect(drawing.locator('.narration-note')).toHaveText('亲子共读');
+  await expect(drawing.locator('.narration-note')).toHaveText('系统朗读');
   await page.getByRole('button', {name:'把《绘画游戏》放到小书架',exact:true}).click();
   await page.locator('.library-toolbar a').click();
   await expect(page.locator('[data-book-id="sw-92448"]')).toBeVisible();

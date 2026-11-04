@@ -16,7 +16,7 @@ test('StoryWeaver 4 is discoverable on phones and stays separate from Canada 4',
   for (const book of levelFour) {
     const card = page.locator(`[data-book-id="${book.id}"]`);
     await expect(card.locator('.book-level')).toHaveText('StoryWeaver 4级');
-    await expect(card.locator('.narration-note')).toHaveText('亲子共读');
+    await expect(card.locator('.narration-note')).toHaveText('系统朗读');
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.getByRole('button',{name:'Storybooks Canada · 4级',exact:true}).click();
@@ -52,7 +52,7 @@ test('the new fourth-level image group downloads at a subpath and remains readab
       await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth>0)).toBe(true);
       if (book.pages[index].wordless) await expect(page.locator('.story-text')).toHaveCount(0);
       else await expect(page.locator('.story-text')).toHaveText(book.pages[index].text);
-      await expect(page.locator('[data-page-play]')).toHaveCount(0);
+      await expect(page.locator('[data-page-play]')).toHaveCount(book.pages[index].wordless ? 0 : 1);
     }
   }
 });
