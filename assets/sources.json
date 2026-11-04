@@ -17323,6 +17323,205 @@
     },
     {
       "kind": "book",
+      "id": "sw-268121",
+      "source": "https://storyweaver.org.in/en/stories/268121-pick-it-up",
+      "sourceLevel": {
+        "system": "StoryWeaver",
+        "value": 4
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credits": {
+        "Original publisher": "African Storybook Initiative",
+        "Written by": "Fanie Viljoen",
+        "Illustrated by": "Stephen Wallace",
+        "Translated by": "Carmen Hen"
+      },
+      "copyright": "原作 © African Storybook Initiative , 2016；中文译文 © Carmen Hen , 2021；插图 © African Storybook Initiative, 2016。",
+      "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：依据英文school bell与回家情境统一为放学；依据英文This afternoon修正时间；整理地字用法；对照英文逐次点数50/100/150/200，纠正金额误译；修正量词；整理引号外多余标点；点数钞票的自然表达；整理结巴语气和句末标点；补齐问句标点；区分权利与权力，用儿童可理解的说法表达；将ugly的道德评价明确落在行为上，避免被理解为外貌评价；修正Now误译；对照原作，整理不自然的转折；将道德评价明确为行为并依据英文末句恢复漏译的自我感受。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+      "components": {
+        "text": {
+          "source": "https://storyweaver.org.in/en/stories/268121-pick-it-up",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Carmen Hen , 2021",
+          "attributionText": "This story: 拾金不昧 is translated by Carmen Hen . The © for this translation lies with Carmen Hen , 2021. Some rights reserved. Released under CC BY 4.0 license.",
+          "originalStoryAttribution": "Based on Original story: ' Pick It Up ' , by Fanie Viljoen . © African Storybook Initiative , 2016. Some rights reserved. Released under CC BY 4.0 license."
+        },
+        "illustrations": {
+          "source": "https://storyweaver.org.in/en/stories/268121-pick-it-up",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© African Storybook Initiative, 2016"
+        }
+      },
+      "reviewedAt": "2026-11-04",
+      "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+      "metadataFile": "data/storyweaver/268121.json",
+      "metadataSha256": "86716790bf6a5ac61789e07854ef945a9204c92f0c19216d28a64ee2100fca8e",
+      "assets": [
+        {
+          "path": "assets/books/sw-268121/01.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206565/size7/57a1201d783cbf4df2fb002f17fe3ac0.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41798-photo-of-woman-with-kids-identity-card",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Cover page: Photo of woman with kids, identity card , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 284928,
+          "sha256": "e40806aca1ed89bc340a995ba2aa4c03cc6c852e7bdb3d56adf98a1683e40d09"
+        },
+        {
+          "path": "assets/books/sw-268121/02.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206566/size7/dc31e4c4b68e096946b02f697d3fc5d5.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41799-two-boys-infront-of-a-house",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 2: Two boys infront of a house , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 233326,
+          "sha256": "a0ea28c4ab096973e05bc28c8e84edc9ca6f779deacb6cfe8268a474ba40a761"
+        },
+        {
+          "path": "assets/books/sw-268121/03.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206567/size7/d89ee06032e70c6be646367836a31180.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41800-two-boys-and-a-girl-one-boy-on-the-ground-with-schoolbag",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 3: Two boys and a girl, one boy on the ground with schoolbag , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 211138,
+          "sha256": "331a06b921ee6d0df13bffd0fae85e9476d2e8d680bf7ff5a93ba14f55ab9bb0"
+        },
+        {
+          "path": "assets/books/sw-268121/04.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206568/size7/52c2df9d4cfd8dd38ea8a56115664ea7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41801-boy-spots-a-wallet-on-the-ground",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 4: Boy spots a wallet on the ground , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 158644,
+          "sha256": "bf27a4e6a5c11d5a078103b6c0327dcb9f96900b5a3f5c09c43a0a81cb6ef5c8"
+        },
+        {
+          "path": "assets/books/sw-268121/05.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206569/size7/9f9c8befa6232c4db11b7b56e2c3d589.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41802-boy-opens-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 5: Boy opens wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 170308,
+          "sha256": "5c7971a2716429ed8325f247def1c42df50ac380b9d18f8278dacb978582d0e2"
+        },
+        {
+          "path": "assets/books/sw-268121/06.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206570/size7/b2f96efa98e3bf9b326f404bf5d55251.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41803-boy-pockets-wallet-while-another-boy-comes-walking-up-the-road",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 6: Boy pockets wallet while another boy comes walking up the road , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 246299,
+          "sha256": "a610b930d6a090052f84133f41f8b458a14203dcdaad6bf601b671d60b237110"
+        },
+        {
+          "path": "assets/books/sw-268121/07.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206571/size7/77fbc1ccf1c95c2e7dc4020bd73c4e16.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41804-boy-pockets-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 7: Boy pockets wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 211251,
+          "sha256": "e6ce1a2453675262d624324173b90e307b6ba8a2646d26c39f6f88740f3cb1d9"
+        },
+        {
+          "path": "assets/books/sw-268121/08.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206572/size7/17508424683edba4ea86a08cb34c96bb.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41805-boy-looks-back-while-opening-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 8: Boy looks back while opening wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 203347,
+          "sha256": "de08463d14a86d231aeee97deb7429822f890cada39b6ae84fa1ed8609e08914"
+        },
+        {
+          "path": "assets/books/sw-268121/09.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206573/size7/8d234241eed63f45380395f8957edaa1.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41806-one-boy-snatches-the-wallet-from-another",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 9: One boy snatches the wallet from another , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 233196,
+          "sha256": "547e281e4129542bf7bfaa671ec96eee6e228fba52e60c69362939da7bb59522"
+        },
+        {
+          "path": "assets/books/sw-268121/10.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206574/size7/35db35c740a112c973134c2ecca1caff.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41807-one-boy-opens-wallet-while-the-other-one-looks-on",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 10: One boy opens wallet, while the other one looks on , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 220094,
+          "sha256": "1326aafa7549fd7967c58389e09962f2b38a9e46c2be74c28525ea340c4936e9"
+        },
+        {
+          "path": "assets/books/sw-268121/11.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206575/size7/472af02090ba347b434e2050129bb134.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41808-boys-wallet-and-girl",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 11: Boys, wallet and girl , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 289306,
+          "sha256": "cb507a0d7638636030837a4f0290df08387c58074ec9f5e1b5c17789c8f07bdb"
+        },
+        {
+          "path": "assets/books/sw-268121/12.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206576/size7/2d73e4c4685e801aefc605ecd6892238.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41809-girl-scolds-one-boy-while-the-other-one-looks-on",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 12: Girl scolds one boy while the other one looks on , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 231118,
+          "sha256": "4be440071b66187e45a0dae4490acd0506cb2664a0f006b5db0547173857c7ba"
+        },
+        {
+          "path": "assets/books/sw-268121/13.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206577/size7/094f8176636688b7a5bd4eaee06bfc65.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41810-boy-girl-and-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 13: Boy, girl and wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 210974,
+          "sha256": "339047fbb4b6cf71b9f09a3292021cfede9fd23ad9cbd79b5c89298bb4211d23"
+        },
+        {
+          "path": "assets/books/sw-268121/14.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206578/size7/4a3af065cd14cda11d1e65f17013f7ad.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41798-photo-of-woman-with-kids-identity-card",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 14: Photo of woman with kids, identity card , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 239856,
+          "sha256": "66d8d46ab571b4487d6e4fd7e3307b6be07ac6e6828fb6231c351f16a3e198ed"
+        },
+        {
+          "path": "assets/books/sw-268121/15.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206579/size7/15ec9ae90d7b61f60dec8bbf1ea88219.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41811-boy-and-girl-come-to-woman-s-door-with-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 15: Boy and girl come to woman's door with wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 232727,
+          "sha256": "7a65c71635572e3c582bb0306005adb9253dcbb4a80a2b3cff8229e618cc5214"
+        },
+        {
+          "path": "assets/books/sw-268121/16.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/206580/size7/f686ca3f6bbfd8ba432a21c2dd686d3b.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/41812-happy-woman-with-wallet",
+          "copyright": "© African Storybook Initiative, 2016",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 16: Happy woman with wallet , by Stephen Wallace © African Storybook Initiative, 2016. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 318297,
+          "sha256": "70fd0c2ed343f782e406160652eef90183f9b7e37b6ed4723a10ebc0f6614eeb"
+        }
+      ]
+    },
+    {
+      "kind": "book",
       "id": "sw-412394",
       "source": "https://storyweaver.org.in/en/stories/412394-wo-ruhe-xihuan-wo-de-yu",
       "sourceLevel": {
@@ -17661,6 +17860,315 @@
     },
     {
       "kind": "book",
+      "id": "sw-467095",
+      "source": "https://storyweaver.org.in/en/stories/467095-mangalyaan-a-journey-to-mars",
+      "sourceLevel": {
+        "system": "StoryWeaver",
+        "value": 4
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credits": {
+        "Original publisher": "Pratham Books",
+        "Written by": "Nikhil Gulati",
+        "Illustrated by": "Nikhil Gulati",
+        "Translated by": "Tomy Teh"
+      },
+      "copyright": "原作 © Pratham Books , 2020；中文译文 © Tomy Teh , 2022；插图 © Pratham Books, 2020。",
+      "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：对照英文some clear nights，避免暗示每晚都能看到火星；纠正断行造成的语序错误；保留原作者比较数值并明确是假想估算，避免当作固定旅行时长；依据ISRO五种科学载荷清单校正原作也存在的数量错误；整理断行及无人探测器的名称；为专名提供中文释义，不额外发明情节；保留投石索比喻，但明确发动机提供能量，不把地球引力说成免费推动力；纠正Only in this case语意并明确是比喻；依据官方任务过程用多次概括，避免名义次数与补充机动混计；纠正push的航天语境；依据NASA纠正逃逸后没有地球引力的常见误解；整理相对速度的表达；统一sling比喻，不是扔掉弹弓；统一专名指代；对照英文caught的追及含义整理图例；修正图例语序；将印度数字分组换算为中文单位，不改变原作数值；对照英文dish及原图纠正直译；统一航天术语和图例格式；避免船舶语境；明确there的指代；修正断行语序；补齐主语、衔接任务时间线；依据ISRO 2022年任务总结替换已过时的“今天仍在工作”；修正生硬语序；依据ISRO区分载人近地轨道计划与载人火星愿望；移除原作相对年份预测，避免过时；依据NASA引力与力学说明区分质量、引力和运动变化，避免原作把双方引力说成大小不同；整理速度与距离的语境；明确投石为解释用的想象，不是完整发射方法；删除重复括注并限定描述范围。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+      "components": {
+        "text": {
+          "source": "https://storyweaver.org.in/en/stories/467095-mangalyaan-a-journey-to-mars",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Tomy Teh , 2022",
+          "attributionText": "This story: Mangalyaan：火星之旅 is translated by Tomy Teh . The © for this translation lies with Tomy Teh , 2022. Some rights reserved. Released under CC BY 4.0 license.",
+          "originalStoryAttribution": "Based on Original story: ' Mangalyaan: A Journey to Mars ' , by Nikhil Gulati . © Pratham Books , 2020. Some rights reserved. Released under CC BY 4.0 license."
+        },
+        "illustrations": {
+          "source": "https://storyweaver.org.in/en/stories/467095-mangalyaan-a-journey-to-mars",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Pratham Books, 2020"
+        }
+      },
+      "reviewedAt": "2026-11-04",
+      "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+      "metadataFile": "data/storyweaver/467095.json",
+      "metadataSha256": "36f4fcb69cb16ba962c633d4932d22ccac162655323a4984c4e24a8a3fbd3b0f",
+      "assets": [
+        {
+          "path": "assets/books/sw-467095/01.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162194/size7/4fb8ca4cfd0c8f4202e733b53fbd7160.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32076-a-scientist-looks-at-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Cover page: A scientist looks at Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 650125,
+          "sha256": "33828b815f4b6bcbaa64538d0bf0d290e210c20a94ba28dc001038f81d697930"
+        },
+        {
+          "path": "assets/books/sw-467095/02.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162195/size7/358a026fb0542e0eb599c6769736cd27.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32077-a-scientist-looks-at-mars-through-a-telescope",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 2: A scientist looks at Mars through a telescope , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 300143,
+          "sha256": "ee4374c31902522790abe81b84673d6b8f39e7cb03864bc16ac1efae818a9465"
+        },
+        {
+          "path": "assets/books/sw-467095/03.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162196/size7/0be51313daf7479df3f3018b830613ea.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32078-a-car-drives-on-a-road-to-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 3: A car drives on a road to Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 221869,
+          "sha256": "dbcb2dfc19d16b7ead2af152120c05ed9c4631f68700ec37c8c9272538fdc442"
+        },
+        {
+          "path": "assets/books/sw-467095/04.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162197/size7/69afd580a18fd1153111be9af817084d.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32079-a-scientist-holds-earth-between-her-fingers",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 4: A scientist holds Earth between her fingers , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 511717,
+          "sha256": "df45c1113eab069ed796036e704b42b329ee257d8b0be6231627ee47f2fbc279"
+        },
+        {
+          "path": "assets/books/sw-467095/05.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162198/size7/63e2a2428272bca908c9f056c8358288.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32080-a-scientist-holds-earth-and-the-moon-between-her-fingers",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 5: A scientist holds Earth and the Moon between her fingers , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 530084,
+          "sha256": "e1faf8f99d6d5e3ca604dae24d50eb30a6816c84413a46b072d7325b60f47575"
+        },
+        {
+          "path": "assets/books/sw-467095/06.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162199/size7/db00aed6b13550b6cecb27a927acf10e.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32081-a-scientist-stands-far-away-from-an-arrow-indicating-the-distance-between-earth-the-moon-and-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 6: A scientist stands far away from an arrow indicating the distance between Earth, the Moon and Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 659672,
+          "sha256": "2ee8b5ea6af9087ae0010b8ca455df8367e251e8999141dcf5fc2f8dbea36b13"
+        },
+        {
+          "path": "assets/books/sw-467095/07.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162200/size7/a277d14f1fdacba7a2c048ad45b91a0d.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32082-a-rocket-sits-in-a-launch-pad-at-a-space-station",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 7: A rocket sits in a launch pad at a space station , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 614962,
+          "sha256": "93cf9218c2a09219f3ee07bcc5300202a3e85f51fa0d701e1185c549510e13d4"
+        },
+        {
+          "path": "assets/books/sw-467095/08.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162211/size7/7fbb01b9f056a31888e6a960d5fc24ba.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32091-a-rocket-launches-into-outer-space",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 8: A rocket launches into outer space , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 352739,
+          "sha256": "2e39688b183929bb45daaeeab14881f6782b6123c388abfdb9a2948ba1eb1c50"
+        },
+        {
+          "path": "assets/books/sw-467095/09.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162496/size7/48f628a93de9b3d1ebf4c2c6e3a770b1.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32223-a-rocket-breaks-into-pieces-and-fires-mangalyaan-into-outer-space",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 9: A rocket breaks into pieces and fires Mangalyaan into outer space , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 627066,
+          "sha256": "2808e42207b3bb1d58f820e7da28b41b4e4e49c560ba024b9ed7f3f8770a4976"
+        },
+        {
+          "path": "assets/books/sw-467095/10.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162213/size7/cf6168860e6570c6ced0b0a5de26f1a8.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32093-a-scientist-uses-a-slingshot-to-explain-how-mangalyaan-was-flung-into-outer-space",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 10: A scientist uses a slingshot to explain how Mangalyaan was flung into outer space , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 454190,
+          "sha256": "429a4abea046cbc3345ed84f1260991471c10fc746cdce6f97a31a3810052d36"
+        },
+        {
+          "path": "assets/books/sw-467095/11.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162214/size7/c1794bcb36cc14a1a1c00f9313a34bd9.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32094-orbit-of-mangalyaan-around-earth",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 11: Orbit of Mangalyaan around Earth , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 126854,
+          "sha256": "6d4bc0c84d3ffcffa4da5982ea4842d2537e41a86c139bdb2a75b464ec0ea67f"
+        },
+        {
+          "path": "assets/books/sw-467095/12.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162215/size7/59be78992c42424a8f057f8461e73457.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32095-the-orbits-of-mangalyaan-becomes-bigger",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 12: The orbits of Mangalyaan becomes bigger , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 199464,
+          "sha256": "004bbca04acde42120692b1cccbaa8466b40825eaffbe049f55c420c4ef4f56c"
+        },
+        {
+          "path": "assets/books/sw-467095/13.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162216/size7/f212f0968b555d3f22669a5760c212c6.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32096-the-direction-of-mangalyaan-being-flung-into-outer-space",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 13: The direction of Mangalyaan being flung into outer space , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 234407,
+          "sha256": "867a826156fd99ebecf7bb40c1e5d270ddbcd2b89483aef40896ec9509b56310"
+        },
+        {
+          "path": "assets/books/sw-467095/14.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162217/size7/dc1d1a4046af4bcf60d24ccebca1f0d4.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32097-mangalyaan-earth-the-moon-and-the-sun",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 14: Mangalyaan, Earth, the Moon and the Sun , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 144691,
+          "sha256": "ce6c16cd0eecdeb79b13d6dce27f51b15f5ebf58c5e7779a7fcaa30786e3a95f"
+        },
+        {
+          "path": "assets/books/sw-467095/15.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162218/size7/03d77ff63dad14d4af972f611738810e.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32098-the-journey-mangalyaan-takes-from-earth-to-reach-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 15: The journey Mangalyaan takes from Earth to reach Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 240127,
+          "sha256": "1a9a429aad659b1baf5462be7cd48d1a75fe8157c315b244a15eb5ef6c6f66f0"
+        },
+        {
+          "path": "assets/books/sw-467095/16.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162219/size7/f2c22ed384a953e324acd8261406a07b.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32099-mangalyaan-is-flying-through-space",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 16: Mangalyaan is flying through space , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 164579,
+          "sha256": "d557ea06c4c61969be3210029cdd188a914464190ea9ca49f7c9b416082c6247"
+        },
+        {
+          "path": "assets/books/sw-467095/17.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162220/size7/99736bfa39a17227331d80a4e730fb47.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32100-mangalyaan-is-flying-through-space-for-a-long-time",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 17: Mangalyaan is flying through space for a long time , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 185233,
+          "sha256": "149c27cf97c139012f9cda2b6ff9c36838903a1c5a62166b56147fc593cea00a"
+        },
+        {
+          "path": "assets/books/sw-467095/18.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162221/size7/f075dacc5e64b2f568f26f5ddc5e4453.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32101-a-space-station-with-scientists-controlling-mangalyaan",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 18: A space station with scientists controlling Mangalyaan , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 340752,
+          "sha256": "fe4954c853c82d9e71993f212ad924e1e963715496888994fc3a771d3adbb134"
+        },
+        {
+          "path": "assets/books/sw-467095/19.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162222/size7/2666f8903772c5daec9d8da69c9d36cc.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32102-mangalyaan-flies-to-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 19: Mangalyaan flies to Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 363411,
+          "sha256": "bc4bd681d52b5fe5efd96252cbe382252e95fcccba80bb4ecb609e86d3181430"
+        },
+        {
+          "path": "assets/books/sw-467095/20.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162223/size7/87842a1fca529a8c6f96f3b19001d8d4.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32103-mangalyaan-comes-near-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 20: Mangalyaan comes near Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 170706,
+          "sha256": "ab78ade6c0f05a8cd23ce83bc6768e294f882ddc105924ff1e7549d71236add7"
+        },
+        {
+          "path": "assets/books/sw-467095/21.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162224/size7/f9ad59ea618f08a2ecec2fcc16671cb7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32104-mangalyaan-reaches-more-closer-to-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 21: Mangalyaan reaches more closer to Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 233191,
+          "sha256": "d18c97bbe1d1d6773def370156db31ca6b4a3a89437fb444d627acfef86c6771"
+        },
+        {
+          "path": "assets/books/sw-467095/22.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162225/size7/3e502b47bd887690d9c2e6d0619b4f00.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32105-mangalyaan-finally-enters-mars-orbit",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 22: Mangalyaan finally enters Mars' orbit , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 331704,
+          "sha256": "a78c518fa08b0d8dd9b9092410ec81b28ed8d1525c1707c45d98df3893d98111"
+        },
+        {
+          "path": "assets/books/sw-467095/23.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162226/size7/161ecf919b80148a8db6e8b0e530acd7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32106-mangalyaan-begins-to-orbit-around-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 23: Mangalyaan begins to orbit around Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 223415,
+          "sha256": "c1afa3cb042df6258dc39796fd24775edfe64fd2eefa8730b96923479a2575b9"
+        },
+        {
+          "path": "assets/books/sw-467095/24.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162550/size7/ef55da50d2eb6459c037e0df9f167c5e.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32229-actual-photo-of-mars-taken-by-mangalyaan-orbiting-mars",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 24: Actual photo of Mars taken by Mangalyaan orbiting Mars , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 315951,
+          "sha256": "3dd8f01fab2d814ef255971c3f5cd90fc1642e2533095ce500b959bb907c2b1f"
+        },
+        {
+          "path": "assets/books/sw-467095/25.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162228/size7/9e954dc1e057bd9dcd7a7388c38c1ba8.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32108-a-scientist-explains-how-gravity-works",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 25: A scientist explains how gravity works , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 137075,
+          "sha256": "8ad7ef79b43c57849657a10adcd7f3e16c1b4260f78cc655fa8ce70096877512"
+        },
+        {
+          "path": "assets/books/sw-467095/26.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162229/size7/9a2dd24f5790960e4940083d71c043ae.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32109-a-scientist-throws-a-stone-really-far-to-explain-how-things-get-into-orbit",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 26: A scientist throws a stone really far to explain how things get into orbit , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 117647,
+          "sha256": "27bfac1125559af1aab6046c904ad7da927f735ce23ba1bf70119ea0e8d07caf"
+        },
+        {
+          "path": "assets/books/sw-467095/27.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/162230/size7/d33cdaf79aca1500f3a42979799e2e03.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/32110-a-stone-enters-an-elliptical-orbit-around-earth",
+          "copyright": "© Pratham Books, 2020",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 27: A stone enters an elliptical orbit around Earth , by Nikhil Gulati © Pratham Books, 2020. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 96827,
+          "sha256": "e51492b55d55082fa21ac24aded0feb121c3c6a2b0735cced471c37b77e2e8f0"
+        }
+      ]
+    },
+    {
+      "kind": "book",
       "id": "sw-577893",
       "source": "https://storyweaver.org.in/en/stories/577893-congming-de-owen",
       "sourceLevel": {
@@ -17980,6 +18488,464 @@
           "attributionText": "Page 7: A magical glass , by Mehak Hooda © Pratham Books, 2023. Some rights reserved. Released under CC BY 4.0 license.",
           "bytes": 26716,
           "sha256": "c7d2cad94b57446fa10012a8f9ebb89cce7dd36a05e5fba4722581597522a751"
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "id": "sw-639353",
+      "source": "https://storyweaver.org.in/en/stories/639353-who-stole-bhaiya-s-smile",
+      "sourceLevel": {
+        "system": "StoryWeaver",
+        "value": 4
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credits": {
+        "Original publisher": "Pratham Books",
+        "Written by": "Sanjana Kapur",
+        "Illustrated by": "Sunaina Coelho",
+        "Translated by": "Judy Hu"
+      },
+      "copyright": "原作 © Pratham Books , 2019；中文译文 © Judy Hu , 2024；插图 © Pratham Books, 2019。",
+      "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：删除中文人名周围多余空白；整理人名空白；补齐句末标点；统一怪物名字；删除多余空白；对照英文You are just too distracted修正人物台词，保留原作中家人误解的情节；对照英文I feel like being happy纠正愿望被误译为已经开心；明确them指困难的日子，不是等人离开；依据WHO与CDC资料局部校订书末说明，区分短暂伤心和持续困扰，避免将抑郁症简单解释为脑受伤或建议儿童自行用药；不改故事情节。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+      "components": {
+        "text": {
+          "source": "https://storyweaver.org.in/en/stories/639353-who-stole-bhaiya-s-smile",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Judy Hu , 2024",
+          "attributionText": "This story: 谁偷走了巴伊亚的笑容 is translated by Judy Hu . The © for this translation lies with Judy Hu , 2024. Some rights reserved. Released under CC BY 4.0 license.",
+          "originalStoryAttribution": "Based on Original story: ' Who Stole Bhaiya's Smile? ' , by Sanjana Kapur . © Pratham Books , 2019. Some rights reserved. Released under CC BY 4.0 license."
+        },
+        "illustrations": {
+          "source": "https://storyweaver.org.in/en/stories/639353-who-stole-bhaiya-s-smile",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Pratham Books, 2019"
+        }
+      },
+      "reviewedAt": "2026-11-04",
+      "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+      "metadataFile": "data/storyweaver/639353.json",
+      "metadataSha256": "208d52d23b4e03ca0e534a9938dce59d7b90e40d89b067c63a732ddd49fa3537",
+      "assets": [
+        {
+          "path": "assets/books/sw-639353/01.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138530/size7/b57267933ffea5721665584aca808cf4.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28006-brother-sister-with-a-monster-behind-them",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Cover page: Brother sister with a monster behind them , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 574673,
+          "sha256": "750b8428a2ac446ebf5cd1754190e2eda0c8ec699883474d29b124f6b3805f21"
+        },
+        {
+          "path": "assets/books/sw-639353/02.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138533/size7/9238ea75f7eb5647bd3bef03a686401f.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28007-a-boy-chasing-a-monster",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 2: A boy chasing a monster , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 1185393,
+          "sha256": "ebf79bcd92159799b0d678f45e994898c7332b02d166eff4c4461a6e15ffef47"
+        },
+        {
+          "path": "assets/books/sw-639353/03.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138536/size7/19b75b929b6cb72a99dfa64c6fbe040a.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28008-a-boy-and-a-girl-playing-with-mangoes",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 3: A boy and a girl playing with mangoes , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 606152,
+          "sha256": "a768ac8b872d5f8e625042dc3340b394ab1aecac3dd3ebd504c8b020baa90e76"
+        },
+        {
+          "path": "assets/books/sw-639353/04.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138565/size7/37903ee18ead4cb9a42758d5cb8c1bd7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28010-boy-with-a-big-shadow-behind-him",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 4: boy with a big shadow behind him , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 952943,
+          "sha256": "1bb532e295df17442515911e93acc42ac7f481c6f9ae86474eac87ec7bb811c9"
+        },
+        {
+          "path": "assets/books/sw-639353/05.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138566/size7/d98e5ce819a3afed02cc2d91c5115a23.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28011-boy-with-a-big-shadow-holding-him",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 5: boy with a big shadow holding him , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 470361,
+          "sha256": "ed5742730449fd3f442c9b5d0550373313938e811ddd6ede94fc1e85c4163c1b"
+        },
+        {
+          "path": "assets/books/sw-639353/06.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138567/size7/4d3e531c64624ddeb1a1cecbac53d054.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28012-family-eating-a-meal-together",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 6: family eating a meal together , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 1315699,
+          "sha256": "4fc817b838c932fbe62a877a3a695f01750f80867ab671855ca120baa9201dfd"
+        },
+        {
+          "path": "assets/books/sw-639353/07.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138568/size7/23b260f0654477733c13ad91d521bb4b.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28013-a-boy-talking-sadly-with-his-mother",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 7: A boy talking sadly with his mother , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 759881,
+          "sha256": "97b1723a29ff235d84e98ec87a1c1dc2e91105e049448e08525c1ba6f30a99cf"
+        },
+        {
+          "path": "assets/books/sw-639353/08.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138569/size7/faee528e5ff9155b74998dbaa3c30999.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28014-monster-sleeping-on-a-little-boy",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 8: monster sleeping on a little boy , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 1005400,
+          "sha256": "d519a61078e8a69611349143920f566d1d60e57156f0bec44c71fea5bfeadcb0"
+        },
+        {
+          "path": "assets/books/sw-639353/09.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138571/size7/a2f6fde830e71bebec5192ddc5c58167.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28015-father-reading-a-newspaper",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 9: father reading a newspaper , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 1032966,
+          "sha256": "ac9bedd08f208718e560d681c627939b64316ccce4045d68838e4bc8fc551e54"
+        },
+        {
+          "path": "assets/books/sw-639353/10.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138572/size7/2ba32ca55e1d7f83b5a057543736771c.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28016-boy-chasing-his-sister",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 10: boy chasing his sister , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 672219,
+          "sha256": "fea8c2da002a59aacc6c312797f557be1cf483bc3060611c81c73989836d8a34"
+        },
+        {
+          "path": "assets/books/sw-639353/11.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138573/size7/50cf7d13965f3c0a7cf70f84b40f392f.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28017-boy-talking-to-his-grandparents",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 11: boy talking to his grandparents , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 674094,
+          "sha256": "4dc3e6b6e4c27d1ade2e11790d0c211239faee28594b929b443641e5828bb0b9"
+        },
+        {
+          "path": "assets/books/sw-639353/12.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138574/size7/943ed4170ff9c528fdabc4af17527096.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28018-boy-surrounded",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 12: boy surrounded , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 780967,
+          "sha256": "851e7cc231926b66081c0ab7522c4424f69d5866aebb44678f3847cd4c3288d6"
+        },
+        {
+          "path": "assets/books/sw-639353/13.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138575/size7/4feff573460dda0ab0a6a0205eaf7154.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28019-little-girl-shows-a-book-to-a-boy",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 13: little girl shows a book to a boy , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 783593,
+          "sha256": "bb66a31fcbadc6ac3d8fc1463487e7199fece89f5793b82c28fa2ee0a3cd475a"
+        },
+        {
+          "path": "assets/books/sw-639353/14.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138576/size7/b1104e826385209d96bcb2c214815da9.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28020-girl-playing-while-her-brother-stands-angrily",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 14: girl playing while her brother stands angrily , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 615052,
+          "sha256": "4e8717198e0b59214e3303d690a3d548ad9c9d5cd6af32d387dfcdc9be5ddc6a"
+        },
+        {
+          "path": "assets/books/sw-639353/15.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138590/size7/72cd387a4ea8dde7fe7fb9c567cbb751.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28030-girl-throwing-a-pillow",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 15: girl throwing a pillow , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 656808,
+          "sha256": "6df02bbac99aa28cc2eb8186d31bb464bed28500ed9d389d244f5fd1415438e2"
+        },
+        {
+          "path": "assets/books/sw-639353/16.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138591/size7/0383de58307a4d806746eceeed2e6d4a.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28031-girl-staring-at-a-picture-on-the-phone",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 16: girl staring at a picture on the phone , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 545476,
+          "sha256": "6ed633a018391ad0e123556fe7b08adeaec31013aec2400dc34bc16e760b79dc"
+        },
+        {
+          "path": "assets/books/sw-639353/17.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138592/size7/6f437a1a0e86de2b347401356f519944.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28032-a-brother-and-sister-sitting-and-discussing",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 17: A brother and sister sitting and discussing , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 623907,
+          "sha256": "19e81c9759423f0599bbd3df33293bff9ae4bc3110a63aca48e12e2de003ebc0"
+        },
+        {
+          "path": "assets/books/sw-639353/18.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138593/size7/f16ae878aefbfbeaa64ca4bb795fd2c8.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28033-boy-and-a-monster-look-at-each-other-angrily",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 18: boy and a monster look at each other angrily , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 1078961,
+          "sha256": "3378a63feda308900032d0a83bc1073a7ce20b1b955843d53b2fd9674a653574"
+        },
+        {
+          "path": "assets/books/sw-639353/19.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138594/size7/8384df3bc116f34608f65b5cdd6bd91f.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28034-boy-and-a-little-girl-smiling-at-each-other",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 19: boy and a little girl smiling at each other , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 562464,
+          "sha256": "5f9a6b991f3db68bb3dc303bba3773d7af20919fb1774ee970044a7e9f491103"
+        },
+        {
+          "path": "assets/books/sw-639353/20.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138595/size7/a3de71ea8736b90bbb71a18e05dda8e0.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28035-a-young-boy-talking-to-a-doctor",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 20: A young boy talking to a doctor , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 989694,
+          "sha256": "a52d80099855e3c8bda94364d79c7658844e49b452039da037e4981e6a286779"
+        },
+        {
+          "path": "assets/books/sw-639353/21.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138596/size7/83818c430fa2895fb0bdac3c968d83be.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28036-a-brother-and-sister-playing-inside-a-blanket-fortress",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 21: A brother and sister playing inside a blanket fortress , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 870941,
+          "sha256": "1be09a01979be607fc1b1011b01936e23815000392127afa538f7a73dacf1826"
+        },
+        {
+          "path": "assets/books/sw-639353/22.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138600/size7/9a4d08b613eac3351f15b4fa6503f1eb.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28028-a-sad-brain-inside-a-head",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 22: A sad brain inside a head , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 66089,
+          "sha256": "b2fb40b8b51583cd1b32808879d85b196b0cea1c22df5284af4d727a7178c2a7"
+        },
+        {
+          "path": "assets/books/sw-639353/23.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/138601/size7/781ba962cf577475859a1bc820e583f2.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/28038-sliced-mango-on-the-floor",
+          "copyright": "© Pratham Books, 2019",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 23: sliced mango on the floor , by Sunaina Coelho © Pratham Books, 2019. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 26024,
+          "sha256": "c2bbc167493c11db7ac05ac563bff27962b8429372d5d043fd2267b2963fc3f9"
+        }
+      ]
+    },
+    {
+      "kind": "book",
+      "id": "sw-639414",
+      "source": "https://storyweaver.org.in/en/stories/639414-arya-s-fly-dream",
+      "sourceLevel": {
+        "system": "StoryWeaver",
+        "value": 4
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credits": {
+        "Original publisher": "Pratham Books",
+        "Written by": "Nandita Jayaraj",
+        "Illustrated by": "Upamanyu Bhattacharyya",
+        "Translated by": "Charles Huo"
+      },
+      "copyright": "原作 © Pratham Books , 2017；中文译文 © Charles Huo , 2024；插图 © Pratham Books, 2017。",
+      "changes": "保留完整故事和资料页；文字按简体中文阅读习惯整理空白、段落与标点。局部校订：统一主人公在标题与正文的译名；补齐句末标点；依据NASA区分首次任务的252圈与她全部航天经历；对照英文broke apart及NASA事故记录，纠正事故形式；区分战斗机岗位与空军整体救灾工作，避免把救灾表述成三位人物的已核实个人履历；补齐开引号；将脱离原网站后失效的点击指令改为原作版本提示，不删除原有说明。插图文件保持原样，仅在阅读界面隐藏外围空白，图文重新排版。没有故事录音，单字声音由设备提供。",
+      "components": {
+        "text": {
+          "source": "https://storyweaver.org.in/en/stories/639414-arya-s-fly-dream",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Charles Huo , 2024",
+          "attributionText": "This story: 阿利雅的飞行梦 is translated by Charles Huo . The © for this translation lies with Charles Huo , 2024. Some rights reserved. Released under CC BY 4.0 license.",
+          "originalStoryAttribution": "Based on Original story: ' Arya in the Cockpit ' , by Nandita Jayaraj . © Pratham Books , 2017. Some rights reserved. Released under CC BY 4.0 license."
+        },
+        "illustrations": {
+          "source": "https://storyweaver.org.in/en/stories/639414-arya-s-fly-dream",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "copyright": "© Pratham Books, 2017"
+        }
+      },
+      "reviewedAt": "2026-11-04",
+      "attributionSource": "原站 More → View attributions，核对正文译文与逐幅插图的作者、版权及CC BY4.0许可；完整署名文字保存在sourceAttribution。",
+      "metadataFile": "data/storyweaver/639414.json",
+      "metadataSha256": "28e74974272dd9736f1e3a1cbbf33eebb919f2f9afbdd42a6508833ee5bbded6",
+      "assets": [
+        {
+          "path": "assets/books/sw-639414/01.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33881/size7/8cdbf51fe5232d6eac82fed18d8dc0d6.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5733-a-girl-and-an-aeroplane",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Cover page: A girl and an aeroplane , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 99624,
+          "sha256": "306a0f4d51e5b0ef8a732f6f48f5fd72d2d5de34e6b09317c27270e1412f1ca2"
+        },
+        {
+          "path": "assets/books/sw-639414/02.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33871/size7/e6a311f4c3168e3c78784e60050d6f43.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5724-a-girl-flying-a-paper-plane",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 2: A girl flying a paper plane , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 123110,
+          "sha256": "bafe4adfac614de2d0c553ca8f0b7e6ce48709bc1dd823d831fc2fd12739a9bc"
+        },
+        {
+          "path": "assets/books/sw-639414/03.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33872/size7/b77e0e3a67a3e1b8be1f322b0a668954.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5725-trapeze-artists",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 3: Trapeze artists , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 115720,
+          "sha256": "89a31f44b48f04931560e235c764cbf22b8ed9ffc71ff87298287f9a526597d6"
+        },
+        {
+          "path": "assets/books/sw-639414/04.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34212/size7/fd6aade79b97aceafc3081a7799ed2c6.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5815-message-board",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 4: Message board , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 74716,
+          "sha256": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860"
+        },
+        {
+          "path": "assets/books/sw-639414/05.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33873/size7/9d04ba37292d365bae2854b3240ea282.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5726-a-girl-in-a-spacesuit-with-a-poster-of-kalpana-chawla-in-her-room",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 5: A girl in a spacesuit with a poster of Kalpana Chawla in her room , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 110830,
+          "sha256": "f7ca32da86c275812e34f219e80d09afc6b5fac9ed82c955d7a1bfa2f98415c5"
+        },
+        {
+          "path": "assets/books/sw-639414/06.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34213/size7/97fa65fee4dc69793388e8e42a5f95d0.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5815-message-board",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 6: Message board , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 74716,
+          "sha256": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860"
+        },
+        {
+          "path": "assets/books/sw-639414/07.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33874/size7/9ad22d0240bb030a80e7d9f4a1d76f16.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5727-a-girl-with-a-book-about-amelia-earhart",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 7: A girl with a book about Amelia Earhart , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 101815,
+          "sha256": "0c0322b2813c6e70e7d35bc3d7c25290ef0cd8bc99b568b83e4292cf63b3b458"
+        },
+        {
+          "path": "assets/books/sw-639414/08.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34214/size7/e794370c5a7559978097009844b07d6a.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5815-message-board",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 8: Message board , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 74716,
+          "sha256": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860"
+        },
+        {
+          "path": "assets/books/sw-639414/09.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33875/size7/1ace55b8ca39c222b2f44aa73f1e6bc7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5728-a-girl-watching-a-pilot-fly",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 9: A girl watching a pilot fly , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 99443,
+          "sha256": "a133c44166988603348cfc0a1a6c2cbffc6ce6a79ebc1992176d76a0f3b366b9"
+        },
+        {
+          "path": "assets/books/sw-639414/10.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34215/size7/21c9f492c61fbd6d4f5399043876dae2.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5815-message-board",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 10: Message board , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 74716,
+          "sha256": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860"
+        },
+        {
+          "path": "assets/books/sw-639414/11.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33876/size7/7328d3858429dffc14f41cbee38c7f3e.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5729-fighter-pilots-in-the-newspaper",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 11: Fighter pilots in the newspaper , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 104473,
+          "sha256": "a7992a97793a3f4c9a482e5bc829a008df423d85e04ad4bea660241a5ea94ad2"
+        },
+        {
+          "path": "assets/books/sw-639414/12.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34216/size7/aa76639f5c8720b29216fd05ba21a8ac.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5815-message-board",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 12: Message board , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 74716,
+          "sha256": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860"
+        },
+        {
+          "path": "assets/books/sw-639414/13.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/34217/size7/bd9c66b77879d50b8cd82941909a4800.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5731-a-girl-studying-at-her-desk",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 13: A girl studying at her desk , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 105952,
+          "sha256": "d81478bc9e4ed61177396e0da24c92e4ab80156ea3ae99403bc93874ae659196"
+        },
+        {
+          "path": "assets/books/sw-639414/14.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33879/size7/28b34853acf0f1c66a33a98ac3102d55.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5732-a-male-and-a-female-pilot-in-the-cockpit",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 14: A male and a female pilot in the cockpit , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 93723,
+          "sha256": "e395867d1936f5768ab500d133dfd5029cc4fe9fed69cce6710c02421f2aa857"
+        },
+        {
+          "path": "assets/books/sw-639414/15.jpg",
+          "url": "https://storage.googleapis.com/static.storyweaver.org.in/illustration_crops/33880/size7/7ee7060eab23e53f9ae659e9863f9de7.jpg",
+          "illustrationSource": "https://storyweaver.org.in/en/illustrations/5723-a-woman-and-a-boy-on-a-flight",
+          "copyright": "© Pratham Books, 2017",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attributionText": "Page 15: A woman and a boy on a flight , by Upamanyu Bhattacharyya © Pratham Books, 2017. Some rights reserved. Released under CC BY 4.0 license.",
+          "bytes": 103116,
+          "sha256": "99d9ed121960a9e713d860025f368f65c4a58e81586eaf93b0e3ec2c271e1dc3"
         }
       ]
     }
