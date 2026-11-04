@@ -1,6 +1,6 @@
 {
-  "version": "214c54b4c9881fe3",
-  "bytes": 235955798,
+  "version": "5737b1c27f425a89",
+  "bytes": 235931214,
   "files": [
     "app/audio.js",
     "app/core.js",
@@ -11,8 +11,6 @@
     "app/pinyin.js",
     "app/reading-levels.js",
     "app/styles.css",
-    "assets/.DS_Store",
-    "assets/books/.DS_Store",
     "assets/books/0001/01.jpg",
     "assets/books/0001/02.jpg",
     "assets/books/0001/02.mp3",
