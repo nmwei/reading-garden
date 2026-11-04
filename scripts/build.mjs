@@ -1,5 +1,6 @@
 import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {basename} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {PINYIN_RECORDINGS} from '../app/pinyin.js';
 import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
@@ -48,7 +49,13 @@ for (const book of books) for (const page of book.pages) {
 }
 await rm(out, {recursive: true, force: true});
 await mkdir(out, {recursive: true});
-for (const path of ['index.html', 'manifest.webmanifest', 'app', 'assets', 'data']) await cp(`${root}${path}`, `${out}${path}`, {recursive: true});
+for (const path of ['index.html', 'manifest.webmanifest', 'app', 'assets', 'data']) {
+  // Local metadata such as .DS_Store is not served by GitHub Pages.
+  await cp(`${root}${path}`, `${out}${path}`, {
+    recursive: true,
+    filter: source => !basename(source).startsWith('.')
+  });
+}
 async function walk(dir, prefix = '') {
   const files = [];
   for (const entry of await readdir(dir, {withFileTypes: true})) {
