@@ -206,3 +206,5 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 :where(button, a[href], summary):active:not(:where(:disabled, [aria-disabled="true"], .parent-hold)) {
   filter: brightness(.94);
 }
+
+.character.saved-character{color:#a33e35;text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:.18em}.character.saved-character:hover{background:#f9eae4}

@@ -25,6 +25,7 @@ test('feedback works offline under a subpath, and leaving cancels the delayed an
  await page.locator(`[data-answer="${answer}"]`).click();
  await expect.poll(()=>effect.evaluate(a=>a.currentTime)).toBeGreaterThan(.04);
  expect(await effect.evaluate(a=>a.src)).toContain('/feedback-correct.wav');
+ await expect(page.locator('.answer-flower')).toBeVisible();await page.locator('.answer-flower img').evaluate(i=>i.decode());
  await page.getByRole('button',{name:'再找一个',exact:true}).click();
  expect(await effect.evaluate(a=>a.paused)).toBe(true);
  const nextAnswer=await page.evaluate(async()=>{const p=await import('./app/pinyin.js');return p.practicePool('finals')[0].id;});

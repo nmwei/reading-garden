@@ -63,7 +63,7 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   await expect(page.getByRole('dialog')).toBeVisible();
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
   await page.getByRole('button', {name: '放进生字篮'}).click();
-  await expect(page.getByRole('button', {name: '移出生字篮', exact: true})).toBeEnabled();
+  await expect(page.getByRole('button', {name: '我认识了，移出生字篮', exact: true})).toBeEnabled();
   await page.getByRole('button', {name: '听这一句', exact: true}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(2);
   await page.getByRole('button', {name: '关闭', exact: true}).click();
@@ -968,8 +968,8 @@ test('character audio leads both dialogs and collection can be removed and resto
   await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/0087/03.mp3');
   expect(await page.evaluate(()=>window.__spoken)).toEqual(['念']);
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
-  await expect(dialog.getByRole('button',{name:'移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
-  await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
+  await expect(dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
+  await dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true}).click();
   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).words.length)).toBe(0);
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
   await dialog.getByRole('button',{name:'关闭',exact:true}).click();
@@ -980,7 +980,7 @@ test('character audio leads both dialogs and collection can be removed and resto
   await dialog.getByRole('button',{name:'听这一句',exact:true}).click();
   await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(2);
   expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','念']);
-  await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
+  await dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true}).click();
   await expect(dialog).toBeVisible();
   await expect(page.locator('.saved-word')).toHaveCount(0);
   await expect(page.locator('.nav-item .count')).toHaveCount(0);
@@ -1004,7 +1004,7 @@ test('character audio leads both dialogs and collection can be removed and resto
     ['sw-92448/1', '吉', '吉努在她奶奶家过暑假。']
   ]) {
     await page.goto(`/#/book/${route}`);
-    await page.getByRole('button', {name: `认识${character}`, exact: true}).first().click();
+    await page.getByRole('button', {name: new RegExp(`^认识${character}(，已在生字篮)?$`)}).first().click();
     const playsBefore = await page.evaluate(() => window.__plays.length);
     await dialog.getByRole('button', {name: '听这一句', exact: true}).click();
     expect(await page.evaluate(() => window.__spoken.at(-1))).toBe(sentence);

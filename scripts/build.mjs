@@ -1,4 +1,3 @@
-import {prepareFeedbackAudio} from './prepare-feedback-audio.mjs';
 import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {basename} from 'node:path';
@@ -7,7 +6,6 @@ import {PINYIN_RECORDINGS} from '../app/pinyin.js';
 import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
 import {validateStoryWeaverFixture, validateImportedStoryWeaverBook} from './storyweaver-metadata.mjs';
 
-await prepareFeedbackAudio();
 const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));

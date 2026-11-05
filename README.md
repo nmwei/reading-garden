@@ -267,4 +267,6 @@ npm run deploy
 
 答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
 
-许可为 [Mixkit Sound Effects Free License](https://mixkit.co/license/modal/sfxFree/)，允许游戏成品使用，但禁止随源码再分发。因此两个 WAV 不进入 `main`，仅随可运行的游戏成品发布到 `gh-pages`。首次构建或数学站启动前，`scripts/prepare-feedback-audio.mjs` 从来源下载并校验原始 MP3，再以 FFmpeg 8.1.1 生成已试听确认的 WAV；已有正确文件时无需联网或 FFmpeg。源码与输出均验证 SHA-256，差异会中止构建，不会悄悄更换录音。也可先运行 `node scripts/prepare-feedback-audio.mjs` 准备素材。
+两个 WAV 与现有声音素材一起保存在源码仓库的 `assets/audio/` 中，构建时校验 SHA-256，并随站点打包和离线缓存。重新拉取项目即可获得音频；启动、构建和部署无需再下载原音源，也不需要 FFmpeg。来源及许可记录保留在 `assets/audio/feedback-sources.json`。
+
+拼音听音找朋友答对使用统一的 1.4 秒小花上飘。故事中已在生字篮的字用柔和红色及点线标记，跨页、跨书同步；点字仍打开识字卡，点击“我认识了，移出生字篮”移除，需要时可在识字卡中重新加入，不提供撤销提示。更新标记不重建正文，不改变滚动位置或打断当前音频；生字篮状态保存在当前浏览器。

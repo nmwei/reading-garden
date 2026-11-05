@@ -3,7 +3,7 @@ const SCOPE = new URL(self.registration.scope).pathname;
 const PREFIX = `reading-garden:${SCOPE}:`;
 const CACHE = PREFIX + VERSION;
 const LOCAL_PREVIEW = ['localhost', '127.0.0.1', '[::1]'].includes(new URL(self.registration.scope).hostname) && new URL(self.location.href).searchParams.get('mode') !== 'offline';
-const APP = ['app/feedback-audio.js', 'assets/audio/feedback-correct.wav', 'assets/audio/feedback-retry.wav', 'assets/audio/feedback-sources.json', 'index.html', 'app/main.js', 'app/core.js', 'app/reading-levels.js', 'app/audio.js', 'app/offline.js', 'app/library.js', 'app/pinyin.js', 'app/parent-gate.js', 'app/styles.css', 'data/books.json', 'assets/sources.json', 'assets/icon.svg', 'assets/icon-192.png', 'assets/icon-512.png', 'manifest.webmanifest'];
+const APP = ['app/feedback-audio.js', 'app/feedback.css', 'assets/feedback-flower.svg', 'assets/feedback-flower-license.txt', 'assets/audio/feedback-correct.wav', 'assets/audio/feedback-retry.wav', 'assets/audio/feedback-sources.json', 'index.html', 'app/main.js', 'app/core.js', 'app/reading-levels.js', 'app/audio.js', 'app/offline.js', 'app/library.js', 'app/pinyin.js', 'app/parent-gate.js', 'app/styles.css', 'data/books.json', 'assets/sources.json', 'assets/icon.svg', 'assets/icon-192.png', 'assets/icon-512.png', 'manifest.webmanifest'];
 const url = path => new URL(path, self.registration.scope).href;
 self.addEventListener('install', event => {
   let createdCache = false;
