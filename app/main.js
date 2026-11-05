@@ -45,7 +45,7 @@ const audio = new AudioPlayer(playing => {
 function notify(message) {
   const el = document.querySelector('#status');
   el.textContent = message; el.classList.add('visible');
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('visible'), 4500);
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.classList.remove('visible'); el.replaceChildren(); }, 4500);
 }
 function persist(next) {
   state = next;
@@ -175,11 +175,12 @@ function bookCard(book, inLibrary = false) {
 }
 
 function storyText(text) {
+  const saved = new Set(state.words.map(w => w.char));
   // Keep opening quotes with their character and closing punctuation with the
   // preceding character. Separate clickable buttons otherwise lose kinsoku.
   return [...text.matchAll(/([“‘（《「『〈【]*)(\p{Script=Han})([，。！？；：、”’）》」』〉】…]*)|[^\p{Script=Han}]/gu)].map(match => {
     const [, opening, char, closing] = match;
-    return char ? `<span class="text-unit">${esc(opening)}<button class="character" data-char="${match.index + opening.length}" aria-label="认识${esc(char)}">${esc(char)}</button>${esc(closing)}</span>` : `<span>${esc(match[0])}</span>`;
+    return char ? `<span class="text-unit">${esc(opening)}<button class="character ${saved.has(char)?'saved-character':''}" data-char="${match.index + opening.length}" aria-label="认识${esc(char)}${saved.has(char)?'，已在生字篮':''}">${esc(char)}</button>${esc(closing)}</span>` : `<span>${esc(match[0])}</span>`;
   }).join('');
 }
 function storyArt(page, fallbackAlt) {
@@ -211,8 +212,31 @@ function showWord(index, entry) {
   selectedWord = {char: text[position], bookId: book.id, page};
   selectedSentence = sentenceAt(text, position);
   const context = wordInContext(text, position), saved = state.words.some(w => w.char === context.char);
-  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(selectedSentence)}</blockquote><div class="dialog-actions word-actions"><button class="button primary" data-speak-word aria-label="听“${esc(context.char)}”的读音">${icon('sound')}听字音</button><button class="button secondary" data-save-word aria-pressed="${saved}">${icon('leaf')}${saved ? '移出生字篮' : '放进生字篮'}</button></div><button class="text-button word-sentence" data-word-listen>${icon('sound')}听这一句</button>`;
+  wordDialog.innerHTML = `<button class="dialog-close" data-close aria-label="关闭">${icon('close')}</button><span class="eyebrow">在故事里认识它</span><h2 id="word-title" class="big-character">${esc(context.char)}</h2><h3>${esc(context.word)}</h3><p>${esc(context.meaning)}</p><blockquote>${esc(selectedSentence)}</blockquote><div class="dialog-actions word-actions"><button class="button primary" data-speak-word aria-label="听“${esc(context.char)}”的读音">${icon('sound')}听字音</button><button class="button secondary" data-save-word aria-pressed="${saved}">${icon('leaf')}${saved ? '我认识了，移出生字篮' : '放进生字篮'}</button></div><button class="text-button word-sentence" data-word-listen>${icon('sound')}听这一句</button>`;
   wordDialog.showModal();
+}
+
+// Update only word state: preserve the story position, open card and any playing audio.
+function refreshWordState() {
+  if (route.section === 'words') app.innerHTML = wordsView();
+  const saved = new Set(state.words.map(w => w.char));
+  app.querySelectorAll('.character[data-char]').forEach(button => {
+    const char = button.textContent, has = saved.has(char);
+    button.classList.toggle('saved-character', has);
+    button.setAttribute('aria-label', `认识${char}${has ? '，已在生字篮' : ''}`);
+  });
+  const button = wordDialog.querySelector('[data-save-word]');
+  if (button && selectedWord) {
+    const has = saved.has(selectedWord.char);
+    button.setAttribute('aria-pressed', String(has));
+    button.innerHTML = icon('leaf') + (has ? '我认识了，移出生字篮' : '放进生字篮');
+  }
+}
+function removeSavedWord(entry) {
+  if (!state.words.some(w => w.char === entry.char)) return;
+  const durable = persist({...state, words: state.words.filter(w => w.char !== entry.char)});
+  refreshWordState();
+  notify(durable ? '已移出生字篮，需要时可以再加入。' : '本次已移出，记录暂未保存。');
 }
 
 function completion() {
@@ -462,7 +486,7 @@ app.addEventListener('click', async event => {
   }
   else if (el.hasAttribute('data-char')) showWord(Number(el.dataset.char));
   else if (el.hasAttribute('data-saved-word')) showWord(0, state.words[Number(el.dataset.savedWord)]);
-  else if (el.hasAttribute('data-remove-word')) { persist({...state, words: state.words.filter((_, i) => i !== Number(el.dataset.removeWord))}); render(); }
+  else if (el.hasAttribute('data-remove-word')) { const entry = state.words[Number(el.dataset.removeWord)]; if (entry) removeSavedWord(entry); }
   else if (el.hasAttribute('data-pinyin-tab')) { pinyinTab = el.dataset.pinyinTab; render(); }
   else if (el.hasAttribute('data-pinyin-item')) { selectedPinyin[pinyinTab] = el.dataset.pinyinItem; render(); await playPinyin(el.dataset.pinyinItem); }
   else if (el.hasAttribute('data-quiz-scope')) {
@@ -481,7 +505,7 @@ app.addEventListener('click', async event => {
     if (!quiz || quiz.correct) return;
     const current = quiz, selected = el.dataset.answer;
     current.chosen = selected; current.correct = selected === current.answer.id; render();
-    const finished = await feedback.play(current.correct);
+    const finished = await feedback.answer(current.correct, app.querySelector(`[data-answer="${selected}"]`));
     // Keep the existing answer replay, but never overlap the feedback or revive a left question.
     if (finished && !current.correct && quiz === current && current.chosen === selected && route.section === 'pinyin' && pinyinTab === 'quiz' && !document.hidden) await playPinyin(current.answer.id);
   }
@@ -519,14 +543,13 @@ wordDialog.addEventListener('click', async event => {
     } else noStoryVoice();
   }
   else if (el.hasAttribute('data-save-word')) {
-    const wasSaved = state.words.some(w => w.char === selectedWord.char);
-    const words = wasSaved ? state.words.filter(w => w.char !== selectedWord.char) : [...state.words, selectedWord].slice(-200);
-    const durable = persist({...state, words});
-    el.setAttribute('aria-pressed', String(!wasSaved));
-    el.innerHTML = icon('leaf') + (wasSaved ? '放进生字篮' : durable ? '移出生字篮' : '本次先收好（点此移出）');
-    // Refresh the list behind the modal without closing it or interrupting audio.
-    if (route.section === 'words') app.innerHTML = wordsView();
-    if (durable) notify(wasSaved ? '已移出生字篮，可以随时再放回来。' : '这个字已经收好啦。');
+    const saved = state.words.find(w => w.char === selectedWord.char);
+    if (saved) removeSavedWord(saved);
+    else {
+      const durable = persist({...state, words: [...state.words, {...selectedWord}].slice(-200)});
+      refreshWordState();
+      if (durable) notify('这个字已经收好啦。');
+    }
   } else if (el.hasAttribute('data-speak-word')) {
     if (!audio.speak(selectedWord.char, state.voice)) {
       const source = books.find(b => b.id === selectedWord.bookId).pages[selectedWord.page].audio;

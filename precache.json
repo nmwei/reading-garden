@@ -1,10 +1,11 @@
 {
-  "version": "eabe13d166738152",
-  "bytes": 236150033,
+  "version": "3670db699e4d795d",
+  "bytes": 236159998,
   "files": [
     "app/audio.js",
     "app/core.js",
     "app/feedback-audio.js",
+    "app/feedback.css",
     "app/library.js",
     "app/main.js",
     "app/offline.js",
@@ -1501,6 +1502,8 @@
     "assets/books/sw-99720/14.jpg",
     "assets/books/sw-99720/15.jpg",
     "assets/books/sw-99720/16.jpg",
+    "assets/feedback-flower-license.txt",
+    "assets/feedback-flower.svg",
     "assets/icon-192.png",
     "assets/icon-512.png",
     "assets/icon.svg",
