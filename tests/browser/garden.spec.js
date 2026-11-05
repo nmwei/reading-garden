@@ -951,7 +951,8 @@ test('character audio leads both dialogs and collection can be removed and resto
   await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
   expect(await page.evaluate(()=>window.__spoken)).toEqual(['念']);
   await dialog.getByRole('button',{name:'听这一句',exact:true}).click();
-  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','我可以念给谁听呢？']);
+  await expect.poll(() => page.evaluate(() => window.__plays.at(-1))).toContain('/0087/03.mp3');
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念']);
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
   await expect(dialog.getByRole('button',{name:'移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
   await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
@@ -961,7 +962,10 @@ test('character audio leads both dialogs and collection can be removed and resto
   await page.goto('/#/words');
   await page.getByRole('button',{name:'复习念',exact:true}).click();
   await dialog.getByRole('button',{name:'听“念”的读音',exact:true}).click();
-  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','我可以念给谁听呢？','念']);
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','念']);
+  await dialog.getByRole('button',{name:'听这一句',exact:true}).click();
+  await expect.poll(() => page.evaluate(() => window.__plays.length)).toBe(2);
+  expect(await page.evaluate(()=>window.__spoken)).toEqual(['念','念']);
   await dialog.getByRole('button',{name:'移出生字篮',exact:true}).click();
   await expect(dialog).toBeVisible();
   await expect(page.locator('.saved-word')).toHaveCount(0);
@@ -979,6 +983,20 @@ test('character audio leads both dialogs and collection can be removed and resto
   await dialog.getByRole('button',{name:'关闭',exact:true}).click();
   await page.reload();
   await expect(page.locator('.saved-word')).toHaveCount(1);
+
+  // A whole-page recording is only an exact match when the displayed sentence covers the page.
+  for (const [route, character, sentence] of [
+    ['0087/8', '念', '我可以念给谁听呢？'],
+    ['sw-92448/1', '吉', '吉努在她奶奶家过暑假。']
+  ]) {
+    await page.goto(`/#/book/${route}`);
+    await page.getByRole('button', {name: `认识${character}`, exact: true}).first().click();
+    const playsBefore = await page.evaluate(() => window.__plays.length);
+    await dialog.getByRole('button', {name: '听这一句', exact: true}).click();
+    expect(await page.evaluate(() => window.__spoken.at(-1))).toBe(sentence);
+    expect(await page.evaluate(() => window.__plays.length)).toBe(playsBefore);
+    await dialog.getByRole('button', {name: '关闭', exact: true}).click();
+  }
 });
 
 test('reading help appears on the first read only across page changes, reloads and books',async({page})=>{
