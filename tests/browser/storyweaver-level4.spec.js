@@ -28,7 +28,7 @@ test('the new fourth-level image group downloads at a subpath and remains readab
   test.setTimeout(90000);
   const base = 'http://localhost:4179/reading-garden/';
   await page.goto(`${base}#/parent`);
-  await page.getByRole('button',{name:'长按进入',exact:true}).click({delay:1150});
+  await page.getByRole('button',{name:'按住 1 秒进入',exact:true}).click({delay:1150});
   await expect(page.locator('#download-scope')).toBeVisible();
   await page.locator('#download-scope').selectOption('level:StoryWeaver:4');
   await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();

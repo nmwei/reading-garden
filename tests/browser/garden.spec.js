@@ -30,7 +30,7 @@ const test = base.extend({
 });
 
 async function enterParent(page) {
-  await page.getByRole('button', {name: '长按进入', exact: true}).click({delay: 1150});
+  await page.getByRole('button', {name: '按住 1 秒进入', exact: true}).click({delay: 1150});
   await expect(page.getByRole('heading', {name: '陪她读，也给她一点空间。'})).toBeVisible();
 }
 
@@ -586,9 +586,15 @@ test('parent entry requires a full hold, cancels on release/movement and guards 
   await page.getByRole('link', {name: '家长小角', exact: true}).click();
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
   const gate = page.locator('#parent-dialog');
-  const hold = page.getByRole('button', {name: '长按进入', exact: true});
+  const hold = page.getByRole('button', {name: '按住 1 秒进入', exact: true});
   await expect(gate).toBeVisible();
-  await expect(hold).toHaveAccessibleDescription('按住 1 秒');
+  const cancelBox = await gate.getByRole('button', {name: '取消', exact: true}).boundingBox();
+  const holdBox = await hold.boundingBox();
+  const gateBox = await gate.boundingBox();
+  expect(holdBox.x - (cancelBox.x + cancelBox.width)).toBe(10);
+  expect(holdBox.height).toBe(cancelBox.height);
+  expect(holdBox.height).toBeGreaterThanOrEqual(44);
+  expect(gateBox.x + gateBox.width - (holdBox.x + holdBox.width)).toBeLessThanOrEqual(32);
   await hold.click({delay: 150});
   await page.waitForTimeout(1050);
   await expect(gate).toBeVisible();
@@ -600,7 +606,7 @@ test('parent entry requires a full hold, cancels on release/movement and guards 
   await page.waitForTimeout(1050);
   await page.mouse.up();
   await expect(gate).toBeVisible();
-  await gate.getByRole('button', {name: '返回', exact: true}).click();
+  await gate.getByRole('button', {name: '取消', exact: true}).click();
   await expect(gate).not.toBeVisible();
   await page.goto('/#/parent');
   await expect(gate).toBeVisible();
@@ -678,16 +684,19 @@ test('checking updates bypasses cached manifests and refreshing the page preserv
   await page.getByRole('button', {name: '检查更新', exact: true}).click();
   await expect(page.locator('#app-update-status')).toContainText('新版已准备好');
   updateHost.overrides.delete('/precache.json');
-  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
-  await expect(page.locator('#parent-dialog')).toBeVisible();
+  await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
+  await expect(page).toHaveURL(/#\/shelf$/);
+  await expect(page.locator('#parent-dialog')).not.toBeVisible();
   expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  await page.getByRole('link', {name: '家长小角', exact: true}).click();
   await enterParent(page);
   await page.locator('.app-maintenance > summary').click();
   await context.setOffline(true);
   await page.getByRole('button', {name: '检查更新', exact: true}).click();
   await expect(page.locator('#app-update-status')).toContainText('当前未联网');
-  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
-  await expect(page.locator('#parent-dialog')).toBeVisible();
+  await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
+  await expect(page).toHaveURL(/#\/shelf$/);
+  await expect(page.locator('#parent-dialog')).not.toBeVisible();
   expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
 });
 
@@ -786,10 +795,10 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   await expect(page.getByRole('heading', {name: '听听声音，动动小嘴巴。', exact: true})).toBeVisible();
   await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
   await page.locator('.app-maintenance > summary').click();
-  await page.getByRole('button', {name: '重新加载页面', exact: true}).click();
-  await expect(page.locator('#parent-dialog')).toBeVisible();
+  await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
+  await expect(page).toHaveURL(/#\/shelf$/);
+  await expect(page.locator('#parent-dialog')).not.toBeVisible();
   expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
-  await page.locator('#parent-dialog').getByRole('button', {name: '返回', exact: true}).click();
   await page.getByRole('link', {name: '学拼音', exact: true}).click();
   await expect(page.getByRole('heading', {name: '新版拼音小课堂', exact: true})).toBeVisible();
   const activated = await page.evaluate(async () => ({version: (await fetch('./precache.json').then(r => r.json())).version, caches: await caches.keys(), waiting: !!(await navigator.serviceWorker.getRegistration()).waiting}));
@@ -904,9 +913,9 @@ test('an update refuses corrupted old media and omits withdrawn assets while reu
     return {good:await has('./assets/books/0262/17.mp3'),bad:await has('./assets/books/0262/02.mp3'),withdrawn:await has('./assets/books/withdrawn.mp3'),unselected:await has('./assets/books/0052/02.mp3')};
   },nextVersion);
   expect(migrated).toEqual({good:true,bad:false,withdrawn:false,unselected:false});
-  await page.getByRole('button',{name:'重新加载页面',exact:true}).click();
-  await expect(page.locator('#parent-dialog')).toBeVisible();
-  await page.locator('#parent-dialog').getByRole('button',{name:'返回',exact:true}).click();
+  await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();
+  await expect(page).toHaveURL(/#\/shelf$/);
+  await expect(page.locator('#parent-dialog')).not.toBeVisible();
   await page.goto(`${base}#/book/0262/1`);
   await page.getByRole('button',{name:'读这一页',exact:true}).click();
   await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
