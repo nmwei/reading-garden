@@ -117,6 +117,59 @@ test('rereading keeps the resume entry through reload and until explicit complet
   await expect(action).toHaveText('再读一遍');
 });
 
+test('library reading filters combine with level and theme and track completion', async ({page}) => {
+  await page.addInitScript(() => {
+    const key = 'reading-garden-v1';
+    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({progress: {
+      '0087': {page: 7, finished: false, updated: 1},
+      '0002': {page: 2, finished: false, updated: 4},
+      '0302': {page: 2, finished: true, rereading: true, updated: 3},
+      '0156': {page: 4, finished: true, updated: 2}
+    }}));
+  });
+  await page.goto('/#/library');
+  const filters = page.getByRole('group', {name: '阅读状态'});
+  const cards = page.locator('.library-book');
+  const ids = () => cards.evaluateAll(elements => elements.map(card => card.dataset.bookId));
+  const select = name => filters.getByRole('button', {name, exact: true}).click();
+  await expect(filters.getByRole('button', {name: '全部故事'})).toHaveAttribute('aria-pressed', 'true');
+  await expect(cards).toHaveCount(books.length);
+  await select('未开始');
+  expect(await ids()).toEqual(books.map(book => book.id).filter(id => !['0087', '0002', '0302', '0156'].includes(id)));
+  await select('阅读中');
+  expect(await ids()).toEqual(['0002', '0087']);
+  await select('已读完');
+  expect(await ids()).toEqual(['0302', '0156']);
+  await expect(cards.first().locator('.pick-action')).toHaveText('继续重读');
+  await select('阅读中');
+  await page.getByRole('button', {name: 'Storybooks Canada · 1级', exact: true}).click();
+  await page.locator('#book-theme').selectOption('家人与我');
+  expect(await ids()).toEqual(['0087']);
+  await cards.first().locator('.pick-action').click();
+  await page.getByRole('button', {name: '读完啦'}).click();
+  await page.goto('/#/library');
+  await expect(filters.getByRole('button', {name: '阅读中'})).toHaveAttribute('aria-pressed', 'true');
+  await expect(cards).toHaveCount(0);
+  await expect(page.getByRole('status').filter({hasText: '找到 0 本故事'})).toBeVisible();
+  await page.getByRole('button', {name: '清除分级和主题'}).click();
+  expect(await ids()).toEqual(['0002']);
+  await select('已读完');
+  expect(await ids()).toEqual(['0087', '0302', '0156']);
+  await expect(cards.first().locator('.pick-action')).toHaveText('再读一遍');
+  await page.setViewportSize({width: 320, height: 740});
+  const bounds = await filters.getByRole('button').evaluateAll(buttons => buttons.map(button => {
+    const {top, left, right, height} = button.getBoundingClientRect();
+    return {top, left, right, height};
+  }));
+  expect(bounds).toHaveLength(4);
+  for (const box of bounds) {
+    expect(box.top).toBe(bounds[0].top);
+    expect(box.left).toBeGreaterThanOrEqual(0);
+    expect(box.right).toBeLessThanOrEqual(320);
+    expect(box.height).toBeGreaterThanOrEqual(44);
+  }
+});
+
 test('deliberate letter taps play while multi-selected practice stays explicit, fixed at three and persistent', async ({page}) => {
   await page.goto('/#/pinyin');
   await expect(page.locator('.final-row')).toHaveCount(5);
@@ -776,7 +829,7 @@ test('all forty books can be found by grade and theme, including empty intersect
   }
   await page.locator('#book-theme').selectOption('动物朋友');
   await expect(page.locator('.book-card')).toHaveCount(0);
-  await expect(page.getByText('这个范围暂时没有故事，换一个级别或主题看看吧。')).toBeVisible();
+  await expect(page.getByText('没有符合这些条件的故事。')).toBeVisible();
   await page.locator('#book-theme').selectOption('全部故事');
   await page.locator('.book-card').first().click();
   await expect(page.getByRole('heading',{name:'辛波薇亚',exact:true})).toBeVisible();

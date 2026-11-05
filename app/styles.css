@@ -157,7 +157,7 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
   .reading-shelf{padding:18px 14px;border-radius:20px}.reading-shelf-heading{align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:16px}.reading-shelf-heading h2{font-size:23px}.reading-shelf-heading p{font-size:12px}.reading-shelf-actions{width:100%;justify-content:flex-start;gap:12px}.reading-shelf-actions .text-button{margin-left:auto}.reading-shelf-actions .button{padding:10px 14px}
   .reading-picks{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pick-cover{height:124px;padding:14px 12px}.pick-info{padding:12px 10px}.pick-info h3{font-size:15px}.pick-info p{font-size:10px}.pick-action{font-size:12px;margin-top:10px}
   .reading-list-button,.remove-reading-pick{font-size:12px;padding:11px 8px;gap:5px}.reading-shelf-empty{padding:22px 12px}.reading-shelf-empty h3{font-size:17px}.reading-shelf-empty p{font-size:12px}
-  .bookshelf .section-heading{margin-top:28px}.bookshelf .section-heading h2{font-size:20px}.library-views{margin-bottom:16px}.library-views button{font-size:14px}
+  .bookshelf .section-heading{margin-top:28px}.bookshelf .section-heading h2{font-size:20px}.library-views{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-bottom:16px}.library-views button{font-size:14px}
 }
 
 
