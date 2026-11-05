@@ -87,7 +87,7 @@ export async function downloadLibrary(progress, selection = 'all') {
 export async function refreshLibrary(progress) {
   const current = await checkedRegistration();
   const info = await manifest(true);
-  if (current.waiting || info.version !== loadedVersion) throw Error('有新版待启用，请先在“应用更新”中重新加载页面，再获取资源。');
+  if (current.waiting || info.version !== loadedVersion) throw Error('有新版待启用，请先在“应用更新”中选择“重新加载并回首页”，再获取资源。');
   const base = new URL('.', document.baseURI), prefix = `reading-garden:${base.pathname}:`;
   const temporaryName = `${prefix}refresh-${info.version}-${crypto.randomUUID()}`;
   const temporary = await caches.open(temporaryName);

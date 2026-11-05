@@ -74,7 +74,7 @@ function closeParent() {
 function requestParent() {
   if (route?.section === 'parent' || parentDialog.open) return;
   audio.stop();
-  parentDialog.innerHTML = `<h2 id="parent-title">家长小角</h2><p>朗读声音、绘本离线下载等设置，请交给家长来操作。</p><div class="dialog-actions"><button type="button" class="button secondary" data-cancel-parent>返回</button><button type="button" class="button primary parent-hold" id="parent-hold" aria-describedby="parent-hold-hint">长按进入</button><span id="parent-hold-hint" hidden>按住 1 秒</span></div>`;
+  parentDialog.innerHTML = `<h2 id="parent-title">家长小角</h2><p>朗读声音、绘本离线下载等设置，请交给家长来操作。</p><div class="dialog-actions"><button type="button" class="button secondary" data-cancel-parent>取消</button><button type="button" class="button primary parent-hold" id="parent-hold">按住 1 秒进入</button></div>`;
   parentDialog.showModal();
   disposeParentHold = mountParentHold(parentDialog.querySelector('#parent-hold'), () => {
     parentAccess = true; closeParent(); go('#/parent');
@@ -316,7 +316,7 @@ function sourceSummary() {
   return `<details class="parent-panel sources"><summary><span>每一本书，都有来处</span><small>查看绘本与声音来源</small></summary><div class="sources-body"><h3>绘本</h3>${[...platforms].map(([url, platform]) => `<p class="source-platform"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(platform.name)}</a> · ${[...platform.licenses].map(([url, label]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(' / ')}</p>`).join('')}<p class="small-note">署名见各书阅读页；标注 NC 的绘本仅限非商业使用。</p><div class="source-audio"><h3>拼音录音</h3>${pinyinSources.map(source => `<p><a href="${source.source}" target="_blank" rel="noopener">${esc(source.author)}</a> · ${source.permission?.status === 'user-confirmed' ? '经授权用于本项目' : source.licenseUrl ? `<a href="${source.licenseUrl}" target="_blank" rel="noopener">${esc(source.license)}</a>` : esc(source.license)}</p>`).join('')}</div></div></details>`;
 }
 function maintenancePanel() {
-  return `<details class="parent-panel app-maintenance parent-disclosure"><summary><span>应用更新</span><small>检查新内容，或重新加载当前页面。</small></summary><div class="maintenance-body"><div class="maintenance-actions"><button class="button secondary" data-app-check>检查更新</button><button class="button secondary" data-app-reload>重新加载页面</button></div><p class="small-note">重新加载会停止当前播放，已保存的阅读记录、生字篮和设置会保留。</p><p id="app-update-status" class="small-note" role="status">${esc(maintenanceMessage)}</p></div></details>`;
+  return `<details class="parent-panel app-maintenance parent-disclosure"><summary><span>应用更新</span><small>检查新内容，或重新加载后回到首页。</small></summary><div class="maintenance-body"><div class="maintenance-actions"><button class="button secondary" data-app-check>检查更新</button><button class="button secondary" data-app-reload>重新加载并回首页</button></div><p class="small-note">重新加载会停止当前播放，已保存的阅读记录、生字篮和设置会保留。</p><p id="app-update-status" class="small-note" role="status">${esc(maintenanceMessage)}</p></div></details>`;
 }
 function paintMaintenance() {
   document.querySelectorAll('[data-download], [data-download-book], #download-scope, [data-app-check], [data-app-reload], [data-app-refetch]').forEach(el => { el.disabled = libraryBusy; });
@@ -351,9 +351,11 @@ async function maintainApp(action) {
   try {
     if (action === 'check') {
       const result = await checkForUpdate();
-      report(result.available ? '新版已准备好，点击“重新加载页面”启用。' : '当前已是最新版本。');
+      report(result.available ? '新版已准备好，点击“重新加载并回首页”启用。' : '当前已是最新版本。');
     } else if (action === 'reload') {
-      await prepareReload(); location.reload();
+      await prepareReload();
+      history.replaceState(null, '', '#/shelf');
+      location.reload();
     } else {
       await refreshLibrary((done, total) => report(`正在重新获取资源 ${done} / ${total}，请保持页面打开…`));
       report('资源已重新获取并校验，可离线使用。');
