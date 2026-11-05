@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('../dist/', import.meta.url)).replace(/\/$/, 
 const port = Number(process.env.PORT || 4178);
 const base = '/' + (process.env.BASE_PATH || '').replace(/^\/+|\/+$/g, '');
 const prefix = base === '/' ? '/' : base + '/';
-const types = {html: 'text/html; charset=utf-8', js: 'text/javascript; charset=utf-8', css: 'text/css; charset=utf-8', json: 'application/json; charset=utf-8', webmanifest: 'application/manifest+json', svg: 'image/svg+xml', jpg: 'image/jpeg', png: 'image/png', mp3: 'audio/mpeg'};
+const types = {html: 'text/html; charset=utf-8', js: 'text/javascript; charset=utf-8', css: 'text/css; charset=utf-8', json: 'application/json; charset=utf-8', webmanifest: 'application/manifest+json', svg: 'image/svg+xml', jpg: 'image/jpeg', png: 'image/png', mp3: 'audio/mpeg', wav: 'audio/wav'};
 const server = createServer(async (req, res) => {
   try {
     const path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);

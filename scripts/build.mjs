@@ -1,3 +1,4 @@
+import {prepareFeedbackAudio} from './prepare-feedback-audio.mjs';
 import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {basename} from 'node:path';
@@ -6,9 +7,16 @@ import {PINYIN_RECORDINGS} from '../app/pinyin.js';
 import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
 import {validateStoryWeaverFixture, validateImportedStoryWeaverBook} from './storyweaver-metadata.mjs';
 
+await prepareFeedbackAudio();
 const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
+const feedback = JSON.parse(await readFile(`${root}assets/audio/feedback-sources.json`, 'utf8')).clips;
+for (const clip of feedback) {
+  const bytes = await readFile(`${root}assets/${clip.file}`);
+  if (createHash('sha256').update(bytes).digest('hex') !== clip.sha256) throw Error(`Feedback asset changed: ${clip.file}`);
+}
+
 for (const book of books) {
   const source = sources.sources.find(source => source.kind === 'book' && source.id === book.id);
   if (book.sourceLevel?.system === 'StoryWeaver' && !source?.metadataFile) throw Error(`Missing reviewed StoryWeaver fixture: ${book.id}`);
@@ -65,7 +73,7 @@ async function walk(dir, prefix = '') {
   return files;
 }
 const files = (await walk(out)).sort(), hash = createHash('sha256');
-const assets = Object.fromEntries(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.sha256]));
+const assets = Object.fromEntries([...sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.sha256]), ...feedback.map(clip => [`assets/${clip.file}`, clip.sha256])]);
 const assetBytes = new Map(sources.sources.flatMap(source => source.assets).map(asset => [asset.path, asset.bytes]));
 const group = paths => ({files: [...new Set(paths)], bytes: [...new Set(paths)].reduce((sum, path) => sum + assetBytes.get(path), 0)});
 const bookGroups = Object.fromEntries(books.map(book => [book.id, {title: book.title, level: book.sourceLevel.value, levelKey: readingLevelKey(book.sourceLevel), levelLabel: readingLevelLabel(book.sourceLevel), cover: book.cover, ...group([book.cover, ...book.pages.flatMap(page => [page.image, page.audio].filter(Boolean))])}]));

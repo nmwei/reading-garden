@@ -1,5 +1,6 @@
 export class AudioPlayer {
-  constructor(onChange) {
+  constructor(onChange, onStop = () => {}) {
+    this.onStop = onStop;
     this.audio = new Audio();
     this.audio.preload = 'none';
     this.audio.setAttribute('playsinline', '');
@@ -18,6 +19,7 @@ export class AudioPlayer {
     });
   }
   stop() {
+    this.onStop();
     this.token++;
     if (this.sequence) { clearTimeout(this.sequence.timer); this.sequence.onState('idle'); this.sequence = null; }
     this.audio.pause();

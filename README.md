@@ -262,3 +262,9 @@ npm run deploy
 - 书架嵌套容器的卡片比书库略窄，允许两处按可用宽度自然换行；不强制整条来源标签同排，也不缩小字号。移除书卡来源与级别间的装饰圆点，将“1级”等作为不可拆分的单位，避免单独一个“级”落到下一行。
 - 书架与书库仍共用`bookCard`；`app/styles.css`中的`.book-level-grade`只约束级别整体，来源名称可以在词间换行。无障碍名称保留完整来源、级别及“原站分级”说明。
 - 构建、30项单元/内容检查和94项Chromium/WebKit浏览器场景通过，新增检查覆盖320～1440px九个宽度、两种书卡容器、级别不拆分及无横向溢出。本轮暂存并提交，不推送、不发布。
+
+## 答题音效
+
+答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
+
+许可为 [Mixkit Sound Effects Free License](https://mixkit.co/license/modal/sfxFree/)，允许游戏成品使用，但禁止随源码再分发。因此两个 WAV 不进入 `main`，仅随可运行的游戏成品发布到 `gh-pages`。首次构建或数学站启动前，`scripts/prepare-feedback-audio.mjs` 从来源下载并校验原始 MP3，再以 FFmpeg 8.1.1 生成已试听确认的 WAV；已有正确文件时无需联网或 FFmpeg。源码与输出均验证 SHA-256，差异会中止构建，不会悄悄更换录音。也可先运行 `node scripts/prepare-feedback-audio.mjs` 准备素材。
