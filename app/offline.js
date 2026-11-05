@@ -44,7 +44,11 @@ async function checkedRegistration() {
 export async function checkForUpdate() {
   const current = await checkedRegistration();
   const info = await manifest(true);
-  return {available: Boolean(current.waiting) || info.version !== loadedVersion, version: info.version};
+  const available = info.version !== loadedVersion;
+  // A manifest change alone doesn't mean the new app can be loaded yet.
+  const ready = Boolean(current.waiting) ||
+    (available && Boolean(navigator.serviceWorker.controller) && (await manifest()).version === info.version);
+  return {ready, available};
 }
 export async function prepareReload() {
   // Only this explicit action activates a waiting production update.

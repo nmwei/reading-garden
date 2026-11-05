@@ -677,12 +677,15 @@ test('checking updates bypasses cached manifests and refreshing the page preserv
   await expect(page.locator('.app-maintenance [data-app-refetch]')).toHaveCount(0);
   await expect(page.locator('.offline-panel [data-app-refetch]')).toBeVisible();
   await page.locator('.app-maintenance > summary').click();
+  await expect(page.locator('[data-app-check]')).toHaveClass(/\bprimary\b/);
+  await expect(page.locator('[data-app-reload]')).toHaveClass(/\bsecondary\b/);
   await page.getByRole('button', {name: '检查更新', exact: true}).click();
   await expect(page.locator('#app-update-status')).toHaveText('当前已是最新版本。');
   // A server manifest newer than the cached shell must be reported, not hidden by the worker cache.
   updateHost.overrides.set('/precache.json', {body: JSON.stringify({...updateHost.manifest, version: '0123456789abcdef'})});
   await page.getByRole('button', {name: '检查更新', exact: true}).click();
-  await expect(page.locator('#app-update-status')).toContainText('新版已准备好');
+  await expect(page.locator('#app-update-status')).toContainText('检测到新版，暂未准备好');
+  await expect(page.locator('[data-app-reload]')).toHaveClass(/\bsecondary\b/);
   updateHost.overrides.delete('/precache.json');
   await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
   await expect(page).toHaveURL(/#\/shelf$/);
@@ -778,6 +781,8 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   await page.locator('.app-maintenance > summary').click();
   await page.getByRole('button', {name: '检查更新', exact: true}).click();
   await expect(page.locator('#app-update-status')).toContainText('新版已准备好');
+  await expect(page.locator('[data-app-check]')).toHaveClass(/\bsecondary\b/);
+  await expect(page.locator('[data-app-reload]')).toHaveClass(/\bprimary\b/);
   const pending = await page.evaluate(async () => {
     const registration = await navigator.serviceWorker.getRegistration();
     const manifest = await fetch('./precache.json').then(r => r.json());
