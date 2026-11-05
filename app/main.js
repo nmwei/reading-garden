@@ -1,3 +1,4 @@
+import './feedback-audio.js';
 import {STORAGE_KEY, READING_LIST_LIMIT, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, sentenceAt, quizChoices} from './core.js';
 import {FINAL_GROUPS, FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PRACTICE_CATEGORIES, TONE_GROUPS, TONE_BASES, toneExamples, nextPracticeCategory, practicePool, pinyinAudio, toneName} from './pinyin.js';
 import {readingLevelLabel, readingLevelKey, readingLevelOptions} from './reading-levels.js';
@@ -35,10 +36,11 @@ const selectedPinyin = {finals: 'a', initials: 'initial-b', whole: 'whole-zhi'};
 const BOOK_VIEWS = [['all', '全部故事'], ['unstarted', '未开始'], ['reading', '阅读中'], ['finished', '已读完']];
 let bookLevel = 'all', bookFilter = '全部故事', bookView = 'all';
 let offlineScope = 'all', toastTimer, storageWarning = false;
+const feedback = new globalThis.GardenFeedbackAudio();
 const audio = new AudioPlayer(playing => {
   playing = playing && !wordDialog.open;
   document.querySelectorAll('[data-page-play]').forEach(el => { el.innerHTML = icon(playing ? 'pause' : 'sound') + (playing ? '停止朗读' : '读这一页'); el.setAttribute('aria-pressed', String(playing)); });
-});
+}, () => feedback.stop());
 
 function notify(message) {
   const el = document.querySelector('#status');
@@ -475,7 +477,14 @@ app.addEventListener('click', async event => {
   else if (el.hasAttribute('data-sequence-stop')) audio.stop();
   else if (el.hasAttribute('data-pinyin-play')) await playPinyin(el.dataset.pinyinPlay);
   else if (el.hasAttribute('data-quiz-listen')) await playPinyin(quiz.answer.id);
-  else if (el.hasAttribute('data-answer')) { quiz.chosen = el.dataset.answer; quiz.correct = quiz.chosen === quiz.answer.id; render(); if (!quiz.correct) await playPinyin(quiz.answer.id); }
+  else if (el.hasAttribute('data-answer')) {
+    if (!quiz || quiz.correct) return;
+    const current = quiz, selected = el.dataset.answer;
+    current.chosen = selected; current.correct = selected === current.answer.id; render();
+    const finished = await feedback.play(current.correct);
+    // Keep the existing answer replay, but never overlap the feedback or revive a left question.
+    if (finished && !current.correct && quiz === current && current.chosen === selected && route.section === 'pinyin' && pinyinTab === 'quiz' && !document.hidden) await playPinyin(current.answer.id);
+  }
   else if (el.hasAttribute('data-next-quiz')) { quiz = null; render(); }
   else if (el.hasAttribute('data-voice-test')) { if (!audio.speak('你好，欢迎来到阅读小花园。', state.voice)) notify('设备暂时没有可用的中文声音，请在 iPad 设置中添加普通话语音。'); }
   else if (el.hasAttribute('data-app-check')) await maintainApp('check');

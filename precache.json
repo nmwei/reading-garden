@@ -1,9 +1,10 @@
 {
-  "version": "1375bf1faf1b62f5",
-  "bytes": 235933297,
+  "version": "eabe13d166738152",
+  "bytes": 236150033,
   "files": [
     "app/audio.js",
     "app/core.js",
+    "app/feedback-audio.js",
     "app/library.js",
     "app/main.js",
     "app/offline.js",
@@ -11,6 +12,9 @@
     "app/pinyin.js",
     "app/reading-levels.js",
     "app/styles.css",
+    "assets/audio/feedback-correct.wav",
+    "assets/audio/feedback-retry.wav",
+    "assets/audio/feedback-sources.json",
     "assets/books/0001/01.jpg",
     "assets/books/0001/02.jpg",
     "assets/books/0001/02.mp3",
@@ -3319,7 +3323,9 @@
     "assets/books/sw-639414/12.jpg": "63cada3dd710f2b4dcd1f1222cdac991b90a7ca4f0bce89634c19d7a13e2b860",
     "assets/books/sw-639414/13.jpg": "d81478bc9e4ed61177396e0da24c92e4ab80156ea3ae99403bc93874ae659196",
     "assets/books/sw-639414/14.jpg": "e395867d1936f5768ab500d133dfd5029cc4fe9fed69cce6710c02421f2aa857",
-    "assets/books/sw-639414/15.jpg": "99d9ed121960a9e713d860025f368f65c4a58e81586eaf93b0e3ec2c271e1dc3"
+    "assets/books/sw-639414/15.jpg": "99d9ed121960a9e713d860025f368f65c4a58e81586eaf93b0e3ec2c271e1dc3",
+    "assets/audio/feedback-correct.wav": "7aed52982c290241ebe02c7c7ab98f7256695715f7988535b62e63e1014ad1d0",
+    "assets/audio/feedback-retry.wav": "985cfa74cf2ff6789bed01a8dff68b0d9a7a1c55e2f859fb0a0146d5bf4a8ecc"
   },
   "books": {
     "0087": {
