@@ -1,4 +1,4 @@
-const VERSION = '5737b1c27f425a89';
+const VERSION = '4ece9faa197cd801';
 const SCOPE = new URL(self.registration.scope).pathname;
 const PREFIX = `reading-garden:${SCOPE}:`;
 const CACHE = PREFIX + VERSION;

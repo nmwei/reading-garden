@@ -32,6 +32,7 @@ let sequencePaused = false, selectedSentence = '';
 let parentAccess = false, lastPublicHash = '#/shelf', disposeParentHold;
 let libraryBusy = false, maintenanceMessage = '', resourceMessage = '';
 const selectedPinyin = {finals: 'a', initials: 'initial-b', whole: 'whole-zhi'};
+const BOOK_VIEWS = [['all', '全部故事'], ['unstarted', '未开始'], ['reading', '阅读中'], ['finished', '已读完']];
 let bookLevel = 'all', bookFilter = '全部故事', bookView = 'all';
 let offlineScope = 'all', toastTimer, storageWarning = false;
 const audio = new AudioPlayer(playing => {
@@ -131,14 +132,30 @@ function shelf() {
     <footer class="site-footer">每个孩子都有自己的阅读节奏。<a href="#/parent">故事与声音来源</a></footer>`);
 }
 function library() {
-  const recent = books.filter(book => state.progress[book.id]).sort((a, b) => state.progress[b.id].updated - state.progress[a.id].updated);
-  const scopedBooks = (bookView === 'recent' ? recent : books).filter(book => bookFilter === '全部故事' || book.tag === bookFilter);
+  const viewBooks = bookView === 'all' ? books : books.filter(book => {
+    const progress = state.progress[book.id];
+    const status = !progress ? 'unstarted' : progress.finished ? 'finished' : 'reading';
+    return status === bookView;
+  });
+  if (bookView === 'reading' || bookView === 'finished') {
+    viewBooks.sort((a, b) => state.progress[b.id].updated - state.progress[a.id].updated);
+  }
+  const scopedBooks = viewBooks.filter(book => bookFilter === '全部故事' || book.tag === bookFilter);
   const visibleBooks = scopedBooks.filter(book => bookLevel === 'all' || readingLevelKey(book.sourceLevel) === bookLevel);
+  const views = BOOK_VIEWS.map(([id, label]) => `<button type="button" data-book-view="${id}" aria-pressed="${bookView === id}">${label}</button>`).join('');
+  const emptyMessages = {
+    unstarted: '书库里的故事都已经打开过啦。',
+    reading: '打开一本新故事后，可以在这里接着读。',
+    finished: '读完一本故事后，它会出现在这里。'
+  };
+  const emptyResults = viewBooks.length
+    ? '<p class="page-description">没有符合这些条件的故事。</p><button type="button" class="text-button" data-clear-book-filters>清除分级和主题</button>'
+    : `<p class="page-description">${emptyMessages[bookView]}</p>`;
   const tags = ['全部故事', ...new Set(books.map(book => book.tag))];
   const levels = readingLevelOptions(books);
   const levelFilters = `<div class="level-filter-header"><span>原站分级</span><button data-book-level="all" class="level-all ${bookLevel === 'all' ? 'selected' : ''}" aria-label="全部级别" aria-pressed="${bookLevel === 'all'}">全部级别<small>${scopedBooks.length}本</small></button></div><div class="level-source-list">${[...new Set(levels.map(level => level.system))].map((system, index) => `<div class="source-level-group" role="group" aria-labelledby="level-source-${index}" data-level-system="${esc(system)}"><div class="level-source-heading"><span id="level-source-${index}">${esc(system)}</span><small>${scopedBooks.filter(book => book.sourceLevel.system === system).length}本</small></div><div class="source-level-options">${levels.filter(level => level.system === system).map(level => { const key = readingLevelKey(level), count = scopedBooks.filter(book => readingLevelKey(book.sourceLevel) === key).length; return `<button data-book-level="${esc(key)}" class="level-option ${bookLevel === key ? 'selected' : ''}" aria-label="${esc(readingLevelLabel(level))}" aria-describedby="level-count-${index}-${level.value}" aria-pressed="${bookLevel === key}"><span>${level.value}级</span><small id="level-count-${index}-${level.value}">${count}本</small></button>`; }).join('')}</div></div>`).join('')}</div>`;
   return shell('library', `<div class="library-toolbar"><a class="button secondary" href="#/shelf">${icon('back')}回到小书架<span>${state.readingList.length} / ${READING_LIST_LIMIT} 本</span></a><span class="small-note">可以连续挑几本，选好再回去读。</span></div><header class="page-header"><div><span class="eyebrow">故事书库</span><h1>去书库，找找新故事</h1><p class="small-note">找到喜欢的书，放到自己的小书架。</p></div></header>
-    <section class="bookshelf" aria-labelledby="shelf-heading"><h2 id="shelf-heading" class="library-count">共 ${books.length} 本绘本</h2><div class="library-views" aria-label="书库范围"><button data-book-view="all" aria-pressed="${bookView === 'all'}">全部故事</button><button data-book-view="recent" aria-pressed="${bookView === 'recent'}">最近读过</button></div><div class="level-filters" role="group" aria-label="故事级别">${levelFilters}</div><div class="shelf-tools"><label for="book-theme">主题</label><select id="book-theme">${tags.map(tag => `<option value="${esc(tag)}" ${tag === bookFilter ? 'selected' : ''}>${esc(tag)}</option>`).join('')}</select><span class="small-note" role="status">找到 ${visibleBooks.length} 本故事</span></div><div class="book-grid">${visibleBooks.map(book => bookCard(book, true)).join('')}</div>${visibleBooks.length ? '' : `<p class="page-description">${bookView === 'recent' && !recent.length ? '还没有打开过故事，去全部故事里选一本吧。' : '这个范围暂时没有故事，换一个级别或主题看看吧。'}</p>`}</section>
+    <section class="bookshelf" aria-labelledby="shelf-heading"><h2 id="shelf-heading" class="library-count">共 ${books.length} 本绘本</h2><div class="library-views" role="group" aria-label="阅读状态">${views}</div><div class="level-filters" role="group" aria-label="故事级别">${levelFilters}</div><div class="shelf-tools"><label for="book-theme">主题</label><select id="book-theme">${tags.map(tag => `<option value="${esc(tag)}" ${tag === bookFilter ? 'selected' : ''}>${esc(tag)}</option>`).join('')}</select><span class="small-note" role="status">找到 ${visibleBooks.length} 本故事</span></div><div class="book-grid">${visibleBooks.map(book => bookCard(book, true)).join('')}</div>${visibleBooks.length ? '' : emptyResults}</section>
     <footer class="site-footer">慢慢挑，慢慢读。<a href="#/shelf">回到小书架</a></footer>`);
 }
 function readingShelf() {
@@ -392,6 +409,11 @@ app.addEventListener('click', async event => {
   if (!el || el.disabled) return;
   if (el.hasAttribute('data-book-level')) { bookLevel = el.dataset.bookLevel; refreshShelfControl(`[data-book-level="${bookLevel}"]`); }
   else if (el.hasAttribute('data-book-view')) { bookView = el.dataset.bookView; refreshShelfControl(`[data-book-view="${bookView}"]`); }
+  else if (el.hasAttribute('data-clear-book-filters')) {
+    bookLevel = 'all';
+    bookFilter = '全部故事';
+    refreshShelfControl(`[data-book-view="${bookView}"]`);
+  }
   else if (el.hasAttribute('data-reading-add')) {
     const id = el.dataset.readingAdd;
     if (!books.some(book => book.id === id)) return;
