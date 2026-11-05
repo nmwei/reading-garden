@@ -30,7 +30,7 @@ let books = [], sources = [], state = emptyState(), route;
 let pinyinTab = 'finals', lastQuizScope = '', toneBase = 'a', quiz = null, selectedWord = null;
 let sequencePaused = false, selectedSentence = '';
 let parentAccess = false, lastPublicHash = '#/shelf', disposeParentHold;
-let libraryBusy = false, maintenanceMessage = '', resourceMessage = '';
+let libraryBusy = false, updateReady = false, maintenanceMessage = '', resourceMessage = '';
 const selectedPinyin = {finals: 'a', initials: 'initial-b', whole: 'whole-zhi'};
 const BOOK_VIEWS = [['all', '全部故事'], ['unstarted', '未开始'], ['reading', '阅读中'], ['finished', '已读完']];
 let bookLevel = 'all', bookFilter = '全部故事', bookView = 'all';
@@ -316,10 +316,18 @@ function sourceSummary() {
   return `<details class="parent-panel sources"><summary><span>每一本书，都有来处</span><small>查看绘本与声音来源</small></summary><div class="sources-body"><h3>绘本</h3>${[...platforms].map(([url, platform]) => `<p class="source-platform"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(platform.name)}</a> · ${[...platform.licenses].map(([url, label]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(' / ')}</p>`).join('')}<p class="small-note">署名见各书阅读页；标注 NC 的绘本仅限非商业使用。</p><div class="source-audio"><h3>拼音录音</h3>${pinyinSources.map(source => `<p><a href="${source.source}" target="_blank" rel="noopener">${esc(source.author)}</a> · ${source.permission?.status === 'user-confirmed' ? '经授权用于本项目' : source.licenseUrl ? `<a href="${source.licenseUrl}" target="_blank" rel="noopener">${esc(source.license)}</a>` : esc(source.license)}</p>`).join('')}</div></div></details>`;
 }
 function maintenancePanel() {
-  return `<details class="parent-panel app-maintenance parent-disclosure"><summary><span>应用更新</span><small>检查新内容，或重新加载后回到首页。</small></summary><div class="maintenance-body"><div class="maintenance-actions"><button class="button secondary" data-app-check>检查更新</button><button class="button secondary" data-app-reload>重新加载并回首页</button></div><p class="small-note">重新加载会停止当前播放，已保存的阅读记录、生字篮和设置会保留。</p><p id="app-update-status" class="small-note" role="status">${esc(maintenanceMessage)}</p></div></details>`;
+  return `<details class="parent-panel app-maintenance parent-disclosure"><summary><span>应用更新</span><small>检查新内容，或重新加载后回到首页。</small></summary><div class="maintenance-body"><div class="maintenance-actions"><button class="button primary" data-app-check>检查更新</button><button class="button secondary" data-app-reload>重新加载并回首页</button></div><p id="app-update-status" class="small-note" role="status">${esc(maintenanceMessage)}</p><p class="small-note">重新加载会停止当前播放，已保存的阅读记录、生字篮和设置会保留。</p></div></details>`;
 }
 function paintMaintenance() {
   document.querySelectorAll('[data-download], [data-download-book], #download-scope, [data-app-check], [data-app-reload], [data-app-refetch]').forEach(el => { el.disabled = libraryBusy; });
+  const check = app.querySelector('[data-app-check]');
+  const reload = app.querySelector('[data-app-reload]');
+  if (check && reload) {
+    check.classList.toggle('primary', !updateReady);
+    check.classList.toggle('secondary', updateReady);
+    reload.classList.toggle('primary', updateReady);
+    reload.classList.toggle('secondary', !updateReady);
+  }
   for (const [id, text] of [['app-update-status', maintenanceMessage], ['resource-refresh-status', resourceMessage]]) {
     const message = document.getElementById(id);
     if (message) message.textContent = text;
@@ -351,7 +359,10 @@ async function maintainApp(action) {
   try {
     if (action === 'check') {
       const result = await checkForUpdate();
-      report(result.available ? '新版已准备好，点击“重新加载并回首页”启用。' : '当前已是最新版本。');
+      updateReady = result.ready;
+      if (updateReady) report('新版已准备好，点击“重新加载并回首页”启用。');
+      else if (result.available) report('检测到新版，暂未准备好，请稍后再检查。');
+      else report('当前已是最新版本。');
     } else if (action === 'reload') {
       await prepareReload();
       history.replaceState(null, '', '#/shelf');

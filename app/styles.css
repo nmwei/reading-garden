@@ -54,6 +54,7 @@ dialog{border:1px solid var(--line);border-radius:25px;padding:30px;max-width:48
 @media(max-width:620px){.vowel-picker.compact-picker{grid-template-columns:repeat(4,minmax(0,1fr))}.tone-group{grid-template-columns:1fr;gap:6px}.tone-group h3{font-size:12px}.tone-group .tone-picker{gap:6px}.tone-group .tone-picker button{min-width:50px;padding:8px 12px}.practice-controls{padding:18px 14px}.practice-scopes{gap:8px}.practice-scopes button{font-size:14px;gap:4px}.practice-scopes .icon{width:14px;height:14px}}
 
 .maintenance-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.maintenance-actions .primary{border:1px solid transparent;box-shadow:none}
 #app-update-status:empty{display:none}
 :is(.sources,.parent-disclosure)>summary{display:flex;align-items:center;flex-wrap:wrap;gap:10px;min-height:48px;padding:0;cursor:pointer;list-style:none}
 :is(.sources,.parent-disclosure)>summary::-webkit-details-marker{display:none}
