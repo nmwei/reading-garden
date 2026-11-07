@@ -8,7 +8,7 @@ const pickIds = async page => {
 };
 const add = (page, id) => page.locator(`.library-book [data-reading-add="${id}"]`);
 const seed = async (page, readingList) => page.addInitScript(({readingList}) => {
-  if (!localStorage.getItem('reading-garden-v1')) localStorage.setItem('reading-garden-v1', JSON.stringify({readingList, readingHelpSeen: false, progress: {'0087': {page: 2, updated: 1, finished: true}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', pinyinScopes: ['whole']}));
+  if (!localStorage.getItem('reading-garden-v1')) localStorage.setItem('reading-garden-v1', JSON.stringify({readingList, readingHelpSeen: false, progress: {'0087': {page: 2, updated: 1, finished: true, rereading: true}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', pinyinScopes: ['whole']}));
 }, {readingList});
 
 test('shelf and catalog are separate; choosing several books stays in the catalog and survives reload', async ({page}) => {
@@ -71,9 +71,9 @@ test('six-book limit allows replacement directly in the catalog without duplicat
   expect(new Set((await readState(page)).readingList).size).toBe(6);
 });
 
-test('catalog recent, grade and theme filters work independently from the shelf', async ({page}) => {
+test('catalog reading, grade and theme filters work independently from the shelf', async ({page}) => {
   await page.goto('/#/library');
-  await page.getByRole('button', {name: '最近读过', exact: true}).click();
+  await page.getByRole('button', {name: '阅读中', exact: true}).click();
   await expect(page.locator('.book-card')).toHaveCount(0);
   for (const id of ['0087', '0156', '0009']) { await page.goto(`/#/book/${id}/2`); await expect(page.locator('.story-text')).toBeVisible(); }
   await page.goto('/#/library');
@@ -136,7 +136,9 @@ test('catalog membership toggles and persists offline at a project subpath', asy
 test('phone footers keep reading and membership controls on one row and preserve reading behavior', async ({page}) => {
   await seed(page, ['0087', '0156', '0110']);
   await page.goto('/#/book/0087/8');
-  await page.getByRole('link', {name: '回到书架', exact: true}).click();
+  await page.getByRole('button', {name: '读完啦', exact: true}).click();
+  await expect(page.getByRole('heading', {name: '又认识了一个小世界。', exact: true})).toBeVisible();
+  await page.goto('/#/shelf');
   for (const width of [320, 390, 620]) {
     await page.setViewportSize({width, height: 844});
     for (const section of ['shelf', 'library']) {
@@ -146,8 +148,9 @@ test('phone footers keep reading and membership controls on one row and preserve
         return Math.abs(read.top - button.top) < 1 && read.right <= button.left && button.right <= bounds.right && read.width >= 44 && button.width >= 44 && read.height >= 44 && button.height >= 44;
       }));
       expect(checks.every(Boolean), `${width} ${section}`).toBe(true);
-      expect(await page.locator('[data-book-id="0087"] .pick-info p').evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(12);
-      await expect(page.locator('[data-book-id="0087"] .pick-info .mobile-label')).toHaveText('读过啦');
+      expect(await page.locator('[data-book-id="0156"] .pick-info p').evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(12);
+      await expect(page.locator('[data-book-id="0087"] .pick-info p')).toHaveCount(0);
+      await expect(page.locator('[data-book-id="0087"] .card-actions a')).toHaveText('再读一遍');
       await expect(page.locator('[data-book-id="0156"] .pick-info .mobile-label')).toHaveText('还没读');
     }
   }

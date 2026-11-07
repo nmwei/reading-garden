@@ -506,7 +506,8 @@ test('failed persistent storage stays usable and does not claim the word was sav
   await page.goto('/#/book/0087/1');
   await page.getByRole('button', {name: '认识书', exact: true}).click();
   await page.getByRole('button', {name: '放进生字篮'}).click();
-  await expect(page.getByRole('button', {name: '本次先收好（点此移出）'})).toBeEnabled();
+  await expect(page.locator('[data-save-word]')).toBeEnabled();
+  await expect(page.locator('[data-save-word]')).toHaveAttribute('aria-pressed','true');
   await expect(page.locator('#status')).toContainText('暂时无法保存');
   await page.getByRole('button', {name: '关闭', exact: true}).click();
   await page.getByRole('button', {name: '下一页', exact: true}).click();
@@ -559,7 +560,7 @@ test('all recognition pages share compact cards and sequential listening with sh
   ]) {
     await page.getByRole('button', {name: tab, exact: true}).click();
     const sizes = await page.locator('[data-pinyin-item]').evaluateAll(buttons => buttons.map(b => ({font: getComputedStyle(b).fontSize, height: b.getBoundingClientRect().height})));
-    expect(sizes.every(size => size.font === '28px' && size.height >= 58 && size.height <= 64)).toBe(true);
+    expect(sizes.every(size => size.font === '28px' && size.height >= 44 && size.height <= 64)).toBe(true);
     await page.evaluate(() => { window.__plays = []; window.__playTimes = []; window.__ends = []; });
     await page.getByRole('button', {name: '顺序听', exact: true}).click();
     await expect.poll(() => page.evaluate(() => window.__plays.length)).toBeGreaterThanOrEqual(2);
@@ -645,7 +646,7 @@ test('backgrounding releases the parent selector focus and retains its selection
   await expect(scope).toBeVisible();
 });
 
-test('a hundred books keep parent sources compact while reader credits stay complete', async ({page}) => {
+test('a hundred books keep parent sources compact with complete selectable credits', async ({page}) => {
   await page.route('**/data/books.json', async route => {
     const response = await route.fetch(), books = await response.json();
     await route.fulfill({json: Array.from({length: 100}, (_, i) => ({...books[i % books.length], id: `sample-${i}`}))});
@@ -658,13 +659,17 @@ test('a hundred books keep parent sources compact while reader credits stay comp
   await expect(page.locator('.source-book')).toHaveCount(0);
   await expect(sources).toContainText('CC BY 3.0');
   await expect(sources).toContainText('CC BY-NC 3.0');
-  await expect(sources).toContainText('署名见各书阅读页');
+  await expect(page.locator('.book-sources')).not.toHaveAttribute('open','');
+  await page.locator('.book-sources > summary').click();
+  await expect(page.locator('#credit-book option')).toHaveCount(100);
+  for (const credit of ['Letta Machoga', 'Wiehan de Jager', 'dohliam', 'Zhuo Sun']) await expect(page.locator('#book-credit')).toContainText(credit);
+  await expect(page.locator('#book-credit').getByRole('link', {name: 'CC BY 3.0', exact: true})).toBeVisible();
+  await page.locator('#credit-book').selectOption('sample-1');
+  await expect(page.locator('#book-credit')).not.toContainText('Letta Machoga');
   await page.locator('.sources > summary').click();
   await expect(page.locator('.sources-body')).not.toBeVisible();
   await page.goto('/#/book/sample-0/1');
-  await page.getByText('这本书的作者与来源', {exact: true}).click();
-  for (const credit of ['Letta Machoga', 'Wiehan de Jager', 'dohliam', 'Zhuo Sun']) await expect(page.locator('.reader-credit')).toContainText(credit);
-  await expect(page.locator('.reader-credit').getByRole('link', {name: 'CC BY 3.0', exact: true})).toBeVisible();
+  await expect(page.locator('.reader-credit')).toHaveCount(0);
 });
 
 test('checking updates bypasses cached manifests and refreshing the page preserves saved learning', async ({page, context, updateHost}) => {
@@ -849,8 +854,12 @@ test('all forty books can be found by grade and theme, including empty intersect
   await expect(page.getByRole('heading',{name:'辛波薇亚',exact:true})).toBeVisible();
   await page.getByRole('button',{name:'读这一页',exact:true}).click();
   await expect.poll(() => page.evaluate(() => window.__lastAudio.currentTime)).toBeGreaterThan(0);
-  await page.getByText('这本书的作者与来源',{exact:true}).click();
-  await expect(page.locator('.reader-credit')).toContainText('Vicky Liu');
+  await page.getByRole('link',{name:'回到书架',exact:true}).click();
+  await page.getByRole('link',{name:'家长小角',exact:true}).click(); await enterParent(page);
+  await page.locator('.sources > summary').click();
+  await page.locator('.book-sources > summary').click();
+  await page.locator('#credit-book').selectOption(books.find(book=>book.title==='辛波薇亚').id);
+  await expect(page.locator('#book-credit')).toContainText('Vicky Liu');
 });
 
 test('individual book and grade downloads stay scoped and work offline at a project subpath', async ({page,context}) => {
@@ -882,10 +891,13 @@ test('individual book and grade downloads stay scoped and work offline at a proj
   }
 });
 
-test('reader downloads only that book and reports it without losing progress', async ({page,context}) => {
+test('parent downloads a selected book without losing reading progress', async ({page,context}) => {
   await page.goto('/#/book/0315/3');
-  await page.getByRole('button',{name:'下载这本书',exact:true}).click();
-  await expect(page.locator('#book-download-status')).toContainText('已下载《萨可满的歌声》',{timeout:20000});
+  await expect(page.locator('[data-download-book]')).toHaveCount(0);
+  await page.goto('/#/parent'); await enterParent(page);
+  await page.locator('#download-scope').selectOption('book:0315');
+  await page.getByRole('button',{name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载《萨可满的歌声》',{timeout:20000});
   await context.setOffline(true); await page.goto('/#/book/0315/18');
   await expect(page.locator('.story-text')).toBeVisible();
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);

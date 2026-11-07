@@ -25,7 +25,7 @@ test('source groups have separate selections, useful counts and a clear reset', 
   await expect(page.locator('[data-book-level][aria-pressed=true]')).toHaveCount(1);
 });
 
-test('counts follow theme and recent scope without being narrowed by the selected level', async ({page}) => {
+test('counts follow theme and reading scope without being narrowed by the selected level', async ({page}) => {
   await page.goto('/#/library');
   await page.locator('#book-theme').selectOption('生活发现');
   const themed = books.filter(book => book.tag === '生活发现');
@@ -39,7 +39,7 @@ test('counts follow theme and recent scope without being narrowed by the selecte
   await page.goto('/#/library');
   await page.locator('#book-theme').selectOption('全部故事');
   await page.getByRole('button', {name:'全部级别',exact:true}).click();
-  await page.getByRole('button', {name:'最近读过',exact:true}).click();
+  await page.getByRole('button', {name:'阅读中',exact:true}).click();
   await expect(page.locator('.level-all small')).toHaveText('2本');
   await page.locator('#book-theme').selectOption('生活发现');
   await expect(page.locator('.level-all small')).toHaveText('1本');

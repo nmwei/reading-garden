@@ -12,6 +12,7 @@ test('feedback works offline under a subpath, and leaving cancels the delayed an
  await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
  await page.evaluate(async()=>{const {downloadLibrary}=await import('./app/offline.js');await downloadLibrary(()=>{},'pinyin');});
  await context.setOffline(true);await page.reload();
+ expect(await page.evaluate(async()=> (await fetch('./app/study-layout.css')).ok)).toBe(true);
  await page.getByRole('button',{name:'听音找朋友',exact:true}).click();
  const answer=await page.evaluate(async()=>{const p=await import('./app/pinyin.js');return p.practicePool('finals')[0].id;});
  const wrong=page.locator(`[data-answer]:not([data-answer="${answer}"])`).first();

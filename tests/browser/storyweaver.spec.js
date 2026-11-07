@@ -100,7 +100,7 @@ test('wordless pages keep their place and illustration without consuming the fir
     expect(layout).toEqual({sameWidth:true,below:true,compact:true});
   }
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).readingHelpSeen)).toBe(false);
-  await expect(page.locator('[data-download-book]')).toBeVisible();
+  await expect(page.locator('[data-download-book]')).toHaveCount(0);
   await page.locator('[data-next]').click();
   await expect(page.locator('.story-text')).toHaveText(book.pages[0].text);
   await expect(page.locator('.reading-hint')).toBeVisible();
@@ -132,7 +132,7 @@ test('explicit text-only pages preserve character help and page order without br
   await expect(page.locator('[data-page-play]')).toBeVisible();
   await expect(page.locator('.story-text')).toHaveText(firstText.text);
   await expect(page.locator('.reading-hint')).toBeVisible();
-  await expect(page.locator('[data-download-book]')).toBeVisible();
+  await expect(page.locator('[data-download-book]')).toHaveCount(0);
   for (const width of [320,820,1440]) {
     await page.setViewportSize({width,height:1000});
     expect(await page.locator('.story-text').evaluate(el => {
@@ -194,11 +194,16 @@ test('source levels and downloads never mix StoryWeaver 2 with Storybooks Canada
   await expect(page.locator('[data-book-id="sw-92448"]')).toBeVisible();
   await page.goto('/#/book/sw-92448/4'); await page.reload();
   await expect(page.locator('.story-text')).toContainText('活动：');
-  await page.getByText('这本书的作者与来源',{exact:true}).click();
-  await expect(page.locator('.reader-credit')).toContainText('© Jala, 2019');
-  await expect(page.locator('.reader-credit')).toContainText('CC BY 4.0');
+  await expect(page.locator('.reader-credit')).toHaveCount(0);
+  await page.goto('/#/parent');
+  await page.getByRole('button',{name:'按住 1 秒进入',exact:true}).click({delay:1150});
+  await page.locator('.sources > summary').click();
+  await page.locator('.book-sources > summary').click();
+  await page.locator('#credit-book').selectOption('sw-92448');
+  await expect(page.locator('#book-credit')).toContainText('© Jala, 2019');
+  await expect(page.locator('#book-credit')).toContainText('CC BY 4.0');
   await expect(page.getByRole('link',{name:'StoryWeaver 原文',exact:true})).toHaveAttribute('href',book.source);
-  await expect(page.locator('.reader-credit')).not.toContainText('undefined');
+  await expect(page.locator('#book-credit')).not.toContainText('undefined');
   await page.goto('/#/library');
   await page.getByRole('button', {name:'Storybooks Canada · 2级',exact:true}).click();
   await expect(page.locator('.book-card')).toHaveCount(11);
@@ -209,8 +214,13 @@ test('source levels and downloads never mix StoryWeaver 2 with Storybooks Canada
 
 test('image-only download set supports offline text and illustrations at a project subpath', async ({page,context}) => {
   await page.goto('http://localhost:4179/reading-garden/#/book/sw-92448/1');
-  await page.getByRole('button', {name:'下载这本书',exact:true}).click();
-  await expect(page.locator('#book-download-status')).toContainText('已下载《绘画游戏》');
+  await expect(page.locator('.story-text')).toHaveText(book.pages[0].text);
+  await page.goto('http://localhost:4179/reading-garden/#/parent');
+  await page.getByRole('button', {name:'按住 1 秒进入',exact:true}).click({delay:1150});
+  await page.locator('#download-scope').selectOption('book:sw-92448');
+  await page.getByRole('button', {name:'下载离线故事包',exact:true}).click();
+  await expect(page.locator('#download-status')).toContainText('已下载《绘画游戏》');
+  await page.goto('http://localhost:4179/reading-garden/#/book/sw-92448/1');
   const info = await page.evaluate(async () => (await fetch('./precache.json').then(r => r.json())).books['sw-92448']);
   expect(info.files).toHaveLength(13);
   expect(info.files.every(path => path.endsWith('.jpg'))).toBe(true);
@@ -222,7 +232,7 @@ test('image-only download set supports offline text and illustrations at a proje
   await expect.poll(() => page.locator('.page-art img').evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
   await page.getByRole('button', {name:'认识圆',exact:true}).click();
   await page.getByRole('button', {name:'放进生字篮',exact:true}).click();
-  await expect(page.getByRole('button', {name:'移出生字篮',exact:true})).toBeVisible();
+  await expect(page.locator('[data-save-word]')).toHaveAttribute('aria-pressed','true');
 });
 
 test('new story and qualified cards fit phone, iPad and desktop without cropped artwork', async ({page}, testInfo) => {
