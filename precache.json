@@ -1,6 +1,6 @@
 {
-  "version": "3670db699e4d795d",
-  "bytes": 236159998,
+  "version": "b0227444083ef3bf",
+  "bytes": 236166128,
   "files": [
     "app/audio.js",
     "app/core.js",
@@ -12,6 +12,7 @@
     "app/parent-gate.js",
     "app/pinyin.js",
     "app/reading-levels.js",
+    "app/study-layout.css",
     "app/styles.css",
     "assets/audio/feedback-correct.wav",
     "assets/audio/feedback-retry.wav",

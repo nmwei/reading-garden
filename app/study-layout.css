@@ -1,0 +1,83 @@
+/* Shared selection + activity workspace. Long content and open notes can grow. */
+.study-workspace { --study-gap: 20px; display: grid; gap: var(--study-gap); }
+.study-options, .study-stage { min-width: 0; }
+.study-stage { display: flex; flex-direction: column; gap: 16px; }
+.study-stage .sequence-controls { margin: 0; flex-wrap: wrap; }
+.study-stage .vowel-lesson { margin: 0; flex: 1; }
+.quiz-result { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px 16px; min-height: 48px; }
+.quiz-result .quiz-feedback { margin: 0; }
+.quiz-answer-note { max-width: 340px; text-align: left; }
+.quiz-answer-note summary { min-height: 44px; padding-block: 12px; cursor: pointer; }
+.study-note summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
+.study-note summary::before { content: '▸'; margin-right: 8px; }
+.study-note[open] summary::before { content: '▾'; }
+@media (min-width: 901px) {
+  .main-content:has(.study-workspace) { padding-block: 16px 8px; }
+  main:has(.study-workspace) .page-header { margin-bottom: 10px; }
+  main:has(.study-workspace) .page-header h1 { font-size: 26px; margin: 0; }
+  main:has(.study-workspace) .page-header .eyebrow { display: none; }
+  main:has(.study-workspace) .page-description { margin: 8px 0 12px; }
+  main:has(.study-workspace) .lesson-tabs { margin-bottom: 16px; }
+  main:has(.study-workspace) .lesson-note { margin-top: 12px; }
+  .study-workspace { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; }
+  .study-stage { min-height: clamp(360px, calc(100svh - 290px), 620px); }
+  .study-options > :first-child { margin-top: 0; }
+  .study-options .final-rows { display: grid; margin: 12px 0 0; gap: 10px; }
+  .study-options .final-row { grid-template-columns: 60px minmax(0, 1fr); gap: 8px; margin: 0; }
+  .study-options .vowel-picker { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .study-options .vowel-picker button { flex: 0 0 auto; min-width: 44px; min-height: 44px; padding: 4px 8px; font-size: 28px; line-height: 1.2; }
+  .study-options .lesson-section-title { font-size: 17px; margin: 14px 0 4px; }
+  .study-stage .vowel-lesson { grid-template-columns: 1fr; }
+  .study-stage .vowel-display { min-height: 120px; padding: 12px; }
+  .study-stage .pinyin-lines { height: 120px; }
+  .study-stage .pinyin-lines span { font-size: 90px; }
+  .study-stage .lesson-copy { padding: 18px; }
+  .study-stage .sample-sound { margin: 10px 0 14px; }
+  .study-stage .lesson-copy > .eyebrow { display: none; }
+  .study-stage .lesson-copy h2 { font-size: 22px; margin: 12px 0; }
+  .study-stage .lesson-copy .small-note { margin-bottom: 0; }
+  .study-options .tone-intro { margin: 0 0 12px; }
+  .study-options .tone-intro h2 { font-size: 18px; }
+  .study-options .tone-groups { margin: 0; gap: 10px; }
+  .study-options .tone-group { grid-template-columns: 70px minmax(0, 1fr); gap: 8px; }
+  .study-options .tone-picker { gap: 6px; }
+  .study-options .tone-picker button { min-width: 44px; min-height: 44px; padding: 4px 8px; }
+  .study-stage .tone-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; }
+  .study-stage .tone-card { padding: 12px 10px; }
+  .study-stage .tone-card > svg { width: 64px; height: 36px; margin: 6px auto; }
+  .study-stage .tone-card strong { font-size: 34px; }
+  .study-stage .tone-card p { margin: 6px 0; min-height: 0; line-height: 1.4; }
+  .study-stage .tone-listen { margin: 6px 0 0; }
+  .study-stage .tone-listen svg { width: 18px; height: 18px; margin: 0; }
+  .study-quiz { grid-template-columns: 1fr; gap: 16px; }
+  .study-quiz .practice-controls { padding: 12px 20px; margin: 0; display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+  .study-quiz .practice-controls h2 { font-size: 16px; margin: 0; }
+  .study-quiz .practice-controls .small-note { margin: 0; }
+  .study-quiz .practice-scopes { margin: 0; gap: 8px; }
+  .study-quiz .practice-scopes button { min-height: 44px; padding: 8px 16px; }
+  .study-quiz .quiz-lesson { margin: 0; padding: 20px; min-height: 0; }
+  .study-quiz .quiz-lesson h2 { margin: 8px 0 16px; font-size: 24px; }
+  .study-quiz .listen-orb { width: 84px; height: 84px; margin: 0 auto; }
+  .study-quiz .quiz-options { margin: 12px 0; }
+  .study-quiz .quiz-options button { width: 88px; height: 88px; font-size: 38px; }
+  .study-quiz .quiz-feedback { margin-bottom: 0; }
+  /* An intrinsic text height can exceed this budget; nothing is clipped. */
+  .reader { --reading-height: max(320px, calc(100svh - 266px)); padding: 20px 28px 12px; }
+  .reader-header { margin-bottom: 12px; }
+  .reader-meta { margin-bottom: 10px; }
+  .reading-progress { margin-bottom: 16px; }
+  .reading-spread { grid-template-columns: minmax(0, 45fr) minmax(0, 55fr); min-height: var(--reading-height); }
+  .page-art { padding: 16px; align-self: start; }
+  .page-art img { max-height: calc(var(--reading-height) - 34px); object-fit: contain; }
+  .page-art .art-frame { width: min(100%, calc((var(--reading-height) - 34px) * var(--art-ratio))); }
+  .page-art .art-frame img { max-height: none; }
+  .page-words { padding: 24px; }
+  .story-text { margin: 16px 0 20px; font-size: clamp(30px, 2.7vw, 36px); line-height: 1.8; }
+  .reading-hint { margin: 12px 0 0; }
+  .page-controls { margin-top: 16px; }
+
+  .reading-spread.wordless { min-height: var(--reading-height); }
+  .reading-spread.wordless .page-art img { max-height: calc(var(--reading-height) - 84px); }
+  .reading-spread.wordless .art-frame img { max-height: none; }
+  .reading-spread.wordless .art-frame { width: min(100%, calc((var(--reading-height) - 84px) * var(--art-ratio))); }
+}

@@ -200,7 +200,7 @@ function reader(showHint = false) {
     <div class="reading-progress" aria-label="阅读进度"><span style="width:${(page + 1) / book.pages.length * 100}%"></span></div>
     <section class="reading-spread${current.textOnly ? ' text-only' : current.wordless ? ' wordless' : ''}" aria-label="第${page + 1}页">${current.image ? `<div class="page-art">${storyArt(current, `《${book.title}》第${page + 1}页插图`)}</div>` : ''}<div class="page-words"><span class="eyebrow">第 ${page + 1} 页 / 共 ${book.pages.length} 页</span>${current.text ? `<p class="story-text" aria-label="${esc(current.text)}">${chars}</p>` : ''}${current.text ? `<button class="button primary play-page" data-page-play aria-pressed="false">${icon('sound')}读这一页</button>` : ''}${showHint && current.text ? '<p class="reading-hint">遇到不认识的字，点一下就能求助。</p>' : ''}</div></section>
     <nav class="page-controls" aria-label="翻页"><button class="button secondary" data-prev ${page === 0 ? 'disabled' : ''}>${icon('back')}上一页</button><div class="page-dots">${book.pages.map((_, i) => `<button class="page-dot ${i === page ? 'current' : ''}" data-page="${i}" aria-label="第${i + 1}页" ${i === page ? 'aria-current="page"' : ''}><span></span></button>`).join('')}</div><button class="button ${page === book.pages.length - 1 ? 'primary' : 'secondary'}" data-next>${page === book.pages.length - 1 ? '读完啦' : '下一页'}${icon(page === book.pages.length - 1 ? 'check' : 'arrow')}</button></nav>
-    <div class="reader-offline"><button class="text-button" data-download-book="${book.id}">${icon('download')}下载这本书</button><span id="book-download-status" class="small-note" role="status"></span></div><details class="reader-credit"><summary>这本书的作者与来源</summary>${bookCredit(book)}</details></main>`;
+    </main>`;
 }
 
 function showWord(index, entry) {
@@ -254,7 +254,7 @@ function wordsView() {
 function pinyin() {
   const tabs = [['finals', '认识韵母'], ['initials', '声母与 y w'], ['whole', '整体认读'], ['tones', '听听四声'], ['quiz', '听音找朋友']];
   const lesson = pinyinTab === 'finals' ? finalLesson() : pinyinTab === 'initials' ? initialLesson() : pinyinTab === 'whole' ? wholeLesson() : pinyinTab === 'tones' ? toneLesson() : quizLesson();
-  return shell('pinyin', `<header class="page-header"><div><span class="eyebrow">拼音小课堂 · 一起听读音</span><h1>听听声音，动动小嘴巴。</h1></div><span class="header-note">${icon('sun')}和家长一起学</span></header><p class="page-description">24 个韵母、21 个声母和 y、w，还有 16 个整体认读音节。一次认识一点点。</p><div class="lesson-tabs" aria-label="拼音活动">${tabs.map(([id, title]) => `<button data-pinyin-tab="${id}" class="${pinyinTab === id ? 'selected' : ''}" aria-pressed="${pinyinTab === id}">${title}</button>`).join('')}</div>${lesson}<p class="lesson-note">这里学习拼音，故事里安心读汉字。两边可以随时切换。</p>`);
+  return shell('pinyin', `<header class="page-header"><div><span class="eyebrow">拼音小课堂 · 一起听读音</span><h1>听听声音，动动小嘴巴。</h1></div><span class="header-note">${icon('sun')}和家长一起学</span></header><p class="page-description">24 个韵母、21 个声母和 y、w，还有 16 个整体认读音节。一次认识一点点。</p><div class="lesson-tabs" aria-label="拼音活动">${tabs.map(([id, title]) => `<button data-pinyin-tab="${id}" class="${pinyinTab === id ? 'selected' : ''}" aria-pressed="${pinyinTab === id}">${title}</button>`).join('')}</div><div class="study-workspace study-${pinyinTab}">${lesson}</div><p class="lesson-note">这里学习拼音，故事里安心读汉字。两边可以随时切换。</p>`);
 }
 function soundPicker(items, label, compact = false) {
   return `<div class="vowel-picker ${compact ? 'compact-picker' : ''}" aria-label="选择${label}">${items.map(item => `<button data-pinyin-item="${item.id}" class="${item.color} ${item.id === selectedPinyin[pinyinTab] ? 'selected' : ''}" aria-label="${label}${item.symbol}" aria-pressed="${item.id === selectedPinyin[pinyinTab]}">${item.symbol}</button>`).join('')}</div>`;
@@ -269,7 +269,7 @@ function sequenceControls(kind, title) {
 }
 function finalLesson() {
   const item = FINALS.find(item => item.id === selectedPinyin.finals);
-  return `<p class="small-note">从 a、o、e 开始。点一个就能听，也可以按顺序跟读。</p><div class="final-rows">${FINAL_GROUPS.map(group => `<section class="final-row"><h2>${group.label}</h2>${soundPicker(group.items, group.label, true)}</section>`).join('')}</div>${sequenceControls('finals', '顺序听')}${soundLesson(item)}`;
+  return `<div class="study-options"><p class="small-note">从 a、o、e 开始。点一个就能听，也可以按顺序跟读。</p><div class="final-rows">${FINAL_GROUPS.map(group => `<section class="final-row"><h2>${group.label}</h2>${soundPicker(group.items, group.label, true)}</section>`).join('')}</div></div><div class="study-stage">${soundLesson(item)}${sequenceControls('finals', '顺序听')}</div>`;
 }
 function showSequenceState(status) {
   sequencePaused = status === 'paused';
@@ -297,15 +297,15 @@ async function startPinyinSequence(kind) {
 }
 function initialLesson() {
   const item = [...INITIALS, ...SPELLING_LETTERS].find(item => item.id === selectedPinyin.initials);
-  return `<h2 class="lesson-section-title">21 个声母</h2><p class="small-note">这里听呼读音，帮助认识声母；拼读时要读得轻、短。</p>${soundPicker(INITIALS, '声母', true)}<h2 class="lesson-section-title">再认识 y 和 w</h2><p class="small-note">它们是拼写字母，单独认识。顺序听会先读声母，再读 y、w。</p>${soundPicker(SPELLING_LETTERS, '拼写字母', true)}${sequenceControls('initials', '顺序听')}${soundLesson(item)}`;
+  return `<div class="study-options"><h2 class="lesson-section-title">21 个声母</h2><p class="small-note">这里听呼读音，帮助认识声母；拼读时要读得轻、短。</p>${soundPicker(INITIALS, '声母', true)}<h2 class="lesson-section-title">再认识 y 和 w</h2><p class="small-note">它们是拼写字母，单独认识。顺序听会先读声母，再读 y、w。</p>${soundPicker(SPELLING_LETTERS, '拼写字母', true)}</div><div class="study-stage">${soundLesson(item)}${sequenceControls('initials', '顺序听')}</div>`;
 }
 function wholeLesson() {
   const item = WHOLE_SYLLABLES.find(item => item.id === selectedPinyin.whole);
-  return `<h2 class="lesson-section-title">16 个整体认读音节，整个一起读。</h2>${soundPicker(WHOLE_SYLLABLES, '整体认读音节', true)}${sequenceControls('whole', '顺序听')}${soundLesson(item)}`;
+  return `<div class="study-options"><h2 class="lesson-section-title">16 个整体认读音节，整个一起读。</h2>${soundPicker(WHOLE_SYLLABLES, '整体认读音节', true)}</div><div class="study-stage">${soundLesson(item)}${sequenceControls('whole', '顺序听')}</div>`;
 }
 function toneLesson() {
   const examples = toneExamples(toneBase);
-  return `<div class="tone-intro"><h2>同样的音节，声音走不同的路。</h2><p>选一个音节，再听听它的四声。</p></div><div class="tone-groups" aria-label="选择四声音节">${TONE_GROUPS.map(group => `<section class="tone-group"><h3>${group.label}</h3><div class="lesson-groups tone-picker">${group.bases.map(base => `<button data-tone-base="${base.id}" aria-pressed="${base.id === toneBase}" class="${base.id === toneBase ? 'selected' : ''}">${base.id}</button>`).join('')}</div></section>`).join('')}</div><div class="tone-grid">${examples.map(t => `<button class="tone-card" data-pinyin-play="${t.id}" aria-label="听${t.name}${t.symbol}"><span class="eyebrow">${t.name}</span><svg viewBox="0 0 100 100" aria-hidden="true"><polyline points="${t.points}"/></svg><strong>${t.symbol}</strong><p>${t.tip}</p><span class="tone-listen">${icon('sound')}听一听</span></button>`).join('')}</div>${sequenceControls('tones', '依次听四声')}<p class="small-note">每组完整音节都可以听四声。yi、wu、yu 是 i、u、ü 单独成音节的拼写；wei、you、yue 帮助听复韵音节，dong 带声母 d，不是 ong 的独立发音。这里只听单独声调，不练词语变调或轻声。</p>`;
+  return `<div class="study-options"><div class="tone-intro"><h2>同样的音节，声音走不同的路。</h2><p>选一个音节，再听听它的四声。</p></div><div class="tone-groups" aria-label="选择四声音节">${TONE_GROUPS.map(group => `<section class="tone-group"><h3>${group.label}</h3><div class="lesson-groups tone-picker">${group.bases.map(base => `<button data-tone-base="${base.id}" aria-pressed="${base.id === toneBase}" class="${base.id === toneBase ? 'selected' : ''}">${base.id}</button>`).join('')}</div></section>`).join('')}</div></div><div class="study-stage"><div class="tone-grid">${examples.map(t => `<button class="tone-card" data-pinyin-play="${t.id}" aria-label="听${t.name}${t.symbol}"><span class="eyebrow">${t.name}</span><svg viewBox="0 0 100 100" aria-hidden="true"><polyline points="${t.points}"/></svg><strong>${t.symbol}</strong><p>${t.tip}</p><span class="tone-listen">${icon('sound')}听一听</span></button>`).join('')}</div>${sequenceControls('tones', '依次听四声')}<details class="study-note"><summary>四声说明</summary><p class="small-note">每组完整音节都可以听四声。yi、wu、yu 是 i、u、ü 单独成音节的拼写；wei、you、yue 帮助听复韵音节，dong 带声母 d，不是 ong 的独立发音。这里只听单独声调，不练词语变调或轻声。</p></details></div>`;
 }
 function ensureQuiz() {
   if (quiz) return;
@@ -324,7 +324,7 @@ function quizLesson() {
   const controls = `<section class="practice-controls" aria-label="练习设置"><h2>想练哪些朋友？</h2><p class="small-note">可以选多类，再点一次取消。</p><div class="practice-scopes" role="group" aria-label="练习范围">${PRACTICE_CATEGORIES.map(group => `<button data-quiz-scope="${group.id}" aria-pressed="${state.pinyinScopes.includes(group.id)}">${state.pinyinScopes.includes(group.id) ? icon('check') : ''}${group.label}</button>`).join('')}</div><p class="small-note" data-practice-summary>${selected.length ? `已选：${selected.map(group => group.label).join('、')}。每题三个选项。` : '请选择至少一类，再开始听音。'}</p></section>`;
   if (!quiz) return `${controls}<section class="quiz-lesson"><h2>先选一类拼音朋友吧</h2><p>选好范围，就可以听声音找朋友啦。</p></section>`;
   const initialPractice = current.id === 'initials';
-  return `${controls}<section class="quiz-lesson"><span class="eyebrow" data-question-scope>这一题 · ${current.label}</span><h2>声音里的朋友，是谁呢？</h2><button class="listen-orb" data-quiz-listen aria-label="播放题目声音">${icon('sound')}</button><p>${initialPractice ? '这里听声母呼读音。先点小喇叭，再选一个。' : '先点小喇叭，再选一个。'}</p><div class="quiz-options">${quiz.choices.map(item => `<button data-answer="${item.id}" class="${quiz.chosen === item.id ? (quiz.correct ? 'correct' : 'retry') : ''}" ${quiz.correct ? 'disabled' : ''} aria-label="选择${item.symbol}">${item.symbol}${quiz.correct && quiz.chosen === item.id ? icon('check') : ''}</button>`).join('')}</div><p class="quiz-feedback" role="status">${quiz.correct ? `找到了！声音里的朋友是 ${quiz.answer.symbol}。` : quiz.chosen ? '再听一听，慢慢找。' : '不着急，可以听很多次。'}</p>${quiz.correct ? '<p class="small-note">' + quiz.answer.note + '</p><button class="button primary" data-next-quiz>再找一个' + icon('arrow') + '</button>' : ''}</section>`;
+  return `${controls}<section class="quiz-lesson"><span class="eyebrow" data-question-scope>这一题 · ${current.label}</span><h2>声音里的朋友，是谁呢？</h2><button class="listen-orb" data-quiz-listen aria-label="播放题目声音">${icon('sound')}</button><p>${initialPractice ? '这里听声母呼读音。先点小喇叭，再选一个。' : '先点小喇叭，再选一个。'}</p><div class="quiz-options">${quiz.choices.map(item => `<button data-answer="${item.id}" class="${quiz.chosen === item.id ? (quiz.correct ? 'correct' : 'retry') : ''}" ${quiz.correct ? 'disabled' : ''} aria-label="选择${item.symbol}">${item.symbol}${quiz.correct && quiz.chosen === item.id ? icon('check') : ''}</button>`).join('')}</div><div class="quiz-result"><p class="quiz-feedback" role="status">${quiz.correct ? `找到了！声音里的朋友是 ${quiz.answer.symbol}。` : quiz.chosen ? '再听一听，慢慢找。' : '不着急，可以听很多次。'}</p>${quiz.correct ? '<details class="quiz-answer-note"><summary>读音提示</summary><p class="small-note">' + quiz.answer.note + '</p></details><button class="button primary" data-next-quiz>再找一个' + icon('arrow') + '</button>' : ''}</div></section>`;
 }
 
 function bookCredit(book) {
@@ -332,6 +332,7 @@ function bookCredit(book) {
   return `<div class="credit-body"><p>文字：${esc(book.credits['Written by'])} · 插图：${esc(book.credits['Illustrated by'])}</p><p>中文翻译：${esc(book.credits['Translated by'])}${narrator ? ` · 普通话朗读：${esc(narrator)}` : ''}</p>${book.copyright ? `<p>${esc(book.copyright)}</p>` : ''}<p><a href="${book.source}" target="_blank" rel="noopener">${esc(book.sourceLevel.system)} 原文</a> · <a href="${book.licenseUrl}" target="_blank" rel="noopener">${book.license}</a></p><p>${esc(book.changes || '文字、插图和录音保持原样，阅读提示与词语解释由本项目编写。')}${book.license.includes('NC') ? '本书按非商业许可使用。' : ''}</p></div>`;
 }
 function sourceSummary() {
+  const selectedBook = routeFromHash(lastPublicHash, books).book || books[0];
   const pinyinSources = [...new Map(sources.filter(source => source.kind === 'pinyin').map(source => [JSON.stringify([source.source, source.author, source.license, source.licenseUrl]), source])).values()];
   const platforms = new Map();
   for (const book of books) {
@@ -339,13 +340,13 @@ function sourceSummary() {
     if (!platforms.has(key)) platforms.set(key, {name: book.sourceLevel.system, licenses: new Map()});
     platforms.get(key).licenses.set(book.licenseUrl, book.license);
   }
-  return `<details class="parent-panel sources"><summary><span>每一本书，都有来处</span><small>查看绘本与声音来源</small></summary><div class="sources-body"><h3>绘本</h3>${[...platforms].map(([url, platform]) => `<p class="source-platform"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(platform.name)}</a> · ${[...platform.licenses].map(([url, label]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(' / ')}</p>`).join('')}<p class="small-note">署名见各书阅读页；标注 NC 的绘本仅限非商业使用。</p><div class="source-audio"><h3>拼音录音</h3>${pinyinSources.map(source => `<p><a href="${source.source}" target="_blank" rel="noopener">${esc(source.author)}</a> · ${source.permission?.status === 'user-confirmed' ? '经授权用于本项目' : source.licenseUrl ? `<a href="${source.licenseUrl}" target="_blank" rel="noopener">${esc(source.license)}</a>` : esc(source.license)}</p>`).join('')}</div></div></details>`;
+  return `<details class="parent-panel sources"><summary><span>每一本书，都有来处</span><small>查看绘本与声音来源</small></summary><div class="sources-body"><h3>绘本</h3>${[...platforms].map(([url, platform]) => `<p class="source-platform"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(platform.name)}</a> · ${[...platform.licenses].map(([url, label]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(' / ')}</p>`).join('')}<details class="book-sources"><summary>逐本作者与来源</summary><label for="credit-book">选择绘本</label><select id="credit-book" data-credit-book>${books.map(book => `<option value="${esc(book.id)}" ${book.id === selectedBook.id ? 'selected' : ''}>${esc(book.title)}</option>`).join('')}</select><div id="book-credit">${bookCredit(selectedBook)}</div></details><p class="small-note">标注 NC 的绘本仅限非商业使用。</p><div class="source-audio"><h3>拼音录音</h3>${pinyinSources.map(source => `<p><a href="${source.source}" target="_blank" rel="noopener">${esc(source.author)}</a> · ${source.permission?.status === 'user-confirmed' ? '经授权用于本项目' : source.licenseUrl ? `<a href="${source.licenseUrl}" target="_blank" rel="noopener">${esc(source.license)}</a>` : esc(source.license)}</p>`).join('')}</div></div></details>`;
 }
 function maintenancePanel() {
   return `<details class="parent-panel app-maintenance parent-disclosure"><summary><span>应用更新</span><small>检查新内容，或重新加载后回到首页。</small></summary><div class="maintenance-body"><div class="maintenance-actions"><button class="button primary" data-app-check>检查更新</button><button class="button secondary" data-app-reload>重新加载并回首页</button></div><p id="app-update-status" class="small-note" role="status">${esc(maintenanceMessage)}</p><p class="small-note">重新加载会停止当前播放，已保存的阅读记录、生字篮和设置会保留。</p></div></details>`;
 }
 function paintMaintenance() {
-  document.querySelectorAll('[data-download], [data-download-book], #download-scope, [data-app-check], [data-app-reload], [data-app-refetch]').forEach(el => { el.disabled = libraryBusy; });
+  document.querySelectorAll('[data-download], #download-scope, [data-app-check], [data-app-reload], [data-app-refetch]').forEach(el => { el.disabled = libraryBusy; });
   const check = app.querySelector('[data-app-check]');
   const reload = app.querySelector('[data-app-reload]');
   if (check && reload) {
@@ -514,7 +515,6 @@ app.addEventListener('click', async event => {
   else if (el.hasAttribute('data-app-check')) await maintainApp('check');
   else if (el.hasAttribute('data-app-reload')) await maintainApp('reload');
   else if (el.hasAttribute('data-app-refetch')) await maintainApp('refetch');
-  else if (el.hasAttribute('data-download-book')) await downloadSelection(`book:${el.dataset.downloadBook}`, 'book-download-status');
   else if (el.hasAttribute('data-download')) await downloadSelection(offlineScope);
   else if (el.hasAttribute('data-reset')) {
     confirmDialog.innerHTML = `<h2 id="confirm-title">清除本机学习记录？</h2><p>小书架、阅读位置、读完标记、生字篮和偏好都会删除。离线故事包仍保留。</p><div class="dialog-actions"><button class="button secondary" data-cancel-reset>保留记录</button><button class="button primary" data-confirm-reset>确认清除</button></div>`; confirmDialog.showModal();
@@ -522,6 +522,11 @@ app.addEventListener('click', async event => {
 });
 
 app.addEventListener('change', event => {
+  if (event.target.matches('[data-credit-book]')) {
+    const book = books.find(book => book.id === event.target.value);
+    if (book) document.querySelector('#book-credit').innerHTML = bookCredit(book);
+    return;
+  }
   if (event.target.id === 'book-theme') { bookFilter = event.target.value; refreshShelfControl('#book-theme'); }
   if (event.target.id === 'download-scope') { offlineScope = event.target.value; paintDownloadSize(); }
   if (event.target.id === 'voice-select') persist({...state, voice: event.target.value});
@@ -571,7 +576,7 @@ parentDialog.addEventListener('close', () => {
 parentDialog.addEventListener('cancel', () => { disposeParentHold?.(); disposeParentHold = null; });
 function onPageHidden() {
   const focused = document.activeElement;
-  if (route?.section === 'parent' && focused?.matches('#voice-select, #download-scope')) focused.blur();
+  if (route?.section === 'parent' && focused?.matches('#voice-select, #download-scope, #credit-book')) focused.blur();
   audio.stop();
 }
 document.addEventListener('visibilitychange', () => { if (document.hidden) onPageHidden(); });
