@@ -38,7 +38,7 @@ test('deployment refuses unreviewed changes before building or contacting a remo
   try {
     execFileSync('git', ['init', '--quiet', '--initial-branch=main', root]);
     await writeFile(join(root, 'review.txt'), 'not committed');
-    const result = spawnSync(process.execPath, [fileURLToPath(new URL('../scripts/publish.mjs', import.meta.url)), '--repository', 'nmwei/reading-garden'], {
+    const result = spawnSync(process.execPath, [fileURLToPath(new URL('../scripts/publish.mjs', import.meta.url))], {
       cwd: root, encoding: 'utf8', timeout: 5000,
       env: {...process.env, GIT_SSH_COMMAND: 'false', GIT_TERMINAL_PROMPT: '0'}
     });

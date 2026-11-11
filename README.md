@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-2026-11-04：当前本地实现包含独立书库、最近想读小书架、原版故事首屏、手机书卡优化、拼音听读、家长更新工具、80本完整绘本、来源分级筛选、选择性离线下载及差异发布入口。主站为GitHub Pages，发布结果以Git提交和线上版本为准。孩子尚未学拼音，拼音作为独立内容；正文不加拼音。详细边界见 [验收记录](docs/acceptance.md)。
+2026-11-04：当前本地实现包含独立书库、最近想读小书架、原版故事首屏、手机书卡优化、拼音听读、家长更新工具、80本完整绘本、来源分级筛选、选择性离线下载及差异发布入口。当前发布目标为自有服务器，发布结果以线上版本元数据为准。孩子尚未学拼音，拼音作为独立内容；正文不加拼音。详细边界见 [验收记录](docs/acceptance.md)。
 
 2026-11-03扩库：逐页审核55本StoryWeaver简体中文候选，新增35本，连同《绘画游戏》共36本；当时全站76本、910页。选择依据、未选原因和文字修订见 [首轮扩库审核记录](docs/storyweaver-selection-2026-11-03.md)。当轮构建、36项全量单元/内容检查、8项最终导入专项、244项全量浏览器场景通过；最后无字页排版调整后的158项受影响浏览器场景通过，并已提交、部署和核对线上版本。
 
@@ -43,19 +43,25 @@ npm run build
 npm run test:e2e             # iPad Chromium/WebKit，横竖屏/手机、子路径和离线
 ```
 
-`dist/` 可部署到静态HTTPS服务器，支持项目子目录。主站已迁移到 [GitHub Pages](https://nmwei.github.io/reading-garden/)，源码位于 [nmwei/reading-garden](https://github.com/nmwei/reading-garden)。`main` 保存源码，`gh-pages` 保存构建产物，Pages选择 `Deploy from a branch → gh-pages → /(root)`。
+## 服务器发布
 
-本仓库提供独立的差异发布入口，从本项目目录运行：
+正式地址：[打开花园](https://nmwei.cn/reading-garden/)。GitHub 保留源码，发布脚本不再推送 `main` 或 `gh-pages`，源码推送单独进行。
+
+需要 Node.js 20+、SSH 和 rsync。服务器已配置独立部署账号，默认连接 `garden-deploy@106.15.155.26`，本机专用密钥位于 `~/.ssh/garden_deploy_nmwei`；私钥不进入仓库。换电脑需安全配置自己的部署权限，并通过可信渠道核对服务器主机指纹，不关闭 SSH 主机校验。
 
 ```sh
-npm run deploy
+npm run deploy -- --dry-run             # 构建、冻结快照和校验，不连接服务器
+npm run deploy                         # 发布当前项目
+npm run deploy -- --rollback           # 切回本项目上一个成功版本
 ```
 
-脚本要求位于 `main`、源码已提交且工作区干净，再重新构建，并将源码和网站快照原子推送到 `main` / `gh-pages`。临时仓库复用本机Git对象，只上传远端缺少的对象；站点快照使用自己的临时索引，不操作本项目暂存区。实现沿用ABC Garden的发布逻辑，本仓库可独立运行，不依赖同级目录。
+默认从 `main` 的干净工作区发布。确需发布已经审阅、尚未提交的改动时，显式加 `--allow-dirty`；版本元数据会记录 `dirty: true`，不会自动暂存、提交或推送。`--host user@host`、`--key /absolute/key` 可覆盖 SSH 配置，也支持 `GARDEN_DEPLOY_HOST`、`GARDEN_DEPLOY_KEY`。
 
-此前3本书规模的全量构建实测约0.15～0.21秒（3次本机测量，中位数0.157秒）；当前40本已完成完整构建与素材校验，尚未专门评测构建耗时，暂不引入增量构建缓存。差异上传已启用；GitHub Pages云端排队不属于本地脚本的加速范围。
+执行链路：重新构建 → 冻结 `dist/` 快照 → 按哈希增量上传到本项目独立版本目录 → 服务器逐文件校验 → 原子切换 `current` → 内部 HTTP 核对。检查失败自动恢复旧入口；上传失败不切换。根目录 `_release.json` 提供源码提交、发布编号及工作区状态。发布后还应核对正式 HTTPS 地址，脚本的内部检查不能替代公网或真实 iPad 验收。
 
-旧 [Sites预览站](https://reading-garden.adroitcoati1.chatgpt.site) 仍保留，`.openai/hosting.json` 仅用于保留旧站身份，不再作为默认发布目标。新旧站域名不同，本机阅读记录和生字篮不会自动迁移；本次未清理旧站数据。
+发布产物仅包含静态页面与学习素材，不上传 Git、环境变量、依赖和本机学习数据。旧版本保留供回退；磁盘清理需保留 `current`、`previous` 指向的版本，不自动删除历史发布。三个仓库的发布工具副本保持一致，修改公共发布逻辑时同步三个仓库并运行发布测试。
+
+旧 GitHub Pages 暂时保留迁移期间的访问能力，后续不再更新。旧域名里的学习记录不会自动进入新域名，旧主屏幕图标仍指向旧站；账号/云端同步和完整数据迁移另行实现，先保留旧站数据。
 
 ## 维护入口
 
@@ -77,7 +83,7 @@ npm run deploy
 | `data/storyweaver/*.json`、`scripts/import-storyweaver.mjs` | 经全文和插画审核的原文、校订、逐图版权和固定哈希；`npm run assets:storyweaver`只导入这些已选清单，不自动爬取整个网站 |
 | `scripts/import-pinyin.mjs` | 单独导入CLI原始MP3、校验时长并更新来源记录，不重新下载绘本 |
 | `scripts/build.mjs` | 核对授权素材哈希、生成静态站与离线版本清单 |
-| `scripts/publish.mjs`、`scripts/publish-tree.mjs` | 独立差异发布、批量快照、临时索引及源码/站点原子推送；`npm run deploy`调用 |
+| `scripts/publish.mjs`、`scripts/deploy-site.mjs`、`scripts/publish-site.py` | 静态快照校验、SSH增量上传、独立切换与失败回退；`npm run deploy`调用 |
 
 新增绘本应同时维护书目、逐页素材及来源记录；`sourceLevel`保存原站体系（`system`）和数值（`value`），与授权记录同步。导入读取明确的原站Level元数据，不按CSS类名或页数推测；缺失或不支持的级别会报错，需核对后导入。支持Storybooks Canada 1～5级和StoryWeaver 1～4级；StoryWeaver的4级适合较长篇幅、资料页及亲子讨论，不等同于中文识字量或适龄认证。
 
@@ -143,7 +149,7 @@ npm run deploy
 
 1. 在真实iPad上试读，确认故事画风、难度、字号、触摸与朗读是否合适。
 2. 试听各类拼音读音和四声，结合家长或教师反馈校对内容。
-3. 本轮拼音及家长入口调整在本地验收后再发布到GitHub Pages；提交与暂存继续遵循 `AGENTS.md` 的授权规则。
+3. 拼音及家长入口调整在本地验收后发布到自有服务器；提交与暂存继续遵循 `AGENTS.md` 的授权规则。
 
 ## CLI拼音录音初次接入（2026-11-03，历史记录）
 

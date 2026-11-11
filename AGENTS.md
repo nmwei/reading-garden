@@ -9,4 +9,4 @@
 - 扩充绘本前先查 [绘本审核台账](docs/book-review-register.md)，按平台＋书籍ID核对既有结论。暂缓或不收录当前版本的书，须满足记录的复审条件并补充证据后才能导入；新增/复审结论同步更新台账，不能仅凭封面、平台推荐或导入成功跳过审核。
 - iPad 是主要使用设备；浏览器模拟验证不能替代真实 iPad 的触摸、音频、横竖屏和离线验证。
 
-- 主站已迁移到 GitHub Pages：`https://nmwei.github.io/reading-garden/`，源码仓库为 `nmwei/reading-garden`，Pages使用 `gh-pages` 分支根目录。`.openai/hosting.json` 仅保留旧Sites站点身份；除非用户明确要求，不再发布到Sites。
+- 正式发布目标为自有服务器：`https://nmwei.cn/reading-garden/`。使用 `npm run deploy`，不再发布到 GitHub Pages；GitHub 仅托管源码，源码推送单独进行。旧 Pages 保留迁移入口，不自动删除。`.openai/hosting.json` 仅保留旧 Sites 身份；除非用户明确要求，不发布到 Sites。
