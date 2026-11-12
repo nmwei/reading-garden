@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {selectLibrary, mapLimited, verifyAsset} from '../app/library.js';
+import {selectLibrary, mapLimited, verifyAsset} from '../web/app/library.js';
 
 const info = {files: ['app.js', 'a.jpg', 'a.mp3', 'b.jpg', 'b.mp3', 'pinyin.mp3'], bytes: 41, pinyin: {files:['pinyin.mp3'],bytes:3}, books: {
   a: {title:'甲',level:1,files:['a.jpg','a.mp3'],bytes:12}, b: {title:'乙',level:2,files:['b.jpg','b.mp3'],bytes:20}

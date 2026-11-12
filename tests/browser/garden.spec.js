@@ -1,10 +1,11 @@
+import {seedState} from './storage-helper.js';
 import {test as base, expect} from '@playwright/test';
 import {createServer} from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {resolve, extname} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {TONE_BASES} from '../../app/pinyin.js';
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+import {TONE_BASES} from '../../web/app/pinyin.js';
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
 
 // Real server faults exercise worker-owned network requests in both browser engines.
 const test = base.extend({
@@ -79,20 +80,17 @@ test('read, collect a character, restore progress and finish deliberately', asyn
   await page.getByRole('button', {name: '关闭', exact: true}).click();
   await page.goto('/#/book/0087/8');
   await expect(page.getByRole('button', {name: '读完啦'})).toBeVisible();
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).progress['0087'].finished)).toBe(false);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.progress['0087'].finished;})).toBe(false);
   await page.getByRole('button', {name: '读完啦'}).click();
   await expect(page.getByRole('heading', {name: '又认识了一个小世界。'})).toBeVisible();
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).progress['0087'].finished)).toBe(true);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.progress['0087'].finished;})).toBe(true);
   expect(errors).toEqual([]);
 });
 
 test('rereading keeps the resume entry through reload and until explicit completion', async ({page}) => {
-  await page.addInitScript(() => {
-    const key = 'reading-garden-v1';
-    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({
+  await seedState(page,{
       progress: {'0087': {page: 7, finished: true, updated: 1}}, readingList: ['0087']
-    }));
-  });
+    });
   await page.goto('/#/shelf');
   await expect(page.locator('.hero .button')).toHaveText('再读一遍');
   const card = page.locator('.reading-pick[data-book-id="0087"]');
@@ -118,15 +116,12 @@ test('rereading keeps the resume entry through reload and until explicit complet
 });
 
 test('library reading filters combine with level and theme and track completion', async ({page}) => {
-  await page.addInitScript(() => {
-    const key = 'reading-garden-v1';
-    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({progress: {
+  await seedState(page,{progress: {
       '0087': {page: 7, finished: false, updated: 1},
       '0002': {page: 2, finished: false, updated: 4},
       '0302': {page: 2, finished: true, rereading: true, updated: 3},
       '0156': {page: 4, finished: true, updated: 2}
-    }}));
-  });
+    }});
   await page.goto('/#/library');
   const filters = page.getByRole('group', {name: '阅读状态'});
   const cards = page.locator('.library-book');
@@ -297,11 +292,9 @@ test('four-tone sequence plays in order and stops when changing syllables or lea
   expect(await page.evaluate(() => window.__lastAudio.paused)).toBe(true);
 });
 
-test('legacy font settings do not alter responsive reading or erase learning records', async ({page}, testInfo) => {
-  await page.addInitScript(() => {
-    if (!localStorage.getItem('reading-garden-v1')) localStorage.setItem('reading-garden-v1', JSON.stringify({largeText: true, progress: {'0009': {page: 6, finished: true, updated: 1}}, words: [{char: '我', bookId: '0087', page: 0}], voice: '', pinyinScopes: ['whole']}));
-  });
-  const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+test('responsive reading preserves learning records', async ({page}, testInfo) => {
+  await seedState(page,{progress: {'0009': {page: 6, finished: true, updated: 1}}, words: [{char: '我', bookId: '0087', page: 0}], voice: '', pinyinScopes: ['whole']});
+  const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
   test.setTimeout(60000);
   for (const width of [320, 820, 1194, 1440]) {
     await page.setViewportSize({width, height: width === 820 ? 1180 : 900});
@@ -320,7 +313,7 @@ test('legacy font settings do not alter responsive reading or erase learning rec
       if (testInfo.project.name === 'ipad-chromium' && book.id === '0262') await page.screenshot({path: `test-results/reader-${width}.png`, fullPage: true});
     }
   }
-  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+  const saved = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved;});
   expect(saved.progress['0009'].finished).toBe(true);
   expect(saved.words).toEqual([{char: '我', bookId: '0087', page: 0}]);
   expect(saved.pinyinScopes).toEqual(['whole']);
@@ -328,7 +321,7 @@ test('legacy font settings do not alter responsive reading or erase learning rec
 });
 
 test('long books keep paging labels on one line and every page reachable', async ({page}) => {
-  const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+  const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
   const book = books.reduce((longest, current) => current.pages.length > longest.pages.length ? current : longest);
   for (const width of [320, 620, 621, 820, 1194, 1440]) {
     await page.setViewportSize({width, height: 900});
@@ -484,31 +477,31 @@ test('downloaded library works offline including audio byte ranges at a project 
   await expect(page.locator('a[href="undefined"]')).toHaveCount(0);
 });
 
-test('storage corruption is recoverable and clearing data requires a deliberate confirmation', async ({page}) => {
+test('clearing learning data requires a deliberate confirmation', async ({page}) => {
   await page.goto('/');
-  await page.evaluate(() => localStorage.setItem('reading-garden-v1', '{broken'));
   await page.reload();
   await page.goto(new URL('#/library', page.url()).href);
   await expect(page.locator('.book-card')).toHaveCount(books.length);
   await page.goto('/#/book/0156/2');
   await page.goto('/#/parent');
   await enterParent(page);
-  await page.getByRole('button', {name: '清除本机阅读记录和生字篮'}).click();
+  await page.getByRole('button', {name: '清除阅读记录和生字篮'}).click();
   await page.getByRole('button', {name: '保留记录'}).click();
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).progress['0156'].page)).toBe(1);
-  await page.getByRole('button', {name: '清除本机阅读记录和生字篮'}).click();
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.progress['0156'].page;})).toBe(1);
+  await page.getByRole('button', {name: '清除阅读记录和生字篮'}).click();
   await page.getByRole('button', {name: '确认清除'}).click();
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).progress)).toEqual({});
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.progress;})).toEqual({});
 });
 
-test('failed persistent storage stays usable and does not claim the word was saved', async ({page}) => {
-  await page.addInitScript(() => { Storage.prototype.setItem = () => { throw new DOMException('Full', 'QuotaExceededError'); }; });
+test('failed persistent storage stays usable and shows a retry warning', async ({page}) => {
+  await page.addInitScript(() => { const put=IDBObjectStore.prototype.put; IDBObjectStore.prototype.put=function(...args){if(window.failLearningSave && this.name==='workspace')throw new DOMException('Full','QuotaExceededError');return put.apply(this,args);}; });
   await page.goto('/#/book/0087/1');
   await page.getByRole('button', {name: '认识书', exact: true}).click();
+  await page.evaluate(async()=>{const {learningStorage}=await import('/app/account-storage.js');await learningStorage.whenSaved();window.failLearningSave=true;});
   await page.getByRole('button', {name: '放进生字篮'}).click();
   await expect(page.locator('[data-save-word]')).toBeEnabled();
   await expect(page.locator('[data-save-word]')).toHaveAttribute('aria-pressed','true');
-  await expect(page.locator('#status')).toContainText('暂时无法保存');
+  await expect(page.locator('[role=alert]')).toContainText('本机存储失败');
   await page.getByRole('button', {name: '关闭', exact: true}).click();
   await page.getByRole('button', {name: '下一页', exact: true}).click();
   await expect(page.locator('.story-text')).toHaveText('我可以念给谁听呢？');
@@ -676,7 +669,7 @@ test('checking updates bypasses cached manifests and refreshing the page preserv
   await page.goto(`${updateHost.url}/#/book/0087/2`);
   await expect(page.locator('.story-text')).toBeVisible();
   await page.goto(`${updateHost.url}/#/parent`); await enterParent(page);
-  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  const before = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);});
   await expect(page.locator('.app-maintenance')).not.toHaveAttribute('open', '');
   await expect(page.getByRole('button', {name: '检查更新', exact: true})).not.toBeVisible();
   await expect(page.locator('.app-maintenance [data-app-refetch]')).toHaveCount(0);
@@ -695,7 +688,7 @@ test('checking updates bypasses cached manifests and refreshing the page preserv
   await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
   await expect(page).toHaveURL(/#\/shelf$/);
   await expect(page.locator('#parent-dialog')).not.toBeVisible();
-  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);})).toBe(before);
   await page.getByRole('link', {name: '家长小角', exact: true}).click();
   await enterParent(page);
   await page.locator('.app-maintenance > summary').click();
@@ -705,7 +698,7 @@ test('checking updates bypasses cached manifests and refreshing the page preserv
   await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
   await expect(page).toHaveURL(/#\/shelf$/);
   await expect(page.locator('#parent-dialog')).not.toBeVisible();
-  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);})).toBe(before);
 });
 
 test('resource repair replaces damaged cached audio, keeps records and other projects, and remains offline usable', async ({page, context}) => {
@@ -713,7 +706,7 @@ test('resource repair replaces damaged cached audio, keeps records and other pro
   await page.goto('http://localhost:4179/reading-garden/#/book/0087/2');
   await expect(page.locator('.story-text')).toBeVisible();
   await page.goto('http://localhost:4179/reading-garden/#/parent'); await enterParent(page);
-  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  const before = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);});
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
     if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, {once: true}));
@@ -731,7 +724,7 @@ test('resource repair replaces damaged cached audio, keeps records and other pro
     return {correct: hash === sources.find(s => s.kind === 'pinyin' && s.id === 'ong').original.sha256, temporary: (await caches.keys()).some(name => name.includes('refresh-')), other: await (await (await caches.open('abc-garden:sentinel')).match(new URL('/abc-garden/sentinel', location.origin))).text()};
   });
   expect(repaired).toEqual({correct: true, temporary: false, other: 'keep'});
-  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);})).toBe(before);
   await context.setOffline(true);
   await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
   await expect(page.locator('#resource-refresh-status')).toContainText('当前未联网');
@@ -774,7 +767,7 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
   await page.getByRole('button', {name: '下载离线故事包', exact: true}).click();
   await expect(page.locator('#download-status')).toContainText('已下载全部故事', {timeout: 40000});
-  const before = await page.evaluate(() => localStorage.getItem('reading-garden-v1'));
+  const before = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);});
   const worker = await readFile(new URL('../../dist/sw.js', import.meta.url), 'utf8');
   const main = await readFile(new URL('../../dist/app/main.js', import.meta.url), 'utf8');
   expect(worker).toContain(oldVersion);
@@ -800,7 +793,7 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   expect(await page.evaluate(async version => !!await (await caches.open(`reading-garden:/:${version}`)).match(new URL('./assets/books/0262/17.mp3', document.baseURI)), nextVersion)).toBe(true);
   await page.getByRole('button', {name: '重新获取资源', exact: true}).click();
   await expect(page.locator('#resource-refresh-status')).toContainText('有新版待启用');
-  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);})).toBe(before);
   await page.getByRole('link', {name: '学拼音', exact: true}).click();
   await expect(page.getByRole('heading', {name: '听听声音，动动小嘴巴。', exact: true})).toBeVisible();
   await page.getByRole('link', {name: '家长小角', exact: true}).click(); await enterParent(page);
@@ -808,7 +801,7 @@ test('production updates wait for explicit reload, reuse unchanged media, and th
   await page.getByRole('button', {name: '重新加载并回首页', exact: true}).click();
   await expect(page).toHaveURL(/#\/shelf$/);
   await expect(page.locator('#parent-dialog')).not.toBeVisible();
-  expect(await page.evaluate(() => localStorage.getItem('reading-garden-v1'))).toBe(before);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return learningStorage.getItem(READING_KEY);})).toBe(before);
   await page.getByRole('link', {name: '学拼音', exact: true}).click();
   await expect(page.getByRole('heading', {name: '新版拼音小课堂', exact: true})).toBeVisible();
   const activated = await page.evaluate(async () => ({version: (await fetch('./precache.json').then(r => r.json())).version, caches: await caches.keys(), waiting: !!(await navigator.serviceWorker.getRegistration()).waiting}));
@@ -982,7 +975,7 @@ test('character audio leads both dialogs and collection can be removed and resto
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
   await expect(dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true})).toHaveAttribute('aria-pressed','true');
   await dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true}).click();
-  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).words.length)).toBe(0);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.words.length;})).toBe(0);
   await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();
   await dialog.getByRole('button',{name:'关闭',exact:true}).click();
   await page.goto('/#/words');
@@ -1036,7 +1029,7 @@ test('reading help appears on the first read only across page changes, reloads a
   await expect(page.locator('.reading-hint')).toHaveCount(0);
   await page.goto('/#/book/0009/1');
   await expect(page.locator('.reading-hint')).toHaveCount(0);
-  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).readingHelpSeen)).toBe(true);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.readingHelpSeen;})).toBe(true);
 });
 
 test('character listening without a Chinese device voice falls back to the recorded sentence',async({page})=>{

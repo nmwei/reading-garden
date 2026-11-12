@@ -19,14 +19,14 @@
 
 ## 开发与预览
 
-需要 Node.js 20+。首次获取依赖：
+需要 Node.js 22.x。首次获取依赖：
 
 ```sh
 npm ci
 npm run dev
 ```
 
-打开终端显示的地址，默认是 `http://localhost:4178/`。源文件修改后重新执行 `npm run build` 并刷新；开发服务读取 `dist/`，不提供源码热更新。正式站新版安装后等待家长点击“应用更新 → 重新加载并回首页”，再接管并清理旧缓存；安装时会校验并复用旧缓存中仍在本版清单里的图音，不重新下载未变化素材；检查更新不会提前切换版本。本地localhost预览沿用ABC Garden的自动接管方式，初次从旧缓存迁移可能需要刷新两次。本地预览需保持`npm run dev`运行，服务停止时浏览器可能仍显示离线旧页面。浏览器学习记录不清除。
+打开终端显示的地址，统一开发默认是 `http://localhost:4173/reading-garden/`；仅静态预览使用 `npm run preview`，地址为 `http://localhost:4178/`。源文件修改后重新执行 `npm run build` 并刷新；开发服务读取 `dist/`，不提供源码热更新。正式站新版安装后等待家长点击“应用更新 → 重新加载并回首页”，再接管并清理旧缓存；安装时会校验并复用旧缓存中仍在本版清单里的图音，不重新下载未变化素材；检查更新不会提前切换版本。本地localhost预览沿用ABC Garden的自动接管方式，初次从旧缓存迁移可能需要刷新两次。本地预览需保持`npm run dev`运行，服务停止时浏览器可能仍显示离线旧页面。浏览器学习记录不清除。
 
 ```sh
 npm test                     # 状态、内容完整性与音频解码检查，需要ffprobe
@@ -39,7 +39,7 @@ npm run test:e2e             # iPad Chromium/WebKit，横竖屏/手机、子路�
 
 正式地址：[打开花园](https://nmwei.cn/reading-garden/)。GitHub 保留源码，发布脚本不再推送 `main` 或 `gh-pages`，源码推送单独进行。
 
-需要 Node.js 20+、SSH 和 rsync。服务器已配置独立部署账号，默认连接 `garden-deploy@106.15.155.26`，本机专用密钥位于 `~/.ssh/garden_deploy_nmwei`；私钥不进入仓库。换电脑需安全配置自己的部署权限，并通过可信渠道核对服务器主机指纹，不关闭 SSH 主机校验。
+需要 Node.js 22.x、SSH 和 rsync。服务器已配置独立部署账号，默认连接 `garden-deploy@106.15.155.26`，本机专用密钥位于 `~/.ssh/garden_deploy_nmwei`；私钥不进入仓库。换电脑需安全配置自己的部署权限，并通过可信渠道核对服务器主机指纹，不关闭 SSH 主机校验。
 
 ```sh
 npm run deploy -- --dry-run             # 构建、冻结快照和校验，不连接服务器
@@ -53,7 +53,7 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 
 发布产物仅包含静态页面与学习素材，不上传 Git、环境变量、依赖和本机学习数据。旧版本保留供回退；磁盘清理需保留 `current`、`previous` 指向的版本，不自动删除历史发布。三个仓库的发布工具副本保持一致，修改公共发布逻辑时同步三个仓库并运行发布测试。
 
-旧 GitHub Pages 暂时保留迁移期间的访问能力，后续不再更新。旧域名里的学习记录不会自动进入新域名，旧主屏幕图标仍指向旧站；账号/云端同步和完整数据迁移另行实现，先保留旧站数据。
+旧 GitHub Pages 暂时保留迁移期间的访问能力，后续不再更新。旧域名里的学习记录不会自动进入新域名，旧主屏幕图标仍指向旧站；新版本已接入共用账号和云端存档；本期不提供旧站迁移或旧格式兼容。
 
 ## 维护入口
 
@@ -64,14 +64,14 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 | [`docs/book-review-register.md`](docs/book-review-register.md) | 扩库统一入口：逐本收录/未收录理由、审核范围、日期、证据与复审条件；历史详细审核报告另存，不重复搬入全部正文 |
 | `data/book-notes.json` | 本项目编写的主题、简介、关键词和亲子提问；独立保存，重新导入不会丢失 |
 | `data/books.json` | 书架资料、原站分级`sourceLevel`、每页文字、插图、音频和作者署名 |
-| `app/reading-levels.js`、`scripts/storybook-metadata.mjs` | 来源分级标签及导入解析；明确记录分级体系，不按年龄或识字量推定级别 |
-| `app/main.js` | 书架、阅读、生字篮、拼音与家长页面及交互 |
-| `app/study-layout.css` | 阅读页与拼音活动的响应式工作区；横屏共用选择/示范布局，长文与展开说明保留自然滚动 |
-| `app/core.js` | 本机记录校验（含独立的`readingList`及6本上限）、路由边界、语境词解释、练习选项 |
-| `app/pinyin.js` | `FINAL_GROUPS`等定义内容；`TONE_GROUPS`定义分类、生成`TONE_BASES`四声音节，`toneExamples`生成4张卡片；`nextPracticeCategory`/`practicePool`控制多选范围、轮换及同类候选；`PINYIN_RECORDINGS`自动生成；目前不提供家长页面的课程配置 |
-| `app/audio.js` | 共享播放器、取消、防重叠、可暂停的顺序播放和设备中文声音；`main.js`的`startPinyinSequence`设置额外等待 |
-| `app/parent-gate.js` | 复用ABC Garden的1秒长按逻辑，释放/移出/失焦/后台取消，支持键盘；`main.js`同时守住路由入口 |
-| `app/library.js`、`app/offline.js`、`sw.js` | 下载范围、4路并发与失败收尾、图音哈希校验、跨版本复用及更新失败清理；保留音频Range响应 |
+| `web/app/reading-levels.js`、`scripts/storybook-metadata.mjs` | 来源分级标签及导入解析；明确记录分级体系，不按年龄或识字量推定级别 |
+| `web/app/main.js` | 书架、阅读、生字篮、拼音与家长页面及交互 |
+| `web/app/study-layout.css` | 阅读页与拼音活动的响应式工作区；横屏共用选择/示范布局，长文与展开说明保留自然滚动 |
+| `web/app/core.js` | 本机记录校验（含独立的`readingList`及6本上限）、路由边界、语境词解释、练习选项 |
+| `web/app/pinyin.js` | `FINAL_GROUPS`等定义内容；`TONE_GROUPS`定义分类、生成`TONE_BASES`四声音节，`toneExamples`生成4张卡片；`nextPracticeCategory`/`practicePool`控制多选范围、轮换及同类候选；`PINYIN_RECORDINGS`自动生成；目前不提供家长页面的课程配置 |
+| `web/app/audio.js` | 共享播放器、取消、防重叠、可暂停的顺序播放和设备中文声音；`main.js`的`startPinyinSequence`设置额外等待 |
+| `web/app/parent-gate.js` | 复用ABC Garden的1秒长按逻辑，释放/移出/失焦/后台取消，支持键盘；`main.js`同时守住路由入口 |
+| `web/app/library.js`、`web/app/offline.js`、`sw.js` | 下载范围、4路并发与失败收尾、图音哈希校验、跨版本复用及更新失败清理；保留音频Range响应 |
 | `assets/sources.json` | 逐本/逐录音授权、作者、修改说明、来源与SHA256 |
 | `scripts/import-assets.mjs` | 读取官方中文目录及逐本HTML，从固定哈希的官方ZIP导入图音；独立核对文字/图片/录音许可；需要curl、unzip |
 | `data/storyweaver/*.json`、`scripts/import-storyweaver.mjs` | 经全文和插画审核的原文、校订、逐图版权和固定哈希；`npm run assets:storyweaver`只导入这些已选清单，不自动爬取整个网站 |
@@ -92,9 +92,9 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 - 拼音主页以符号和「听读音」为主。认识拼音统一采用第一声示范（含 ē、yū 及 r/ri 的 rī），四声对比在独立活动中呈现。声母使用呼读方式示范，如 b 使用 bō。i/u/ü 等单独成音节时使用 yi/wu/yu 等完整拼写。CLI 和 ChinaHelp 原始 MP3 均保持原样。
 - 已包含基础符号表及整体认读音节，尚不包含系统拼读课程。按[人教社刊载的教材修订研究](https://www.pep.com.cn/bks/xxyw/jzjd/202512/W020251202580887481487.pdf)，21个声母与拼写字母y/w分开显示；er作为特殊韵母单列，不算复韵母。发音提示由本项目编写，仍需教学反馈。
 - “读完”仅由孩子主动点击记录，不代表已经掌握全部生字；翻到最后一页不会自动标记读完。
-- 阅读位置、生字篮、读完标记、声音及拼音练习范围保存到本机localStorage。没有账号或跨设备同步；清除浏览器数据会丢失记录。
+- 阅读位置、生字篮、读完标记、小书架和拼音练习范围通过统一学习存储保存在 IndexedDB，登录后自动同步。设备音色和首次阅读提示仅留在设备。
 - 有正文的页面统一提供「读这一页」，原版录音优先，无录音时用系统朗读。点字后的「听这一句」也使用所选系统声音。原版录音与拼音下载后可离线播放，系统朗读的离线表现取决于设备声音。
-- 设备声音列表与实际播放共用 `app/audio.js` 的 `chineseVoices()`。排除 Eddy、Flo、Grandma、Grandpa、Reed、Rocko、Sandy、Shelley 及 Apple Eloquence 标识声音，优先选大陆普通话。已保存的声音不可用时，回退到设备提供的可用中文声音。实际可用性和听感需在设备上确认。
+- 设备声音列表与实际播放共用 `web/app/audio.js` 的 `chineseVoices()`。排除 Eddy、Flo、Grandma、Grandpa、Reed、Rocko、Sandy、Shelley 及 Apple Eloquence 标识声音，优先选大陆普通话。已保存的声音不可用时，回退到设备提供的可用中文声音。实际可用性和听感需在设备上确认。
 - 浏览器模拟检查不能替代真实iPad对触摸、横竖屏、系统声音和主屏幕离线使用的验收。
 
 
@@ -105,7 +105,7 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 
 ## 答题音效
 
-答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
+答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `web/app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
 
 两个 WAV 与现有声音素材一起保存在源码仓库的 `assets/audio/` 中，构建时校验 SHA-256，并随站点打包和离线缓存。重新拉取项目即可获得音频；启动、构建和部署无需再下载原音源，也不需要 FFmpeg。来源及许可记录保留在 `assets/audio/feedback-sources.json`。
 
@@ -116,3 +116,17 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 - [历次验收](docs/acceptance.md)包含绘本试读、扩库、筛选和离线等历史验证。
 - [绘本审核台账](docs/book-review-register.md)汇总书目取舍、扩库来源和复审条件。
 - [拼音录音映射复核](docs/pinyin-audio-audit.md)记录逐项来源和复核依据。
+
+## 共用账号与学习存档
+
+与 ABC 使用同一套账号/API。游客可离线学习；登录后自动同步本科最新进度，另可确认保存最多三份手动存档。家长入口显示当前用户名，账号区提供重设密码与退出登录。家长页面统一卡片宽度与暖白底色；宽屏账号和存档并排、应用更新和素材来源并排，声音及复杂下载表单占整行，手机单列。跨科会话共用，学习快照、历史存档、IndexedDB 和编辑锁分别隔离；设备声音不进入云档。
+
+开发前将 `garden-platform`、`abc-garden`、`reading-garden`、`math-garden` 同级检出并运行 `npm install`；本地依赖 `@garden/account` 由 garden-platform 的 `packages/account` 提供，构建时复制进静态产物。正式产物不依赖跨站脚本。修改共享库后重新构建三站。账号联合预览在 garden-platform 运行 `npm run build` 和 `npm run dev`；单站预览主要用于界面与游客功能。
+
+## 仓库职责与开发入口
+
+`web/` 是本站前端源码，`domain/` 是本科数据契约与规则，`server/` 是本科服务端模块。公共 API/账号/数据库/备份与共享浏览器库属于同级 `garden-platform`，一个后端组装三个科目模块。
+
+四仓同级检出后先在各仓执行 `nvm use`（或自行选择 Node.js 22），再执行 `npm install`，平台还需执行 `npm ci --prefix server`。在任何学习仓运行 `npm run dev` 启动本站与统一 API，默认 `http://localhost:4173/`；`npm run dev:gardens` 构建并联调全部学习站。`npm run test:server` 验证平台与三科服务端，平台 `npm run test:browser` 执行手机、平板和桌面跨站验收。
+
+共享库改动后重建受影响前端；科目契约或内容目录改动后也要重新组装服务端。前端产物记录共享库指纹及平台源码提交，服务端发布包记录四仓源码提交、工作区状态及文件哈希。

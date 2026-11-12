@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AudioPlayer, chineseVoices} from '../app/audio.js';
+import {AudioPlayer, chineseVoices} from '../web/app/audio.js';
 
 class TestAudio extends EventTarget {
   constructor() { super(); this.calls = []; this.ended = false; this.paused = true; this.pending = []; }

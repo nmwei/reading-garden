@@ -3,10 +3,10 @@ import {mkdir, readdir, readFile, writeFile, rename} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-import {readingLevelLabel} from '../app/reading-levels.js';
+import {readingLevelLabel} from '../web/app/reading-levels.js';
 import {validateStoryWeaverFixture, storyWeaverPageRecords} from './storyweaver-metadata.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
+const repo = fileURLToPath(new URL('../', import.meta.url)), root = repo + 'web/';
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const books = JSON.parse(await readFile(root + 'data/books.json', 'utf8'));
 const sources = JSON.parse(await readFile(root + 'assets/sources.json', 'utf8'));
@@ -20,7 +20,7 @@ for (const filename of (await readdir(root + 'data/storyweaver/')).filter(name =
   fixtures.push({fixturePath, fixtureBytes, fixture, components, notes});
 }
 if (!fixtures.length) throw Error('No reviewed StoryWeaver fixtures found.');
-const cache = root + '.asset-cache/storyweaver/';
+const cache = repo + '.asset-cache/storyweaver/';
 await mkdir(cache, {recursive: true});
 const importedBooks = new Map(), importedSources = new Map();
 for (const {fixturePath, fixtureBytes, fixture, components, notes} of fixtures) {

@@ -1,32 +1,13 @@
-export const STORAGE_KEY = 'reading-garden-v1';
+import {readingContract,READING_KEY} from '../domain/archive.js';
 export const READING_LIST_LIMIT = 6;
 export const emptyState = () => ({progress: {}, readingList: [], words: [], voice: '', readingHelpSeen: false, pinyinScopes: ['finals']});
 
-export function normalizeState(input, books) {
-  const clean = emptyState();
-  if (!input || typeof input !== 'object') return clean;
-  for (const book of books) {
-    const p = input.progress?.[book.id];
-    if (p && Number.isInteger(p.page)) {
-      const page = Math.max(0, Math.min(book.pages.length - 1, p.page));
-      const finished = p.finished === true;
-      const rereading = finished && (p.rereading === true || page < book.pages.length - 1);
-      clean.progress[book.id] = {page, finished, updated: Number.isFinite(p.updated) ? p.updated : 0, ...(rereading ? {rereading} : {})};
-    }
-  }
-  if (Array.isArray(input.readingList)) {
-    const knownIds = new Set(books.map(book => book.id));
-    clean.readingList = [...new Set(input.readingList.filter(id => knownIds.has(id)))].slice(0, READING_LIST_LIMIT);
-  }
-  clean.words = Array.isArray(input.words) ? input.words.filter(w => {
-    const b = books.find(b => b.id === w?.bookId);
-    return b && Number.isInteger(w.page) && w.page >= 0 && w.page < b.pages.length && typeof w.char === 'string' && /^\p{Script=Han}$/u.test(w.char) && b.pages[w.page].text.includes(w.char);
-  }).slice(0, 200).map(w => ({char: w.char, bookId: w.bookId, page: w.page})) : [];
-  clean.words = clean.words.filter((w, i, all) => all.findIndex(x => x.char === w.char) === i);
-  clean.readingHelpSeen = input.readingHelpSeen === true;
-  clean.voice = typeof input.voice === 'string' ? input.voice : '';
-  if (Array.isArray(input.pinyinScopes)) clean.pinyinScopes = ['initials', 'finals', 'whole'].filter(id => input.pinyinScopes.includes(id));
-  return clean;
+// Persisted learning data is current-format only: never repair it into a different archive.
+export function restoreState(input, books) {
+  if (input === null) return emptyState();
+  readingContract(books.map(book=>({id:book.id,pages:book.pages.map(page=>page.text)})))({version:1,subject:'reading',data:{[READING_KEY]:input}});
+  const {version,...learning}=structuredClone(input);
+  return {...emptyState(),...learning};
 }
 
 export function routeFromHash(hash, books) {

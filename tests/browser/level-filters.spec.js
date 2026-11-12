@@ -1,8 +1,8 @@
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
-import {readingLevelOptions} from '../../app/reading-levels.js';
+import {readingLevelOptions} from '../../web/app/reading-levels.js';
 
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
 const inLevel = (system, value, catalog = books) => catalog.filter(book => book.sourceLevel.system === system && book.sourceLevel.value === value);
 const weaverCounts = readingLevelOptions(books).filter(level => level.system === 'StoryWeaver').map(level => `${inLevel(level.system, level.value).length}本`);
 

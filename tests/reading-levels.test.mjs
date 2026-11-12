@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {readSourceLevel, readStory, readCatalog, readRepositoryLicense} from '../scripts/storybook-metadata.mjs';
-import {readingLevelLabel, readingLevelKey, readingLevelOptions} from '../app/reading-levels.js';
+import {readingLevelLabel, readingLevelKey, readingLevelOptions} from '../web/app/reading-levels.js';
 
 const metadata = level => `<div class="level1-txt def"><h3>故事</h3></div><h5><span class="colophon-heading">Level:</span> <a href="/stories/zh/level${level}">Level ${level}</a></h5>`;
 
@@ -18,9 +18,9 @@ test('import reads explicit source grading, independent of text CSS and book len
 });
 
 test('current books retain source grading alongside their provenance', async () => {
-  const allBooks = JSON.parse(await readFile(new URL('../data/books.json', import.meta.url)));
+  const allBooks = JSON.parse(await readFile(new URL('../web/data/books.json', import.meta.url)));
   const books = allBooks.filter(book => book.sourceLevel.system === 'Storybooks Canada');
-  const {sources} = JSON.parse(await readFile(new URL('../assets/sources.json', import.meta.url)));
+  const {sources} = JSON.parse(await readFile(new URL('../web/assets/sources.json', import.meta.url)));
   assert.deepEqual([1,2,3,4,5].map(level => books.filter(book => book.sourceLevel.value === level).length), [15,11,8,4,2]);
   assert.deepEqual(Object.fromEntries(['CC BY 3.0','CC BY 4.0','CC BY-NC 3.0'].map(license => [license, books.filter(book => book.license === license).length])), {'CC BY 3.0':20,'CC BY 4.0':9,'CC BY-NC 3.0':11});
   for (const book of books) {
@@ -56,9 +56,9 @@ test('source levels stay distinct across mixed catalogs', () => {
 });
 
 test('drawing sample keeps twelve full pages, original illustrations and explicit no-narration provenance', async () => {
-  const books = JSON.parse(await readFile(new URL('../data/books.json', import.meta.url)));
-  const fixture = JSON.parse(await readFile(new URL('../data/storyweaver/92448.json', import.meta.url)));
-  const {sources} = JSON.parse(await readFile(new URL('../assets/sources.json', import.meta.url)));
+  const books = JSON.parse(await readFile(new URL('../web/data/books.json', import.meta.url)));
+  const fixture = JSON.parse(await readFile(new URL('../web/data/storyweaver/92448.json', import.meta.url)));
+  const {sources} = JSON.parse(await readFile(new URL('../web/assets/sources.json', import.meta.url)));
   const book = books.find(book => book.id === 'sw-92448');
   const source = sources.find(source => source.kind === 'book' && source.id === book.id);
   assert.equal(book.narration, 'none');

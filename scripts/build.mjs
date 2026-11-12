@@ -1,12 +1,13 @@
+import './prepare-account.mjs';
 import {mkdir, readdir, readFile, writeFile, cp, rm, stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {basename} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {PINYIN_RECORDINGS} from '../app/pinyin.js';
-import {readingLevelLabel, readingLevelKey} from '../app/reading-levels.js';
+import {PINYIN_RECORDINGS} from '../web/app/pinyin.js';
+import {readingLevelLabel, readingLevelKey} from '../web/app/reading-levels.js';
 import {validateStoryWeaverFixture, validateImportedStoryWeaverBook} from './storyweaver-metadata.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url)), out = `${root}dist/`;
+const repo = fileURLToPath(new URL('../', import.meta.url)), root = `${repo}web/`, out = `${repo}dist/`;
 const books = JSON.parse(await readFile(`${root}data/books.json`, 'utf8'));
 const sources = JSON.parse(await readFile(`${root}assets/sources.json`, 'utf8'));
 const feedback = JSON.parse(await readFile(`${root}assets/audio/feedback-sources.json`, 'utf8')).clips;
@@ -55,7 +56,7 @@ for (const book of books) for (const page of book.pages) {
 }
 await rm(out, {recursive: true, force: true});
 await mkdir(out, {recursive: true});
-for (const path of ['index.html', 'manifest.webmanifest', 'app', 'assets', 'data']) {
+for (const path of ['index.html', 'manifest.webmanifest', 'app', 'assets', 'data', 'domain']) {
   // Local metadata such as .DS_Store is not served by GitHub Pages.
   await cp(`${root}${path}`, `${out}${path}`, {
     recursive: true,
@@ -79,7 +80,7 @@ const pinyin = group(allowedPinyin.map(file => `assets/pinyin/${file}`));
 hash.update(JSON.stringify({assets, bookGroups, pinyin}));
 let size = 0;
 for (const path of files) { const bytes = await readFile(out + path); size += bytes.length; hash.update(path).update(bytes); }
-const sw = await readFile(`${root}sw.js`, 'utf8');
+const sw = (await readFile(`${root}sw.js`, 'utf8')).replace('__ACCOUNT_FILES__',JSON.stringify(files.filter(path=>path.startsWith('app/account')||path.startsWith('domain/'))));
 hash.update(sw);
 const version = hash.digest('hex').slice(0, 16);
 await writeFile(`${out}sw.js`, sw.replace('__VERSION__', version));

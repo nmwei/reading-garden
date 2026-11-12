@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
 const catalog = books.filter(book => book.sourceLevel.system === 'StoryWeaver');
 
 for (const book of catalog) {
@@ -9,7 +9,7 @@ for (const book of catalog) {
     test.setTimeout(60000);
     const errors = [], missing = [];
     page.on('pageerror', error => errors.push(error.message));
-    page.on('response', response => { if (response.status()>=400) missing.push(response.url()); });
+    page.on('response', response => { if (response.status()>=400 && !new URL(response.url()).pathname.startsWith('/api/')) missing.push(response.url()); });
     await page.goto(`/#/book/${book.id}/1`);
     await expect(page.getByRole('heading',{name:book.title,exact:true})).toBeVisible();
     for (const [index, source] of book.pages.entries()) {
@@ -32,14 +32,14 @@ for (const book of catalog) {
       await expect(page.locator('[data-page-play]')).toHaveCount(source.wordless ? 0 : 1);
       await expect(page.locator('.completion')).toHaveCount(0);
       if (index === book.pages.length-1) {
-        const progress = await page.evaluate(id => JSON.parse(localStorage.getItem('reading-garden-v1')).progress[id],book.id);
+        const progress = await page.evaluate(async id => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return JSON.parse(learningStorage.getItem(READING_KEY)).progress[id];},book.id);
         expect(progress.finished).toBe(false);
         expect(progress.page).toBe(index);
       }
       await page.locator('[data-next]').click();
     }
     await expect(page.locator('.completion')).toBeVisible();
-    const progress = await page.evaluate(id => JSON.parse(localStorage.getItem('reading-garden-v1')).progress[id],book.id);
+    const progress = await page.evaluate(async id => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');return JSON.parse(learningStorage.getItem(READING_KEY)).progress[id];},book.id);
     expect(progress.finished).toBe(true);
     expect(progress.page).toBe(book.pages.length-1);
     expect(errors).toEqual([]);

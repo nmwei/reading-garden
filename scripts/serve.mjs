@@ -1,4 +1,4 @@
-import {createServer} from 'node:http';
+import {createServer,request as proxyRequest} from 'node:http';
 import {readFile, stat} from 'node:fs/promises';
 import {resolve, sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -11,6 +11,10 @@ const types = {html: 'text/html; charset=utf-8', js: 'text/javascript; charset=u
 const server = createServer(async (req, res) => {
   try {
     const path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+    if(path.startsWith('/api/')){
+      const upstream=proxyRequest({hostname:'127.0.0.1',port:Number(process.env.GARDEN_API_PORT||4174),path:req.url,method:req.method,headers:req.headers},response=>{res.writeHead(response.statusCode,response.headers);response.pipe(res);});
+      upstream.on('error',()=>{res.writeHead(503,{'Content-Type':'application/json'});res.end(JSON.stringify({error:'账号服务暂时不可用'}));});req.pipe(upstream);return;
+    }
     if (!path.startsWith(prefix)) { res.writeHead(404).end(); return; }
     const relative = path.slice(prefix.length) || 'index.html';
     const file = resolve(root, relative);

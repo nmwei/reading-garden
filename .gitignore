@@ -8,3 +8,11 @@ playwright-report/
 !.env.example
 .asset-cache/
 !package-lock.json
+
+
+.playwright-cli/
+
+web/app/account-runtime/
+web/domain/
+domain/catalog.json
+build/

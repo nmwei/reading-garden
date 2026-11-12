@@ -1,0 +1,26 @@
+@import './account-runtime/account.css';
+.account-hub {margin:0 0 24px;}
+.parent-nav-copy,[data-parent-identity] {display:inline-flex;align-items:center;gap:6px;min-width:0;}
+[data-parent-identity][hidden] {display:none;}
+.parent-nav-copy {font-size:14px;white-space:nowrap;}
+.parent-username {max-width:64px;overflow:hidden;text-overflow:ellipsis;color:#354f40;font-weight:600;}
+.parent-identity-dot {opacity:.5;}
+
+@media(max-width:900px){.parent-link .parent-nav-copy,.garden-parent-link .parent-nav-copy{display:none;}}
+
+.parent-management {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;}
+.parent-management > .account-hub,.parent-management > .parent-voice,.parent-management > .parent-boundaries {grid-column:1/-1;}
+.parent-management > .account-hub {margin:0;}
+.parent-management > .parent-panel {box-sizing:border-box;min-width:0;width:100%;max-width:none;margin:0;padding:26px;border-radius:24px;background:#fffdf7;border-color:#dedfd2;}
+.parent-management > .offline-panel {grid-column:1/-1;grid-row:3;}
+.parent-management > .app-maintenance {grid-column:1;grid-row:5;}
+.parent-management > .sources {grid-column:2;grid-row:5;}
+.parent-management > .parent-boundaries {grid-row:4;}
+.parent-management select {max-width:100%;}
+.parent-management .parent-voice select {display:inline-block;width:calc(100% - 185px);max-width:540px;margin-right:12px;vertical-align:middle;}
+.parent-management .parent-voice .button {vertical-align:middle;margin:0;}
+@media(max-width:760px){
+ .parent-management {grid-template-columns:1fr;gap:18px;}
+ .parent-management > .parent-panel {grid-column:1;grid-row:auto;padding:22px;}
+ .parent-management .parent-voice select {width:100%;margin:0 0 12px;}
+}

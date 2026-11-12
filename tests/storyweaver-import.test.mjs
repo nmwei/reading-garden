@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {validateStoryWeaverFixture, storyWeaverPageRecords, validateImportedStoryWeaverBook} from '../scripts/storyweaver-metadata.mjs';
 
-const drawing = JSON.parse(await readFile(new URL('../data/storyweaver/92448.json', import.meta.url)));
-const {sources} = JSON.parse(await readFile(new URL('../assets/sources.json', import.meta.url)));
+const drawing = JSON.parse(await readFile(new URL('../web/data/storyweaver/92448.json', import.meta.url)));
+const {sources} = JSON.parse(await readFile(new URL('../web/assets/sources.json', import.meta.url)));
 const prior = sources.find(source => source.kind === 'book' && source.id === drawing.id);
 const fixture = () => ({...structuredClone(drawing), components: structuredClone(prior.components)});
 
@@ -114,9 +114,9 @@ test('catalog text, page order and illustrations must match the reviewed fixture
 });
 
 test('every published StoryWeaver catalog entry agrees with its full reviewed metadata', async () => {
-  const books=JSON.parse(await readFile(new URL('../data/books.json',import.meta.url)));
+  const books=JSON.parse(await readFile(new URL('../web/data/books.json',import.meta.url)));
   for (const book of books.filter(book=>book.sourceLevel.system==='StoryWeaver')) {
-    const source=JSON.parse(await readFile(new URL(`../data/storyweaver/${book.id.slice(3)}.json`,import.meta.url)));
+    const source=JSON.parse(await readFile(new URL(`../web/data/storyweaver/${book.id.slice(3)}.json`,import.meta.url)));
     assert.doesNotThrow(() => validateImportedStoryWeaverBook(book,source),book.id);
   }
 });

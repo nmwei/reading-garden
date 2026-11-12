@@ -1,7 +1,8 @@
+import {seedState} from './storage-helper.js';
 import {test,expect} from '@playwright/test';
 test('saved characters are marked across pages and can be removed and restored offline without replacing the story',async({page,context})=>{
  test.setTimeout(60000);
- await page.addInitScript(()=>{if(!localStorage.getItem('reading-garden-v1'))localStorage.setItem('reading-garden-v1',JSON.stringify({progress:{},readingList:[],words:[{char:'我',bookId:'0087',page:0}],voice:'',readingHelpSeen:true,pinyinScopes:['finals']}));});
+ await seedState(page,{progress:{},readingList:[],words:[{char:'我',bookId:'0087',page:0}],voice:'',readingHelpSeen:true,pinyinScopes:['finals']});
  await page.goto('/#/book/0087/1');
  const marked=page.locator('.character.saved-character').filter({hasText:'我'});
  await expect(marked).toHaveCount(1);await expect(marked).toHaveAttribute('aria-label','认识我，已在生字篮');
@@ -26,6 +27,6 @@ test('saved characters are marked across pages and can be removed and restored o
  await page.goto('/#/book/0087/1');await page.getByRole('button',{name:'认识我',exact:true}).click();await dialog.getByRole('button',{name:'放进生字篮',exact:true}).click();await dialog.getByRole('button',{name:'关闭',exact:true}).click();
  await page.goto('/#/book/0087/1');await marked.click();await dialog.getByRole('button',{name:'我认识了，移出生字篮',exact:true}).click();
  await dialog.getByRole('button',{name:'关闭',exact:true}).click();await page.reload();await expect(page.locator('.saved-character')).toHaveCount(0);
- expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('reading-garden-v1')).words.length)).toBe(0);
+ expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.words.length;})).toBe(0);
  await page.screenshot({path:`test-results/saved-word-removed-${test.info().project.name}.png`,fullPage:true});
 });

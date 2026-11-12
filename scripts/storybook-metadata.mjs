@@ -1,4 +1,4 @@
-import {readingLevelLabel} from '../app/reading-levels.js';
+import {readingLevelLabel} from '../web/app/reading-levels.js';
 
 const strip = text => text.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
 

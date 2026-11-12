@@ -1,15 +1,14 @@
+import {seedState} from './storage-helper.js';
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
-const readState = page => page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
+const readState = page => page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved;});
 const pickIds = async page => {
   await expect(page.locator('.reading-shelf')).toBeVisible();
   return page.locator('.reading-picks > .reading-pick > a').evaluateAll(links => links.map(link => link.getAttribute('href').split('/')[2]));
 };
 const add = (page, id) => page.locator(`.library-book [data-reading-add="${id}"]`);
-const seed = async (page, readingList) => page.addInitScript(({readingList}) => {
-  if (!localStorage.getItem('reading-garden-v1')) localStorage.setItem('reading-garden-v1', JSON.stringify({readingList, readingHelpSeen: false, progress: {'0087': {page: 2, updated: 1, finished: true, rereading: true}}, words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', pinyinScopes: ['whole']}));
-}, {readingList});
+const seed = (page,readingList) => seedState(page,{readingList,readingHelpSeen:false,progress:{'0087':{page:2,updated:1,finished:true,rereading:true}},words:[{char:'我',bookId:'0087',page:0}],voice:'Mandarin',pinyinScopes:['whole']});
 
 test('shelf and catalog are separate; choosing several books stays in the catalog and survives reload', async ({page}) => {
   await page.goto('/');

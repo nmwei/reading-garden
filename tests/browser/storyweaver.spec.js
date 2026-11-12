@@ -1,12 +1,12 @@
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
 const book = books.find(book => book.id === 'sw-92448');
 
 test('system narration uses the saved voice for both the page and the selected sentence', async ({page}) => {
   await page.addInitScript(() => {
-    localStorage.setItem('reading-garden-v1', JSON.stringify({voice:'chosen'}));
+    localStorage.setItem('reading-device-voice','chosen');
     window.spoken = [];
     window.SpeechSynthesisUtterance = class {
       constructor(text) { this.text = text; }
@@ -46,7 +46,7 @@ test('system narration uses the saved voice for both the page and the selected s
 test('silent story retains all twelve illustrated pages, character help and completion', async ({page}) => {
   const errors = [], missing = [];
   page.on('pageerror', error => errors.push(error.message));
-  page.on('response', response => { if (response.status() >= 400) missing.push(response.url()); });
+  page.on('response', response => { if (response.status() >= 400 && !new URL(response.url()).pathname.startsWith('/api/')) missing.push(response.url()); });
   await page.addInitScript(() => Object.defineProperty(window, 'speechSynthesis', {
     configurable: true,
     value: {getVoices: () => [], cancel() {}, addEventListener() {}}
@@ -69,7 +69,7 @@ test('silent story retains all twelve illustrated pages, character help and comp
     await page.locator('[data-next]').click();
   }
   await expect(page.locator('.completion')).toBeVisible();
-  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+  const saved = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved;});
   expect(saved.progress['sw-92448'].finished).toBe(true);
   expect(saved.words).toContainEqual({char:'奶',bookId:'sw-92448',page:0});
   await page.goto('/#/words');
@@ -86,6 +86,7 @@ test('wordless pages keep their place and illustration without consuming the fir
     book.pages[0],
     {...book.pages[1], text:'', wordless:true, imageAlt:'奶奶和孩子一起观察形状的无字插图'}
   ]};
+  await page.route('**/domain/catalog.json', route=>route.fulfill({json:books.map(item=>{const b=item.id===sample.id?sample:item;return {id:b.id,pages:b.pages.map(p=>p.text)};})}));
   await page.route('**/data/books.json', route => route.fulfill({json: books.map(item => item.id === sample.id ? sample : item)}));
   await page.goto('/#/book/sw-92448/1');
   await expect(page.locator('.story-text, .reading-hint, [data-page-play]')).toHaveCount(0);
@@ -99,7 +100,7 @@ test('wordless pages keep their place and illustration without consuming the fir
     });
     expect(layout).toEqual({sameWidth:true,below:true,compact:true});
   }
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')).readingHelpSeen)).toBe(false);
+  expect(await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved.readingHelpSeen;})).toBe(false);
   await expect(page.locator('[data-download-book]')).toHaveCount(0);
   await page.locator('[data-next]').click();
   await expect(page.locator('.story-text')).toHaveText(book.pages[0].text);
@@ -114,7 +115,7 @@ test('wordless pages keep their place and illustration without consuming the fir
   await expect(page.locator('.completion')).toHaveCount(0);
   await page.locator('[data-next]').click();
   await expect(page.locator('.completion')).toBeVisible();
-  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+  const saved = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved;});
   expect(saved.progress['sw-92448'].page).toBe(2);
   expect(saved.progress['sw-92448'].finished).toBe(true);
   expect(saved.readingHelpSeen).toBe(true);
@@ -124,7 +125,7 @@ test('explicit text-only pages preserve character help and page order without br
   const {image, imageFrame, ...firstText} = book.pages[0];
   const sample = {...book, pages:[book.pages[0], {...firstText,textOnly:true}, book.pages[1]]};
   const missing = [];
-  page.on('response', response => { if (response.status()>=400) missing.push(response.url()); });
+  page.on('response', response => { if (response.status()>=400 && !new URL(response.url()).pathname.startsWith('/api/')) missing.push(response.url()); });
   await page.route('**/data/books.json', route => route.fulfill({json:books.map(item => item.id===sample.id ? sample : item)}));
   await page.goto('/#/book/sw-92448/2');
   await expect(page.locator('.reading-spread')).toHaveClass(/text-only/);
@@ -150,7 +151,7 @@ test('explicit text-only pages preserve character help and page order without br
   await page.reload();
   await expect(page.locator('.page-art')).toHaveCount(0);
   await expect(page.locator('.story-text')).toHaveText(firstText.text);
-  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('reading-garden-v1')));
+  const saved = await page.evaluate(async () => {const {learningStorage,READING_KEY}=await import('/app/account-storage.js');const saved={...JSON.parse(learningStorage.getItem(READING_KEY)||'{}'),voice:localStorage.getItem('reading-device-voice')||'',readingHelpSeen:localStorage.getItem('reading-help-seen')==='true'};return saved;});
   expect(saved.progress['sw-92448'].page).toBe(1);
   expect(saved.words).toContainEqual({char:'奶',bookId:'sw-92448',page:1});
   expect(missing).toEqual([]);

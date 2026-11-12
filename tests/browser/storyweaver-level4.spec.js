@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 
-const books = JSON.parse(await readFile(new URL('../../data/books.json', import.meta.url)));
+const books = JSON.parse(await readFile(new URL('../../web/data/books.json', import.meta.url)));
 const levelFour = books.filter(book => book.sourceLevel.system === 'StoryWeaver' && book.sourceLevel.value === 4);
 
 test('StoryWeaver 4 is discoverable on phones and stays separate from Canada 4', async ({page}) => {

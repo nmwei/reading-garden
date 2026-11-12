@@ -3,38 +3,19 @@ import assert from 'node:assert/strict';
 import {readFile, readdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, quizChoices} from '../app/core.js';
-import {FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PINYIN_ITEMS, PRACTICE_GROUPS, PRACTICE_CATEGORIES, practicePool, nextPracticeCategory, TONE_BASES, toneExamples, TONES, PINYIN_RECORDINGS, pinyinAudio, listeningItems, toneName} from '../app/pinyin.js';
+import {emptyState, restoreState, routeFromHash, updateProgress, wordInContext, quizChoices} from '../web/app/core.js';
+import {FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PINYIN_ITEMS, PRACTICE_GROUPS, PRACTICE_CATEGORIES, practicePool, nextPracticeCategory, TONE_BASES, toneExamples, TONES, PINYIN_RECORDINGS, pinyinAudio, listeningItems, toneName} from '../web/app/pinyin.js';
 
-const books = JSON.parse(await readFile(new URL('../data/books.json', import.meta.url)));
-test('invalid saved data cannot break reading or inject unknown content', () => {
-  const state = normalizeState({progress: {'0087': {page: 900, finished: 'yes'}, unknown: {page: 0}}, words: [null, {char: '<script>', bookId: '0087', page: 0}, {char: '我', bookId: '0087', page: 0}, {char: '我', bookId: '0087', page: 1}], voice: {}, largeText: true}, books);
-  assert.equal(state.progress['0087'].page, 7);
-  assert.equal(state.progress['0087'].finished, false);
-  assert.equal(state.progress.unknown, undefined);
-  assert.deepEqual(state.words, [{char: '我', bookId: '0087', page: 0}]);
-  assert.equal(state.voice, '');
-  assert.equal('largeText' in state, false);
-  assert.deepEqual(normalizeState(null, books), emptyState());
+const books = JSON.parse(await readFile(new URL('../web/data/books.json', import.meta.url)));
+test('current learning snapshots round-trip without repairing or dropping fields', () => {
+  const {voice,readingHelpSeen,...learning}=emptyState();
+  const saved={version:1,...learning,progress:{'0087':{page:7,finished:true,updated:12}},readingList:['0087'],words:[{char:'我',bookId:'0087',page:0}],pinyinScopes:['whole','initials']};
+  const {version,...expected}=saved;assert.deepEqual(restoreState(saved,books),{voice:'',readingHelpSeen:false,...expected});
 });
-test('removing the legacy font preference preserves learning records and other preferences', () => {
-  const saved = {progress: {'0087': {page: 7, finished: true, updated: 12}}, readingList: [], words: [{char: '我', bookId: '0087', page: 0}], voice: 'Mandarin', readingHelpSeen: false, pinyinScopes: ['initials', 'whole']};
-  assert.deepEqual(normalizeState({...saved, largeText: true}, books), saved);
-  assert.deepEqual(normalizeState({...saved, largeText: false}, books), saved);
-});
-test('reading list migrates old records and keeps only six known, distinct books in the chosen order', () => {
-  const original = {progress: {'0087': {page: 3, finished: true, updated: 12}}, words: [{char: '我', bookId: '0087', page: 0}], pinyinScopes: ['whole']};
-  const migrated = normalizeState(original, books);
-  assert.deepEqual(migrated.readingList, []);
-  assert.deepEqual(migrated.progress['0087'], {...original.progress['0087'], rereading: true});
-  assert.deepEqual(migrated.words, original.words);
-  const ids = books.slice(0, 8).map(book => book.id).reverse();
-  const normalized = normalizeState({...original, readingList: [null, ids[0], 'missing', ids[0], {}, ...ids.slice(1)]}, books);
-  assert.deepEqual(normalized.readingList, ids.slice(0, 6));
-  assert.deepEqual(normalizeState({...original, readingList: '0087'}, books).readingList, []);
-  const readAgain = updateProgress(normalized, books.find(book => book.id === ids[3]), 0);
-  assert.deepEqual(readAgain.readingList, normalized.readingList);
-  assert.deepEqual(normalizeState(readAgain, books).readingList, normalized.readingList);
+test('invalid, incomplete and obsolete snapshots are rejected',()=>{
+ const {voice,readingHelpSeen,...learning}=emptyState();const saved={version:1,...learning};
+ for(const invalid of [{}, {...saved,largeText:true},{...saved,readingList:['missing']},{...saved,pinyinScopes:['whole','whole']},{...saved,progress:{'0087':{page:900,finished:true,updated:1}}}])assert.throws(()=>restoreState(invalid,books));
+ assert.deepEqual(restoreState(null,books),emptyState());
 });
 test('route bounds and invalid links fall back safely', () => {
   assert.equal(routeFromHash('#/book/0087/999', books).page, 7);
@@ -59,7 +40,7 @@ test('a one-page book starts another round only via its reread entry', () => {
   assert.equal(updateProgress(done, book, 0).progress[book.id].rereading, undefined);
   const route = routeFromHash(`#/book/${book.id}/1/reread`, [book]);
   const reopened = updateProgress(done, book, route.page, {startReread: route.startReread});
-  assert.equal(normalizeState(reopened, [book]).progress[book.id].rereading, true);
+  assert.equal(restoreState((({voice,readingHelpSeen,...learning})=>({version:1,...learning}))(reopened), [book]).progress[book.id].rereading, true);
 });
 test('character help uses the selected occurrence and its contextual word', () => {
   assert.equal(wordInContext('是不是在床底下？', 5).word, '床底下');
@@ -95,7 +76,7 @@ test('all story pages have intact, decodable local image/audio and per-book cred
       if (book.narration === 'none') assert.equal(page.audio, undefined);
       else assert.ok(page.audio);
       for (const file of [page.image, page.audio].filter(Boolean)) {
-        const path = new URL(`../${file}`, import.meta.url);
+        const path = new URL(`../web/${file}`, import.meta.url);
         const bytes = await readFile(path);
         assert.ok(bytes.length > 500);
         const duration = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', path.pathname], {encoding: 'utf8'});
@@ -122,14 +103,14 @@ test('the full pinyin inventory has distinct IDs, correctly marked samples and n
   assert.ok(INITIALS.every(item => item.note.includes('呼读音')));
 });
 test('authorized recordings are unchanged, decodable and individually attributed', async () => {
-  const {sources} = JSON.parse(await readFile(new URL('../assets/sources.json', import.meta.url)));
+  const {sources} = JSON.parse(await readFile(new URL('../web/assets/sources.json', import.meta.url)));
   assert.equal(sources.filter(s => s.kind === 'pinyin').length, 143);
   for (const item of [...PINYIN_ITEMS, ...TONES]) {
     const source = sources.find(s => s.kind === 'pinyin' && s.id === item.id);
     if (!item.recording) {
       assert.equal(source, undefined);
       assert.equal(pinyinAudio(item.id), null);
-      await assert.rejects(readFile(new URL(`../assets/pinyin/${item.id}.mp3`, import.meta.url)), {code: 'ENOENT'});
+      await assert.rejects(readFile(new URL(`../web/assets/pinyin/${item.id}.mp3`, import.meta.url)), {code: 'ENOENT'});
       continue;
     }
     assert.ok(pinyinAudio(item.id));
@@ -138,7 +119,7 @@ test('authorized recordings are unchanged, decodable and individually attributed
     assert.equal(source.original.sha256, source.assets[0].sha256);
     assert.equal(source.permission.status, 'user-confirmed');
     assert.equal(source.licenseUrl, undefined); // Project permission is not a CC license.
-    const file = new URL(`../assets/pinyin/${item.id}.mp3`, import.meta.url).pathname;
+    const file = new URL(`../web/assets/pinyin/${item.id}.mp3`, import.meta.url).pathname;
     const bytes = await readFile(file);
     assert.equal(createHash('sha256').update(bytes).digest('hex'), source.original.sha256, item.id);
     const duration = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file], {encoding: 'utf8'}));
@@ -155,7 +136,7 @@ test('finals only use their own sound or a reviewed zero-initial spelling, never
   assert.equal(pinyinAudio('ong'), 'assets/pinyin/ong.mp3');
   assert.equal(PINYIN_RECORDINGS.ong, 'ong1');
   assert.ok(listeningItems('back').some(item => item.id === 'ong'));
-  const files = (await readdir(new URL('../assets/pinyin/', import.meta.url))).filter(name => name.endsWith('.mp3'));
+  const files = (await readdir(new URL('../web/assets/pinyin/', import.meta.url))).filter(name => name.endsWith('.mp3'));
   assert.equal(files.length, 143);
   assert.ok(files.includes('ong.mp3'));
 });
@@ -194,9 +175,10 @@ test('multi-selected practice rotates categories while every question keeps dist
   assert.ok(practicePool('finals').some(item => item.id === 'ong'));
 });
 test('practice selections migrate old data, validate stored values and retain an intentional empty selection', () => {
-  assert.deepEqual(normalizeState({}, books).pinyinScopes, ['finals']);
-  assert.deepEqual(normalizeState({pinyinScopes: ['whole', 'unknown', 'whole', 'initials']}, books).pinyinScopes, ['initials', 'whole']);
-  assert.deepEqual(normalizeState({pinyinScopes: []}, books).pinyinScopes, []);
+  assert.deepEqual(emptyState().pinyinScopes, ['finals']);
+  assert.throws(()=>restoreState({pinyinScopes: ['whole', 'unknown', 'whole', 'initials']}, books));
+  const {voice,readingHelpSeen,...learning}=emptyState();
+  assert.deepEqual(restoreState({version:1,...learning,pinyinScopes: []}, books).pinyinScopes, []);
 });
 test('each selectable tone base has exactly four correctly marked and playable recordings', () => {
   assert.deepEqual(TONE_BASES.map(base => base.id), ['a', 'o', 'e', 'yi', 'wu', 'yu', 'ai', 'ao', 'wei', 'you', 'yue', 'an', 'yun', 'ang', 'ying', 'dong', 'zi', 'zhi', 'er', 'ma']);

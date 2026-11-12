@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
-const books=JSON.parse(await readFile(new URL('../../data/books.json',import.meta.url)));
+const books=JSON.parse(await readFile(new URL('../../web/data/books.json',import.meta.url)));
 const fits = async page => expect(await page.evaluate(()=>Math.max(document.documentElement.scrollHeight-innerHeight,document.documentElement.scrollWidth-innerWidth))).toBeLessThanOrEqual(2);
 test('landscape reading keeps navigation visible and preserves long text and credits',async({page})=>{
  await page.setViewportSize({width:1024,height:768});

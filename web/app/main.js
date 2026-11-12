@@ -1,5 +1,8 @@
+import {accountPanel,parentIdentity} from './account-ui.js';
+import {learningStorage,READING_KEY} from './account-storage.js';
+import {accountState} from './account-client.js';
 import './feedback-audio.js';
-import {STORAGE_KEY, READING_LIST_LIMIT, emptyState, normalizeState, routeFromHash, updateProgress, wordInContext, sentenceAt, quizChoices} from './core.js';
+import {READING_LIST_LIMIT, emptyState, restoreState, routeFromHash, updateProgress, wordInContext, sentenceAt, quizChoices} from './core.js';
 import {FINAL_GROUPS, FINALS, INITIALS, SPELLING_LETTERS, WHOLE_SYLLABLES, PRACTICE_CATEGORIES, TONE_GROUPS, TONE_BASES, toneExamples, nextPracticeCategory, practicePool, pinyinAudio, toneName} from './pinyin.js';
 import {readingLevelLabel, readingLevelKey, readingLevelOptions} from './reading-levels.js';
 import {AudioPlayer, chineseVoices} from './audio.js';
@@ -48,10 +51,16 @@ function notify(message) {
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.classList.remove('visible'); el.replaceChildren(); }, 4500);
 }
 function persist(next) {
-  state = next;
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); return true; }
-  catch { storageWarning = true; notify('这次的记录暂时无法保存。请检查浏览器存储空间。'); return false; }
+  try {
+    const {voice,readingHelpSeen,...learning}=next;
+    const raw=JSON.stringify({version:1,...learning});
+    if(voice!==state.voice)localStorage.setItem('reading-device-voice',voice);
+    if(readingHelpSeen!==state.readingHelpSeen)localStorage.setItem('reading-help-seen',String(readingHelpSeen));
+    if(raw!==learningStorage.getItem(READING_KEY))learningStorage.setItem(READING_KEY,raw);
+    state=next;return true;
+  } catch { storageWarning=true;notify('这次的记录暂时无法保存，请保留页面并检查存储状态。');return false; }
 }
+
 async function play(src) {
   try { return await audio.play(src); }
   catch { notify('声音暂时没有播放成功，请再点一次。离线时可先下载故事包。'); return false; }
@@ -119,7 +128,7 @@ function shell(section, content) {
   const nav = [['shelf', 'book', '故事书架'], ['pinyin', 'sun', '学拼音'], ['words', 'leaf', '我的生字']];
   return `<aside class="sidebar"><a class="brand" href="#/shelf"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>阅读小花园</strong><small>READING GARDEN</small></span></a>
     <nav aria-label="主要导航">${nav.map(([id, ico, label]) => `<a href="#/${id}" class="nav-item ${activeSection === id ? 'active' : ''}" ${section === id ? 'aria-current="page"' : ''}>${icon(ico)}<span>${label}</span>${id === 'words' && state.words.length ? `<span class="count">${state.words.length}</span>` : ''}</a>`).join('')}</nav>
-    <div class="sidebar-bottom"><div class="little-plant" aria-hidden="true"><span></span><i></i><b></b></div><p>慢慢读，慢慢长大。</p><a class="parent-link" href="#/parent" ${section === 'parent' ? 'aria-current="page"' : ''}>${icon('parent')}家长小角</a></div></aside>
+    <div class="sidebar-bottom"><div class="little-plant" aria-hidden="true"><span></span><i></i><b></b></div><p>慢慢读，慢慢长大。</p><a class="parent-link" aria-label="家长小角" href="#/parent" ${section === 'parent' ? 'aria-current="page"' : ''}>${icon('parent')}<span class="parent-nav-copy">${parentIdentity()}<span>家长小角</span></span></a></div></aside>
     <main id="main" class="main-content" tabindex="-1">${content}</main>`;
 }
 
@@ -403,10 +412,10 @@ async function maintainApp(action) {
   } finally { libraryBusy = false; paintMaintenance(); }
 }
 function parent() {
-  return shell('parent', `<header class="page-header"><div><span class="eyebrow">家长小角</span><h1>陪她读，也给她一点空间。</h1></div></header><section class="parent-panel"><h2>阅读和声音</h2><p>正文不加拼音，先看图、自己读，遇到困难再求助。拼音在独立的小课堂学习。</p><label for="voice-select" class="voice-label">点字和系统朗读使用的中文声音</label><select id="voice-select"><option value="">自动选择普通话声音</option>${chineseVoices().map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === state.voice ? 'selected' : ''}>${esc(v.name)} · ${esc(v.lang)}</option>`).join('')}</select><button class="button secondary" data-voice-test>${icon('sound')}试听中文声音</button><p class="small-note">整页和听句优先使用对应的原版录音。没有对应录音时，以及点字时，使用设备中文声音。设备语音可能需要联网。</p></section>
+  return shell('parent', `<header class="page-header"><div><span class="eyebrow">家长小角</span><h1>陪她读，也给她一点空间。</h1></div></header><div class="parent-management">${accountPanel()}<section class="parent-panel parent-voice"><h2>阅读和声音</h2><p>正文不加拼音，先看图、自己读，遇到困难再求助。拼音在独立的小课堂学习。</p><label for="voice-select" class="voice-label">点字和系统朗读使用的中文声音</label><select id="voice-select"><option value="">自动选择普通话声音</option>${chineseVoices().map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === state.voice ? 'selected' : ''}>${esc(v.name)} · ${esc(v.lang)}</option>`).join('')}</select><button class="button secondary" data-voice-test>${icon('sound')}试听中文声音</button><p class="small-note">整页和听句优先使用对应的原版录音。没有对应录音时，以及点字时，使用设备中文声音。设备语音可能需要联网。</p></section>
     <section class="parent-panel offline-panel"><h2>带上故事，离线也能读</h2><p>第一次联网打开后，可按书、按级别下载，也可带上全部${books.length}本绘本和拼音读音。下载完成后，请在这台 iPad 上试一次断网阅读。</p><label class="voice-label" for="download-scope">离线下载范围</label><select id="download-scope"><option value="all" ${offlineScope === 'all' ? 'selected' : ''}>全部故事与拼音</option><option value="pinyin" ${offlineScope === 'pinyin' ? 'selected' : ''}>拼音读音</option><optgroup label="按级别">${readingLevelOptions(books).map(level => `<option value="level:${esc(readingLevelKey(level))}" ${offlineScope === `level:${readingLevelKey(level)}` ? 'selected' : ''}>${esc(readingLevelLabel(level))} · ${books.filter(book => readingLevelKey(book.sourceLevel) === readingLevelKey(level)).length}本</option>`).join('')}</optgroup><optgroup label="按图书">${books.map(book => `<option value="book:${book.id}" ${offlineScope === `book:${book.id}` ? 'selected' : ''}>${esc(book.title)}</option>`).join('')}</optgroup></select><button class="button primary" data-download>${icon('download')}下载离线故事包</button><p id="download-status" role="status" class="small-note">正在计算素材大小…</p><p class="small-note">Safari 中点“分享 → 添加到主屏幕”，即可像小应用一样打开。浏览器清理缓存后需要重新下载。</p><div class="resource-repair"><p class="small-note">图片或声音异常？联网重新获取完整资源包，学习记录会保留。</p><button class="text-button" data-app-refetch>重新获取资源</button><p id="resource-refresh-status" class="small-note" role="status">${esc(resourceMessage)}</p></div></section>
-    <section class="parent-panel"><h2>这份小书架的边界</h2><p>当前包含${books.length}本绘本、24个韵母、21个声母、拼写字母y/w、16个整体认读音节和${TONE_BASES.length}组音节的四声；主要示范音来自CLI拼音表，ong独立录音来自ChinaHelp，均可随离线包播放。声母采用呼读音，页面明确标注；这不是单独本音录音。ong使用家长试听选定的独立示范，不再借用hong或dong。分类参考新版教材，尚不包含系统拼读课程，内容未经教师逐项审听。</p><p>阅读位置、“读完”标记、生字篮和偏好只保存在本机；没有账号、分析追踪或跨设备同步。不把“读完”当作认字掌握证明。</p>${storageWarning ? '<p class="warning">当前浏览器保存失败，本次记录可能无法保留。</p>' : ''}<button class="text-button danger" data-reset>清除本机阅读记录和生字篮</button></section>
-    ${sourceSummary()}${maintenancePanel()}`);
+    <section class="parent-panel parent-boundaries"><h2>这份小书架的边界</h2><p>当前包含${books.length}本绘本、24个韵母、21个声母、拼写字母y/w、16个整体认读音节和${TONE_BASES.length}组音节的四声；主要示范音来自CLI拼音表，ong独立录音来自ChinaHelp，均可随离线包播放。声母采用呼读音，页面明确标注；这不是单独本音录音。ong使用家长试听选定的独立示范，不再借用hong或dong。分类参考新版教材，尚不包含系统拼读课程，内容未经教师逐项审听。</p><p>游客记录保存在本机；登录后，阅读位置、书单、生字和拼音范围自动同步到账号。设备音色留在本机。不把“读完”当作认字掌握证明。</p>${storageWarning ? '<p class="warning">当前浏览器保存失败，本次记录可能无法保留。</p>' : ''}<button class="text-button danger" data-reset>清除阅读记录和生字篮</button></section>
+    ${sourceSummary()}${maintenancePanel()}</div>`);
 }
 
 function render() {
@@ -517,7 +526,7 @@ app.addEventListener('click', async event => {
   else if (el.hasAttribute('data-app-refetch')) await maintainApp('refetch');
   else if (el.hasAttribute('data-download')) await downloadSelection(offlineScope);
   else if (el.hasAttribute('data-reset')) {
-    confirmDialog.innerHTML = `<h2 id="confirm-title">清除本机学习记录？</h2><p>小书架、阅读位置、读完标记、生字篮和偏好都会删除。离线故事包仍保留。</p><div class="dialog-actions"><button class="button secondary" data-cancel-reset>保留记录</button><button class="button primary" data-confirm-reset>确认清除</button></div>`; confirmDialog.showModal();
+    confirmDialog.innerHTML = `<h2 id="confirm-title">清除当前学习记录？</h2><p>小书架、阅读位置、读完标记、生字篮和偏好都会删除。${accountState.account ? "清除结果将同步到账号，历史存档仍保留。" : ""}离线故事包仍保留。</p><div class="dialog-actions"><button class="button secondary" data-cancel-reset>保留记录</button><button class="button primary" data-confirm-reset>确认清除</button></div>`; confirmDialog.showModal();
   }
 });
 
@@ -566,7 +575,7 @@ wordDialog.addEventListener('click', async event => {
 wordDialog.addEventListener('close', () => audio.stop());
 confirmDialog.addEventListener('click', event => {
   if (event.target.closest('[data-cancel-reset]')) confirmDialog.close();
-  if (event.target.closest('[data-confirm-reset]')) { audio.stop(); if (persist(emptyState())) { quiz = null; lastQuizScope = ''; confirmDialog.close(); render(); notify('本机记录已清除。'); } }
+  if (event.target.closest('[data-confirm-reset]')) { audio.stop(); if (persist({...emptyState(),voice:state.voice,readingHelpSeen:state.readingHelpSeen})) { quiz = null; lastQuizScope = ''; confirmDialog.close(); render(); notify('记录已清除，正在保存。'); } }
 });
 parentDialog.addEventListener('click', event => { if (event.target.closest('[data-cancel-parent]')) closeParent(); });
 parentDialog.addEventListener('close', () => {
@@ -597,8 +606,9 @@ async function boot() {
     const [bookResponse, sourceResponse] = await Promise.all([fetch(new URL('data/books.json', document.baseURI)), fetch(new URL('assets/sources.json', document.baseURI))]);
     if (!bookResponse.ok || !sourceResponse.ok) throw Error('Content unavailable');
     books = await bookResponse.json(); sources = (await sourceResponse.json()).sources;
-    try { state = normalizeState(JSON.parse(localStorage.getItem(STORAGE_KEY)), books); }
-    catch { state = emptyState(); }
+    try { const value=JSON.parse(learningStorage.getItem(READING_KEY)||'null');
+      state=restoreState(value,books);state.voice=localStorage.getItem('reading-device-voice')||'';state.readingHelpSeen=localStorage.getItem('reading-help-seen')==='true'; }
+    catch { throw Error("学习记录格式无效，原记录已保留"); }
     render(); registerOffline().catch(() => {});
   } catch {
     app.innerHTML = '<main class="empty-state"><h1>小花园暂时没有打开</h1><p>请检查网络后重新打开。如果是首次访问，需要先联网下载故事。</p><button class="button primary" id="retry">重新打开</button></main>';

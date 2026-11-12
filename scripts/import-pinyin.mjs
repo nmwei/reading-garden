@@ -2,7 +2,7 @@ import {mkdir, readFile, writeFile, readdir, rm} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath, pathToFileURL} from 'node:url';
-import {PINYIN_RECORDINGS} from '../app/pinyin.js';
+import {PINYIN_RECORDINGS} from '../web/app/pinyin.js';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const uploads = 'https://studycli.org/wp-content/uploads/mp3/';
@@ -36,16 +36,16 @@ export async function importPinyin(root = projectRoot) {
       original: {url, bytes: bytes.length, sha256: asset.sha256},
       changes: '原始 MP3 原样保存，仅重命名；未剪辑或改变语速、音高。', assets: [asset]}});
   }
-  await mkdir(`${root}assets/pinyin`, {recursive: true});
-  for (const {bytes, source} of imported) await writeFile(`${root}${source.assets[0].path}`, bytes);
-  for (const file of await readdir(`${root}assets/pinyin`)) {
-    if (file.endsWith('.mp3') && !Object.hasOwn(PINYIN_RECORDINGS, file.slice(0, -4))) await rm(`${root}assets/pinyin/${file}`);
+  await mkdir(`${root}web/assets/pinyin`, {recursive: true});
+  for (const {bytes, source} of imported) await writeFile(`${root}web/${source.assets[0].path}`, bytes);
+  for (const file of await readdir(`${root}web/assets/pinyin`)) {
+    if (file.endsWith('.mp3') && !Object.hasOwn(PINYIN_RECORDINGS, file.slice(0, -4))) await rm(`${root}web/assets/pinyin/${file}`);
   }
   return imported.map(({source}) => source);
 }
 
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
-  const manifestPath = `${projectRoot}assets/sources.json`;
+  const manifestPath = `${projectRoot}web/assets/sources.json`;
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   const pinyin = await importPinyin();
   manifest.sources = [...manifest.sources.filter(source => source.kind !== 'pinyin'), ...pinyin];

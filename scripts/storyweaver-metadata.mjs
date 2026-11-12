@@ -1,4 +1,4 @@
-import {readingLevelLabel} from '../app/reading-levels.js';
+import {readingLevelLabel} from '../web/app/reading-levels.js';
 import {isDeepStrictEqual} from 'node:util';
 
 const nonempty = value => typeof value === 'string' && value.trim().length > 0;

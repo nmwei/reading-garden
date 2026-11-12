@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {readStory, readCatalog, readRepositoryLicense} from './storybook-metadata.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url)), cache = `${root}.asset-cache/storybooks/`;
+const repo = fileURLToPath(new URL('../', import.meta.url)), root = `${repo}web/`, cache = `${repo}.asset-cache/storybooks/`;
 const origin = 'https://www.storybookscanada.ca';
 const imageRef = '0df409752c86adc92685816e19e6085c4e4496f1';
 const archives = {
