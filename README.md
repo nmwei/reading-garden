@@ -1,3 +1,5 @@
+> 当前开发入口已迁至 [garden-platform/apps/reading](../garden-platform/apps/reading)。此目录保留迁移前历史，下文为原版本说明；日常安装、运行和发布请使用 [工作区说明](../garden-platform/README.md)。
+
 # 阅读小花园 · Reading Garden
 
 花园系列的中文绘本阅读与识字网站，与 ABC小花园（`../abc-garden`）为同级独立项目。
